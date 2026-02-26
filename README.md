@@ -189,4 +189,4 @@ See [docs/SECURITY_CHECKLIST.md](docs/SECURITY_CHECKLIST.md) for full security a
 
 ## License
 
-CC-BY-SA-4.0 — see [LICENSE](LICENSE) for details.
+GPL v3 — see [LICENSE](LICENSE) for details.
