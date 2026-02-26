@@ -1,6 +1,7 @@
 # AgenticMedicalImagingHelper
 
 > AI-powered medical image analysis with temporal evolution tracking
+> First complete project powered by [GABBE](https://github.com/andreibesleaga/GABBE)
 
 A TypeScript CLI tool that uses Google Gemini 2.5 Pro and LangGraph.js to analyze series of medical images, detect findings, and track how conditions evolve over time across multiple imaging sessions.
 
@@ -108,20 +109,20 @@ Options:
 
 ### Exit Codes
 
-| Code | Meaning |
-|------|---------|
-| 0 | All images analyzed successfully |
-| 1 | Missing or invalid API key |
-| 2 | Input directory not found or unreadable |
-| 3 | No image series found in input directory |
-| 4 | Partial failure — some images could not be analyzed |
-| 99 | Unexpected internal error |
+| Code | Meaning                                             |
+| ---- | --------------------------------------------------- |
+| 0    | All images analyzed successfully                    |
+| 1    | Missing or invalid API key                          |
+| 2    | Input directory not found or unreadable             |
+| 3    | No image series found in input directory            |
+| 4    | Partial failure — some images could not be analyzed |
+| 99   | Unexpected internal error                           |
 
 ## Environment Variables
 
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `GOOGLE_API_KEY` | Yes | Google Gemini API key |
+| Variable         | Required          | Description              |
+| ---------------- | ----------------- | ------------------------ |
+| `GOOGLE_API_KEY` | Yes               | Google Gemini API key    |
 | `GEMINI_API_KEY` | Yes (alternative) | Alternative env var name |
 
 ## Development
@@ -169,6 +170,7 @@ src/
 ```
 
 The system uses the **LangGraph Fan-Out/Fan-In** pattern:
+
 1. `scanInputDirectory` discovers all image series
 2. `analyzeImages` node fans out — analyzes all images concurrently (p-limit)
 3. `aggregateSeries` node fans in — synthesizes per-series summaries
