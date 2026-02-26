@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  medical-imaging:
+    build:
+      context: .
+      target: production
+    image: agentic-medical-imaging-helper:latest
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./input:/app/input:ro       # Read-only input
+      - ./output:/app/output        # Writable output
+    command: ["analyze", "/app/input", "/app/output", "--verbose"]
+    restart: "no"

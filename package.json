@@ -1,0 +1,61 @@
+{
+  "name": "agentic-medical-imaging-helper",
+  "version": "1.0.0",
+  "description": "A CLI Medical Imaging Diagnosis Agentic AI system powered by Google Gemini API (JS/TS) using LangGraph Fan-Out/Fan-In for parallel multi-series analysis.",
+  "type": "module",
+  "main": "dist/main/index.js",
+  "bin": {
+    "medical-imaging": "dist/main/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/main/index.ts",
+    "start": "node dist/main/index.js",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "test:coverage": "node --experimental-vm-modules node_modules/.bin/jest --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src tests",
+    "lint:fix": "eslint src tests --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [
+    "medical-imaging",
+    "ai",
+    "gemini",
+    "langgraph",
+    "cli",
+    "radiology",
+    "diagnostics"
+  ],
+  "author": "",
+  "license": "CC-BY-SA-4.0",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@langchain/core": "^1.1.28",
+    "@langchain/langgraph": "^1.1.5",
+    "chalk": "^5.6.2",
+    "commander": "^14.0.3",
+    "dotenv": "^17.3.1",
+    "ora": "^9.3.0",
+    "p-limit": "^7.3.0",
+    "sharp": "^0.34.5",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.3.0",
+    "@types/sharp": "^0.31.1",
+    "@typescript-eslint/eslint-plugin": "^8.56.1",
+    "@typescript-eslint/parser": "^8.56.1",
+    "eslint": "^10.0.2",
+    "jest": "^30.2.0",
+    "prettier": "^3.8.1",
+    "ts-jest": "^29.4.6",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
