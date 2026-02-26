@@ -79,6 +79,8 @@ async function runAnalyze(
 
   // ── 1. Validate API key ────────────────────────────────────────────────
   const apiKey = process.env.GOOGLE_API_KEY ?? process.env.GEMINI_API_KEY;
+  const apiAIModel = process.env.GEMINI_MODEL ?? "gemini-2.5-pro";
+
   if (!apiKey) {
     process.stderr.write(
       "Error: GOOGLE_API_KEY (or GEMINI_API_KEY) environment variable is not set.\n" +
@@ -131,7 +133,7 @@ async function runAnalyze(
   // ── 4. Initialize Gemini client ────────────────────────────────────────
   let geminiClient;
   try {
-    const model = createGeminiModelFromSdk(apiKey, "gemini-2.5-pro");
+    const model = createGeminiModelFromSdk(apiKey, apiAIModel);
     geminiClient = createGeminiClient(model);
   } catch (err) {
     if (err instanceof MissingApiKeyError) {
