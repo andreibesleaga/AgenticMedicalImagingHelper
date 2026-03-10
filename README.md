@@ -6,10 +6,9 @@
 >
 > All project generation flow documents saved in [docs](https://github.com/andreibesleaga/AgenticMedicalImagingHelper/tree/main/docs) and [BOOTSTRAP_MISSION](BOOTSTRAP_MISSION.md)
 > 
-> [docs/strategic/BUSINESS_CASE.md](docs/strategic/BUSINESS_CASE.md) , [docs/architecture](docs/architecture/) , [docs/PLAN.md](docs/PLAN.md) , [docs/PRD.md](docs/PRD.md)
 
 
-A TypeScript CLI tool that uses Google Gemini AI and LangGraph.js to analyze series of medical images, detect findings, and track how conditions evolve over time across multiple imaging sessions.
+A local TypeScript CLI tool that uses Google Gemini AI and LangGraph.js to analyze series of medical images, detect findings, and track how conditions evolve over time across multiple imaging sessions.
 
 ⚠️ **DISCLAIMER**: This tool is for **educational and informational purposes only**. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional.
 
