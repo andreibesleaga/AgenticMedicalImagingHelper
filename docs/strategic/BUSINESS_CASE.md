@@ -33,12 +33,14 @@ Clinicians, radiologists, and clinical researchers who wish to apply AI-assisted
 **Secondary User**: Medical AI developer/researcher evaluating Gemini Vision for clinical pipelines.
 
 **Project Goals:**
+
 - Automate batch processing of entire medical image series with agentic AI
 - Provide temporal evolution analysis (disease progression tracking)
 - Deliver structured, explainable output (JSON + Markdown) for each series and combined view
 - Keep the tool local, simple, and CLI-driven (no cloud deployment required)
 
 **OKR Alignment:**
+
 - O: Reduce time from image acquisition to AI-assisted report → KR: ≥90% reduction in manual analysis time per session
 - O: Increase analysis completeness → KR: Per-image, per-series, and evolution reports generated for every run
 
@@ -47,6 +49,7 @@ Clinicians, radiologists, and clinical researchers who wish to apply AI-assisted
 ## 3. Solution Options
 
 ### Option A — Do Nothing (Baseline)
+
 Use Gemini Vision manually (Streamlit web app, single image at a time).
 
 **Pros:** No development effort.
@@ -57,6 +60,7 @@ Use Gemini Vision manually (Streamlit web app, single image at a time).
 ---
 
 ### Option B — Minimal Sequential CLI
+
 A simple TypeScript CLI that processes images one by one, producing per-image output with no fan-out parallelism and no temporal analysis.
 
 **Pros:** Simple to build (~1 week), CLI interface.
@@ -67,7 +71,9 @@ A simple TypeScript CLI that processes images one by one, producing per-image ou
 ---
 
 ### Option C — Full Agentic Fan-Out/Fan-In CLI (Target)
+
 TypeScript CLI with LangGraph.js orchestration:
+
 - Parallel image analysis (Fan-Out via `Send` API)
 - Per-series aggregation (Fan-In)
 - Cross-series temporal evolution
@@ -86,14 +92,16 @@ TypeScript CLI with LangGraph.js orchestration:
 ## 4. Financial Analysis (ROI)
 
 **Costs:**
+
 - Development: 2 weeks × 1 developer (sunk cost, in-project)
 - Infrastructure: $0 (local execution)
 - API: Gemini API free tier = 1,500 requests/day → ~300 images/day at no cost
 - Maintenance: ~2 hours/month
 
 **Benefits (per user per month, assuming 5 sessions/week):**
+
 - Time saved: 105 min/session × 20 sessions = 2,100 min = 35 hours
-- At $150/hr (radiologist rate): **$5,250/month value created**
+- **value created in costs by helping to evaluate multiple patients diagnostics**
 
 **ROI = (5,250 - ~0 ongoing cost) / ~0 ongoing cost = effectively unlimited for local use**
 **Payback period: Immediate (no ongoing cost beyond API quota)**
@@ -102,13 +110,13 @@ TypeScript CLI with LangGraph.js orchestration:
 
 ## 5. Risk Assessment
 
-| Risk | Probability | Impact | Mitigation |
-|---|---|---|---|
-| Gemini API rate limits slow batch | Medium | Medium | `p-limit` concurrency control (max 5 concurrent) |
-| Medical liability from AI output | High | High | Mandatory educational-use-only disclaimer on all outputs |
-| Image format diversity (DICOM) | Medium | Low | Phase 1 scope: PNG/JPG/JPEG only; DICOM deferred to v2 |
-| LangGraph.js API instability | Low | Medium | Pin dependency version; unit-test graph wiring |
-| Prompt injection via text context | Low | Medium | Sanitize + delimit text input with XML tags |
+| Risk                              | Probability | Impact | Mitigation                                               |
+| --------------------------------- | ----------- | ------ | -------------------------------------------------------- |
+| Gemini API rate limits slow batch | Medium      | Medium | `p-limit` concurrency control (max 5 concurrent)         |
+| Medical liability from AI output  | High        | High   | Mandatory educational-use-only disclaimer on all outputs |
+| Image format diversity (DICOM)    | Medium      | Low    | Phase 1 scope: PNG/JPG/JPEG only; DICOM deferred to v2   |
+| LangGraph.js API instability      | Low         | Medium | Pin dependency version; unit-test graph wiring           |
+| Prompt injection via text context | Low         | Medium | Sanitize + delimit text input with XML tags              |
 
 ---
 
@@ -117,6 +125,7 @@ TypeScript CLI with LangGraph.js orchestration:
 **Proceed with Option C** — Full Agentic Fan-Out/Fan-In CLI.
 
 **Definition of Success:**
+
 - A clinician can run `medical-imaging analyze ./input ./output` and receive:
   1. Per-image JSON analyses for every image in every series
   2. Per-series Markdown summaries with consistent findings + primary diagnosis
@@ -126,5 +135,4 @@ TypeScript CLI with LangGraph.js orchestration:
 
 ---
 
-*Prepared by: Claude Code (business-case.skill) | 2026-02-25*
-*Classification: Internal | Not for patient-facing use*
+_Classification: Internal | Not for patient-facing use_
