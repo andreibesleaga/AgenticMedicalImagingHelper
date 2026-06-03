@@ -76,8 +76,7 @@ cd AgenticMedicalImagingHelper
 npm install
 
 # Copy environment template, then edit .env in your editor to set
-# GOOGLE_API_KEY (and optionally GEMINI_MODEL, MAX_CONCURRENCY, LOG_LEVEL).
-cp .env.example .env
+# GOOGLE_API_KEY (and optionally GEMINI_MODEL and LOG_LEVEL).
 $EDITOR .env
 ```
 
