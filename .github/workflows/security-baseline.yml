@@ -85,7 +85,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Run Trivy (fs)
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@76071ef0d7ec797419534a183b960b396a2f37a0
         with:
           scan-type: fs
           scanners: vuln,secret,misconfig
