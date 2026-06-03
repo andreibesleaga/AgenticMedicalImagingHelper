@@ -12,6 +12,7 @@ import type { GeminiClient } from "../infrastructure/gemini-client.js";
 import { analyzeImageUseCase } from "../application/analyze-image.use-case.js";
 import { aggregateSeriesUseCase } from "../application/aggregate-series.use-case.js";
 import { analyzeEvolutionUseCase } from "../application/analyze-evolution.use-case.js";
+import { createLogger } from "../infrastructure/logger.js";
 
 // ─── LangGraph State Schema ───────────────────────────────────────────────────
 
@@ -45,6 +46,10 @@ const MedicalImagingState = Annotation.Root({
     /* istanbul ignore next */ reducer: (_prev, next) => next,
     default: () => undefined,
   }),
+  rootContextText: Annotation<string | undefined>({
+    reducer: (_prev, next) => next,
+    default: () => undefined,
+  }),
 });
 
 type AgentState = typeof MedicalImagingState.State;
@@ -61,6 +66,31 @@ type AgentState = typeof MedicalImagingState.State;
  */
 function buildMedicalImagingGraph(geminiClient: GeminiClient, options: AnalyzeOptions) {
   const limit = pLimit(Math.max(1, options.concurrency));
+  const logger = createLogger();
+
+  // Wrap a node with structured enter/exit logging (silent unless LOG_LEVEL set).
+  function logged(
+    node: string,
+    fn: (state: AgentState) => Promise<Partial<AgentState>>
+  ): (state: AgentState) => Promise<Partial<AgentState>> {
+    return async (state: AgentState) => {
+      const startedAt = Date.now();
+      logger.info("node:enter", { node });
+      try {
+        const result = await fn(state);
+        logger.info("node:exit", { node, status: "ok", durationMs: Date.now() - startedAt });
+        return result;
+      } catch (err) {
+        logger.error("node:error", {
+          node,
+          status: "error",
+          durationMs: Date.now() - startedAt,
+          message: err instanceof Error ? err.message : String(err),
+        });
+        throw err;
+      }
+    };
+  }
 
   // ── Node: analyzeImages ─────────────────────────────────────────────────
   async function analyzeImages(state: AgentState): Promise<Partial<AgentState>> {
@@ -93,6 +123,7 @@ function buildMedicalImagingGraph(geminiClient: GeminiClient, options: AnalyzeOp
       series: state.series,
       imageResults: state.imageResults,
       seriesResults: state.seriesResults,
+      rootContextText: state.rootContextText,
     };
 
     const seriesResults = await aggregateSeriesUseCase(graphState, geminiClient);
@@ -107,6 +138,7 @@ function buildMedicalImagingGraph(geminiClient: GeminiClient, options: AnalyzeOp
       series: state.series,
       imageResults: state.imageResults,
       seriesResults: state.seriesResults,
+      rootContextText: state.rootContextText,
     };
 
     const evolutionResult = await analyzeEvolutionUseCase(graphState, geminiClient);
@@ -115,9 +147,9 @@ function buildMedicalImagingGraph(geminiClient: GeminiClient, options: AnalyzeOp
 
   // ── Build StateGraph ────────────────────────────────────────────────────
   const graph = new StateGraph(MedicalImagingState)
-    .addNode("analyzeImages", analyzeImages)
-    .addNode("aggregateSeries", aggregateSeries)
-    .addNode("analyzeEvolution", analyzeEvolution)
+    .addNode("analyzeImages", logged("analyzeImages", analyzeImages))
+    .addNode("aggregateSeries", logged("aggregateSeries", aggregateSeries))
+    .addNode("analyzeEvolution", logged("analyzeEvolution", analyzeEvolution))
     .addEdge(START, "analyzeImages")
     .addEdge("analyzeImages", "aggregateSeries")
     .addEdge("aggregateSeries", "analyzeEvolution")
@@ -143,7 +175,8 @@ export async function runMedicalImagingAgent(
   outputDir: string,
   series: SeriesInfo[],
   geminiClient: GeminiClient,
-  options: AnalyzeOptions
+  options: AnalyzeOptions,
+  rootContextText?: string
 ): Promise<GraphState> {
   const app = buildMedicalImagingGraph(geminiClient, options);
 
@@ -153,6 +186,7 @@ export async function runMedicalImagingAgent(
     series,
     imageResults: [],
     seriesResults: [],
+    rootContextText,
   };
 
   const finalState = await app.invoke(initialState);
@@ -166,5 +200,6 @@ export async function runMedicalImagingAgent(
     evolutionResult: finalState.evolutionResult,
     reportPaths: finalState.reportPaths,
     error: finalState.error,
+    rootContextText: finalState.rootContextText,
   };
 }

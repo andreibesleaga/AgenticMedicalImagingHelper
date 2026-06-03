@@ -16,7 +16,7 @@
 
 **Success Metric:** A 20-image, 2-series batch produces complete per-image JSON analyses, per-series Markdown summaries, and a combined evolution report in under 5 minutes.
 
-**Strategic Context:** [docs/strategic/BUSINESS_CASE.md](docs/strategic/BUSINESS_CASE.md)
+**Strategic Context:** [strategic/BUSINESS_CASE.md](strategic/BUSINESS_CASE.md)
 
 ---
 

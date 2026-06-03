@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`evolution classifier (deterministic snapshot) classifies ambiguous narrative as Inconclusive (and is stable across runs) 1`] = `
+{
+  "progression": "Inconclusive",
+}
+`;
+
+exports[`evolution classifier (deterministic snapshot) classifies improving narrative as Improving (and is stable across runs) 1`] = `
+{
+  "progression": "Improving",
+}
+`;
+
+exports[`evolution classifier (deterministic snapshot) classifies stable narrative as Stable (and is stable across runs) 1`] = `
+{
+  "progression": "Stable",
+}
+`;
+
+exports[`evolution classifier (deterministic snapshot) classifies worsening narrative as Worsening (and is stable across runs) 1`] = `
+{
+  "progression": "Worsening",
+}
+`;

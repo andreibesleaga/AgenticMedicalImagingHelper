@@ -231,4 +231,58 @@ describe("runMedicalImagingAgent", () => {
     expect(result.seriesResults).toHaveLength(1);
     expect(result.seriesResults[0].seriesId).toBe("s1");
   });
+
+  it("threads rootContextText through to the returned state", async () => {
+    const { runMedicalImagingAgent } = await import(
+      "../../../src/adapters/langgraph-agent.js"
+    );
+
+    const options: AnalyzeOptions = { concurrency: 2, verbose: false };
+    const result = await runMedicalImagingAgent(
+      "/tmp/in",
+      "/tmp/out",
+      [{ seriesId: "s1", imagePaths: ["/tmp/in/s1/img.png"] }],
+      mockClient,
+      options,
+      "Root-level case context for the whole study"
+    );
+
+    expect(result.rootContextText).toBe("Root-level case context for the whole study");
+  });
+
+  it("leaves rootContextText undefined when not provided", async () => {
+    const { runMedicalImagingAgent } = await import(
+      "../../../src/adapters/langgraph-agent.js"
+    );
+
+    const options: AnalyzeOptions = { concurrency: 2, verbose: false };
+    const result = await runMedicalImagingAgent(
+      "/tmp/in",
+      "/tmp/out",
+      [{ seriesId: "s1", imagePaths: ["/tmp/in/s1/img.png"] }],
+      mockClient,
+      options
+    );
+
+    expect(result.rootContextText).toBeUndefined();
+  });
+
+  it("propagates an error thrown by a node (logged then rethrown)", async () => {
+    const { runMedicalImagingAgent } = await import(
+      "../../../src/adapters/langgraph-agent.js"
+    );
+
+    evolutionFn.mockRejectedValueOnce(new Error("evolution boom"));
+
+    const options: AnalyzeOptions = { concurrency: 2, verbose: false };
+    await expect(
+      runMedicalImagingAgent(
+        "/tmp/in",
+        "/tmp/out",
+        [{ seriesId: "s1", imagePaths: ["/tmp/in/s1/img.png"] }],
+        mockClient,
+        options
+      )
+    ).rejects.toThrow("evolution boom");
+  });
 });
