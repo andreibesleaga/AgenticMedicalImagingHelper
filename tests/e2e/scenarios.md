@@ -1,7 +1,15 @@
 # E2E Test Scenarios: AgenticMedicalImagingHelper
 
 <!-- Phase: S03 | Date: 2026-02-25 -->
-<!-- These scenarios define acceptance test coverage; implemented in tests/e2e/full-analysis.test.ts -->
+<!-- These scenarios define acceptance test coverage; implemented in
+     tests/e2e/full-analysis.test.ts (scenarios 1, 2, 3, 4, 7, 8) and
+     tests/e2e/cli-errors.test.ts (scenarios 5, 6). The fairness
+     allocative-harm probe lives in tests/e2e/fairness.test.ts. -->
+
+> **Note on Scenario 6.** The original draft of this document said the missing-input-directory case
+> exits with code 1. The implemented contract in `src/main/run-analyze.ts` and the README's
+> exit-code table both define `2 = "Input directory not found or unreadable"`. The test asserts the
+> implemented contract (exit 2); this document has been updated to match.
 
 ---
 
@@ -93,10 +101,10 @@
 **When**: `medical-imaging analyze ./nonexistent-dir` runs
 
 **Then**:
-- Process exits with code 1
+- Process exits with code 2 (per the README exit-code table; "Input directory not found or unreadable")
 - stderr contains descriptive error message about directory not found
 
-**EARS Covered**: R09 (WHEN input dir not found → exit code 1)
+**EARS Covered**: R09 (WHEN input dir not found → exit code 2)
 
 ---
 

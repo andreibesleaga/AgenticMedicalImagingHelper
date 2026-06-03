@@ -8,6 +8,7 @@ import {
   DISCLAIMER,
   MAX_CONTEXT_LENGTH,
 } from "../domain/types.js";
+import { CostMeter, CostCapExceededError } from "./cost-meter.js";
 
 // ─── Prompt Templates ─────────────────────────────────────────────────────────
 
@@ -131,13 +132,24 @@ export interface GeminiClient {
 
 // ─── Client Factory ───────────────────────────────────────────────────────────
 
-export function createGeminiClient(model: GenerativeModel): GeminiClient {
+type GenerateArg = Parameters<GenerativeModel["generateContent"]>[0];
+
+export function createGeminiClient(model: GenerativeModel, meter?: CostMeter): GeminiClient {
+  // Wraps generateContent to record real token usage from the SDK response.
+  // When no meter is supplied the optional-chained record() is a no-op, so the
+  // default path is functionally identical to calling the model directly.
+  const generate = async (request: GenerateArg) => {
+    const result = await model.generateContent(request);
+    meter?.record(result.response.usageMetadata);
+    return result;
+  };
+
   async function analyzeImage(imagePath: string, seriesId: string): Promise<ImageAnalysis> {
     const now = new Date().toISOString();
     try {
       const imageData = await prepareImageForGemini(imagePath);
 
-      const result = await model.generateContent({
+      const result = await generate({
         contents: [
           {
             role: "user",
@@ -163,6 +175,7 @@ export function createGeminiClient(model: GenerativeModel): GeminiClient {
         disclaimer: DISCLAIMER,
       };
     } catch (err) {
+      if (err instanceof CostCapExceededError) throw err;
       return {
         imagePath,
         seriesId,
@@ -194,9 +207,10 @@ export function createGeminiClient(model: GenerativeModel): GeminiClient {
 
     let report: string;
     try {
-      const result = await model.generateContent(prompt);
+      const result = await generate(prompt);
       report = result.response.text();
     } catch (err) {
+      if (err instanceof CostCapExceededError) throw err;
       report = `Series synthesis failed: ${(err as Error).message}`;
     }
 
@@ -247,9 +261,10 @@ export function createGeminiClient(model: GenerativeModel): GeminiClient {
 
     let combinedReport: string;
     try {
-      const result = await model.generateContent(prompt);
+      const result = await generate(prompt);
       combinedReport = result.response.text();
     } catch (err) {
+      if (err instanceof CostCapExceededError) throw err;
       combinedReport = `Evolution analysis failed: ${(err as Error).message}`;
     }
 

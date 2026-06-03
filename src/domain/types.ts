@@ -94,6 +94,7 @@ export interface GraphState {
   evolutionResult?: TemporalAnalysis;
   reportPaths?: string[];
   error?: string;
+  rootContextText?: string;
 }
 
 // ─── CLI Options ──────────────────────────────────────────────────────────────

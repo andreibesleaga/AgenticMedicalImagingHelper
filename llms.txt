@@ -1,0 +1,20 @@
+# AgenticMedicalImagingHelper
+
+> A local CLI medical-imaging analysis tool powered by Google Gemini, using a LangGraph.js fan-out / fan-in graph to analyse image series in parallel and track findings across imaging sessions. Educational use only — not a medical device.
+
+Node + LangGraph.js + `@google/generative-ai`; run with `npm run dev`.
+
+## Docs
+- [README.md](README.md): setup, run, input/output structure, and the disclaimer
+- [docs/PRODUCT.md](docs/PRODUCT.md): product & design summary — requirements, architecture, implementation map
+- [docs/COMPLIANCE.md](docs/COMPLIANCE.md): article-by-article EU AI Act / NIST AI RMF cross-walk (met vs. gap)
+
+## Source
+- [src/main/](src/main/): CLI entry + run-analyze
+- [src/adapters/langgraph-agent.ts](src/adapters/langgraph-agent.ts): the three-node fan-out/fan-in graph
+- [src/application/](src/application/): per-image / per-series / evolution use-cases
+- [src/domain/fairness.ts](src/domain/fairness.ts): demographic-claim fairness probe
+
+## Optional
+- [docs/architecture/](docs/architecture/): threat model + architectural decision records
+- [tests/](tests/): jest unit + E2E suites

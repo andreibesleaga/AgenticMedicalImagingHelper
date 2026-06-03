@@ -10,6 +10,14 @@ A local TypeScript CLI tool that uses Google Gemini AI and LangGraph.js to analy
 
 ⚠️ **DISCLAIMER**: This tool is for **educational and informational purposes only**. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional.
 
+## Product design
+
+See [`docs/PRODUCT.md`](./docs/PRODUCT.md) for the unified PRD / SPEC / user stories / architecture for **AgenticMedicalImagingHelper**.
+
+![Screenshot](./docs/screenshot.png)
+
+---
+
 ---
 
 ## Features
@@ -67,11 +75,10 @@ cd AgenticMedicalImagingHelper
 # Install dependencies
 npm install
 
-# Copy environment template
+# Copy environment template, then edit .env in your editor to set
+# GOOGLE_API_KEY (and optionally GEMINI_MODEL, MAX_CONCURRENCY, LOG_LEVEL).
 cp .env.example .env
-
-# Edit .env and add your API key
-echo "GOOGLE_API_KEY=your-api-key-here" > .env
+$EDITOR .env
 ```
 
 ## Usage
@@ -131,20 +138,38 @@ Options:
 ## Development
 
 ```bash
-# Run tests
+# Run the mocked test suite (default — 85 tests, no network)
 npm test
 
-# Run tests with coverage report
-npm test -- --coverage
+# Same, with coverage report
+npm run test:coverage
+
+# Run the opt-in live test against the real Gemini API (6 tests, real network)
+# Requires GOOGLE_API_KEY (or GEMINI_API_KEY) exported in your environment.
+# Defaults GEMINI_MODEL=gemini-2.5-flash (free-tier quota); override if needed.
+GOOGLE_API_KEY=... npm run test:live
 
 # Type check
 npm run typecheck
 
-# Lint
-npm run lint
+# Lint (treat warnings as errors)
+npm run lint -- --max-warnings 0
+
+# Format (prettier)
+npm run format
 
 # Build
 npm run build
+```
+
+Test layout:
+
+```
+tests/
+├── unit/         # Per-module unit tests (mocked)
+├── e2e/          # Pipeline + CLI scenarios (mocked Gemini, real file I/O)
+├── live/         # Opt-in real-API smoke (excluded from `npm test` by default)
+└── fixtures/     # Synthetic PNGs, mock responses, demographic-skewed context
 ```
 
 ## Docker
@@ -188,7 +213,47 @@ The system uses the **LangGraph Fan-Out/Fan-In** pattern:
 - Images resized to max 1024px before API submission
 - All output includes mandatory medical disclaimer
 
-See [docs/SECURITY_CHECKLIST.md](docs/SECURITY_CHECKLIST.md) for full security audit.
+See [docs/SECURITY_CHECKLIST.md](docs/SECURITY_CHECKLIST.md) for full security audit,
+and [SECURITY.md](SECURITY.md) for the vulnerability-disclosure policy and Gemini
+API-key handling guidance.
+
+## Data handling & privacy
+
+Images you provide are sent to the Google Gemini API for analysis — they leave
+your machine **only** via that API call. The tool stores nothing remotely and
+keeps no telemetry.
+
+- **You must de-identify inputs.** Strip PHI / patient identifiers, including
+  EXIF/DICOM metadata, **before** running. The tool does not do this for you.
+- **Compliance is the operator's responsibility.** If you process real patient
+  data you — not this project — are responsible for **HIPAA** (45 CFR Part 164),
+  **GDPR Art. 9** (special-category health data), and local equivalents. Gemini's
+  data-retention terms are governed by *your* contract with Google.
+- **Cost control.** A single run can fan out to many paid Gemini calls. Set a
+  hard ceiling with a Google Cloud billing quota, and optionally
+  `--max-cost-usd <n>` as a client-side soft cap.
+
+This software is **not a medical device** and must not drive clinical decisions.
+
+## Ethics, alignment, compliance
+
+This project treats governance under regulation as a first-class concern. The project-local artefacts behind that posture:
+
+- [docs/COMPLIANCE.md](docs/COMPLIANCE.md) — 14-row EU AI Act article matrix + 18-row NIST AI RMF function matrix + ISO/IEEE/HIPAA cross-reference + gap roadmap + review cadence.
+- [docs/architecture/decisions/](docs/architecture/decisions/) — four ADRs. **ADR-004** names seven trigger conditions (T1–T7) for migrating from single-model Gemini to a hybrid SLM router (single-model monoculture defense).
+- [src/domain/fairness.ts](src/domain/fairness.ts) — allocative-harm probe: demographic-token list + diagnostic-justifier window heuristic. Exercised by [tests/e2e/fairness.test.ts](tests/e2e/fairness.test.ts) (mocked) and [tests/live/cli-full.test.ts](tests/live/cli-full.test.ts) (real Gemini output).
+- Mandatory `DISCLAIMER` field on every output type, enforced at the TypeScript type level in [src/domain/types.ts](src/domain/types.ts) and asserted as a walk-the-tree hard test in Scenario 8 of [tests/e2e/full-analysis.test.ts](tests/e2e/full-analysis.test.ts).
+
+### Verified status (2026-06-03)
+
+| Gate                                                | Result                                                                                            |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `npm test` (default, 16 suites of mocked tests)     | **124 / 124 pass** — coverage **97.74 % stmts · 92.79 % branches · 95.29 % funcs · 97.90 % lines** |
+| `npm run test:live` (opt-in, real Gemini API)       | requires `GOOGLE_API_KEY`; skipped by default                                                     |
+| `tsc --noEmit`                                       | clean                                                                                             |
+| `eslint src tests`                                  | clean                                                                                             |
+
+Skip behaviour: with no `GOOGLE_API_KEY` / `GEMINI_API_KEY` exported, the live suite passes a guard test and console-warns how to enable the real-API run. Default `npm test` excludes `tests/live/` via `testPathIgnorePatterns`.
 
 ## License
 
