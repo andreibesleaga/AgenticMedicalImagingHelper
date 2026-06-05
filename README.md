@@ -2,7 +2,7 @@
 
 > AI-powered medical image analysis with temporal evolution tracking.
 >
-> First complete project powered by [GABBE](https://github.com/andreibesleaga/GABBE).
+> First project powered by [GABBE](https://github.com/andreibesleaga/GABBE).
 >
 > All project generation flow documents saved in [docs](https://github.com/andreibesleaga/AgenticMedicalImagingHelper/tree/main/docs)
 
