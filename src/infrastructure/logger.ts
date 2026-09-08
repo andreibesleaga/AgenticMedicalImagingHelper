@@ -30,11 +30,17 @@ function resolveLevel(explicit?: LogLevel): LogLevel {
   return (LEVEL_NAMES.has(env) ? env : "silent") as LogLevel;
 }
 
-/** Concrete secret values that must never appear in any log line. */
+/**
+ * Concrete secret values that must never appear in any log line — every
+ * provider key the CLI accepts (`AI_PROVIDER=openrouter` uses
+ * `OPENROUTER_API_KEY`, so omitting it would leak that key verbatim).
+ */
 function secretValues(): string[] {
-  return [process.env.GOOGLE_API_KEY, process.env.GEMINI_API_KEY].filter(
-    (v): v is string => typeof v === "string" && v.length >= 6
-  );
+  return [
+    process.env.GOOGLE_API_KEY,
+    process.env.GEMINI_API_KEY,
+    process.env.OPENROUTER_API_KEY,
+  ].filter((v): v is string => typeof v === "string" && v.length >= 6);
 }
 
 const REDACT_KEYS = new Set([
@@ -44,6 +50,8 @@ const REDACT_KEYS = new Set([
   "google_api_key",
   "geminiapikey",
   "gemini_api_key",
+  "openrouterapikey",
+  "openrouter_api_key",
   "authorization",
   "token",
   "password",
@@ -66,10 +74,7 @@ function redactValue(value: unknown, secrets: string[]): unknown {
   return value;
 }
 
-function redactObject(
-  obj: Record<string, unknown>,
-  secrets: string[]
-): Record<string, unknown> {
+function redactObject(obj: Record<string, unknown>, secrets: string[]): Record<string, unknown> {
   const out: Record<string, unknown> = {};
   for (const [k, v] of Object.entries(obj)) {
     out[k] = REDACT_KEYS.has(k.toLowerCase()) ? "[REDACTED]" : redactValue(v, secrets);

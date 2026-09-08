@@ -12,6 +12,13 @@ This project today calls **a single model**: `gemini-2.5-pro` via the `@google/g
 
 That assumption needs to be made explicit, defensible today, and revisable on signal. This ADR records (a) why a single model is acceptable for the project's current scope and (b) the named triggers that would flip the decision toward a multi-model router.
 
+> **Update 2026-09-08:** `gemini-2.5-pro` was retired for new API keys
+> (HTTP 404 "no longer available to new users", September 2026). The
+> implementation default is now `gemini-2.5-flash`. Read every
+> `gemini-2.5-pro` mention below as "the configured Gemini model" at the time
+> this ADR was written. See the "Trigger fired" note near the end of this
+> document for what actually happened next.
+
 ---
 
 ## Options Considered
@@ -89,15 +96,15 @@ The acceptable-for-now case rests on three facts about the project's _current_ s
 
 This is the part of the decision that matters. The single-model choice is reversible, _if_ we know when to reverse it.
 
-| #      | Trigger                                                                                                                                                                                     | Where the signal comes from                                                      | First step on fire                                                                                               |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **T1** | Fairness regression in [tests/e2e/fairness.test.ts](../../../tests/e2e/fairness.test.ts) fires on a Gemini version bump and the demographic-anchored output is reproducible across two runs | CI; manual reproduction                                                          | Open ADR-005 to scope a second-family fallback for at least the per-image analysis node                          |
-| **T2** | The project pivots from "educational" to any form of clinical-decision support (CE / FDA / SaMD claim)                                                                                      | Roadmap / stakeholder ask                                                        | Adopt Option B immediately; mitigation becomes mandatory under EU AI Act Art. 15 (robustness)                    |
-| **T3** | Gemini quality regression measured across two consecutive model versions on a held-out medical-imaging eval set, ≥ 10% drop on the primary metric                                           | Clinician-graded eval harness (does not yet exist — itself a gap)                | Implement Option C first to quantify the divergence                                                              |
-| **T4** | Gemini outage exceeds 8 hours within a 30-day window, or a regional access restriction blocks the deployment territory                                                                      | Operational alerting (does not yet exist)                                        | Implement Option B with at least one open-weights fallback (LLaVA / Qwen-VL / MedGemma) for graceful degradation |
-| **T5** | Token cost per analysis grows by ≥ 50% across a single pricing change                                                                                                                       | Per-run cost ledger (roadmap item 4 in [COMPLIANCE.md](../../COMPLIANCE.md)) | Implement Option B routing fan-out work to a smaller, cheaper model                                              |
-| **T6** | A second deployer of this codebase adopts it under a different jurisdiction (e.g., EU AI Act Art. 26 deployer obligations attach for Annex III use)                                         | External adoption signal                                                         | Adopt Option B; deployer obligations under Annex III effectively require it                                      |
-| **T7** | A published vulnerability or alignment failure in `gemini-2.5-pro` (or its successors) affects medical-imaging outputs                                                                      | Vendor advisory; CVE; academic disclosure                                        | Hot-swap to Option B on the affected pathway only                                                                |
+| #      | Trigger                                                                                                                                                                                     | Where the signal comes from                                                  | First step on fire                                                                                                               |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| **T1** | Fairness regression in [tests/e2e/fairness.test.ts](../../../tests/e2e/fairness.test.ts) fires on a Gemini version bump and the demographic-anchored output is reproducible across two runs | CI; manual reproduction                                                      | Open [ADR-006](ADR-006-openrouter-second-provider.md) to scope a second-family fallback for at least the per-image analysis node |
+| **T2** | The project pivots from "educational" to any form of clinical-decision support (CE / FDA / SaMD claim)                                                                                      | Roadmap / stakeholder ask                                                    | Adopt Option B immediately; mitigation becomes mandatory under EU AI Act Art. 15 (robustness)                                    |
+| **T3** | Gemini quality regression measured across two consecutive model versions on a held-out medical-imaging eval set, ≥ 10% drop on the primary metric                                           | Clinician-graded eval harness (does not yet exist — itself a gap)            | Implement Option C first to quantify the divergence                                                                              |
+| **T4** | Gemini outage exceeds 8 hours within a 30-day window, or a regional access restriction blocks the deployment territory                                                                      | Operational alerting (does not yet exist)                                    | Implement Option B with at least one open-weights fallback (LLaVA / Qwen-VL / MedGemma) for graceful degradation                 |
+| **T5** | Token cost per analysis grows by ≥ 50% across a single pricing change                                                                                                                       | Per-run cost ledger (roadmap item 4 in [COMPLIANCE.md](../../COMPLIANCE.md)) | Implement Option B routing fan-out work to a smaller, cheaper model                                                              |
+| **T6** | A second deployer of this codebase adopts it under a different jurisdiction (e.g., EU AI Act Art. 26 deployer obligations attach for Annex III use)                                         | External adoption signal                                                     | Adopt Option B; deployer obligations under Annex III effectively require it                                                      |
+| **T7** | A published vulnerability or alignment failure in `gemini-2.5-pro` (or its successors) affects medical-imaging outputs                                                                      | Vendor advisory; CVE; academic disclosure                                    | Hot-swap to Option B on the affected pathway only                                                                                |
 
 If none of these fire and the project remains educational, single-model is the right shape and this ADR holds.
 
@@ -119,6 +126,24 @@ If none of these fire and the project remains educational, single-model is the r
 **Neutral:**
 
 - Option C is held in reserve as a low-cost first move if a clinical pivot is contemplated.
+
+---
+
+## Update 2026-09-08 — Trigger fired
+
+The single-model risk this ADR accepted-but-deferred materialised, though not
+via the fairness probe (T1 as literally written) or the vulnerability
+disclosure (T7): the default Gemini model (`gemini-2.5-pro`) was **retired
+for new API keys** (HTTP 404, September 2026), which is exactly the class of
+vendor-side, single-family exposure this ADR named as the risk of Option A.
+[ADR-006](ADR-006-openrouter-second-provider.md) responded by adding
+**OpenRouter as a second adapter** behind the existing `GeminiClient` port —
+this is the "First step on fire" action for T1/T7 in substance, even though
+the literal trigger condition that fired was neither. Gemini
+(`gemini-2.5-flash`) remains the default; this ADR is not superseded, only
+its evidentiary basis is updated. See [ADR-006](ADR-006-openrouter-second-provider.md)
+for the mechanism and honest limits (no Google Search grounding on the
+OpenRouter path, model-dependent fairness-probe outcomes).
 
 ---
 

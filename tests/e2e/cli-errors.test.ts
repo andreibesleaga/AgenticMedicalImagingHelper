@@ -160,3 +160,67 @@ describe("E2E — CLI error paths", () => {
     });
   });
 });
+
+// ── Provider selection (ADR-006): OpenRouter without key, unknown provider ───
+describe("E2E — CLI error paths: AI_PROVIDER", () => {
+  const KEYS = ["AI_PROVIDER", "OPENROUTER_API_KEY", "GOOGLE_API_KEY", "GEMINI_API_KEY"] as const;
+  const saved: Record<string, string | undefined> = {};
+  let cap: StdioCapture;
+
+  beforeEach(() => {
+    for (const k of KEYS) saved[k] = process.env[k];
+    cap = captureStdio();
+  });
+
+  afterEach(() => {
+    cap.restore();
+    for (const k of KEYS) {
+      if (saved[k] === undefined) delete process.env[k];
+      else process.env[k] = saved[k];
+    }
+  });
+
+  it("AI_PROVIDER=openrouter without OPENROUTER_API_KEY returns exit code 1", async () => {
+    process.env.AI_PROVIDER = "openrouter";
+    delete process.env.OPENROUTER_API_KEY;
+    process.env.GOOGLE_API_KEY = "google-key-must-not-be-used";
+
+    const tmpIn = await fs.mkdtemp(path.join(os.tmpdir(), "e2e-or-in-"));
+    const tmpOut = await fs.mkdtemp(path.join(os.tmpdir(), "e2e-or-out-"));
+    try {
+      const code = await runAnalyze(tmpIn, tmpOut, { concurrency: "5", verbose: false });
+      expect(code).toBe(1);
+      expect(cap.stderr).toMatch(/OPENROUTER_API_KEY/);
+      expect(cap.stderr).not.toMatch(/GOOGLE_API_KEY/);
+      expect(await fs.readdir(tmpOut)).toEqual([]);
+    } finally {
+      await fs.rm(tmpIn, { recursive: true, force: true });
+      await fs.rm(tmpOut, { recursive: true, force: true });
+    }
+  });
+
+  it("AI_PROVIDER=openrouter with a key proceeds past key validation (exit 2 on missing input)", async () => {
+    process.env.AI_PROVIDER = "OpenRouter"; // case-insensitive
+    process.env.OPENROUTER_API_KEY = "sk-or-test-not-used";
+    delete process.env.GOOGLE_API_KEY;
+    delete process.env.GEMINI_API_KEY;
+    const nonexistent = path.join(os.tmpdir(), `does-not-exist-${Date.now()}`);
+
+    const code = await runAnalyze(nonexistent, undefined, { concurrency: "5", verbose: false });
+
+    expect(code).toBe(2);
+    expect(cap.stderr).not.toMatch(/API_KEY/);
+  });
+
+  it("an unknown AI_PROVIDER value returns exit code 1 and names the valid values", async () => {
+    process.env.AI_PROVIDER = "anthropic";
+    process.env.GOOGLE_API_KEY = "k";
+
+    const code = await runAnalyze("/nonexistent", undefined, { concurrency: "5", verbose: false });
+
+    expect(code).toBe(1);
+    expect(cap.stderr).toMatch(/AI_PROVIDER/);
+    expect(cap.stderr).toMatch(/google/);
+    expect(cap.stderr).toMatch(/openrouter/);
+  });
+});

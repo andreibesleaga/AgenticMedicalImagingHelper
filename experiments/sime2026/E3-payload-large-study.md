@@ -1,0 +1,55 @@
+# E3 — request payload after the client's image pre-flight (`large-study`)
+
+- Source: `/tmp/e3-synthetic-oHN8Pg` (synthetic, deterministic — see below)
+- Images: 3
+- Provider / model: `google` / `gemini-2.5-flash` (family `gemini`)
+- Policy: `IMAGE_QUALITY=auto`, long-edge target 1536 px, tile-aligned to 768 px
+- Pipeline: `preparePayload()` imported from `src/infrastructure/image-policy.ts`,
+  i.e. the same code path every analysis request uses.
+- Actions: resized 3
+
+**This measures bytes and estimates tokens; it does not measure diagnosis.**
+Choosing a target resolution changes the image the model reads. The table
+below quantifies transport size, the base64 body the wire carries, and the
+vendor-formula image-token cost of the pixels sent. It is not evidence that a
+resized image supports the same diagnosis as the original. Establishing that
+would require a reader study against ground truth (out of scope here).
+
+| image | original | original px | action | sent | sent px | mime | base64 chars | reduction | img tokens |
+|---|---:|---:|---|---:|---:|---|---:|---:|---:|
+| `synthetic_2500x2500.png` | 9162.6 KiB | 2500×2500 | resized | 2243.9 KiB | 1536×1536 | image/png | 3063728 | 75.5% | 1032 |
+| `synthetic_3000x2500.png` | 11207.5 KiB | 3000×2500 | resized | 1758.2 KiB | 1536×1280 | image/png | 2400524 | 84.3% | 1032 |
+| `synthetic_4000x4000.png` | 24114.1 KiB | 4000×4000 | resized | 1921.9 KiB | 1536×1536 | image/png | 2624032 | 92.0% | 1032 |
+| **total** | **44484.2 KiB** | — | resized 3 | **5924.0 KiB** | — | — | **8088284** | **86.7%** | **3096** |
+
+Totals: 45551868 B on disk → 6066209 B sent (86.7% reduction) → 8088284 base64 characters in the request body (1.333× the payload size).
+
+Estimated image tokens for the pixels sent: **3096** across 3 images. The same images at native resolution would be estimated at 3096 tokens.
+
+For the Gemini family those two numbers are equal above 384 px, and that is
+not a bug in the measurement. Gemini derives its tile count from a crop unit
+of `floor(min(w, h) / 1.5)`, which scales with the image, so above the 384-px
+flat-rate threshold the tile count — and therefore the token cost — depends
+on the aspect ratio alone, not on the resolution. On that path the pre-flight
+buys bytes and latency, not tokens. Families that charge per pixel (Claude,
+Qwen-VL) are where the resolution policy also reduces token cost, and the
+policy sizes for exactly the largest image those providers accept unscaled.
+
+A **negative** reduction would mean the pre-flight made the payload *larger*.
+That is what the previous unconditional `resize(1024).png()` did to small,
+already well-compressed inputs such as the 224-px NIH derivative: the resize
+was a no-op and only the re-encode applied, at settings that need not match
+the source encoder's. The current policy detects that case and forwards the
+original bytes untouched (`action: passthrough`), so the floor is now 0 %.
+
+Per-image decisions:
+
+- `synthetic_2500x2500.png` — resized (target 1536 px): long edge 2500px > target 1536px
+- `synthetic_3000x2500.png` — resized (target 1536 px): long edge 3000px > target 1536px
+- `synthetic_4000x4000.png` — resized (target 1536 px): long edge 4000px > target 1536px
+
+Synthetic inputs: 8-bit greyscale, diagonal gradient plus seeded uniform noise,
+at 2500×2500, 3000×2500, 4000×4000. They stand in for
+large-plate studies so the reduction can be measured without clinical data.
+They are *not* radiographs and carry no anatomy; only their compressibility is
+meant to be representative.

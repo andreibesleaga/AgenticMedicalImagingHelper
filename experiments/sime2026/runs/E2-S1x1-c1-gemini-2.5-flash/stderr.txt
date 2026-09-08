@@ -1,0 +1,14 @@
+[medical-imaging] Scanning input directory: /home/andrei/work/AI/nih-cxr14/input/E2/S1x1
+[medical-imaging] Found 1 series with 1 images total
+[medical-imaging] Root context file loaded: patient_context.txt
+[medical-imaging] Starting agentic analysis pipeline...
+{"level":"info","time":"2026-09-08T10:38:15.818Z","event":"node:enter","node":"analyzeImages"}
+[medical-imaging] Gemini call 1: +578 in / 2659 out tokens, est. cumulative $0.0068
+{"level":"info","time":"2026-09-08T10:38:33.050Z","event":"node:exit","node":"analyzeImages","status":"ok","durationMs":17232}
+{"level":"info","time":"2026-09-08T10:38:33.057Z","event":"node:enter","node":"aggregateSeries"}
+[medical-imaging] Gemini call 2: +1758 in / 859 out tokens, est. cumulative $0.0095
+{"level":"info","time":"2026-09-08T10:38:38.129Z","event":"node:exit","node":"aggregateSeries","status":"ok","durationMs":5072}
+{"level":"info","time":"2026-09-08T10:38:38.134Z","event":"node:enter","node":"analyzeEvolution"}
+{"level":"info","time":"2026-09-08T10:38:38.135Z","event":"node:exit","node":"analyzeEvolution","status":"ok","durationMs":1}
+[medical-imaging] Writing reports to output directory...
+[medical-imaging] Estimated Gemini cost: $0.0095 over 2 call(s) (2336 in / 3518 out tokens incl. thinking; model gemini-2.5-flash at $0.3/$2.5 per 1M; estimate only — provider invoice is authoritative)

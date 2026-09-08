@@ -23,6 +23,15 @@ C4Context
   Rel(gemini, cli, "Returns structured analysis", "JSON / Markdown text")
 ```
 
+> **Update 2026-09-08:** this diagram source (and the `docs/context.png` it
+> renders to) predates [ADR-006](architecture/decisions/ADR-006-openrouter-second-provider.md).
+> `gemini-2.5-pro` was retired for new API keys (HTTP 404, September 2026);
+> the current default is `gemini-2.5-flash`, and an optional **OpenRouter**
+> adapter now implements the same port alongside Gemini. The diagram is left
+> as-is rather than regenerated — read `System_Ext(gemini, ...)` as "the
+> configured default provider" and note that a second `System_Ext` for
+> OpenRouter is not yet drawn.
+
 ---
 
 ## 2. Container Diagram (C4 Level 2)
@@ -53,6 +62,15 @@ C4Container
   Rel(scanner, fs, "Read")
   Rel(report_writer, fs, "Write")
 ```
+
+> **Update 2026-09-08:** this diagram source (and the `docs/components.png` /
+> `docs/runtime.png` it feeds, together with `docs/context.png` above)
+> predates [ADR-006](architecture/decisions/ADR-006-openrouter-second-provider.md)
+> in the same way: `gemini-2.5-pro` is retired for new API keys, the default
+> is now `gemini-2.5-flash`, and an OpenRouter client
+> (`src/infrastructure/openrouter-client.ts`) now sits behind the same
+> `Gemini Client` port shown above. Not regenerated; see ADR-006 for the
+> current shape.
 
 ---
 
@@ -283,20 +301,21 @@ output/
 
 ## 9. Error Handling Strategy
 
-| Error | Action | Exit Code |
-|---|---|---|
-| `GOOGLE_API_KEY` not set | Log error + exit | 1 |
-| Input directory not found | Log error + exit | 1 |
-| No images found in input | Log warning + exit | 1 |
-| Single image API failure | Log error, set `status: "error"` in JSON, continue | — (no exit) |
-| All images in series fail | Log error, skip series aggregation | — (no exit) |
-| Unrecoverable LangGraph error | Log error + exit | 2 |
+| Error                         | Action                                             | Exit Code   |
+| ----------------------------- | -------------------------------------------------- | ----------- |
+| `GOOGLE_API_KEY` not set      | Log error + exit                                   | 1           |
+| Input directory not found     | Log error + exit                                   | 1           |
+| No images found in input      | Log warning + exit                                 | 1           |
+| Single image API failure      | Log error, set `status: "error"` in JSON, continue | — (no exit) |
+| All images in series fail     | Log error, skip series aggregation                 | — (no exit) |
+| Unrecoverable LangGraph error | Log error + exit                                   | 2           |
 
 ---
 
 ## 10. Architecture Decision Records (ADRs)
 
 See:
+
 - [ADR-001: LangGraph.js for orchestration](architecture/decisions/ADR-001-langgraph-orchestration.md)
 - [ADR-002: Gemini Google Search Grounding](architecture/decisions/ADR-002-gemini-search-grounding.md)
 - [ADR-003: sharp for image preprocessing](architecture/decisions/ADR-003-image-preprocessing.md)
@@ -311,15 +330,15 @@ See: [docs/architecture/THREAT_MODEL.md](architecture/THREAT_MODEL.md)
 
 ## 12. Approval
 
-| Role | Name | Status | Date |
-|---|---|---|---|
-| Product | Human (project owner) | **PENDING** | — |
-| Engineering | Claude Code | APPROVED | 2026-02-25 |
-| Security | Claude Code | APPROVED (threat model embedded) | 2026-02-25 |
+| Role        | Name                  | Status                           | Date       |
+| ----------- | --------------------- | -------------------------------- | ---------- |
+| Product     | Human (project owner) | **PENDING**                      | —          |
+| Engineering | Claude Code           | APPROVED                         | 2026-02-25 |
+| Security    | Claude Code           | APPROVED (threat model embedded) | 2026-02-25 |
 
 **Human approval required before proceeding to S03 Specification.**
 
 ---
 
-*Created by: Claude Code (arch-design.skill) | 2026-02-25*
-*GABBE SDLC Phase: S02 — Design*
+_Created by: Claude Code (arch-design.skill) | 2026-02-25_
+_GABBE SDLC Phase: S02 — Design_

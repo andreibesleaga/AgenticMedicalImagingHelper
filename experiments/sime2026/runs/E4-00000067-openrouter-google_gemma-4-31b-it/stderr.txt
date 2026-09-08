@@ -1,0 +1,20 @@
+[medical-imaging] Scanning input directory: /home/andrei/work/AI/nih-cxr14/input/E4/00000067
+[medical-imaging] Found 3 series with 3 images total
+[medical-imaging] Root context file loaded: patient_context.txt
+[medical-imaging] Starting agentic analysis pipeline...
+{"level":"info","time":"2026-09-08T14:18:59.460Z","event":"node:enter","node":"analyzeImages"}
+[medical-imaging] OpenRouter call 1: +674 in / 48 out tokens, est. cumulative $0.0019 (provider-reported $0.0005)
+[medical-imaging] OpenRouter call 2: +674 in / 3 out tokens, est. cumulative $0.0033 (provider-reported $0.0011)
+[medical-imaging] OpenRouter call 3: +674 in / 52 out tokens, est. cumulative $0.0053 (provider-reported $0.0016)
+{"level":"info","time":"2026-09-08T14:19:02.568Z","event":"node:exit","node":"analyzeImages","status":"ok","durationMs":3108}
+{"level":"info","time":"2026-09-08T14:19:02.575Z","event":"node:enter","node":"aggregateSeries"}
+[medical-imaging] OpenRouter call 4: +378 in / 3 out tokens, est. cumulative $0.0061 (provider-reported $0.0019)
+[medical-imaging] OpenRouter call 5: +333 in / 13 out tokens, est. cumulative $0.0069 (provider-reported $0.0021)
+[medical-imaging] OpenRouter call 6: +381 in / 85 out tokens, est. cumulative $0.0087 (provider-reported $0.0025)
+{"level":"info","time":"2026-09-08T14:19:04.519Z","event":"node:exit","node":"aggregateSeries","status":"ok","durationMs":1944}
+{"level":"info","time":"2026-09-08T14:19:04.525Z","event":"node:enter","node":"analyzeEvolution"}
+[medical-imaging] OpenRouter call 7: +499 in / 32 out tokens, est. cumulative $0.0101 (provider-reported $0.0029)
+{"level":"info","time":"2026-09-08T14:19:05.071Z","event":"node:exit","node":"analyzeEvolution","status":"ok","durationMs":546}
+[medical-imaging] Writing reports to output directory...
+[medical-imaging] Estimated OpenRouter cost: $0.0101 over 7 call(s) (3613 in / 236 out tokens incl. thinking; provider openrouter, model google/gemma-4-31b-it at $2/$12 per 1M; estimate only — provider invoice is authoritative; provider-reported $0.0029)
+[medical-imaging] Run manifest written: /home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime2026/runs/E4-00000067-openrouter-google_gemma-4-31b-it/output/run_manifest.json

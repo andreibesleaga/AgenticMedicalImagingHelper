@@ -15,7 +15,10 @@ beforeAll(async () => {
   await fs.mkdir(path.join(tmpDir, "series_1"));
   await fs.writeFile(path.join(tmpDir, "series_1", "image_001.png"), "PNG");
   await fs.writeFile(path.join(tmpDir, "series_1", "image_002.jpg"), "JPG");
-  await fs.writeFile(path.join(tmpDir, "series_1", "ignored.dicom"), "DICOM");
+  // An unsupported-but-harmless extension: collected by neither the image nor
+  // the context list. (DICOM is no longer merely ignored — it is refused; see
+  // tests/unit/infrastructure/file-scanner-limits.test.ts.)
+  await fs.writeFile(path.join(tmpDir, "series_1", "ignored.bmp"), "BMP");
   await fs.writeFile(path.join(tmpDir, "series_1", "context.txt"), "Patient notes");
 
   // Create series_2 with only images (no context)
@@ -55,7 +58,7 @@ describe("scanInputDirectory", () => {
     const basenames = series1.imagePaths.map((p) => path.basename(p));
     expect(basenames).toContain("image_001.png");
     expect(basenames).toContain("image_002.jpg");
-    expect(basenames).not.toContain("ignored.dicom");
+    expect(basenames).not.toContain("ignored.bmp");
   });
 
   it("detects .txt context file in series folder", async () => {

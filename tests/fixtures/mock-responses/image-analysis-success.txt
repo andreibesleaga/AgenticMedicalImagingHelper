@@ -1,4 +1,24 @@
-### 1. Image Type & Region
-- Modality: X-ray
-### 2. Key Findings
-- Clear lung fields
+{
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA and lateral)",
+  "quality": "Good",
+  "findings": [
+    "Lung fields are clear with no focal consolidation",
+    "Cardiothoracic ratio within normal limits",
+    "No pleural effusion or pneumothorax",
+    "Costophrenic angles are sharp"
+  ],
+  "abnormalities": [
+    {
+      "name": "Mild basal atelectasis",
+      "description": "Thin band of subsegmental atelectasis at the left lung base, unchanged in appearance",
+      "severity": "Mild",
+      "confidence": 62
+    }
+  ],
+  "summary": "The chest image looks essentially normal. There is a small area at the bottom of the left lung where the tissue is slightly less inflated than usual, which is common and usually not a concern on its own.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK559091/",
+    "https://radiopaedia.org/articles/atelectasis"
+  ]
+}

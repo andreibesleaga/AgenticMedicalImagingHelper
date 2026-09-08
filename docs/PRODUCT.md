@@ -28,16 +28,16 @@ The functional + non-functional spec is in [`docs/SPEC.md`](./SPEC.md). Key surf
 
 ## 4. User Stories
 
-1. *As a clinician-developer, I want each image analysed in parallel so that multi-series cases don't serialise into long latency.*
+1. _As a clinician-developer, I want each image analysed in parallel so that multi-series cases don't serialise into long latency._
    - Given a case with several series, when the graph runs `analyzeImages`, all images are analysed concurrently under a `p-limit` cap and merged per series in `aggregateSeries`.
 
-2. *As a clinician-developer, I want temporal evolution surfaced so that progression across sessions is explicit.*
+2. _As a clinician-developer, I want temporal evolution surfaced so that progression across sessions is explicit._
    - Given series from different dates, when `analyzeEvolution` runs, it reports each finding as Improving / Stable / Worsening in the combined evolution report.
 
-3. *As a reviewer, I want every output to be a plain inspectable file so that a qualified professional can review it before any clinical use.*
+3. _As a reviewer, I want every output to be a plain inspectable file so that a qualified professional can review it before any clinical use._
    - Given a completed run, the tool writes per-image JSON, per-series Markdown, and a combined report under `output/`; nothing is auto-actioned — the README disclaimer makes human review mandatory.
 
-4. *As a compliance reader, I want the regulatory posture written down so that the project can be assessed against the EU AI Act.*
+4. _As a compliance reader, I want the regulatory posture written down so that the project can be assessed against the EU AI Act._
    - Given `docs/COMPLIANCE.md`, the EU AI Act article matrix and NIST AI RMF cross-walk document where the project meets, partially meets, or defers each requirement.
 
 ## 5. Architecture
@@ -54,23 +54,31 @@ The functional + non-functional spec is in [`docs/SPEC.md`](./SPEC.md). Key surf
 
 ![Components](components.png)
 
+> **Diagram currency (2026-09-08):** these three diagrams were generated from
+> `docs/PLAN.md` §1–§2 when the default model was `gemini-2.5-pro` and Gemini
+> was the only provider. They have not been regenerated. The current default
+> model is `gemini-2.5-flash` (`gemini-2.5-pro` is no longer available to new
+> API keys), and an optional OpenRouter second-provider adapter now
+> implements the same port — see
+> [ADR-006](./architecture/decisions/ADR-006-openrouter-second-provider.md).
+
 For the threat model and ADRs see [`docs/architecture/`](./architecture/).
 
 ## 6. Implementation Map
 
-| Capability | Implementation |
-| ---------- | -------------- |
-| Fan-out / fan-in | `analyzeImages` → `aggregateSeries` nodes in `src/adapters/langgraph-agent.ts` |
-| Temporal evolution analysis | `analyzeEvolution` node + `src/application/analyze-evolution.use-case.ts` |
-| EU AI Act Annex III framing | `docs/COMPLIANCE.md` cross-walk |
-| Single-model monoculture risk | `docs/architecture/decisions/ADR-004-single-model-monoculture-risk.md` |
-| Fairness logic | `src/domain/fairness.ts` |
+| Capability                    | Implementation                                                                 |
+| ----------------------------- | ------------------------------------------------------------------------------ |
+| Fan-out / fan-in              | `analyzeImages` → `aggregateSeries` nodes in `src/adapters/langgraph-agent.ts` |
+| Temporal evolution analysis   | `analyzeEvolution` node + `src/application/analyze-evolution.use-case.ts`      |
+| EU AI Act Annex III framing   | `docs/COMPLIANCE.md` cross-walk                                                |
+| Single-model monoculture risk | `docs/architecture/decisions/ADR-004-single-model-monoculture-risk.md`         |
+| Fairness logic                | `src/domain/fairness.ts`                                                       |
 
 ## 7. Summary
 
-This project is an **ethical-deployment exemplar**: a real LangGraph application whose repo artefacts (compliance cross-walk, ADRs, threat model) make its governance posture inspectable. It is intentionally larger than most example projects because it treats *governance under regulation* as a first-class concern.
+This project is an **ethical-deployment exemplar**: a real LangGraph application whose repo artefacts (compliance cross-walk, ADRs, threat model) make its governance posture inspectable. It is intentionally larger than most example projects because it treats _governance under regulation_ as a first-class concern.
 
-> **Note:** HITL sign-off and a hash-chained audit trail are discussed in `COMPLIANCE.md` as part of the regulatory *target state*; they are not implemented in the current three-node graph. Keep PRODUCT.md describing what the code does today.
+> **Note:** HITL sign-off and a hash-chained audit trail are discussed in `COMPLIANCE.md` as part of the regulatory _target state_; they are not implemented in the current three-node graph. Keep PRODUCT.md describing what the code does today.
 
 ## 8. References
 

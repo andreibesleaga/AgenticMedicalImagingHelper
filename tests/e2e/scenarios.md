@@ -20,6 +20,7 @@
 **When**: `medical-imaging analyze ./input ./output` runs with mocked Gemini API
 
 **Then**:
+
 - `output/series_1/test_image_1_analysis.json` exists and has `status: "success"`
 - `output/series_1/test_image_2_analysis.json` exists and has `status: "success"`
 - `output/series_1/test_image_3_analysis.json` exists and has `status: "success"`
@@ -38,6 +39,7 @@
 **When**: `medical-imaging analyze ./input ./output` runs
 
 **Then**:
+
 - All 4 `*_analysis.json` files exist in correct subdirectories
 - Both `series_summary.md` files exist
 - `output/evolution_analysis.json` exists with `seriesCount: 2` and `progression` ≠ "SingleSeries"
@@ -54,6 +56,7 @@
 **When**: Analysis runs for series_1
 
 **Then**:
+
 - `output/series_1/series_summary.md` has `textContextUsed: true` in the corresponding JSON
 - The Gemini `synthesizeSeries` call was invoked with prompt containing `<context>` tags
 - The synthesis prompt includes "Patient has known COPD" (verifiable via mock call assertion)
@@ -69,6 +72,7 @@
 **When**: Analysis runs
 
 **Then**:
+
 - `output/series_1/test_image_1_analysis.json` has `status: "success"`
 - `output/series_1/test_image_2_analysis.json` has `status: "error"` and `errorMessage` set
 - `output/series_1/test_image_3_analysis.json` has `status: "success"`
@@ -86,6 +90,7 @@
 **When**: `medical-imaging analyze ./input` runs
 
 **Then**:
+
 - Process exits with code 1
 - stderr contains "GOOGLE_API_KEY is required"
 - No files are created in output/
@@ -101,6 +106,7 @@
 **When**: `medical-imaging analyze ./nonexistent-dir` runs
 
 **Then**:
+
 - Process exits with code 2 (per the README exit-code table; "Input directory not found or unreadable")
 - stderr contains descriptive error message about directory not found
 
@@ -115,6 +121,7 @@
 **When**: `medical-imaging analyze ./input --series series_1,series_3`
 
 **Then**:
+
 - `output/series_1/` and `output/series_3/` created and populated
 - `output/series_2/` does NOT exist
 - Evolution analysis covers only series_1 and series_3
@@ -130,6 +137,7 @@
 **When**: Any `.md` output file is checked
 
 **Then**:
+
 - File contains the string "educational purposes only"
 - All JSON files contain `"disclaimer"` field with non-empty value
 
@@ -150,14 +158,21 @@ tests/fixtures/
 │   ├── test_image_1.png
 │   └── test_image_2.png
 └── mock-responses/
-    ├── image-analysis-success.txt   <- Sample Gemini response
-    ├── series-synthesis.txt         <- Sample synthesis response
-    └── evolution-analysis.txt       <- Sample evolution response
+    ├── image-analysis-success.txt   <- Sample model response (JSON, ParsedImageResponseSchema)
+    ├── series-synthesis.txt         <- Sample synthesis response (JSON, ParsedSeriesResponseSchema)
+    └── evolution-analysis.txt       <- Sample evolution response (JSON, ParsedEvolutionResponseSchema)
 ```
+
+Since the pipeline asks each stage for one JSON object and validates it with
+Zod, the mock responses are valid JSON for their schema. They are consumed by
+`tests/unit/domain/structured-output.test.ts` (schema golden paths) and by
+Scenario 9 in `tests/e2e/full-analysis.test.ts` (end-to-end through the real
+client). They contain no demographic wording, so the fairness probe stays at
+zero detections when they flow through the pipeline.
 
 Synthetic PNG files can be generated in `beforeAll()` using `sharp` or `fs.writeFileSync` with a valid minimal PNG byte sequence.
 
 ---
 
-*Created by: Claude Code (spec-writer.skill) | 2026-02-25*
-*GABBE SDLC Phase: S03 — Specification*
+_Created by: Claude Code (spec-writer.skill) | 2026-02-25_
+_GABBE SDLC Phase: S03 — Specification_

@@ -3,9 +3,17 @@
  *
  * Token counts come from the real `usageMetadata` returned by the Gemini SDK
  * response — they are authoritative. The USD figure is an **estimate**: it is
- * `tokens × price`, where the price defaults to published Gemini 2.5 Pro rates
- * and is overridable via env. The provider's billing invoice is the only
- * authoritative cost; this meter is a client-side guard-rail, not an accountant.
+ * `tokens × price`, where the price comes from a small table of published Gemini
+ * rates keyed by model name (see {@link defaultGeminiPricing}) and is
+ * overridable via env. Output tokens include the model's *thinking* tokens
+ * (`thoughtsTokenCount`), because Google bills them at the output rate. The
+ * provider's billing invoice is the only authoritative cost; this meter is a
+ * client-side guard-rail, not an accountant.
+ *
+ * Some providers (OpenRouter, via `usage.cost`) report the charge for each call
+ * themselves. When present it is accumulated separately as
+ * `providerReportedUsd` and shown next to the estimate; the cap logic stays on
+ * the estimate so behaviour is identical across providers.
  *
  * The cap is enforced *after* each call completes (you cannot know a call's cost
  * before making it), so `--max-cost-usd` bounds the run by stopping the *next*
@@ -16,7 +24,14 @@
 export interface TokenUsage {
   promptTokenCount?: number;
   candidatesTokenCount?: number;
+  /** Reasoning ("thinking") tokens — billed as output tokens by Google. */
+  thoughtsTokenCount?: number;
   totalTokenCount?: number;
+  /**
+   * Authoritative per-call charge in USD reported by the provider itself
+   * (OpenRouter `usage.cost`). Absent for the Gemini SDK, which reports tokens only.
+   */
+  providerCostUsd?: number;
 }
 
 export interface GeminiPricing {
@@ -34,13 +49,31 @@ function envNumber(name: string, fallback: number): number {
 }
 
 /**
- * Default published Gemini 2.5 Pro pricing (USD / 1M tokens), overridable via
- * `GEMINI_INPUT_USD_PER_1M` / `GEMINI_OUTPUT_USD_PER_1M`. Treat as an estimate.
+ * Published standard-tier Gemini prices (USD per 1M tokens, prompts ≤ 200k
+ * tokens), as listed on https://ai.google.dev/gemini-api/docs/pricing
+ * (page last updated 2026-09-04). Output prices include thinking tokens.
  */
-export function defaultGeminiPricing(): GeminiPricing {
+export const GEMINI_PRICE_TABLE: Readonly<Record<string, GeminiPricing>> = {
+  "gemini-2.5-flash": { inputUsdPerMillion: 0.3, outputUsdPerMillion: 2.5 },
+  "gemini-2.5-pro": { inputUsdPerMillion: 1.25, outputUsdPerMillion: 10 },
+  "gemini-3.1-pro-preview": { inputUsdPerMillion: 2, outputUsdPerMillion: 12 },
+  "gemini-3.5-flash": { inputUsdPerMillion: 1.5, outputUsdPerMillion: 9 },
+};
+
+/** Conservative fallback for models not in the table (highest rate we know). */
+const FALLBACK_PRICING: GeminiPricing = { inputUsdPerMillion: 2, outputUsdPerMillion: 12 };
+
+/**
+ * Pricing for `model` from {@link GEMINI_PRICE_TABLE}; unknown models fall back
+ * to the most expensive known rate so the cap trips early rather than late.
+ * `GEMINI_INPUT_USD_PER_1M` / `GEMINI_OUTPUT_USD_PER_1M` override either
+ * component. Treat as an estimate.
+ */
+export function defaultGeminiPricing(model?: string): GeminiPricing {
+  const base = (model !== undefined && GEMINI_PRICE_TABLE[model]) || FALLBACK_PRICING;
   return {
-    inputUsdPerMillion: envNumber("GEMINI_INPUT_USD_PER_1M", 1.25),
-    outputUsdPerMillion: envNumber("GEMINI_OUTPUT_USD_PER_1M", 10),
+    inputUsdPerMillion: envNumber("GEMINI_INPUT_USD_PER_1M", base.inputUsdPerMillion),
+    outputUsdPerMillion: envNumber("GEMINI_OUTPUT_USD_PER_1M", base.outputUsdPerMillion),
   };
 }
 
@@ -63,6 +96,8 @@ export interface CostCallInfo {
   lastInputTokens: number;
   lastOutputTokens: number;
   cumulativeUsd: number;
+  /** Cumulative provider-reported USD; `undefined` until a call reports one. */
+  providerReportedUsd?: number;
 }
 
 export interface CostSummary {
@@ -70,6 +105,8 @@ export interface CostSummary {
   inputTokens: number;
   outputTokens: number;
   estimatedUsd: number;
+  /** Sum of provider-reported charges (USD); `undefined` if no call reported one. */
+  providerReportedUsd?: number;
 }
 
 /**
@@ -83,6 +120,7 @@ export class CostMeter {
   private inputTokens = 0;
   private outputTokens = 0;
   private callCount = 0;
+  private providerUsd: number | undefined;
 
   constructor(
     private readonly maxCostUsd?: number,
@@ -96,10 +134,16 @@ export class CostMeter {
    */
   record(usage: TokenUsage | undefined): void {
     const lastInputTokens = usage?.promptTokenCount ?? 0;
-    const lastOutputTokens = usage?.candidatesTokenCount ?? 0;
+    // Thinking tokens are billed as output tokens, so they count toward the cap.
+    const lastOutputTokens = (usage?.candidatesTokenCount ?? 0) + (usage?.thoughtsTokenCount ?? 0);
     this.inputTokens += lastInputTokens;
     this.outputTokens += lastOutputTokens;
     this.callCount += 1;
+
+    const reported = usage?.providerCostUsd;
+    if (typeof reported === "number" && Number.isFinite(reported)) {
+      this.providerUsd = (this.providerUsd ?? 0) + reported;
+    }
 
     const cumulativeUsd = this.estimatedUsd();
     this.onCall?.({
@@ -107,6 +151,7 @@ export class CostMeter {
       lastInputTokens,
       lastOutputTokens,
       cumulativeUsd,
+      providerReportedUsd: this.providerUsd,
     });
 
     if (this.maxCostUsd !== undefined && cumulativeUsd > this.maxCostUsd) {
@@ -128,6 +173,7 @@ export class CostMeter {
       inputTokens: this.inputTokens,
       outputTokens: this.outputTokens,
       estimatedUsd: this.estimatedUsd(),
+      providerReportedUsd: this.providerUsd,
     };
   }
 }

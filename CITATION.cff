@@ -1,0 +1,61 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the paper below."
+title: "AgenticMedicalImagingHelper"
+abstract: >-
+  A research and educational TypeScript CLI that orchestrates a multimodal
+  model (Google Gemini by default, OpenRouter optionally) with LangGraph.js to
+  analyse series of medical images and track how findings evolve across imaging
+  sessions. It includes a deterministic fairness probe and an EU AI Act /
+  NIST AI RMF governance matrix. Not a medical device; not clinically
+  validated; outputs are experimental and are not clinical recommendations.
+type: software
+authors:
+  - family-names: "Beșleagă"
+    given-names: "Andrei N."
+    email: "andrei.besleaga@ieee.org"
+license: GPL-3.0
+repository-code: "https://github.com/andreibesleaga/AgenticMedicalImagingHelper"
+url: "https://github.com/andreibesleaga/AgenticMedicalImagingHelper"
+version: "1.0.0"
+keywords:
+  - agentic-ai
+  - medical-imaging
+  - multimodal
+  - langgraph
+  - fairness
+  - ai-governance
+  - eu-ai-act
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20762929"
+    description: "Preprint of the SIME 2026 paper describing this reference implementation"
+preferred-citation:
+  type: conference-paper
+  title: >-
+    Agentic Multimodal Architectures for Medical Imaging: Orchestration,
+    Deterministic Fairness Probing, and Governance
+  authors:
+    - family-names: "Beșleagă"
+      given-names: "Andrei N."
+      email: "andrei.besleaga@ieee.org"
+  year: 2026
+  month: 11
+  collection-title: >-
+    Proceedings of the IEEE International Conference on Smart Innovations for
+    Medicine and Engineering (SIME 2026)
+  collection-type: proceedings
+  conference:
+    name: >-
+      IEEE International Conference on Smart Innovations for Medicine and
+      Engineering (SIME 2026)
+    city: "Sousse"
+    country: TN
+    date-start: "2026-11-02"
+    date-end: "2026-11-04"
+  publisher:
+    name: "IEEE"
+  identifiers:
+    - type: doi
+      value: "10.5281/zenodo.20762929"
+      description: "Preprint DOI (Zenodo)"
+  notes: "To appear in IEEE Xplore."

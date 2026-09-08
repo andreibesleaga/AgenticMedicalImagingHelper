@@ -127,18 +127,18 @@ THE SYSTEM SHALL NOT expose raw stack traces to the user — errors must be caug
 
 ## 5. Acceptance Criteria
 
-| ID | Given | When | Then |
-|---|---|---|---|
-| AC-01 | `input/series_1/` contains 3 PNG images | `medical-imaging analyze ./input ./output` runs | `output/series_1/` contains 3 `*_analysis.json` files and `series_summary.md` |
-| AC-02 | `input/` contains 2 series folders | Analysis completes | `output/combined_diagnostic_report.md` and `output/evolution_analysis.json` exist |
-| AC-03 | `input/series_1/context.txt` exists | Series 1 is synthesized | The synthesis Gemini prompt includes the text file contents wrapped in `<context>` tags |
-| AC-04 | `GOOGLE_API_KEY` is not set | CLI starts | Process exits with code 1 and message "GOOGLE_API_KEY is required" |
-| AC-05 | `input/` does not exist | CLI runs | Process exits with code 1 and descriptive message |
-| AC-06 | One image in a batch returns a Gemini API error | Batch runs | That image's JSON shows `"status": "error"`, all other images complete successfully |
-| AC-07 | 6 images exist across 2 series | Analysis runs | Gemini API is called at most `MAX_CONCURRENCY` times concurrently (verified by test mock) |
-| AC-08 | `--verbose` flag is set | Analysis runs | Each image's start and completion are logged to stdout |
-| AC-09 | `--series series_1` flag is set | Analysis runs | Only series_1 is processed; series_2 is skipped |
-| AC-10 | Any output `.md` file is generated | — | File contains "This analysis is AI-generated for educational purposes only" |
+| ID    | Given                                           | When                                            | Then                                                                                      |
+| ----- | ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| AC-01 | `input/series_1/` contains 3 PNG images         | `medical-imaging analyze ./input ./output` runs | `output/series_1/` contains 3 `*_analysis.json` files and `series_summary.md`             |
+| AC-02 | `input/` contains 2 series folders              | Analysis completes                              | `output/combined_diagnostic_report.md` and `output/evolution_analysis.json` exist         |
+| AC-03 | `input/series_1/context.txt` exists             | Series 1 is synthesized                         | The synthesis Gemini prompt includes the text file contents wrapped in `<context>` tags   |
+| AC-04 | `GOOGLE_API_KEY` is not set                     | CLI starts                                      | Process exits with code 1 and message "GOOGLE_API_KEY is required"                        |
+| AC-05 | `input/` does not exist                         | CLI runs                                        | Process exits with code 1 and descriptive message                                         |
+| AC-06 | One image in a batch returns a Gemini API error | Batch runs                                      | That image's JSON shows `"status": "error"`, all other images complete successfully       |
+| AC-07 | 6 images exist across 2 series                  | Analysis runs                                   | Gemini API is called at most `MAX_CONCURRENCY` times concurrently (verified by test mock) |
+| AC-08 | `--verbose` flag is set                         | Analysis runs                                   | Each image's start and completion are logged to stdout                                    |
+| AC-09 | `--series series_1` flag is set                 | Analysis runs                                   | Only series_1 is processed; series_2 is skipped                                           |
+| AC-10 | Any output `.md` file is generated              | —                                               | File contains "This analysis is AI-generated for educational purposes only"               |
 
 ---
 
@@ -161,6 +161,7 @@ Output Directory:
 ```
 
 Key data structures (TypeScript — full spec in SPEC.md):
+
 - `ImageAnalysis`: imagePath, seriesId, modality, anatomyRegion, quality, findings[], abnormalities[], summary, rawResponse
 - `SeriesSummary`: seriesId, imageCount, consistentFindings[], primaryDiagnosis, differentialDiagnoses[], textContextUsed, report
 - `TemporalAnalysis`: seriesCount, progression, trends[], forecastedEvolution, treatmentRecommendations[], combinedReport
@@ -184,7 +185,7 @@ Options:
 
 Environment:
   GOOGLE_API_KEY     Required: Google AI Studio API key
-  GEMINI_MODEL       Optional: model name (default: gemini-2.5-pro)
+  GEMINI_MODEL       Optional: model name (default: gemini-2.5-flash)
   MAX_CONCURRENCY    Optional: max concurrent calls (overridden by --concurrency)
 
 Exit Codes:
@@ -200,6 +201,7 @@ Exit Codes:
 **Interface**: Terminal CLI only — no web UI.
 
 **Key interactions:**
+
 - On start: display banner with disclaimer + config summary
 - During processing: spinner + progress counter (`[3/20] Analyzing series_2/image_003.png...`)
 - On completion: summary table (series → image count → status → output path)
@@ -211,15 +213,22 @@ Exit Codes:
 
 ## 9. Non-Functional Requirements
 
-| Category | Requirement |
-|---|---|
-| **Performance** | 20 images across 2 series processed in ≤5 minutes (API latency limited) |
-| **Concurrency** | Up to 5 concurrent Gemini Vision API calls (configurable) |
-| **Availability** | Local tool — no uptime SLO; graceful degradation on API failures |
-| **Security** | GOOGLE_API_KEY never logged; input paths validated to prevent traversal |
-| **Accuracy** | Use gemini-2.5-pro (highest available Gemini vision capability) + Google Search grounding |
-| **Scalability** | Must handle 100+ images without OOM; stream-process large batches |
-| **Portability** | Runs on Linux, macOS, Windows (Node.js 20+); Docker option provided |
+| Category         | Requirement                                                                               |
+| ---------------- | ----------------------------------------------------------------------------------------- |
+| **Performance**  | 20 images across 2 series processed in ≤5 minutes (API latency limited)                   |
+| **Concurrency**  | Up to 5 concurrent Gemini Vision API calls (configurable)                                 |
+| **Availability** | Local tool — no uptime SLO; graceful degradation on API failures                          |
+| **Security**     | GOOGLE_API_KEY never logged; input paths validated to prevent traversal                   |
+| **Accuracy**     | Use gemini-2.5-pro (highest available Gemini vision capability) + Google Search grounding |
+| **Scalability**  | Must handle 100+ images without OOM; stream-process large batches                         |
+| **Portability**  | Runs on Linux, macOS, Windows (Node.js 20+); Docker option provided                       |
+
+> **Update 2026-09-08:** `gemini-2.5-pro` was retired for new API keys
+> (HTTP 404 "no longer available to new users", September 2026). The
+> implementation default is now `gemini-2.5-flash` (see §2.2's own
+> `GEMINI_MODEL` default above, and [ADR-006](architecture/decisions/ADR-006-openrouter-second-provider.md)
+> for the optional OpenRouter second-provider adapter). Read the Accuracy row
+> above as historical rationale, not the current default.
 
 ---
 
@@ -251,6 +260,7 @@ Exit Codes:
 - **Report comparison with previous runs** — evolution within one run only
 
 **Future considerations (v2+):**
+
 - DICOM support via `dcmjs` or `cornerstone`
 - FHIR R4 report export
 - Incremental analysis (skip already-analyzed images)
@@ -260,25 +270,25 @@ Exit Codes:
 
 ## 12. Open Questions
 
-| # | Question | Owner | Resolution |
-|---|---|---|---|
-| 1 | Should EXIF/metadata be stripped from images before Gemini API submission? | Engineering | OPEN — document as user responsibility in v1, add to v2 |
-| 2 | What if a series folder contains sub-folders? | Engineering | RESOLVED — scan only top-level images in each series folder |
-| 3 | Should series ordering for temporal analysis be alphabetical or date-based? | Product | RESOLVED — alphabetical by series folder name; users name folders with dates (e.g., 2024-01-...) |
+| #   | Question                                                                    | Owner       | Resolution                                                                                       |
+| --- | --------------------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------ |
+| 1   | Should EXIF/metadata be stripped from images before Gemini API submission?  | Engineering | OPEN — document as user responsibility in v1, add to v2                                          |
+| 2   | What if a series folder contains sub-folders?                               | Engineering | RESOLVED — scan only top-level images in each series folder                                      |
+| 3   | Should series ordering for temporal analysis be alphabetical or date-based? | Product     | RESOLVED — alphabetical by series folder name; users name folders with dates (e.g., 2024-01-...) |
 
 ---
 
 ## 13. Approval
 
-| Role | Name | Status | Date |
-|---|---|---|---|
-| Product | Human (project owner) | **PENDING** | — |
-| Engineering | Claude Code | APPROVED | 2026-02-25 |
-| Security | Claude Code (threat model in S02) | PENDING (S02) | — |
+| Role        | Name                              | Status        | Date       |
+| ----------- | --------------------------------- | ------------- | ---------- |
+| Product     | Human (project owner)             | **PENDING**   | —          |
+| Engineering | Claude Code                       | APPROVED      | 2026-02-25 |
+| Security    | Claude Code (threat model in S02) | PENDING (S02) | —          |
 
 **Human approval required before proceeding to Design phase (S02).**
 
 ---
 
-*Created by: Claude Code (spec-writer.skill) | 2026-02-25*
-*GABBE SDLC Phase: S01 — Requirements*
+_Created by: Claude Code (spec-writer.skill) | 2026-02-25_
+_GABBE SDLC Phase: S01 — Requirements_

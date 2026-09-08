@@ -15,9 +15,9 @@
 
 /** A discovered series folder with its associated images and optional context file */
 export interface SeriesInfo {
-  seriesId: string;          // Folder name (e.g., "2024-01-chest-mri")
-  imagePaths: string[];      // Absolute paths to image files in this series
-  textContextPath?: string;  // Absolute path to .txt context file (if present)
+  seriesId: string; // Folder name (e.g., "2024-01-chest-mri")
+  imagePaths: string[]; // Absolute paths to image files in this series
+  textContextPath?: string; // Absolute path to .txt context file (if present)
 }
 
 // ─── Per-Image Analysis ───────────────────────────────────────────────────────
@@ -28,24 +28,24 @@ export type Severity = "Normal" | "Mild" | "Moderate" | "Severe";
 export interface Abnormality {
   name: string;
   severity: Severity;
-  confidence: number;        // 0–100 (percentage)
+  confidence: number; // 0–100 (percentage)
   description: string;
 }
 
 export interface ImageAnalysis {
-  imagePath: string;         // Absolute path to source image
-  seriesId: string;          // Parent series ID
+  imagePath: string; // Absolute path to source image
+  seriesId: string; // Parent series ID
   status: "success" | "error";
-  errorMessage?: string;     // Set when status = "error"
-  modality?: string;         // "X-ray" | "MRI" | "CT" | "Ultrasound" | "Other"
-  anatomyRegion?: string;    // Anatomical region identified
+  errorMessage?: string; // Set when status = "error"
+  modality?: string; // "X-ray" | "MRI" | "CT" | "Ultrasound" | "Other"
+  anatomyRegion?: string; // Anatomical region identified
   quality?: ImageQuality;
-  findings?: string[];       // List of key observations
+  findings?: string[]; // List of key observations
   abnormalities?: Abnormality[];
-  summary?: string;          // Patient-friendly short summary
-  rawResponse?: string;      // Full Gemini markdown response
-  processedAt: string;       // ISO 8601 timestamp
-  disclaimer: string;        // Always present: educational use only text
+  summary?: string; // Patient-friendly short summary
+  rawResponse?: string; // Full Gemini markdown response
+  processedAt: string; // ISO 8601 timestamp
+  disclaimer: string; // Always present: educational use only text
 }
 
 // ─── Per-Series Aggregation ───────────────────────────────────────────────────
@@ -59,22 +59,18 @@ export interface SeriesSummary {
   discrepancies: string[];
   primaryDiagnosis: string;
   differentialDiagnoses: string[];
-  confidenceLevel: string;         // e.g., "High" | "Medium" | "Low"
+  confidenceLevel: string; // e.g., "High" | "Medium" | "Low"
   textContextUsed: boolean;
   textContextPath?: string;
-  report: string;                  // Full markdown series report
-  processedAt: string;             // ISO 8601 timestamp
+  report: string; // Full markdown series report
+  processedAt: string; // ISO 8601 timestamp
   disclaimer: string;
 }
 
 // ─── Temporal Evolution ───────────────────────────────────────────────────────
 
 export type ProgressionStatus =
-  | "Improving"
-  | "Stable"
-  | "Worsening"
-  | "Inconclusive"
-  | "SingleSeries";            // When only 1 series, no temporal comparison
+  "Improving" | "Stable" | "Worsening" | "Inconclusive" | "SingleSeries"; // When only 1 series, no temporal comparison
 
 export interface TrendItem {
   finding: string;
@@ -84,13 +80,13 @@ export interface TrendItem {
 
 export interface TemporalAnalysis {
   seriesCount: number;
-  seriesIds: string[];             // In processed order
+  seriesIds: string[]; // In processed order
   progression: ProgressionStatus;
   trends: TrendItem[];
   forecastedEvolution: string;
   treatmentRecommendations: string[];
-  combinedReport: string;          // Full markdown evolution report
-  processedAt: string;             // ISO 8601 timestamp
+  combinedReport: string; // Full markdown evolution report
+  processedAt: string; // ISO 8601 timestamp
   disclaimer: string;
 }
 
@@ -100,18 +96,18 @@ export interface GraphState {
   inputDir: string;
   outputDir: string;
   series: SeriesInfo[];
-  imageResults: ImageAnalysis[];      // Accumulated via fan-in
+  imageResults: ImageAnalysis[]; // Accumulated via fan-in
   seriesResults: SeriesSummary[];
   evolutionResult?: TemporalAnalysis;
-  reportPaths?: string[];             // Output files written
-  error?: string;                     // Fatal error if any
+  reportPaths?: string[]; // Output files written
+  error?: string; // Fatal error if any
 }
 
 // ─── CLI Options ──────────────────────────────────────────────────────────────
 
 export interface AnalyzeOptions {
-  series?: string[];       // Filter to specific series names
-  concurrency: number;     // Max parallel Gemini calls
+  series?: string[]; // Filter to specific series names
+  concurrency: number; // Max parallel Gemini calls
   verbose: boolean;
 }
 ```
@@ -155,12 +151,17 @@ export const ImageAnalysisSchema = z.object({
   anatomyRegion: z.string().optional(),
   quality: z.enum(["Poor", "Fair", "Good", "Excellent"]).optional(),
   findings: z.array(z.string()).optional().default([]),
-  abnormalities: z.array(z.object({
-    name: z.string(),
-    severity: z.enum(["Normal", "Mild", "Moderate", "Severe"]),
-    confidence: z.number().min(0).max(100),
-    description: z.string(),
-  })).optional().default([]),
+  abnormalities: z
+    .array(
+      z.object({
+        name: z.string(),
+        severity: z.enum(["Normal", "Mild", "Moderate", "Severe"]),
+        confidence: z.number().min(0).max(100),
+        description: z.string(),
+      })
+    )
+    .optional()
+    .default([]),
   summary: z.string().optional(),
 });
 ```
@@ -199,18 +200,46 @@ Options:
 
 Environment Variables:
   GOOGLE_API_KEY     Required. Google AI Studio API key.
-  GEMINI_MODEL       Optional. Gemini model name (default: gemini-2.5-pro).
+  GEMINI_MODEL       Optional. Gemini model name (default: gemini-2.5-flash).
   MAX_CONCURRENCY    Optional. Overridden by --concurrency flag.
   LOG_LEVEL          Optional. "debug" | "info" | "warn" | "error" (default: info).
 ```
 
 ### 2.3 Exit Codes
 
-| Code | Meaning |
-|---|---|
-| 0 | All series processed (even if some images failed) |
-| 1 | User error: missing API key, input dir not found, no images found |
-| 2 | System error: unrecoverable LangGraph or file system failure |
+_The three-code table below is the original v0 draft and is kept verbatim for
+traceability. It was superseded during implementation; the authoritative
+contract is the table that follows it, which matches `src/main/run-analyze.ts`,
+`src/main/index.ts` and the README._
+
+| Code | Meaning                                                           |
+| ---- | ----------------------------------------------------------------- |
+| 0    | All series processed (even if some images failed)                 |
+| 1    | User error: missing API key, input dir not found, no images found |
+| 2    | System error: unrecoverable LangGraph or file system failure      |
+
+#### 2.3.1 Authoritative exit codes (updated 2026-09-08)
+
+| Code | Meaning                                                                                                                                                  | Raised by                          |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| 0    | Every image analyzed successfully                                                                                                                        | `run-analyze.ts`                   |
+| 1    | Configuration error: missing/invalid API key, unknown `AI_PROVIDER`, invalid `--max-cost-usd`                                                            | `run-analyze.ts`                   |
+| 2    | Input rejected: directory not found or unreadable, path traversal, **DICOM input**, `MAX_IMAGE_BYTES` or `MAX_IMAGES_PER_RUN` exceeded (`FileScanError`) | `file-scanner.ts`                  |
+| 3    | No image series found in the input directory                                                                                                             | `run-analyze.ts`                   |
+| 4    | Partial failure — the run completed but some images could not be analyzed                                                                                | `run-analyze.ts`                   |
+| 5    | `--max-cost-usd` cap exceeded — run aborted (`CostCapExceededError`)                                                                                     | `cost-meter.ts`                    |
+| 6    | **`verify-manifest`**: the run manifest is missing, unparseable, altered, references a changed file, or its ledger link is broken                        | `run-manifest.ts`                  |
+| 7    | **`--strict-phi`**: the PHI/PII scan found something in a context file; nothing was uploaded                                                             | `phi-scan.ts` via `run-analyze.ts` |
+| 99   | Unexpected internal error (uncaught by the command handler)                                                                                              | `index.ts`                         |
+
+Codes 6 and 7 were added 2026-09-08 with the run manifest and the PHI scan
+([ADR-007](architecture/decisions/ADR-007-run-manifest-audit-ledger.md)). Both
+are additive: no existing code changed meaning.
+
+Exit codes 1, 2, 3 and 7 are **pre-flight rejections** — they occur before any
+model call and before the output directory is created, so they leave no
+artefacts and no manifest. Codes 0, 4, 5 and an unexpected throw all occur
+after the run is admitted, and each writes a manifest recording that exit code.
 
 ### 2.4 stdout Output Format (--verbose)
 
@@ -265,11 +294,7 @@ AgenticMedicalImagingHelper v1.0.0
   "modality": "X-ray",
   "anatomyRegion": "Chest — Anteroposterior",
   "quality": "Good",
-  "findings": [
-    "Clear lung fields bilaterally",
-    "Normal cardiac silhouette",
-    "No pleural effusion"
-  ],
+  "findings": ["Clear lung fields bilaterally", "Normal cardiac silhouette", "No pleural effusion"],
   "abnormalities": [
     {
       "name": "Subtle increased opacity, right lower lobe",
@@ -299,26 +324,32 @@ AgenticMedicalImagingHelper v1.0.0
 **Context file used**: No
 
 ## Primary Diagnosis
+
 Early pneumonia (right lower lobe) — Confidence: Medium
 
 ## Differential Diagnoses
+
 1. Atelectasis — right lower lobe
 2. Early pleural effusion
 3. Normal variant
 
 ## Consistent Findings Across All Views
+
 - Increased opacity in right lower lobe (visible in 2/2 successful images)
 - Normal cardiac silhouette
 - No pneumothorax
 
 ## Discrepancies Between Views
+
 - Lateral view shows greater opacity than AP view — suggests posterior consolidation
 
 ## Series Summary
+
 [Full AI-generated synthesis text...]
 
 ---
-*Generated by AgenticMedicalImagingHelper v1.0.0 | Educational use only*
+
+_Generated by AgenticMedicalImagingHelper v1.0.0 | Educational use only_
 ```
 
 ### 3.3 Evolution JSON (`output/evolution_analysis.json`)
@@ -359,6 +390,7 @@ input/                                         <- Root input directory
 ```
 
 **Rules:**
+
 - Series folders are direct children of input dir only (no nested series)
 - Supported image formats: PNG, JPG, JPEG (case-insensitive)
 - If multiple `.txt` files exist in a series folder, the first one (alphabetically) is used
@@ -370,12 +402,12 @@ input/                                         <- Root input directory
 
 ## 5. Environment Variables
 
-| Variable | Required | Default | Description |
-|---|---|---|---|
-| `GOOGLE_API_KEY` | Yes | — | Google AI Studio API key |
-| `GEMINI_MODEL` | No | `gemini-2.5-pro` | Gemini model name to use |
-| `MAX_CONCURRENCY` | No | `5` | Max parallel Gemini API calls (overridden by `--concurrency`) |
-| `LOG_LEVEL` | No | `info` | Log verbosity: `debug`, `info`, `warn`, `error` |
+| Variable          | Required | Default            | Description                                                   |
+| ----------------- | -------- | ------------------ | ------------------------------------------------------------- |
+| `GOOGLE_API_KEY`  | Yes      | —                  | Google AI Studio API key                                      |
+| `GEMINI_MODEL`    | No       | `gemini-2.5-flash` | Gemini model name to use                                      |
+| `MAX_CONCURRENCY` | No       | `5`                | Max parallel Gemini API calls (overridden by `--concurrency`) |
+| `LOG_LEVEL`       | No       | `info`             | Log verbosity: `debug`, `info`, `warn`, `error`               |
 
 ---
 
@@ -383,26 +415,26 @@ input/                                         <- Root input directory
 
 ### Unit Tests (Jest + ts-jest, mock all external I/O)
 
-| Test File | What Is Tested |
-|---|---|
-| `tests/unit/infrastructure/file-scanner.test.ts` | Directory scanning, series discovery, image filtering, path traversal detection |
-| `tests/unit/infrastructure/gemini-client.test.ts` | API call construction, image prep (sharp), response parsing, error handling |
-| `tests/unit/infrastructure/report-writer.test.ts` | JSON serialization, Markdown generation, directory creation, disclaimer presence |
-| `tests/unit/application/analyze-image.test.ts` | Use case orchestration, error propagation |
-| `tests/unit/application/aggregate-series.test.ts` | Result grouping by seriesId, context injection |
-| `tests/unit/application/analyze-evolution.test.ts` | Single vs. multi-series logic |
-| `tests/unit/adapters/langgraph-agent.test.ts` | Graph wiring, fan-out count, state accumulation |
+| Test File                                          | What Is Tested                                                                   |
+| -------------------------------------------------- | -------------------------------------------------------------------------------- |
+| `tests/unit/infrastructure/file-scanner.test.ts`   | Directory scanning, series discovery, image filtering, path traversal detection  |
+| `tests/unit/infrastructure/gemini-client.test.ts`  | API call construction, image prep (sharp), response parsing, error handling      |
+| `tests/unit/infrastructure/report-writer.test.ts`  | JSON serialization, Markdown generation, directory creation, disclaimer presence |
+| `tests/unit/application/analyze-image.test.ts`     | Use case orchestration, error propagation                                        |
+| `tests/unit/application/aggregate-series.test.ts`  | Result grouping by seriesId, context injection                                   |
+| `tests/unit/application/analyze-evolution.test.ts` | Single vs. multi-series logic                                                    |
+| `tests/unit/adapters/langgraph-agent.test.ts`      | Graph wiring, fan-out count, state accumulation                                  |
 
 ### Integration Tests (real file system, mock Gemini API)
 
-| Test File | What Is Tested |
-|---|---|
+| Test File                                    | What Is Tested                                                          |
+| -------------------------------------------- | ----------------------------------------------------------------------- |
 | `tests/integration/analyze-pipeline.test.ts` | Full pipeline with temp directories; mocked Gemini returns fixture JSON |
 
 ### E2E Tests (fixture images, no API calls)
 
-| Test File | What Is Tested |
-|---|---|
+| Test File                         | What Is Tested                                                                         |
+| --------------------------------- | -------------------------------------------------------------------------------------- |
 | `tests/e2e/full-analysis.test.ts` | CLI invocation with real fixture images (stored in `tests/fixtures/`); mock Gemini SDK |
 
 ### Test Fixtures
@@ -429,24 +461,24 @@ tests/fixtures/
 
 ## 7. ADR Index
 
-| ADR | Title | Status |
-|---|---|---|
+| ADR                                                                  | Title                          | Status   |
+| -------------------------------------------------------------------- | ------------------------------ | -------- |
 | [ADR-001](architecture/decisions/ADR-001-langgraph-orchestration.md) | LangGraph.js for orchestration | Accepted |
 | [ADR-002](architecture/decisions/ADR-002-gemini-search-grounding.md) | Gemini Google Search Grounding | Accepted |
-| [ADR-003](architecture/decisions/ADR-003-image-preprocessing.md) | sharp for image preprocessing | Accepted |
+| [ADR-003](architecture/decisions/ADR-003-image-preprocessing.md)     | sharp for image preprocessing  | Accepted |
 
 ---
 
 ## 8. Approval
 
-| Role | Name | Status | Date |
-|---|---|---|---|
-| Product | Human (project owner) | **PENDING** | — |
-| Engineering | Claude Code | APPROVED | 2026-02-25 |
+| Role        | Name                  | Status      | Date       |
+| ----------- | --------------------- | ----------- | ---------- |
+| Product     | Human (project owner) | **PENDING** | —          |
+| Engineering | Claude Code           | APPROVED    | 2026-02-25 |
 
 **Human approval required before proceeding to S04 Task Decomposition.**
 
 ---
 
-*Created by: Claude Code (api-design.skill + spec-writer.skill) | 2026-02-25*
-*GABBE SDLC Phase: S03 — Specification*
+_Created by: Claude Code (api-design.skill + spec-writer.skill) | 2026-02-25_
+_GABBE SDLC Phase: S03 — Specification_

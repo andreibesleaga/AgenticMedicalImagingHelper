@@ -1,0 +1,20 @@
+[medical-imaging] Scanning input directory: /home/andrei/work/AI/nih-cxr14/input/E4/00000008
+[medical-imaging] Found 3 series with 3 images total
+[medical-imaging] Root context file loaded: patient_context.txt
+[medical-imaging] Starting agentic analysis pipeline...
+{"level":"info","time":"2026-09-08T14:31:14.720Z","event":"node:enter","node":"analyzeImages"}
+[medical-imaging] OpenRouter call 1: +466 in / 101 out tokens, est. cumulative $0.0021 (provider-reported $0.0002)
+[medical-imaging] OpenRouter call 2: +463 in / 132 out tokens, est. cumulative $0.0047 (provider-reported $0.0006)
+[medical-imaging] OpenRouter call 3: +463 in / 270 out tokens, est. cumulative $0.0088 (provider-reported $0.0012)
+{"level":"info","time":"2026-09-08T14:31:46.582Z","event":"node:exit","node":"analyzeImages","status":"ok","durationMs":31862}
+{"level":"info","time":"2026-09-08T14:31:46.590Z","event":"node:enter","node":"aggregateSeries"}
+[medical-imaging] OpenRouter call 4: +408 in / 146 out tokens, est. cumulative $0.0114 (provider-reported $0.0015)
+[medical-imaging] OpenRouter call 5: +442 in / 195 out tokens, est. cumulative $0.0146 (provider-reported $0.0018)
+[medical-imaging] OpenRouter call 6: +577 in / 338 out tokens, est. cumulative $0.0198 (provider-reported $0.0026)
+{"level":"info","time":"2026-09-08T14:32:30.729Z","event":"node:exit","node":"aggregateSeries","status":"ok","durationMs":44139}
+{"level":"info","time":"2026-09-08T14:32:30.738Z","event":"node:enter","node":"analyzeEvolution"}
+[medical-imaging] OpenRouter call 7: +845 in / 393 out tokens, est. cumulative $0.0262 (provider-reported $0.0032)
+{"level":"info","time":"2026-09-08T14:32:40.143Z","event":"node:exit","node":"analyzeEvolution","status":"ok","durationMs":9405}
+[medical-imaging] Writing reports to output directory...
+[medical-imaging] Estimated OpenRouter cost: $0.0262 over 7 call(s) (3664 in / 1575 out tokens incl. thinking; provider openrouter, model qwen/qwen3-vl-235b-a22b-instruct at $2/$12 per 1M; estimate only — provider invoice is authoritative; provider-reported $0.0032)
+[medical-imaging] Run manifest written: /home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime2026/runs/E4-00000008-openrouter-qwen_qwen3-vl-235b-a22b-instruct/output/run_manifest.json

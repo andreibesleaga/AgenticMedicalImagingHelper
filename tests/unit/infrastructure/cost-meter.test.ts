@@ -3,6 +3,7 @@ import {
   CostMeter,
   CostCapExceededError,
   defaultGeminiPricing,
+  GEMINI_PRICE_TABLE,
   type GeminiPricing,
 } from "../../../src/infrastructure/cost-meter.js";
 
@@ -90,10 +91,34 @@ describe("CostMeter", () => {
     );
   });
 
+  it("counts thinking tokens as output tokens (billed at the output rate)", () => {
+    const meter = new CostMeter(undefined, PRICING);
+    meter.record({ promptTokenCount: 8, candidatesTokenCount: 1, thoughtsTokenCount: 30 });
+    const s = meter.summary();
+    expect(s.inputTokens).toBe(8);
+    expect(s.outputTokens).toBe(31);
+    // 8/1M*$1 + 31/1M*$10
+    expect(s.estimatedUsd).toBeCloseTo(8e-6 + 31e-5, 12);
+  });
+
   it("exposes positive default Gemini pricing", () => {
     const p = defaultGeminiPricing();
     expect(p.inputUsdPerMillion).toBeGreaterThan(0);
     expect(p.outputUsdPerMillion).toBeGreaterThan(0);
+  });
+
+  it("selects published rates by model name and a conservative fallback otherwise", () => {
+    expect(defaultGeminiPricing("gemini-2.5-flash")).toEqual({
+      inputUsdPerMillion: 0.3,
+      outputUsdPerMillion: 2.5,
+    });
+    expect(defaultGeminiPricing("gemini-2.5-pro")).toEqual({
+      inputUsdPerMillion: 1.25,
+      outputUsdPerMillion: 10,
+    });
+    const unknown = defaultGeminiPricing("some-future-model");
+    const max = Math.max(...Object.values(GEMINI_PRICE_TABLE).map((p) => p.outputUsdPerMillion));
+    expect(unknown.outputUsdPerMillion).toBeGreaterThanOrEqual(max);
   });
 });
 
@@ -128,5 +153,45 @@ describe("defaultGeminiPricing — env overrides", () => {
 
     process.env.GEMINI_INPUT_USD_PER_1M = "-5"; // negative → fallback
     expect(defaultGeminiPricing().inputUsdPerMillion).toBeGreaterThan(0);
+  });
+});
+
+describe("CostMeter — provider-reported cost", () => {
+  it("accumulates providerCostUsd separately and leaves the estimate untouched", () => {
+    const onCall = jest.fn();
+    const meter = new CostMeter(undefined, PRICING, onCall);
+    meter.record({ promptTokenCount: 1_000_000, candidatesTokenCount: 0, providerCostUsd: 0.001 });
+    meter.record({ promptTokenCount: 1_000_000, candidatesTokenCount: 0 }); // no cost reported
+    meter.record({ promptTokenCount: 1_000_000, candidatesTokenCount: 0, providerCostUsd: 0.002 });
+
+    const s = meter.summary();
+    expect(s.calls).toBe(3);
+    expect(s.estimatedUsd).toBeCloseTo(3, 10); // 3M input tokens × $1/1M
+    expect(s.providerReportedUsd).toBeCloseTo(0.003, 12);
+    expect(onCall).toHaveBeenNthCalledWith(
+      2,
+      expect.objectContaining({ calls: 2, providerReportedUsd: 0.001 })
+    );
+  });
+
+  it("reports providerReportedUsd as undefined when no call carried a cost", () => {
+    const meter = new CostMeter(undefined, PRICING);
+    meter.record({ promptTokenCount: 10, candidatesTokenCount: 5 });
+    expect(meter.summary().providerReportedUsd).toBeUndefined();
+  });
+
+  it("ignores non-finite provider costs", () => {
+    const meter = new CostMeter(undefined, PRICING);
+    meter.record({ promptTokenCount: 1, candidatesTokenCount: 1, providerCostUsd: Number.NaN });
+    meter.record({ promptTokenCount: 1, candidatesTokenCount: 1, providerCostUsd: 0 });
+    expect(meter.summary().providerReportedUsd).toBe(0);
+  });
+
+  it("enforces the cap on the estimate, not on the provider-reported figure", () => {
+    const meter = new CostMeter(1, PRICING);
+    // Estimate $0.000001, provider says $5 — cap is unchanged behaviour: estimate only.
+    expect(() =>
+      meter.record({ promptTokenCount: 1, candidatesTokenCount: 0, providerCostUsd: 5 })
+    ).not.toThrow();
   });
 });

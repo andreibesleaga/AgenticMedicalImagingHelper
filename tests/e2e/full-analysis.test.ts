@@ -5,20 +5,14 @@
  * file-scanner against a temporary directory. The only mocked surface is the
  * GeminiClient interface — no real API calls.
  */
-import {
-  describe,
-  it,
-  expect,
-  beforeAll,
-  afterAll,
-  beforeEach,
-  jest,
-} from "@jest/globals";
+import { describe, it, expect, beforeAll, afterAll, beforeEach, jest } from "@jest/globals";
 import * as fs from "fs/promises";
 import * as path from "path";
 import * as os from "os";
+import * as url from "url";
 
 import { runMedicalImagingAgent } from "../../src/adapters/langgraph-agent.js";
+import { createGeminiClient } from "../../src/infrastructure/gemini-client.js";
 import { scanInputDirectory } from "../../src/infrastructure/file-scanner.js";
 import { writeReports } from "../../src/infrastructure/report-writer.js";
 import {
@@ -56,7 +50,8 @@ function makeImageAnalysis(
     findings: ["Normal lung fields", "No acute abnormalities"],
     abnormalities: [],
     summary: "Routine chest x-ray, no abnormalities visualised.",
-    rawResponse: "### 1. Image Type & Region\nModality: X-ray\n### 4. Patient-Friendly Explanation\nLooks clear.",
+    rawResponse:
+      "### 1. Image Type & Region\nModality: X-ray\n### 4. Patient-Friendly Explanation\nLooks clear.",
     processedAt: new Date().toISOString(),
     disclaimer: DISCLAIMER,
     ...overrides,
@@ -85,9 +80,7 @@ function makeSeriesSummary(
   };
 }
 
-function makeTemporal(
-  overrides: Partial<TemporalAnalysis> = {}
-): TemporalAnalysis {
+function makeTemporal(overrides: Partial<TemporalAnalysis> = {}): TemporalAnalysis {
   return {
     seriesCount: 1,
     seriesIds: ["series_1"],
@@ -185,13 +178,11 @@ async function runPipeline(
   seriesFilter?: string[]
 ) {
   const series = await scanInputDirectory(inputDir, seriesFilter);
-  const state = await runMedicalImagingAgent(
-    inputDir,
-    outputDir,
-    series,
-    mocks.client,
-    { concurrency: 2, verbose: false, series: seriesFilter }
-  );
+  const state = await runMedicalImagingAgent(inputDir, outputDir, series, mocks.client, {
+    concurrency: 2,
+    verbose: false,
+    series: seriesFilter,
+  });
   const reportPaths = await writeReports(state);
   state.reportPaths = reportPaths;
   return { state, reportPaths };
@@ -288,19 +279,14 @@ describe("E2E — full pipeline against tmp directories", () => {
 
     it("evolution_analysis.json shows seriesCount=2 and progression !== SingleSeries", async () => {
       await runPipeline(inputDir, outputDir, mocks);
-      const evo = await readJson<TemporalAnalysis>(
-        path.join(outputDir, "evolution_analysis.json")
-      );
+      const evo = await readJson<TemporalAnalysis>(path.join(outputDir, "evolution_analysis.json"));
       expect(evo.seriesCount).toBe(2);
       expect(evo.progression).not.toBe("SingleSeries");
     });
 
     it("combined_diagnostic_report.md references both series", async () => {
       await runPipeline(inputDir, outputDir, mocks);
-      const md = await fs.readFile(
-        path.join(outputDir, "combined_diagnostic_report.md"),
-        "utf-8"
-      );
+      const md = await fs.readFile(path.join(outputDir, "combined_diagnostic_report.md"), "utf-8");
       // The combined-report writer prints the series IDs that were analysed.
       expect(md).toMatch(/series_1.*series_2|series_2.*series_1/s);
     });
@@ -373,22 +359,20 @@ describe("E2E — full pipeline against tmp directories", () => {
     });
 
     it("marks the failing image as status=error and leaves the others succeeding", async () => {
-      mocks.analyzeImage.mockImplementation(
-        (imagePath: string, seriesId: string) => {
-          if (path.basename(imagePath).startsWith("test_image_2")) {
-            return Promise.resolve(
-              makeImageAnalysis(imagePath, seriesId, {
-                status: "error",
-                errorMessage: "Simulated Gemini failure",
-                modality: undefined,
-                findings: undefined,
-                summary: undefined,
-              })
-            );
-          }
-          return Promise.resolve(makeImageAnalysis(imagePath, seriesId));
+      mocks.analyzeImage.mockImplementation((imagePath: string, seriesId: string) => {
+        if (path.basename(imagePath).startsWith("test_image_2")) {
+          return Promise.resolve(
+            makeImageAnalysis(imagePath, seriesId, {
+              status: "error",
+              errorMessage: "Simulated Gemini failure",
+              modality: undefined,
+              findings: undefined,
+              summary: undefined,
+            })
+          );
         }
-      );
+        return Promise.resolve(makeImageAnalysis(imagePath, seriesId));
+      });
 
       const { state } = await runPipeline(inputDir, outputDir, mocks);
 
@@ -405,19 +389,17 @@ describe("E2E — full pipeline against tmp directories", () => {
     });
 
     it("still writes the series summary (does not abort the batch)", async () => {
-      mocks.analyzeImage.mockImplementation(
-        (imagePath: string, seriesId: string) => {
-          if (path.basename(imagePath).startsWith("test_image_2")) {
-            return Promise.resolve(
-              makeImageAnalysis(imagePath, seriesId, {
-                status: "error",
-                errorMessage: "Simulated Gemini failure",
-              })
-            );
-          }
-          return Promise.resolve(makeImageAnalysis(imagePath, seriesId));
+      mocks.analyzeImage.mockImplementation((imagePath: string, seriesId: string) => {
+        if (path.basename(imagePath).startsWith("test_image_2")) {
+          return Promise.resolve(
+            makeImageAnalysis(imagePath, seriesId, {
+              status: "error",
+              errorMessage: "Simulated Gemini failure",
+            })
+          );
         }
-      );
+        return Promise.resolve(makeImageAnalysis(imagePath, seriesId));
+      });
 
       await runPipeline(inputDir, outputDir, mocks);
 
@@ -461,12 +443,7 @@ describe("E2E — full pipeline against tmp directories", () => {
         )
       );
 
-      const { state } = await runPipeline(
-        inputDir,
-        outputDir,
-        mocks,
-        ["series_1", "series_3"]
-      );
+      const { state } = await runPipeline(inputDir, outputDir, mocks, ["series_1", "series_3"]);
 
       expect(state.evolutionResult?.seriesCount).toBe(2);
       expect(state.evolutionResult?.seriesIds.sort()).toEqual(["series_1", "series_3"]);
@@ -532,6 +509,172 @@ describe("E2E — full pipeline against tmp directories", () => {
         expect(text.toLowerCase()).toContain("educational");
       }
       expect(count).toBeGreaterThan(0);
+    });
+  });
+
+  // ── Scenario 9: structured outputs, end to end through the real client ─────
+  //
+  // Everything except the HTTP call is real here: the prompts, JSON mode, the
+  // Zod schemas, the LangGraph pipeline and the report writer. The stub
+  // ContentGenerator replies with the committed mock responses, so the artefacts
+  // on disk show exactly which fields a validated model answer populates.
+  describe("Scenario 9 — structured output populates the artefacts", () => {
+    const __dirname9 = path.dirname(url.fileURLToPath(import.meta.url));
+    const FIXTURES = path.resolve(__dirname9, "../fixtures");
+    const MOCKS = path.join(FIXTURES, "mock-responses");
+
+    let structuredInput: string;
+    let structuredOutput: string;
+
+    async function readMock(name: string): Promise<string> {
+      return fs.readFile(path.join(MOCKS, name), "utf-8");
+    }
+
+    /** Route each stage's prompt to the mock response for that stage. */
+    async function stubGenerator(reply: (stage: "image" | "series" | "evolution") => string) {
+      return {
+        generateContent: async (request: unknown) => {
+          const req = request as { contents?: Array<{ parts: Array<{ text?: string }> }> };
+          const text = (req.contents ?? [])
+            .flatMap((c) => c.parts)
+            .map((p) => p.text ?? "")
+            .join("\n");
+          const stage = text.includes("disease progression")
+            ? "evolution"
+            : text.includes("synthesizing findings")
+              ? "series"
+              : "image";
+          return { response: { text: () => reply(stage) } };
+        },
+      };
+    }
+
+    beforeAll(async () => {
+      structuredInput = await fs.mkdtemp(path.join(os.tmpdir(), "e2e-struct-in-"));
+      structuredOutput = await fs.mkdtemp(path.join(os.tmpdir(), "e2e-struct-out-"));
+      // Real PNGs — the client re-encodes them with sharp before sending.
+      for (const seriesId of ["series_1", "series_2"]) {
+        const dir = path.join(structuredInput, seriesId);
+        await fs.mkdir(dir, { recursive: true });
+        await fs.copyFile(path.join(FIXTURES, "test_image.png"), path.join(dir, "scan_1.png"));
+      }
+    });
+
+    afterAll(async () => {
+      await rmrf(structuredInput);
+      await rmrf(structuredOutput);
+    });
+
+    async function runReal(reply: (stage: "image" | "series" | "evolution") => string) {
+      const model = await stubGenerator(reply);
+      const client = createGeminiClient(model);
+      const series = await scanInputDirectory(structuredInput);
+      const state = await runMedicalImagingAgent(
+        structuredInput,
+        structuredOutput,
+        series,
+        client,
+        { concurrency: 2, verbose: false }
+      );
+      state.reportPaths = await writeReports(state);
+      return state;
+    }
+
+    it("writes modality, region, quality, findings, abnormalities and validation into every image JSON", async () => {
+      const mocks = {
+        image: await readMock("image-analysis-success.txt"),
+        series: await readMock("series-synthesis.txt"),
+        evolution: await readMock("evolution-analysis.txt"),
+      };
+      await runReal((stage) => mocks[stage]);
+
+      for (const seriesId of ["series_1", "series_2"]) {
+        const parsed = await readJson<ImageAnalysis>(
+          path.join(structuredOutput, seriesId, "scan_1_analysis.json")
+        );
+        expect(parsed.status).toBe("success");
+        expect(parsed.modality).toBe("X-ray");
+        expect(parsed.anatomyRegion).toContain("Chest");
+        expect(parsed.quality).toBe("Good");
+        expect(parsed.findings?.length).toBeGreaterThan(0);
+        expect(parsed.abnormalities?.[0]?.severity).toBe("Mild");
+        expect(parsed.abnormalities?.[0]?.confidence).toBe(62);
+        expect(parsed.summary).toBeTruthy();
+        expect(parsed.validation).toEqual({ ok: true });
+        expect(parsed.disclaimer).toContain("educational");
+      }
+    });
+
+    it("writes series consistentFindings / differentials and evolution trends, forecast and suggestions", async () => {
+      const mocks = {
+        image: await readMock("image-analysis-success.txt"),
+        series: await readMock("series-synthesis.txt"),
+        evolution: await readMock("evolution-analysis.txt"),
+      };
+      const state = await runReal((stage) => mocks[stage]);
+
+      const summary = state.seriesResults[0]!;
+      expect(summary.consistentFindings.length).toBeGreaterThan(0);
+      expect(summary.discrepancies.length).toBeGreaterThan(0);
+      expect(summary.differentialDiagnoses.length).toBeGreaterThan(0);
+      expect(summary.confidenceLevel).toBe("High");
+      expect(summary.validation).toEqual({ ok: true });
+
+      const evo = await readJson<TemporalAnalysis & { validation?: { ok: boolean } }>(
+        path.join(structuredOutput, "evolution_analysis.json")
+      );
+      expect(evo.progression).toBe("Stable");
+      expect(evo.trends).toHaveLength(2);
+      expect(evo.forecastedEvolution).not.toBe("");
+      expect(evo.treatmentRecommendations).toHaveLength(2);
+      expect(evo.validation).toEqual({ ok: true });
+
+      const combined = await fs.readFile(
+        path.join(structuredOutput, "combined_diagnostic_report.md"),
+        "utf-8"
+      );
+      expect(combined).toContain(
+        "## Treatment Suggestions (experimental — not clinical recommendations)"
+      );
+      expect(combined).toContain("- **Left basal atelectasis** — Stable");
+      expect(combined).toContain("**Structured output**: schema-validated");
+
+      const seriesMd = await fs.readFile(
+        path.join(structuredOutput, "series_1", "series_summary.md"),
+        "utf-8"
+      );
+      expect(seriesMd).toContain("**Structured output**: schema-validated");
+    });
+
+    it("records — and never crashes on — a model that answers in Markdown instead of JSON", async () => {
+      const state = await runReal(
+        () =>
+          "### 1. Image Type & Region\n- Modality: MRI\n\n### 2. Key Findings\n- Nothing acute\n"
+      );
+
+      // The pipeline completed and every artefact says why validation failed.
+      const failures: string[] = [];
+      for (const seriesId of ["series_1", "series_2"]) {
+        const parsed = await readJson<ImageAnalysis>(
+          path.join(structuredOutput, seriesId, "scan_1_analysis.json")
+        );
+        expect(parsed.status).toBe("success");
+        expect(parsed.modality).toBe("MRI"); // pattern fallback still fills what it can
+        expect(parsed.validation?.ok).toBe(false);
+        expect(parsed.validation?.issues?.length).toBeGreaterThan(0);
+        failures.push(...(parsed.validation?.issues ?? []));
+      }
+      expect(failures.length).toBeGreaterThan(0);
+
+      expect(state.seriesResults.every((s) => s.validation?.ok === false)).toBe(true);
+      expect(state.evolutionResult?.validation?.ok).toBe(false);
+
+      const combined = await fs.readFile(
+        path.join(structuredOutput, "combined_diagnostic_report.md"),
+        "utf-8"
+      );
+      expect(combined).toContain("schema validation FAILED");
+      expect(combined.toLowerCase()).toContain("educational");
     });
   });
 });

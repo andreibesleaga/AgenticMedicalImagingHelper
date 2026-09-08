@@ -115,3 +115,91 @@ describe("createLogger", () => {
     expect(captured.join("")).toContain("to-stderr");
   });
 });
+
+describe("createLogger — OpenRouter key redaction (AI_PROVIDER=openrouter)", () => {
+  /** Run `fn` with the given env values, restoring whatever was there before. */
+  function withEnv(vars: Record<string, string | undefined>, fn: () => void): void {
+    const saved: Record<string, string | undefined> = {};
+    for (const [k, v] of Object.entries(vars)) {
+      saved[k] = process.env[k];
+      if (v === undefined) delete process.env[k];
+      else process.env[k] = v;
+    }
+    try {
+      fn();
+    } finally {
+      for (const [k, v] of Object.entries(saved)) {
+        if (v === undefined) delete process.env[k];
+        else process.env[k] = v;
+      }
+    }
+  }
+
+  it("redacts the OPENROUTER_API_KEY value wherever it appears in a string", () => {
+    withEnv({ OPENROUTER_API_KEY: "sk-or-v1-SECRETVALUE0987" }, () => {
+      const { lines, write } = capture();
+      const log = createLogger("info", write);
+      log.info("call", {
+        message: "Authorization: Bearer sk-or-v1-SECRETVALUE0987",
+        nested: { detail: ["prefix sk-or-v1-SECRETVALUE0987 suffix"] },
+      });
+      const rec = JSON.parse(lines[0]);
+      expect(rec.message).not.toContain("sk-or-v1-SECRETVALUE0987");
+      expect(rec.message).toContain("[REDACTED]");
+      expect(rec.nested.detail[0]).not.toContain("sk-or-v1-SECRETVALUE0987");
+    });
+  });
+
+  it("redacts an openrouter_api_key field by name", () => {
+    withEnv({ OPENROUTER_API_KEY: undefined }, () => {
+      const { lines, write } = capture();
+      const log = createLogger("info", write);
+      log.info("cfg", { openrouter_api_key: "sk-or-anything", openRouterApiKey: "sk-or-other" });
+      const rec = JSON.parse(lines[0]);
+      expect(rec.openrouter_api_key).toBe("[REDACTED]");
+      expect(rec.openRouterApiKey).toBe("[REDACTED]");
+    });
+  });
+
+  it("leaves a string untouched when a configured key does not appear in it", () => {
+    withEnv({ OPENROUTER_API_KEY: "sk-or-v1-NOTINTHISLINE" }, () => {
+      const { lines, write } = capture();
+      createLogger("info", write).info("call", { message: "nothing sensitive here" });
+      expect(JSON.parse(lines[0]).message).toBe("nothing sensitive here");
+    });
+  });
+
+  it("logs normally when OPENROUTER_API_KEY is unset", () => {
+    withEnv({ OPENROUTER_API_KEY: undefined }, () => {
+      const { lines, write } = capture();
+      createLogger("info", write).info("call", { message: "no key configured" });
+      expect(JSON.parse(lines[0]).message).toBe("no key configured");
+    });
+  });
+
+  it("ignores an implausibly short key value (never redacts arbitrary substrings)", () => {
+    withEnv({ OPENROUTER_API_KEY: "abc" }, () => {
+      const { lines, write } = capture();
+      createLogger("info", write).info("call", { message: "abcdef stays readable" });
+      expect(JSON.parse(lines[0]).message).toBe("abcdef stays readable");
+    });
+  });
+
+  it("redacts every provider key configured at once", () => {
+    withEnv(
+      {
+        GOOGLE_API_KEY: "AIzaGOOGLEKEY111111",
+        GEMINI_API_KEY: "AIzaGEMINIKEY222222",
+        OPENROUTER_API_KEY: "sk-or-KEY333333",
+      },
+      () => {
+        const { lines, write } = capture();
+        createLogger("info", write).info("call", {
+          message: "AIzaGOOGLEKEY111111 / AIzaGEMINIKEY222222 / sk-or-KEY333333",
+        });
+        const message = JSON.parse(lines[0]).message as string;
+        expect(message).toBe("[REDACTED] / [REDACTED] / [REDACTED]");
+      }
+    );
+  });
+});

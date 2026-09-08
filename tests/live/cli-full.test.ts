@@ -6,7 +6,7 @@
  *
  * Requirements:
  *   - GOOGLE_API_KEY (or GEMINI_API_KEY) exported in the environment
- *   - Optional: GEMINI_MODEL (defaults to gemini-2.5-pro)
+ *   - Optional: GEMINI_MODEL (defaults to gemini-2.5-flash)
  *   - tsx available in node_modules/.bin (declared in package.json)
  *   - Network connectivity to generativelanguage.googleapis.com
  *

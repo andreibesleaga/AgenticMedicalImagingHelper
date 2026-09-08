@@ -88,6 +88,13 @@ const model = genAI.getGenerativeModel({
 });
 ```
 
+> **Update 2026-09-08:** `gemini-2.5-pro` was retired for new API keys
+> (HTTP 404 "no longer available to new users", September 2026). The
+> implementation default is now `gemini-2.5-flash`
+> (`process.env.GEMINI_MODEL ?? "gemini-2.5-flash"`, see `src/main/run-analyze.ts`).
+> Read the code sample above as illustrating the search-grounding wiring, not
+> the current default model id.
+
 Search grounding is enabled for per-image analysis calls only. Series synthesis and evolution calls do not require web search.
 
 ## Y-Statement Summary
