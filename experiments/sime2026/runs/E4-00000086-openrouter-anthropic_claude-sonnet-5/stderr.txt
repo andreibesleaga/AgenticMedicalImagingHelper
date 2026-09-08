@@ -1,0 +1,10 @@
+[medical-imaging] Scanning input directory: /home/andrei/work/AI/nih-cxr14/input/E4/00000086
+[medical-imaging] Found 3 series with 3 images total
+[medical-imaging] Root context file loaded: patient_context.txt
+[medical-imaging] Starting agentic analysis pipeline...
+{"level":"info","time":"2026-09-08T14:43:09.367Z","event":"node:enter","node":"analyzeImages"}
+[medical-imaging] OpenRouter call 1: +707 in / 751 out tokens, est. cumulative $0.0104 (provider-reported $0.0088)
+[medical-imaging] OpenRouter call 2: +707 in / 740 out tokens, est. cumulative $0.0207 (provider-reported $0.0176)
+[medical-imaging] OpenRouter call 3: +707 in / 599 out tokens, est. cumulative $0.0293 (provider-reported $0.0249)
+{"level":"info","time":"2026-09-08T14:43:42.197Z","event":"node:exit","node":"analyzeImages","status":"ok","durationMs":32830}
+{"level":"info","time":"2026-09-08T14:43:42.210Z","event":"node:enter","node":"aggregateSeries"}
