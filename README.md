@@ -30,7 +30,7 @@ Andrei N. Beșleagă, **"Agentic Multimodal Architectures for Medical Imaging: O
 
 ### Book
 
-This project is featured as a reference implementation in the forthcoming Wiley book **"Agentic AI Architectures"** by Andrei Besleaga — companion site: [AgenticAIArchitectures.com](https://AgenticAIArchitectures.com).
+This project is featured as a reference implementation in the forthcoming Wiley book **"Agentic AI Architectures"** by Andrei Besleaga.
 
 ### BibTeX
 
