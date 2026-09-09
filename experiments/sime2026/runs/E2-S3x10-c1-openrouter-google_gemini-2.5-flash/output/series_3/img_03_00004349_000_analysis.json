@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S3x10/series_3/img_03_00004349_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute infiltrates, consolidation, or effusions are identified.\",\n    \"Bilateral lung fields appear clear.\",\n    \"Cardiac silhouette is within normal limits for size and contour.\",\n    \"Diaphragms are intact and appropriately positioned, with a possible small right subpulmonic effusion or elevated hemidiaphragm/subdiaphragmatic fluid noted.\",\n    \"Costophrenic angles are sharp.\",\n    \"Bony thorax is unremarkable.\",\n    \"A medical device, likely a pacemaker or defibrillator lead, is noted in the superior aspect of the left chest.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Subpulmonic Effusion\",\n      \"description\": \"Possible small right subpulmonic effusion, suggested by the elevation and flattening of the right hemidiaphragm. Differential includes subdiaphragmatic fluid.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 70\n    },\n    {\n      \"name\": \"Medical Device\",\n      \"description\": \"A cardiac device (likely a pacemaker or ICD lead) is visible in the superior aspect of the left chest, with a lead extending inferiorly.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows generally clear lungs and a normal heart size. There is a possible small amount of fluid located below the right lung, which might be a subpulmonic effusion. A medical device, likely a pacemaker or defibrillator, is visible in the upper left chest. These findings will need to be correlated with your symptoms and clinical history by your doctor.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1146/annurev-med-050418-021946\",\n    \"https://radiologykey.com/chest-radiography-3/\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMcp1901429\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute infiltrates, consolidation, or effusions are identified.",
+    "Bilateral lung fields appear clear.",
+    "Cardiac silhouette is within normal limits for size and contour.",
+    "Diaphragms are intact and appropriately positioned, with a possible small right subpulmonic effusion or elevated hemidiaphragm/subdiaphragmatic fluid noted.",
+    "Costophrenic angles are sharp.",
+    "Bony thorax is unremarkable.",
+    "A medical device, likely a pacemaker or defibrillator lead, is noted in the superior aspect of the left chest."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Subpulmonic Effusion",
+      "severity": "Mild",
+      "confidence": 70,
+      "description": "Possible small right subpulmonic effusion, suggested by the elevation and flattening of the right hemidiaphragm. Differential includes subdiaphragmatic fluid."
+    },
+    {
+      "name": "Medical Device",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A cardiac device (likely a pacemaker or ICD lead) is visible in the superior aspect of the left chest, with a lead extending inferiorly."
+    }
+  ],
+  "summary": "The chest X-ray shows generally clear lungs and a normal heart size. There is a possible small amount of fluid located below the right lung, which might be a subpulmonic effusion. A medical device, likely a pacemaker or defibrillator, is visible in the upper left chest. These findings will need to be correlated with your symptoms and clinical history by your doctor.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1146/annurev-med-050418-021946",
+    "https://radiologykey.com/chest-radiography-3/",
+    "https://www.nejm.org/doi/full/10.1056/NEJMcp1901429"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22210,
+    "bytesOut": 22210,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:02:26.393Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

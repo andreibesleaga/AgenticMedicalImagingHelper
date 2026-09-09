@@ -1,0 +1,48 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000296/series_1/00000296_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear without focal consolidation or pleural effusion\",\n    \"Cardiac silhouette is within normal limits for size and shape\",\n    \"Mediastinum is midline\",\n    \"A pigtail catheter is present, entering the left hemithorax and terminating in the left pleural space\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Chest Tube/Pigtail Catheter\",\n      \"description\": \"Presence of a radiopaque pigtail catheter in the left pleural space, typically used for drainage of fluid (pleural effusion) or air (pneumothorax).\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray shows that the lungs and heart appear normal, but there is a medical tube (called a pigtail catheter) in the left side of the chest. This type of tube is commonly used to drain air or fluid from the space around the lung to help the lung expand properly.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-tube-drainage\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK541053/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear without focal consolidation or pleural effusion",
+    "Cardiac silhouette is within normal limits for size and shape",
+    "Mediastinum is midline",
+    "A pigtail catheter is present, entering the left hemithorax and terminating in the left pleural space"
+  ],
+  "abnormalities": [
+    {
+      "name": "Chest Tube/Pigtail Catheter",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Presence of a radiopaque pigtail catheter in the left pleural space, typically used for drainage of fluid (pleural effusion) or air (pneumothorax)."
+    }
+  ],
+  "summary": "The X-ray shows that the lungs and heart appear normal, but there is a medical tube (called a pigtail catheter) in the left side of the chest. This type of tube is commonly used to drain air or fluid from the space around the lung to help the lung expand properly.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-tube-drainage",
+    "https://www.ncbi.nlm.nih.gov/books/NBK541053/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 20730,
+    "bytesOut": 20730,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-09T06:54:02.053Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

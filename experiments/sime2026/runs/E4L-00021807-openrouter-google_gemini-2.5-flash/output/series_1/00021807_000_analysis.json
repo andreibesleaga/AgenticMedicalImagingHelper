@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4L/00021807/series_1/00021807_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Mild to moderate interstitial opacities are noted throughout both lung fields, more pronounced in the lower zones.\",\n    \"Bilateral hilar prominence is observed.\",\n    \"Cardiomediastinal silhouette appears within normal limits for size and contour.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"Osseous structures (ribs, clavicles, humeri) show no acute abnormalities.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Interstitial opacities\",\n      \"description\": \"Mild to moderate reticular and nodular interstitial opacities are diffusely distributed in both lung fields, suggesting interstitial lung disease or an inflammatory process. These are more prominent in the lung bases.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Bilateral hilar prominence\",\n      \"description\": \"Both hila appear somewhat enlarged or prominent, which could be due to lymphadenopathy or prominent pulmonary vasculature in the setting of the observed interstitial changes.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"This X-ray shows changes in both lungs that look like a widespread problem with the lung tissue, rather than just the airways. There are hazy, net-like patterns and small spots throughout both lungs, especially at the bottom, which might indicate conditions like interstitial lung disease or an inflammatory reaction. The central areas of the lungs (hila) also appear a bit enlarged. The heart and major blood vessels look normal in size, and the diaphragm (the muscle that helps you breathe) and the spaces around the lungs are clear. We didn't see any obvious issues with the bones in the chest. These findings suggest the need for further evaluation to determine the exact cause of these lung changes.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/10.1148/rg.332125032\",\n    \"https://radiopaedia.org/articles/interstitial-lung-disease?lang=us\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8754160/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Mild to moderate interstitial opacities are noted throughout both lung fields, more pronounced in the lower zones.",
+    "Bilateral hilar prominence is observed.",
+    "Cardiomediastinal silhouette appears within normal limits for size and contour.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "Osseous structures (ribs, clavicles, humeri) show no acute abnormalities."
+  ],
+  "abnormalities": [
+    {
+      "name": "Interstitial opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Mild to moderate reticular and nodular interstitial opacities are diffusely distributed in both lung fields, suggesting interstitial lung disease or an inflammatory process. These are more prominent in the lung bases."
+    },
+    {
+      "name": "Bilateral hilar prominence",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "Both hila appear somewhat enlarged or prominent, which could be due to lymphadenopathy or prominent pulmonary vasculature in the setting of the observed interstitial changes."
+    }
+  ],
+  "summary": "This X-ray shows changes in both lungs that look like a widespread problem with the lung tissue, rather than just the airways. There are hazy, net-like patterns and small spots throughout both lungs, especially at the bottom, which might indicate conditions like interstitial lung disease or an inflammatory reaction. The central areas of the lungs (hila) also appear a bit enlarged. The heart and major blood vessels look normal in size, and the diaphragm (the muscle that helps you breathe) and the spaces around the lungs are clear. We didn't see any obvious issues with the bones in the chest. These findings suggest the need for further evaluation to determine the exact cause of these lung changes.",
+  "references": [
+    "https://pubs.rsna.org/doi/10.1148/rg.332125032",
+    "https://radiopaedia.org/articles/interstitial-lung-disease?lang=us",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8754160/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22043,
+    "bytesOut": 22043,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:26:11.580Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

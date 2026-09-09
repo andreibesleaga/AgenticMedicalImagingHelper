@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S3x10/series_3/img_07_00015068_007.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary pathology identified.\",\n    \"Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal contours are within normal limits.\",\n    \"Bony thorax appears intact.\",\n    \"There is a metallic foreign body, consistent with a port-a-cath, projecting over the left subclavian region, with its catheter tip appearing to be positioned within the superior vena cava.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Port-a-cath\",\n      \"description\": \"A port-a-cath (implantable venous access device) is present in the left subclavian region with the catheter tip appropriately positioned in the superior vena cava. This is an expected finding for a patient requiring long-term intravenous access and is not an abnormality in itself, but rather a medical device.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows no signs of active lung or heart problems. The lungs look clear, and the heart size and shape are normal. There's a medical device, called a port-a-cath, visible on the left side of the chest; it's correctly placed to provide access for medications or fluids. This device is an expected finding for someone who needs it and is not considered an abnormality.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.274075052\",\n    \"https://radiopaedia.org/articles/chest-x-ray-plain-film-normal-findings\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMicm1502428\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary pathology identified.",
+    "Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal contours are within normal limits.",
+    "Bony thorax appears intact.",
+    "There is a metallic foreign body, consistent with a port-a-cath, projecting over the left subclavian region, with its catheter tip appearing to be positioned within the superior vena cava."
+  ],
+  "abnormalities": [
+    {
+      "name": "Port-a-cath",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A port-a-cath (implantable venous access device) is present in the left subclavian region with the catheter tip appropriately positioned in the superior vena cava. This is an expected finding for a patient requiring long-term intravenous access and is not an abnormality in itself, but rather a medical device."
+    }
+  ],
+  "summary": "This X-ray of the chest shows no signs of active lung or heart problems. The lungs look clear, and the heart size and shape are normal. There's a medical device, called a port-a-cath, visible on the left side of the chest; it's correctly placed to provide access for medications or fluids. This device is an expected finding for someone who needs it and is not considered an abnormality.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.274075052",
+    "https://radiopaedia.org/articles/chest-x-ray-plain-film-normal-findings",
+    "https://www.nejm.org/doi/full/10.1056/NEJMicm1502428"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23332,
+    "bytesOut": 23332,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:03:54.137Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

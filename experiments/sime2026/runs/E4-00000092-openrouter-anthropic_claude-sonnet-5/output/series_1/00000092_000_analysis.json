@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000092/series_1/00000092_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP, supine)\",\"quality\":\"Fair\",\"findings\":[\"Bilateral lung fields visualized, appear relatively clear with no obvious focal consolidation\",\"Cardiac silhouette size appears within normal limits, mediastinal contours grossly midline\",\"Two endotracheal/support tubes visible bilaterally at the lower edge of the image, consistent with lines or tubes (e.g., chest tube or catheter placement) exiting the inferior field\",\"Rounded radiopaque marker present in the right upper corner of the image (likely an external marker or ECG lead)\",\"Skeletal structures (ribs, clavicles, spine) appear grossly intact without obvious fracture\",\"Soft tissue overlying the chest wall appears symmetric bilaterally\",\"Image is a portable/bedside AP supine radiograph, likely obtained in an ICU or similar clinical setting given tube/line placement\"],\"abnormalities\":[{\"name\":\"Support lines/tubes\",\"description\":\"Bilateral tubular densities seen exiting the inferior portion of the image bilaterally, consistent with chest tubes, catheters, or other supportive devices; exact identity and placement cannot be fully confirmed without additional clinical correlation\",\"severity\":\"Mild\",\"confidence\":55}],\"summary\":\"This is a chest X-ray taken while the patient was lying down, likely in a hospital setting such as an ICU, given the visible tubes or lines. The lungs appear relatively clear without obvious signs of infection or fluid buildup, and the heart size looks normal. There are some tubes or medical devices visible at the bottom of the image, which are likely there to help monitor or treat the patient (such as chest tubes or catheters) rather than being an abnormal finding themselves. Overall, this image does not show any major red-flag findings such as pneumonia, significant fluid, or fractures, but a qualified radiologist should confirm this interpretation and correlate it with the patient's clinical picture.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph-an-approach\",\"https://www.ncbi.nlm.nih.gov/books/NBK538297/\",\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP, supine)",
+  "quality": "Fair",
+  "findings": [
+    "Bilateral lung fields visualized, appear relatively clear with no obvious focal consolidation",
+    "Cardiac silhouette size appears within normal limits, mediastinal contours grossly midline",
+    "Two endotracheal/support tubes visible bilaterally at the lower edge of the image, consistent with lines or tubes (e.g., chest tube or catheter placement) exiting the inferior field",
+    "Rounded radiopaque marker present in the right upper corner of the image (likely an external marker or ECG lead)",
+    "Skeletal structures (ribs, clavicles, spine) appear grossly intact without obvious fracture",
+    "Soft tissue overlying the chest wall appears symmetric bilaterally",
+    "Image is a portable/bedside AP supine radiograph, likely obtained in an ICU or similar clinical setting given tube/line placement"
+  ],
+  "abnormalities": [
+    {
+      "name": "Support lines/tubes",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Bilateral tubular densities seen exiting the inferior portion of the image bilaterally, consistent with chest tubes, catheters, or other supportive devices; exact identity and placement cannot be fully confirmed without additional clinical correlation"
+    }
+  ],
+  "summary": "This is a chest X-ray taken while the patient was lying down, likely in a hospital setting such as an ICU, given the visible tubes or lines. The lungs appear relatively clear without obvious signs of infection or fluid buildup, and the heart size looks normal. There are some tubes or medical devices visible at the bottom of the image, which are likely there to help monitor or treat the patient (such as chest tubes or catheters) rather than being an abnormal finding themselves. Overall, this image does not show any major red-flag findings such as pneumonia, significant fluid, or fractures, but a qualified radiologist should confirm this interpretation and correlate it with the patient's clinical picture.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-an-approach",
+    "https://www.ncbi.nlm.nih.gov/books/NBK538297/",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22603,
+    "bytesOut": 22603,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-09T07:07:35.234Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,44 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000008/series_2/00000008_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Lungs are clear without focal consolidation, pleural effusion, or pneumothorax\",\n    \"Cardiac silhouette size is within normal limits\",\n    \"Mediastinum is midline\",\n    \"Hilar regions appear normal\",\n    \"Costophrenic angles are sharp\",\n    \"Bony structures are intact\",\n    \"Presence of an external medical device (possibly a belt or monitor) overlying the lower abdomen\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray shows clear lungs and a normally sized heart. There are no signs of pneumonia, fluid buildup, or collapsed lungs. An external medical device is visible on the lower part of the image, which is normal if you were wearing a monitor during the scan.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-radiograph-for-the-non-radiologist\",\n    \"https://www.acr.org/Clinical-Resources/Radiologic-Practice-Guidelines\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Fair",
+  "findings": [
+    "Lungs are clear without focal consolidation, pleural effusion, or pneumothorax",
+    "Cardiac silhouette size is within normal limits",
+    "Mediastinum is midline",
+    "Hilar regions appear normal",
+    "Costophrenic angles are sharp",
+    "Bony structures are intact",
+    "Presence of an external medical device (possibly a belt or monitor) overlying the lower abdomen"
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows clear lungs and a normally sized heart. There are no signs of pneumonia, fluid buildup, or collapsed lungs. An external medical device is visible on the lower part of the image, which is normal if you were wearing a monitor during the scan.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-for-the-non-radiologist",
+    "https://www.acr.org/Clinical-Resources/Radiologic-Practice-Guidelines"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22784,
+    "bytesOut": 22784,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-09T08:04:09.454Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

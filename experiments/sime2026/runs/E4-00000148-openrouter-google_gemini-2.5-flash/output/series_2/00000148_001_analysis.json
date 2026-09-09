@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000148/series_2/00000148_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right lung: There is a dense, well-defined, ring-like opacity in the right mid-lung field, likely representing a foreign body or calcified granuloma. A moderate-sized pleural effusion is noted at the right lung base, blunting the costophrenic angle.\",\n    \"Left lung: The left lung parenchyma appears clear. The left costophrenic angle is acute.\",\n    \"Mediastinum: The mediastinal structures appear within normal limits for position and size. No significant cardiomegaly is noted.\",\n    \"Diaphragm: The left hemidiaphragm is clearly visualized. The right hemidiaphragm is obscured by the pleural effusion.\",\n    \"Bones: No acute bony abnormalities are appreciated within the visible thoracic cage.\",\n    \"Soft Tissues: Soft tissues are unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Pleural Effusion\",\n      \"description\": \"Moderate-sized right-sided pleural effusion, indicated by blunting of the right costophrenic angle and layering fluid.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Right Mid-Lung Opacity\",\n      \"description\": \"Dense, ring-like opacity in the right mid-lung field, consistent with a foreign body (e.g., embolization coil, stent) or a calcified granuloma.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows fluid in the lower part of the right lung, which is called a pleural effusion. There is also a distinct, ring-shaped spot in the middle of the right lung. This spot could be a foreign object, like a medical device, or a calcified area from a previous infection. These findings suggest the need for further medical evaluation to determine the cause of the fluid and the nature of the spot.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion-1\",\n    \"https://radiopaedia.org/articles/pulmonary-granuloma-1\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK441860/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right lung: There is a dense, well-defined, ring-like opacity in the right mid-lung field, likely representing a foreign body or calcified granuloma. A moderate-sized pleural effusion is noted at the right lung base, blunting the costophrenic angle.",
+    "Left lung: The left lung parenchyma appears clear. The left costophrenic angle is acute.",
+    "Mediastinum: The mediastinal structures appear within normal limits for position and size. No significant cardiomegaly is noted.",
+    "Diaphragm: The left hemidiaphragm is clearly visualized. The right hemidiaphragm is obscured by the pleural effusion.",
+    "Bones: No acute bony abnormalities are appreciated within the visible thoracic cage.",
+    "Soft Tissues: Soft tissues are unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Moderate-sized right-sided pleural effusion, indicated by blunting of the right costophrenic angle and layering fluid."
+    },
+    {
+      "name": "Right Mid-Lung Opacity",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Dense, ring-like opacity in the right mid-lung field, consistent with a foreign body (e.g., embolization coil, stent) or a calcified granuloma."
+    }
+  ],
+  "summary": "This X-ray of the chest shows fluid in the lower part of the right lung, which is called a pleural effusion. There is also a distinct, ring-shaped spot in the middle of the right lung. This spot could be a foreign object, like a medical device, or a calcified area from a previous infection. These findings suggest the need for further medical evaluation to determine the cause of the fluid and the nature of the spot.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion-1",
+    "https://radiopaedia.org/articles/pulmonary-granuloma-1",
+    "https://www.ncbi.nlm.nih.gov/books/NBK441860/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22107,
+    "bytesOut": 22107,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:16:29.237Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000008/series_3/00000008_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Fair\",\"findings\":[\"Bilateral lung fields visualized with symmetric bony thorax\",\"Cardiac silhouette appears within normal limits, midline mediastinal position\",\"Increased opacity/haziness noted in the lower right hemithorax, possibly at the costophrenic angle region\",\"Visible ribs bilaterally without obvious fracture\",\"Soft tissue overlying the chest wall appears symmetric\",\"Diaphragmatic borders partially obscured on the right side\"],\"abnormalities\":[{\"name\":\"Right lower zone opacity\",\"description\":\"There is a region of increased density in the right lower lung field/costophrenic area, which could represent pleural effusion, atelectasis, consolidation, or overlying soft tissue artifact. Further correlation with clinical history and possibly a lateral view or CT would help clarify.\",\"severity\":\"Mild\",\"confidence\":45}],\"summary\":\"This is a chest X-ray showing the lungs, heart, and rib cage. The heart appears to be a normal size and shape. There is an area of increased whiteness (opacity) in the lower right part of the chest, which could be due to several possible causes such as fluid buildup, a collapsed portion of lung tissue, or simply an overlapping shadow from soft tissue or clothing artifact. This finding is not definitive from this single image alone and would benefit from correlation with the patient's symptoms and possibly additional imaging or a follow-up X-ray for clarification. Overall, this image should be reviewed by a radiologist for a definitive interpretation.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph-an-approach-to-interpretation\",\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\"https://pubs.rsna.org/journal/radiology\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Fair",
+  "findings": [
+    "Bilateral lung fields visualized with symmetric bony thorax",
+    "Cardiac silhouette appears within normal limits, midline mediastinal position",
+    "Increased opacity/haziness noted in the lower right hemithorax, possibly at the costophrenic angle region",
+    "Visible ribs bilaterally without obvious fracture",
+    "Soft tissue overlying the chest wall appears symmetric",
+    "Diaphragmatic borders partially obscured on the right side"
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lower zone opacity",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "There is a region of increased density in the right lower lung field/costophrenic area, which could represent pleural effusion, atelectasis, consolidation, or overlying soft tissue artifact. Further correlation with clinical history and possibly a lateral view or CT would help clarify."
+    }
+  ],
+  "summary": "This is a chest X-ray showing the lungs, heart, and rib cage. The heart appears to be a normal size and shape. There is an area of increased whiteness (opacity) in the lower right part of the chest, which could be due to several possible causes such as fluid buildup, a collapsed portion of lung tissue, or simply an overlapping shadow from soft tissue or clothing artifact. This finding is not definitive from this single image alone and would benefit from correlation with the patient's symptoms and possibly additional imaging or a follow-up X-ray for clarification. Overall, this image should be reviewed by a radiologist for a definitive interpretation.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-an-approach-to-interpretation",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiology"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 20207,
+    "bytesOut": 20207,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-09T07:03:39.039Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

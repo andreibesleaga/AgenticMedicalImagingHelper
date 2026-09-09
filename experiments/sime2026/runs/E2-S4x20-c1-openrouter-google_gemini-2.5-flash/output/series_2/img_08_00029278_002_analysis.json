@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_2/img_08_00029278_002.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pneumothorax, or large pleural effusion.\",\n    \"Bilateral costophrenic angles are clear.\",\n    \"Cardiac silhouette is not enlarged.\",\n    \"A nasogastric tube is noted in the right lower lung field, consistent with placement in the stomach based on its trajectory.\",\n    \"No acute bony abnormalities are identified.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Nasogastric Tube\",\n      \"description\": \"A nasogastric tube is visible within the stomach, coursing through the esophagus and stomach without evidence of coiling or displacement. Its tip appears to be appropriately positioned below the diaphragm.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows generally healthy-looking lungs with no signs of pneumonia, collapsed lung, or significant fluid around the lungs. The heart appears to be of normal size. A nasogastric tube (a tube inserted through the nose into the stomach) is seen and appears to be correctly placed. No new or unexpected bone problems are noted.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1146/annurev-med-050212-114402\",\n    \"https://radiopaedia.org/articles/nasogastric-tube\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pneumothorax, or large pleural effusion.",
+    "Bilateral costophrenic angles are clear.",
+    "Cardiac silhouette is not enlarged.",
+    "A nasogastric tube is noted in the right lower lung field, consistent with placement in the stomach based on its trajectory.",
+    "No acute bony abnormalities are identified."
+  ],
+  "abnormalities": [
+    {
+      "name": "Nasogastric Tube",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A nasogastric tube is visible within the stomach, coursing through the esophagus and stomach without evidence of coiling or displacement. Its tip appears to be appropriately positioned below the diaphragm."
+    }
+  ],
+  "summary": "The chest X-ray shows generally healthy-looking lungs with no signs of pneumonia, collapsed lung, or significant fluid around the lungs. The heart appears to be of normal size. A nasogastric tube (a tube inserted through the nose into the stomach) is seen and appears to be correctly placed. No new or unexpected bone problems are noted.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1146/annurev-med-050212-114402",
+    "https://radiopaedia.org/articles/nasogastric-tube"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 20442,
+    "bytesOut": 20442,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:06:06.332Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

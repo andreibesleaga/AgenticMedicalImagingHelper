@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S3x10/series_3/img_10_00029872_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary abnormalities are identified.\",\n    \"Lungs are clear with no evidence of focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Mediastinal contours are within normal limits.\",\n    \"Cardiac silhouette is not enlarged.\",\n    \"Bilateral hemidiaphragms are intact and clear.\",\n    \"Osseous structures appear unremarkable.\",\n    \"A right internal jugular central venous catheter is noted with its tip projecting over the superior vena cava.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Central Venous Catheter\",\n      \"description\": \"A right internal jugular central venous catheter is present with its tip appropriately positioned in the superior vena cava.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This chest X-ray shows no acute problems with the heart or lungs. The lungs are clear, and there is no sign of infection, fluid, or collapsed lung. The heart size appears normal. A central line, a type of IV, is in place on the right side of the neck and appears to be in the correct position. This type of line is used to give medicines or fluids directly into a large vein.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125026\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://radiopaedia.org/articles/central-venous-catheter-2\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary abnormalities are identified.",
+    "Lungs are clear with no evidence of focal consolidation, pleural effusion, or pneumothorax.",
+    "Mediastinal contours are within normal limits.",
+    "Cardiac silhouette is not enlarged.",
+    "Bilateral hemidiaphragms are intact and clear.",
+    "Osseous structures appear unremarkable.",
+    "A right internal jugular central venous catheter is noted with its tip projecting over the superior vena cava."
+  ],
+  "abnormalities": [
+    {
+      "name": "Central Venous Catheter",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A right internal jugular central venous catheter is present with its tip appropriately positioned in the superior vena cava."
+    }
+  ],
+  "summary": "This chest X-ray shows no acute problems with the heart or lungs. The lungs are clear, and there is no sign of infection, fluid, or collapsed lung. The heart size appears normal. A central line, a type of IV, is in place on the right side of the neck and appears to be in the correct position. This type of line is used to give medicines or fluids directly into a large vein.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125026",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://radiopaedia.org/articles/central-venous-catheter-2"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22313,
+    "bytesOut": 22313,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:03:56.514Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

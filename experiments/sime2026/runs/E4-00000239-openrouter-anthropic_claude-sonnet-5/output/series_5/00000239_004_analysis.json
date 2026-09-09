@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000239/series_5/00000239_004.png",
+  "seriesId": "series_5",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP/PA)\",\"quality\":\"Fair\",\"findings\":[\"Cardiac silhouette appears enlarged with prominent rounded contour, suggestive of cardiomegaly or pericardial effusion\",\"Marked distension of gastric bubble with air-fluid level noted in the left upper abdomen, extending into the lower thoracic region\",\"Multiple rounded lucencies (bubbly/mottled pattern) visible in the mid-to-lower abdominal region, possibly representing bowel gas pattern or gastric contents\",\"Lung fields are grossly clear bilaterally, though partially obscured by overlying structures\",\"Bony thorax including ribs, clavicles, and visible spine appear grossly intact without obvious fracture\",\"Soft tissue overlying the chest wall appears symmetric\",\"Image includes a small arrow/marker in the right upper corner, possibly indicating a specific area of interest\"],\"abnormalities\":[{\"name\":\"Cardiomegaly / possible pericardial effusion\",\"description\":\"The cardiac silhouette is enlarged with a globular, rounded 'water-bottle' configuration, which can be seen in pericardial effusion, cardiomyopathy, or cardiac enlargement\",\"severity\":\"Moderate\",\"confidence\":55},{\"name\":\"Gastric distension\",\"description\":\"Large air-filled gastric bubble with air-fluid level in the left upper quadrant, which may represent gastric dilation\",\"severity\":\"Moderate\",\"confidence\":60},{\"name\":\"Abnormal bowel gas pattern\",\"description\":\"Multiple rounded lucent areas in the abdomen with a mottled/bubbly appearance, which could represent abnormal bowel gas distribution or possible obstruction; further correlation with abdominal imaging is recommended\",\"severity\":\"Moderate\",\"confidence\":50}],\"summary\":\"This chest X-ray shows an enlarged heart shadow that has a rounded, ball-like shape - this can sometimes indicate fluid around the heart or heart enlargement itself, and would need an echocardiogram (heart ultrasound) to clarify. There is also a large air-filled stomach visible in the upper abdomen, and a bubbly pattern of gas in the intestines below it. These bowel findings could be from normal gas, but given the extent of distension, correlation with clinical symptoms and possibly a dedicated abdominal X-ray or CT scan would be helpful. Overall, this image is not fully normal and warrants follow-up with a physician for correlation with symptoms and possibly additional tests.\",\"references\":[\"https://radiopaedia.org/articles/cardiomegaly\",\"https://radiopaedia.org/articles/pericardial-effusion-1\",\"https://www.ncbi.nlm.nih.gov/books/NBK538213/\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP/PA)",
+  "quality": "Fair",
+  "findings": [
+    "Cardiac silhouette appears enlarged with prominent rounded contour, suggestive of cardiomegaly or pericardial effusion",
+    "Marked distension of gastric bubble with air-fluid level noted in the left upper abdomen, extending into the lower thoracic region",
+    "Multiple rounded lucencies (bubbly/mottled pattern) visible in the mid-to-lower abdominal region, possibly representing bowel gas pattern or gastric contents",
+    "Lung fields are grossly clear bilaterally, though partially obscured by overlying structures",
+    "Bony thorax including ribs, clavicles, and visible spine appear grossly intact without obvious fracture",
+    "Soft tissue overlying the chest wall appears symmetric",
+    "Image includes a small arrow/marker in the right upper corner, possibly indicating a specific area of interest"
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly / possible pericardial effusion",
+      "severity": "Moderate",
+      "confidence": 55,
+      "description": "The cardiac silhouette is enlarged with a globular, rounded 'water-bottle' configuration, which can be seen in pericardial effusion, cardiomyopathy, or cardiac enlargement"
+    },
+    {
+      "name": "Gastric distension",
+      "severity": "Moderate",
+      "confidence": 60,
+      "description": "Large air-filled gastric bubble with air-fluid level in the left upper quadrant, which may represent gastric dilation"
+    },
+    {
+      "name": "Abnormal bowel gas pattern",
+      "severity": "Moderate",
+      "confidence": 50,
+      "description": "Multiple rounded lucent areas in the abdomen with a mottled/bubbly appearance, which could represent abnormal bowel gas distribution or possible obstruction; further correlation with abdominal imaging is recommended"
+    }
+  ],
+  "summary": "This chest X-ray shows an enlarged heart shadow that has a rounded, ball-like shape - this can sometimes indicate fluid around the heart or heart enlargement itself, and would need an echocardiogram (heart ultrasound) to clarify. There is also a large air-filled stomach visible in the upper abdomen, and a bubbly pattern of gas in the intestines below it. These bowel findings could be from normal gas, but given the extent of distension, correlation with clinical symptoms and possibly a dedicated abdominal X-ray or CT scan would be helpful. Overall, this image is not fully normal and warrants follow-up with a physician for correlation with symptoms and possibly additional tests.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/pericardial-effusion-1",
+    "https://www.ncbi.nlm.nih.gov/books/NBK538213/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22009,
+    "bytesOut": 22009,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-09T07:14:29.533Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

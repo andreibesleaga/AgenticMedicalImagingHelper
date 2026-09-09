@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_2/img_10_00029872_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are hyperinflated with flattened diaphragmatic domes, especially on the right.\",\n    \"There are increased interstitial markings throughout both lung fields, with a prominent peribronchial pattern.\",\n    \"The heart size appears within normal limits.\",\n    \"The mediastinum is not widened.\",\n    \"No focal consolidation, pleural effusion, or pneumothorax is seen.\",\n    \"The bony thorax appears intact with no acute fractures.\",\n    \"A central venous catheter (PICC line) is noted with its tip projecting over the superior vena cava.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Hyperinflation\",\n      \"description\": \"Hyperinflation of both lungs with flattening of the diaphragms, suggestive of obstructive lung disease.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Increased interstitial markings\",\n      \"description\": \"Prominent peribronchial interstitial markings are noted, indicating bronchial wall thickening or peribronchial edema/fibrosis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Central Venous Catheter\",\n      \"description\": \"A PICC line is present with its tip in an appropriate position within the superior vena cava, indicating recent or ongoing intravenous therapy.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows signs of lung overinflation and increased markings in the lungs, which can be seen in conditions like asthma or emphysema. The heart and major blood vessels appear normal. There's a thin tube, called a PICC line, correctly placed in a large vein near the heart, likely for medication delivery. No immediate concerns like collapsed lung or fluid around the lungs were seen. Further evaluation by a doctor would help determine the cause of the lung findings.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1145/radiographics.20.5.g00se1082\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900696/\",\n    \"https://radiologykey.com/chest-x-ray-interpretations-basic-rules/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are hyperinflated with flattened diaphragmatic domes, especially on the right.",
+    "There are increased interstitial markings throughout both lung fields, with a prominent peribronchial pattern.",
+    "The heart size appears within normal limits.",
+    "The mediastinum is not widened.",
+    "No focal consolidation, pleural effusion, or pneumothorax is seen.",
+    "The bony thorax appears intact with no acute fractures.",
+    "A central venous catheter (PICC line) is noted with its tip projecting over the superior vena cava."
+  ],
+  "abnormalities": [
+    {
+      "name": "Hyperinflation",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Hyperinflation of both lungs with flattening of the diaphragms, suggestive of obstructive lung disease."
+    },
+    {
+      "name": "Increased interstitial markings",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Prominent peribronchial interstitial markings are noted, indicating bronchial wall thickening or peribronchial edema/fibrosis."
+    },
+    {
+      "name": "Central Venous Catheter",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A PICC line is present with its tip in an appropriate position within the superior vena cava, indicating recent or ongoing intravenous therapy."
+    }
+  ],
+  "summary": "This X-ray of the chest shows signs of lung overinflation and increased markings in the lungs, which can be seen in conditions like asthma or emphysema. The heart and major blood vessels appear normal. There's a thin tube, called a PICC line, correctly placed in a large vein near the heart, likely for medication delivery. No immediate concerns like collapsed lung or fluid around the lungs were seen. Further evaluation by a doctor would help determine the cause of the lung findings.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1145/radiographics.20.5.g00se1082",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900696/",
+    "https://radiologykey.com/chest-x-ray-interpretations-basic-rules/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22313,
+    "bytesOut": 22313,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:06:15.604Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

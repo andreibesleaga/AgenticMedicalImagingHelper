@@ -48,7 +48,7 @@ cohort members also qualify (e.g. `00002407`, `00007845` for worsening;
 equally-valid candidates for the simplest single-finding story.
 
 Total: 2 patients × 3 studies × 1 image = **6 images**, ~20 KB each (~130 KB
-total), small enough to commit to the repository.
+total). They are **not** committed: `demo/input/` is caught by the repository-wide `input/` rule in `.gitignore`, so you stage them yourself with `prepare-demo.sh` (below).
 
 **Label-noise caveat** (inherited from the cohort, see
 `experiments/sime2026/E4L-cohort.md`): ChestX-ray14 `Finding Labels` are
@@ -62,7 +62,7 @@ trajectory, not a verified clinical outcome.
 - An API key for the provider you'll use: `OPENROUTER_API_KEY` (default) or
   `GOOGLE_API_KEY` / `GEMINI_API_KEY`, in `.env` or exported.
 - The showcase images already staged: `demo/input/00011264/` and
-  `demo/input/00003158/` (committed to the repo). To regenerate them from a
+  `demo/input/00003158/` (gitignored — stage them yourself). To regenerate them from a
   local NIH ChestX-ray14 E4L preparation, run `demo/prepare-demo.sh`.
 
 ## How to run

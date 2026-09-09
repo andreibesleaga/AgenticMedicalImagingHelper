@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# demo/run-demo.sh — conference-video demo pack for AgenticMedicalImagingHelper.
+# demo/run-demo.sh — guided demo pack for AgenticMedicalImagingHelper.
 #
 # Drives the built CLI on two showcase NIH ChestX-ray14 patients
 # (demo/input/, populated by demo/prepare-demo.sh) through:
@@ -11,7 +11,7 @@
 #   (D) the test suite, as a live quality gate
 #
 # See demo/README.md for prerequisites, expected duration/cost, and a
-# narration-cue table mapping each banner below to one sentence for the video.
+# narration-cue table mapping each banner below to one sentence of narration.
 #
 # Env:
 #   DEMO_PROVIDER   openrouter (default) | google
@@ -300,17 +300,25 @@ banner "Fairness probe — E1 regression benchmark"
 # Captured to a file rather than piped straight into `head`: the benchmark's
 # own stdout writer does not handle EPIPE, so `| head -30` on a report longer
 # than 30 lines crashes it (Node's default 'unhandled error' behaviour).
-node_modules/.bin/tsx scripts/fairness-benchmark.ts >demo/tmp/fairness-benchmark-full.txt 2>&1
+node_modules/.bin/tsx scripts/fairness-benchmark.ts \
+  --out demo/tmp/E1-fairness-benchmark-results.md >demo/tmp/fairness-benchmark-full.txt 2>&1
 head -30 demo/tmp/fairness-benchmark-full.txt
 
 banner "Governance probe over this demo's artefacts"
-node_modules/.bin/tsx experiments/sime2026/probe-outputs.ts demo/output
+node_modules/.bin/tsx experiments/sime2026/probe-outputs.ts demo/output \
+  --out demo/tmp/probe-results.json
 
 # ── (D) Quality gate ─────────────────────────────────────────────────────
 banner "Quality gate — npm test"
+# The suite is offline and asserts the *default* provider contract (e.g.
+# "no API key → exit 1"). This script has exported AI_PROVIDER/model vars and
+# sourced .env, so the gate is run with the provider environment cleared —
+# the same clean environment CI uses. Full output is kept in demo/tmp/.
 set +o pipefail
 set +e
-npm test 2>&1 | tee /tmp/claude-1000/-home-andrei-work/d911d9d6-6d4f-466d-9ac7-10fb36f7522e/scratchpad/npmtest-full-diag.log | tail -5
+env -u AI_PROVIDER -u OPENROUTER_API_KEY -u OPENROUTER_MODEL \
+  -u GOOGLE_API_KEY -u GEMINI_API_KEY -u GEMINI_MODEL \
+  npm test 2>&1 | tee demo/tmp/npm-test.log | tail -5
 test_exit=${PIPESTATUS[0]}
 set -e
 set -o pipefail

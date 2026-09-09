@@ -97,7 +97,11 @@ if (!resolvedPath.startsWith(resolvedInput)) {
 4. `.env.example` must contain placeholder: `GOOGLE_API_KEY=your_key_here`
 5. Add `gitleaks` check in CI pipeline to detect accidental secret commits
 
-**Status**: MITIGATED — enforce via code review + CI
+**Status**: MITIGATED for items 1–4 — enforce via code review + CI.
+Item 5 is **not implemented**: there is no `gitleaks` step. The secret scanning
+that does run is Trivy's (`scanners: vuln,secret` in
+`.github/workflows/security-baseline.yml`), and it is report-only
+(`exit-code: "0"`, `continue-on-error: true`), so it cannot block a merge.
 
 ---
 

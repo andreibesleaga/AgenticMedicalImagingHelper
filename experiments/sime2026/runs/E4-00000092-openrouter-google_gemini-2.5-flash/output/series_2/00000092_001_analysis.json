@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000092/series_2/00000092_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute infiltrates, effusions, or pneumothorax are identified.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Hilar regions appear unremarkable.\",\n    \"Bony thorax appears intact without acute fractures.\",\n    \"Bowel gas patterns are noted in the upper abdomen, consistent with gastric and colonic gas.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray appears normal. There are no signs of lung infections, fluid around the lungs, or a collapsed lung. The heart and major blood vessels look to be of normal size and shape. The bones of the chest also look healthy. Some normal gas patterns in the stomach and intestines are visible below the diaphragm.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.231025062\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6036502/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute infiltrates, effusions, or pneumothorax are identified.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Hilar regions appear unremarkable.",
+    "Bony thorax appears intact without acute fractures.",
+    "Bowel gas patterns are noted in the upper abdomen, consistent with gastric and colonic gas."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray appears normal. There are no signs of lung infections, fluid around the lungs, or a collapsed lung. The heart and major blood vessels look to be of normal size and shape. The bones of the chest also look healthy. Some normal gas patterns in the stomach and intestines are visible below the diaphragm.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.231025062",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6036502/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22555,
+    "bytesOut": 22555,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:15:46.414Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

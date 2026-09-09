@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_2/img_20_00004738_004.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Evidence of previous left thoracotomy with surgical clips and a possible indwelling device/port in the left upper chest.\",\n    \"Significant left lung volume loss with extensive opacification, suggesting consolidation or collapse.\",\n    \"Mediastinal shift to the left, indicating atelectasis or fibrosis of the left lung.\",\n    \"Cardiomegaly is not definitively assessed due to mediastinal shift but the heart appears displaced leftward.\",\n    \"Right lung appears relatively clear with preserved lung volumes.\",\n    \"Diaphragms are visible, left hemidiaphragm may be elevated due to left lung pathology.\",\n    \"Bony structures appear intact for the visualized portions, without acute fractures or destructive lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Lung Opacification and Volume Loss\",\n      \"description\": \"Extensive opacification of the left lung with significant volume loss, consistent with atelectasis, consolidation, or post-surgical changes and fibrosis. Surgical clips are noted in the left upper thorax.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"The mediastinum, including the heart and trachea (not fully visualized but suggested by heart position), is significantly shifted towards the left, secondary to the left lung volume loss.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Surgical Clips/Device\",\n      \"description\": \"Multiple surgical clips are present in the left upper thorax, indicating prior surgery. A possible indwelling device or port is also noted in the left upper chest.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows clear signs of prior surgery on the left side of the chest, indicated by surgical clips and a possible medical device. The left lung has significantly reduced in size and appears densely white, suggesting it may be collapsed or heavily scarred, possibly due to long-standing lung disease or post-surgical changes. This has caused the heart and other central structures in the chest to shift towards the left. The right lung appears normal. These findings suggest a chronic or significant issue affecting the left lung, likely related to past medical interventions or disease.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/atelectasis\",\n    \"https://radiopaedia.org/articles/post-thoracotomy-chest-x-ray-findings\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4289354/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Evidence of previous left thoracotomy with surgical clips and a possible indwelling device/port in the left upper chest.",
+    "Significant left lung volume loss with extensive opacification, suggesting consolidation or collapse.",
+    "Mediastinal shift to the left, indicating atelectasis or fibrosis of the left lung.",
+    "Cardiomegaly is not definitively assessed due to mediastinal shift but the heart appears displaced leftward.",
+    "Right lung appears relatively clear with preserved lung volumes.",
+    "Diaphragms are visible, left hemidiaphragm may be elevated due to left lung pathology.",
+    "Bony structures appear intact for the visualized portions, without acute fractures or destructive lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Lung Opacification and Volume Loss",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Extensive opacification of the left lung with significant volume loss, consistent with atelectasis, consolidation, or post-surgical changes and fibrosis. Surgical clips are noted in the left upper thorax."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "The mediastinum, including the heart and trachea (not fully visualized but suggested by heart position), is significantly shifted towards the left, secondary to the left lung volume loss."
+    },
+    {
+      "name": "Surgical Clips/Device",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Multiple surgical clips are present in the left upper thorax, indicating prior surgery. A possible indwelling device or port is also noted in the left upper chest."
+    }
+  ],
+  "summary": "This X-ray of the chest shows clear signs of prior surgery on the left side of the chest, indicated by surgical clips and a possible medical device. The left lung has significantly reduced in size and appears densely white, suggesting it may be collapsed or heavily scarred, possibly due to long-standing lung disease or post-surgical changes. This has caused the heart and other central structures in the chest to shift towards the left. The right lung appears normal. These findings suggest a chronic or significant issue affecting the left lung, likely related to past medical interventions or disease.",
+  "references": [
+    "https://radiopaedia.org/articles/atelectasis",
+    "https://radiopaedia.org/articles/post-thoracotomy-chest-x-ray-findings",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4289354/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22480,
+    "bytesOut": 22480,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:06:54.521Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

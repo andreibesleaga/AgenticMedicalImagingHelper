@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_1/img_15_00022764_006.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Large amount of gas seen within the left hemithorax, displacing the mediastinum to the right.\",\n    \"The left hemidiaphragm is not clearly visualized.\",\n    \"Air-fluid level noted in the left hemithorax.\",\n    \"Right lung appears compressed but otherwise clear.\",\n    \"A nasogastric tube is present, with its tip appearing to be in the upper abdomen/lower chest.\",\n    \"A chest drain is visible on the left side, with its tip within the pleural space.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Diaphragmatic Hernia / Pneumothorax\",\n      \"description\": \"Large amount of gas and air-fluid level in the left hemithorax with significant mediastinal shift to the right, consistent with either a large diaphragmatic hernia (likely gastric herniation) or a tension pneumothorax. The presence of gas and fluid suggests a hollow viscus or a combination of pneumothorax and hydrothorax/pyothorax. Given the air-fluid level, a diaphragmatic hernia with gastric contents is highly suspected.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"The mediastinum, including the heart and trachea, is significantly displaced to the right due to the mass effect from the left hemithoracic abnormality.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The X-ray of the chest shows a significant problem on the left side of the chest. There is a large amount of gas and fluid filling the left chest cavity, which is pushing the heart and other structures to the right side. This appearance is most concerning for a large diaphragmatic hernia, where part of an abdominal organ (like the stomach) has moved up into the chest, or a very large collection of air (pneumothorax) and fluid in the chest. A tube for feeding (nasogastric tube) and a tube to drain the chest (chest drain) are also visible. This condition is serious and requires immediate medical attention.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/diaphragmatic-hernia-1\",\n    \"https://radiopaedia.org/articles/tension-pneumothorax\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK459203/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Large amount of gas seen within the left hemithorax, displacing the mediastinum to the right.",
+    "The left hemidiaphragm is not clearly visualized.",
+    "Air-fluid level noted in the left hemithorax.",
+    "Right lung appears compressed but otherwise clear.",
+    "A nasogastric tube is present, with its tip appearing to be in the upper abdomen/lower chest.",
+    "A chest drain is visible on the left side, with its tip within the pleural space."
+  ],
+  "abnormalities": [
+    {
+      "name": "Diaphragmatic Hernia / Pneumothorax",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Large amount of gas and air-fluid level in the left hemithorax with significant mediastinal shift to the right, consistent with either a large diaphragmatic hernia (likely gastric herniation) or a tension pneumothorax. The presence of gas and fluid suggests a hollow viscus or a combination of pneumothorax and hydrothorax/pyothorax. Given the air-fluid level, a diaphragmatic hernia with gastric contents is highly suspected."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Severe",
+      "confidence": 100,
+      "description": "The mediastinum, including the heart and trachea, is significantly displaced to the right due to the mass effect from the left hemithoracic abnormality."
+    }
+  ],
+  "summary": "The X-ray of the chest shows a significant problem on the left side of the chest. There is a large amount of gas and fluid filling the left chest cavity, which is pushing the heart and other structures to the right side. This appearance is most concerning for a large diaphragmatic hernia, where part of an abdominal organ (like the stomach) has moved up into the chest, or a very large collection of air (pneumothorax) and fluid in the chest. A tube for feeding (nasogastric tube) and a tube to drain the chest (chest drain) are also visible. This condition is serious and requires immediate medical attention.",
+  "references": [
+    "https://radiopaedia.org/articles/diaphragmatic-hernia-1",
+    "https://radiopaedia.org/articles/tension-pneumothorax",
+    "https://www.ncbi.nlm.nih.gov/books/NBK459203/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22326,
+    "bytesOut": 22326,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:10:39.052Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

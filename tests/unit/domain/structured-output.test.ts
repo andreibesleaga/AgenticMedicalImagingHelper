@@ -377,3 +377,108 @@ describe("TrendItemSchema", () => {
     expect(parsed.success && parsed.data.details).toBe("");
   });
 });
+
+// ─── Model sentinels ─────────────────────────────────────────────────────────
+
+/**
+ * `google/gemma-4-31b-it` answered 24 of 39 records in the E4 longitudinal cohort
+ * with `-1` in every field instead of answering. The schema correctly refuses
+ * those records, but "expected string, received number" hides *why* the run
+ * degraded, so the count cannot be reported. Sentinel issues are tagged
+ * "(model sentinel)" and, in a bounded numeric field, name the bound.
+ */
+describe("parseStructured — numeric model sentinels", () => {
+  /** The evolution-stage response gemma emitted, verbatim. */
+  const GEMMA_EVOLUTION_SENTINEL =
+    '{"progression":-1, "trends":[], "forecastedEvolution":-1, ' +
+    '"treatmentRecommendations":[], "combinedReport":-1}';
+
+  /** The image-stage response gemma emitted, verbatim. */
+  const GEMMA_IMAGE_SENTINEL =
+    '{"modality":-1, "anatomyRegion":-1, "quality":-1, "findings":-1, ' +
+    '"abnormalities":-1, "summary":-1, "references":-1}';
+
+  it("names the bound a sentinel confidence broke", () => {
+    const result = parseStructured(
+      '{"modality":"X-ray","anatomyRegion":"Chest","quality":"Good","summary":"s",' +
+        '"abnormalities":[{"name":"Nodule","severity":"Mild","confidence":-1,"description":"d"}]}',
+      ParsedImageResponseSchema
+    );
+    expect(result.ok).toBe(false);
+    if (result.ok) throw new Error("unreachable");
+    expect(result.issues).toContain(
+      "abnormalities.0.confidence: -1 is not in 0–100 (model sentinel)"
+    );
+  });
+
+  it("tags every sentinel field of gemma's image response", () => {
+    const result = parseStructured(GEMMA_IMAGE_SENTINEL, ParsedImageResponseSchema);
+    expect(result.ok).toBe(false);
+    if (result.ok) throw new Error("unreachable");
+
+    const tagged = result.issues.filter((i) => i.includes("(model sentinel)"));
+    expect(tagged.length).toBe(result.issues.length);
+    expect(tagged.length).toBeGreaterThanOrEqual(6);
+    // The original Zod reason is kept after the tag, so nothing is lost.
+    expect(result.issues.find((i) => i.startsWith("modality:"))).toMatch(
+      /modality: -1 is not a valid value here \(model sentinel\) — .+/
+    );
+    expect(result.issues.find((i) => i.startsWith("findings:"))).toContain("(model sentinel)");
+  });
+
+  it("tags gemma's evolution-stage sentinels", () => {
+    const result = parseStructured(GEMMA_EVOLUTION_SENTINEL, ParsedEvolutionResponseSchema);
+    expect(result.ok).toBe(false);
+    if (result.ok) throw new Error("unreachable");
+    expect(result.issues.every((i) => i.includes("(model sentinel)"))).toBe(true);
+    expect(result.issues.join(" ")).toContain("progression: -1");
+    expect(result.issues.join(" ")).toContain("combinedReport: -1");
+  });
+
+  it("leaves ordinary validation failures untagged", () => {
+    const result = parseStructured(
+      '{"modality":"X-ray","anatomyRegion":"Chest","quality":"Perfect","summary":"s"}',
+      ParsedImageResponseSchema
+    );
+    expect(result.ok).toBe(false);
+    if (result.ok) throw new Error("unreachable");
+    expect(result.issues.join(" ")).not.toContain("model sentinel");
+    expect(result.issues.join(" ")).toMatch(/^quality: /);
+  });
+
+  it("does not tag a merely out-of-range confidence that is not the sentinel", () => {
+    const result = parseStructured(
+      '{"modality":"X-ray","anatomyRegion":"Chest","quality":"Good","summary":"s",' +
+        '"abnormalities":[{"name":"N","severity":"Mild","confidence":150,"description":"d"}]}',
+      ParsedImageResponseSchema
+    );
+    expect(result.ok).toBe(false);
+    if (result.ok) throw new Error("unreachable");
+    expect(result.issues.join(" ")).not.toContain("model sentinel");
+  });
+
+  it("tolerates an issue path that descends through a primitive", () => {
+    // A schema can report an issue at a path the data does not actually have;
+    // the sentinel lookup must return "no value", not throw.
+    const schema = z.object({ a: z.number() }).superRefine((_value, ctx) => {
+      ctx.addIssue({ code: "custom", message: "deep issue", path: ["a", "b", "c"] });
+    });
+    const result = parseStructured('{"a":-1}', schema);
+    expect(result.ok).toBe(false);
+    if (result.ok) throw new Error("unreachable");
+    expect(result.issues).toContain("a.b.c: deep issue");
+  });
+
+  it("tolerates an issue path that does not resolve to a value", () => {
+    // `trends` is absent entirely, so `trends.0.trend` has no value to inspect.
+    const result = parseStructured(
+      '{"progression":"Stable","forecastedEvolution":"x","combinedReport":"y",' +
+        '"trends":[{"finding":"a"}]}',
+      ParsedEvolutionResponseSchema
+    );
+    expect(result.ok).toBe(false);
+    if (result.ok) throw new Error("unreachable");
+    expect(result.issues.join(" ")).toMatch(/trends\.0\.trend/);
+    expect(result.issues.join(" ")).not.toContain("model sentinel");
+  });
+});

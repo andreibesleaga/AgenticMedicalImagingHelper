@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S2x5/series_2/img_03_00013795_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lung fields appear clear with no obvious infiltrates or effusions.\",\n    \"The cardiac silhouette is enlarged, particularly the left ventricle, indicating cardiomegaly.\",\n    \"The trachea and major bronchi are patent.\",\n    \"The diaphragm is intact and appropriately positioned.\",\n    \"Bony structures, including the ribs and clavicles, appear unremarkable.\",\n    \"Gastric bubble is visible under the left hemidiaphragm.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlargement of the cardiac silhouette, particularly the left ventricle, suggesting cardiomegaly. The cardiothoracic ratio appears increased, exceeding 0.5.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that the lungs are clear, meaning there are no signs of infection or fluid accumulation. However, the heart appears larger than normal, which is called cardiomegaly. This suggests that the heart muscle might be working harder or is enlarged for another reason. All other visible structures, such as the bones and diaphragm, look normal. It's important for a doctor to review this finding to understand its cause and significance.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2018180018\",\n    \"https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.115.016335\",\n    \"https://radiopaedia.org/articles/cardiothoracic-ratio\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lung fields appear clear with no obvious infiltrates or effusions.",
+    "The cardiac silhouette is enlarged, particularly the left ventricle, indicating cardiomegaly.",
+    "The trachea and major bronchi are patent.",
+    "The diaphragm is intact and appropriately positioned.",
+    "Bony structures, including the ribs and clavicles, appear unremarkable.",
+    "Gastric bubble is visible under the left hemidiaphragm."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Enlargement of the cardiac silhouette, particularly the left ventricle, suggesting cardiomegaly. The cardiothoracic ratio appears increased, exceeding 0.5."
+    }
+  ],
+  "summary": "The chest X-ray shows that the lungs are clear, meaning there are no signs of infection or fluid accumulation. However, the heart appears larger than normal, which is called cardiomegaly. This suggests that the heart muscle might be working harder or is enlarged for another reason. All other visible structures, such as the bones and diaphragm, look normal. It's important for a doctor to review this finding to understand its cause and significance.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2018180018",
+    "https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.115.016335",
+    "https://radiopaedia.org/articles/cardiothoracic-ratio"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 16861,
+    "bytesOut": 16861,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T18:59:25.599Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

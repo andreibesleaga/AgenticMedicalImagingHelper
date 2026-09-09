@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4L/00013880/series_4/00013880_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Presence of a cardiac pacemaker generator in the left upper chest.\",\n    \"Left pleural effusion, moderate to severe, obscuring the left hemidiaphragm and costophrenic angle.\",\n    \"Evidence of left lower lobe atelectasis or collapse due to the effusion.\",\n    \"Right hemidiaphragm appears intact with a clear costophrenic angle, though some blunting might be present.\",\n    \"Cardiothoracic ratio appears within normal limits, though evaluation is limited by the left effusion.\",\n    \"No obvious pneumothorax.\",\n    \"Bony structures appear unremarkable within the limits of the study.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Pleural Effusion\",\n      \"description\": \"A moderate to severe collection of fluid in the left pleural space, leading to blunting of the left costophrenic angle and obscuring the left hemidiaphragm. This is also causing compression or collapse of the adjacent lung tissue.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Left Lower Lobe Atelectasis/Collapse\",\n      \"description\": \"Compression or collapse of the left lower lung lobe secondary to the significant left pleural effusion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Cardiac Pacemaker\",\n      \"description\": \"A cardiac pacemaker generator is identified in the left infraclavicular region, with leads likely extending into the heart, though the leads are not fully visualized on this projection.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 99\n    }\n  ],\n  \"summary\": \"This X-ray of your chest shows a significant collection of fluid in the space around your left lung, known as a pleural effusion. This fluid is compressing part of your left lung. On your left side, there's also a device called a pacemaker, which helps regulate your heart rhythm. The right lung and other visible structures appear generally clear.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion-1\",\n    \"https://radiopaedia.org/articles/atelectasis\",\n    \"https://radiopaedia.org/articles/cardiac-pacemaker\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Presence of a cardiac pacemaker generator in the left upper chest.",
+    "Left pleural effusion, moderate to severe, obscuring the left hemidiaphragm and costophrenic angle.",
+    "Evidence of left lower lobe atelectasis or collapse due to the effusion.",
+    "Right hemidiaphragm appears intact with a clear costophrenic angle, though some blunting might be present.",
+    "Cardiothoracic ratio appears within normal limits, though evaluation is limited by the left effusion.",
+    "No obvious pneumothorax.",
+    "Bony structures appear unremarkable within the limits of the study."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "A moderate to severe collection of fluid in the left pleural space, leading to blunting of the left costophrenic angle and obscuring the left hemidiaphragm. This is also causing compression or collapse of the adjacent lung tissue."
+    },
+    {
+      "name": "Left Lower Lobe Atelectasis/Collapse",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Compression or collapse of the left lower lung lobe secondary to the significant left pleural effusion."
+    },
+    {
+      "name": "Cardiac Pacemaker",
+      "severity": "Normal",
+      "confidence": 99,
+      "description": "A cardiac pacemaker generator is identified in the left infraclavicular region, with leads likely extending into the heart, though the leads are not fully visualized on this projection."
+    }
+  ],
+  "summary": "This X-ray of your chest shows a significant collection of fluid in the space around your left lung, known as a pleural effusion. This fluid is compressing part of your left lung. On your left side, there's also a device called a pacemaker, which helps regulate your heart rhythm. The right lung and other visible structures appear generally clear.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion-1",
+    "https://radiopaedia.org/articles/atelectasis",
+    "https://radiopaedia.org/articles/cardiac-pacemaker"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23224,
+    "bytesOut": 23224,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:22:17.790Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

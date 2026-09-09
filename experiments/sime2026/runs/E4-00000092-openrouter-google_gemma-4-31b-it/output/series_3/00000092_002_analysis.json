@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000092/series_3/00000092_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\": \"X-ray\", \"anatomyRegion\": \"Chest (AP)\", \"quality\": \"Fair\", \"findings\": [\"Bilateral blunting of the costophrenic angles\", \"Opacification at the lung bases\", \"Prominent air-fluid level beneath the left diaphragm\", \"Increased density in the lower lung zones\", \"Mild cardiomegaly\"], \"abnormalities\": [{\"name\": \"Pleural Effusions\", \"description\": \"Bilateral blunting of the costophrenic angles suggests the accumulation of fluid in the pleural space.\", \"severity\": \"Moderate\", \"confidence\": 85}, {\"name\": \"Pneumoperitoneum\", \"description\": \"A distinct crescent of air is visible under the left diaphragm, suggesting free intraperitoneal air.\", \"severity\": \"Severe\", \"confidence\": 90}], \"summary\": \"The X-ray shows fluid around both lungs (pleural effusions) and air trapped under the diaphragm (pneumoperitoneum). Pneumoperitoneum is a serious finding that often indicates a perforation (hole) in a hollow organ in the abdomen, such as the stomach or bowel, and typically requires urgent medical evaluation.\", \"references\": [\"https://radiopaedia.org/articles/pneumoperitoneum\", \"https://radiopaedia.org/articles/pleural-effusion\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Fair",
+  "findings": [
+    "Bilateral blunting of the costophrenic angles",
+    "Opacification at the lung bases",
+    "Prominent air-fluid level beneath the left diaphragm",
+    "Increased density in the lower lung zones",
+    "Mild cardiomegaly"
+  ],
+  "abnormalities": [
+    {
+      "name": "Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Bilateral blunting of the costophrenic angles suggests the accumulation of fluid in the pleural space."
+    },
+    {
+      "name": "Pneumoperitoneum",
+      "severity": "Severe",
+      "confidence": 90,
+      "description": "A distinct crescent of air is visible under the left diaphragm, suggesting free intraperitoneal air."
+    }
+  ],
+  "summary": "The X-ray shows fluid around both lungs (pleural effusions) and air trapped under the diaphragm (pneumoperitoneum). Pneumoperitoneum is a serious finding that often indicates a perforation (hole) in a hollow organ in the abdomen, such as the stomach or bowel, and typically requires urgent medical evaluation.",
+  "references": [
+    "https://radiopaedia.org/articles/pneumoperitoneum",
+    "https://radiopaedia.org/articles/pleural-effusion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21788,
+    "bytesOut": 21788,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-08T19:25:46.014Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

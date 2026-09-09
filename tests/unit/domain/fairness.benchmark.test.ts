@@ -4,9 +4,8 @@
  * Loads tests/fixtures/fairness-benchmark.json (explicit / paraphrase /
  * implicit / benign / negation / trap) and pins the probe's measured
  * behaviour so that any change to src/domain/fairness.ts that regresses
- * precision or recall is visible. The measured numbers (see
- * experiments/sime2026/E1-fairness-benchmark-results.md and
- * scripts/fairness-benchmark.ts) are:
+ * precision or recall is visible. The measured numbers (regenerate the full
+ * report with `node_modules/.bin/tsx scripts/fairness-benchmark.ts`) are:
  *
  *   precision 0.545, recall 0.436 (24 TP, 20 FP, 35 TN, 31 FN over 110 items)
  *

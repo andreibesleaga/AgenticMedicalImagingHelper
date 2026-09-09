@@ -1,0 +1,48 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000239/series_6/00000239_005.png",
+  "seriesId": "series_6",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral lung fields are clear without consolidation or pleural effusion\",\n    \"Heart size and mediastinal contours are within normal limits\",\n    \"Large, gas-filled structure with a prominent horizontal air-fluid level is seen in the left upper quadrant of the abdomen, extending up to the left diaphragm\",\n    \"The stomach is markedly distended with gas and fluid\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Gastric Distension\",\n      \"description\": \"Significant dilation of the stomach with a large air-fluid level, suggestive of a gastric outlet obstruction or severe gastroparesis.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray shows that your stomach is very enlarged and filled with both air and fluid. This is often caused by a blockage at the exit of the stomach (gastric outlet obstruction), which prevents food and liquids from moving into the small intestine. This requires urgent medical evaluation.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/gastric-outlet-obstruction\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK538314/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral lung fields are clear without consolidation or pleural effusion",
+    "Heart size and mediastinal contours are within normal limits",
+    "Large, gas-filled structure with a prominent horizontal air-fluid level is seen in the left upper quadrant of the abdomen, extending up to the left diaphragm",
+    "The stomach is markedly distended with gas and fluid"
+  ],
+  "abnormalities": [
+    {
+      "name": "Gastric Distension",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Significant dilation of the stomach with a large air-fluid level, suggestive of a gastric outlet obstruction or severe gastroparesis."
+    }
+  ],
+  "summary": "The X-ray shows that your stomach is very enlarged and filled with both air and fluid. This is often caused by a blockage at the exit of the stomach (gastric outlet obstruction), which prevents food and liquids from moving into the small intestine. This requires urgent medical evaluation.",
+  "references": [
+    "https://radiopaedia.org/articles/gastric-outlet-obstruction",
+    "https://www.ncbi.nlm.nih.gov/books/NBK538314/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21019,
+    "bytesOut": 21019,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-09T06:52:30.737Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -22,9 +22,15 @@ export default {
   testMatch: ["**/tests/**/*.test.ts"],
   // tests/live/ are opt-in (real API calls, cost money). Run them with
   // `npm run test:live`, which sets JEST_LIVE=1 and overrides this ignore.
+  // paper-work/ is the owner's local-only, gitignored working directory (paper
+  // tooling and its test). It is never part of the published test suite.
   testPathIgnorePatterns: process.env.JEST_LIVE
-    ? ["/node_modules/"]
-    : ["/node_modules/", "/tests/live/"],
+    ? ["/node_modules/", "/paper-work/"]
+    : ["/node_modules/", "/paper-work/", "/tests/live/"],
+  // `json-summary` writes coverage/coverage-summary.json. It is the machine-
+  // readable form of the coverage report, and experiments/sime2026/fill-numbers.ts
+  // reads it (see docs/PAPER.md) instead of anyone re-typing the number by hand.
+  coverageReporters: ["text", "lcov", "json-summary"],
   collectCoverageFrom: [
     "src/**/*.ts",
     // Composition root: commander wiring + env-var glue. Behaviour is

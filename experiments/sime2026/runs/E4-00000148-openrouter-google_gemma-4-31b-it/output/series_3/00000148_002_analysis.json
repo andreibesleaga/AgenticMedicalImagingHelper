@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000148/series_3/00000148_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\": \"X-ray\", \"anatomyRegion\": \"Chest (PA)\", \"quality\": \"Good\", \"findings\": [\"Right hilar region shows a focal opacity measuring approximately 3x4 cm\", \"Indwelling port-a-cath device is seen with the reservoir in the right chest wall and catheter tip in the superior vena cava\", \"Lungs are otherwise clear without pleural effusion or pneumothorax\", \"Cardiac silhouette is within normal limits\", \"Bony structures are intact\"], \"abnormalities\": [{\"name\": \"Right hilar mass\", \"description\": \"A rounded, soft-tissue density opacity located in the right hilar region, concerning for lymphadenopathy or a pulmonary mass\", \"severity\": \"Moderate\", \"confidence\": 85}], \"summary\": \"The X-ray shows a mass or enlarged lymph node in the right center of the chest (hilar region). There is also a medical device called a 'port-a-cath' implanted, which is commonly used for long-term medication or chemotherapy. A mass in this area requires further investigation, typically with a CT scan, to determine its nature.\", \"references\": [\"https://radiopaedia.org/articles/hilar-mass\", \"https://www.acr.org/Clinical-Resources/Radiologic-Practice-Guidelines\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Right hilar region shows a focal opacity measuring approximately 3x4 cm",
+    "Indwelling port-a-cath device is seen with the reservoir in the right chest wall and catheter tip in the superior vena cava",
+    "Lungs are otherwise clear without pleural effusion or pneumothorax",
+    "Cardiac silhouette is within normal limits",
+    "Bony structures are intact"
+  ],
+  "abnormalities": [
+    {
+      "name": "Right hilar mass",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "A rounded, soft-tissue density opacity located in the right hilar region, concerning for lymphadenopathy or a pulmonary mass"
+    }
+  ],
+  "summary": "The X-ray shows a mass or enlarged lymph node in the right center of the chest (hilar region). There is also a medical device called a 'port-a-cath' implanted, which is commonly used for long-term medication or chemotherapy. A mass in this area requires further investigation, typically with a CT scan, to determine its nature.",
+  "references": [
+    "https://radiopaedia.org/articles/hilar-mass",
+    "https://www.acr.org/Clinical-Resources/Radiologic-Practice-Guidelines"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22899,
+    "bytesOut": 22899,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-08T19:29:20.293Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

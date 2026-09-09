@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000148/series_3/00000148_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A metallic foreign body, consistent with an endobronchial valve (EBV), is noted in the right upper lobe bronchus.\",\n    \"The lung fields are otherwise clear with no obvious infiltrates or effusions.\",\n    \"The cardiac silhouette is within normal limits.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"Osseous structures appear unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Endobronchial Valve\",\n      \"description\": \"A metallic endobronchial valve is identified within the right upper lobe bronchus. This is an expected finding given the likely history of treatment for emphysema or air leak.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray shows the chest, and the main thing seen is a small, metallic device in the upper part of the right lung. This device is called an endobronchial valve, and it's typically placed to help people with severe emphysema or persistent air leaks. The rest of the lungs, heart, and surrounding bones appear normal on this image. The presence of the valve is an expected finding if the patient has had this procedure.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/endobronchial-valve\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7322477/\",\n    \"https://journal.chestnet.org/article/S0012-3692(19)30141-X/fulltext\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "A metallic foreign body, consistent with an endobronchial valve (EBV), is noted in the right upper lobe bronchus.",
+    "The lung fields are otherwise clear with no obvious infiltrates or effusions.",
+    "The cardiac silhouette is within normal limits.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "Osseous structures appear unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Endobronchial Valve",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A metallic endobronchial valve is identified within the right upper lobe bronchus. This is an expected finding given the likely history of treatment for emphysema or air leak."
+    }
+  ],
+  "summary": "This X-ray shows the chest, and the main thing seen is a small, metallic device in the upper part of the right lung. This device is called an endobronchial valve, and it's typically placed to help people with severe emphysema or persistent air leaks. The rest of the lungs, heart, and surrounding bones appear normal on this image. The presence of the valve is an expected finding if the patient has had this procedure.",
+  "references": [
+    "https://radiopaedia.org/articles/endobronchial-valve",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7322477/",
+    "https://journal.chestnet.org/article/S0012-3692(19)30141-X/fulltext"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22899,
+    "bytesOut": 22899,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:16:33.876Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

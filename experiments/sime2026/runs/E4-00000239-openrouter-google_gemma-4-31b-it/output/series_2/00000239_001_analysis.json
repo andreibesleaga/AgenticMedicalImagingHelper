@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000239/series_2/00000239_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Lung fields appear clear without evidence of consolidation or mass\",\n    \"Heart size is within normal limits\",\n    \"Bilateral diaphragmatic contours are visible\",\n    \"A large gas-filled structure is noted in the upper left quadrant of the abdomen, extending slightly above the level of the left hemidiaphragm\",\n    \"The stomach is significantly distended with gas\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Gastric Distension\",\n      \"description\": \"Prominent gas-filled stomach (gastric bubble) extending into the upper left quadrant, which may suggest gastric outlet obstruction or significant aerophagia\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that your lungs and heart appear normal. However, there is a significant amount of gas in your stomach, causing it to appear enlarged. This can sometimes be caused by swallowing too much air or by a blockage in the stomach's exit. Please discuss these results with your doctor for a full clinical evaluation.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/gastric-dilation\",\n    \"https://www.acr.org/Clinical-Resources\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Fair",
+  "findings": [
+    "Lung fields appear clear without evidence of consolidation or mass",
+    "Heart size is within normal limits",
+    "Bilateral diaphragmatic contours are visible",
+    "A large gas-filled structure is noted in the upper left quadrant of the abdomen, extending slightly above the level of the left hemidiaphragm",
+    "The stomach is significantly distended with gas"
+  ],
+  "abnormalities": [
+    {
+      "name": "Gastric Distension",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Prominent gas-filled stomach (gastric bubble) extending into the upper left quadrant, which may suggest gastric outlet obstruction or significant aerophagia"
+    }
+  ],
+  "summary": "The chest X-ray shows that your lungs and heart appear normal. However, there is a significant amount of gas in your stomach, causing it to appear enlarged. This can sometimes be caused by swallowing too much air or by a blockage in the stomach's exit. Please discuss these results with your doctor for a full clinical evaluation.",
+  "references": [
+    "https://radiopaedia.org/articles/gastric-dilation",
+    "https://www.acr.org/Clinical-Resources"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23146,
+    "bytesOut": 23146,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-09T06:52:04.146Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

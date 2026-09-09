@@ -1,0 +1,63 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4L/00015863/series_1/00015863_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral pulmonary opacities, more prominent in the right upper and mid lung zones.\",\n    \"Bilateral pleural effusions, particularly on the right, with blunting of the costophrenic angles.\",\n    \"Mild cardiomegaly.\",\n    \"A nasogastric tube is present, with its tip projected over the stomach.\",\n    \"No obvious pneumothorax.\",\n    \"Skeletal structures appear intact, though not the primary focus of this examination.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Diffuse Pulmonary Opacities\",\n      \"description\": \"Extensive ground-glass opacities and infiltrates are noted bilaterally, suggesting parenchymal lung disease. These are more consolidated in the right upper and mid lung fields.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Bilateral pleural effusions are present, indicated by blunting of the costophrenic angles. The right effusion appears larger than the left.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette appears mildly enlarged.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"The chest X-ray shows significant changes in the lungs. There are widespread cloudy areas throughout both lungs, which are more dense on the right side. This suggests an ongoing lung process, possibly an infection or inflammation. There is also fluid around both lungs, more so on the right, and the heart appears slightly enlarged. A feeding tube is visible and correctly positioned. These findings point towards significant lung involvement, and further evaluation would be needed to determine the exact cause.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2020200028\",\n    \"https://radiologykey.com/pulmonary-parenchymal-disease/\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK431057/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral pulmonary opacities, more prominent in the right upper and mid lung zones.",
+    "Bilateral pleural effusions, particularly on the right, with blunting of the costophrenic angles.",
+    "Mild cardiomegaly.",
+    "A nasogastric tube is present, with its tip projected over the stomach.",
+    "No obvious pneumothorax.",
+    "Skeletal structures appear intact, though not the primary focus of this examination."
+  ],
+  "abnormalities": [
+    {
+      "name": "Diffuse Pulmonary Opacities",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Extensive ground-glass opacities and infiltrates are noted bilaterally, suggesting parenchymal lung disease. These are more consolidated in the right upper and mid lung fields."
+    },
+    {
+      "name": "Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Bilateral pleural effusions are present, indicated by blunting of the costophrenic angles. The right effusion appears larger than the left."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "The cardiac silhouette appears mildly enlarged."
+    }
+  ],
+  "summary": "The chest X-ray shows significant changes in the lungs. There are widespread cloudy areas throughout both lungs, which are more dense on the right side. This suggests an ongoing lung process, possibly an infection or inflammation. There is also fluid around both lungs, more so on the right, and the heart appears slightly enlarged. A feeding tube is visible and correctly positioned. These findings point towards significant lung involvement, and further evaluation would be needed to determine the exact cause.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2020200028",
+    "https://radiologykey.com/pulmonary-parenchymal-disease/",
+    "https://www.ncbi.nlm.nih.gov/books/NBK431057/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 18861,
+    "bytesOut": 18861,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:23:52.741Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

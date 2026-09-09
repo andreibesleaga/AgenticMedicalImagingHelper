@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S3x10/series_1/img_03_00019238_009.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Presence of bilateral chest tubes, right larger bore, left smaller bore.\",\n    \"Bilateral pneumothoraces, more pronounced on the right side with significant lung collapse.\",\n    \"Left lung appears partially re-expanded compared to the right.\",\n    \"Mediastinum appears midline, though assessment is limited by patient rotation and supine position.\",\n    \"Heart size appears within normal limits for this projection.\",\n    \"No acute infiltrates, consolidations, or effusions are clearly identified apart from the pneumothoraces.\",\n    \"Bony structures appear intact, no acute fractures noted.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Pneumothorax\",\n      \"description\": \"Presence of air in the pleural space, causing collapse of lung tissue. More severe on the right, where there is significant lung collapse. The left lung is partially re-expanded.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Bilateral Chest Tubes\",\n      \"description\": \"Chest tubes are in place on both sides, indicating intervention for pneumothorax or pleural effusion. The right-sided tube appears larger in bore.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows air outside the lungs (called a pneumothorax) on both sides, which has caused the lungs to collapse, especially on the right side. To help remove this air and allow the lungs to re-expand, tubes have been placed into the chest cavity on both sides. The left lung shows some improvement in expansion, but the right lung is still significantly collapsed. The heart and other structures in the middle of the chest appear to be in their normal position. There are no signs of other acute problems like infections or fluid buildup in the lungs.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pneumothorax-1\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7011984/\",\n    \"https://www.uptodate.com/contents/pneumothorax-in-adults-diagnosis-and-treatment\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Presence of bilateral chest tubes, right larger bore, left smaller bore.",
+    "Bilateral pneumothoraces, more pronounced on the right side with significant lung collapse.",
+    "Left lung appears partially re-expanded compared to the right.",
+    "Mediastinum appears midline, though assessment is limited by patient rotation and supine position.",
+    "Heart size appears within normal limits for this projection.",
+    "No acute infiltrates, consolidations, or effusions are clearly identified apart from the pneumothoraces.",
+    "Bony structures appear intact, no acute fractures noted."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Pneumothorax",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Presence of air in the pleural space, causing collapse of lung tissue. More severe on the right, where there is significant lung collapse. The left lung is partially re-expanded."
+    },
+    {
+      "name": "Bilateral Chest Tubes",
+      "severity": "Moderate",
+      "confidence": 100,
+      "description": "Chest tubes are in place on both sides, indicating intervention for pneumothorax or pleural effusion. The right-sided tube appears larger in bore."
+    }
+  ],
+  "summary": "This X-ray of the chest shows air outside the lungs (called a pneumothorax) on both sides, which has caused the lungs to collapse, especially on the right side. To help remove this air and allow the lungs to re-expand, tubes have been placed into the chest cavity on both sides. The left lung shows some improvement in expansion, but the right lung is still significantly collapsed. The heart and other structures in the middle of the chest appear to be in their normal position. There are no signs of other acute problems like infections or fluid buildup in the lungs.",
+  "references": [
+    "https://radiopaedia.org/articles/pneumothorax-1",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7011984/",
+    "https://www.uptodate.com/contents/pneumothorax-in-adults-diagnosis-and-treatment"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22415,
+    "bytesOut": 22415,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:03:32.057Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

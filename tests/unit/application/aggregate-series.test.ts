@@ -132,7 +132,9 @@ describe("aggregateSeriesUseCase", () => {
     const state: GraphState = {
       inputDir: "/tmp/in",
       outputDir: "/tmp/out",
-      series: [{ seriesId: "series_1", imagePaths: ["/tmp/img1.png", "/tmp/img2.png", "/tmp/img3.png"] }],
+      series: [
+        { seriesId: "series_1", imagePaths: ["/tmp/img1.png", "/tmp/img2.png", "/tmp/img3.png"] },
+      ],
       imageResults: [img1, img2, img3],
       seriesResults: [],
     };
@@ -159,7 +161,11 @@ describe("aggregateSeriesUseCase", () => {
     const client = makeMockClient(synthFn);
     await aggregateSeriesUseCase(state, client);
 
-    const [, , textContext] = synthFn.mock.calls[0] as [string, ImageAnalysis[], string | undefined];
+    const [, , textContext] = synthFn.mock.calls[0] as [
+      string,
+      ImageAnalysis[],
+      string | undefined,
+    ];
     expect(textContext).toBe("Patient has COPD. History of smoking.");
   });
 
@@ -177,7 +183,11 @@ describe("aggregateSeriesUseCase", () => {
     const client = makeMockClient(synthFn);
     await aggregateSeriesUseCase(state, client);
 
-    const [, , textContext] = synthFn.mock.calls[0] as [string, ImageAnalysis[], string | undefined];
+    const [, , textContext] = synthFn.mock.calls[0] as [
+      string,
+      ImageAnalysis[],
+      string | undefined,
+    ];
     expect(textContext).toBeUndefined();
   });
 
@@ -187,7 +197,13 @@ describe("aggregateSeriesUseCase", () => {
     const state: GraphState = {
       inputDir: "/tmp/in",
       outputDir: "/tmp/out",
-      series: [{ seriesId: "series_1", imagePaths: ["/tmp/a.png"], textContextPath: "/nonexistent/context.txt" }],
+      series: [
+        {
+          seriesId: "series_1",
+          imagePaths: ["/tmp/a.png"],
+          textContextPath: "/nonexistent/context.txt",
+        },
+      ],
       imageResults: [makeImageAnalysis("/tmp/a.png", "series_1")],
       seriesResults: [],
     };
@@ -197,7 +213,11 @@ describe("aggregateSeriesUseCase", () => {
 
     // Should not throw — graceful degradation
     expect(result).toHaveLength(1);
-    const [, , textContext] = synthFn.mock.calls[0] as [string, ImageAnalysis[], string | undefined];
+    const [, , textContext] = synthFn.mock.calls[0] as [
+      string,
+      ImageAnalysis[],
+      string | undefined,
+    ];
     expect(textContext).toBeUndefined();
   });
 
@@ -229,10 +249,7 @@ describe("aggregateSeriesUseCase", () => {
         { seriesId: "s1", imagePaths: ["/tmp/a.png"] },
         { seriesId: "s2", imagePaths: ["/tmp/b.png"] },
       ],
-      imageResults: [
-        makeImageAnalysis("/tmp/a.png", "s1"),
-        makeImageAnalysis("/tmp/b.png", "s2"),
-      ],
+      imageResults: [makeImageAnalysis("/tmp/a.png", "s1"), makeImageAnalysis("/tmp/b.png", "s2")],
       seriesResults: [],
     };
 

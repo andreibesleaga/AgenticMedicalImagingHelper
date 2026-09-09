@@ -1,0 +1,69 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_1/img_15_00022764_006.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Large left-sided gastric bubble extending into the left hemithorax, consistent with diaphragmatic hernia.\",\n    \"Mediastinal shift to the right.\",\n    \"A nasogastric tube is visible, with its tip coiled within the gastric lumen in the left hemithorax.\",\n    \"Compression and displacement of the left lung.\",\n    \"Normal right lung fields and pleura.\",\n    \"Normal cardiac silhouette size, displaced to the right.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Diaphragmatic Hernia\",\n      \"description\": \"Large left-sided diaphragmatic hernia with significant herniation of abdominal contents, specifically the stomach, into the left hemithorax. This leads to marked mediastinal shift to the right and compression of the left lung.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"Significant displacement of the mediastinal structures, including the heart and trachea, towards the right hemithorax due to the mass effect from the herniated abdominal contents on the left side.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Left Lung Compression\",\n      \"description\": \"The left lung appears compressed and displaced by the herniated abdominal organs, suggesting reduced lung volume and potential atelectasis.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Nasogastric Tube Malposition\",\n      \"description\": \"The nasogastric tube appears to be correctly positioned within the stomach, but the stomach itself is located abnormally in the left chest, confirming the hernia.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 99\n    }\n  ],\n  \"summary\": \"This X-ray shows a significant issue where parts of the stomach have moved up into the left side of the chest, which is called a diaphragmatic hernia. This has pushed the heart and the main breathing tube over to the right side of the chest and is squishing the left lung. There's also a feeding tube visible, which is properly placed inside the stomach, but the stomach itself is in the wrong place. This condition can affect breathing and heart function and usually requires medical attention.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/diaphragmatic-hernia-1\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900699/\",\n    \"https://www.sages.org/publications/guidelines/guidelines-for-the-management-of-hiatal-hernia/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Large left-sided gastric bubble extending into the left hemithorax, consistent with diaphragmatic hernia.",
+    "Mediastinal shift to the right.",
+    "A nasogastric tube is visible, with its tip coiled within the gastric lumen in the left hemithorax.",
+    "Compression and displacement of the left lung.",
+    "Normal right lung fields and pleura.",
+    "Normal cardiac silhouette size, displaced to the right."
+  ],
+  "abnormalities": [
+    {
+      "name": "Diaphragmatic Hernia",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Large left-sided diaphragmatic hernia with significant herniation of abdominal contents, specifically the stomach, into the left hemithorax. This leads to marked mediastinal shift to the right and compression of the left lung."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Significant displacement of the mediastinal structures, including the heart and trachea, towards the right hemithorax due to the mass effect from the herniated abdominal contents on the left side."
+    },
+    {
+      "name": "Left Lung Compression",
+      "severity": "Severe",
+      "confidence": 90,
+      "description": "The left lung appears compressed and displaced by the herniated abdominal organs, suggesting reduced lung volume and potential atelectasis."
+    },
+    {
+      "name": "Nasogastric Tube Malposition",
+      "severity": "Normal",
+      "confidence": 99,
+      "description": "The nasogastric tube appears to be correctly positioned within the stomach, but the stomach itself is located abnormally in the left chest, confirming the hernia."
+    }
+  ],
+  "summary": "This X-ray shows a significant issue where parts of the stomach have moved up into the left side of the chest, which is called a diaphragmatic hernia. This has pushed the heart and the main breathing tube over to the right side of the chest and is squishing the left lung. There's also a feeding tube visible, which is properly placed inside the stomach, but the stomach itself is in the wrong place. This condition can affect breathing and heart function and usually requires medical attention.",
+  "references": [
+    "https://radiopaedia.org/articles/diaphragmatic-hernia-1",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900699/",
+    "https://www.sages.org/publications/guidelines/guidelines-for-the-management-of-hiatal-hernia/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22326,
+    "bytesOut": 22326,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:05:18.279Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

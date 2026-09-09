@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_1/img_02_00010727_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No obvious focal opacities or consolidations in the lung fields.\",\n    \"Bilateral hilar regions appear unremarkable.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Diaphragmatic contours are well-defined, and costophrenic angles are clear.\",\n    \"Visualized osseous structures (ribs, clavicles, thoracic spine) show no acute abnormalities.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray appears normal. There are no signs of pneumonia, fluid in the lungs, or an enlarged heart. The bones visible in the image also look healthy. This is a good result, suggesting no immediate concerns based on this image.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK547743/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No obvious focal opacities or consolidations in the lung fields.",
+    "Bilateral hilar regions appear unremarkable.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Diaphragmatic contours are well-defined, and costophrenic angles are clear.",
+    "Visualized osseous structures (ribs, clavicles, thoracic spine) show no acute abnormalities."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray appears normal. There are no signs of pneumonia, fluid in the lungs, or an enlarged heart. The bones visible in the image also look healthy. This is a good result, suggesting no immediate concerns based on this image.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://www.ncbi.nlm.nih.gov/books/NBK547743/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22859,
+    "bytesOut": 22859,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:04:30.316Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000148/series_2/00000148_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Good\",\"findings\":[\"Rounded opacity with central lucency/possible calcification noted in the right mid-lung zone, likely projecting within the right hilar or perihilar region\",\"Cardiac silhouette appears mildly enlarged, though this may be exaggerated by AP projection/technique\",\"Lung fields otherwise appear clear without focal consolidation, effusion, or pneumothorax\",\"Mediastinal contours grossly within normal limits\",\"Visible skin marker (radiopaque 'R' marker) at the right side of the image indicating right side orientation\",\"Bony thorax appears intact without obvious fracture\"],\"abnormalities\":[{\"name\":\"Right lung/hilar nodular opacity\",\"description\":\"A rounded density with a central lucent or calcified focus is seen in the right mid-zone, possibly overlying the hilum or right lung parenchyma. Differential includes a granuloma, calcified nodule, or hilar lymph node calcification; less likely a foreign body or coin lesion artifact. Further characterization with CT is recommended.\",\"severity\":\"Mild\",\"confidence\":58},{\"name\":\"Cardiac silhouette prominence\",\"description\":\"The heart shadow appears slightly enlarged, which could reflect true cardiomegaly, technique-related magnification (AP projection, patient rotation, or shallow inspiration), or overlying soft tissue.\",\"severity\":\"Mild\",\"confidence\":40}],\"summary\":\"This chest X-ray shows mostly clear lungs without signs of infection, fluid buildup, or collapsed lung. However, there is a small round spot with a bright center in the right side of the chest near the area where the airways and blood vessels enter the lung (the hilum). This could represent an old, calcified scar from a prior infection (a common and often harmless finding called a granuloma), but it should be reviewed further, possibly with a CT scan, to be sure it isn't something that needs monitoring. The heart also looks slightly larger than average, but this is often just due to the angle of the X-ray and body position rather than a true heart problem. Overall, this image is not highly abnormal, but the noted nodule should be discussed with a physician for follow-up.\",\"references\":[\"https://radiopaedia.org/articles/pulmonary-granuloma\",\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\"https://pubs.rsna.org/doi/10.1148/radiol.2019182716\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Good",
+  "findings": [
+    "Rounded opacity with central lucency/possible calcification noted in the right mid-lung zone, likely projecting within the right hilar or perihilar region",
+    "Cardiac silhouette appears mildly enlarged, though this may be exaggerated by AP projection/technique",
+    "Lung fields otherwise appear clear without focal consolidation, effusion, or pneumothorax",
+    "Mediastinal contours grossly within normal limits",
+    "Visible skin marker (radiopaque 'R' marker) at the right side of the image indicating right side orientation",
+    "Bony thorax appears intact without obvious fracture"
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lung/hilar nodular opacity",
+      "severity": "Mild",
+      "confidence": 58,
+      "description": "A rounded density with a central lucent or calcified focus is seen in the right mid-zone, possibly overlying the hilum or right lung parenchyma. Differential includes a granuloma, calcified nodule, or hilar lymph node calcification; less likely a foreign body or coin lesion artifact. Further characterization with CT is recommended."
+    },
+    {
+      "name": "Cardiac silhouette prominence",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "The heart shadow appears slightly enlarged, which could reflect true cardiomegaly, technique-related magnification (AP projection, patient rotation, or shallow inspiration), or overlying soft tissue."
+    }
+  ],
+  "summary": "This chest X-ray shows mostly clear lungs without signs of infection, fluid buildup, or collapsed lung. However, there is a small round spot with a bright center in the right side of the chest near the area where the airways and blood vessels enter the lung (the hilum). This could represent an old, calcified scar from a prior infection (a common and often harmless finding called a granuloma), but it should be reviewed further, possibly with a CT scan, to be sure it isn't something that needs monitoring. The heart also looks slightly larger than average, but this is often just due to the angle of the X-ray and body position rather than a true heart problem. Overall, this image is not highly abnormal, but the noted nodule should be discussed with a physician for follow-up.",
+  "references": [
+    "https://radiopaedia.org/articles/pulmonary-granuloma",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/doi/10.1148/radiol.2019182716"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22107,
+    "bytesOut": 22107,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-09T07:09:57.234Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

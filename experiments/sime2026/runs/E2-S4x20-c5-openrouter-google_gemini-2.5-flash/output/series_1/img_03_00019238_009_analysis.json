@@ -1,0 +1,75 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_1/img_03_00019238_009.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Mild cardiomegaly.\",\n    \"Bilateral pleural effusions, larger on the right.\",\n    \"Associated bilateral atelectasis/pulmonary edema, particularly in the lower lobes.\",\n    \"Left-sided mediastinal shift.\",\n    \"Tracheal deviation to the right.\",\n    \"Diaphragms are obscured inferiorly due to effusions and infiltrates.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Mild enlargement of the cardiac silhouette.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Bilateral pleural effusions are noted, more prominent on the right side, causing blunting of the costophrenic angles and obscuring the diaphragmatic borders.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Atelectasis/Pulmonary Edema\",\n      \"description\": \"Associated opacities in the lung bases, consistent with atelectasis and/or pulmonary edema, likely secondary to the pleural effusions and potential fluid overload.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"Evidence of left-sided mediastinal shift, potentially due to volume loss on the right or mass effect from the right pleural effusion, pushing structures to the left.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    },\n    {\n      \"name\": \"Tracheal Deviation\",\n      \"description\": \"The trachea is deviated to the right.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This X-ray shows that your heart appears mildly enlarged. There is fluid around both lungs, which is more noticeable on the right side. This fluid is making it harder to see the bottom parts of your lungs and is causing some collapse of lung tissue (atelectasis) or fluid in the lungs (pulmonary edema). The central structures in your chest, including your windpipe, are shifted towards the right. These findings suggest there's a significant amount of fluid in your chest, especially on the right, which is pushing things out of their usual position.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/mediastinal-shift\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Mild cardiomegaly.",
+    "Bilateral pleural effusions, larger on the right.",
+    "Associated bilateral atelectasis/pulmonary edema, particularly in the lower lobes.",
+    "Left-sided mediastinal shift.",
+    "Tracheal deviation to the right.",
+    "Diaphragms are obscured inferiorly due to effusions and infiltrates."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Mild enlargement of the cardiac silhouette."
+    },
+    {
+      "name": "Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Bilateral pleural effusions are noted, more prominent on the right side, causing blunting of the costophrenic angles and obscuring the diaphragmatic borders."
+    },
+    {
+      "name": "Atelectasis/Pulmonary Edema",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Associated opacities in the lung bases, consistent with atelectasis and/or pulmonary edema, likely secondary to the pleural effusions and potential fluid overload."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Evidence of left-sided mediastinal shift, potentially due to volume loss on the right or mass effect from the right pleural effusion, pushing structures to the left."
+    },
+    {
+      "name": "Tracheal Deviation",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "The trachea is deviated to the right."
+    }
+  ],
+  "summary": "This X-ray shows that your heart appears mildly enlarged. There is fluid around both lungs, which is more noticeable on the right side. This fluid is making it harder to see the bottom parts of your lungs and is causing some collapse of lung tissue (atelectasis) or fluid in the lungs (pulmonary edema). The central structures in your chest, including your windpipe, are shifted towards the right. These findings suggest there's a significant amount of fluid in your chest, especially on the right, which is pushing things out of their usual position.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/mediastinal-shift"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22415,
+    "bytesOut": 22415,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:10:28.550Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4L/00003980/series_3/00003980_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A right-sided central venous catheter is seen with its tip projecting over the right lower mainstem bronchus, which appears to be within the right atrium or cavoatrial junction.\",\n    \"Bilateral lung fields appear clear without focal consolidation or pneumothorax.\",\n    \"Cardiac silhouette size and contour are within normal limits.\",\n    \"Mediastinal contours are unremarkable.\",\n    \"Both hemidiaphragms are intact and costophrenic angles are clear.\",\n    \"Bony thorax shows no acute fractures or destructive lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Central Venous Catheter Misplacement\",\n      \"description\": \"The tip of the central venous catheter is positioned in the right lower mainstem bronchus, which is an inappropriate location for a central venous line, indicating misplacement. The tip should ideally be in the superior vena cava or cavoatrial junction.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that a tube inserted into a large vein (called a central venous catheter) is not in the correct position. Its tip appears to be in the right main airway leading to the lung, rather than in the heart or a large vein near it. This needs to be corrected to avoid complications. Otherwise, your lungs, heart, and the bones visible on the X-ray look normal.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3214820/\",\n    \"https://radiopaedia.org/articles/central-venous-catheter-complications\",\n    \"https://www.acep.org/patient-care/clinical-policies/central-venous-catheter-placement/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A right-sided central venous catheter is seen with its tip projecting over the right lower mainstem bronchus, which appears to be within the right atrium or cavoatrial junction.",
+    "Bilateral lung fields appear clear without focal consolidation or pneumothorax.",
+    "Cardiac silhouette size and contour are within normal limits.",
+    "Mediastinal contours are unremarkable.",
+    "Both hemidiaphragms are intact and costophrenic angles are clear.",
+    "Bony thorax shows no acute fractures or destructive lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Central Venous Catheter Misplacement",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "The tip of the central venous catheter is positioned in the right lower mainstem bronchus, which is an inappropriate location for a central venous line, indicating misplacement. The tip should ideally be in the superior vena cava or cavoatrial junction."
+    }
+  ],
+  "summary": "The chest X-ray shows that a tube inserted into a large vein (called a central venous catheter) is not in the correct position. Its tip appears to be in the right main airway leading to the lung, rather than in the heart or a large vein near it. This needs to be corrected to avoid complications. Otherwise, your lungs, heart, and the bones visible on the X-ray look normal.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3214820/",
+    "https://radiopaedia.org/articles/central-venous-catheter-complications",
+    "https://www.acep.org/patient-care/clinical-policies/central-venous-catheter-placement/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22671,
+    "bytesOut": 22671,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:19:47.259Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

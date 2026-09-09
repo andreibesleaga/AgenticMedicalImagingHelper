@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S3x10/series_1/img_05_00010693_004.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute infiltrates, effusions, or pneumothorax.\",\n    \"Cardiomediastinal contours are within normal limits.\",\n    \"No significant hilar or mediastinal lymphadenopathy.\",\n    \"Bony thorax appears intact.\",\n    \"A cardiac implantable electronic device (CIED) lead is noted, extending into the cardiac silhouette, likely positioned within the right ventricle. The distal tip of the lead appears to show coiling or an electrode, consistent with a lead tip.\",\n    \"A small, dense, circular metallic foreign body is seen in the lower mediastinum/epigastric region, separate from the CIED lead. This appears consistent with a gastric band or similar device component, although its exact nature cannot be definitively determined from a single plain film.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiac Implantable Electronic Device (CIED) Lead\",\n      \"description\": \"A cardiac implantable electronic device lead is visualized, coursing inferiorly from the upper thorax and entering the cardiac silhouette, with its tip likely in the right ventricle. This is an expected finding for a patient with a CIED.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Metallic Foreign Body\",\n      \"description\": \"A small, dense, circular metallic foreign body is present in the lower mediastinum/epigastric region. Its appearance is suggestive of a gastric band component or similar surgical implant. Further clinical history or imaging may be needed for definitive identification.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows healthy lungs without signs of infection, fluid, or collapsed lung. The heart and major blood vessels appear normal. There is a pacemaker or defibrillator wire (lead) in the heart, which is an expected finding for someone with such a device. Additionally, there's a small, round metallic object in the upper abdomen, possibly related to a surgical procedure like a gastric band, but this isn't causing any obvious issues in this image.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2017160098\",\n    \"https://radiopaedia.org/articles/pacemaker?lang=gb\",\n    \"https://radiopaedia.org/articles/laparoscopic-adjustable-gastric-band?lang=gb\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute infiltrates, effusions, or pneumothorax.",
+    "Cardiomediastinal contours are within normal limits.",
+    "No significant hilar or mediastinal lymphadenopathy.",
+    "Bony thorax appears intact.",
+    "A cardiac implantable electronic device (CIED) lead is noted, extending into the cardiac silhouette, likely positioned within the right ventricle. The distal tip of the lead appears to show coiling or an electrode, consistent with a lead tip.",
+    "A small, dense, circular metallic foreign body is seen in the lower mediastinum/epigastric region, separate from the CIED lead. This appears consistent with a gastric band or similar device component, although its exact nature cannot be definitively determined from a single plain film."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiac Implantable Electronic Device (CIED) Lead",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A cardiac implantable electronic device lead is visualized, coursing inferiorly from the upper thorax and entering the cardiac silhouette, with its tip likely in the right ventricle. This is an expected finding for a patient with a CIED."
+    },
+    {
+      "name": "Metallic Foreign Body",
+      "severity": "Normal",
+      "confidence": 85,
+      "description": "A small, dense, circular metallic foreign body is present in the lower mediastinum/epigastric region. Its appearance is suggestive of a gastric band component or similar surgical implant. Further clinical history or imaging may be needed for definitive identification."
+    }
+  ],
+  "summary": "The chest X-ray shows healthy lungs without signs of infection, fluid, or collapsed lung. The heart and major blood vessels appear normal. There is a pacemaker or defibrillator wire (lead) in the heart, which is an expected finding for someone with such a device. Additionally, there's a small, round metallic object in the upper abdomen, possibly related to a surgical procedure like a gastric band, but this isn't causing any obvious issues in this image.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2017160098",
+    "https://radiopaedia.org/articles/pacemaker?lang=gb",
+    "https://radiopaedia.org/articles/laparoscopic-adjustable-gastric-band?lang=gb"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22683,
+    "bytesOut": 22683,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:01:19.134Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

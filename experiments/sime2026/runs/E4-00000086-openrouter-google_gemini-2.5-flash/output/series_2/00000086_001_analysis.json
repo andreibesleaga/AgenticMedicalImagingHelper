@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000086/series_2/00000086_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right lung: Multiple cavitary lesions are noted, predominantly in the right mid and lower lung zones. These lesions exhibit thick, irregular walls. Surrounding parenchymal opacities suggest inflammatory or infiltrative changes. The largest cavity measures approximately 4 cm in diameter.\",\n    \"Left lung: Appears unremarkable without focal consolidations, effusions, or masses. The vasculature is within normal limits.\",\n    \"Pleura: No evidence of pleural effusion or pneumothorax bilaterally.\",\n    \"Mediastinum: Cardiac silhouette is normal in size and contour. Mediastinal structures appear unremarkable. No evidence of widened mediastinum or significant hilar lymphadenopathy.\",\n    \"Bones: Visualized osseous structures of the thoracic cage appear intact without acute fractures or destructive lesions. There is a metallic artifact, likely a medical device, in the left upper chest region (possibly related to a pacemaker or similar implant).\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Lung Cavitations\",\n      \"description\": \"Multiple cavitary lesions are present in the right mid and lower lung fields. These cavities have thick, irregular walls and are associated with surrounding parenchymal opacities, indicating a significant inflammatory or infectious process. The largest cavity is approximately 4 cm.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray shows multiple abnormal air-filled spaces, called cavities, in the right lung. These cavities have thick, uneven walls and are surrounded by cloudy areas in the lung tissue, suggesting an active infection or inflammation. The largest cavity is about 1.5 inches across. The left lung, heart, and surrounding bones appear normal. There's also a small metal object visible in the upper left chest, which is likely a medical device. This finding indicates a significant lung issue on the right side that requires further medical evaluation.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3384210/\",\n    \"https://radiopaedia.org/articles/cavitating-pulmonary-lesions-differential-diagnosis\",\n    \"https://www.atsjournals.org/doi/full/10.1164/rccm.200910-1555CI\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Right lung: Multiple cavitary lesions are noted, predominantly in the right mid and lower lung zones. These lesions exhibit thick, irregular walls. Surrounding parenchymal opacities suggest inflammatory or infiltrative changes. The largest cavity measures approximately 4 cm in diameter.",
+    "Left lung: Appears unremarkable without focal consolidations, effusions, or masses. The vasculature is within normal limits.",
+    "Pleura: No evidence of pleural effusion or pneumothorax bilaterally.",
+    "Mediastinum: Cardiac silhouette is normal in size and contour. Mediastinal structures appear unremarkable. No evidence of widened mediastinum or significant hilar lymphadenopathy.",
+    "Bones: Visualized osseous structures of the thoracic cage appear intact without acute fractures or destructive lesions. There is a metallic artifact, likely a medical device, in the left upper chest region (possibly related to a pacemaker or similar implant)."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Lung Cavitations",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Multiple cavitary lesions are present in the right mid and lower lung fields. These cavities have thick, irregular walls and are associated with surrounding parenchymal opacities, indicating a significant inflammatory or infectious process. The largest cavity is approximately 4 cm."
+    }
+  ],
+  "summary": "This X-ray shows multiple abnormal air-filled spaces, called cavities, in the right lung. These cavities have thick, uneven walls and are surrounded by cloudy areas in the lung tissue, suggesting an active infection or inflammation. The largest cavity is about 1.5 inches across. The left lung, heart, and surrounding bones appear normal. There's also a small metal object visible in the upper left chest, which is likely a medical device. This finding indicates a significant lung issue on the right side that requires further medical evaluation.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3384210/",
+    "https://radiopaedia.org/articles/cavitating-pulmonary-lesions-differential-diagnosis",
+    "https://www.atsjournals.org/doi/full/10.1164/rccm.200910-1555CI"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 28156,
+    "bytesOut": 21940,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "alpha channel stripped",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:14:49.231Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

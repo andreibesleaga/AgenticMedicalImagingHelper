@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   medical-imaging:
     build:
@@ -11,7 +9,7 @@ services:
     environment:
       - NODE_ENV=production
     volumes:
-      - ./input:/app/input:ro       # Read-only input
-      - ./output:/app/output        # Writable output
+      - ./input:/app/input:ro # Read-only input
+      - ./output:/app/output # Writable output
     command: ["analyze", "/app/input", "/app/output", "--verbose"]
     restart: "no"

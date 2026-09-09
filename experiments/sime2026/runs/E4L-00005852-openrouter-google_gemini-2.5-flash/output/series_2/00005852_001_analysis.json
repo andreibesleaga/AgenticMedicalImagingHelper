@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4L/00005852/series_2/00005852_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Presence of multiple vascular catheters and lines, including a central venous catheter in the right subclavian vein projecting into the superior vena cava, and an additional line overlying the right upper and mid lung fields.\",\n    \"Bilateral lung fields appear clear, without evidence of focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"Bony structures, including ribs, clavicles, and scapulae, show no acute abnormalities.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray shows multiple medical tubes or lines in place, which are expected in a hospital setting. The lungs and heart appear normal. There are no signs of pneumonia, fluid around the lungs, or a collapsed lung.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1146/annurev-med-050418-020524\",\n    \"https://radiopaedia.org/articles/chest-x-ray-normal-findings?lang=us\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Presence of multiple vascular catheters and lines, including a central venous catheter in the right subclavian vein projecting into the superior vena cava, and an additional line overlying the right upper and mid lung fields.",
+    "Bilateral lung fields appear clear, without evidence of focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "Bony structures, including ribs, clavicles, and scapulae, show no acute abnormalities."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows multiple medical tubes or lines in place, which are expected in a hospital setting. The lungs and heart appear normal. There are no signs of pneumonia, fluid around the lungs, or a collapsed lung.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1146/annurev-med-050418-020524",
+    "https://radiopaedia.org/articles/chest-x-ray-normal-findings?lang=us"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22650,
+    "bytesOut": 22650,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:21:08.616Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -355,7 +355,7 @@ describe("createGeminiClient", () => {
     const PRICING = { inputUsdPerMillion: 1, outputUsdPerMillion: 10 };
     const OK = { response: { text: () => SAMPLE_IMAGE_ANALYSIS_RESPONSE } };
 
-    /** The real 429 that ended a SIME 2026 batch, including its RetryInfo hint. */
+    /** The real 429 that ended an experiment batch, including its RetryInfo hint. */
     const quota429 = () =>
       new Error(
         "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/" +

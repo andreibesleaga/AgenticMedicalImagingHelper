@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4L/00003295/series_2/00003295_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No obvious focal opacities or consolidations.\",\n    \"Bilateral lung fields appear clear.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Diaphragms are intact and well-defined.\",\n    \"Costophrenic angles are clear.\",\n    \"Bony thorax appears unremarkable, without acute fractures or significant lytic/blastic lesions.\",\n    \"A tortuous, tubular lucency is noted projected over the right upper lung field, consistent with a centrally placed vascular catheter.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Central Venous Catheter\",\n      \"description\": \"A centrally placed vascular catheter is visualized, with its tip projected over the right upper lung field, likely within the superior vena cava or brachiocephalic vein, and appears to follow an appropriate course. No immediate complications such as pneumothorax or hemothorax are identified.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This chest X-ray shows generally clear lungs and a normal-sized heart. There is a tube, likely a central line, placed in a large vein in the upper right side of the chest, which appears to be in a good position. There are no signs of immediate complications from this tube, like a collapsed lung or bleeding. Overall, the study does not show any new significant problems in the chest.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/central-venous-catheter?lang=us\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMicm1502421\",\n    \"https://www.bmj.com/content/340/bmj.c492.full\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No obvious focal opacities or consolidations.",
+    "Bilateral lung fields appear clear.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Diaphragms are intact and well-defined.",
+    "Costophrenic angles are clear.",
+    "Bony thorax appears unremarkable, without acute fractures or significant lytic/blastic lesions.",
+    "A tortuous, tubular lucency is noted projected over the right upper lung field, consistent with a centrally placed vascular catheter."
+  ],
+  "abnormalities": [
+    {
+      "name": "Central Venous Catheter",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A centrally placed vascular catheter is visualized, with its tip projected over the right upper lung field, likely within the superior vena cava or brachiocephalic vein, and appears to follow an appropriate course. No immediate complications such as pneumothorax or hemothorax are identified."
+    }
+  ],
+  "summary": "This chest X-ray shows generally clear lungs and a normal-sized heart. There is a tube, likely a central line, placed in a large vein in the upper right side of the chest, which appears to be in a good position. There are no signs of immediate complications from this tube, like a collapsed lung or bleeding. Overall, the study does not show any new significant problems in the chest.",
+  "references": [
+    "https://radiopaedia.org/articles/central-venous-catheter?lang=us",
+    "https://www.nejm.org/doi/full/10.1056/NEJMicm1502421",
+    "https://www.bmj.com/content/340/bmj.c492.full"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22641,
+    "bytesOut": 22641,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:18:55.536Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

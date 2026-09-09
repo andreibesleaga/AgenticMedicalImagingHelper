@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_1/img_14_00011823_001.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidations, effusions, or pneumothorax identified.\",\n    \"The cardiac silhouette is normal in size and contour.\",\n    \"The mediastinal and hilar contours are unremarkable.\",\n    \"The bony thorax, including ribs and clavicles, appears intact with no acute abnormalities.\",\n    \"Diaphragms are clear, with no subdiaphragmatic free air.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This is an X-ray of the chest, which appears normal. The lungs are clear without any signs of pneumonia, fluid accumulation (effusion), or collapsed lung (pneumothorax). The heart size and shape are within normal limits. The bones of the chest also look healthy. In simple terms, everything appears as expected for a healthy chest X-ray.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.233025178\",\n    \"https://www.radiologyinfo.org/en/info/chestrad\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidations, effusions, or pneumothorax identified.",
+    "The cardiac silhouette is normal in size and contour.",
+    "The mediastinal and hilar contours are unremarkable.",
+    "The bony thorax, including ribs and clavicles, appears intact with no acute abnormalities.",
+    "Diaphragms are clear, with no subdiaphragmatic free air."
+  ],
+  "abnormalities": [],
+  "summary": "This is an X-ray of the chest, which appears normal. The lungs are clear without any signs of pneumonia, fluid accumulation (effusion), or collapsed lung (pneumothorax). The heart size and shape are within normal limits. The bones of the chest also look healthy. In simple terms, everything appears as expected for a healthy chest X-ray.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.233025178",
+    "https://www.radiologyinfo.org/en/info/chestrad"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21950,
+    "bytesOut": 21950,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:10:38.608Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

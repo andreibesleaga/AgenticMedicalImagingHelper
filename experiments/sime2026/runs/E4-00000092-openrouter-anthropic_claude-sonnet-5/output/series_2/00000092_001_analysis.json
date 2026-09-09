@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000092/series_2/00000092_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP/PA)\",\"quality\":\"Fair\",\"findings\":[\"Frontal chest radiograph showing bilateral lung fields with diffuse increased opacity/haziness bilaterally\",\"Cardiac silhouette appears within normal limits in size\",\"Bony thorax including ribs, clavicles, and visible spine appear grossly intact\",\"Costophrenic angles partially obscured, particularly on the right\",\"Mediastinal contours appear midline\",\"Soft tissue markers/artifact noted in the right upper quadrant of the image\"],\"abnormalities\":[{\"name\":\"Bilateral diffuse lung opacity\",\"description\":\"Increased hazy opacification noted throughout both lung fields, more pronounced in the lower and mid zones, which may represent diffuse infiltrates, pulmonary edema, or widespread infectious/inflammatory process such as pneumonia or ARDS-pattern changes\",\"severity\":\"Moderate\",\"confidence\":55},{\"name\":\"Blunting of right costophrenic angle\",\"description\":\"Possible mild blunting/obscuration of the right costophrenic angle suggesting small pleural effusion or overlying consolidation\",\"severity\":\"Mild\",\"confidence\":40}],\"summary\":\"This chest X-ray shows both lungs appear hazier or cloudier than expected, which can be a sign of fluid, infection, or inflammation affecting the lungs. The heart size looks normal, and the bones of the chest appear intact. There may also be a small amount of fluid near the bottom of the right lung. These findings are non-specific and could be due to several different conditions, including pneumonia, fluid overload, or other lung processes. Further clinical correlation, patient history, and possibly additional imaging (like a CT scan) would be needed to determine the exact cause. Please consult a radiologist or your healthcare provider for an accurate diagnosis.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph-assessment\",\"https://www.rsna.org/patient-resources/chest-x-ray\",\"https://pubs.rsna.org/doi/10.1148/radiol.2020200642\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP/PA)",
+  "quality": "Fair",
+  "findings": [
+    "Frontal chest radiograph showing bilateral lung fields with diffuse increased opacity/haziness bilaterally",
+    "Cardiac silhouette appears within normal limits in size",
+    "Bony thorax including ribs, clavicles, and visible spine appear grossly intact",
+    "Costophrenic angles partially obscured, particularly on the right",
+    "Mediastinal contours appear midline",
+    "Soft tissue markers/artifact noted in the right upper quadrant of the image"
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral diffuse lung opacity",
+      "severity": "Moderate",
+      "confidence": 55,
+      "description": "Increased hazy opacification noted throughout both lung fields, more pronounced in the lower and mid zones, which may represent diffuse infiltrates, pulmonary edema, or widespread infectious/inflammatory process such as pneumonia or ARDS-pattern changes"
+    },
+    {
+      "name": "Blunting of right costophrenic angle",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Possible mild blunting/obscuration of the right costophrenic angle suggesting small pleural effusion or overlying consolidation"
+    }
+  ],
+  "summary": "This chest X-ray shows both lungs appear hazier or cloudier than expected, which can be a sign of fluid, infection, or inflammation affecting the lungs. The heart size looks normal, and the bones of the chest appear intact. There may also be a small amount of fluid near the bottom of the right lung. These findings are non-specific and could be due to several different conditions, including pneumonia, fluid overload, or other lung processes. Further clinical correlation, patient history, and possibly additional imaging (like a CT scan) would be needed to determine the exact cause. Please consult a radiologist or your healthcare provider for an accurate diagnosis.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-assessment",
+    "https://www.rsna.org/patient-resources/chest-x-ray",
+    "https://pubs.rsna.org/doi/10.1148/radiol.2020200642"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22555,
+    "bytesOut": 22555,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-09T07:07:46.282Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

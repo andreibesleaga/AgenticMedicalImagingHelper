@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4L/00022134/series_2/00022134_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute infiltrates, effusions, or pneumothorax are identified.\",\n    \"Cardiomediastinal silhouette is within normal limits for age.\",\n    \"Bony thorax appears intact without acute fracture or destructive lesion.\",\n    \"Diaphragms are clear and costophrenic angles are sharp.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray shows healthy lungs and heart, and the bones in the chest appear normal. There are no signs of pneumonia, fluid buildup, collapsed lung, or any other significant problems.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2018180016\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8576404/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute infiltrates, effusions, or pneumothorax are identified.",
+    "Cardiomediastinal silhouette is within normal limits for age.",
+    "Bony thorax appears intact without acute fracture or destructive lesion.",
+    "Diaphragms are clear and costophrenic angles are sharp."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows healthy lungs and heart, and the bones in the chest appear normal. There are no signs of pneumonia, fluid buildup, collapsed lung, or any other significant problems.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2018180016",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8576404/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23048,
+    "bytesOut": 23048,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:26:46.952Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -455,7 +455,7 @@ tests/fixtures/
 
 ### Coverage Target
 
-≥96% line coverage on all `src/` files (per AGENTS.md quality gate 3).
+≥97% line and statement coverage on all `src/` files, ≥92% branches and ≥94% functions — the thresholds enforced in `jest.config.js`.
 
 ---
 

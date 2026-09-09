@@ -7,8 +7,8 @@
  *   medical-imaging verify-manifest <outputDir> [--chain <file>]
  *
  * Options (analyze):
- *   -s, --series <ids...>     Only process specified series (comma-separated)
- *   -c, --concurrency <n>     Max parallel Gemini API calls (default: 5)
+ *   -s, --series <ids...>     Only process specified series (space-separated ids)
+ *   -c, --concurrency <n>     Max parallel model API calls (default: 5)
  *   -v, --verbose             Print progress to stderr
  *       --max-cost-usd <n>    Client-side cost cap (exit 5)
  *       --manifest-chain <f>  Append the run manifest's hash to a ledger file
@@ -41,9 +41,9 @@ program
   .argument("<inputDir>", "Path to the input directory containing series sub-folders")
   .argument("[outputDir]", "Path to the output directory (default: ./output)")
   .option("-s, --series <ids...>", "Only process specified series IDs")
-  .option("-c, --concurrency <n>", "Max parallel Gemini API calls", "5")
+  .option("-c, --concurrency <n>", "Max parallel model API calls", "5")
   .option("-v, --verbose", "Print progress information to stderr", false)
-  .option("--max-cost-usd <n>", "Abort the run if estimated Gemini cost (USD) exceeds this cap")
+  .option("--max-cost-usd <n>", "Abort the run if estimated model cost (USD) exceeds this cap")
   .option(
     "--manifest-chain <file>",
     "Append-only ledger file: links this run's manifest hash to the previous run's"

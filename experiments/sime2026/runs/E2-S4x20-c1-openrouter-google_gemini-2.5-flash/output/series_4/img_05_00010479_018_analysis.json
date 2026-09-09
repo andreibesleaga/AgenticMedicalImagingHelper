@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_4/img_05_00010479_018.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Presence of a central venous catheter (CVC) with its tip projected over the superior vena cava (SVC).\",\n    \"No evidence of pneumothorax or significant pleural effusion.\",\n    \"Normal cardiac silhouette size and contour.\",\n    \"Pulmonary vasculature appears within normal limits.\",\n    \"Clear lung fields without obvious infiltrates or masses.\",\n    \"Osseous structures of the thoracic cage are unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Central Venous Catheter\",\n      \"description\": \"A central venous catheter is present with its tip appropriately positioned in the superior vena cava, indicated by its projection centrally over the mediastinum, above the level of the right atrium.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a healthy heart and lungs. There is a tube (a central venous catheter) correctly placed in a large vein near the heart, which is used for giving medicines or fluids. There are no signs of collapsed lung or fluid around the lungs.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/central-venous-catheter-1\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMicm0706229\",\n    \"https://www.escardio.org/Journals/E-Journal-of-Cardiology-Practice/Volume-13/Correct-placement-of-central-venous-catheters\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Presence of a central venous catheter (CVC) with its tip projected over the superior vena cava (SVC).",
+    "No evidence of pneumothorax or significant pleural effusion.",
+    "Normal cardiac silhouette size and contour.",
+    "Pulmonary vasculature appears within normal limits.",
+    "Clear lung fields without obvious infiltrates or masses.",
+    "Osseous structures of the thoracic cage are unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Central Venous Catheter",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A central venous catheter is present with its tip appropriately positioned in the superior vena cava, indicated by its projection centrally over the mediastinum, above the level of the right atrium."
+    }
+  ],
+  "summary": "The chest X-ray shows a healthy heart and lungs. There is a tube (a central venous catheter) correctly placed in a large vein near the heart, which is used for giving medicines or fluids. There are no signs of collapsed lung or fluid around the lungs.",
+  "references": [
+    "https://radiopaedia.org/articles/central-venous-catheter-1",
+    "https://www.nejm.org/doi/full/10.1056/NEJMicm0706229",
+    "https://www.escardio.org/Journals/E-Journal-of-Cardiology-Practice/Volume-13/Correct-placement-of-central-venous-catheters"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23236,
+    "bytesOut": 23236,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:08:30.307Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

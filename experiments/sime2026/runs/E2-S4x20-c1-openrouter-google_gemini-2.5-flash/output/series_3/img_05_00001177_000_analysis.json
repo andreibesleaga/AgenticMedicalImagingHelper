@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_3/img_05_00001177_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, effusion, or pneumothorax identified.\",\n    \"Cardiomediastinal contours are within normal limits.\",\n    \"Hilar regions appear unremarkable.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"Visualized osseous structures appear unremarkable.\",\n    \"An external artifact consistent with an ECG lead is noted over the left shoulder.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray shows no signs of pneumonia, fluid around the lungs (effusion), or collapsed lung (pneumothorax). The heart and major blood vessels in the chest appear normal in size and shape. The bones seen in the image also look healthy. There's a small external sticker from an EKG on the left shoulder, which is not a concern for the lung evaluation.\",\n  \"references\": [\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://pubs.rsna.org/journal/radiographics\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, effusion, or pneumothorax identified.",
+    "Cardiomediastinal contours are within normal limits.",
+    "Hilar regions appear unremarkable.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "Visualized osseous structures appear unremarkable.",
+    "An external artifact consistent with an ECG lead is noted over the left shoulder."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows no signs of pneumonia, fluid around the lungs (effusion), or collapsed lung (pneumothorax). The heart and major blood vessels in the chest appear normal in size and shape. The bones seen in the image also look healthy. There's a small external sticker from an EKG on the left shoulder, which is not a concern for the lung evaluation.",
+  "references": [
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiographics"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22989,
+    "bytesOut": 22989,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:07:14.012Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

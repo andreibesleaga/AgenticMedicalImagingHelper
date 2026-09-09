@@ -77,15 +77,32 @@ export function defaultGeminiPricing(model?: string): GeminiPricing {
   };
 }
 
+/**
+ * USD for a human-readable message: up to 4 decimals, trailing zeros trimmed,
+ * never fewer than 2.
+ *
+ * `toFixed(2)` printed a `--max-cost-usd 0.0001` cap as `$0.00`, which reads as
+ * "the cap was zero" rather than "the cap was very small"; four decimals is the
+ * resolution of the per-call estimates the cap is compared against.
+ */
+export function formatUsd(value: number): string {
+  const fixed = value.toFixed(4);
+  const trimmed = fixed.replace(/(\.\d{2}\d*?)0+$/, "$1");
+  return trimmed;
+}
+
 export class CostCapExceededError extends Error {
   constructor(
     public readonly estimatedUsd: number,
     public readonly capUsd: number,
     public readonly calls: number
   ) {
+    // Provider-neutral: the same meter guards the Gemini SDK path and every
+    // OpenRouter-hosted model, so naming Gemini here was simply wrong under
+    // `AI_PROVIDER=openrouter`.
     super(
-      `Estimated Gemini cost $${estimatedUsd.toFixed(4)} exceeded --max-cost-usd ` +
-        `$${capUsd.toFixed(2)} after ${calls} call(s). Run aborted.`
+      `Estimated model cost $${formatUsd(estimatedUsd)} exceeded --max-cost-usd ` +
+        `$${formatUsd(capUsd)} after ${calls} call(s). Run aborted.`
     );
     this.name = "CostCapExceededError";
   }

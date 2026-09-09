@@ -1,0 +1,70 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000092/series_3/00000092_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral pleural effusions, greater on the right side.\",\n    \"Bilateral basal consolidations/atelectasis.\",\n    \"Elevated hemidiaphragms, more prominent on the right.\",\n    \"Cardiomediastinal silhouette appears within normal limits for size.\",\n    \"No definite pneumothorax identified.\",\n    \"Surgical clips/staples noted in the lower mediastinum/epigastric region, likely from prior abdominal surgery.\",\n    \"Soft tissues and osseous structures appear unremarkable given the limitations of the projection.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Pleural Effusion\",\n      \"description\": \"Significant blunting of the right costophrenic angle and obscuration of the right hemidiaphragm by fluid, consistent with a moderate pleural effusion. The fluid level appears somewhat layered.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Left Pleural Effusion\",\n      \"description\": \"Blunting of the left costophrenic angle and a small subpulmonic fluid collection, consistent with a small pleural effusion.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Bilateral Basal Atelectasis/Consolidation\",\n      \"description\": \"Increased opacification in both lung bases, particularly on the right, which could represent atelectasis (collapsed lung tissue) or infiltrates/consolidation (inflammation/fluid in the lung tissue) often seen in conjunction with pleural effusions.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Elevated Hemidiaphragms\",\n      \"description\": \"Both hemidiaphragms appear elevated, more so on the right, likely secondary to the subpulmonic effusion and/or associated basal lung changes.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The chest X-ray shows fluid around both lungs, which is called a pleural effusion. There is more fluid on the right side. This fluid is also causing some of the lung tissue at the bottom of both lungs to look collapsed or filled with fluid, which can be due to atelectasis (a common finding when the lung isn't fully inflated) or inflammation. The muscle that separates the chest from the abdomen (diaphragm) also appears higher than usual. These findings often suggest fluid accumulation in the chest, which can be due to various reasons such as heart failure, infection, or inflammation.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion-3?lang=gb\",\n    \"https://radiopaedia.org/articles/atelectasis-1?lang=gb\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK431057/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral pleural effusions, greater on the right side.",
+    "Bilateral basal consolidations/atelectasis.",
+    "Elevated hemidiaphragms, more prominent on the right.",
+    "Cardiomediastinal silhouette appears within normal limits for size.",
+    "No definite pneumothorax identified.",
+    "Surgical clips/staples noted in the lower mediastinum/epigastric region, likely from prior abdominal surgery.",
+    "Soft tissues and osseous structures appear unremarkable given the limitations of the projection."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Significant blunting of the right costophrenic angle and obscuration of the right hemidiaphragm by fluid, consistent with a moderate pleural effusion. The fluid level appears somewhat layered."
+    },
+    {
+      "name": "Left Pleural Effusion",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Blunting of the left costophrenic angle and a small subpulmonic fluid collection, consistent with a small pleural effusion."
+    },
+    {
+      "name": "Bilateral Basal Atelectasis/Consolidation",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Increased opacification in both lung bases, particularly on the right, which could represent atelectasis (collapsed lung tissue) or infiltrates/consolidation (inflammation/fluid in the lung tissue) often seen in conjunction with pleural effusions."
+    },
+    {
+      "name": "Elevated Hemidiaphragms",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Both hemidiaphragms appear elevated, more so on the right, likely secondary to the subpulmonic effusion and/or associated basal lung changes."
+    }
+  ],
+  "summary": "The chest X-ray shows fluid around both lungs, which is called a pleural effusion. There is more fluid on the right side. This fluid is also causing some of the lung tissue at the bottom of both lungs to look collapsed or filled with fluid, which can be due to atelectasis (a common finding when the lung isn't fully inflated) or inflammation. The muscle that separates the chest from the abdomen (diaphragm) also appears higher than usual. These findings often suggest fluid accumulation in the chest, which can be due to various reasons such as heart failure, infection, or inflammation.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion-3?lang=gb",
+    "https://radiopaedia.org/articles/atelectasis-1?lang=gb",
+    "https://www.ncbi.nlm.nih.gov/books/NBK431057/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21788,
+    "bytesOut": 21788,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:15:49.913Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000092/series_1/00000092_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\": \"X-ray\", \"anatomyRegion\": \"Chest (AP)\", \"quality\": \"Fair\", \"findings\": [\"Bilateral blunting of the costophrenic angles\", \"Opacification of the lower lung zones, more pronounced on the right side\", \"Presence of a large gastric air bubble with a visible fluid level beneath the left hemidiaphragm\", \"Cardiomediastinal silhouette is partially obscured by the lower zone opacities\", \"Lungs appear hyperinflated with flattened diaphragms\"], \"abnormalities\": [{\"name\": \"Pleural Effusions\", \"description\": \"Bilateral opacification of the lower lung fields with blunting of the costophrenic angles, suggesting the accumulation of fluid in the pleural space.\", \"severity\": \"Moderate\", \"confidence\": 90}, {\"name\": \"Pulmonary Congestion\", \"description\": \"Increased interstitial markings and basal opacities consistent with pulmonary edema or congestion.\", \"severity\": \"Moderate\", \"confidence\": 80}], \"summary\": \"The X-ray shows signs of fluid buildup around both lungs (pleural effusions) and potentially within the lung tissue itself (pulmonary congestion/edema). This often occurs when the heart is unable to pump efficiently or due to other systemic fluid imbalances. A large gas bubble in the stomach is also visible, which is a common finding.\", \"references\": [\"https://radiopaedia.org/articles/pleural-effusion\", \"https://radiopaedia.org/articles/pulmonary-edema\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Fair",
+  "findings": [
+    "Bilateral blunting of the costophrenic angles",
+    "Opacification of the lower lung zones, more pronounced on the right side",
+    "Presence of a large gastric air bubble with a visible fluid level beneath the left hemidiaphragm",
+    "Cardiomediastinal silhouette is partially obscured by the lower zone opacities",
+    "Lungs appear hyperinflated with flattened diaphragms"
+  ],
+  "abnormalities": [
+    {
+      "name": "Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Bilateral opacification of the lower lung fields with blunting of the costophrenic angles, suggesting the accumulation of fluid in the pleural space."
+    },
+    {
+      "name": "Pulmonary Congestion",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Increased interstitial markings and basal opacities consistent with pulmonary edema or congestion."
+    }
+  ],
+  "summary": "The X-ray shows signs of fluid buildup around both lungs (pleural effusions) and potentially within the lung tissue itself (pulmonary congestion/edema). This often occurs when the heart is unable to pump efficiently or due to other systemic fluid imbalances. A large gas bubble in the stomach is also visible, which is a common finding.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/pulmonary-edema"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22603,
+    "bytesOut": 22603,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-08T19:25:07.100Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

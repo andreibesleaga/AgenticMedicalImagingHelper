@@ -1,6 +1,6 @@
 /**
- * E — Scanner stress test (SIME 2026)
- * =====================================
+ * E — Scanner stress test
+ * =========================
  *
  * Exercises the real `scanInputDirectory` (src/infrastructure/file-scanner.ts)
  * against two synthetic-but-real input trees built from the NIH ChestX-ray14
@@ -16,7 +16,16 @@
  * scanner.
  *
  * Usage:
- *   node_modules/.bin/tsx experiments/sime2026/scanner-stress.ts
+ *   node_modules/.bin/tsx experiments/sime2026/scanner-stress.ts \
+ *     [--images-dir <dir>] [--csv <path>]
+ *
+ * The images directory and metadata CSV are resolved in this order:
+ *   1. --images-dir / --csv flags
+ *   2. NIH_IMAGES_DIR / NIH_CSV environment variables
+ *   3. repo-relative default: ../nih-cxr14/images-224/images-224 and
+ *      ../nih-cxr14/Data_Entry_2017.csv, both siblings of this repo's root
+ *      (the layout prepare-nih.py writes to by default — see
+ *      experiments/sime2026/README.md §2).
  */
 
 import * as fs from "fs/promises";
@@ -25,13 +34,25 @@ import * as path from "path";
 import { fileURLToPath } from "url";
 import { scanInputDirectory } from "../../src/infrastructure/file-scanner.js";
 
-const IMAGES_DIR = "/home/andrei/work/AI/nih-cxr14/images-224/images-224";
-const CSV_METADATA_PATH = "/home/andrei/work/AI/nih-cxr14/Data_Entry_2017.csv";
-const TOP_N_PATIENTS = 500;
-const SINGLE_SERIES_IMAGE_COUNT = 5000;
+function getFlag(argv: string[], flag: string): string | undefined {
+  const i = argv.indexOf(flag);
+  return i >= 0 && i + 1 < argv.length ? argv[i + 1] : undefined;
+}
 
 const __filename = fileURLToPath(import.meta.url);
-void __filename; // present for parity with full-dataset-scan.ts; not otherwise used
+const __dirname = path.dirname(__filename);
+const REPO_ROOT = path.resolve(__dirname, "..", "..");
+const argv = process.argv.slice(2);
+const IMAGES_DIR =
+  getFlag(argv, "--images-dir") ??
+  process.env.NIH_IMAGES_DIR ??
+  path.resolve(REPO_ROOT, "..", "nih-cxr14", "images-224", "images-224");
+const CSV_METADATA_PATH =
+  getFlag(argv, "--csv") ??
+  process.env.NIH_CSV ??
+  path.resolve(REPO_ROOT, "..", "nih-cxr14", "Data_Entry_2017.csv");
+const TOP_N_PATIENTS = 500;
+const SINGLE_SERIES_IMAGE_COUNT = 5000;
 
 // ─── Minimal CSV parse (duplicated from full-dataset-scan.ts on purpose — this
 // script is meant to be runnable standalone) ───────────────────────────────
@@ -57,7 +78,10 @@ async function rmrf(dir: string) {
   await fs.rm(dir, { recursive: true, force: true });
 }
 
-async function buildTreeA(tmpRoot: string, imagesByPatient: Map<string, string[]>): Promise<{
+async function buildTreeA(
+  tmpRoot: string,
+  imagesByPatient: Map<string, string[]>
+): Promise<{
   dir: string;
   expectedSeriesCount: number;
   expectedImageCount: number;
@@ -89,7 +113,10 @@ async function buildTreeA(tmpRoot: string, imagesByPatient: Map<string, string[]
   return { dir, expectedSeriesCount: expectedImageCount, expectedImageCount };
 }
 
-async function buildTreeB(tmpRoot: string, allImages: string[]): Promise<{
+async function buildTreeB(
+  tmpRoot: string,
+  allImages: string[]
+): Promise<{
   dir: string;
   seriesId: string;
   expectedImages: string[];
@@ -114,6 +141,15 @@ function isSorted(arr: string[]): boolean {
   return true;
 }
 
+function failMissingPath(what: string, flag: string, envVar: string, attempted: string): never {
+  console.error(
+    `[scanner-stress] ${what} not found: ${attempted}\n` +
+      `  Set it with ${flag} <path>, the ${envVar} environment variable, or prepare the NIH ` +
+      "dataset with experiments/sime2026/prepare-nih.py first (see experiments/sime2026/README.md §2)."
+  );
+  process.exit(1);
+}
+
 async function main() {
   const report: string[] = [];
   const log = (s: string) => {
@@ -122,10 +158,26 @@ async function main() {
   };
 
   log("[scanner-stress] reading metadata CSV...");
-  const csvText = await fs.readFile(CSV_METADATA_PATH, "utf-8");
+  let csvText: string;
+  try {
+    csvText = await fs.readFile(CSV_METADATA_PATH, "utf-8");
+  } catch (err) {
+    if ((err as NodeJS.ErrnoException).code === "ENOENT") {
+      failMissingPath("metadata CSV", "--csv", "NIH_CSV", CSV_METADATA_PATH);
+    }
+    throw err;
+  }
   const meta = parseMetadataCsv(csvText);
 
-  const allImages = (await fs.readdir(IMAGES_DIR)).filter((f) => f.endsWith(".png")).sort();
+  let allImages: string[];
+  try {
+    allImages = (await fs.readdir(IMAGES_DIR)).filter((f) => f.endsWith(".png")).sort();
+  } catch (err) {
+    if ((err as NodeJS.ErrnoException).code === "ENOENT") {
+      failMissingPath("images directory", "--images-dir", "NIH_IMAGES_DIR", IMAGES_DIR);
+    }
+    throw err;
+  }
   log(`[scanner-stress] ${allImages.length} images available in archive`);
 
   const imagesByPatient = new Map<string, string[]>();
@@ -178,7 +230,9 @@ async function main() {
     const buildBStart = performance.now();
     const treeB = await buildTreeB(tmpRoot, allImages);
     const buildBMs = performance.now() - buildBStart;
-    log(`  built 1 series with ${treeB.expectedImages.length} hardlinks in ${(buildBMs / 1000).toFixed(2)}s`);
+    log(
+      `  built 1 series with ${treeB.expectedImages.length} hardlinks in ${(buildBMs / 1000).toFixed(2)}s`
+    );
 
     const scanBStart = performance.now();
     const seriesB = await scanInputDirectory(treeB.dir);
@@ -207,7 +261,9 @@ async function main() {
 
     // ─── Overall ────────────────────────────────────────────────────────
     log("");
-    log(`=== Overall: ${okA && okB ? "PASS" : "FAIL"} — no errors thrown, no LLM stages invoked ===`);
+    log(
+      `=== Overall: ${okA && okB ? "PASS" : "FAIL"} — no errors thrown, no LLM stages invoked ===`
+    );
   } catch (err) {
     log(`[scanner-stress] ERROR: ${(err as Error).stack ?? (err as Error).message}`);
     throw err;

@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_2/img_11_00014531_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute pleural effusion or pneumothorax identified.\",\n    \"Bilateral hilar regions appear mildly prominent, with perihilar interstitial thickening.\",\n    \"Cardiac silhouette is not enlarged.\",\n    \"Diaphragmatic contours are clear.\",\n    \"Bony thorax appears intact, without acute fracture or aggressive lesion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Hilar Prominence and Perihilar Interstitial Thickening\",\n      \"description\": \"Mild prominence of both hilar regions is noted, accompanied by interstitial thickening extending into the perihilar lung fields. This finding can be associated with various conditions including inflammatory processes, sarcoidosis, or lymphatic spread of malignancy, although the specific etiology cannot be determined from this single image.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows some haziness or thickening around the central areas of both lungs (called the 'hilar' regions). This is a general finding that can be caused by several conditions, such as inflammation, scarring from previous infections, or other lung conditions. The heart size appears normal, and there are no signs of fluid around the lungs (pleural effusion) or collapsed lung (pneumothorax). The bones also look normal. To understand the exact cause of these changes, further medical evaluation might be needed.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2018170068\",\n    \"https://radiopaedia.org/articles/hilar-enlargement?lang=gb\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6641662/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute pleural effusion or pneumothorax identified.",
+    "Bilateral hilar regions appear mildly prominent, with perihilar interstitial thickening.",
+    "Cardiac silhouette is not enlarged.",
+    "Diaphragmatic contours are clear.",
+    "Bony thorax appears intact, without acute fracture or aggressive lesion."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Hilar Prominence and Perihilar Interstitial Thickening",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Mild prominence of both hilar regions is noted, accompanied by interstitial thickening extending into the perihilar lung fields. This finding can be associated with various conditions including inflammatory processes, sarcoidosis, or lymphatic spread of malignancy, although the specific etiology cannot be determined from this single image."
+    }
+  ],
+  "summary": "The chest X-ray shows some haziness or thickening around the central areas of both lungs (called the 'hilar' regions). This is a general finding that can be caused by several conditions, such as inflammation, scarring from previous infections, or other lung conditions. The heart size appears normal, and there are no signs of fluid around the lungs (pleural effusion) or collapsed lung (pneumothorax). The bones also look normal. To understand the exact cause of these changes, further medical evaluation might be needed.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2018170068",
+    "https://radiopaedia.org/articles/hilar-enlargement?lang=gb",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6641662/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22130,
+    "bytesOut": 22130,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:10:52.265Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

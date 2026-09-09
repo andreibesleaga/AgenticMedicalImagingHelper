@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000219/series_4/00000219_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"The lungs are clear without focal consolidation or pleural effusion.\",\n    \"The cardiomediastinal silhouette is enlarged.\",\n    \"The aortic knob is prominent and shifted laterally.\",\n    \"There is widening of the mediastinum.\",\n    \"Bony structures appear intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlargement of the heart silhouette, with the cardiac diameter exceeding 50% of the thoracic diameter.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Aortic Ectasia\",\n      \"description\": \"Prominence and widening of the aortic arch and descending aorta, suggesting aortic enlargement.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The X-ray shows that the heart appears larger than normal (cardiomegaly) and the aorta (the main artery leaving the heart) is widened. This can be caused by several factors, including high blood pressure over a long period or heart valve issues. The lungs themselves appear clear, meaning there is no sign of pneumonia or fluid buildup in the lung tissue. These findings should be correlated with your symptoms and clinical history by a doctor.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/thoracic-aortic-aneurysm\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Fair",
+  "findings": [
+    "The lungs are clear without focal consolidation or pleural effusion.",
+    "The cardiomediastinal silhouette is enlarged.",
+    "The aortic knob is prominent and shifted laterally.",
+    "There is widening of the mediastinum.",
+    "Bony structures appear intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Enlargement of the heart silhouette, with the cardiac diameter exceeding 50% of the thoracic diameter."
+    },
+    {
+      "name": "Aortic Ectasia",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Prominence and widening of the aortic arch and descending aorta, suggesting aortic enlargement."
+    }
+  ],
+  "summary": "The X-ray shows that the heart appears larger than normal (cardiomegaly) and the aorta (the main artery leaving the heart) is widened. This can be caused by several factors, including high blood pressure over a long period or heart valve issues. The lungs themselves appear clear, meaning there is no sign of pneumonia or fluid buildup in the lung tissue. These findings should be correlated with your symptoms and clinical history by a doctor.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/thoracic-aortic-aneurysm"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21918,
+    "bytesOut": 21918,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-08T19:30:55.077Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

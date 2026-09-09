@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S3x10/series_2/img_03_00029998_005.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP upright)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral pleural effusions, greater on the right side.\",\n    \"Bilateral pleural thickening or atelectasis at the lung bases, associated with the effusions.\",\n    \"Cardiomediastinal silhouette appears within normal limits for size and contour given the supine acquisition and potential for lordosis.\",\n    \"No definite pneumothorax identified.\",\n    \"Bilateral hemidiaphragms are obscured by the effusions.\",\n    \"Bones and soft tissues appear unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Significant bilateral pleural effusions are noted, with the right effusion appearing larger, obscuring the right hemidiaphragm and blunting the costophrenic angles. The left effusion is less pronounced but also blunts the costophrenic angle.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray image shows extra fluid in the lining of both lungs, which is called a pleural effusion. The amount of fluid is more significant on the right side. This fluid can cause shortness of breath or discomfort. The heart and the central chest structures appear normal. There are no signs of a collapsed lung.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1146/annurev-med-062817-024307\",\n    \"https://radiopaedia.org/articles/pleural-effusion-1\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMcpc1804245\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP upright)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral pleural effusions, greater on the right side.",
+    "Bilateral pleural thickening or atelectasis at the lung bases, associated with the effusions.",
+    "Cardiomediastinal silhouette appears within normal limits for size and contour given the supine acquisition and potential for lordosis.",
+    "No definite pneumothorax identified.",
+    "Bilateral hemidiaphragms are obscured by the effusions.",
+    "Bones and soft tissues appear unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Significant bilateral pleural effusions are noted, with the right effusion appearing larger, obscuring the right hemidiaphragm and blunting the costophrenic angles. The left effusion is less pronounced but also blunts the costophrenic angle."
+    }
+  ],
+  "summary": "This X-ray image shows extra fluid in the lining of both lungs, which is called a pleural effusion. The amount of fluid is more significant on the right side. This fluid can cause shortness of breath or discomfort. The heart and the central chest structures appear normal. There are no signs of a collapsed lung.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1146/annurev-med-062817-024307",
+    "https://radiopaedia.org/articles/pleural-effusion-1",
+    "https://www.nejm.org/doi/full/10.1056/NEJMcpc1804245"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 19382,
+    "bytesOut": 19382,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:01:49.442Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

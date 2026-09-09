@@ -1,0 +1,46 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000008/series_2/00000008_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP), pediatric patient\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"AP supine chest radiograph of a pediatric patient\",\n    \"Lungs appear symmetrically inflated with clear lung fields bilaterally, no focal consolidation or effusion\",\n    \"Cardiothymic silhouette is prominent, appearing mildly enlarged, which can be a normal variant in infants due to thymic shadow\",\n    \"Mediastinal contours are within expected pediatric range\",\n    \"Visible ECG leads/monitoring wires overlying the chest\",\n    \"Umbilical line or feeding tube artifact visible at lower chest/upper abdomen\",\n    \"Bony thorax appears intact without acute fracture\",\n    \"Soft tissues are unremarkable\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This is a chest X-ray of an infant or young child taken from the front while lying down. The lungs look clear and well-expanded on both sides, with no signs of infection, fluid, or collapse. The heart shadow looks a bit larger than typical adult proportions, but this is very common in babies because the thymus gland (a normal immune organ in the chest) can make the heart area look bigger on X-ray — this is usually not a cause for concern. There are also some medical devices, like monitoring leads and a tube, visible on the image, which are standard for monitoring young patients. Overall, there is no evidence of significant lung or heart disease on this image, but a qualified radiologist should confirm this interpretation in the context of the child's symptoms and history.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/normal-chest-radiograph-paediatric\",\n    \"https://pubs.rsna.org/doi/10.1148/rg.2019180191\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK538302/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP), pediatric patient",
+  "quality": "Fair",
+  "findings": [
+    "AP supine chest radiograph of a pediatric patient",
+    "Lungs appear symmetrically inflated with clear lung fields bilaterally, no focal consolidation or effusion",
+    "Cardiothymic silhouette is prominent, appearing mildly enlarged, which can be a normal variant in infants due to thymic shadow",
+    "Mediastinal contours are within expected pediatric range",
+    "Visible ECG leads/monitoring wires overlying the chest",
+    "Umbilical line or feeding tube artifact visible at lower chest/upper abdomen",
+    "Bony thorax appears intact without acute fracture",
+    "Soft tissues are unremarkable"
+  ],
+  "abnormalities": [],
+  "summary": "This is a chest X-ray of an infant or young child taken from the front while lying down. The lungs look clear and well-expanded on both sides, with no signs of infection, fluid, or collapse. The heart shadow looks a bit larger than typical adult proportions, but this is very common in babies because the thymus gland (a normal immune organ in the chest) can make the heart area look bigger on X-ray — this is usually not a cause for concern. There are also some medical devices, like monitoring leads and a tube, visible on the image, which are standard for monitoring young patients. Overall, there is no evidence of significant lung or heart disease on this image, but a qualified radiologist should confirm this interpretation in the context of the child's symptoms and history.",
+  "references": [
+    "https://radiopaedia.org/articles/normal-chest-radiograph-paediatric",
+    "https://pubs.rsna.org/doi/10.1148/rg.2019180191",
+    "https://www.ncbi.nlm.nih.gov/books/NBK538302/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22784,
+    "bytesOut": 22784,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-09T07:03:30.251Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

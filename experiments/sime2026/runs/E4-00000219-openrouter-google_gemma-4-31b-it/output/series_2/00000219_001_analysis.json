@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000219/series_2/00000219_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Lungs are clear without evidence of consolidation, pleural effusion, or pneumothorax.\",\n    \"The cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Bony structures are intact.\",\n    \"Diaphragms are smooth and costophrenic angles are sharp.\",\n    \"Presence of a small, circular, radio-opaque metallic object overlying the right hilar/perihilar region.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Foreign body / External marker\",\n      \"description\": \"A small, well-defined circular radio-opaque density is noted in the right perihilar region. Its appearance is consistent with an external lead, marker, or skin surface object rather than an internal pathology.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray is largely normal, meaning the lungs are clear and the heart size is normal. There is a small metallic-looking object seen on the right side of the chest; this is most likely something on the outside of the patient's clothing or skin (like a button or a medical marker) and is usually not a cause for concern.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-radiograph-for-the-non-radiologist\",\n    \"https://www.acr.org/Clinical-Resources/Radiologic-Practice-Guidelines\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Fair",
+  "findings": [
+    "Lungs are clear without evidence of consolidation, pleural effusion, or pneumothorax.",
+    "The cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Bony structures are intact.",
+    "Diaphragms are smooth and costophrenic angles are sharp.",
+    "Presence of a small, circular, radio-opaque metallic object overlying the right hilar/perihilar region."
+  ],
+  "abnormalities": [
+    {
+      "name": "Foreign body / External marker",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "A small, well-defined circular radio-opaque density is noted in the right perihilar region. Its appearance is consistent with an external lead, marker, or skin surface object rather than an internal pathology."
+    }
+  ],
+  "summary": "The chest X-ray is largely normal, meaning the lungs are clear and the heart size is normal. There is a small metallic-looking object seen on the right side of the chest; this is most likely something on the outside of the patient's clothing or skin (like a button or a medical marker) and is usually not a cause for concern.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-for-the-non-radiologist",
+    "https://www.acr.org/Clinical-Resources/Radiologic-Practice-Guidelines"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21786,
+    "bytesOut": 21786,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-08T19:30:42.028Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

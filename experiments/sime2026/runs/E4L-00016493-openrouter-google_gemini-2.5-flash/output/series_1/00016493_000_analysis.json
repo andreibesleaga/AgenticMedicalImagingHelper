@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4L/00016493/series_1/00016493_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, effusion, or pneumothorax is identified.\",\n    \"The cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Bilateral hilar regions are unremarkable.\",\n    \"Bony thorax appears intact.\",\n    \"A radiopaque artifact, consistent with a nipple marker, is projected over the right lower lung field.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Nipple Marker\",\n      \"description\": \"A well-circumscribed, radiopaque ring is projected over the right lower lung field, consistent with a nipple marker used to avoid misinterpretation of a nipple shadow as a nodule.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows healthy-looking lungs and heart. There are no signs of pneumonia, fluid around the lungs (effusion), or collapsed lung (pneumothorax). The heart size and shape are normal. There is a small, round, metallic-looking object over the right side of the chest; this is a nipple marker, commonly used during X-rays to prevent nipple shadows from being mistaken for lung nodules. This is a normal and intentional finding.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.274065715\",\n    \"https://radiologykey.com/nipple-shadows/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, effusion, or pneumothorax is identified.",
+    "The cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Bilateral hilar regions are unremarkable.",
+    "Bony thorax appears intact.",
+    "A radiopaque artifact, consistent with a nipple marker, is projected over the right lower lung field."
+  ],
+  "abnormalities": [
+    {
+      "name": "Nipple Marker",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A well-circumscribed, radiopaque ring is projected over the right lower lung field, consistent with a nipple marker used to avoid misinterpretation of a nipple shadow as a nodule."
+    }
+  ],
+  "summary": "The chest X-ray shows healthy-looking lungs and heart. There are no signs of pneumonia, fluid around the lungs (effusion), or collapsed lung (pneumothorax). The heart size and shape are normal. There is a small, round, metallic-looking object over the right side of the chest; this is a nipple marker, commonly used during X-rays to prevent nipple shadows from being mistaken for lung nodules. This is a normal and intentional finding.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.274065715",
+    "https://radiologykey.com/nipple-shadows/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 19597,
+    "bytesOut": 19597,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:25:06.900Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

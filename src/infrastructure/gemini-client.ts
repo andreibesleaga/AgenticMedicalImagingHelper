@@ -11,7 +11,11 @@ import {
   ParsedEvolutionResponseSchema,
   type ImagePreprocessingRecord,
 } from "../domain/types.js";
-import { parseStructured, validationOutcome } from "../domain/structured-output.js";
+import {
+  extractJsonObject,
+  parseStructured,
+  validationOutcome,
+} from "../domain/structured-output.js";
 import {
   preparePayload,
   resolvePolicy,
@@ -539,15 +543,19 @@ export function createGeminiClient(
       };
     }
 
+    // Schema validation failed. Recover the progression label from the model's
+    // own partial JSON where it exists, and record which rule produced it.
+    const fallback = resolveProgressionFallback(rawResponse);
     return {
       seriesCount: summaries.length,
       seriesIds,
-      progression: extractProgression(rawResponse),
+      progression: fallback.progression,
       trends: [],
       forecastedEvolution: "",
       treatmentRecommendations: [],
       combinedReport: rawResponse,
-      validation: validationOutcome(parsed),
+      // `parsed` is narrowed to the failure case here, so its issues are present.
+      validation: { ok: false, issues: [...parsed.issues, fallback.issue] },
       processedAt: now,
       disclaimer: DISCLAIMER,
     };
@@ -583,11 +591,79 @@ function extractDiagnosis(text: string): string {
   return match?.[1]?.trim() ?? "See full report";
 }
 
-function extractProgression(text: string): "Improving" | "Stable" | "Worsening" | "Inconclusive" {
+/** The four labels `ParsedEvolutionResponseSchema` accepts for `progression`. */
+const PROGRESSION_LABELS = ["Improving", "Stable", "Worsening", "Inconclusive"] as const;
+
+/** One of the four labels the evolution schema accepts. */
+export type ProgressionLabel = (typeof PROGRESSION_LABELS)[number];
+
+/**
+ * Ways a model says it will not commit to a direction. Checked *before* the
+ * directional keywords, because the keyword scan reads the whole blob — a
+ * per-trend detail string containing the word "worsening" must not overrule a
+ * model that has just written "making a clear trend difficult to establish".
+ */
+const UNCERTAINTY_PATTERNS: readonly RegExp[] = [
+  /inconclusive/i,
+  /(?:unable|not able|cannot|can not|can't|could not) to (?:determine|establish|assess)/i,
+  /(?:cannot|can not|can't|could not) (?:be )?(?:determine|determined|established|assessed)/i,
+  /difficult to (?:determine|establish|assess)/i,
+  /(?:limited|poor|not|no) comparab(?:ility|le)/i,
+  /insufficient (?:data|information|evidence|imaging)/i,
+  /no clear (?:trend|direction|progression)/i,
+  /(?:trend|progression|direction) (?:is|remains) unclear/i,
+];
+
+/**
+ * Keyword scan over free text. Uncertainty wins over any directional keyword
+ * (rule b); otherwise the first directional keyword anywhere in the text
+ * decides, as it always has.
+ */
+function extractProgression(text: string): ProgressionLabel {
+  if (UNCERTAINTY_PATTERNS.some((p) => p.test(text))) return "Inconclusive";
   if (/improving/i.test(text)) return "Improving";
   if (/worsening/i.test(text)) return "Worsening";
   if (/stable/i.test(text)) return "Stable";
   return "Inconclusive";
+}
+
+/** A progression label recovered from an unvalidated response, and the rule used. */
+export interface ProgressionFallback {
+  progression: ProgressionLabel;
+  /** Rule applied, recorded verbatim in `validation.issues`. */
+  issue: string;
+}
+
+/**
+ * Decide the `progression` of an evolution record whose JSON failed schema
+ * validation.
+ *
+ * Schema validation is all-or-nothing, but a response is not: the E4
+ * longitudinal cohort contains records rejected for a single bad `trends[i].trend` whose
+ * top-level `progression` was both present and valid — and *contradicted* by
+ * the keyword scan that replaced it (patient 00000008: the model wrote
+ * `"progression": "Inconclusive"` and the artefact recorded `Worsening`).
+ *
+ * The rules, in order:
+ *  (a) the response contains a parseable JSON object whose `progression` is one
+ *      of the four enum values → use the model's own value;
+ *  (b) otherwise scan the text for keywords, with any statement of uncertainty
+ *      beating a directional keyword;
+ * and either way (c) name the rule that fired, so a reader of the artefact can
+ * tell a model's verdict from a pipeline guess.
+ */
+export function resolveProgressionFallback(text: string | undefined): ProgressionFallback {
+  const raw = text ?? "";
+  const claimed = extractJsonObject(raw)?.["progression"];
+  if (typeof claimed === "string") {
+    const normalised = claimed.trim().toLowerCase();
+    const match = PROGRESSION_LABELS.find((label) => label.toLowerCase() === normalised);
+    if (match) {
+      return { progression: match, issue: `progression: taken from partial JSON ("${match}")` };
+    }
+  }
+  const progression = extractProgression(raw);
+  return { progression, issue: `progression: keyword fallback ("${progression}")` };
 }
 
 // ─── Model Factory ────────────────────────────────────────────────────────────

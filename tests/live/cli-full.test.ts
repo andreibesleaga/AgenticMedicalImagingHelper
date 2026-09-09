@@ -26,9 +26,7 @@ import * as os from "os";
 import * as url from "url";
 import sharp from "sharp";
 
-import {
-  containsDemographicClaim,
-} from "../../src/domain/fairness.js";
+import { containsDemographicClaim } from "../../src/domain/fairness.js";
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 const PROJECT_ROOT = path.resolve(__dirname, "../..");

@@ -1,0 +1,69 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_1/img_13_00029998_005.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral pleural effusions, larger on the right.\",\n    \"Bilateral opacities consistent with atelectasis or consolidation at the lung bases, more prominent on the right.\",\n    \"Cardiomegaly suspected.\",\n    \"Surgical clips in the mediastinum.\",\n    \"No obvious pneumothorax.\",\n    \"No obvious rib fractures.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Significant bilateral pleural effusions, greater on the right, obscuring the costophrenic angles and extending superiorly along the lateral chest wall. This suggests accumulation of fluid in the pleural space.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Atelectasis/Consolidation\",\n      \"description\": \"Opacities at both lung bases, particularly on the right, which could represent atelectasis (collapsed lung tissue) or consolidation (fluid-filled lung tissue, often due to pneumonia or edema). This is often associated with pleural effusions.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette appears enlarged, suggesting cardiomegaly (enlarged heart). A definitive assessment requires further views or comparison to previous studies.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    },\n    {\n      \"name\": \"Surgical Clips\",\n      \"description\": \"Multiple surgical clips are visible in the mediastinum, indicating prior surgical intervention in this area.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 99\n    }\n  ],\n  \"summary\": \"This X-ray shows fluid in the lining of both lungs, more so on the right side. This is called a pleural effusion. There are also areas at the bottom of both lungs that look hazy, which could be lung tissue that has collapsed (atelectasis) or is filled with fluid (consolidation), possibly due to infection or heart issues. The heart also appears larger than normal. There are some surgical clips from a previous operation near the center of the chest. These findings suggest conditions that may cause fluid build-up in the chest, such as heart failure or infection.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/books/NBK459203/\",\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK534293/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral pleural effusions, larger on the right.",
+    "Bilateral opacities consistent with atelectasis or consolidation at the lung bases, more prominent on the right.",
+    "Cardiomegaly suspected.",
+    "Surgical clips in the mediastinum.",
+    "No obvious pneumothorax.",
+    "No obvious rib fractures."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Significant bilateral pleural effusions, greater on the right, obscuring the costophrenic angles and extending superiorly along the lateral chest wall. This suggests accumulation of fluid in the pleural space."
+    },
+    {
+      "name": "Atelectasis/Consolidation",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Opacities at both lung bases, particularly on the right, which could represent atelectasis (collapsed lung tissue) or consolidation (fluid-filled lung tissue, often due to pneumonia or edema). This is often associated with pleural effusions."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "The cardiac silhouette appears enlarged, suggesting cardiomegaly (enlarged heart). A definitive assessment requires further views or comparison to previous studies."
+    },
+    {
+      "name": "Surgical Clips",
+      "severity": "Normal",
+      "confidence": 99,
+      "description": "Multiple surgical clips are visible in the mediastinum, indicating prior surgical intervention in this area."
+    }
+  ],
+  "summary": "This X-ray shows fluid in the lining of both lungs, more so on the right side. This is called a pleural effusion. There are also areas at the bottom of both lungs that look hazy, which could be lung tissue that has collapsed (atelectasis) or is filled with fluid (consolidation), possibly due to infection or heart issues. The heart also appears larger than normal. There are some surgical clips from a previous operation near the center of the chest. These findings suggest conditions that may cause fluid build-up in the chest, such as heart failure or infection.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK459203/",
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://www.ncbi.nlm.nih.gov/books/NBK534293/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 19382,
+    "bytesOut": 19382,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:10:38.529Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

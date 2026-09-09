@@ -1,0 +1,62 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S3x10/series_2/img_03_00029998_005.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral pleural effusions, larger on the right.\",\n    \"Bilateral opacities in the lower lung zones, likely atelectasis or infiltrates superimposed on the effusions.\",\n    \"Cardiomegaly is suggested, though precise cardiac borders are obscured by the effusions.\",\n    \"Vascular congestion appears present.\",\n    \"Central venous catheter noted, likely in the superior vena cava.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Significant bilateral pleural effusions, with a larger volume on the right side, blunting the costophrenic angles and obscuring portions of the lung bases and diaphragm.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Lung Opacities\",\n      \"description\": \"Diffuse opacities in the lower lung fields, partially obscured by the effusions, suggestive of atelectasis or possibly underlying parenchymal infiltrates/edema.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Cardiomegaly (suggested)\",\n      \"description\": \"The cardiac silhouette appears enlarged, although its borders are not clearly delineated due to the surrounding pleural effusions and lung pathology.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 70\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows a significant amount of fluid around both lungs, which is called pleural effusion. The fluid is more prominent on the right side. This fluid is making it harder to see the bottom parts of the lungs, and there are some cloudy areas in the lower lungs that could be collapsed lung tissue or inflammation. The heart also looks a bit enlarged, though this is difficult to assess precisely because of the fluid around the lungs. A medical tube used for intravenous access is visible in a large vein near the heart.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion-1\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK470313/\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria/ACR-Appropriateness-Criteria-Detailed-Recommendations/Chest-Pain-Suspected-Cardiac-Origin\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral pleural effusions, larger on the right.",
+    "Bilateral opacities in the lower lung zones, likely atelectasis or infiltrates superimposed on the effusions.",
+    "Cardiomegaly is suggested, though precise cardiac borders are obscured by the effusions.",
+    "Vascular congestion appears present.",
+    "Central venous catheter noted, likely in the superior vena cava."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Significant bilateral pleural effusions, with a larger volume on the right side, blunting the costophrenic angles and obscuring portions of the lung bases and diaphragm."
+    },
+    {
+      "name": "Lung Opacities",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Diffuse opacities in the lower lung fields, partially obscured by the effusions, suggestive of atelectasis or possibly underlying parenchymal infiltrates/edema."
+    },
+    {
+      "name": "Cardiomegaly (suggested)",
+      "severity": "Mild",
+      "confidence": 70,
+      "description": "The cardiac silhouette appears enlarged, although its borders are not clearly delineated due to the surrounding pleural effusions and lung pathology."
+    }
+  ],
+  "summary": "This X-ray of the chest shows a significant amount of fluid around both lungs, which is called pleural effusion. The fluid is more prominent on the right side. This fluid is making it harder to see the bottom parts of the lungs, and there are some cloudy areas in the lower lungs that could be collapsed lung tissue or inflammation. The heart also looks a bit enlarged, though this is difficult to assess precisely because of the fluid around the lungs. A medical tube used for intravenous access is visible in a large vein near the heart.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion-1",
+    "https://www.ncbi.nlm.nih.gov/books/NBK470313/",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria/ACR-Appropriateness-Criteria-Detailed-Recommendations/Chest-Pain-Suspected-Cardiac-Origin"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 19382,
+    "bytesOut": 19382,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:03:40.396Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

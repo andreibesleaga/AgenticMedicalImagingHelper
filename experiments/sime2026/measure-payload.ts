@@ -1,5 +1,5 @@
 /**
- * E3 — request-payload measurement for SIME 2026 paper #154.
+ * E3 — request-payload measurement for the experiment pack.
  *
  * For every PNG under an input directory this reports, per image:
  *   - the original file size and pixel dimensions;
@@ -15,7 +15,9 @@
  * so the numbers here are the bytes the CLI really sends.
  *
  * It prints a Markdown table plus totals, action counts and token totals, and
- * writes `E3-payload-<label>.md` next to this script.
+ * writes `E3-payload-<label>.md` into the output directory (default
+ * `experiments/sime2026/`, where the report is committed evidence).
+ * Override the directory with `--out-dir <dir>`.
  *
  * IMPORTANT — what this does NOT measure: bytes are not diagnosis. Choosing a
  * target resolution changes the image the model reads. This experiment
@@ -25,8 +27,8 @@
  * ground truth, which is out of scope for this artefact.
  *
  * Usage:
- *   node_modules/.bin/tsx experiments/sime2026/measure-payload.ts <input-dir> [--label <name>]
- *   node_modules/.bin/tsx experiments/sime2026/measure-payload.ts --synthetic [--label <name>]
+ *   node_modules/.bin/tsx experiments/sime2026/measure-payload.ts <input-dir> [--label <name>] [--out-dir <dir>]
+ *   node_modules/.bin/tsx experiments/sime2026/measure-payload.ts --synthetic [--label <name>] [--out-dir <dir>]
  *
  * `--synthetic` generates three large greyscale images (2500×2500, 3000×2500,
  * 4000×4000) in a temp directory and measures those, so the "large study"
@@ -50,6 +52,20 @@ import {
 } from "../../src/infrastructure/image-policy.js";
 
 const HERE = path.dirname(new URL(import.meta.url).pathname);
+
+/**
+ * Reports are written next to this script, in `experiments/sime2026/`, and are
+ * committed: they are the payload-reduction evidence a reader needs to judge
+ * the claim. They stay reproducible by re-running this script.
+ */
+const DEFAULT_OUT_DIR = HERE;
+
+const USAGE =
+  "Usage: measure-payload.ts <input-dir> [--label <name>] [--out-dir <dir>]\n" +
+  "       measure-payload.ts --synthetic [--label <name>] [--out-dir <dir>]\n" +
+  "\n" +
+  "Writes E3-payload-<label>.md into <dir> (default experiments/sime2026/,\n" +
+  "where the report is committed evidence) and prints it to stdout as well.";
 
 // ─── Synthetic inputs ─────────────────────────────────────────────────────────
 
@@ -287,16 +303,22 @@ async function main(): Promise<void> {
   const argv = process.argv.slice(2);
   const synthetic = argv.includes("--synthetic");
   const labelIndex = argv.indexOf("--label");
-  const positional = argv.filter((a, i) => !a.startsWith("--") && i !== labelIndex + 1);
+  const outDirIndex = argv.indexOf("--out-dir");
+  const positional = argv.filter(
+    (a, i) => !a.startsWith("--") && i !== labelIndex + 1 && i !== outDirIndex + 1
+  );
+
+  if (argv.includes("--help") || argv.includes("-h")) {
+    process.stdout.write(`${USAGE}\n`);
+    return;
+  }
 
   let inputDir: string;
   if (synthetic) {
     inputDir = await makeSyntheticDir();
   } else {
     if (!positional[0]) {
-      process.stderr.write(
-        "Usage: measure-payload.ts <input-dir> [--label <name>] | --synthetic [--label <name>]\n"
-      );
+      process.stderr.write(`${USAGE}\n`);
       process.exitCode = 1;
       return;
     }
@@ -327,7 +349,12 @@ async function main(): Promise<void> {
   const markdown = render(rows, label, inputDir, synthetic, policy);
   process.stdout.write(`${markdown}\n`);
 
-  const outFile = path.join(HERE, `E3-payload-${label}.md`);
+  const outDir =
+    outDirIndex >= 0 && argv[outDirIndex + 1]
+      ? path.resolve(argv[outDirIndex + 1]!)
+      : DEFAULT_OUT_DIR;
+  fs.mkdirSync(outDir, { recursive: true });
+  const outFile = path.join(outDir, `E3-payload-${label}.md`);
   fs.writeFileSync(outFile, markdown);
   process.stderr.write(`Wrote ${outFile}\n`);
 }

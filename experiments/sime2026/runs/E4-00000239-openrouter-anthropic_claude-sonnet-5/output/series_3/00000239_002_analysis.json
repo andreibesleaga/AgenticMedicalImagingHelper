@@ -1,0 +1,59 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000239/series_3/00000239_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA/AP view)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Both lungs appear grossly aerated with no obvious focal consolidation identified\",\n    \"Cardiac silhouette is partially obscured but appears within normal limits in size\",\n    \"Large, well-defined gas-filled structure with mottled, bubbly (mixed air-fluid/solid) density is seen occupying the right lower hemithorax and upper abdominal region, closely apposed to and elevating the right hemidiaphragm\",\n    \"Right hemidiaphragm contour is indistinct/elevated compared to the left\",\n    \"Left hemidiaphragm and costophrenic angle appear relatively preserved\",\n    \"Soft tissue and osseous structures of the thoracic cage appear symmetric without obvious fracture\",\n    \"No definite pleural effusion identified on this single view\",\n    \"Positioning marker present in upper right corner of image\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Large gas-filled viscus overlying right lower chest/upper abdomen\",\n      \"description\": \"A prominent, rounded, gas-distended structure with a mottled/bubbly gas pattern is seen in the right lower thoracic/upper abdominal region, silhouetting and elevating the right hemidiaphragm. This appearance is suggestive of a markedly distended stomach (possible large hiatal or diaphragmatic hernia with intrathoracic extension of stomach/bowel) versus severe gastric dilation beneath an elevated diaphragm. Correlation with lateral view, CT, or clinical history is recommended for definitive characterization.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 62\n    },\n    {\n      \"name\": \"Right hemidiaphragm elevation/indistinctness\",\n      \"description\": \"The right hemidiaphragm outline is less sharply defined than the left, likely related to the adjacent large gas-filled structure, and could reflect diaphragmatic elevation, eventration, or a hernia defect allowing abdominal contents into the thoracic cavity.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 50\n    }\n  ],\n  \"summary\": \"This chest X-ray shows the lungs are generally clear without obvious signs of pneumonia or significant fluid collection. However, there is a large air-and-content filled structure seen in the lower right part of the chest, near where the diaphragm (the muscle that separates the chest from the abdomen) should be. This appearance often represents a very distended stomach or a portion of stomach/bowel that has moved up into the chest cavity, sometimes called a hiatal or diaphragmatic hernia. This finding is not an emergency in every case but should be correlated with symptoms (such as difficulty swallowing, reflux, abdominal pain, or breathing difficulty) and confirmed with additional imaging such as a CT scan or barium study. A radiologist and treating physician should review this image directly for a definitive diagnosis and next steps.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/hiatus-hernia\",\n    \"https://www.uptodate.com/contents/hiatal-hernia\",\n    \"https://pubmed.ncbi.nlm.nih.gov/?term=large+hiatal+hernia+chest+radiograph\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP view)",
+  "quality": "Fair",
+  "findings": [
+    "Both lungs appear grossly aerated with no obvious focal consolidation identified",
+    "Cardiac silhouette is partially obscured but appears within normal limits in size",
+    "Large, well-defined gas-filled structure with mottled, bubbly (mixed air-fluid/solid) density is seen occupying the right lower hemithorax and upper abdominal region, closely apposed to and elevating the right hemidiaphragm",
+    "Right hemidiaphragm contour is indistinct/elevated compared to the left",
+    "Left hemidiaphragm and costophrenic angle appear relatively preserved",
+    "Soft tissue and osseous structures of the thoracic cage appear symmetric without obvious fracture",
+    "No definite pleural effusion identified on this single view",
+    "Positioning marker present in upper right corner of image"
+  ],
+  "abnormalities": [
+    {
+      "name": "Large gas-filled viscus overlying right lower chest/upper abdomen",
+      "severity": "Moderate",
+      "confidence": 62,
+      "description": "A prominent, rounded, gas-distended structure with a mottled/bubbly gas pattern is seen in the right lower thoracic/upper abdominal region, silhouetting and elevating the right hemidiaphragm. This appearance is suggestive of a markedly distended stomach (possible large hiatal or diaphragmatic hernia with intrathoracic extension of stomach/bowel) versus severe gastric dilation beneath an elevated diaphragm. Correlation with lateral view, CT, or clinical history is recommended for definitive characterization."
+    },
+    {
+      "name": "Right hemidiaphragm elevation/indistinctness",
+      "severity": "Mild",
+      "confidence": 50,
+      "description": "The right hemidiaphragm outline is less sharply defined than the left, likely related to the adjacent large gas-filled structure, and could reflect diaphragmatic elevation, eventration, or a hernia defect allowing abdominal contents into the thoracic cavity."
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs are generally clear without obvious signs of pneumonia or significant fluid collection. However, there is a large air-and-content filled structure seen in the lower right part of the chest, near where the diaphragm (the muscle that separates the chest from the abdomen) should be. This appearance often represents a very distended stomach or a portion of stomach/bowel that has moved up into the chest cavity, sometimes called a hiatal or diaphragmatic hernia. This finding is not an emergency in every case but should be correlated with symptoms (such as difficulty swallowing, reflux, abdominal pain, or breathing difficulty) and confirmed with additional imaging such as a CT scan or barium study. A radiologist and treating physician should review this image directly for a definitive diagnosis and next steps.",
+  "references": [
+    "https://radiopaedia.org/articles/hiatus-hernia",
+    "https://www.uptodate.com/contents/hiatal-hernia",
+    "https://pubmed.ncbi.nlm.nih.gov/?term=large+hiatal+hernia+chest+radiograph"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22139,
+    "bytesOut": 22139,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-09T07:14:00.721Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

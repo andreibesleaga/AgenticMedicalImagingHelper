@@ -85,9 +85,9 @@ describe("createGeminiClient — cost metering", () => {
     const meter = new CostMeter(0.000001, PRICING);
     const client = createGeminiClient(modelWithUsage(OVER_CAP_USAGE), meter);
 
-    await expect(
-      client.synthesizeSeries("s1", [oneAnalysis], undefined)
-    ).rejects.toBeInstanceOf(CostCapExceededError);
+    await expect(client.synthesizeSeries("s1", [oneAnalysis], undefined)).rejects.toBeInstanceOf(
+      CostCapExceededError
+    );
   });
 
   it("propagates CostCapExceededError from analyzeEvolution (multi-series)", async () => {

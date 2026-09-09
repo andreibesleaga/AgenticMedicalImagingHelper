@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S3x10/series_1/img_08_00013795_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Mild cardiomegaly with a cardiothoracic ratio estimated to be greater than 0.5.\",\n    \"Left hemidiaphragm appears elevated, possibly due to gastric air bubble seen below it, or could represent an eventration or phrenic nerve palsy.\",\n    \"No focal consolidation or pleural effusion is noted in the visualized lung fields.\",\n    \"Bony structures appear unremarkable for age.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Mild cardiomegaly, with an estimated cardiothoracic ratio above the normal limit of 0.5 for an adult, suggesting an enlarged heart. Further evaluation may be needed to determine the cause and clinical significance, especially in a pediatric patient where cardiothoracic ratios can vary with age and technique.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Elevated Left Hemidiaphragm\",\n      \"description\": \"The left hemidiaphragm appears elevated. This could be due to a prominent gastric air bubble below it pushing it up, or it could indicate an underlying condition like diaphragmatic eventration (a thinning of the diaphragm) or phrenic nerve palsy (weakness or paralysis of the nerve controlling the diaphragm).\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"This chest X-ray shows that your child's heart appears slightly larger than expected, a condition called mild cardiomegaly. Additionally, the left side of the diaphragm (the muscle that helps you breathe) seems a bit high. This could be due to a normal air bubble in the stomach beneath it, or it might suggest a condition where the diaphragm is thinner than usual or its nerve isn't working properly. The lungs themselves look clear, and there's no sign of fluid buildup. Further evaluation might be recommended by your doctor to understand the cause of these findings.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2017160100\",\n    \"https://radiopaedia.org/articles/cardiomegaly-1\",\n    \"https://radiopaedia.org/articles/diaphragmatic-eventration?lang=gb\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Mild cardiomegaly with a cardiothoracic ratio estimated to be greater than 0.5.",
+    "Left hemidiaphragm appears elevated, possibly due to gastric air bubble seen below it, or could represent an eventration or phrenic nerve palsy.",
+    "No focal consolidation or pleural effusion is noted in the visualized lung fields.",
+    "Bony structures appear unremarkable for age."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Mild cardiomegaly, with an estimated cardiothoracic ratio above the normal limit of 0.5 for an adult, suggesting an enlarged heart. Further evaluation may be needed to determine the cause and clinical significance, especially in a pediatric patient where cardiothoracic ratios can vary with age and technique."
+    },
+    {
+      "name": "Elevated Left Hemidiaphragm",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "The left hemidiaphragm appears elevated. This could be due to a prominent gastric air bubble below it pushing it up, or it could indicate an underlying condition like diaphragmatic eventration (a thinning of the diaphragm) or phrenic nerve palsy (weakness or paralysis of the nerve controlling the diaphragm)."
+    }
+  ],
+  "summary": "This chest X-ray shows that your child's heart appears slightly larger than expected, a condition called mild cardiomegaly. Additionally, the left side of the diaphragm (the muscle that helps you breathe) seems a bit high. This could be due to a normal air bubble in the stomach beneath it, or it might suggest a condition where the diaphragm is thinner than usual or its nerve isn't working properly. The lungs themselves look clear, and there's no sign of fluid buildup. Further evaluation might be recommended by your doctor to understand the cause of these findings.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2017160100",
+    "https://radiopaedia.org/articles/cardiomegaly-1",
+    "https://radiopaedia.org/articles/diaphragmatic-eventration?lang=gb"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 16861,
+    "bytesOut": 16861,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:01:32.783Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

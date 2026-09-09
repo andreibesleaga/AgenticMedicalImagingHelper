@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_4/img_03_00002037_000.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary abnormalities identified.\",\n    \"Lung fields are clear without evidence of focal consolidation, pneumothorax, or significant pleural effusion.\",\n    \"Cardiac silhouette is normal in size and contour.\",\n    \"Mediastinum appears unremarkable.\",\n    \"Diaphragms are intact and sharply demarcated.\",\n    \"Osseous structures (ribs, clavicles, scapulae, thoracic spine) are unremarkable.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray shows no signs of active lung disease, such as pneumonia, collapsed lung, or fluid around the lungs. The heart appears to be of normal size, and the bones visible in the image are also normal. Overall, the study is unremarkable.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.231025178\",\n    \"https://www.radiologyinfo.org/en/info/chestxray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary abnormalities identified.",
+    "Lung fields are clear without evidence of focal consolidation, pneumothorax, or significant pleural effusion.",
+    "Cardiac silhouette is normal in size and contour.",
+    "Mediastinum appears unremarkable.",
+    "Diaphragms are intact and sharply demarcated.",
+    "Osseous structures (ribs, clavicles, scapulae, thoracic spine) are unremarkable."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray shows no signs of active lung disease, such as pneumonia, collapsed lung, or fluid around the lungs. The heart appears to be of normal size, and the bones visible in the image are also normal. Overall, the study is unremarkable.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.231025178",
+    "https://www.radiologyinfo.org/en/info/chestxray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23881,
+    "bytesOut": 23881,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:08:23.274Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -46,6 +46,7 @@ import {
   phiCategories,
   scanContextFilesForPhi,
 } from "../domain/phi-scan.js";
+import { collectGeneratedText, contextConsistencyWarnings } from "../domain/context-consistency.js";
 import { runMedicalImagingAgent } from "../adapters/langgraph-agent.js";
 import type { AnalyzeOptions, ImageAnalysis } from "../domain/types.js";
 
@@ -124,7 +125,7 @@ export async function runAnalyze(
       ? process.env.OPENROUTER_API_KEY
       : (process.env.GOOGLE_API_KEY ?? process.env.GEMINI_API_KEY);
   // gemini-2.5-pro was retired for new API keys in 2026 (HTTP 404); flash is the
-  // cheapest generally-available multimodal model and the one used in the SIME 2026 paper.
+  // cheapest generally-available multimodal model and the one used in the published experiments.
   const apiAIModel =
     provider === "openrouter"
       ? (process.env.OPENROUTER_MODEL ?? DEFAULT_OPENROUTER_MODEL)
@@ -314,6 +315,22 @@ export async function runAnalyze(
     finalState.reportPaths = reportPaths;
     imageResults = finalState.imageResults;
     seriesCount = finalState.seriesResults.length;
+
+    // ── Context-consistency probe (governance, non-blocking) ─────────────────
+    // Does the generated narrative contradict the age or sex the operator
+    // supplied? The fairness probe cannot see this: it looks for demographically
+    // *anchored* claims, not demographic assertions inconsistent with the
+    // record. Advisory only — it warns and is recorded in the manifest, and it
+    // never changes the exit code.
+    const contextWarnings = contextConsistencyWarnings(
+      contextFiles.map((f) => f.text).join("\n"),
+      collectGeneratedText(finalState)
+    );
+    if (contextWarnings.length > 0) {
+      process.stderr.write(`Warning: ${contextWarnings[0]}\n`);
+      for (const line of contextWarnings.slice(1)) process.stderr.write(`  ${line}\n`);
+      warnings.push(...contextWarnings);
+    }
 
     const successCount = imageResults.filter((r) => r.status === "success").length;
     const failCount = imageResults.filter((r) => r.status === "error").length;

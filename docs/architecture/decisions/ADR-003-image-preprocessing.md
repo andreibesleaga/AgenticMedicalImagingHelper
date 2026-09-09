@@ -38,6 +38,11 @@ Before submitting medical images to the Gemini Vision API, they must be encoded 
 
 **Pros:**
 - Reduces payload size by 75–95% for large medical images
+  <br>_(Estimated when this option was written, never measured. Measured on
+  2026-09-08 it was wrong in both directions: on the 31-image 224-px cohort this
+  rule **increased** the payload by +129.4 %, and the model-aware policy that
+  replaced it saves 0.9 % there and 86.7 % on large plates. See the
+  2026-09-08 update below. The 75–95 % figure is withdrawn.)_
 - Stays well within Gemini's inlineData limits
 - PNG is lossless — no diagnostic information lost at the same resolution
 - Consistent MIME type (always PNG) simplifies API call code

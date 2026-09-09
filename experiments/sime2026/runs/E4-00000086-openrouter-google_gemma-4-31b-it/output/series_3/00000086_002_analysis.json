@@ -1,0 +1,48 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000086/series_3/00000086_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\": \"X-ray\", \"anatomyRegion\": \"Chest (PA)\", \"quality\": \"Good\", \"findings\": [\"Lungs are generally clear without focal consolidation or masses\", \"Right costophrenic angle is obscured by a dense opacity\", \"Heart size and mediastinal contours are within normal limits\", \"Bony structures are intact\"], \"abnormalities\": [{\"name\": \"Right pleural effusion\", \"description\": \"Blunting of the right costophrenic angle with a meniscus sign, suggestive of fluid accumulation in the pleural space\", \"severity\": \"Mild\", \"confidence\": 90}], \"summary\": \"The chest X-ray shows a small amount of fluid around the base of the right lung, known as a pleural effusion. The lungs are otherwise clear and the heart size is normal. This finding can be caused by various conditions and should be correlated with your clinical symptoms by a doctor.\", \"references\": [\"https://radiopaedia.org/articles/pleural-effusion\", \"https://www.acep.org/patient-resources/\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are generally clear without focal consolidation or masses",
+    "Right costophrenic angle is obscured by a dense opacity",
+    "Heart size and mediastinal contours are within normal limits",
+    "Bony structures are intact"
+  ],
+  "abnormalities": [
+    {
+      "name": "Right pleural effusion",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Blunting of the right costophrenic angle with a meniscus sign, suggestive of fluid accumulation in the pleural space"
+    }
+  ],
+  "summary": "The chest X-ray shows a small amount of fluid around the base of the right lung, known as a pleural effusion. The lungs are otherwise clear and the heart size is normal. This finding can be caused by various conditions and should be correlated with your clinical symptoms by a doctor.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.acep.org/patient-resources/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21787,
+    "bytesOut": 21787,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-08T19:24:02.348Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

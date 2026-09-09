@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S3x10/series_3/img_04_00002275_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pneumothorax, or large pleural effusion identified.\",\n    \"Bilateral hilar regions appear unremarkable.\",\n    \"Cardiac silhouette is within normal limits for size and contour.\",\n    \"Pulmonary vascularity appears normal.\",\n    \"Bony thorax and visualized soft tissues are unremarkable.\",\n    \"A medical device (likely a pacemaking device or lead) is noted in the superior aspect of the left hemithorax.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Medical Device\",\n      \"description\": \"A radio-opaque device consistent with a cardiac pacemaker or similar implanted device is visible in the left superior chest, likely subcutaneous or within the chest wall. Its leads are not fully visualized on this single view to confirm intracardiac placement, but its presence is noted.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray of your chest shows your lungs, heart, and bones. Your lungs appear clear without any signs of infection, fluid buildup, or a collapsed lung. Your heart size looks normal. There is a medical device, possibly a pacemaker, visible in the upper left part of your chest. This is an expected finding if you have such a device. Overall, the X-ray does not show any concerning new findings within your chest.\",\n  \"references\": [\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://pubs.rsna.org/journal/radiology\",\n    \"https://www.ahajournals.org/journal/circ\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pneumothorax, or large pleural effusion identified.",
+    "Bilateral hilar regions appear unremarkable.",
+    "Cardiac silhouette is within normal limits for size and contour.",
+    "Pulmonary vascularity appears normal.",
+    "Bony thorax and visualized soft tissues are unremarkable.",
+    "A medical device (likely a pacemaking device or lead) is noted in the superior aspect of the left hemithorax."
+  ],
+  "abnormalities": [
+    {
+      "name": "Medical Device",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A radio-opaque device consistent with a cardiac pacemaker or similar implanted device is visible in the left superior chest, likely subcutaneous or within the chest wall. Its leads are not fully visualized on this single view to confirm intracardiac placement, but its presence is noted."
+    }
+  ],
+  "summary": "This X-ray of your chest shows your lungs, heart, and bones. Your lungs appear clear without any signs of infection, fluid buildup, or a collapsed lung. Your heart size looks normal. There is a medical device, possibly a pacemaker, visible in the upper left part of your chest. This is an expected finding if you have such a device. Overall, the X-ray does not show any concerning new findings within your chest.",
+  "references": [
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiology",
+    "https://www.ahajournals.org/journal/circ"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23475,
+    "bytesOut": 23475,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:02:31.165Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

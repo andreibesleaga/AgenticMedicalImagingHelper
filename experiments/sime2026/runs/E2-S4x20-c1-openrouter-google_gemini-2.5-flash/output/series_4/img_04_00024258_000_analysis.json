@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_4/img_04_00024258_000.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal opacities or infiltrates are seen in either lung.\",\n    \"The hilar and mediastinal contours are unremarkable.\",\n    \"The cardiomediastinal silhouette is normal in size and contour.\",\n    \"Both hemidiaphragms are intact and clear costophrenic angles are noted.\",\n    \"The osseous structures appear unremarkable.\",\n    \"Surgical clips are noted in the left supraclavicular region, likely post-biopsy or similar procedure.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical clips\",\n      \"description\": \"Small, metallic surgical clips are identified in the soft tissues of the left supraclavicular region, consistent with a prior surgical intervention in that area.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows that your lungs and heart appear healthy and within normal limits. There are no signs of pneumonia, fluid, or other issues in your lungs. The bones seen in the image also look normal. We can see some small surgical clips in the area above your left collarbone, which are typically left behind after a previous surgery or biopsy, and are not a cause for concern in this context.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2016160076\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal opacities or infiltrates are seen in either lung.",
+    "The hilar and mediastinal contours are unremarkable.",
+    "The cardiomediastinal silhouette is normal in size and contour.",
+    "Both hemidiaphragms are intact and clear costophrenic angles are noted.",
+    "The osseous structures appear unremarkable.",
+    "Surgical clips are noted in the left supraclavicular region, likely post-biopsy or similar procedure."
+  ],
+  "abnormalities": [
+    {
+      "name": "Surgical clips",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Small, metallic surgical clips are identified in the soft tissues of the left supraclavicular region, consistent with a prior surgical intervention in that area."
+    }
+  ],
+  "summary": "The X-ray of your chest shows that your lungs and heart appear healthy and within normal limits. There are no signs of pneumonia, fluid, or other issues in your lungs. The bones seen in the image also look normal. We can see some small surgical clips in the area above your left collarbone, which are typically left behind after a previous surgery or biopsy, and are not a cause for concern in this context.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2016160076"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24315,
+    "bytesOut": 24315,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:08:26.471Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_3/img_20_00011065_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pneumothorax, or large pleural effusion identified.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Hilar and mediastinal contours appear unremarkable.\",\n    \"Diaphragms are intact and costophrenic angles are sharp.\",\n    \"Osseous structures (ribs, clavicles, visualized thoracic spine) show no acute abnormalities.\",\n    \"Multiple surgical clips are noted in the mediastinum, likely related to prior cardiac or thoracic surgery.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Mediastinal surgical clips\",\n      \"description\": \"Multiple small, metallic surgical clips are present within the mediastinal region. These are commonly seen after cardiac or thoracic surgical procedures.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows no significant acute problems in the lungs, heart, or surrounding structures. There are surgical clips in the central chest area, which are expected findings if you have had previous heart or chest surgery. These clips are generally harmless and are a normal part of your recovery if you've undergone such procedures.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.294085189\",\n    \"https://radiopaedia.org/articles/chest-x-ray-an-approach\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pneumothorax, or large pleural effusion identified.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Hilar and mediastinal contours appear unremarkable.",
+    "Diaphragms are intact and costophrenic angles are sharp.",
+    "Osseous structures (ribs, clavicles, visualized thoracic spine) show no acute abnormalities.",
+    "Multiple surgical clips are noted in the mediastinum, likely related to prior cardiac or thoracic surgery."
+  ],
+  "abnormalities": [
+    {
+      "name": "Mediastinal surgical clips",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Multiple small, metallic surgical clips are present within the mediastinal region. These are commonly seen after cardiac or thoracic surgical procedures."
+    }
+  ],
+  "summary": "The chest X-ray shows no significant acute problems in the lungs, heart, or surrounding structures. There are surgical clips in the central chest area, which are expected findings if you have had previous heart or chest surgery. These clips are generally harmless and are a normal part of your recovery if you've undergone such procedures.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.294085189",
+    "https://radiopaedia.org/articles/chest-x-ray-an-approach"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22000,
+    "bytesOut": 22000,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:11:15.228Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

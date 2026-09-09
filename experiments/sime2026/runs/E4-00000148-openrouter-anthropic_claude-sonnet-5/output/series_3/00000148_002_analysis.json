@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000148/series_3/00000148_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA)\",\"quality\":\"Good\",\"findings\":[\"Frontal chest radiograph demonstrating a small round metallic/radiopaque density projecting over the left mid lung field, likely representing a skin marker or external artifact (asterisk marker visible on image)\",\"Lungs are clear bilaterally without focal consolidation, effusion, or pneumothorax\",\"Cardiac silhouette is within normal limits in size and contour\",\"Mediastinal contours are unremarkable\",\"Visualized osseous structures (ribs, clavicles) appear intact without acute fracture\",\"'L' marker present on right side of image indicating left side of patient\",\"Soft tissue structures appear unremarkable\"],\"abnormalities\":[{\"name\":\"Small radiopaque focus, left mid-lung projection\",\"description\":\"A small, round, dense marker-like opacity is seen projecting over the left mid lung zone. This is likely an external skin marker (e.g., nipple marker or radiographic marker) placed by the technologist, but could represent a true intrathoracic finding requiring correlation with prior imaging or clinical exam.\",\"severity\":\"Mild\",\"confidence\":45}],\"summary\":\"This chest X-ray shows generally clear lungs and a normal-sized heart. There is a small round bright spot on the left side of the chest image, which is most likely a marker placed on the skin during the X-ray (such as a nipple marker) rather than something inside the lung. However, this should be confirmed by a radiologist, and if there is any uncertainty, a follow-up image or comparison with prior studies may be recommended to be completely sure it isn't a small nodule or foreign body.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph-an-approach\",\"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems\",\"https://pubs.rsna.org/journal/radiology\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Frontal chest radiograph demonstrating a small round metallic/radiopaque density projecting over the left mid lung field, likely representing a skin marker or external artifact (asterisk marker visible on image)",
+    "Lungs are clear bilaterally without focal consolidation, effusion, or pneumothorax",
+    "Cardiac silhouette is within normal limits in size and contour",
+    "Mediastinal contours are unremarkable",
+    "Visualized osseous structures (ribs, clavicles) appear intact without acute fracture",
+    "'L' marker present on right side of image indicating left side of patient",
+    "Soft tissue structures appear unremarkable"
+  ],
+  "abnormalities": [
+    {
+      "name": "Small radiopaque focus, left mid-lung projection",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "A small, round, dense marker-like opacity is seen projecting over the left mid lung zone. This is likely an external skin marker (e.g., nipple marker or radiographic marker) placed by the technologist, but could represent a true intrathoracic finding requiring correlation with prior imaging or clinical exam."
+    }
+  ],
+  "summary": "This chest X-ray shows generally clear lungs and a normal-sized heart. There is a small round bright spot on the left side of the chest image, which is most likely a marker placed on the skin during the X-ray (such as a nipple marker) rather than something inside the lung. However, this should be confirmed by a radiologist, and if there is any uncertainty, a follow-up image or comparison with prior studies may be recommended to be completely sure it isn't a small nodule or foreign body.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-an-approach",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems",
+    "https://pubs.rsna.org/journal/radiology"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22899,
+    "bytesOut": 22899,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-09T07:10:09.498Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

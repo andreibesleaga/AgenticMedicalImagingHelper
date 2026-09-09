@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000219/series_3/00000219_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Heart size appears within normal limits for this projection.\",\n    \"Mediastinal contours are unremarkable.\",\n    \"Lungs are clear with no obvious infiltrates, effusions, or pneumothorax.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"Bony thorax appears normal.\",\n    \"Slight rotation noted, but image quality remains diagnostic.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray shows that your lungs are clear and healthy, with no signs of infection, fluid buildup, or collapsed lung. Your heart size and the main structures in the center of your chest also look normal. The bones of your chest appear healthy.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.231025176\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Heart size appears within normal limits for this projection.",
+    "Mediastinal contours are unremarkable.",
+    "Lungs are clear with no obvious infiltrates, effusions, or pneumothorax.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "Bony thorax appears normal.",
+    "Slight rotation noted, but image quality remains diagnostic."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray shows that your lungs are clear and healthy, with no signs of infection, fluid buildup, or collapsed lung. Your heart size and the main structures in the center of your chest also look normal. The bones of your chest appear healthy.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.231025176",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21768,
+    "bytesOut": 21768,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:17:07.432Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

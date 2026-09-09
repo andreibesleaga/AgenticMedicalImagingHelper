@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_3/img_19_00022682_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Heart appears mildly enlarged, consistent with cardiomegaly.\",\n    \"Bilateral lung fields appear clear without evidence of focal consolidation, pneumothorax, or large pleural effusions.\",\n    \"Costophrenic angles are acute bilaterally.\",\n    \"Diaphragms are intact and appropriately positioned.\",\n    \"Osseous structures (ribs, clavicles, humeri, scapulae) appear intact without acute fracture or aggressive lytic/blastic lesions.\",\n    \"Soft tissues appear unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette is mildly enlarged, suggesting cardiomegaly.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The X-ray of the chest shows that your heart appears a little larger than expected, a condition known as mild cardiomegaly. However, your lungs look clear, and there are no signs of pneumonia, collapsed lung, or significant fluid around the lungs. The bones in your chest area also appear normal. Further evaluation might be recommended to understand the cause of the heart enlargement.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.294085028\",\n    \"https://www.acc.org/latest-in-cardiology/articles/2020/09/21/13/21/chest-x-ray-assessment-of-cardiac-size\",\n    \"https://radiopaedia.org/articles/cardiomegaly\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Heart appears mildly enlarged, consistent with cardiomegaly.",
+    "Bilateral lung fields appear clear without evidence of focal consolidation, pneumothorax, or large pleural effusions.",
+    "Costophrenic angles are acute bilaterally.",
+    "Diaphragms are intact and appropriately positioned.",
+    "Osseous structures (ribs, clavicles, humeri, scapulae) appear intact without acute fracture or aggressive lytic/blastic lesions.",
+    "Soft tissues appear unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "The cardiac silhouette is mildly enlarged, suggesting cardiomegaly."
+    }
+  ],
+  "summary": "The X-ray of the chest shows that your heart appears a little larger than expected, a condition known as mild cardiomegaly. However, your lungs look clear, and there are no signs of pneumonia, collapsed lung, or significant fluid around the lungs. The bones in your chest area also appear normal. Further evaluation might be recommended to understand the cause of the heart enlargement.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.294085028",
+    "https://www.acc.org/latest-in-cardiology/articles/2020/09/21/13/21/chest-x-ray-assessment-of-cardiac-size",
+    "https://radiopaedia.org/articles/cardiomegaly"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21114,
+    "bytesOut": 21114,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:08:07.865Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

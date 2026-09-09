@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S3x10/series_3/img_09_00009918_001.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right lung shows an area of consolidation/opacity in the lower lobe with ill-defined borders, suggesting an infiltrative process.\",\n    \"A small, dense, radio-opaque focus is noted within the consolidative area in the right lower lobe, possibly representing a calcified granuloma or foreign body.\",\n    \"The left lung field appears clear.\",\n    \"Cardiomediastinal silhouette is within normal limits.\",\n    \"Diaphragmatic contours are clear, though the right hemidiaphragm is partially obscured by the right lower lobe opacity.\",\n    \"Bony thorax is unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right lower lobe consolidation\",\n      \"description\": \"An infiltrative process is noted in the right lower lobe, characterized by an area of increased opacity and indistinct margins. This finding is suspicious for pneumonia or other inflammatory processes.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Right lower lobe calcification\",\n      \"description\": \"A small, dense, radio-opaque lesion is present within the consolidative area of the right lower lobe, consistent with a calcification. This could represent an old granuloma, such as from previous tuberculosis or histoplasmosis.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows an area of haziness and increased density in the lower part of your right lung. This appearance often suggests an infection like pneumonia. Additionally, a small, bright white spot, which is likely a calcium deposit (calcification), is seen within this area. Calcifications are usually old scars from previous infections or inflammation. The rest of your lungs and heart appear normal. Further evaluation, possibly with additional imaging or tests, may be recommended by your doctor to understand the cause of these findings.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125034\",\n    \"https://radiologykey.com/pulmonary-granulomas/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Right lung shows an area of consolidation/opacity in the lower lobe with ill-defined borders, suggesting an infiltrative process.",
+    "A small, dense, radio-opaque focus is noted within the consolidative area in the right lower lobe, possibly representing a calcified granuloma or foreign body.",
+    "The left lung field appears clear.",
+    "Cardiomediastinal silhouette is within normal limits.",
+    "Diaphragmatic contours are clear, though the right hemidiaphragm is partially obscured by the right lower lobe opacity.",
+    "Bony thorax is unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lower lobe consolidation",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "An infiltrative process is noted in the right lower lobe, characterized by an area of increased opacity and indistinct margins. This finding is suspicious for pneumonia or other inflammatory processes."
+    },
+    {
+      "name": "Right lower lobe calcification",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "A small, dense, radio-opaque lesion is present within the consolidative area of the right lower lobe, consistent with a calcification. This could represent an old granuloma, such as from previous tuberculosis or histoplasmosis."
+    }
+  ],
+  "summary": "The X-ray of your chest shows an area of haziness and increased density in the lower part of your right lung. This appearance often suggests an infection like pneumonia. Additionally, a small, bright white spot, which is likely a calcium deposit (calcification), is seen within this area. Calcifications are usually old scars from previous infections or inflammation. The rest of your lungs and heart appear normal. Further evaluation, possibly with additional imaging or tests, may be recommended by your doctor to understand the cause of these findings.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125034",
+    "https://radiologykey.com/pulmonary-granulomas/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22134,
+    "bytesOut": 22134,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:02:49.208Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

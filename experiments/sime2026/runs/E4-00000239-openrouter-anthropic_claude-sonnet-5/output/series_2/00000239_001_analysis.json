@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000239/series_2/00000239_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Fair\",\"findings\":[\"Large round gas-filled structure with an air-fluid level projecting over the lower mediastinum/left retrocardiac region, suggestive of a dilated, air-distended stomach or large hiatal hernia\",\"Mediastinal structures appear midline, trachea grossly central\",\"Lung fields show no obvious focal consolidation, though visualization is limited by rotation/positioning\",\"Cardiac silhouette partially obscured by the overlying air-fluid structure\",\"Soft tissue/bony thorax otherwise unremarkable in visualized areas\",\"Radiopaque marker (arrow-shaped) present in the right upper corner of the image, likely a technologist's side marker\"],\"abnormalities\":[{\"name\":\"Large air-fluid level in lower chest/upper abdomen (possible hiatal hernia or gastric dilation)\",\"description\":\"A large, well-circumscribed round lucent structure with a distinct air-fluid level is seen overlying the lower thoracic/retrocardiac region, most consistent with a markedly dilated stomach herniating through the diaphragm (large hiatal hernia) or significant gastric distension. Correlation with CT or fluoroscopic upper GI study is recommended for definitive characterization.\",\"severity\":\"Moderate\",\"confidence\":65}],\"summary\":\"This chest X-ray shows a large rounded air pocket with a fluid level sitting behind the heart, in the lower chest area. This appearance is often seen when part of the stomach pushes up through the diaphragm into the chest (called a hiatal hernia) or when the stomach becomes very distended with air. It is not a lung problem itself, but it can sometimes cause symptoms like heartburn, bloating, or chest discomfort. Further imaging, such as a CT scan or a barium swallow study, would help confirm exactly what this structure is and whether treatment is needed. The rest of the visible lung tissue does not show signs of infection or fluid buildup, though the image quality makes a full assessment somewhat limited.\",\"references\":[\"https://radiopaedia.org/articles/hiatal-hernia\",\"https://pubs.rsna.org/doi/10.1148/rg.2017160203\",\"https://www.uptodate.com/contents/hiatal-hernia\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Fair",
+  "findings": [
+    "Large round gas-filled structure with an air-fluid level projecting over the lower mediastinum/left retrocardiac region, suggestive of a dilated, air-distended stomach or large hiatal hernia",
+    "Mediastinal structures appear midline, trachea grossly central",
+    "Lung fields show no obvious focal consolidation, though visualization is limited by rotation/positioning",
+    "Cardiac silhouette partially obscured by the overlying air-fluid structure",
+    "Soft tissue/bony thorax otherwise unremarkable in visualized areas",
+    "Radiopaque marker (arrow-shaped) present in the right upper corner of the image, likely a technologist's side marker"
+  ],
+  "abnormalities": [
+    {
+      "name": "Large air-fluid level in lower chest/upper abdomen (possible hiatal hernia or gastric dilation)",
+      "severity": "Moderate",
+      "confidence": 65,
+      "description": "A large, well-circumscribed round lucent structure with a distinct air-fluid level is seen overlying the lower thoracic/retrocardiac region, most consistent with a markedly dilated stomach herniating through the diaphragm (large hiatal hernia) or significant gastric distension. Correlation with CT or fluoroscopic upper GI study is recommended for definitive characterization."
+    }
+  ],
+  "summary": "This chest X-ray shows a large rounded air pocket with a fluid level sitting behind the heart, in the lower chest area. This appearance is often seen when part of the stomach pushes up through the diaphragm into the chest (called a hiatal hernia) or when the stomach becomes very distended with air. It is not a lung problem itself, but it can sometimes cause symptoms like heartburn, bloating, or chest discomfort. Further imaging, such as a CT scan or a barium swallow study, would help confirm exactly what this structure is and whether treatment is needed. The rest of the visible lung tissue does not show signs of infection or fluid buildup, though the image quality makes a full assessment somewhat limited.",
+  "references": [
+    "https://radiopaedia.org/articles/hiatal-hernia",
+    "https://pubs.rsna.org/doi/10.1148/rg.2017160203",
+    "https://www.uptodate.com/contents/hiatal-hernia"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23146,
+    "bytesOut": 23146,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-09T07:13:49.141Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

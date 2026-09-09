@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_1/img_18_00012359_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear and hyperinflated. Diaphragms are flattened.\",\n    \"Bilateral lucency under the diaphragm, suggestive of free air.\",\n    \"Cardiomediastinal silhouette is normal in size and contour.\",\n    \"Bony thorax appears intact without acute abnormality.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Pneumoperitoneum\",\n      \"description\": \"Presence of free air under both hemidiaphragms, indicating pneumoperitoneum.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows air present under both sides of the diaphragm, which is typically a sign of free air in the abdominal cavity (a condition called pneumoperitoneum). The lungs appear clear, but are somewhat over-inflated, and the heart and major blood vessels in the chest look normal. This finding of free air in the abdomen often requires urgent medical attention to determine its cause.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pneumoperitoneum-1\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7706240/\",\n    \"https://emedicine.medscape.com/article/372070-overview\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear and hyperinflated. Diaphragms are flattened.",
+    "Bilateral lucency under the diaphragm, suggestive of free air.",
+    "Cardiomediastinal silhouette is normal in size and contour.",
+    "Bony thorax appears intact without acute abnormality."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Pneumoperitoneum",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Presence of free air under both hemidiaphragms, indicating pneumoperitoneum."
+    }
+  ],
+  "summary": "This X-ray of the chest shows air present under both sides of the diaphragm, which is typically a sign of free air in the abdominal cavity (a condition called pneumoperitoneum). The lungs appear clear, but are somewhat over-inflated, and the heart and major blood vessels in the chest look normal. This finding of free air in the abdomen often requires urgent medical attention to determine its cause.",
+  "references": [
+    "https://radiopaedia.org/articles/pneumoperitoneum-1",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7706240/",
+    "https://emedicine.medscape.com/article/372070-overview"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23356,
+    "bytesOut": 23356,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:10:42.321Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

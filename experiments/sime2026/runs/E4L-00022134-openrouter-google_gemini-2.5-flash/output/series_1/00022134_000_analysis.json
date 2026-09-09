@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4L/00022134/series_1/00022134_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal areas of consolidation, cavitation, or pleural effusion are identified.\",\n    \"The cardiac silhouette is within normal limits for size and contour.\",\n    \"The hilar regions are unremarkable.\",\n    \"The tracheobronchial tree appears patent.\",\n    \"No definite bony abnormalities or fractures are seen.\",\n    \"A small, well-defined, radio-opaque density is noted in the lower right lung field, likely representing a calcified granuloma or an artifact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Calcified granuloma/artifact\",\n      \"description\": \"A small, well-defined, radio-opaque density is noted in the lower right lung field. Given its appearance and lack of associated parenchymal changes, it is likely a benign calcified granuloma or an artifact.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"The chest X-ray shows generally clear lungs without signs of pneumonia, fluid around the lungs, or other significant issues. The heart appears to be of normal size and shape. There is a small, bright spot in the lower right part of the lung that is likely an old, healed infection (called a calcified granuloma) or possibly something outside the body that showed up on the X-ray (an artifact). This finding is usually not a cause for concern.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125139\",\n    \"https://radiopaedia.org/articles/calcified-granuloma?lang=gb\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No focal areas of consolidation, cavitation, or pleural effusion are identified.",
+    "The cardiac silhouette is within normal limits for size and contour.",
+    "The hilar regions are unremarkable.",
+    "The tracheobronchial tree appears patent.",
+    "No definite bony abnormalities or fractures are seen.",
+    "A small, well-defined, radio-opaque density is noted in the lower right lung field, likely representing a calcified granuloma or an artifact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Calcified granuloma/artifact",
+      "severity": "Normal",
+      "confidence": 75,
+      "description": "A small, well-defined, radio-opaque density is noted in the lower right lung field. Given its appearance and lack of associated parenchymal changes, it is likely a benign calcified granuloma or an artifact."
+    }
+  ],
+  "summary": "The chest X-ray shows generally clear lungs without signs of pneumonia, fluid around the lungs, or other significant issues. The heart appears to be of normal size and shape. There is a small, bright spot in the lower right part of the lung that is likely an old, healed infection (called a calcified granuloma) or possibly something outside the body that showed up on the X-ray (an artifact). This finding is usually not a cause for concern.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125139",
+    "https://radiopaedia.org/articles/calcified-granuloma?lang=gb",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 12162,
+    "bytesOut": 12162,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:26:41.286Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

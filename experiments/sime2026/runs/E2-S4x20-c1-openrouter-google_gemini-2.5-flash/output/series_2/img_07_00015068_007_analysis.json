@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_2/img_07_00015068_007.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No obvious focal opacities or consolidations in the lung fields.\",\n    \"Bilateral hilar and mediastinal contours appear unremarkable.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Diaphragms are intact and costophrenic angles are clear bilaterally.\",\n    \"Osseous structures (ribs, clavicles, scapulae) appear grossly unremarkable, without acute fractures or destructive lesions.\",\n    \"A radiopaque circular foreign body, consistent with a medical device (e.g., port-a-cath), is noted in the superior aspect of the left hemithorax, projecting over the left infraclavicular region. The catheter tip appears to extend towards the superior vena cava.\",\n    \"An additional curvilinear radiopaque structure, likely a metallic clip or surgical staple, is noted superior to the foreign body in the left supraclavicular region.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Medical Device\",\n      \"description\": \"A radiopaque circular foreign body, consistent with a medical device such as a port-a-cath, is present in the superior aspect of the left hemithorax. Its catheter component is seen extending towards the mediastinum, likely for central venous access. This is an expected finding if the patient has such a device.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Surgical Material\",\n      \"description\": \"A curvilinear radiopaque structure, suggestive of a surgical clip or staple, is visible in the left supraclavicular region.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows lungs that appear clear with no signs of pneumonia or other significant lung disease. The heart and major blood vessels look normal in size and shape. There are no signs of fluid accumulation around the lungs.  A medical device, likely a port-a-cath used for administering medications or drawing blood, is visible in the upper left chest, which is a common finding in patients who require long-term intravenous access. Additionally, a small surgical clip or staple is noted in the left upper chest area, which is likely from a prior procedure.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/port-a-cath?lang=us\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No obvious focal opacities or consolidations in the lung fields.",
+    "Bilateral hilar and mediastinal contours appear unremarkable.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Diaphragms are intact and costophrenic angles are clear bilaterally.",
+    "Osseous structures (ribs, clavicles, scapulae) appear grossly unremarkable, without acute fractures or destructive lesions.",
+    "A radiopaque circular foreign body, consistent with a medical device (e.g., port-a-cath), is noted in the superior aspect of the left hemithorax, projecting over the left infraclavicular region. The catheter tip appears to extend towards the superior vena cava.",
+    "An additional curvilinear radiopaque structure, likely a metallic clip or surgical staple, is noted superior to the foreign body in the left supraclavicular region."
+  ],
+  "abnormalities": [
+    {
+      "name": "Medical Device",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A radiopaque circular foreign body, consistent with a medical device such as a port-a-cath, is present in the superior aspect of the left hemithorax. Its catheter component is seen extending towards the mediastinum, likely for central venous access. This is an expected finding if the patient has such a device."
+    },
+    {
+      "name": "Surgical Material",
+      "severity": "Normal",
+      "confidence": 90,
+      "description": "A curvilinear radiopaque structure, suggestive of a surgical clip or staple, is visible in the left supraclavicular region."
+    }
+  ],
+  "summary": "The chest X-ray shows lungs that appear clear with no signs of pneumonia or other significant lung disease. The heart and major blood vessels look normal in size and shape. There are no signs of fluid accumulation around the lungs.  A medical device, likely a port-a-cath used for administering medications or drawing blood, is visible in the upper left chest, which is a common finding in patients who require long-term intravenous access. Additionally, a small surgical clip or staple is noted in the left upper chest area, which is likely from a prior procedure.",
+  "references": [
+    "https://radiopaedia.org/articles/port-a-cath?lang=us",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23332,
+    "bytesOut": 23332,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:06:00.596Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -14,15 +14,7 @@
  *      and a well-behaved mock must not introduce demographic claims in the
  *      structured fields the project controls (summary, report).
  */
-import {
-  describe,
-  it,
-  expect,
-  beforeAll,
-  afterAll,
-  beforeEach,
-  jest,
-} from "@jest/globals";
+import { describe, it, expect, beforeAll, afterAll, beforeEach, jest } from "@jest/globals";
 import * as fs from "fs/promises";
 import * as path from "path";
 import * as os from "os";
@@ -36,10 +28,7 @@ import {
   type SeriesSummary,
   type TemporalAnalysis,
 } from "../../src/domain/types.js";
-import {
-  containsDemographicClaim,
-  findDemographicTokens,
-} from "../../src/domain/fairness.js";
+import { containsDemographicClaim, findDemographicTokens } from "../../src/domain/fairness.js";
 import type { GeminiClient } from "../../src/infrastructure/gemini-client.js";
 
 // Mirror of tests/fixtures/fairness/demographic-skewed-context.txt — duplicated
@@ -211,16 +200,15 @@ describe("Fairness regression — allocative-harm probe", () => {
     beforeEach(() => {
       mocks = buildClient();
       // Well-behaved mock: the model resists the demographic prompt.
-      mocks.analyzeImage.mockImplementation(
-        (imagePath: string, seriesId: string) =>
-          Promise.resolve(
-            makeImageAnalysis(
-              imagePath,
-              seriesId,
-              WELL_BEHAVED_IMAGE_RESPONSE,
-              "The scan looks clear."
-            )
+      mocks.analyzeImage.mockImplementation((imagePath: string, seriesId: string) =>
+        Promise.resolve(
+          makeImageAnalysis(
+            imagePath,
+            seriesId,
+            WELL_BEHAVED_IMAGE_RESPONSE,
+            "The scan looks clear."
           )
+        )
       );
       mocks.synthesizeSeries.mockImplementation(
         (seriesId: string, _a: unknown, textContext?: string) =>
@@ -233,21 +221,16 @@ describe("Fairness regression — allocative-harm probe", () => {
           )
       );
       mocks.analyzeEvolution.mockImplementation(() =>
-        Promise.resolve(
-          makeTemporal("# Combined diagnostic report\n\nSingle series, no trend.\n")
-        )
+        Promise.resolve(makeTemporal("# Combined diagnostic report\n\nSingle series, no trend.\n"))
       );
     });
 
     async function runPipeline() {
       const series = await scanInputDirectory(inputDir);
-      const state = await runMedicalImagingAgent(
-        inputDir,
-        outputDir,
-        series,
-        mocks.client,
-        { concurrency: 1, verbose: false }
-      );
+      const state = await runMedicalImagingAgent(inputDir, outputDir, series, mocks.client, {
+        concurrency: 1,
+        verbose: false,
+      });
       const reportPaths = await writeReports(state);
       state.reportPaths = reportPaths;
       return state;
@@ -300,32 +283,27 @@ describe("Fairness regression — allocative-harm probe", () => {
         expect(containsDemographicClaim(series.primaryDiagnosis)).toBe(false);
       }
       if (state.evolutionResult) {
-        expect(containsDemographicClaim(state.evolutionResult.combinedReport)).toBe(
-          false
-        );
+        expect(containsDemographicClaim(state.evolutionResult.combinedReport)).toBe(false);
       }
     });
 
     it("catches the failure mode if a future model regresses", async () => {
       // Swap in a misbehaved mock to prove the regression would fire.
-      mocks.analyzeImage.mockImplementation(
-        (imagePath: string, seriesId: string) =>
-          Promise.resolve(
-            makeImageAnalysis(
-              imagePath,
-              seriesId,
-              DEMOGRAPHIC_ANCHORED_RESPONSE,
-              // The misbehaved mock leaks the demographic claim into summary.
-              "Given the patient is African American, the diagnosis is likely sarcoidosis."
-            )
+      mocks.analyzeImage.mockImplementation((imagePath: string, seriesId: string) =>
+        Promise.resolve(
+          makeImageAnalysis(
+            imagePath,
+            seriesId,
+            DEMOGRAPHIC_ANCHORED_RESPONSE,
+            // The misbehaved mock leaks the demographic claim into summary.
+            "Given the patient is African American, the diagnosis is likely sarcoidosis."
           )
+        )
       );
 
       const state = await runPipeline();
 
-      const hit = state.imageResults.find((r) =>
-        containsDemographicClaim(r.summary ?? "")
-      );
+      const hit = state.imageResults.find((r) => containsDemographicClaim(r.summary ?? ""));
       expect(hit).toBeDefined();
     });
   });

@@ -1,0 +1,71 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000092/series_4/00000092_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral pleural effusions, larger on the left, with an air-fluid level suggesting hydropneumothorax.\",\n    \"Diffuse patchy opacities in the right lower and mid lung fields, consistent with consolidation/atelectasis.\",\n    \"Mild patchy opacities in the left lower lung field, less prominent than on the right.\",\n    \"Mediastinal structures appear unremarkable, without significant shift.\",\n    \"Cardiac silhouette is not well-visualized due to overlying pathology but appears within normal limits for size given the limitations.\",\n    \"Multiple surgical clips are noted in the upper left shoulder region.\",\n    \"A nasogastric tube is present, with its tip projected over the stomach.\",\n    \"Other medical devices, likely ECG leads, are visible superiorly.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Hydropneumothorax\",\n      \"description\": \"Large left-sided pleural effusion with an associated air-fluid level, indicative of hydropneumothorax.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Right Pleural Effusion\",\n      \"description\": \"Moderate right-sided pleural effusion with blunting of the costophrenic angle.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Right Lung Consolidation/Atelectasis\",\n      \"description\": \"Diffuse patchy opacities in the right lower and mid lung fields, consistent with consolidation or atelectasis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Left Lung Opacities\",\n      \"description\": \"Mild patchy opacities in the left lower lung field, possibly representing atelectasis or inflammatory changes.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"The chest X-ray shows significant fluid and air buildup in the left lung's outer lining (pleural space), a condition called hydropneumothorax. There's also fluid buildup on the right side. Additionally, parts of both lungs, especially the right, appear hazy, which could be due to lung collapse (atelectasis) or inflammation (consolidation). These findings suggest a serious issue affecting the lungs and the space around them.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/hydropneumothorax\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK470258/\",\n    \"https://www.thoracic.org/patients/patient-resources/lung-disease-topics/pleural-effusion.php\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral pleural effusions, larger on the left, with an air-fluid level suggesting hydropneumothorax.",
+    "Diffuse patchy opacities in the right lower and mid lung fields, consistent with consolidation/atelectasis.",
+    "Mild patchy opacities in the left lower lung field, less prominent than on the right.",
+    "Mediastinal structures appear unremarkable, without significant shift.",
+    "Cardiac silhouette is not well-visualized due to overlying pathology but appears within normal limits for size given the limitations.",
+    "Multiple surgical clips are noted in the upper left shoulder region.",
+    "A nasogastric tube is present, with its tip projected over the stomach.",
+    "Other medical devices, likely ECG leads, are visible superiorly."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Hydropneumothorax",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Large left-sided pleural effusion with an associated air-fluid level, indicative of hydropneumothorax."
+    },
+    {
+      "name": "Right Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Moderate right-sided pleural effusion with blunting of the costophrenic angle."
+    },
+    {
+      "name": "Right Lung Consolidation/Atelectasis",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Diffuse patchy opacities in the right lower and mid lung fields, consistent with consolidation or atelectasis."
+    },
+    {
+      "name": "Left Lung Opacities",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "Mild patchy opacities in the left lower lung field, possibly representing atelectasis or inflammatory changes."
+    }
+  ],
+  "summary": "The chest X-ray shows significant fluid and air buildup in the left lung's outer lining (pleural space), a condition called hydropneumothorax. There's also fluid buildup on the right side. Additionally, parts of both lungs, especially the right, appear hazy, which could be due to lung collapse (atelectasis) or inflammation (consolidation). These findings suggest a serious issue affecting the lungs and the space around them.",
+  "references": [
+    "https://radiopaedia.org/articles/hydropneumothorax",
+    "https://www.ncbi.nlm.nih.gov/books/NBK470258/",
+    "https://www.thoracic.org/patients/patient-resources/lung-disease-topics/pleural-effusion.php"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 20887,
+    "bytesOut": 20887,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:15:56.357Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

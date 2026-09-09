@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4L/00004946/series_2/00004946_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Increased interstitial markings bilaterally, more prominent in the lower lobes.\",\n    \"Bilateral pleural effusions, small to moderate in size.\",\n    \"Cardiomediastinal silhouette appears normal in size.\",\n    \"No focal consolidation or pneumothorax identified.\",\n    \"Bony thorax appears intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Increased interstitial markings\",\n      \"description\": \"Diffuse reticular opacities are observed throughout both lung fields, more pronounced in the lower lobes, suggestive of interstitial lung disease or pulmonary edema.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Bilateral pleural effusions\",\n      \"description\": \"Blunting of the costophrenic angles bilaterally is consistent with small to moderate pleural effusions.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows changes in both lungs, indicating a condition where the tissue supporting the air sacs has become thicker or inflamed. There is also some fluid build-up around both lungs, which is called a pleural effusion. The heart size appears normal. These findings can be associated with various conditions such as heart failure, infections, or other lung diseases. Further medical evaluation is recommended to determine the exact cause.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/interstitial-lung-disease\",\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK459207/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Increased interstitial markings bilaterally, more prominent in the lower lobes.",
+    "Bilateral pleural effusions, small to moderate in size.",
+    "Cardiomediastinal silhouette appears normal in size.",
+    "No focal consolidation or pneumothorax identified.",
+    "Bony thorax appears intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Increased interstitial markings",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse reticular opacities are observed throughout both lung fields, more pronounced in the lower lobes, suggestive of interstitial lung disease or pulmonary edema."
+    },
+    {
+      "name": "Bilateral pleural effusions",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Blunting of the costophrenic angles bilaterally is consistent with small to moderate pleural effusions."
+    }
+  ],
+  "summary": "The chest X-ray shows changes in both lungs, indicating a condition where the tissue supporting the air sacs has become thicker or inflamed. There is also some fluid build-up around both lungs, which is called a pleural effusion. The heart size appears normal. These findings can be associated with various conditions such as heart failure, infections, or other lung diseases. Further medical evaluation is recommended to determine the exact cause.",
+  "references": [
+    "https://radiopaedia.org/articles/interstitial-lung-disease",
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.ncbi.nlm.nih.gov/books/NBK459207/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22771,
+    "bytesOut": 22771,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:20:31.933Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

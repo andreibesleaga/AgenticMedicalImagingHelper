@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_3/img_18_00019940_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A nasogastric tube is visualized, with its tip projecting over the abdomen.\",\n    \"Bilateral opacities are noted in the lung fields, consistent with underlying parenchymal changes.\",\n    \"The cardiac silhouette appears within normal limits for size and contour.\",\n    \"There are no overt signs of pneumothorax or significant pleural effusion.\",\n    \"Osseous structures of the thoracic cage are unremarkable for acute fracture or destructive lesion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Nasogastric tube placement\",\n      \"description\": \"A nasogastric tube is seen traversing the esophagus and stomach, with its tip appearing to be in an appropriate position within the abdomen, though exact confirmation of duodenal placement, if intended, is limited by a single AP view.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Lung opacities\",\n      \"description\": \"Bilateral, ill-defined opacities are present within both lung fields. These findings are non-specific but could represent atelectasis, infiltrate, or inflammatory changes.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a tube, called a nasogastric tube, running from the nose into the stomach, which appears to be correctly placed. There are some cloudy areas in both lungs, which could be due to a few things like lung collapse, inflammation, or infection. The heart looks normal in size and shape. There's no evidence of a collapsed lung (pneumothorax) or significant fluid around the lungs (pleural effusion). The bones of the rib cage look normal. Further clinical correlation and potentially additional imaging may be needed to understand the cause of the lung opacities.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.303095171\",\n    \"https://radiopaedia.org/articles/nasogastric-tube-1\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8095400/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A nasogastric tube is visualized, with its tip projecting over the abdomen.",
+    "Bilateral opacities are noted in the lung fields, consistent with underlying parenchymal changes.",
+    "The cardiac silhouette appears within normal limits for size and contour.",
+    "There are no overt signs of pneumothorax or significant pleural effusion.",
+    "Osseous structures of the thoracic cage are unremarkable for acute fracture or destructive lesion."
+  ],
+  "abnormalities": [
+    {
+      "name": "Nasogastric tube placement",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A nasogastric tube is seen traversing the esophagus and stomach, with its tip appearing to be in an appropriate position within the abdomen, though exact confirmation of duodenal placement, if intended, is limited by a single AP view."
+    },
+    {
+      "name": "Lung opacities",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Bilateral, ill-defined opacities are present within both lung fields. These findings are non-specific but could represent atelectasis, infiltrate, or inflammatory changes."
+    }
+  ],
+  "summary": "The chest X-ray shows a tube, called a nasogastric tube, running from the nose into the stomach, which appears to be correctly placed. There are some cloudy areas in both lungs, which could be due to a few things like lung collapse, inflammation, or infection. The heart looks normal in size and shape. There's no evidence of a collapsed lung (pneumothorax) or significant fluid around the lungs (pleural effusion). The bones of the rib cage look normal. Further clinical correlation and potentially additional imaging may be needed to understand the cause of the lung opacities.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.303095171",
+    "https://radiopaedia.org/articles/nasogastric-tube-1",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8095400/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21046,
+    "bytesOut": 21046,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:11:14.601Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

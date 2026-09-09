@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_3/img_04_00018960_008.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pneumothorax, or large pleural effusion identified.\",\n    \"Bilateral lung fields appear clear.\",\n    \"Cardiac silhouette is not enlarged.\",\n    \"The diaphragm is elevated on the right, with a clear costophrenic angle.\",\n    \"Prominent gas-filled loops of bowel are noted in the left upper quadrant, superior to the left hemidiaphragm, consistent with Chilaiditi's sign.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Chilaiditi's sign\",\n      \"description\": \"Prominent gas-filled loops of bowel (likely colon) are interposed between the liver and the right hemidiaphragm, consistent with Chilaiditi's sign. This can be an incidental finding.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Elevated right hemidiaphragm\",\n      \"description\": \"The right hemidiaphragm is elevated, likely secondary to the interposed bowel loops.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This X-ray of your chest shows that your lungs and heart appear normal. However, there is an unusual finding where a section of your large intestine (bowel) is located between your liver and your right diaphragm (the muscle that helps you breathe). This is known as Chilaiditi's sign. It's often an incidental finding, meaning it's seen by chance and usually doesn't cause any problems or symptoms. In some cases, it can be associated with discomfort, but this X-ray alone cannot determine if you are experiencing symptoms from it. Your doctor will consider these findings along with your medical history.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chilaiditi-sign\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8305711/\",\n    \"https://emedicine.medscape.com/article/368817-overview\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pneumothorax, or large pleural effusion identified.",
+    "Bilateral lung fields appear clear.",
+    "Cardiac silhouette is not enlarged.",
+    "The diaphragm is elevated on the right, with a clear costophrenic angle.",
+    "Prominent gas-filled loops of bowel are noted in the left upper quadrant, superior to the left hemidiaphragm, consistent with Chilaiditi's sign."
+  ],
+  "abnormalities": [
+    {
+      "name": "Chilaiditi's sign",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "Prominent gas-filled loops of bowel (likely colon) are interposed between the liver and the right hemidiaphragm, consistent with Chilaiditi's sign. This can be an incidental finding."
+    },
+    {
+      "name": "Elevated right hemidiaphragm",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "The right hemidiaphragm is elevated, likely secondary to the interposed bowel loops."
+    }
+  ],
+  "summary": "This X-ray of your chest shows that your lungs and heart appear normal. However, there is an unusual finding where a section of your large intestine (bowel) is located between your liver and your right diaphragm (the muscle that helps you breathe). This is known as Chilaiditi's sign. It's often an incidental finding, meaning it's seen by chance and usually doesn't cause any problems or symptoms. In some cases, it can be associated with discomfort, but this X-ray alone cannot determine if you are experiencing symptoms from it. Your doctor will consider these findings along with your medical history.",
+  "references": [
+    "https://radiopaedia.org/articles/chilaiditi-sign",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8305711/",
+    "https://emedicine.medscape.com/article/368817-overview"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23989,
+    "bytesOut": 23989,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:11:02.209Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

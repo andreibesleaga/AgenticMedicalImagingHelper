@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild the SIME 2026 experiment inputs from the public NIH ChestX-ray14 archive.
+"""Rebuild the experiment pack's inputs from the public NIH ChestX-ray14 archive.
 
 Usage: python3 prepare-nih.py <path-to-NIH-archive.zip-or-extracted-dir> <out-dir>
 

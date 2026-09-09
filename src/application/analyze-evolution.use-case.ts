@@ -9,10 +9,7 @@ export async function analyzeEvolutionUseCase(
   state: GraphState,
   geminiClient: GeminiClient
 ): Promise<TemporalAnalysis> {
-  const { seriesResults } = state;
-
-  // Root context may be injected as an optional extension field
-  const rootContextText = (state as GraphState & { rootContextText?: string }).rootContextText;
+  const { seriesResults, rootContextText } = state;
 
   return geminiClient.analyzeEvolution(seriesResults, rootContextText);
 }

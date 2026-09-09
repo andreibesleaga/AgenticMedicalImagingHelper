@@ -1,0 +1,76 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_1/img_17_00010980_004.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Mild to moderate cardiomegaly with a cardiothoracic ratio estimated to be greater than 0.5.\",\n    \"Bilateral hilar prominence, potentially due to vascular congestion or lymphadenopathy.\",\n    \"Increased interstitial markings throughout both lung fields, more pronounced in the lower zones, suggestive of interstitial edema.\",\n    \"Small bilateral pleural effusions, predominantly visualized in the costophrenic angles, more significant on the left.\",\n    \"Mild pulmonary vascular congestion.\",\n    \"A central venous catheter (CVC) tip is noted in the superior vena cava, with its course projecting over the right subclavian vein.\",\n    \"No evidence of pneumothorax or definite focal consolidation.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlargement of the heart silhouette, with an estimated cardiothoracic ratio exceeding 0.5, indicating mild to moderate cardiomegaly.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Bilateral Hilar Prominence\",\n      \"description\": \"Increased prominence of the hilar regions bilaterally, which could be related to pulmonary vascular congestion or lymphadenopathy.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    },\n    {\n      \"name\": \"Interstitial Edema\",\n      \"description\": \"Increased interstitial markings in both lung fields, particularly in the lower zones, consistent with interstitial pulmonary edema.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Small bilateral pleural effusions, blunting the costophrenic angles, more prominent on the left side.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pulmonary Vascular Congestion\",\n      \"description\": \"Evidence of pulmonary vascular congestion, seen as engorged vessels, contributing to the interstitial edema and hilar prominence.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This X-ray shows signs of fluid buildup in and around the lungs, which is called pulmonary edema and pleural effusion. The heart appears enlarged, a condition known as cardiomegaly. There is also increased prominence in the central areas of the lungs, possibly due to fluid congestion or enlarged lymph nodes. These findings together suggest possible heart failure, which can cause fluid to back up into the lungs and around the heart. A central venous catheter is visible in the correct position. These observations warrant further medical evaluation to determine the underlying cause and appropriate treatment.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/books/NBK539958/\",\n    \"https://radiopaedia.org/articles/cardiomegaly-1\",\n    \"https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.109.192062\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Mild to moderate cardiomegaly with a cardiothoracic ratio estimated to be greater than 0.5.",
+    "Bilateral hilar prominence, potentially due to vascular congestion or lymphadenopathy.",
+    "Increased interstitial markings throughout both lung fields, more pronounced in the lower zones, suggestive of interstitial edema.",
+    "Small bilateral pleural effusions, predominantly visualized in the costophrenic angles, more significant on the left.",
+    "Mild pulmonary vascular congestion.",
+    "A central venous catheter (CVC) tip is noted in the superior vena cava, with its course projecting over the right subclavian vein.",
+    "No evidence of pneumothorax or definite focal consolidation."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Enlargement of the heart silhouette, with an estimated cardiothoracic ratio exceeding 0.5, indicating mild to moderate cardiomegaly."
+    },
+    {
+      "name": "Bilateral Hilar Prominence",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Increased prominence of the hilar regions bilaterally, which could be related to pulmonary vascular congestion or lymphadenopathy."
+    },
+    {
+      "name": "Interstitial Edema",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Increased interstitial markings in both lung fields, particularly in the lower zones, consistent with interstitial pulmonary edema."
+    },
+    {
+      "name": "Pleural Effusion",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Small bilateral pleural effusions, blunting the costophrenic angles, more prominent on the left side."
+    },
+    {
+      "name": "Pulmonary Vascular Congestion",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Evidence of pulmonary vascular congestion, seen as engorged vessels, contributing to the interstitial edema and hilar prominence."
+    }
+  ],
+  "summary": "This X-ray shows signs of fluid buildup in and around the lungs, which is called pulmonary edema and pleural effusion. The heart appears enlarged, a condition known as cardiomegaly. There is also increased prominence in the central areas of the lungs, possibly due to fluid congestion or enlarged lymph nodes. These findings together suggest possible heart failure, which can cause fluid to back up into the lungs and around the heart. A central venous catheter is visible in the correct position. These observations warrant further medical evaluation to determine the underlying cause and appropriate treatment.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK539958/",
+    "https://radiopaedia.org/articles/cardiomegaly-1",
+    "https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.109.192062"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23657,
+    "bytesOut": 23657,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:10:40.049Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,41 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_2/img_06_00003940_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pneumothorax, or large pleural effusion.\",\n    \"Bilateral costophrenic angles are sharp.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Bones and soft tissues appear unremarkable.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray appears normal. We did not see any signs of pneumonia, collapsed lung, fluid around the lungs, or an enlarged heart. The bones and other soft tissues also look healthy. This is generally a good finding, meaning there are no obvious problems in the chest that can be seen on this X-ray.\",\n  \"references\": [\n    \"https://www.acr.org/Clinical-Resources/Reporting-and-Data-Systems/Lung-RADS\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125134\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pneumothorax, or large pleural effusion.",
+    "Bilateral costophrenic angles are sharp.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Bones and soft tissues appear unremarkable."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray appears normal. We did not see any signs of pneumonia, collapsed lung, fluid around the lungs, or an enlarged heart. The bones and other soft tissues also look healthy. This is generally a good finding, meaning there are no obvious problems in the chest that can be seen on this X-ray.",
+  "references": [
+    "https://www.acr.org/Clinical-Resources/Reporting-and-Data-Systems/Lung-RADS",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125134"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22279,
+    "bytesOut": 22279,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:05:57.735Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

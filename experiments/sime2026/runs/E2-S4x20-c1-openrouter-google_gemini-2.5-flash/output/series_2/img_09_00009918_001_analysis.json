@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_2/img_09_00009918_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right lung: There is a dense, somewhat irregular opacity in the right mid-to-lower lung zone, overlying the diaphragm. Within this opacity, there are several lucent areas suggesting cavitation or air-bronchograms. A calcific density is noted superior to this opacity in the right mid-lung field.\",\n    \"Left lung: Appears clear without focal consolidation or cavitation.\",\n    \"Pleura: No definite pleural effusion or pneumothorax.\",\n    \"Diaphragm: Right hemidiaphragm is partially obscured by the lung opacity. Left hemidiaphragm is clearly demarcated.\",\n    \"Cardiomediastinal silhouette: Normal in size and contour.\",\n    \"Bony thorax: No acute osseous abnormalities.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Lung Opacity with Cavitation\",\n      \"description\": \"A dense, irregular opacity is present in the right mid-to-lower lung field, partially obscuring the right hemidiaphragm. Several lucent areas within this opacity are suggestive of cavitation. This finding is highly concerning for an infiltrative process, possibly inflammatory/infectious (e.g., tuberculosis, fungal infection) or neoplastic, with cavitation.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Right Lung Calcification\",\n      \"description\": \"A discrete calcific density is noted in the right mid-lung field, superior to the main opacity. This could represent a granuloma (e.g., from prior infection) or an old inflammatory focus.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The X-ray shows a significant shadow in the lower-middle part of the right lung. Inside this shadow, there are areas that look like holes. This is a serious finding that could indicate an infection, such as tuberculosis or a fungal infection, or possibly a tumor. There's also a small calcified spot nearby, which usually means an old healed infection or inflammation. Further investigations, like a CT scan or sputum tests, are recommended to figure out what's causing these changes in the lung.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8949821/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Right lung: There is a dense, somewhat irregular opacity in the right mid-to-lower lung zone, overlying the diaphragm. Within this opacity, there are several lucent areas suggesting cavitation or air-bronchograms. A calcific density is noted superior to this opacity in the right mid-lung field.",
+    "Left lung: Appears clear without focal consolidation or cavitation.",
+    "Pleura: No definite pleural effusion or pneumothorax.",
+    "Diaphragm: Right hemidiaphragm is partially obscured by the lung opacity. Left hemidiaphragm is clearly demarcated.",
+    "Cardiomediastinal silhouette: Normal in size and contour.",
+    "Bony thorax: No acute osseous abnormalities."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Lung Opacity with Cavitation",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "A dense, irregular opacity is present in the right mid-to-lower lung field, partially obscuring the right hemidiaphragm. Several lucent areas within this opacity are suggestive of cavitation. This finding is highly concerning for an infiltrative process, possibly inflammatory/infectious (e.g., tuberculosis, fungal infection) or neoplastic, with cavitation."
+    },
+    {
+      "name": "Right Lung Calcification",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "A discrete calcific density is noted in the right mid-lung field, superior to the main opacity. This could represent a granuloma (e.g., from prior infection) or an old inflammatory focus."
+    }
+  ],
+  "summary": "The X-ray shows a significant shadow in the lower-middle part of the right lung. Inside this shadow, there are areas that look like holes. This is a serious finding that could indicate an infection, such as tuberculosis or a fungal infection, or possibly a tumor. There's also a small calcified spot nearby, which usually means an old healed infection or inflammation. Further investigations, like a CT scan or sputum tests, are recommended to figure out what's causing these changes in the lung.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8949821/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22134,
+    "bytesOut": 22134,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:06:10.224Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,211 @@
+{
+  "manifestVersion": "1.0",
+  "toolVersion": "1.0.0",
+  "startedAt": "2026-09-08T19:25:07.053Z",
+  "finishedAt": "2026-09-08T19:28:26.173Z",
+  "provider": "openrouter",
+  "model": "google/gemma-4-31b-it",
+  "pricing": {
+    "inputUsdPerMillion": 2,
+    "outputUsdPerMillion": 12
+  },
+  "settings": {
+    "concurrency": 1,
+    "maxCostUsd": 3,
+    "retries": 4
+  },
+  "inputDir": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000092",
+  "outputDir": "/home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime2026/runs/E4-00000092-openrouter-google_gemma-4-31b-it/output",
+  "inputs": [
+    {
+      "path": "series_1/00000092_000.png",
+      "sha256": "1d04fd99180e324b59c8b310ce96b407fe5d105a1610e874ffad3f3cbbc689a0",
+      "bytes": 22603
+    },
+    {
+      "path": "series_2/00000092_001.png",
+      "sha256": "6fdbcaedaa1175013728cbd4c6515db51fe2de754f3c8f946fedff22409a3b7f",
+      "bytes": 22555
+    },
+    {
+      "path": "series_3/00000092_002.png",
+      "sha256": "0d49c255c14b0a2122a39a8cafb05b5b74aa2cac081d0fd53eca08ca2db3417c",
+      "bytes": 21788
+    },
+    {
+      "path": "series_4/00000092_003.png",
+      "sha256": "d909b0dc52f040479aefc62b44304e8ed4d1852bef69d2bdd211e8b3a86948d2",
+      "bytes": 20887
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "patient_context.txt",
+      "sha256": "bea04fed93327d866f7065651056553a58e8ec91003f7d6630125c1cf34c3874",
+      "bytes": 315
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "stage": "image",
+      "timestamp": "2026-09-08T19:25:28.302Z",
+      "tokensIn": 674,
+      "tokensOut": 323,
+      "estimatedUsd": 0.005224,
+      "providerUsd": 0.0001687752,
+      "retries": 0
+    },
+    {
+      "index": 2,
+      "stage": "image",
+      "timestamp": "2026-09-08T19:25:46.010Z",
+      "tokensIn": 674,
+      "tokensOut": 247,
+      "estimatedUsd": 0.004311999999999999,
+      "providerUsd": 0.00014319359999999997,
+      "retries": 0
+    },
+    {
+      "index": 3,
+      "stage": "image",
+      "timestamp": "2026-09-08T19:26:10.124Z",
+      "tokensIn": 674,
+      "tokensOut": 278,
+      "estimatedUsd": 0.004684000000000001,
+      "providerUsd": 0.00015362820000000001,
+      "retries": 0
+    },
+    {
+      "index": 4,
+      "stage": "image",
+      "timestamp": "2026-09-08T19:26:41.351Z",
+      "tokensIn": 674,
+      "tokensOut": 314,
+      "estimatedUsd": 0.0051160000000000025,
+      "providerUsd": 0.00016574579999999997,
+      "retries": 0
+    },
+    {
+      "index": 5,
+      "stage": "series",
+      "timestamp": "2026-09-08T19:27:05.353Z",
+      "tokensIn": 659,
+      "tokensOut": 332,
+      "estimatedUsd": 0.005301999999999998,
+      "providerUsd": 0.00017046809999999993,
+      "retries": 0
+    },
+    {
+      "index": 6,
+      "stage": "series",
+      "timestamp": "2026-09-08T19:27:18.148Z",
+      "tokensIn": 582,
+      "tokensOut": 277,
+      "estimatedUsd": 0.004487999999999999,
+      "providerUsd": 0.00014509440000000005,
+      "retries": 0
+    },
+    {
+      "index": 7,
+      "stage": "series",
+      "timestamp": "2026-09-08T19:27:40.501Z",
+      "tokensIn": 614,
+      "tokensOut": 343,
+      "estimatedUsd": 0.0053440000000000015,
+      "providerUsd": 0.00017016120000000012,
+      "retries": 0
+    },
+    {
+      "index": 8,
+      "stage": "series",
+      "timestamp": "2026-09-08T19:28:01.807Z",
+      "tokensIn": 648,
+      "tokensOut": 349,
+      "estimatedUsd": 0.005483999999999996,
+      "providerUsd": 0.00017521019999999993,
+      "retries": 0
+    },
+    {
+      "index": 9,
+      "stage": "evolution",
+      "timestamp": "2026-09-08T19:28:26.118Z",
+      "tokensIn": 1117,
+      "tokensOut": 533,
+      "estimatedUsd": 0.008630000000000006,
+      "providerUsd": 0.0003442725,
+      "retries": 0
+    }
+  ],
+  "outputs": [
+    {
+      "path": "series_1/00000092_000_analysis.json",
+      "sha256": "b90b6e6533e27136460416309b636f56ad1a212c5263b45b0c9ebaa10668c34f",
+      "bytes": 3912
+    },
+    {
+      "path": "series_2/00000092_001_analysis.json",
+      "sha256": "825838a38f42e2383936f308b18cd1aa5beeebf1a67e102e08ee4d3fbf7e942a",
+      "bytes": 2175
+    },
+    {
+      "path": "series_3/00000092_002_analysis.json",
+      "sha256": "02a8801ff1c4ca2a466209373572a875cca25e08083102aef2dc86dcf80b5cc8",
+      "bytes": 3444
+    },
+    {
+      "path": "series_4/00000092_003_analysis.json",
+      "sha256": "933157f5c03617d61c9cef4c52772b63f42d9dc0174b99cea8ac8873e19290ce",
+      "bytes": 2503
+    },
+    {
+      "path": "series_1/series_summary.md",
+      "sha256": "8ebb07664bc1aaf75fa2774ebca0b8265a55f2c490e80a9fc27bed6398560bf3",
+      "bytes": 2287
+    },
+    {
+      "path": "series_2/series_summary.md",
+      "sha256": "4510ea9bfbb15ba1afd1fee13f88ca54dfaa75d3e07dd882924abceee77c5a77",
+      "bytes": 1965
+    },
+    {
+      "path": "series_3/series_summary.md",
+      "sha256": "9c5def745c487748307d6085094521bf99117cdab5f7b4bb957d5b91e01c6fa2",
+      "bytes": 2322
+    },
+    {
+      "path": "series_4/series_summary.md",
+      "sha256": "77f9690caf601e51fd5e2fc0993b944f7eec13a5ea1486336ae146429341011d",
+      "bytes": 2304
+    },
+    {
+      "path": "evolution_analysis.json",
+      "sha256": "da410c92775df54921c3c2b567df07624c6f470625fc059c0a7c9b0b536417a1",
+      "bytes": 3052
+    },
+    {
+      "path": "combined_diagnostic_report.md",
+      "sha256": "db76db00e6f7f2c71f349798428f107f1e179cb7944db2d38369be50867d7c44",
+      "bytes": 3501
+    }
+  ],
+  "totals": {
+    "calls": 9,
+    "tokensIn": 6316,
+    "tokensOut": 2996,
+    "estimatedUsd": 0.048584,
+    "providerUsd": 0.0016365492,
+    "images": 4,
+    "imagesSucceeded": 4,
+    "imagesFailed": 0,
+    "series": 4
+  },
+  "exitCode": 0,
+  "warnings": [],
+  "humanReview": {
+    "required": true,
+    "reviewedBy": null
+  },
+  "prevManifestHash": null,
+  "manifestHash": "6b55c8c77cf34e76b0b3f536cad3128bd761add2ebaf012b7f1cc8b588179f37"
+}

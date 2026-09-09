@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_4/img_06_00002427_000.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest and Thoracolumbar Spine (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"S-shaped scoliosis of the thoracolumbar spine, with convexity to the right in the thoracic region and convexity to the left in the lumbar region.\",\n    \"Rib cages appear symmetric without acute fractures.\",\n    \"Bilateral lung fields are clear.\",\n    \"Cardiac silhouette is not significantly enlarged.\",\n    \"Diaphragmatic contours are well-defined.\",\n    \"No acute pleural effusion or pneumothorax identified.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Scoliosis\",\n      \"description\": \"Presence of an S-shaped curvature of the spine. The thoracic spine curves to the right, and the lumbar spine curves to the left. The severity of the curvature would require Cobb angle measurement for precise quantification.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray shows an S-shaped curve in the spine, which is called scoliosis. This means the spine is not straight but has two opposing curves, one in the upper back (thoracic) curving to the right and another in the lower back (lumbar) curving to the left. The lungs and heart appear normal, and there are no signs of immediate serious issues like broken bones or collapsed lungs.\",\n  \"references\": [\n    \"https://www.ortho.wustl.edu/content/Patient-Care/3120/Services/Pediatric-and-Adolescent-Orthopedic-Surgery/Scoliosis.aspx\",\n    \"https://www.spine.org/Portals/0/assets/downloads/Scoliosis_Information.pdf\",\n    \"https://radiopaedia.org/articles/scoliosis\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest and Thoracolumbar Spine (AP)",
+  "quality": "Good",
+  "findings": [
+    "S-shaped scoliosis of the thoracolumbar spine, with convexity to the right in the thoracic region and convexity to the left in the lumbar region.",
+    "Rib cages appear symmetric without acute fractures.",
+    "Bilateral lung fields are clear.",
+    "Cardiac silhouette is not significantly enlarged.",
+    "Diaphragmatic contours are well-defined.",
+    "No acute pleural effusion or pneumothorax identified."
+  ],
+  "abnormalities": [
+    {
+      "name": "Scoliosis",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Presence of an S-shaped curvature of the spine. The thoracic spine curves to the right, and the lumbar spine curves to the left. The severity of the curvature would require Cobb angle measurement for precise quantification."
+    }
+  ],
+  "summary": "The X-ray shows an S-shaped curve in the spine, which is called scoliosis. This means the spine is not straight but has two opposing curves, one in the upper back (thoracic) curving to the right and another in the lower back (lumbar) curving to the left. The lungs and heart appear normal, and there are no signs of immediate serious issues like broken bones or collapsed lungs.",
+  "references": [
+    "https://www.ortho.wustl.edu/content/Patient-Care/3120/Services/Pediatric-and-Adolescent-Orthopedic-Surgery/Scoliosis.aspx",
+    "https://www.spine.org/Portals/0/assets/downloads/Scoliosis_Information.pdf",
+    "https://radiopaedia.org/articles/scoliosis"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22786,
+    "bytesOut": 22786,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:11:19.977Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000148/series_4/00000148_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Good\",\"findings\":[\"Round, well-defined metallic/radiopaque ring-like density projected over the right mid-lung field, likely overlying or within the mediastinum/right hilum region\",\"Lungs are grossly clear bilaterally without focal consolidation, effusion, or pneumothorax\",\"Cardiac silhouette appears within normal limits in size\",\"Mediastinal contours are within normal limits aside from the described density\",\"Visible skeletal structures (ribs, clavicles, spine) appear intact without acute fracture\",\"Soft tissue shadowing noted in the lower field, possibly breast tissue silhouette\"],\"abnormalities\":[{\"name\":\"Radiopaque ring/circular foreign body density\",\"description\":\"A discrete, well-circumscribed circular radiopaque density is seen overlying the right central chest, near the expected location of the right hilum/mediastinum. This could represent a mechanical heart valve, vascular clip, retained surgical marker, or other implanted device. Precise localization would benefit from lateral view or CT correlation.\",\"severity\":\"Mild\",\"confidence\":55}],\"summary\":\"This chest X-ray shows a small, round metal-like ring in the middle of the chest near the area of the heart and major blood vessels. This is most likely a medical device such as an artificial heart valve, a surgical clip, or another type of implant used in a past procedure — it is not necessarily a sign of disease. The lungs themselves look clear, without signs of infection, fluid, or collapse, and the heart size appears normal. To be certain about what the ring-shaped object represents and to rule out other causes, correlation with the patient's medical history and possibly additional imaging (like a side view X-ray or CT scan) would be helpful. This finding should be reviewed by a physician or radiologist who has access to the patient's clinical history.\",\"references\":[\"https://radiopaedia.org/articles/prosthetic-heart-valves\",\"https://www.ajronline.org/doi/10.2214/AJR.14.13324\",\"https://pubs.rsna.org/doi/10.1148/rg.2016150217\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Good",
+  "findings": [
+    "Round, well-defined metallic/radiopaque ring-like density projected over the right mid-lung field, likely overlying or within the mediastinum/right hilum region",
+    "Lungs are grossly clear bilaterally without focal consolidation, effusion, or pneumothorax",
+    "Cardiac silhouette appears within normal limits in size",
+    "Mediastinal contours are within normal limits aside from the described density",
+    "Visible skeletal structures (ribs, clavicles, spine) appear intact without acute fracture",
+    "Soft tissue shadowing noted in the lower field, possibly breast tissue silhouette"
+  ],
+  "abnormalities": [
+    {
+      "name": "Radiopaque ring/circular foreign body density",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "A discrete, well-circumscribed circular radiopaque density is seen overlying the right central chest, near the expected location of the right hilum/mediastinum. This could represent a mechanical heart valve, vascular clip, retained surgical marker, or other implanted device. Precise localization would benefit from lateral view or CT correlation."
+    }
+  ],
+  "summary": "This chest X-ray shows a small, round metal-like ring in the middle of the chest near the area of the heart and major blood vessels. This is most likely a medical device such as an artificial heart valve, a surgical clip, or another type of implant used in a past procedure — it is not necessarily a sign of disease. The lungs themselves look clear, without signs of infection, fluid, or collapse, and the heart size appears normal. To be certain about what the ring-shaped object represents and to rule out other causes, correlation with the patient's medical history and possibly additional imaging (like a side view X-ray or CT scan) would be helpful. This finding should be reviewed by a physician or radiologist who has access to the patient's clinical history.",
+  "references": [
+    "https://radiopaedia.org/articles/prosthetic-heart-valves",
+    "https://www.ajronline.org/doi/10.2214/AJR.14.13324",
+    "https://pubs.rsna.org/doi/10.1148/rg.2016150217"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22876,
+    "bytesOut": 22876,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-09T07:10:18.709Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

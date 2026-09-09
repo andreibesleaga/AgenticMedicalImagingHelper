@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_1/img_19_00022519_004.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse reticular opacities are noted throughout both lung fields, more pronounced in the lower zones.\",\n    \"Bilateral hilar regions appear prominent.\",\n    \"The cardiac silhouette is within normal limits for size and contour.\",\n    \"The diaphragmatic hemidiaphragms are intact and clear.\",\n    \"Costophrenic angles are clear bilaterally.\",\n    \"Bony thorax appears unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Diffuse Reticular Opacities\",\n      \"description\": \"Widespread fine, linear, and reticular opacities are observed bilaterally within the pulmonary parenchyma, suggestive of interstitial lung disease. These are more prominent in the lower lobes.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Prominent Hilum\",\n      \"description\": \"Both hilar regions appear enlarged or prominent, which could be due to lymphadenopathy or vascular engorgement in the context of interstitial changes.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 70\n    }\n  ],\n  \"summary\": \"The chest X-ray shows changes in both lungs that look like a network or web-like pattern. This is often seen in conditions affecting the lung tissue itself, rather than the air sacs. The central areas where the main airways and blood vessels enter the lungs also appear somewhat enlarged. The heart looks normal in size, and there's no sign of fluid around the lungs. These findings suggest a condition that is causing changes to the lung tissue, potentially an interstitial lung disease, and may require further evaluation.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/interstitial-lung-disease\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8945674/\",\n    \"https://thoracickey.com/radiographic-patterns-of-interstitial-lung-disease/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse reticular opacities are noted throughout both lung fields, more pronounced in the lower zones.",
+    "Bilateral hilar regions appear prominent.",
+    "The cardiac silhouette is within normal limits for size and contour.",
+    "The diaphragmatic hemidiaphragms are intact and clear.",
+    "Costophrenic angles are clear bilaterally.",
+    "Bony thorax appears unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Diffuse Reticular Opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Widespread fine, linear, and reticular opacities are observed bilaterally within the pulmonary parenchyma, suggestive of interstitial lung disease. These are more prominent in the lower lobes."
+    },
+    {
+      "name": "Prominent Hilum",
+      "severity": "Mild",
+      "confidence": 70,
+      "description": "Both hilar regions appear enlarged or prominent, which could be due to lymphadenopathy or vascular engorgement in the context of interstitial changes."
+    }
+  ],
+  "summary": "The chest X-ray shows changes in both lungs that look like a network or web-like pattern. This is often seen in conditions affecting the lung tissue itself, rather than the air sacs. The central areas where the main airways and blood vessels enter the lungs also appear somewhat enlarged. The heart looks normal in size, and there's no sign of fluid around the lungs. These findings suggest a condition that is causing changes to the lung tissue, potentially an interstitial lung disease, and may require further evaluation.",
+  "references": [
+    "https://radiopaedia.org/articles/interstitial-lung-disease",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8945674/",
+    "https://thoracickey.com/radiographic-patterns-of-interstitial-lung-disease/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 20317,
+    "bytesOut": 20317,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:05:33.640Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

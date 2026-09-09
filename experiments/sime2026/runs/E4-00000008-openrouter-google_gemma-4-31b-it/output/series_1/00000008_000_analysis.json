@@ -1,0 +1,33 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000008/series_1/00000008_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\")} { \":\", \"}",
+  "findings": [],
+  "validation": {
+    "ok": false,
+    "issues": [
+      "modality: Invalid input: expected string, received undefined",
+      "anatomyRegion: Invalid input: expected string, received undefined",
+      "quality: Invalid option: expected one of \"Poor\"|\"Fair\"|\"Good\"|\"Excellent\"",
+      "summary: Invalid input: expected string, received undefined"
+    ]
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23771,
+    "bytesOut": 23771,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-09T08:04:08.480Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

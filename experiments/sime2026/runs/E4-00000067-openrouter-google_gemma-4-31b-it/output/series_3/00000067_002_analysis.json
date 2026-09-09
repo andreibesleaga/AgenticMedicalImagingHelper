@@ -1,0 +1,33 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000067/series_3/00000067_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"`modality`\": \"X-ray\", \"،`anatomyRegion`\": \"Chest (PA)\", \"،`quality`\": \"Fair\", \"،`findings`\": [\"The lung fields are clear without focal consolidation or effusion.\", \"The cardiomediastinal silhouette is within normal limits for size and contour.\", \"The pleural spaces are clear.\", \"The visualized bony structures are intact.\", \"The diaphragms are well-defined.\"], \"،`abnormalities`\": [], \"،`summary`\": \"The chest X-ray appears normal. There are no signs of pneumonia, heart failure, or lung masses. The lungs are clear, and the heart is of normal size.\", \"،`references`\": [\"https://radiopaedia.org/articles/chest-radiograph-normal\", \"https://www.acr.org/Clinical-Resources/Radiologic-Practice-Guidelines\"]}",
+  "findings": [],
+  "validation": {
+    "ok": false,
+    "issues": [
+      "modality: Invalid input: expected string, received undefined",
+      "anatomyRegion: Invalid input: expected string, received undefined",
+      "quality: Invalid option: expected one of \"Poor\"|\"Fair\"|\"Good\"|\"Excellent\"",
+      "summary: Invalid input: expected string, received undefined"
+    ]
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 20959,
+    "bytesOut": 20959,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-08T19:22:28.799Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

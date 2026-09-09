@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_2/img_20_00004738_004.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Evidence of left pneumonectomy with mediastinal shift to the left.\",\n    \"Prominent opacification in the left hemithorax, consistent with post-pneumonectomy changes.\",\n    \"Surgical clips/sutures are noted in the left upper mediastinum/hilar region.\",\n    \"A medical device, likely a port-a-cath or similar, is seen in the left subclavian region, overlying the left shoulder.\",\n    \"The right lung appears clear with no evidence of acute infiltrate or effusion.\",\n    \"The heart and mediastinal structures are significantly displaced to the left.\",\n    \"Diaphragmatic contours are visible on the right, but obscured on the left due to surgical changes.\",\n    \"Skeletal structures appear intact without acute fracture, although degenerative changes may be present in the spine.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Pneumonectomy\",\n      \"description\": \"Surgical absence of the left lung, resulting in complete opacification of the left hemithorax and significant mediastinal shift to the left. Surgical clips are visible.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"Marked displacement of the heart and mediastinal structures into the left hemithorax due to the volume loss from the left pneumonectomy.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Medical Device\",\n      \"description\": \"Presence of an indwelling medical device (likely a port-a-cath) in the left subclavian/upper chest area, overlying the left shoulder.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray shows that the patient has had their entire left lung removed (a procedure called a pneumonectomy). As a result, the space where the left lung used to be is now filled with fluid and other tissues, causing the heart and other central chest structures to shift significantly to the left side. There are surgical clips visible from the operation. A medical device, possibly for medication delivery, is also seen near the left shoulder. The right lung appears clear and healthy.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pneumonectomy-2\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900403/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Evidence of left pneumonectomy with mediastinal shift to the left.",
+    "Prominent opacification in the left hemithorax, consistent with post-pneumonectomy changes.",
+    "Surgical clips/sutures are noted in the left upper mediastinum/hilar region.",
+    "A medical device, likely a port-a-cath or similar, is seen in the left subclavian region, overlying the left shoulder.",
+    "The right lung appears clear with no evidence of acute infiltrate or effusion.",
+    "The heart and mediastinal structures are significantly displaced to the left.",
+    "Diaphragmatic contours are visible on the right, but obscured on the left due to surgical changes.",
+    "Skeletal structures appear intact without acute fracture, although degenerative changes may be present in the spine."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Pneumonectomy",
+      "severity": "Severe",
+      "confidence": 100,
+      "description": "Surgical absence of the left lung, resulting in complete opacification of the left hemithorax and significant mediastinal shift to the left. Surgical clips are visible."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Severe",
+      "confidence": 100,
+      "description": "Marked displacement of the heart and mediastinal structures into the left hemithorax due to the volume loss from the left pneumonectomy."
+    },
+    {
+      "name": "Medical Device",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Presence of an indwelling medical device (likely a port-a-cath) in the left subclavian/upper chest area, overlying the left shoulder."
+    }
+  ],
+  "summary": "This X-ray shows that the patient has had their entire left lung removed (a procedure called a pneumonectomy). As a result, the space where the left lung used to be is now filled with fluid and other tissues, causing the heart and other central chest structures to shift significantly to the left side. There are surgical clips visible from the operation. A medical device, possibly for medication delivery, is also seen near the left shoulder. The right lung appears clear and healthy.",
+  "references": [
+    "https://radiopaedia.org/articles/pneumonectomy-2",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900403/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22480,
+    "bytesOut": 22480,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:10:59.536Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

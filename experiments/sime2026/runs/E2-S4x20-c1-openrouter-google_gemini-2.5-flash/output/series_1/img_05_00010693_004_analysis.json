@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_1/img_05_00010693_004.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear without focal consolidation or pleural effusion.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Bony thorax appears intact.\",\n    \"An intracardiac device (likely an atrial septal defect occluder or similar device) is noted in the lower cardiac silhouette, projected over the region of the interatrial septum. The device appears well-seated.\",\n    \"No acute intrathoracic abnormality.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Intracardiac Device\",\n      \"description\": \"A well-positioned intracardiac device, consistent with an occluder, is visible in the lower cardiac silhouette.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"Your chest X-ray shows healthy lungs and heart, with no signs of pneumonia or fluid around the lungs. The bones of your chest also look normal. There is a small device visible inside your heart, which appears to be in the correct position. This device is often used to close a hole in the heart (like an atrial septal defect). No new or urgent problems were found on this X-ray.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1147/AO.2008.100259\",\n    \"https://radiopaedia.org/articles/atrial-septal-defect-device-closure\",\n    \"https://www.acc.org/latest-in-cardiology/articles/2021/04/27/12/36/transcatheter-closure-of-atrial-septal-defects-and-patent-foramen-ovale-evidence-based-approach\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear without focal consolidation or pleural effusion.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Bony thorax appears intact.",
+    "An intracardiac device (likely an atrial septal defect occluder or similar device) is noted in the lower cardiac silhouette, projected over the region of the interatrial septum. The device appears well-seated.",
+    "No acute intrathoracic abnormality."
+  ],
+  "abnormalities": [
+    {
+      "name": "Intracardiac Device",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A well-positioned intracardiac device, consistent with an occluder, is visible in the lower cardiac silhouette."
+    }
+  ],
+  "summary": "Your chest X-ray shows healthy lungs and heart, with no signs of pneumonia or fluid around the lungs. The bones of your chest also look normal. There is a small device visible inside your heart, which appears to be in the correct position. This device is often used to close a hole in the heart (like an atrial septal defect). No new or urgent problems were found on this X-ray.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1147/AO.2008.100259",
+    "https://radiopaedia.org/articles/atrial-septal-defect-device-closure",
+    "https://www.acc.org/latest-in-cardiology/articles/2021/04/27/12/36/transcatheter-closure-of-atrial-septal-defects-and-patent-foramen-ovale-evidence-based-approach"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22683,
+    "bytesOut": 22683,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:04:41.102Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

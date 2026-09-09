@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000086/series_3/00000086_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Fair\",\"findings\":[\"Bilateral lung fields visualized with symmetric expansion\",\"Cardiac silhouette appears within normal size limits, though partially obscured by overlying structures\",\"Mediastinal structures appear midline\",\"Visualized bony thorax includes ribs and clavicles without obvious acute fracture\",\"Soft tissue shadowing noted over the right shoulder region, possibly external artifact or overlying structure\",\"Costophrenic angles appear grossly preserved bilaterally\",\"Some increased perihilar and bibasilar markings noted, could represent vascular or interstitial pattern\"],\"abnormalities\":[{\"name\":\"Possible increased bibasilar/perihilar markings\",\"description\":\"Subtle increased density in the perihilar and lower lung zones bilaterally, which could reflect vascular congestion, mild interstitial changes, or technical/positioning factors. Further clinical correlation recommended.\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Suboptimal image quality/positioning\",\"description\":\"Image demonstrates some rotation and soft tissue overlap, particularly in the right shoulder/upper thorax region, limiting full assessment of underlying structures.\",\"severity\":\"Mild\",\"confidence\":55}],\"summary\":\"This chest X-ray shows the lungs and heart in a fairly standard view. Both lungs appear generally aerated without an obvious large area of concern like a mass or major fluid collection, but there is some increased shadowing near the central lower parts of the lungs that could reflect normal blood vessels, mild fluid, or just the angle of the image. The image also has some positioning artifacts (like slight rotation) which can make thorough evaluation more difficult. Overall, this image does not show a definitive severe abnormality, but any subtle findings should be correlated with the patient's symptoms and reviewed by a radiologist for a more accurate interpretation.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph-assessment\",\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\"https://pubs.rsna.org/journal/radiology\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Fair",
+  "findings": [
+    "Bilateral lung fields visualized with symmetric expansion",
+    "Cardiac silhouette appears within normal size limits, though partially obscured by overlying structures",
+    "Mediastinal structures appear midline",
+    "Visualized bony thorax includes ribs and clavicles without obvious acute fracture",
+    "Soft tissue shadowing noted over the right shoulder region, possibly external artifact or overlying structure",
+    "Costophrenic angles appear grossly preserved bilaterally",
+    "Some increased perihilar and bibasilar markings noted, could represent vascular or interstitial pattern"
+  ],
+  "abnormalities": [
+    {
+      "name": "Possible increased bibasilar/perihilar markings",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "Subtle increased density in the perihilar and lower lung zones bilaterally, which could reflect vascular congestion, mild interstitial changes, or technical/positioning factors. Further clinical correlation recommended."
+    },
+    {
+      "name": "Suboptimal image quality/positioning",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Image demonstrates some rotation and soft tissue overlap, particularly in the right shoulder/upper thorax region, limiting full assessment of underlying structures."
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs and heart in a fairly standard view. Both lungs appear generally aerated without an obvious large area of concern like a mass or major fluid collection, but there is some increased shadowing near the central lower parts of the lungs that could reflect normal blood vessels, mild fluid, or just the angle of the image. The image also has some positioning artifacts (like slight rotation) which can make thorough evaluation more difficult. Overall, this image does not show a definitive severe abnormality, but any subtle findings should be correlated with the patient's symptoms and reviewed by a radiologist for a more accurate interpretation.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-assessment",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiology"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21787,
+    "bytesOut": 21787,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-09T07:06:20.152Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -48,20 +48,28 @@ function captureStdio(): StdioCapture {
 }
 
 describe("E2E — CLI error paths", () => {
-  const origGoogleKey = process.env.GOOGLE_API_KEY;
-  const origGeminiKey = process.env.GEMINI_API_KEY;
+  // These scenarios describe the default provider (AI_PROVIDER unset → google),
+  // so the whole describe runs with the provider-selection env cleared: an
+  // ambient AI_PROVIDER=openrouter + OPENROUTER_API_KEY (e.g. a shell that has
+  // sourced .env, as demo/run-demo.sh does) would otherwise satisfy the
+  // key check and turn Scenario 5's "exit 1" into "exit 3 — no series found".
+  const KEYS = ["AI_PROVIDER", "OPENROUTER_API_KEY", "GOOGLE_API_KEY", "GEMINI_API_KEY"] as const;
+  const saved: Record<string, string | undefined> = {};
   let cap: StdioCapture;
 
   beforeEach(() => {
+    for (const k of KEYS) saved[k] = process.env[k];
+    delete process.env.AI_PROVIDER;
+    delete process.env.OPENROUTER_API_KEY;
     cap = captureStdio();
   });
 
   afterEach(() => {
     cap.restore();
-    if (origGoogleKey === undefined) delete process.env.GOOGLE_API_KEY;
-    else process.env.GOOGLE_API_KEY = origGoogleKey;
-    if (origGeminiKey === undefined) delete process.env.GEMINI_API_KEY;
-    else process.env.GEMINI_API_KEY = origGeminiKey;
+    for (const k of KEYS) {
+      if (saved[k] === undefined) delete process.env[k];
+      else process.env[k] = saved[k];
+    }
   });
 
   // ── Scenario 5: missing API key → exit 1 ─────────────────────────────

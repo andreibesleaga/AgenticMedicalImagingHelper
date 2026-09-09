@@ -1,6 +1,6 @@
 /**
- * E — Full-dataset deterministic scan (SIME 2026)
- * =================================================
+ * E — Full-dataset deterministic scan
+ * ====================================
  *
  * Runs the DETERMINISTIC, offline stages of the pipeline (file discovery,
  * sharp decode, and the exact pre-processing chain the Gemini client applies
@@ -15,11 +15,24 @@
  *   3. CSV metadata join (Data_Entry_2017.csv) for demographic/label stats
  *
  * Usage:
- *   node_modules/.bin/tsx experiments/sime2026/full-dataset-scan.ts
+ *   node_modules/.bin/tsx experiments/sime2026/full-dataset-scan.ts \
+ *     [--images-dir <dir>] [--csv <path>] [--archive-label <text>] [--out-dir <dir>]
  *
- * Outputs (relative to repo root):
- *   experiments/sime2026/full-dataset-scan.csv  — one row per image
- *   experiments/sime2026/full-dataset-scan.md   — summary statistics
+ * The images directory and metadata CSV are resolved in this order:
+ *   1. --images-dir / --csv flags
+ *   2. NIH_IMAGES_DIR / NIH_CSV environment variables
+ *   3. repo-relative default: ../nih-cxr14/images-224/images-224 and
+ *      ../nih-cxr14/Data_Entry_2017.csv, both siblings of this repo's root
+ *      (i.e. next to it, not inside it) — the layout prepare-nih.py writes to
+ *      by default (see experiments/sime2026/README.md §2).
+ * --archive-label sets the human-readable "Source archive" line written into
+ * the .md summary (default: a generic placeholder, since the archive's
+ * on-disk location is a local, non-reproducible detail).
+ *
+ * Outputs go to --out-dir, default experiments/sime2026/:
+ *   <out-dir>/full-dataset-scan.csv  — one row per image (~7.6 MB, gitignored;
+ *                                      regenerate it by re-running this script)
+ *   <out-dir>/full-dataset-scan.md   — summary statistics (committed evidence)
  */
 
 import * as fs from "fs/promises";
@@ -30,15 +43,47 @@ import sharp from "sharp";
 
 // ─── Configuration ──────────────────────────────────────────────────────────
 
-const IMAGES_DIR = "/home/andrei/work/AI/nih-cxr14/images-224/images-224";
-const CSV_METADATA_PATH = "/home/andrei/work/AI/nih-cxr14/Data_Entry_2017.csv";
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const REPO_ROOT = path.resolve(__dirname, "..", "..");
+
+function getFlag(argv: string[], flag: string): string | undefined {
+  const i = argv.indexOf(flag);
+  return i >= 0 && i + 1 < argv.length ? argv[i + 1] : undefined;
+}
+
+const argv = process.argv.slice(2);
+const IMAGES_DIR =
+  getFlag(argv, "--images-dir") ??
+  process.env.NIH_IMAGES_DIR ??
+  path.resolve(REPO_ROOT, "..", "nih-cxr14", "images-224", "images-224");
+const CSV_METADATA_PATH =
+  getFlag(argv, "--csv") ??
+  process.env.NIH_CSV ??
+  path.resolve(REPO_ROOT, "..", "nih-cxr14", "Data_Entry_2017.csv");
+const ARCHIVE_LABEL = getFlag(argv, "--archive-label") ?? "<dataset-dir>/NIHDataset_archive.zip";
 const CONCURRENCY = 8;
 const PROGRESS_EVERY = 5000;
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const OUT_CSV = path.join(__dirname, "full-dataset-scan.csv");
-const OUT_MD = path.join(__dirname, "full-dataset-scan.md");
+/**
+ * Outputs land in `experiments/sime2026/`. The `.md` summary is committed —
+ * it is the evidence a reader needs; the per-image `.csv` is ~7.6 MB of raw
+ * rows and stays gitignored, regenerable by re-running this script.
+ */
+const OUT_DIR = path.resolve(getFlag(argv, "--out-dir") ?? __dirname);
+const OUT_CSV = path.join(OUT_DIR, "full-dataset-scan.csv");
+const OUT_MD = path.join(OUT_DIR, "full-dataset-scan.md");
+
+const USAGE = `Usage: full-dataset-scan.ts [--images-dir <dir>] [--csv <path>] [--archive-label <text>] [--out-dir <dir>]
+
+Offline scan of the NIH ChestX-ray14 224-px archive; makes no model calls.
+Writes full-dataset-scan.csv and full-dataset-scan.md into <out-dir>
+(default experiments/sime2026/; the .md is committed, the ~7.6 MB .csv is not).`;
+
+if (argv.includes("--help") || argv.includes("-h")) {
+  console.log(USAGE);
+  process.exit(0);
+}
 
 // ─── CSV metadata (Data_Entry_2017.csv) ────────────────────────────────────
 
@@ -170,7 +215,13 @@ async function processOne(file: string, meta: Map<string, MetaRow>): Promise<Sca
 
 // ─── Stats helpers ──────────────────────────────────────────────────────────
 
-function stats(values: number[]): { min: number; median: number; p95: number; max: number; mean: number } {
+function stats(values: number[]): {
+  min: number;
+  median: number;
+  p95: number;
+  max: number;
+  mean: number;
+} {
   if (values.length === 0) return { min: 0, median: 0, p95: 0, max: 0, mean: 0 };
   const sorted = [...values].sort((a, b) => a - b);
   const pct = (p: number) => sorted[Math.min(sorted.length - 1, Math.floor(p * sorted.length))]!;
@@ -194,16 +245,41 @@ function topEntries(counts: Map<string, number>, n: number): [string, number][] 
 
 // ─── Main ───────────────────────────────────────────────────────────────────
 
+function failMissingPath(what: string, flag: string, envVar: string, attempted: string): never {
+  console.error(
+    `[full-dataset-scan] ${what} not found: ${attempted}\n` +
+      `  Set it with ${flag} <path>, the ${envVar} environment variable, or prepare the NIH ` +
+      "dataset with experiments/sime2026/prepare-nih.py first (see experiments/sime2026/README.md §2)."
+  );
+  process.exit(1);
+}
+
 async function main() {
   const runStart = performance.now();
 
   console.log(`[full-dataset-scan] reading metadata CSV: ${CSV_METADATA_PATH}`);
-  const csvText = await fs.readFile(CSV_METADATA_PATH, "utf-8");
+  let csvText: string;
+  try {
+    csvText = await fs.readFile(CSV_METADATA_PATH, "utf-8");
+  } catch (err) {
+    if ((err as NodeJS.ErrnoException).code === "ENOENT") {
+      failMissingPath("metadata CSV", "--csv", "NIH_CSV", CSV_METADATA_PATH);
+    }
+    throw err;
+  }
   const meta = parseMetadataCsv(csvText);
   console.log(`[full-dataset-scan] loaded metadata for ${meta.size} images`);
 
   console.log(`[full-dataset-scan] listing images: ${IMAGES_DIR}`);
-  const files = (await fs.readdir(IMAGES_DIR)).filter((f) => f.endsWith(".png")).sort();
+  let files: string[];
+  try {
+    files = (await fs.readdir(IMAGES_DIR)).filter((f) => f.endsWith(".png")).sort();
+  } catch (err) {
+    if ((err as NodeJS.ErrnoException).code === "ENOENT") {
+      failMissingPath("images directory", "--images-dir", "NIH_IMAGES_DIR", IMAGES_DIR);
+    }
+    throw err;
+  }
   console.log(`[full-dataset-scan] found ${files.length} PNG files`);
 
   const results: ScanRow[] = new Array(files.length);
@@ -230,6 +306,7 @@ async function main() {
   const scanMs = performance.now() - scanStart;
 
   // ─── Write CSV ──────────────────────────────────────────────────────────
+  await fs.mkdir(OUT_DIR, { recursive: true });
   console.log(`[full-dataset-scan] writing CSV: ${OUT_CSV}`);
   await new Promise<void>((resolve, reject) => {
     const out = createWriteStream(OUT_CSV);
@@ -306,7 +383,10 @@ async function main() {
     const m = meta.get(file);
     if (!m) continue;
 
-    const labels = m.findingLabels.split("|").map((s) => s.trim()).filter(Boolean);
+    const labels = m.findingLabels
+      .split("|")
+      .map((s) => s.trim())
+      .filter(Boolean);
     if (labels.length === 0 || (labels.length === 1 && labels[0] === "No Finding")) {
       noFindingCount++;
     }
@@ -354,7 +434,7 @@ async function main() {
   lines.push("");
   lines.push("## Run");
   lines.push("");
-  lines.push(`- Source archive: \`/home/andrei/work/AI/NIHDataset_archive.zip\` (extracted to \`${IMAGES_DIR}\`)`);
+  lines.push(`- Source archive: \`${ARCHIVE_LABEL}\` (extracted to \`${IMAGES_DIR}\`)`);
   lines.push(`- Metadata: \`${CSV_METADATA_PATH}\``);
   lines.push(`- Images found: **${fmt(files.length)}**`);
   lines.push(`- Images with metadata match: **${fmt(meta.size)}**`);
@@ -376,8 +456,12 @@ async function main() {
   lines.push("");
   lines.push("| metric | min | median | p95 | max | mean |");
   lines.push("|---|---|---|---|---|---|");
-  lines.push(`| width (px) | ${wStats.min} | ${wStats.median} | ${wStats.p95} | ${wStats.max} | ${fmt(wStats.mean)} |`);
-  lines.push(`| height (px) | ${hStats.min} | ${hStats.median} | ${hStats.p95} | ${hStats.max} | ${fmt(hStats.mean)} |`);
+  lines.push(
+    `| width (px) | ${wStats.min} | ${wStats.median} | ${wStats.p95} | ${wStats.max} | ${fmt(wStats.mean)} |`
+  );
+  lines.push(
+    `| height (px) | ${hStats.min} | ${hStats.median} | ${hStats.p95} | ${hStats.max} | ${fmt(hStats.mean)} |`
+  );
   lines.push(
     `| bytes original | ${fmt(boStats.min)} | ${fmt(boStats.median)} | ${fmt(boStats.p95)} | ${fmt(boStats.max)} | ${fmt(boStats.mean)} |`
   );
@@ -396,7 +480,7 @@ async function main() {
     `**Byte-size change from preprocessing: ${grew ? "+" : "-"}${fmt(Math.abs(pctReduction))}%** ` +
       `(total original ${fmt(totalOrig)} B → total processed ${fmt(totalProc)} B). ` +
       "This archive is pre-downscaled to ~224 px, well under the pipeline's 1024×1024 cap, so " +
-      "`resize(1024,1024,{fit:\"inside\",withoutEnlargement:true})` is a no-op for every image here — " +
+      '`resize(1024,1024,{fit:"inside",withoutEnlargement:true})` is a no-op for every image here — ' +
       "the size delta is entirely from PNG re-encoding. " +
       (grew
         ? "It is a **large increase**, not a reduction: the archive's source PNGs are already heavily " +
@@ -423,8 +507,12 @@ async function main() {
 
   lines.push("## CSV-metadata-joined distributions (join key: image filename)");
   lines.push("");
-  lines.push(`- \`No Finding\`: ${fmt(noFindingCount)} (${fmt((noFindingCount / files.length) * 100)}%)`);
-  lines.push(`- Multi-label images (>1 finding): ${fmt(multiLabelCount)} (${fmt((multiLabelCount / files.length) * 100)}%)`);
+  lines.push(
+    `- \`No Finding\`: ${fmt(noFindingCount)} (${fmt((noFindingCount / files.length) * 100)}%)`
+  );
+  lines.push(
+    `- Multi-label images (>1 finding): ${fmt(multiLabelCount)} (${fmt((multiLabelCount / files.length) * 100)}%)`
+  );
   lines.push("");
   lines.push("Top Finding Labels (by image count, multi-label images counted once per label):");
   lines.push("");
@@ -457,7 +545,9 @@ async function main() {
   lines.push("## Output files");
   lines.push("");
   const csvMb = csvStatBuf.size / (1024 * 1024);
-  lines.push(`- \`full-dataset-scan.csv\` — ${fmt(csvStatBuf.size)} bytes (${fmt(csvMb)} MB), one row per image.`);
+  lines.push(
+    `- \`full-dataset-scan.csv\` — ${fmt(csvStatBuf.size)} bytes (${fmt(csvMb)} MB), one row per image.`
+  );
   if (csvMb > 20) {
     lines.push(
       "  - This exceeds 20 MB, so a gzip copy `full-dataset-scan.csv.gz` was produced with " +
@@ -468,7 +558,9 @@ async function main() {
 
   await fs.writeFile(OUT_MD, lines.join("\n") + "\n", "utf-8");
   console.log(`[full-dataset-scan] wrote summary: ${OUT_MD}`);
-  console.log(`[full-dataset-scan] done in ${fmt(totalRunMs / 1000)}s — ${fmt(throughput)} img/s, ${errRows.length} errors`);
+  console.log(
+    `[full-dataset-scan] done in ${fmt(totalRunMs / 1000)}s — ${fmt(throughput)} img/s, ${errRows.length} errors`
+  );
 }
 
 main().catch((err) => {

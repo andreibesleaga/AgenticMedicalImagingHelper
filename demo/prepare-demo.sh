@@ -2,27 +2,30 @@
 # demo/prepare-demo.sh
 #
 # Copies two showcase NIH ChestX-ray14 patients from the prepared local E4L
-# cohort inputs into demo/input/, for the conference-video demo pack
+# cohort inputs into demo/input/, for the guided demo pack
 # (npm run demo). Total 6 PNGs (3 per patient), small enough to live in the
 # repo. See demo/README.md "Which patients, and why" for the selection
 # rationale.
 #
-# Source: experiments/sime2026/E4L-cohort.md (the 40-patient stratified
-# longitudinal cohort). Requires the NIH inputs to already be prepared on
-# this machine by experiments/sime2026/../prepare-nih.py (see
+# Source: the E4L cohort in experiments/sime2026/nih-selection.json (40
+# patients, stratified by label trajectory). Requires the NIH inputs to already
+# be prepared on this machine by experiments/sime2026/prepare-nih.py (see
 # experiments/sime2026/README.md §2) — this script only copies, it does not
 # download or derive anything.
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-NIH_E4L_ROOT="${NIH_E4L_ROOT:-/home/andrei/work/AI/nih-cxr14/input/E4L}"
+ROOT="$(cd "$HERE/.." && pwd)"
+# Default is a sibling of the repo root, matching the layout
+# experiments/sime2026/prepare-nih.py writes to by default.
+NIH_E4L_ROOT="${NIH_E4L_ROOT:-$ROOT/../nih-cxr14/input/E4L}"
 
 # worsening-like: No Finding -> No Finding -> Infiltration (single new finding
-# at the last study — a simple, legible "worsening" narrative for the video).
+# at the last study — a simple, legible "worsening" narrative for the demo).
 WORSENING_PATIENT="00011264"
 # improving-like: Effusion -> No Finding -> No Finding (pathology present at
 # the first study, cleared by the second — a simple, legible "improving"
-# narrative for the video).
+# narrative for the demo).
 IMPROVING_PATIENT="00003158"
 
 copy_patient() {
@@ -85,8 +88,8 @@ Terms and provenance, as used here:
     already published in the dataset's own Data_Entry_2017.csv.
   - Finding labels (used to select these two patients as "worsening-like"
     and "improving-like") are NLP-mined from radiology reports, not
-    radiologist-adjudicated ground truth — see
-    experiments/sime2026/E4L-cohort.md "Label-noise caveat".
+    radiologist-adjudicated ground truth — see the label caveat in
+    experiments/sime2026/README.md section 1.
 
 This tool's own output is AI-generated, experimental, and not a clinical
 diagnosis — see the mandatory disclaimer in every generated report and

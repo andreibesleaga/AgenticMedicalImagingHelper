@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4L/00022134/series_3/00022134_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear and expanded without evidence of focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is normal in size and contour for the patient's age.\",\n    \"Bony thorax appears intact without acute fracture or significant lytic/blastic lesions.\",\n    \"Diaphragms are intact and well-defined.\",\n    \"Small metallic foreign body noted in the left mid abdomen.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Metallic Foreign Body\",\n      \"description\": \"A small, dense, metallic-appearing foreign body is observed in the left mid-abdominal region, projected over the left lumbar spine.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows healthy lungs and heart. The bones of the chest also look normal. However, there is a small metallic object visible in the left side of the abdomen. This is likely a benign finding, such as a swallowed object or something on the skin, but its presence is noted.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.302095034\",\n    \"https://radiopaedia.org/articles/foreign-body-ingestion?lang=gb\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear and expanded without evidence of focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal silhouette is normal in size and contour for the patient's age.",
+    "Bony thorax appears intact without acute fracture or significant lytic/blastic lesions.",
+    "Diaphragms are intact and well-defined.",
+    "Small metallic foreign body noted in the left mid abdomen."
+  ],
+  "abnormalities": [
+    {
+      "name": "Metallic Foreign Body",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "A small, dense, metallic-appearing foreign body is observed in the left mid-abdominal region, projected over the left lumbar spine."
+    }
+  ],
+  "summary": "This X-ray of the chest shows healthy lungs and heart. The bones of the chest also look normal. However, there is a small metallic object visible in the left side of the abdomen. This is likely a benign finding, such as a swallowed object or something on the skin, but its presence is noted.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.302095034",
+    "https://radiopaedia.org/articles/foreign-body-ingestion?lang=gb"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 17618,
+    "bytesOut": 17618,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:26:50.406Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

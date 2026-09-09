@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_3/img_06_00006249_006.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No evidence of acute cardiopulmonary pathology.\",\n    \"Lungs are clear to auscultation bilaterally.\",\n    \"Cardiac silhouette is normal in size and contour.\",\n    \"Mediastinal and hilar contours are unremarkable.\",\n    \"Diaphragms are intact and costophrenic angles are sharp.\",\n    \"Osseous structures (ribs, clavicles, scapulae) appear intact without acute fracture or destructive lesion.\",\n    \"A metallic ring-like foreign body is noted in the left upper lung field, consistent with a nipple ring.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Nipple Ring\",\n      \"description\": \"A metallic ring-like foreign body is observed projected over the left upper lung field, consistent with a nipple ring.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This chest X-ray shows no signs of acute problems in your lungs or heart. Your lungs look clear, and your heart appears to be of normal size. The bones, like your ribs and collarbones, also look healthy. There is a metallic ring visible on your left chest, which is likely a nipple piercing and is not a medical concern.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2016150170\",\n    \"https://radiopaedia.org/articles/chest-x-ray-interpretive-approach-1\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No evidence of acute cardiopulmonary pathology.",
+    "Lungs are clear to auscultation bilaterally.",
+    "Cardiac silhouette is normal in size and contour.",
+    "Mediastinal and hilar contours are unremarkable.",
+    "Diaphragms are intact and costophrenic angles are sharp.",
+    "Osseous structures (ribs, clavicles, scapulae) appear intact without acute fracture or destructive lesion.",
+    "A metallic ring-like foreign body is noted in the left upper lung field, consistent with a nipple ring."
+  ],
+  "abnormalities": [
+    {
+      "name": "Nipple Ring",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A metallic ring-like foreign body is observed projected over the left upper lung field, consistent with a nipple ring."
+    }
+  ],
+  "summary": "This chest X-ray shows no signs of acute problems in your lungs or heart. Your lungs look clear, and your heart appears to be of normal size. The bones, like your ribs and collarbones, also look healthy. There is a metallic ring visible on your left chest, which is likely a nipple piercing and is not a medical concern.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2016150170",
+    "https://radiopaedia.org/articles/chest-x-ray-interpretive-approach-1",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24106,
+    "bytesOut": 24106,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:11:03.683Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

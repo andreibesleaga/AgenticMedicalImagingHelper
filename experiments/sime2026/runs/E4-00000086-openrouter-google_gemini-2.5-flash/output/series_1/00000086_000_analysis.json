@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000086/series_1/00000086_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right lower lobe consolidation/infiltrate with air bronchograms.\",\n    \"Small right pleural effusion.\",\n    \"Left lung appears clear.\",\n    \"Cardiomediastinal silhouette within normal limits.\",\n    \"Bony thorax appears intact without acute abnormality.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right lower lobe consolidation\",\n      \"description\": \"Ill-defined opacification noted in the right lower lobe, suggestive of consolidation, with visible air bronchograms within the opacity, consistent with airspace disease.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Right pleural effusion\",\n      \"description\": \"Blunting of the right costophrenic angle indicates a small right-sided pleural effusion.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows some changes in your right lung. There is an area in the lower part of your right lung that looks cloudy, which is often seen when there's an infection or inflammation (like pneumonia). You can also see some small fluid collection around the base of your right lung, which is called a pleural effusion. Your left lung and heart appear normal. These findings suggest there might be an infection or other inflammatory process in your right lung.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2020200028\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4972412/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right lower lobe consolidation/infiltrate with air bronchograms.",
+    "Small right pleural effusion.",
+    "Left lung appears clear.",
+    "Cardiomediastinal silhouette within normal limits.",
+    "Bony thorax appears intact without acute abnormality."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lower lobe consolidation",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Ill-defined opacification noted in the right lower lobe, suggestive of consolidation, with visible air bronchograms within the opacity, consistent with airspace disease."
+    },
+    {
+      "name": "Right pleural effusion",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Blunting of the right costophrenic angle indicates a small right-sided pleural effusion."
+    }
+  ],
+  "summary": "The X-ray of your chest shows some changes in your right lung. There is an area in the lower part of your right lung that looks cloudy, which is often seen when there's an infection or inflammation (like pneumonia). You can also see some small fluid collection around the base of your right lung, which is called a pleural effusion. Your left lung and heart appear normal. These findings suggest there might be an infection or other inflammatory process in your right lung.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2020200028",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4972412/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 20530,
+    "bytesOut": 20530,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:14:18.190Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

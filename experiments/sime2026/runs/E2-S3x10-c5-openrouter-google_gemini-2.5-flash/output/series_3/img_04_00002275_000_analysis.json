@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S3x10/series_3/img_04_00002275_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pneumothorax, or large pleural effusion identified.\",\n    \"Bilateral hilar and peribronchial thickening noted.\",\n    \"Reticulonodular opacities are distributed throughout both lung fields, more prominent in the lower zones.\",\n    \"Cardiac silhouette is normal in size and contour.\",\n    \"Visualized osseous structures are unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral hilar and peribronchial thickening\",\n      \"description\": \"Thickening of the hilar regions and around the bronchi, suggesting chronic inflammatory or fibrotic changes.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Reticulonodular opacities\",\n      \"description\": \"Diffuse fine reticular and nodular opacities seen throughout both lung fields, particularly in the lower lobes, consistent with interstitial lung disease.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This chest X-ray shows changes in the lungs, specifically thickening around the central airways and a pattern of fine lines and small spots spread throughout both lungs, which are more noticeable in the lower parts. These findings suggest the presence of some chronic lung changes, possibly related to an interstitial lung disease. The heart appears normal in size and shape, and there are no signs of collapsed lung (pneumothorax), significant fluid around the lungs (pleural effusion), or acute infection. Further evaluation by a doctor may be recommended to understand the cause and significance of these lung changes.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/interstitial-lung-disease\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8945656/\",\n    \"https://chestradiology.net/cases/chest-x-ray-interpretations/interstitial-lung-disease-interpretation\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pneumothorax, or large pleural effusion identified.",
+    "Bilateral hilar and peribronchial thickening noted.",
+    "Reticulonodular opacities are distributed throughout both lung fields, more prominent in the lower zones.",
+    "Cardiac silhouette is normal in size and contour.",
+    "Visualized osseous structures are unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral hilar and peribronchial thickening",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Thickening of the hilar regions and around the bronchi, suggesting chronic inflammatory or fibrotic changes."
+    },
+    {
+      "name": "Reticulonodular opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse fine reticular and nodular opacities seen throughout both lung fields, particularly in the lower lobes, consistent with interstitial lung disease."
+    }
+  ],
+  "summary": "This chest X-ray shows changes in the lungs, specifically thickening around the central airways and a pattern of fine lines and small spots spread throughout both lungs, which are more noticeable in the lower parts. These findings suggest the presence of some chronic lung changes, possibly related to an interstitial lung disease. The heart appears normal in size and shape, and there are no signs of collapsed lung (pneumothorax), significant fluid around the lungs (pleural effusion), or acute infection. Further evaluation by a doctor may be recommended to understand the cause and significance of these lung changes.",
+  "references": [
+    "https://radiopaedia.org/articles/interstitial-lung-disease",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8945656/",
+    "https://chestradiology.net/cases/chest-x-ray-interpretations/interstitial-lung-disease-interpretation"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23475,
+    "bytesOut": 23475,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:03:52.172Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

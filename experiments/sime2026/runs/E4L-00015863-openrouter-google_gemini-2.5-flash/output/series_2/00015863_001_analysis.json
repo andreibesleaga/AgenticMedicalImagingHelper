@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4L/00015863/series_2/00015863_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Multiple, well-defined, rounded opacities of varying sizes are noted throughout both lung fields, suggestive of pulmonary nodules or masses.\",\n    \"The opacities appear more numerous and confluent in the right lung.\",\n    \"No obvious pleural effusions are identified.\",\n    \"Cardiac silhouette appears within normal limits for size.\",\n    \"Bony structures, including ribs and clavicles, show no acute fractures.\",\n    \"The trachea appears midline.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pulmonary Nodules/Masses\",\n      \"description\": \"Multiple, well-defined, rounded opacities of varying sizes are present in both lung fields, with a higher concentration and confluence in the right lung. These findings are concerning for metastatic disease or multifocal primary lung lesions.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows several distinct, round-shaped spots in both lungs. These spots, called 'pulmonary nodules' or 'masses,' are more numerous and appear to merge together in the right lung. This finding raises concern for various conditions, including the possibility of cancer that has spread from another part of the body (metastatic disease) or multiple primary lung cancers. Further investigation, such as a CT scan, would typically be recommended to better understand these findings.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pulmonary-nodule-1\",\n    \"https://www.cancer.org/cancer/types/lung-cancer/screening-and-early-detection/what-if-a-lung-nodule-is-found.html\",\n    \"https://www.uptodate.com/contents/approach-to-the-patient-with-a-pulmonary-nodule\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Multiple, well-defined, rounded opacities of varying sizes are noted throughout both lung fields, suggestive of pulmonary nodules or masses.",
+    "The opacities appear more numerous and confluent in the right lung.",
+    "No obvious pleural effusions are identified.",
+    "Cardiac silhouette appears within normal limits for size.",
+    "Bony structures, including ribs and clavicles, show no acute fractures.",
+    "The trachea appears midline."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pulmonary Nodules/Masses",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Multiple, well-defined, rounded opacities of varying sizes are present in both lung fields, with a higher concentration and confluence in the right lung. These findings are concerning for metastatic disease or multifocal primary lung lesions."
+    }
+  ],
+  "summary": "The X-ray of your chest shows several distinct, round-shaped spots in both lungs. These spots, called 'pulmonary nodules' or 'masses,' are more numerous and appear to merge together in the right lung. This finding raises concern for various conditions, including the possibility of cancer that has spread from another part of the body (metastatic disease) or multiple primary lung cancers. Further investigation, such as a CT scan, would typically be recommended to better understand these findings.",
+  "references": [
+    "https://radiopaedia.org/articles/pulmonary-nodule-1",
+    "https://www.cancer.org/cancer/types/lung-cancer/screening-and-early-detection/what-if-a-lung-nodule-is-found.html",
+    "https://www.uptodate.com/contents/approach-to-the-patient-with-a-pulmonary-nodule"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24701,
+    "bytesOut": 24701,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:23:57.667Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

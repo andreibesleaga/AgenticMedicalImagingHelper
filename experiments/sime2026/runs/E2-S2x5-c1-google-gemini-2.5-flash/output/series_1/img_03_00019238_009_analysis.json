@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S2x5/series_1/img_03_00019238_009.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "```json\n{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Significant subdiaphragmatic lucency noted beneath the right hemidiaphragm, consistent with free intraperitoneal air.\",\n    \"The right hemidiaphragm appears elevated.\",\n    \"No gross parenchymal lung abnormalities or pleural effusions.\",\n    \"Mediastinal contours are unremarkable.\",\n    \"Visible osseous structures are unremarkable.\",\n    \"Multiple medical lines are visible, including what appears to be a nasogastric tube or similar line extending into the abdomen, and another peripheral line.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pneumoperitoneum\",\n      \"description\": \"A crescent-shaped collection of free air is present beneath the right hemidiaphragm, indicating pneumoperitoneum. This is a highly specific sign for a perforated hollow viscus. The right hemidiaphragm is elevated, likely secondary to the presence of subdiaphragmatic air.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray shows a significant amount of air trapped under the right side of the diaphragm. This condition, called pneumoperitoneum, is an urgent finding as it most commonly indicates a perforation or hole in an abdominal organ, such as the stomach or intestines. The right side of the diaphragm also appears slightly higher than usual, which can be related to the trapped air. This requires immediate medical attention to identify the cause and initiate appropriate treatment.\",\n  \"references\": [\n    \"https://radiologykey.com/pneumoperitoneum-cxr/\",\n    \"https://iem-student.org/perforated-viscus/\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4960337/\"\n  ]\n}\n```",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Significant subdiaphragmatic lucency noted beneath the right hemidiaphragm, consistent with free intraperitoneal air.",
+    "The right hemidiaphragm appears elevated.",
+    "No gross parenchymal lung abnormalities or pleural effusions.",
+    "Mediastinal contours are unremarkable.",
+    "Visible osseous structures are unremarkable.",
+    "Multiple medical lines are visible, including what appears to be a nasogastric tube or similar line extending into the abdomen, and another peripheral line."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pneumoperitoneum",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "A crescent-shaped collection of free air is present beneath the right hemidiaphragm, indicating pneumoperitoneum. This is a highly specific sign for a perforated hollow viscus. The right hemidiaphragm is elevated, likely secondary to the presence of subdiaphragmatic air."
+    }
+  ],
+  "summary": "The X-ray shows a significant amount of air trapped under the right side of the diaphragm. This condition, called pneumoperitoneum, is an urgent finding as it most commonly indicates a perforation or hole in an abdominal organ, such as the stomach or intestines. The right side of the diaphragm also appears slightly higher than usual, which can be related to the trapped air. This requires immediate medical attention to identify the cause and initiate appropriate treatment.",
+  "references": [
+    "https://radiologykey.com/pneumoperitoneum-cxr/",
+    "https://iem-student.org/perforated-viscus/",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4960337/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22415,
+    "bytesOut": 22415,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:28:59.378Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

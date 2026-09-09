@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000219/series_2/00000219_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Good\",\"findings\":[\"Cardiac silhouette appears mildly enlarged\",\"Lung fields are grossly clear bilaterally without focal consolidation\",\"No obvious pleural effusion identified\",\"Costophrenic angles are relatively sharp\",\"Mediastinal contours appear within normal limits\",\"Visible skeletal structures (ribs, clavicles) without acute fracture\",\"Soft tissue and osseous structures otherwise unremarkable\"],\"abnormalities\":[{\"name\":\"Possible cardiomegaly\",\"description\":\"The cardiac silhouette appears slightly widened relative to the thoracic width, which may suggest mild cardiac enlargement; however, this could be influenced by projection/AP technique and patient positioning.\",\"severity\":\"Mild\",\"confidence\":45}],\"summary\":\"This is a chest X-ray showing the lungs and heart. The lungs look clear without signs of pneumonia, fluid buildup, or masses. The heart shadow appears slightly larger than typical, which could be a normal variant, related to positioning during the X-ray, or could suggest the heart is working harder than usual (sometimes called cardiomegaly). This finding is not definitive from a single X-ray and would need correlation with clinical symptoms, prior imaging, or other tests like an echocardiogram for confirmation. Overall, no urgent or acute abnormality is seen in the lungs.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria\",\"https://pubs.rsna.org/journal/radiology\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Good",
+  "findings": [
+    "Cardiac silhouette appears mildly enlarged",
+    "Lung fields are grossly clear bilaterally without focal consolidation",
+    "No obvious pleural effusion identified",
+    "Costophrenic angles are relatively sharp",
+    "Mediastinal contours appear within normal limits",
+    "Visible skeletal structures (ribs, clavicles) without acute fracture",
+    "Soft tissue and osseous structures otherwise unremarkable"
+  ],
+  "abnormalities": [
+    {
+      "name": "Possible cardiomegaly",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "The cardiac silhouette appears slightly widened relative to the thoracic width, which may suggest mild cardiac enlargement; however, this could be influenced by projection/AP technique and patient positioning."
+    }
+  ],
+  "summary": "This is a chest X-ray showing the lungs and heart. The lungs look clear without signs of pneumonia, fluid buildup, or masses. The heart shadow appears slightly larger than typical, which could be a normal variant, related to positioning during the X-ray, or could suggest the heart is working harder than usual (sometimes called cardiomegaly). This finding is not definitive from a single X-ray and would need correlation with clinical symptoms, prior imaging, or other tests like an echocardiogram for confirmation. Overall, no urgent or acute abnormality is seen in the lungs.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiology"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21786,
+    "bytesOut": 21786,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-09T07:11:55.529Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

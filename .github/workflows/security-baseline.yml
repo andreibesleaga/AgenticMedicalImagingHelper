@@ -56,7 +56,7 @@ jobs:
           npx --yes license-checker-rseidelsohn@latest
           --onlyAllow "MIT;Apache-2.0;BSD-2-Clause;BSD-3-Clause;ISC;0BSD;CC0-1.0;Unlicense;Python-2.0;BlueOak-1.0.0;LGPL-3.0-or-later;LGPL-3.0;GPL-3.0;CC-BY-4.0"
           --excludePrivatePackages
-          --excludePackages "agentic-medical-imaging-helper@1.0.0"
+          --excludePackages "agentic-medical-imaging-helper@1.1.0"
         continue-on-error: true # report-only until dependency licenses are reviewed
 
   osv-scanner:

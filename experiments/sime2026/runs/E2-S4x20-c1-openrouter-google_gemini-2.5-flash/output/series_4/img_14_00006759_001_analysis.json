@@ -1,0 +1,61 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_4/img_14_00006759_001.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Cardiomegaly, with the cardiothoracic ratio exceeding 0.5.\",\n    \"Bilateral interstitial opacities, more prominent at the bases, consistent with pulmonary edema.\",\n    \"Bilateral pleural effusions, larger on the left, indicated by blunting of costophrenic angles.\",\n    \"A medical device, likely a cardiac implantable electronic device (CIED) lead, is noted projecting over the cardiac silhouette.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlargement of the cardiac silhouette, with a cardiothoracic ratio greater than 0.5, suggesting cardiac pathology.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pulmonary Edema\",\n      \"description\": \"Bilateral interstitial opacities, particularly in the lower lung zones, are consistent with fluid accumulation in the lung parenchyma.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Bilateral blunting of the costophrenic angles, more pronounced on the left, indicates the presence of fluid in the pleural space.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that the heart is enlarged (cardiomegaly). There is also fluid buildup in both lungs (pulmonary edema) and around the lungs (pleural effusions), which is more noticeable on the left side. These findings suggest that the heart may not be pumping effectively. A medical device, possibly a pacemaker lead, is also seen near the heart. It's important to consult a doctor for further evaluation and management of these findings.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1144/ajr.174.1.135\",\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/pulmonary-edema-1\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Cardiomegaly, with the cardiothoracic ratio exceeding 0.5.",
+    "Bilateral interstitial opacities, more prominent at the bases, consistent with pulmonary edema.",
+    "Bilateral pleural effusions, larger on the left, indicated by blunting of costophrenic angles.",
+    "A medical device, likely a cardiac implantable electronic device (CIED) lead, is noted projecting over the cardiac silhouette."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Enlargement of the cardiac silhouette, with a cardiothoracic ratio greater than 0.5, suggesting cardiac pathology."
+    },
+    {
+      "name": "Pulmonary Edema",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Bilateral interstitial opacities, particularly in the lower lung zones, are consistent with fluid accumulation in the lung parenchyma."
+    },
+    {
+      "name": "Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Bilateral blunting of the costophrenic angles, more pronounced on the left, indicates the presence of fluid in the pleural space."
+    }
+  ],
+  "summary": "The chest X-ray shows that the heart is enlarged (cardiomegaly). There is also fluid buildup in both lungs (pulmonary edema) and around the lungs (pleural effusions), which is more noticeable on the left side. These findings suggest that the heart may not be pumping effectively. A medical device, possibly a pacemaker lead, is also seen near the heart. It's important to consult a doctor for further evaluation and management of these findings.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1144/ajr.174.1.135",
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/pulmonary-edema-1"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21894,
+    "bytesOut": 21894,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:09:11.632Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

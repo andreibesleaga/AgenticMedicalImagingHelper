@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S2x5/series_2/img_05_00010531_038.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "```json\n{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear and fully expanded without evidence of focal consolidation, pneumothorax, or significant pleural effusion.\",\n    \"Cardiac silhouette is within normal limits for size and contour.\",\n    \"Mediastinal contours are unremarkable.\",\n    \"Trachea is midline.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"Bony thorax and visualized soft tissues are unremarkable.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This is a chest X-ray image. The lungs appear healthy and clear, with no signs of infection, fluid accumulation (pleural effusion), or a collapsed lung (pneumothorax). The heart size and shape appear normal, and the major blood vessels and airways are also normal. The bones of the chest and the surrounding soft tissues do not show any concerning findings.\",\n  \"references\": [\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria/ACR-Appropriateness-Criteria-Narratives/Chest-Radiography\",\n    \"https://radiopaedia.org/articles/chest-x-ray-normal-anatomy-and-systematic-approach\"\n  ]\n}\n```",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear and fully expanded without evidence of focal consolidation, pneumothorax, or significant pleural effusion.",
+    "Cardiac silhouette is within normal limits for size and contour.",
+    "Mediastinal contours are unremarkable.",
+    "Trachea is midline.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "Bony thorax and visualized soft tissues are unremarkable."
+  ],
+  "abnormalities": [],
+  "summary": "This is a chest X-ray image. The lungs appear healthy and clear, with no signs of infection, fluid accumulation (pleural effusion), or a collapsed lung (pneumothorax). The heart size and shape appear normal, and the major blood vessels and airways are also normal. The bones of the chest and the surrounding soft tissues do not show any concerning findings.",
+  "references": [
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria/ACR-Appropriateness-Criteria-Narratives/Chest-Radiography",
+    "https://radiopaedia.org/articles/chest-x-ray-normal-anatomy-and-systematic-approach"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22167,
+    "bytesOut": 22167,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:31:28.563Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

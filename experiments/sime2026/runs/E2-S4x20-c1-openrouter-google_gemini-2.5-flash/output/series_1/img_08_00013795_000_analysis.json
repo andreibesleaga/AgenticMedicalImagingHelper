@@ -1,0 +1,48 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_1/img_08_00013795_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Mild cardiomegaly noted, with a cardiothoracic ratio estimated to be greater than 0.5.\",\n    \"Bilateral lung fields appear clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Diaphragmatic contours are well-defined.\",\n    \"Bony thorax is unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette is enlarged, with the cardiothoracic ratio appearing greater than 0.5, suggesting mild cardiomegaly.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows that the heart appears slightly larger than normal for the chest size. This is called 'mild cardiomegaly'. The lungs themselves look clear, and there are no signs of fluid around the lungs or collapsed lung. The bones of the chest also look normal. While an enlarged heart can be a normal variation in some individuals, it can also be a sign of underlying heart conditions, so further evaluation by a doctor is often recommended to determine the cause and significance.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900600/\",\n    \"https://radiopaedia.org/articles/cardiothoracic-ratio-2\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Mild cardiomegaly noted, with a cardiothoracic ratio estimated to be greater than 0.5.",
+    "Bilateral lung fields appear clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "Diaphragmatic contours are well-defined.",
+    "Bony thorax is unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "The cardiac silhouette is enlarged, with the cardiothoracic ratio appearing greater than 0.5, suggesting mild cardiomegaly."
+    }
+  ],
+  "summary": "This X-ray of the chest shows that the heart appears slightly larger than normal for the chest size. This is called 'mild cardiomegaly'. The lungs themselves look clear, and there are no signs of fluid around the lungs or collapsed lung. The bones of the chest also look normal. While an enlarged heart can be a normal variation in some individuals, it can also be a sign of underlying heart conditions, so further evaluation by a doctor is often recommended to determine the cause and significance.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900600/",
+    "https://radiopaedia.org/articles/cardiothoracic-ratio-2"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 16861,
+    "bytesOut": 16861,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:04:52.988Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

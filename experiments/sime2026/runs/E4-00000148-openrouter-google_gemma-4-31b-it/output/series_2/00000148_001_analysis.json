@@ -1,0 +1,31 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000148/series_2/00000148_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\")} { \": \"modality\", \"value\": \"X-ray\", \"anatomyRegion\": \"Chest (PA)\", \"quality\": \"Good\", \"findings\": [-1, \"Right-sided pleural effusion causing blunting of the costophrenic angle and a meniscus sign\", \"Presence of an implanted venous access device (port-a-cath) in the right upper chest with the catheter tip terminating in the superior vena cava\", \"Right lung shows patchy opacities in the mid-zone\", \"Cardiac silhouette size is within normal limits\", \"Bony structures and soft tissues appear unremarkable\"], \"abnormalities\": [{\"name\": \"Pleural Effusion\", \"description\": \"Accumulation of fluid in the right pleural space, evidenced by opacification of the lower right hemithorax with a characteristic curved upper border (meniscus sign).\", \"severity\": \"Moderate\", \"confidence\": 95}, {\"name\": \"Implanted Port\", \"description\": \"Radiopaque circular device located in the right pectoral region with a catheter extending toward the mediastinum.\", \"severity\": \"Normal\", \"confidence\": 100}], \"summary\": \"The X-ray shows fluid buildup around the right lung (pleural effusion), which can be caused by various conditions including heart failure, infection, or inflammation. There is also a medical device called a 'port-a-cath' (an implanted line used for medications or blood draws) in the right chest. Your doctor will correlate these findings with your symptoms to determine the cause of the fluid.\", \"references\": [\"https://radiopaedia.org/articles/pleural-effusion\", \"https://www.acr.org/Clinical-Resources/Chest-Radiography\"]}",
+  "findings": [],
+  "validation": {
+    "ok": false,
+    "issues": [
+      "modality: Invalid input: expected string, received undefined",
+      "findings.0: -1 is not a valid value here (model sentinel) — Invalid input: expected string, received number"
+    ]
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22107,
+    "bytesOut": 22107,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-08T19:28:50.206Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

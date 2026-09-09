@@ -152,6 +152,21 @@ export interface ChainEntry {
  * Deterministic JSON: object keys sorted, `undefined` members dropped, arrays
  * left in order. Two structurally equal manifests must serialise byte-for-byte
  * identically or the hash is meaningless.
+ *
+ * **Numbers follow ECMA-262 `Number::toString`, and that is load-bearing.**
+ * Primitives are rendered with `JSON.stringify`, so a number becomes the
+ * shortest decimal string that round-trips to the same IEEE-754 double, in
+ * exponential form only outside `[1e-6, 1e21)`. Other languages draw that
+ * boundary elsewhere — Python's `json` switches to exponential at `1e-4`, so it
+ * writes `7.007219999999998e-05` where this function writes
+ * `0.00007007219999999998`. Both are valid JSON for the same value and they
+ * hash differently: 4 of the 61 manifests committed under
+ * `experiments/sime2026/runs/` carry a per-call `providerUsd` in that band.
+ *
+ * An independent re-implementation of this canonicalisation must therefore
+ * reproduce ECMA-262 number formatting exactly, or it will report a false
+ * tamper alarm on a manifest that is in fact intact. The portable check is to
+ * re-run `medical-imaging verify-manifest`, which uses this function.
  */
 export function canonicalJson(value: unknown): string {
   if (value === null || typeof value !== "object") return JSON.stringify(value) ?? "null";

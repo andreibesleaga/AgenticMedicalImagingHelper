@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000239/series_4/00000239_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Fair\",\"findings\":[\"Large gastric bubble with air-fluid level visualized in the left upper quadrant/lower left chest region, appearing elevated toward the thorax\",\"Elevated left hemidiaphragm with gas-filled structure (likely stomach) positioned abnormally high, possibly within the thoracic cavity\",\"Cardiac silhouette appears displaced/pushed toward the right side\",\"Mediastinal structures show some shift, possibly due to mass effect from the gas-filled viscus\",\"Lung fields appear grossly clear bilaterally, though left lower lung may be partially obscured/compressed\",\"Bony thorax appears intact - ribs and clavicles without obvious fracture\",\"Multiple small rounded bowel loops with gas visible in the upper abdomen\"],\"abnormalities\":[{\"name\":\"Suspected Diaphragmatic Hernia / Intrathoracic Stomach\",\"description\":\"A large air-filled, rounded structure with air-fluid level is seen in the lower left chest/upper abdomen region, causing elevation of the left hemidiaphragm and mediastinal shift. This appearance is concerning for a large hiatal hernia or diaphragmatic hernia with herniation of the stomach into the thoracic cavity.\",\"severity\":\"Moderate\",\"confidence\":65},{\"name\":\"Mediastinal Shift\",\"description\":\"The cardiac silhouette and mediastinal structures appear displaced toward the right, likely secondary to mass effect from the distended gastric bubble in the left chest/upper abdomen.\",\"severity\":\"Mild\",\"confidence\":55}],\"summary\":\"This chest X-ray shows a large air-filled bubble in the upper left part of the abdomen/lower chest area, which appears to be pushing up on the diaphragm (the muscle that separates the chest from the abdomen) and shifting the heart slightly to the right. This pattern is often seen with a 'hiatal hernia,' a condition where part of the stomach pushes up through an opening in the diaphragm into the chest cavity. The lungs themselves look relatively clear. This finding would typically need further evaluation with a CT scan or upper GI series to confirm the diagnosis and assess its severity. It's important to have a doctor review this image and correlate it with your symptoms (such as heartburn, chest discomfort, or difficulty swallowing) for an accurate diagnosis and appropriate treatment plan.\",\"references\":[\"https://radiopaedia.org/articles/hiatus-hernia\",\"https://www.ncbi.nlm.nih.gov/books/NBK499894/\",\"https://pubs.rsna.org/doi/10.1148/rg.2017160082\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Fair",
+  "findings": [
+    "Large gastric bubble with air-fluid level visualized in the left upper quadrant/lower left chest region, appearing elevated toward the thorax",
+    "Elevated left hemidiaphragm with gas-filled structure (likely stomach) positioned abnormally high, possibly within the thoracic cavity",
+    "Cardiac silhouette appears displaced/pushed toward the right side",
+    "Mediastinal structures show some shift, possibly due to mass effect from the gas-filled viscus",
+    "Lung fields appear grossly clear bilaterally, though left lower lung may be partially obscured/compressed",
+    "Bony thorax appears intact - ribs and clavicles without obvious fracture",
+    "Multiple small rounded bowel loops with gas visible in the upper abdomen"
+  ],
+  "abnormalities": [
+    {
+      "name": "Suspected Diaphragmatic Hernia / Intrathoracic Stomach",
+      "severity": "Moderate",
+      "confidence": 65,
+      "description": "A large air-filled, rounded structure with air-fluid level is seen in the lower left chest/upper abdomen region, causing elevation of the left hemidiaphragm and mediastinal shift. This appearance is concerning for a large hiatal hernia or diaphragmatic hernia with herniation of the stomach into the thoracic cavity."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "The cardiac silhouette and mediastinal structures appear displaced toward the right, likely secondary to mass effect from the distended gastric bubble in the left chest/upper abdomen."
+    }
+  ],
+  "summary": "This chest X-ray shows a large air-filled bubble in the upper left part of the abdomen/lower chest area, which appears to be pushing up on the diaphragm (the muscle that separates the chest from the abdomen) and shifting the heart slightly to the right. This pattern is often seen with a 'hiatal hernia,' a condition where part of the stomach pushes up through an opening in the diaphragm into the chest cavity. The lungs themselves look relatively clear. This finding would typically need further evaluation with a CT scan or upper GI series to confirm the diagnosis and assess its severity. It's important to have a doctor review this image and correlate it with your symptoms (such as heartburn, chest discomfort, or difficulty swallowing) for an accurate diagnosis and appropriate treatment plan.",
+  "references": [
+    "https://radiopaedia.org/articles/hiatus-hernia",
+    "https://www.ncbi.nlm.nih.gov/books/NBK499894/",
+    "https://pubs.rsna.org/doi/10.1148/rg.2017160082"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22154,
+    "bytesOut": 22154,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-09T07:14:16.891Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

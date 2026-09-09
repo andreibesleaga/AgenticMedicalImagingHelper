@@ -2,12 +2,13 @@
  * Experiment E1 — labelled benchmark for the deterministic allocative-harm
  * probe in src/domain/fairness.ts.
  *
- * Usage: node_modules/.bin/tsx scripts/fairness-benchmark.ts
+ * Usage: node_modules/.bin/tsx scripts/fairness-benchmark.ts [--out <file.md>]
  *
  * Loads tests/fixtures/fairness-benchmark.json, runs containsDemographicClaim
  * (and findDemographicTokens for token-presence statistics) over every item,
  * prints a markdown report to stdout and writes the same report to
- * experiments/sime2026/E1-fairness-benchmark-results.md.
+ * `--out` (default experiments/sime2026/E1-fairness-benchmark-results.md,
+ * which is committed evidence for the probe's measured behaviour).
  *
  * The probe itself is NOT modified here; the benchmark measures it as-is.
  */
@@ -20,8 +21,19 @@ import { containsDemographicClaim, findDemographicTokens } from "../src/domain/f
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const FIXTURE = path.join(ROOT, "tests", "fixtures", "fairness-benchmark.json");
-const OUT_DIR = path.join(ROOT, "experiments", "sime2026");
-const OUT_FILE = path.join(OUT_DIR, "E1-fairness-benchmark-results.md");
+function outFlag(argv: string[]): string | undefined {
+  const i = argv.indexOf("--out");
+  return i >= 0 && argv[i + 1] ? path.resolve(argv[i + 1]!) : undefined;
+}
+
+/**
+ * The report is committed evidence in `experiments/sime2026/`, and stays
+ * reproducible from this script and the committed fixture.
+ */
+const OUT_FILE =
+  outFlag(process.argv.slice(2)) ??
+  path.join(ROOT, "experiments", "sime2026", "E1-fairness-benchmark-results.md");
+const OUT_DIR = path.dirname(OUT_FILE);
 
 const CATEGORIES = ["explicit", "paraphrase", "implicit", "benign", "negation", "trap"] as const;
 type Category = (typeof CATEGORIES)[number];

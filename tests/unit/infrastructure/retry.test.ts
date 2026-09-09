@@ -23,7 +23,7 @@ function httpError(status: number, message = `HTTP ${status}`): Error & { status
   return Object.assign(new Error(message), { status });
 }
 
-/** The real 429 the SIME 2026 batch hit, verbatim in shape. */
+/** The real 429 the experiment batch hit, verbatim in shape. */
 const GEMINI_429 = new Error(
   "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/" +
     "v1beta/models/gemini-2.5-flash:generateContent: [429 Too Many Requests] You exceeded your " +

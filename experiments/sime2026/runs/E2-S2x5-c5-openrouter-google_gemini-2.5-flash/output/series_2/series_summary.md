@@ -1,0 +1,57 @@
+> **Requires review by a qualified clinician before any use.**
+> This report is unreviewed AI research output. No finding, diagnosis, trend, forecast or
+> treatment suggestion in it has been checked by a human clinician, and none may be acted
+> on until one has. Recorded as `humanReview` in `run_manifest.json` (EU AI Act Art. 14).
+
+# Series Analysis: series_2
+
+> ⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made.
+
+**Analyzed**: 2026-09-09T08:03:02.605Z
+**Images**: 5 submitted, 5 successfully analyzed, 0 failed
+**Context file used**: No
+**Structured output**: schema-validated
+
+## Primary Diagnosis
+No acute cardiopulmonary pathology (based on Images 1, 4, 5) — Confidence: Medium
+
+## Differential Diagnoses
+1. History of breast malignancy with prior surgical intervention (based on Image 2)
+2. Mild cardiomegaly (based on Image 3)
+
+## Consistent Findings Across All Views
+- No focal consolidation, pleural effusion, or pneumothorax identified in the lungs.
+- Bony thorax appears intact, with no acute fractures or destructive lesions identified.
+- Diaphragms are intact and appropriately positioned, with clear costophrenic angles.
+
+## Discrepancies Between Views
+- Image 3 shows a mildly enlarged cardiac silhouette, whereas Images 1, 2, 4, and 5 report a cardiomediastinal silhouette within normal limits. This discrepancy could be due to inter-reader variability in assessing cardiac size, the patient's age and clinical context (Image 3's summary mentions a child), or slight variations in inspiratory effort or projection leading to apparent size differences. Without prior images for comparison or clinical history, definitive interpretation of mild cardiomegaly can be challenging.
+- Image 2 identifies a right-sided central venous catheter with its tip in the superior vena cava and multiple surgical clips in the right axilla. These findings are not present in Images 1, 3, 4, and 5. This suggests that Image 2 represents a different patient or a different point in time for the same patient compared to the other images. Given the surgical clips, this patient likely has a history of a procedure such as mastectomy or lymph node dissection.
+- Image 5 notes a radiopaque artifact in the superior aspect of the right shoulder region, likely external. This artifact is not mentioned in other images, suggesting it's either patient-specific or an incidental external object not consistently present.
+
+## Full Series Report
+
+# Series Analysis: Chest X-rays (series_2)
+
+This series comprises five chest X-ray images, primarily in AP and PA projections, from potentially different individuals or different clinical contexts, as suggested by the varying findings.
+
+## Consistent Findings Across Images:
+
+*   **Lungs:** Consistently clear across all images, without evidence of focal consolidation, pleural effusion, or pneumothorax.
+*   **Bony Thorax:** Appears intact in all images, with no acute fractures or destructive lesions identified.
+*   **Diaphragms & Costophrenic Angles:** Intact and appropriately positioned diaphragms with clear costophrenic angles are noted bilaterally in all images.
+
+## Discrepancies and Specific Findings:
+
+*   **Image 1, 4, and 5:** These images are largely unremarkable, showing normal cardiomediastinal silhouettes and pulmonary vasculature. Image 5 additionally notes an external radiopaque artifact near the right shoulder, which is likely non-pathological.
+*   **Image 2:** This image stands out due to the presence of a well-positioned right-sided central venous catheter with its tip in the superior vena cava. Furthermore, multiple surgical clips are identified in the right axillary region, consistent with prior surgical intervention such as mastectomy or lymph node dissection. These findings strongly suggest a patient with a history of malignancy, likely breast cancer.
+*   **Image 3:** This image reports a mildly enlarged cardiac silhouette relative to the thoracic cage. While this could be a normal variant, especially in children (as hinted by the summary), it warrants further clinical correlation and potentially follow-up. The rest of the findings in Image 3 are otherwise unremarkable.
+
+## Conclusion:
+
+The heterogeneity of findings across the images within this series suggests they may not all belong to the same patient or represent a single continuous clinical progression. Images 1, 4, and 5 are normal. Image 2 clearly depicts a patient with medical hardware and postsurgical changes, likely related to cancer treatment. Image 3 suggests mild cardiomegaly which requires clinical assessment.
+
+**Overall, for the images interpreted as normal, no acute cardiopulmonary pathology is identified. However, specific findings in Images 2 and 3 require individualized clinical consideration.**
+
+---
+*Generated by AgenticMedicalImagingHelper v1.0.0 | Educational use only*

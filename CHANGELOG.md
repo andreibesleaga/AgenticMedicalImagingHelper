@@ -135,7 +135,9 @@ renamed.
 - CI: `.github/workflows/ci.yml` (Node 20 + 22 matrix) and
   `.github/workflows/security-baseline.yml` (OSV-Scanner, Trivy, CycloneDX 1.6
   SBOM, license allow-list, `npm audit`).
-- Structured logging (pino) at LangGraph node transitions, with secret redaction
+- Structured logging at LangGraph node transitions, with secret redaction
+  (`src/infrastructure/logger.ts`, a zero-dependency JSON-lines logger; the
+  project has never depended on a logging framework)
   (off by default; enable with `LOG_LEVEL`).
 
 ### Changed

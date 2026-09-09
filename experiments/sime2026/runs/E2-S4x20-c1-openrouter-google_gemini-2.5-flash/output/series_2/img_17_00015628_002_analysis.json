@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_2/img_17_00015628_002.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pneumothorax, or large pleural effusion identified.\",\n    \"Bilateral hilar and mediastinal contours are within normal limits.\",\n    \"Cardiac silhouette size is within normal limits.\",\n    \"No acute bony abnormalities are appreciated.\",\n    \"A small, dense, metallic foreign body is noted projected over the left upper chest wall, likely cutaneous or within clothing.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Metallic foreign body\",\n      \"description\": \"A small, dense, metallic foreign body is visualized projected over the left upper chest wall, likely external to the patient (e.g., on clothing) or within the skin.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows generally normal findings in the lungs, heart, and bones. There's no sign of pneumonia, collapsed lung (pneumothorax), or significant fluid around the lungs (pleural effusion). A small metallic object is seen on the image, projected over the upper left chest area. This is most likely a benign finding, such as something on the patient's clothing or an external item, rather than something inside the body that would be concerning.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1141/jccm.v26i6.1090\",\n    \"https://radiologykey.com/chest-radiography-3/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pneumothorax, or large pleural effusion identified.",
+    "Bilateral hilar and mediastinal contours are within normal limits.",
+    "Cardiac silhouette size is within normal limits.",
+    "No acute bony abnormalities are appreciated.",
+    "A small, dense, metallic foreign body is noted projected over the left upper chest wall, likely cutaneous or within clothing."
+  ],
+  "abnormalities": [
+    {
+      "name": "Metallic foreign body",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A small, dense, metallic foreign body is visualized projected over the left upper chest wall, likely external to the patient (e.g., on clothing) or within the skin."
+    }
+  ],
+  "summary": "The chest X-ray shows generally normal findings in the lungs, heart, and bones. There's no sign of pneumonia, collapsed lung (pneumothorax), or significant fluid around the lungs (pleural effusion). A small metallic object is seen on the image, projected over the upper left chest area. This is most likely a benign finding, such as something on the patient's clothing or an external item, rather than something inside the body that would be concerning.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1141/jccm.v26i6.1090",
+    "https://radiologykey.com/chest-radiography-3/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22712,
+    "bytesOut": 22712,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:06:44.538Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

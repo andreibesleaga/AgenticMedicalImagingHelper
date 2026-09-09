@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_3/img_20_00011065_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lung fields appear clear with no obvious infiltrates, consolidations, or effusions.\",\n    \"The cardiac silhouette is within normal limits for size.\",\n    \"The mediastinum appears unremarkable.\",\n    \"The diaphragm contours are smooth.\",\n    \"Osseous structures (ribs, clavicles, thoracic spine) show no acute fractures or destructive lesions.\",\n    \"There are several metallic clips visible in the mediastinum, likely surgical clips.\",\n    \"There is a metallic foreign body, possibly a stent or lead, visible overlying the left heart border.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical Clips\",\n      \"description\": \"Multiple metallic clips are noted in the mediastinum, consistent with previous surgical intervention. These are expected findings post-surgery.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Metallic Foreign Body\",\n      \"description\": \"A linear metallic density, suggestive of a stent or lead, is projected over the left heart border. This is an expected finding if the patient has a history of cardiac intervention or pacing.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows clear lungs, a normal-sized heart, and no signs of acute problems like pneumonia or fluid around the lungs. There are some metallic clips in the central chest area and a metallic object near the left side of the heart, which are likely related to previous surgeries or medical procedures and are not typically a concern. Overall, the chest X-ray appears stable with no new significant findings.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.233025178\",\n    \"https://radiopaedia.org/articles/chest-x-ray-1?lang=us\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lung fields appear clear with no obvious infiltrates, consolidations, or effusions.",
+    "The cardiac silhouette is within normal limits for size.",
+    "The mediastinum appears unremarkable.",
+    "The diaphragm contours are smooth.",
+    "Osseous structures (ribs, clavicles, thoracic spine) show no acute fractures or destructive lesions.",
+    "There are several metallic clips visible in the mediastinum, likely surgical clips.",
+    "There is a metallic foreign body, possibly a stent or lead, visible overlying the left heart border."
+  ],
+  "abnormalities": [
+    {
+      "name": "Surgical Clips",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Multiple metallic clips are noted in the mediastinum, consistent with previous surgical intervention. These are expected findings post-surgery."
+    },
+    {
+      "name": "Metallic Foreign Body",
+      "severity": "Normal",
+      "confidence": 90,
+      "description": "A linear metallic density, suggestive of a stent or lead, is projected over the left heart border. This is an expected finding if the patient has a history of cardiac intervention or pacing."
+    }
+  ],
+  "summary": "This X-ray of the chest shows clear lungs, a normal-sized heart, and no signs of acute problems like pneumonia or fluid around the lungs. There are some metallic clips in the central chest area and a metallic object near the left side of the heart, which are likely related to previous surgeries or medical procedures and are not typically a concern. Overall, the chest X-ray appears stable with no new significant findings.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.233025178",
+    "https://radiopaedia.org/articles/chest-x-ray-1?lang=us"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22000,
+    "bytesOut": 22000,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:08:11.561Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

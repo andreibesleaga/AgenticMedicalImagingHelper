@@ -1,0 +1,62 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S3x10/series_2/img_07_00010980_004.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Mild to moderate cardiomegaly, with prominence of the left cardiac border.\",\n    \"Left pleural effusion, moderate in size, with blunting of the left costophrenic angle and obscuring of the left hemidiaphragm.\",\n    \"No evidence of focal consolidation or pneumothorax.\",\n    \"Normal bony thorax without acute fractures.\",\n    \"Surgical clips are noted in the left supraclavicular region, likely related to prior intervention or surgery.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Mild to moderate enlargement of the cardiac silhouette, suggesting cardiomegaly.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Left Pleural Effusion\",\n      \"description\": \"Presence of fluid in the left pleural space, evidenced by blunting of the left costophrenic angle and obscuring of the left hemidiaphragm.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Surgical Clips\",\n      \"description\": \"Metallic surgical clips are visualized in the left supraclavicular region, indicating previous surgical intervention in this area.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that the heart appears somewhat enlarged (cardiomegaly). There is also a collection of fluid in the space surrounding the left lung (left pleural effusion), which is moderately sized. This means there's extra fluid that can make it harder for the lung to fully expand. We also see some surgical clips in the left collarbone area, likely from a past procedure. There are no signs of a collapsed lung (pneumothorax) or significant lung infection (pneumonia) on this image.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK459207/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Mild to moderate cardiomegaly, with prominence of the left cardiac border.",
+    "Left pleural effusion, moderate in size, with blunting of the left costophrenic angle and obscuring of the left hemidiaphragm.",
+    "No evidence of focal consolidation or pneumothorax.",
+    "Normal bony thorax without acute fractures.",
+    "Surgical clips are noted in the left supraclavicular region, likely related to prior intervention or surgery."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Mild to moderate enlargement of the cardiac silhouette, suggesting cardiomegaly."
+    },
+    {
+      "name": "Left Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Presence of fluid in the left pleural space, evidenced by blunting of the left costophrenic angle and obscuring of the left hemidiaphragm."
+    },
+    {
+      "name": "Surgical Clips",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Metallic surgical clips are visualized in the left supraclavicular region, indicating previous surgical intervention in this area."
+    }
+  ],
+  "summary": "The chest X-ray shows that the heart appears somewhat enlarged (cardiomegaly). There is also a collection of fluid in the space surrounding the left lung (left pleural effusion), which is moderately sized. This means there's extra fluid that can make it harder for the lung to fully expand. We also see some surgical clips in the left collarbone area, likely from a past procedure. There are no signs of a collapsed lung (pneumothorax) or significant lung infection (pneumonia) on this image.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.ncbi.nlm.nih.gov/books/NBK459207/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23657,
+    "bytesOut": 23657,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:02:03.361Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,401 @@
+{
+  "_comment": "Direction agreement per model, HUMAN-JUDGED. Transcribed by the reviewer from QUALITATIVE-REVIEW.md sections (d) — never recomputed by a script, because 'agree' / 'partial' are adjudications made while reading the artefacts and the images, not a string comparison. experiments/sime2026/fill-numbers.ts reads the top-level `models` map for the \\AGR* macros and only reformats it as 'agree/of (agree+partial/of)'.",
+  "_status": "FINAL-BUILD REVIEW. Re-scored 2026-09-09 against the complete re-run batch in experiments/sime2026/runs/ (62 runs, 61 exit 0). Supersedes the 2026-09-08 values, which were taken against a pre-final build and a partly failed run set and do not carry over.",
+  "source": "experiments/sime2026/QUALITATIVE-REVIEW.md, section (d) 'Agreement summary'",
+  "reviewDate": "2026-09-09",
+  "supersedes": "2026-09-08",
+  "cohort": "E4",
+  "caveat": "Descriptive-direction agreement against NLP-mined ChestX-ray14 report labels (Wang et al., CVPR 2017, ~90% accurate) on 224x224 images, single frontal view, no clinical history. NOT accuracy, sensitivity or specificity. Read QUALITATIVE-REVIEW.md section 0 before quoting any of these.",
+  "directionKey": {
+    "agree": "the model's progression matches the net direction of the NIH label trajectory",
+    "partial": "endpoint-consistent but interval labels missed; or Stable against a fluctuating / non-monotonic trajectory; or the right direction reached via a finding outside the NIH label vocabulary",
+    "disagree": "opposite or unrelated direction",
+    "noCall": "Inconclusive; or a directional label emitted when fewer than half the sessions produced usable structured output"
+  },
+  "models": {
+    "google/gemini-2.5-flash": {
+      "agree": 3,
+      "agreePartial": 7,
+      "of": 8
+    },
+    "google/gemma-4-31b-it": {
+      "agree": 0,
+      "agreePartial": 0,
+      "of": 8
+    },
+    "qwen/qwen3-vl-235b-a22b-instruct": {
+      "agree": 0,
+      "agreePartial": 6,
+      "of": 8
+    },
+    "anthropic/claude-sonnet-5": {
+      "agree": 2,
+      "agreePartial": 5,
+      "of": 8
+    }
+  },
+  "_cohortsComment": "ADDITIVE, added 2026-09-09 for the 20-patient E4L cohort. fill-numbers.ts does not read this block today; the top-level `models` map above remains the E4 source of truth for \\AGRGEM / \\AGRGMA / \\AGRQWN / \\AGRCLD and is unchanged in shape. `agreePartial` is the count of agree + partial, matching formatAgreement()'s second figure.",
+  "cohorts": {
+    "E4": {
+      "patients": 8,
+      "modelsCount": 4,
+      "judgements": 32,
+      "verdicts": {
+        "agree": 5,
+        "partial": 13,
+        "disagree": 7,
+        "noCall": 7
+      },
+      "models": {
+        "google/gemini-2.5-flash": {
+          "agree": 3,
+          "partial": 4,
+          "disagree": 1,
+          "noCall": 0,
+          "agreePartial": 7,
+          "of": 8
+        },
+        "google/gemma-4-31b-it": {
+          "agree": 0,
+          "partial": 0,
+          "disagree": 2,
+          "noCall": 6,
+          "agreePartial": 0,
+          "of": 8
+        },
+        "qwen/qwen3-vl-235b-a22b-instruct": {
+          "agree": 0,
+          "partial": 6,
+          "disagree": 2,
+          "noCall": 0,
+          "agreePartial": 6,
+          "of": 8
+        },
+        "anthropic/claude-sonnet-5": {
+          "agree": 2,
+          "partial": 3,
+          "disagree": 2,
+          "noCall": 1,
+          "agreePartial": 5,
+          "of": 8
+        }
+      },
+      "byStratum": {
+        "_comment": "Strata as derived in E5-label-agreement.json; counts are judgements across all four models.",
+        "mixed-pathology-change": {
+          "patients": 1,
+          "judgements": 4,
+          "agree": 0,
+          "partial": 3,
+          "disagree": 0,
+          "noCall": 1
+        },
+        "improving": {
+          "patients": 3,
+          "judgements": 12,
+          "agree": 2,
+          "partial": 6,
+          "disagree": 1,
+          "noCall": 3
+        },
+        "worsening": {
+          "patients": 2,
+          "judgements": 8,
+          "agree": 3,
+          "partial": 0,
+          "disagree": 3,
+          "noCall": 2
+        },
+        "stable-normal": {
+          "patients": 2,
+          "judgements": 8,
+          "agree": 0,
+          "partial": 4,
+          "disagree": 3,
+          "noCall": 1
+        }
+      }
+    },
+    "E4L": {
+      "patients": 20,
+      "modelsCount": 1,
+      "judgements": 20,
+      "cohortDefinition": "experiments/sime2026/E4L-cohort.md; 20-patient subset in experiments/sime2026/E4L20-patients.json",
+      "verdicts": {
+        "agree": 8,
+        "partial": 4,
+        "disagree": 7,
+        "noCall": 1
+      },
+      "models": {
+        "google/gemini-2.5-flash": {
+          "agree": 8,
+          "partial": 4,
+          "disagree": 7,
+          "noCall": 1,
+          "agreePartial": 12,
+          "of": 20
+        }
+      },
+      "byStratum": {
+        "_comment": "Pre-declared strata, 5 patients each, one model (google/gemini-2.5-flash).",
+        "worsening-like": {
+          "patients": 5,
+          "agree": 0,
+          "partial": 1,
+          "disagree": 4,
+          "noCall": 0,
+          "agreePartial": 1,
+          "of": 5
+        },
+        "improving-like": {
+          "patients": 5,
+          "agree": 2,
+          "partial": 2,
+          "disagree": 1,
+          "noCall": 0,
+          "agreePartial": 4,
+          "of": 5
+        },
+        "stable-pathology": {
+          "patients": 5,
+          "agree": 3,
+          "partial": 0,
+          "disagree": 2,
+          "noCall": 0,
+          "agreePartial": 3,
+          "of": 5
+        },
+        "stable-normal": {
+          "patients": 5,
+          "agree": 3,
+          "partial": 1,
+          "disagree": 0,
+          "noCall": 1,
+          "agreePartial": 4,
+          "of": 5
+        }
+      },
+      "perPatient": [
+        {
+          "patient": "00003158",
+          "stratum": "improving-like",
+          "modelProgression": "Stable",
+          "direction": "partial",
+          "note": "endpoint normal; CIED appearance scored as Worsening (category error)"
+        },
+        {
+          "patient": "00003295",
+          "stratum": "stable-normal",
+          "modelProgression": "Stable",
+          "direction": "agree",
+          "note": "6 sessions; devices correctly excluded from disease trend"
+        },
+        {
+          "patient": "00003980",
+          "stratum": "stable-normal",
+          "modelProgression": "Inconclusive",
+          "direction": "noCall",
+          "note": "heavy over-call; validation.ok false; label itself suspect (looped line visible)"
+        },
+        {
+          "patient": "00004946",
+          "stratum": "improving-like",
+          "modelProgression": "Worsening",
+          "direction": "disagree",
+          "note": "over-call at 90-95% confidence"
+        },
+        {
+          "patient": "00005852",
+          "stratum": "improving-like",
+          "modelProgression": "Improving",
+          "direction": "agree",
+          "note": "separates opacities (Improving) from catheters (Stable)"
+        },
+        {
+          "patient": "00011264",
+          "stratum": "worsening-like",
+          "modelProgression": "Stable",
+          "direction": "disagree",
+          "note": "under-call; Infiltration unresolvable at 224 px"
+        },
+        {
+          "patient": "00013880",
+          "stratum": "stable-pathology",
+          "modelProgression": "Worsening",
+          "direction": "disagree",
+          "note": "under-call at S1-S2 manufactures a false trend; validation.ok false"
+        },
+        {
+          "patient": "00015192",
+          "stratum": "worsening-like",
+          "modelProgression": "Stable",
+          "direction": "disagree",
+          "note": "under-call"
+        },
+        {
+          "patient": "00015553",
+          "stratum": "stable-normal",
+          "modelProgression": "Improving",
+          "direction": "partial",
+          "note": "category error: disappearing shoulder foreign body scored as improvement"
+        },
+        {
+          "patient": "00015863",
+          "stratum": "stable-pathology",
+          "modelProgression": "Worsening",
+          "direction": "disagree",
+          "note": "internal inconsistency: near-identical S1/S3 descriptions, all trends Worsening"
+        },
+        {
+          "patient": "00016012",
+          "stratum": "worsening-like",
+          "modelProgression": "Stable",
+          "direction": "disagree",
+          "note": "under-call"
+        },
+        {
+          "patient": "00016054",
+          "stratum": "stable-normal",
+          "modelProgression": "Stable",
+          "direction": "agree",
+          "note": "zero trends"
+        },
+        {
+          "patient": "00016493",
+          "stratum": "worsening-like",
+          "modelProgression": "Worsening",
+          "direction": "partial",
+          "note": "right direction, wrong entity (radiopaque disc, not effusion); validation.ok false"
+        },
+        {
+          "patient": "00019779",
+          "stratum": "stable-pathology",
+          "modelProgression": "Stable",
+          "direction": "agree",
+          "note": "under-call of persistent infiltrate; validation.ok false; probe 'adult' hit is a citation-URL false positive"
+        },
+        {
+          "patient": "00021807",
+          "stratum": "improving-like",
+          "modelProgression": "Improving",
+          "direction": "agree",
+          "note": "showcase improving case"
+        },
+        {
+          "patient": "00022134",
+          "stratum": "improving-like",
+          "modelProgression": "Stable",
+          "direction": "partial",
+          "note": "endpoint normal; category error on metallic foreign body"
+        },
+        {
+          "patient": "00022202",
+          "stratum": "worsening-like",
+          "modelProgression": "Stable",
+          "direction": "disagree",
+          "note": "under-call"
+        },
+        {
+          "patient": "00026237",
+          "stratum": "stable-normal",
+          "modelProgression": "Stable",
+          "direction": "agree",
+          "note": "4 trends, all Stable"
+        },
+        {
+          "patient": "00027141",
+          "stratum": "stable-pathology",
+          "modelProgression": "Stable",
+          "direction": "agree",
+          "note": "under-call; zero trends"
+        },
+        {
+          "patient": "00027230",
+          "stratum": "stable-pathology",
+          "modelProgression": "Stable",
+          "direction": "agree",
+          "note": "under-call of persistent mass"
+        }
+      ]
+    }
+  },
+  "_combinedComment": "gemini-2.5-flash across both cohorts, for reference only. Not read by fill-numbers.ts.",
+  "combined": {
+    "google/gemini-2.5-flash": {
+      "agree": 11,
+      "agreePartial": 19,
+      "of": 28
+    }
+  },
+  "crossCheck": {
+    "_comment": "Mechanical first-vs-last label comparison in E5-label-agreement.json (directionRows / directionByModel / directionByModelStratum) versus this human adjudication. Differences are expected and are explained in QUALITATIVE-REVIEW.md section (h).",
+    "e5AgreeRate": {
+      "openrouter/google/gemini-2.5-flash": 0.429,
+      "openrouter/anthropic/claude-sonnet-5": 0.375,
+      "openrouter/google/gemma-4-31b-it": 0.25,
+      "openrouter/qwen/qwen3-vl-235b-a22b-instruct": 0.25
+    },
+    "systematicDifferences": [
+      "E5 discards evolution artefacts with validation.ok === false (6 runs scored '(no valid evolution artefact)'); this review adjudicates the recovered progression and the surviving combinedReport narrative.",
+      "E5 scores an expected 'Inconclusive' as a matchable value, so a model declining to answer can score agree (gemma, patient 00000008); this review scores that noCall.",
+      "E5 has no 'partial' category: an expected under-call at 224 px scores as a disagreement mechanically and as partial here.",
+      "E5 cannot see why a direction matched: 00000086/gemini agrees on direction for entirely fabricated reasons (failure case F1)."
+    ],
+    "e5AgreeRateNote": "Refreshed 2026-09-09 from E5-label-agreement.json after the progression-fallback fix (RESULTS.md section 13). The pre-fix values recorded when this review was written were gemini-2.5-flash 0.391, claude-sonnet-5 0.286, gemma-4-31b-it 0.25, qwen3-vl-235b-a22b-instruct 0.25. No macro in fill-numbers.ts reads this field; it exists as a cross-check on the reviewer's own scoring."
+  },
+  "failureCasesReproduced": {
+    "_comment": "Direct before/after against the 2026-09-08 review on the new build.",
+    "F1_00000086_gemini_fabricated_cavitary_lesion": true,
+    "F2_00000008_claude_infant_demographics": true,
+    "F2_nowMachineDetected": true,
+    "notReproduced": [
+      "00000008/gemini fabricated dextrocardia + implanted defibrillator",
+      "00000008/gemini structured-field vs prose progression contradiction (fixed by the progression fallback)",
+      "00000067/claude shoulder-marker laterality error (now stated in image coordinates)",
+      "00000148/claude three transport failures (zero transport errors batch-wide)"
+    ]
+  },
+  "governance": {
+    "runs": 62,
+    "runsExitZero": 61,
+    "deliberateQuotaEvidenceRun": "E2-S2x5-c5-google-gemini-2.5-flash",
+    "artefactsAudited": 863,
+    "contentArtefactsWithDisclaimer": "802/802 (the 61 without it are run_manifest.json, which carry no model prose)",
+    "demographicTokenHits": 0,
+    "demographicAnchoredClaims": 0,
+    "contextContradictions": {
+      "total": 8,
+      "genuine": 6,
+      "falsePositivesFromCitationUrls": 2
+    },
+    "schemaValidationFailures": {
+      "total": 19,
+      "E4": 15,
+      "E4L": 4,
+      "E2": 0,
+      "gemmaShareOfE4": 13
+    },
+    "transportErrors": 0,
+    "manifestsVerified": "6/6 exit 0 (all five integrity checks pass; human-review attestation absent by design)",
+    "treatmentSectionsLabelled": "61/61 successful runs",
+    "source": "experiments/sime2026/probe-results.md, probe-results.json, results.jsonl"
+  },
+  "costPerPatientUsd": {
+    "_comment": "Provider-reported, from each run's run_manifest.json totals.providerUsd.",
+    "E4": {
+      "anthropic/claude-sonnet-5": 0.11249,
+      "google/gemini-2.5-flash": 0.01166,
+      "qwen/qwen3-vl-235b-a22b-instruct": 0.00275,
+      "google/gemma-4-31b-it": 0.00169
+    },
+    "E4L": {
+      "google/gemini-2.5-flash": 0.01025
+    },
+    "cohortTotals": {
+      "E4": 1.0287,
+      "E4L": 0.2051,
+      "all": 1.2338
+    }
+  }
+}

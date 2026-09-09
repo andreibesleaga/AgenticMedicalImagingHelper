@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4L/00019779/series_3/00019779_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Scoliosis of the thoracic spine, convex to the right.\",\n    \"Ribs and clavicles appear unremarkable.\",\n    \"Lung fields are clear without evidence of consolidation or effusions.\",\n    \"Cardiomediastinal silhouette is within normal limits for age and body habitus.\",\n    \"Diaphragmatic contours are smooth and regular.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Thoracic Scoliosis\",\n      \"description\": \"Right-sided convexity of the thoracic spine. Exact Cobb angle measurement not possible without specific views and marking, but a visible curvature is present.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The X-ray shows a slight sideways curve in the upper part of the spine, which is a condition called scoliosis. This curve goes towards the right side. The lungs and heart appear normal, and there are no signs of any other significant issues in the chest area. This type of scoliosis is generally considered mild, but a doctor would need to determine if any further evaluation or treatment is necessary.\",\n  \"references\": [\n    \"https://www.spine.org/conditions/scoliosis/adult-scoliosis\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK557688/\",\n    \"https://radiopaedia.org/articles/scoliosis\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Scoliosis of the thoracic spine, convex to the right.",
+    "Ribs and clavicles appear unremarkable.",
+    "Lung fields are clear without evidence of consolidation or effusions.",
+    "Cardiomediastinal silhouette is within normal limits for age and body habitus.",
+    "Diaphragmatic contours are smooth and regular."
+  ],
+  "abnormalities": [
+    {
+      "name": "Thoracic Scoliosis",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Right-sided convexity of the thoracic spine. Exact Cobb angle measurement not possible without specific views and marking, but a visible curvature is present."
+    }
+  ],
+  "summary": "The X-ray shows a slight sideways curve in the upper part of the spine, which is a condition called scoliosis. This curve goes towards the right side. The lungs and heart appear normal, and there are no signs of any other significant issues in the chest area. This type of scoliosis is generally considered mild, but a doctor would need to determine if any further evaluation or treatment is necessary.",
+  "references": [
+    "https://www.spine.org/conditions/scoliosis/adult-scoliosis",
+    "https://www.ncbi.nlm.nih.gov/books/NBK557688/",
+    "https://radiopaedia.org/articles/scoliosis"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 20731,
+    "bytesOut": 20731,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:25:53.619Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

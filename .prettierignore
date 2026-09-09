@@ -1,0 +1,47 @@
+# Build and install output
+dist/
+.sime-dist/
+coverage/
+node_modules/
+
+# Local-only paper / demo-recording material (gitignored, never published)
+paper-work/
+
+# Generated at runtime, never hand-edited
+demo/output/
+demo/tmp/
+demo/probe-results.json
+# The run archive is COMMITTED evidence and must never be touched: every file
+# under runs/<id>/output/ is covered by that run's `run_manifest.json` hashes,
+# so reformatting even one of them would make `verify-manifest` fail.
+experiments/sime2026/runs/
+experiments/sime2026/*.jsonl
+experiments/sime2026/*.log
+experiments/sime2026/*.csv
+experiments/sime2026/*.csv.gz
+
+# Committed experiment evidence, written by the experiment scripts. Prettier is
+# kept off them so that a regeneration produces a content-only diff instead of a
+# whole-file reformat: they are checked by re-running the script and comparing
+# the numbers, not by Prettier.
+#
+# They are content-stable, NOT byte-stable, and no claim of byte-identity is
+# made for them:
+#   * E1-fairness-benchmark-results.md stamps the generation date
+#     (scripts/fairness-benchmark.ts) and E5-label-agreement.md / .json stamp a
+#     full timestamp (experiments/sime2026/label-agreement.ts), so those fields
+#     change on every run;
+#   * full-dataset-scan.md records machine-specific wall times and throughput;
+#   * E1-fairness-benchmark-results.md, E3-payload-e4-224px.md and
+#     full-dataset-scan.md were Prettier-formatted once before being listed
+#     here, so their Markdown table padding differs from a fresh generator run
+#     even where every number is identical.
+# Re-deriving them is a check on the numbers, never a byte comparison.
+experiments/sime2026/E1-fairness-benchmark-results.md
+experiments/sime2026/E3-payload-*.md
+experiments/sime2026/E5-label-agreement.md
+experiments/sime2026/E5-label-agreement.json
+experiments/sime2026/full-dataset-scan.md
+experiments/sime2026/probe-results.md
+experiments/sime2026/probe-results.json
+experiments/sime2026/nih-selection.json

@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_3/img_13_00026971_015.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest and Abdomen (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are well-expanded without evidence of focal consolidation, pneumothorax, or large pleural effusion. Vascular markings appear within normal limits.\",\n    \"Cardiac silhouette is not enlarged.\",\n    \"Diaphragmatic contours are clear.\",\n    \"Bony structures of the thoracic cage and upper abdomen appear intact, without acute fracture or destructive lesions.\",\n    \"Multiple dilated bowel loops are noted in the mid and lower abdomen, suggesting bowel obstruction.\",\n    \"No free air under the diaphragm is visualized.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bowel Obstruction\",\n      \"description\": \"Multiple dilated loops of small bowel, characterized by air-fluid levels and an increased caliber, are present in the mid and lower abdomen. This finding is highly suggestive of a small bowel obstruction.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The X-ray shows that your lungs and heart appear normal. However, there are several loops of bowel in your abdomen that look distended and filled with air, which suggests a blockage in your intestines. This condition, called a bowel obstruction, means that the normal passage of food or waste through your digestive system is impeded. There is no evidence of a hole in your bowel (pneumoperitoneum).\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8978144/\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria/ACR-Appropriateness-Criteria-Bowel-Obstruction\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest and Abdomen (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are well-expanded without evidence of focal consolidation, pneumothorax, or large pleural effusion. Vascular markings appear within normal limits.",
+    "Cardiac silhouette is not enlarged.",
+    "Diaphragmatic contours are clear.",
+    "Bony structures of the thoracic cage and upper abdomen appear intact, without acute fracture or destructive lesions.",
+    "Multiple dilated bowel loops are noted in the mid and lower abdomen, suggesting bowel obstruction.",
+    "No free air under the diaphragm is visualized."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bowel Obstruction",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Multiple dilated loops of small bowel, characterized by air-fluid levels and an increased caliber, are present in the mid and lower abdomen. This finding is highly suggestive of a small bowel obstruction."
+    }
+  ],
+  "summary": "The X-ray shows that your lungs and heart appear normal. However, there are several loops of bowel in your abdomen that look distended and filled with air, which suggests a blockage in your intestines. This condition, called a bowel obstruction, means that the normal passage of food or waste through your digestive system is impeded. There is no evidence of a hole in your bowel (pneumoperitoneum).",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8978144/",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria/ACR-Appropriateness-Criteria-Bowel-Obstruction"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22285,
+    "bytesOut": 22285,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:07:42.652Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

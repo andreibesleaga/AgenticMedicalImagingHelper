@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S3x10/series_2/img_08_00012359_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are well-expanded with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Bilateral hemidiaphragms are intact and sharply demarcated, with the left hemidiaphragm appearing slightly lower than the right, which can be a normal variant.\",\n    \"Cardiac silhouette is within normal limits for size and contour.\",\n    \"Mediastinal contours are unremarkable.\",\n    \"Bony thorax shows no acute fractures or destructive lesions.\",\n    \"The presence of air under the left hemidiaphragm (pneumoperitoneum) is noted.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pneumoperitoneum\",\n      \"description\": \"Presence of free air under the left hemidiaphragm, which is highly suggestive of pneumoperitoneum. This finding requires immediate clinical correlation.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows that your lungs, heart, and bones appear normal. However, there is some air visible under your left diaphragm. This condition, called pneumoperitoneum, means there's air in your abdominal cavity, which is usually a sign of a problem like a perforation (a hole) in an abdominal organ. This finding needs urgent medical attention to determine the cause and appropriate treatment.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pneumoperitoneum-2?lang=us\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900403/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are well-expanded with no focal consolidation, pleural effusion, or pneumothorax.",
+    "Bilateral hemidiaphragms are intact and sharply demarcated, with the left hemidiaphragm appearing slightly lower than the right, which can be a normal variant.",
+    "Cardiac silhouette is within normal limits for size and contour.",
+    "Mediastinal contours are unremarkable.",
+    "Bony thorax shows no acute fractures or destructive lesions.",
+    "The presence of air under the left hemidiaphragm (pneumoperitoneum) is noted."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pneumoperitoneum",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Presence of free air under the left hemidiaphragm, which is highly suggestive of pneumoperitoneum. This finding requires immediate clinical correlation."
+    }
+  ],
+  "summary": "The X-ray of your chest shows that your lungs, heart, and bones appear normal. However, there is some air visible under your left diaphragm. This condition, called pneumoperitoneum, means there's air in your abdominal cavity, which is usually a sign of a problem like a perforation (a hole) in an abdominal organ. This finding needs urgent medical attention to determine the cause and appropriate treatment.",
+  "references": [
+    "https://radiopaedia.org/articles/pneumoperitoneum-2?lang=us",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900403/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23356,
+    "bytesOut": 23356,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:03:46.311Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

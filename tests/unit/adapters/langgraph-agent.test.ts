@@ -1,5 +1,10 @@
 import { describe, it, expect, jest, beforeEach } from "@jest/globals";
-import type { GraphState, SeriesSummary, TemporalAnalysis, AnalyzeOptions } from "../../../src/domain/types.js";
+import type {
+  GraphState,
+  SeriesSummary,
+  TemporalAnalysis,
+  AnalyzeOptions,
+} from "../../../src/domain/types.js";
 import { DISCLAIMER } from "../../../src/domain/types.js";
 import type { GeminiClient } from "../../../src/infrastructure/gemini-client.js";
 
@@ -73,9 +78,7 @@ describe("runMedicalImagingAgent", () => {
   });
 
   it("returns a GraphState with evolutionResult populated", async () => {
-    const { runMedicalImagingAgent } = await import(
-      "../../../src/adapters/langgraph-agent.js"
-    );
+    const { runMedicalImagingAgent } = await import("../../../src/adapters/langgraph-agent.js");
 
     const options: AnalyzeOptions = { concurrency: 2, verbose: false };
     const result: GraphState = await runMedicalImagingAgent(
@@ -97,9 +100,7 @@ describe("runMedicalImagingAgent", () => {
   });
 
   it("calls analyzeImage for each image path", async () => {
-    const { runMedicalImagingAgent } = await import(
-      "../../../src/adapters/langgraph-agent.js"
-    );
+    const { runMedicalImagingAgent } = await import("../../../src/adapters/langgraph-agent.js");
 
     const imgResult = (imgPath: string) => ({
       imagePath: imgPath,
@@ -132,9 +133,7 @@ describe("runMedicalImagingAgent", () => {
   });
 
   it("calls synthesizeSeries once per series", async () => {
-    const { runMedicalImagingAgent } = await import(
-      "../../../src/adapters/langgraph-agent.js"
-    );
+    const { runMedicalImagingAgent } = await import("../../../src/adapters/langgraph-agent.js");
 
     synthFn.mockResolvedValueOnce(makeSeriesSummary("s1"));
     synthFn.mockResolvedValueOnce(makeSeriesSummary("s2"));
@@ -180,9 +179,7 @@ describe("runMedicalImagingAgent", () => {
   });
 
   it("calls analyzeEvolution once with all series summaries", async () => {
-    const { runMedicalImagingAgent } = await import(
-      "../../../src/adapters/langgraph-agent.js"
-    );
+    const { runMedicalImagingAgent } = await import("../../../src/adapters/langgraph-agent.js");
 
     const options: AnalyzeOptions = { concurrency: 2, verbose: false };
     await runMedicalImagingAgent(
@@ -197,9 +194,7 @@ describe("runMedicalImagingAgent", () => {
   });
 
   it("populates imageResults in returned state", async () => {
-    const { runMedicalImagingAgent } = await import(
-      "../../../src/adapters/langgraph-agent.js"
-    );
+    const { runMedicalImagingAgent } = await import("../../../src/adapters/langgraph-agent.js");
 
     const options: AnalyzeOptions = { concurrency: 2, verbose: false };
     const result = await runMedicalImagingAgent(
@@ -215,9 +210,7 @@ describe("runMedicalImagingAgent", () => {
   });
 
   it("populates seriesResults in returned state", async () => {
-    const { runMedicalImagingAgent } = await import(
-      "../../../src/adapters/langgraph-agent.js"
-    );
+    const { runMedicalImagingAgent } = await import("../../../src/adapters/langgraph-agent.js");
 
     const options: AnalyzeOptions = { concurrency: 2, verbose: false };
     const result = await runMedicalImagingAgent(
@@ -233,9 +226,7 @@ describe("runMedicalImagingAgent", () => {
   });
 
   it("threads rootContextText through to the returned state", async () => {
-    const { runMedicalImagingAgent } = await import(
-      "../../../src/adapters/langgraph-agent.js"
-    );
+    const { runMedicalImagingAgent } = await import("../../../src/adapters/langgraph-agent.js");
 
     const options: AnalyzeOptions = { concurrency: 2, verbose: false };
     const result = await runMedicalImagingAgent(
@@ -251,9 +242,7 @@ describe("runMedicalImagingAgent", () => {
   });
 
   it("leaves rootContextText undefined when not provided", async () => {
-    const { runMedicalImagingAgent } = await import(
-      "../../../src/adapters/langgraph-agent.js"
-    );
+    const { runMedicalImagingAgent } = await import("../../../src/adapters/langgraph-agent.js");
 
     const options: AnalyzeOptions = { concurrency: 2, verbose: false };
     const result = await runMedicalImagingAgent(
@@ -268,9 +257,7 @@ describe("runMedicalImagingAgent", () => {
   });
 
   it("propagates an error thrown by a node (logged then rethrown)", async () => {
-    const { runMedicalImagingAgent } = await import(
-      "../../../src/adapters/langgraph-agent.js"
-    );
+    const { runMedicalImagingAgent } = await import("../../../src/adapters/langgraph-agent.js");
 
     evolutionFn.mockRejectedValueOnce(new Error("evolution boom"));
 

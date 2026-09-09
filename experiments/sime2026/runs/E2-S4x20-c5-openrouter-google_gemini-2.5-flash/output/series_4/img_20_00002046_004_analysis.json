@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_4/img_20_00002046_004.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Extensive bilateral patchy opacities are noted, predominantly in the mid and lower lung zones.\",\n    \"The opacities appear consolidative in nature, with air bronchograms visible within the affected areas, particularly on the right.\",\n    \"The right hemidiaphragm appears obscured, consistent with consolidation in the right lower lobe.\",\n    \"The left costophrenic angle is also somewhat blunted, suggesting possible effusions or adjacent inflammatory changes.\",\n    \"Cardiac silhouette appears within normal limits for size.\",\n    \"No obvious pneumothorax is identified.\",\n    \"Bony thorax is intact without acute fracture or destructive lesion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Lung Consolidations\",\n      \"description\": \"Extensive patchy, consolidative opacities with air bronchograms are present bilaterally, more pronounced in the mid and lower lung zones. This finding is highly suggestive of extensive pneumonia or acute respiratory distress syndrome (ARDS).\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Right Hemidiaphragm Obscuration\",\n      \"description\": \"The right hemidiaphragm is poorly visualized, consistent with consolidation in the adjacent right lower lobe, leading to silhouette sign.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Left Costophrenic Angle Blunting\",\n      \"description\": \"Blunting of the left costophrenic angle is noted, which could indicate a small pleural effusion or inflammatory changes in the adjacent lung/pleura.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 70\n    }\n  ],\n  \"summary\": \"The chest X-ray shows significant changes in both lungs, with widespread areas of haziness and consolidation, especially in the middle and lower parts. This pattern strongly suggests a serious lung infection like pneumonia or a condition causing widespread lung inflammation. The right side of the diaphragm is also obscured, indicating that the lung changes extend to that area. There might also be a small amount of fluid around the left lung. These findings are concerning and warrant prompt medical evaluation and treatment.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/consolidation-lung?lang=gb\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8905386/\",\n    \"https://www.ajronline.org/doi/full/10.2214/AJR.18.2.193\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Extensive bilateral patchy opacities are noted, predominantly in the mid and lower lung zones.",
+    "The opacities appear consolidative in nature, with air bronchograms visible within the affected areas, particularly on the right.",
+    "The right hemidiaphragm appears obscured, consistent with consolidation in the right lower lobe.",
+    "The left costophrenic angle is also somewhat blunted, suggesting possible effusions or adjacent inflammatory changes.",
+    "Cardiac silhouette appears within normal limits for size.",
+    "No obvious pneumothorax is identified.",
+    "Bony thorax is intact without acute fracture or destructive lesion."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Lung Consolidations",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Extensive patchy, consolidative opacities with air bronchograms are present bilaterally, more pronounced in the mid and lower lung zones. This finding is highly suggestive of extensive pneumonia or acute respiratory distress syndrome (ARDS)."
+    },
+    {
+      "name": "Right Hemidiaphragm Obscuration",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The right hemidiaphragm is poorly visualized, consistent with consolidation in the adjacent right lower lobe, leading to silhouette sign."
+    },
+    {
+      "name": "Left Costophrenic Angle Blunting",
+      "severity": "Mild",
+      "confidence": 70,
+      "description": "Blunting of the left costophrenic angle is noted, which could indicate a small pleural effusion or inflammatory changes in the adjacent lung/pleura."
+    }
+  ],
+  "summary": "The chest X-ray shows significant changes in both lungs, with widespread areas of haziness and consolidation, especially in the middle and lower parts. This pattern strongly suggests a serious lung infection like pneumonia or a condition causing widespread lung inflammation. The right side of the diaphragm is also obscured, indicating that the lung changes extend to that area. There might also be a small amount of fluid around the left lung. These findings are concerning and warrant prompt medical evaluation and treatment.",
+  "references": [
+    "https://radiopaedia.org/articles/consolidation-lung?lang=gb",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8905386/",
+    "https://www.ajronline.org/doi/full/10.2214/AJR.18.2.193"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22055,
+    "bytesOut": 22055,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:11:33.301Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

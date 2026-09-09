@@ -118,7 +118,7 @@
 
 **Given**: `input/` contains `series_1/`, `series_2/`, `series_3/`
 
-**When**: `medical-imaging analyze ./input --series series_1,series_3`
+**When**: `medical-imaging analyze ./input --series series_1 series_3`
 
 **Then**:
 

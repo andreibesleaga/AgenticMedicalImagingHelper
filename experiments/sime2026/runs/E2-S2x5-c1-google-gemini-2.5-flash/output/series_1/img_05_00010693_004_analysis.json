@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S2x5/series_1/img_05_00010693_004.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "```json\n{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lung fields are clear with no evidence of focal consolidation, pleural effusion, or pneumothorax.\",\n    \"The cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"The bony thorax, including ribs, clavicles, and visualized thoracic spine, appears unremarkable.\",\n    \"The hemidiaphragms are intact and show clear costophrenic angles.\",\n    \"A metallic ring-like structure, consistent with a gastric band or ring, is observed projected over the upper abdomen/lower mediastinum region. A connecting port or tubing is not clearly visualized, but the main ring component is distinct.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Gastric band/ring\",\n      \"description\": \"A metallic, ring-shaped device is present in the upper abdomen, consistent with an adjustable gastric band or gastric ring, commonly used for bariatric surgery. Its position appears stable on this single view.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This is an X-ray of the chest. The lungs, heart, and bones of the chest appear healthy. There is a metallic ring visible in the upper part of the belly area, which is consistent with a gastric band or ring, a device often used in weight-loss surgery. Its placement looks stable on this image. No other significant issues are noted in the chest.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/radiographics.29.3.gr09e32\",\n    \"https://radiopaedia.org/articles/laparoscopic-adjustable-gastric-banding\"\n  ]\n}\n```",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lung fields are clear with no evidence of focal consolidation, pleural effusion, or pneumothorax.",
+    "The cardiomediastinal silhouette is within normal limits for size and contour.",
+    "The bony thorax, including ribs, clavicles, and visualized thoracic spine, appears unremarkable.",
+    "The hemidiaphragms are intact and show clear costophrenic angles.",
+    "A metallic ring-like structure, consistent with a gastric band or ring, is observed projected over the upper abdomen/lower mediastinum region. A connecting port or tubing is not clearly visualized, but the main ring component is distinct."
+  ],
+  "abnormalities": [
+    {
+      "name": "Gastric band/ring",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A metallic, ring-shaped device is present in the upper abdomen, consistent with an adjustable gastric band or gastric ring, commonly used for bariatric surgery. Its position appears stable on this single view."
+    }
+  ],
+  "summary": "This is an X-ray of the chest. The lungs, heart, and bones of the chest appear healthy. There is a metallic ring visible in the upper part of the belly area, which is consistent with a gastric band or ring, a device often used in weight-loss surgery. Its placement looks stable on this image. No other significant issues are noted in the chest.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/radiographics.29.3.gr09e32",
+    "https://radiopaedia.org/articles/laparoscopic-adjustable-gastric-banding"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22683,
+    "bytesOut": 22683,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:30:08.023Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

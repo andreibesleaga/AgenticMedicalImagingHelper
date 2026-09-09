@@ -1,0 +1,48 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4L/00015553/series_1/00015553_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Metallic foreign body is noted in the soft tissues of the left shoulder region, superior to the humeral head.\",\n    \"Bilateral lung fields are clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Bony structures of the thoracic cage and shoulders appear intact, apart from the foreign body.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Foreign body in left shoulder\",\n      \"description\": \"A dense, metallic foreign body is identified in the soft tissues superior to the left humeral head, consistent with a projectile fragment or similar metallic object.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows a clear image of the lungs and heart, which appear normal. However, there is a metallic object, likely a small fragment of a bullet or similar item, lodged in the soft tissues of the left shoulder, above the joint. There are no other notable issues in the chest area.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/10.1148/rg.274075079\",\n    \"https://radiopaedia.org/articles/foreign-body-soft-tissue\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Metallic foreign body is noted in the soft tissues of the left shoulder region, superior to the humeral head.",
+    "Bilateral lung fields are clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Bony structures of the thoracic cage and shoulders appear intact, apart from the foreign body."
+  ],
+  "abnormalities": [
+    {
+      "name": "Foreign body in left shoulder",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "A dense, metallic foreign body is identified in the soft tissues superior to the left humeral head, consistent with a projectile fragment or similar metallic object."
+    }
+  ],
+  "summary": "This X-ray of the chest shows a clear image of the lungs and heart, which appear normal. However, there is a metallic object, likely a small fragment of a bullet or similar item, lodged in the soft tissues of the left shoulder, above the joint. There are no other notable issues in the chest area.",
+  "references": [
+    "https://pubs.rsna.org/doi/10.1148/rg.274075079",
+    "https://radiopaedia.org/articles/foreign-body-soft-tissue"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 14646,
+    "bytesOut": 14646,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:23:18.206Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

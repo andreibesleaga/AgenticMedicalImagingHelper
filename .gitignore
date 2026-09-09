@@ -36,3 +36,31 @@ agents
 project
 setup-context.sh
 .sime-dist/
+
+# ─── Local-only paper / demo-recording material ──────────────────────────────
+# Paper drafts, superseded archives, paper LaTeX tooling output and
+# presentation-recording artefacts. Kept on the owner's machine, never
+# published. See paper-work/README.md for what lives there and why.
+paper-work/
+
+# ─── Not committed: raw console logs and bulky regenerable data ─────────────
+# The principle: committed = the evidence a reader needs to judge the software
+# and to recompute every published number without re-billing an API — every
+# experiment report, results.jsonl, the cohort selections, the scripts and
+# their tests, and the per-run model outputs and sealed run manifests under
+# experiments/sime2026/runs/. Ignored = raw console transcripts (stdout/stderr,
+# already summarised by the reports), bulky regenerable CSV, and local
+# recording material.
+experiments/sime2026/runs/**/stdout.txt
+experiments/sime2026/runs/**/stderr.txt
+# The generic `input/` and `output/` rules above are meant for the CLI's own
+# working directories; the run archive's per-run output/ trees are evidence.
+!experiments/sime2026/runs/*/output/
+!experiments/sime2026/runs/*/input/
+experiments/sime2026/*.csv
+experiments/sime2026/*.csv.gz
+experiments/sime2026/batch-resume.log
+demo/output/
+demo/tmp/
+demo/probe-results.json
+# (.sime-dist/ is already ignored above.)

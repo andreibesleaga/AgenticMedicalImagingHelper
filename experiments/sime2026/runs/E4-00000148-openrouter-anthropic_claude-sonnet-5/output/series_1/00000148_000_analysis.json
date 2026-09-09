@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000148/series_1/00000148_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Fair\",\"findings\":[\"Bilateral lung fields visualized with symmetric aeration\",\"Cardiac silhouette appears within upper normal limits, difficult to fully assess due to positioning/rotation\",\"Mediastinal structures appear grossly midline\",\"Visible bony thorax including clavicles and ribs, no obvious acute fracture identified\",\"Costophrenic angles appear grossly clear, though image cropping limits full assessment of lung bases\",\"Increased opacity noted in the left lower lung zone region\",\"Some blurring/motion artifact affecting overall image sharpness\"],\"abnormalities\":[{\"name\":\"Left lower zone opacity\",\"description\":\"There is a region of increased radiopacity in the left lower lung field which could represent an overlying structure, artifact, or underlying parenchymal process; further correlation with clinical history and possibly a lateral view or CT would be helpful\",\"severity\":\"Mild\",\"confidence\":40},{\"name\":\"Suboptimal image quality\",\"description\":\"The image shows some blurring and cropping affecting the lower lung fields and costophrenic angles, limiting complete evaluation\",\"severity\":\"Mild\",\"confidence\":55}],\"summary\":\"This is a chest X-ray showing the lungs, heart, and rib cage. The lungs generally appear aerated (filled with air, which is normal), and the heart size looks roughly within normal limits, though the image quality makes precise measurement difficult. There is a hazy area in the lower left part of the lung that could be due to the way the image was taken, an overlying body structure, or could reflect a finding that would need a follow-up view or clinical correlation to characterize further. Overall, this image has some technical limitations (slight blurriness and cropping) that reduce the certainty of the assessment. A qualified radiologist should review the actual film for a definitive interpretation.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.acr.org/Clinical-Resources/Radiology-Safety/Radiation-Safety\",\"https://pubs.rsna.org/journal/radiographics\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Fair",
+  "findings": [
+    "Bilateral lung fields visualized with symmetric aeration",
+    "Cardiac silhouette appears within upper normal limits, difficult to fully assess due to positioning/rotation",
+    "Mediastinal structures appear grossly midline",
+    "Visible bony thorax including clavicles and ribs, no obvious acute fracture identified",
+    "Costophrenic angles appear grossly clear, though image cropping limits full assessment of lung bases",
+    "Increased opacity noted in the left lower lung zone region",
+    "Some blurring/motion artifact affecting overall image sharpness"
+  ],
+  "abnormalities": [
+    {
+      "name": "Left lower zone opacity",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "There is a region of increased radiopacity in the left lower lung field which could represent an overlying structure, artifact, or underlying parenchymal process; further correlation with clinical history and possibly a lateral view or CT would be helpful"
+    },
+    {
+      "name": "Suboptimal image quality",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "The image shows some blurring and cropping affecting the lower lung fields and costophrenic angles, limiting complete evaluation"
+    }
+  ],
+  "summary": "This is a chest X-ray showing the lungs, heart, and rib cage. The lungs generally appear aerated (filled with air, which is normal), and the heart size looks roughly within normal limits, though the image quality makes precise measurement difficult. There is a hazy area in the lower left part of the lung that could be due to the way the image was taken, an overlying body structure, or could reflect a finding that would need a follow-up view or clinical correlation to characterize further. Overall, this image has some technical limitations (slight blurriness and cropping) that reduce the certainty of the assessment. A qualified radiologist should review the actual film for a definitive interpretation.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.acr.org/Clinical-Resources/Radiology-Safety/Radiation-Safety",
+    "https://pubs.rsna.org/journal/radiographics"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21383,
+    "bytesOut": 21383,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-09T07:09:46.892Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

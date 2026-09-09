@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S2x5/series_2/img_03_00013795_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP) of a pediatric patient\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The cardiac silhouette is enlarged, with a cardiothoracic ratio appearing greater than 0.5, suggesting cardiomegaly.\",\n    \"The left hemidiaphragm is elevated, and a large, well-defined gas-filled structure is noted inferior to it, likely representing a portion of the stomach or bowel herniated into the thoracic cavity.\",\n    \"The lung fields appear clear bilaterally without evidence of focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Bony thorax appears unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette appears enlarged, with a cardiothoracic ratio suggestive of cardiomegaly. However, assessment on an AP view can lead to a spuriously increased ratio.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Elevated Left Hemidiaphragm with Subdiaphragmatic Gas\",\n      \"description\": \"An elevated left hemidiaphragm is observed with a large gas-filled structure beneath it, highly suggestive of a large hiatal hernia (e.g., intrathoracic stomach). Other possibilities include significant gastric distention or eventration of the diaphragm.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This chest X-ray shows that the patient's heart appears larger than normal for their chest size, a condition known as cardiomegaly. It's important to note that the way the X-ray was taken (AP view) can sometimes make the heart look bigger than it truly is. Additionally, the left side of the diaphragm, which is a muscle that helps with breathing, is pushed up. Beneath this elevated diaphragm, there is a large bubble of gas, which is very characteristic of a large hiatal hernia, meaning a portion of the stomach or bowel has moved up into the chest cavity. This herniation can also contribute to the appearance of an enlarged heart due to its position in the chest. The lungs appear healthy and clear. Further imaging, such as an upper GI series or CT scan, would likely be recommended to confirm the exact nature and extent of the diaphragmatic abnormality and to further evaluate the heart size.\",\n  \"references\": [\n    \"https://www.radiologymasterclass.co.uk/tutorials/chest/diaphragmatic-abnormalities/raised-hemidiaphragm\",\n    \"https://radiologykey.com/chest-radiography-in-pediatric-cardiovascular-disease/\",\n    \"https://www.med4vl.com/chest-x-ray-findings-of-a-hiatal-hernia/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP) of a pediatric patient",
+  "quality": "Good",
+  "findings": [
+    "The cardiac silhouette is enlarged, with a cardiothoracic ratio appearing greater than 0.5, suggesting cardiomegaly.",
+    "The left hemidiaphragm is elevated, and a large, well-defined gas-filled structure is noted inferior to it, likely representing a portion of the stomach or bowel herniated into the thoracic cavity.",
+    "The lung fields appear clear bilaterally without evidence of focal consolidation, pleural effusion, or pneumothorax.",
+    "Bony thorax appears unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "The cardiac silhouette appears enlarged, with a cardiothoracic ratio suggestive of cardiomegaly. However, assessment on an AP view can lead to a spuriously increased ratio."
+    },
+    {
+      "name": "Elevated Left Hemidiaphragm with Subdiaphragmatic Gas",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "An elevated left hemidiaphragm is observed with a large gas-filled structure beneath it, highly suggestive of a large hiatal hernia (e.g., intrathoracic stomach). Other possibilities include significant gastric distention or eventration of the diaphragm."
+    }
+  ],
+  "summary": "This chest X-ray shows that the patient's heart appears larger than normal for their chest size, a condition known as cardiomegaly. It's important to note that the way the X-ray was taken (AP view) can sometimes make the heart look bigger than it truly is. Additionally, the left side of the diaphragm, which is a muscle that helps with breathing, is pushed up. Beneath this elevated diaphragm, there is a large bubble of gas, which is very characteristic of a large hiatal hernia, meaning a portion of the stomach or bowel has moved up into the chest cavity. This herniation can also contribute to the appearance of an enlarged heart due to its position in the chest. The lungs appear healthy and clear. Further imaging, such as an upper GI series or CT scan, would likely be recommended to confirm the exact nature and extent of the diaphragmatic abnormality and to further evaluate the heart size.",
+  "references": [
+    "https://www.radiologymasterclass.co.uk/tutorials/chest/diaphragmatic-abnormalities/raised-hemidiaphragm",
+    "https://radiologykey.com/chest-radiography-in-pediatric-cardiovascular-disease/",
+    "https://www.med4vl.com/chest-x-ray-findings-of-a-hiatal-hernia/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 16861,
+    "bytesOut": 16861,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:31:05.922Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

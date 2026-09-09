@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_2/img_08_00029278_002.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No evidence of acute cardiopulmonary pathology.\",\n    \"Lung fields are clear bilaterally without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Hilar regions appear unremarkable.\",\n    \"Diaphragms are intact and clear costophrenic angles are noted bilaterally.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray shows no signs of active heart or lung problems. The lungs appear clear, and there is no evidence of fluid around the lungs (pleural effusion) or collapsed lung (pneumothorax). The heart and major blood vessels in the chest (cardiomediastinal silhouette) are of normal size and shape. The areas where the major blood vessels and airways enter the lungs (hilar regions) look normal, and the diaphragms (muscles separating the chest and abdomen) are intact.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1147/CJ.44.2.146\",\n    \"https://www.acr.org/-/media/ACR/Files/Practice-Parameters/Xray-Chest.pdf\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No evidence of acute cardiopulmonary pathology.",
+    "Lung fields are clear bilaterally without focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Hilar regions appear unremarkable.",
+    "Diaphragms are intact and clear costophrenic angles are noted bilaterally."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows no signs of active heart or lung problems. The lungs appear clear, and there is no evidence of fluid around the lungs (pleural effusion) or collapsed lung (pneumothorax). The heart and major blood vessels in the chest (cardiomediastinal silhouette) are of normal size and shape. The areas where the major blood vessels and airways enter the lungs (hilar regions) look normal, and the diaphragms (muscles separating the chest and abdomen) are intact.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1147/CJ.44.2.146",
+    "https://www.acr.org/-/media/ACR/Files/Practice-Parameters/Xray-Chest.pdf"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 20442,
+    "bytesOut": 20442,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:10:49.733Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

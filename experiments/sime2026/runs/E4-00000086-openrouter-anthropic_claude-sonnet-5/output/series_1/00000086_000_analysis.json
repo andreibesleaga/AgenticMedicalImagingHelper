@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000086/series_1/00000086_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Fair\",\"findings\":[\"Bilateral lung fields visualized with symmetric inflation\",\"Cardiac silhouette appears within normal limits in size, though partially obscured by exposure\",\"Increased haziness/opacity noted in perihilar and mid-zone regions bilaterally, more pronounced on the left\",\"Costophrenic angles appear grossly preserved though image quality limits assessment\",\"Mediastinal structures midline\",\"Visible skin fold/artifact possibly present on right upper chest overlying soft tissue\",\"Overall image slightly overexposed/underpenetrated in central regions limiting fine detail evaluation\"],\"abnormalities\":[{\"name\":\"Bilateral perihilar/mid-zone opacities\",\"description\":\"Increased density in the perihilar and mid-lung zones bilaterally, could represent vascular congestion, early infiltrates, or interstitial changes; left side appears more affected\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Suboptimal image quality\",\"description\":\"Image exposure and contrast appear suboptimal, with some areas overexposed centrally, limiting detailed evaluation of lung parenchyma and mediastinal structures\",\"severity\":\"Mild\",\"confidence\":55}],\"summary\":\"This is a chest X-ray showing the lungs, heart, and surrounding bones. There appears to be some hazy or cloudy areas in the middle parts of both lungs, especially on the left side, near where the airways branch out. This kind of finding can have many causes, ranging from fluid buildup, infection, or simply the way the X-ray was taken (positioning or technique) can make normal structures look denser than they are. The heart size looks generally normal. However, the overall image quality is not perfectly clear, which makes it harder to be fully certain about some details. It's important that a radiologist or your doctor review this image directly, ideally comparing it with your symptoms and possibly follow-up imaging, to determine if there's anything that needs further attention or if this is a normal variant caused by image technique.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph-normal\",\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\"https://pubs.rsna.org/journal/radiology\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Fair",
+  "findings": [
+    "Bilateral lung fields visualized with symmetric inflation",
+    "Cardiac silhouette appears within normal limits in size, though partially obscured by exposure",
+    "Increased haziness/opacity noted in perihilar and mid-zone regions bilaterally, more pronounced on the left",
+    "Costophrenic angles appear grossly preserved though image quality limits assessment",
+    "Mediastinal structures midline",
+    "Visible skin fold/artifact possibly present on right upper chest overlying soft tissue",
+    "Overall image slightly overexposed/underpenetrated in central regions limiting fine detail evaluation"
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral perihilar/mid-zone opacities",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "Increased density in the perihilar and mid-lung zones bilaterally, could represent vascular congestion, early infiltrates, or interstitial changes; left side appears more affected"
+    },
+    {
+      "name": "Suboptimal image quality",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Image exposure and contrast appear suboptimal, with some areas overexposed centrally, limiting detailed evaluation of lung parenchyma and mediastinal structures"
+    }
+  ],
+  "summary": "This is a chest X-ray showing the lungs, heart, and surrounding bones. There appears to be some hazy or cloudy areas in the middle parts of both lungs, especially on the left side, near where the airways branch out. This kind of finding can have many causes, ranging from fluid buildup, infection, or simply the way the X-ray was taken (positioning or technique) can make normal structures look denser than they are. The heart size looks generally normal. However, the overall image quality is not perfectly clear, which makes it harder to be fully certain about some details. It's important that a radiologist or your doctor review this image directly, ideally comparing it with your symptoms and possibly follow-up imaging, to determine if there's anything that needs further attention or if this is a normal variant caused by image technique.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-normal",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiology"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 20530,
+    "bytesOut": 20530,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-09T07:05:57.946Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

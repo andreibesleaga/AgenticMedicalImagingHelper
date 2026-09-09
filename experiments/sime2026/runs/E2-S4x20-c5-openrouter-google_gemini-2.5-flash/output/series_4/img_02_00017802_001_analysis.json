@@ -1,0 +1,48 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_4/img_02_00017802_001.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A right-sided peripherally inserted central catheter (PICC) line is noted, with its tip projecting over the right atrium, which appears to be in an appropriate position.\",\n    \"The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"The cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"The bony thorax shows no acute fractures or destructive lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"PICC line in situ\",\n      \"description\": \"A right-sided peripherally inserted central catheter (PICC) line is present, with its distal tip appropriately positioned in the right atrium.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows that a tube, called a PICC line, is properly placed on the right side of the chest, with its tip in the heart. The lungs look clear and healthy, with no signs of infection, fluid, or collapsed lung. The heart and major blood vessels appear normal in size and shape. The bones of the chest also look healthy, with no breaks or other problems.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900010/\",\n    \"https://radiologykey.com/chest-x-ray-interpretation/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A right-sided peripherally inserted central catheter (PICC) line is noted, with its tip projecting over the right atrium, which appears to be in an appropriate position.",
+    "The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "The cardiomediastinal silhouette is within normal limits for size and contour.",
+    "The bony thorax shows no acute fractures or destructive lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "PICC line in situ",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A right-sided peripherally inserted central catheter (PICC) line is present, with its distal tip appropriately positioned in the right atrium."
+    }
+  ],
+  "summary": "This X-ray of the chest shows that a tube, called a PICC line, is properly placed on the right side of the chest, with its tip in the heart. The lungs look clear and healthy, with no signs of infection, fluid, or collapsed lung. The heart and major blood vessels appear normal in size and shape. The bones of the chest also look healthy, with no breaks or other problems.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900010/",
+    "https://radiologykey.com/chest-x-ray-interpretation/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21742,
+    "bytesOut": 21742,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:11:16.399Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

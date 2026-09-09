@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# SIME 2026 reproducibility runs (E2 scalability, E4 longitudinal cohort).
+# Reproducibility runs for the experiment pack (E2 scalability, E4 longitudinal cohort).
 #
 # Inputs are prepared by prepare-nih.py into $INPUT (default ../../../nih-cxr14/input).
 # The CLI is driven exactly as a user would drive it; nothing here is special-cased.

@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S3x10/series_1/img_05_00010693_004.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No evidence of acute cardiopulmonary pathology on this chest X-ray.\",\n    \"Normal cardiac silhouette size and mediastinal contours.\",\n    \"Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"No evidence of hilar or mediastinal lymphadenopathy.\",\n    \"Surgical clips are noted in the right upper abdomen, likely related to a prior cholecystectomy or similar abdominal procedure.\",\n    \"There is a cardiac device, possibly a pacemaker lead or an occluder device, visualized in the region of the lower sternum/epigastrium, overlying the cardiac silhouette but appearing to be in the abdomen or lower chest.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical clips\",\n      \"description\": \"Multiple metallic surgical clips are identified in the right upper quadrant of the abdomen, consistent with a prior abdominal surgery, such as cholecystectomy.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Cardiac device/material\",\n      \"description\": \"A metallic, coiled structure, resembling a pacemaker lead or an occluder device, is seen projected over the lower mediastinum/epigastrium. Its exact nature and position require clinical correlation.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows healthy lungs and heart. There are no signs of pneumonia, fluid around the lungs, or a collapsed lung. We can see some surgical clips in the upper right part of the belly, which are likely from a previous operation. Also, there's a metallic device visible near the bottom of the breastbone, which could be part of a heart device or similar medical implant. These findings are generally considered normal for someone who has had these types of procedures.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.233025176\",\n    \"https://radiologykey.com/chest-x-ray-interpretation-basic-technique-and-common-findings/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No evidence of acute cardiopulmonary pathology on this chest X-ray.",
+    "Normal cardiac silhouette size and mediastinal contours.",
+    "Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.",
+    "No evidence of hilar or mediastinal lymphadenopathy.",
+    "Surgical clips are noted in the right upper abdomen, likely related to a prior cholecystectomy or similar abdominal procedure.",
+    "There is a cardiac device, possibly a pacemaker lead or an occluder device, visualized in the region of the lower sternum/epigastrium, overlying the cardiac silhouette but appearing to be in the abdomen or lower chest."
+  ],
+  "abnormalities": [
+    {
+      "name": "Surgical clips",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Multiple metallic surgical clips are identified in the right upper quadrant of the abdomen, consistent with a prior abdominal surgery, such as cholecystectomy."
+    },
+    {
+      "name": "Cardiac device/material",
+      "severity": "Normal",
+      "confidence": 90,
+      "description": "A metallic, coiled structure, resembling a pacemaker lead or an occluder device, is seen projected over the lower mediastinum/epigastrium. Its exact nature and position require clinical correlation."
+    }
+  ],
+  "summary": "The chest X-ray shows healthy lungs and heart. There are no signs of pneumonia, fluid around the lungs, or a collapsed lung. We can see some surgical clips in the upper right part of the belly, which are likely from a previous operation. Also, there's a metallic device visible near the bottom of the breastbone, which could be part of a heart device or similar medical implant. These findings are generally considered normal for someone who has had these types of procedures.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.233025176",
+    "https://radiologykey.com/chest-x-ray-interpretation-basic-technique-and-common-findings/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22683,
+    "bytesOut": 22683,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:03:32.058Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

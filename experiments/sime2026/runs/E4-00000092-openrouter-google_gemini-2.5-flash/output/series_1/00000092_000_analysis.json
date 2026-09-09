@@ -1,0 +1,63 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000092/series_1/00000092_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right-sided pleural effusion with blunting of the right costophrenic angle and obscuration of the right hemidiaphragm.\",\n    \"Diffuse interstitial opacities are noted throughout the right lung, particularly in the lower and mid zones, suggestive of consolidation or infiltrates.\",\n    \"Left lung appears clear with no overt consolidations or effusions.\",\n    \"Cardiac silhouette is mildly enlarged, with a cardiothoracic ratio appearing at the upper limits of normal.\",\n    \"No pneumothorax identified.\",\n    \"Bony thorax appears intact without acute fractures.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Pleural Effusion\",\n      \"description\": \"Blunting of the right costophrenic angle and obscuration of the right hemidiaphragm, consistent with a moderate right-sided pleural effusion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Right Lung Infiltrates/Consolidation\",\n      \"description\": \"Diffuse interstitial opacities and areas of consolidation are present in the right lung, primarily in the lower and mid lobes, indicating an infiltrative process.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette appears mildly enlarged, suggesting possible cardiomegaly, though this is an AP view which can exaggerate heart size.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows signs of fluid accumulation in the right lung, known as a pleural effusion, and some cloudy areas in the right lung consistent with inflammation or infection (infiltrates/consolidation). The heart also appears slightly larger than normal. These findings collectively suggest a significant issue in the right lung and potentially some heart involvement. Further clinical correlation and potentially additional imaging may be needed to determine the exact cause.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.303095116\",\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/pulmonary-consolidation\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right-sided pleural effusion with blunting of the right costophrenic angle and obscuration of the right hemidiaphragm.",
+    "Diffuse interstitial opacities are noted throughout the right lung, particularly in the lower and mid zones, suggestive of consolidation or infiltrates.",
+    "Left lung appears clear with no overt consolidations or effusions.",
+    "Cardiac silhouette is mildly enlarged, with a cardiothoracic ratio appearing at the upper limits of normal.",
+    "No pneumothorax identified.",
+    "Bony thorax appears intact without acute fractures."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Blunting of the right costophrenic angle and obscuration of the right hemidiaphragm, consistent with a moderate right-sided pleural effusion."
+    },
+    {
+      "name": "Right Lung Infiltrates/Consolidation",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse interstitial opacities and areas of consolidation are present in the right lung, primarily in the lower and mid lobes, indicating an infiltrative process."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "The cardiac silhouette appears mildly enlarged, suggesting possible cardiomegaly, though this is an AP view which can exaggerate heart size."
+    }
+  ],
+  "summary": "This X-ray of the chest shows signs of fluid accumulation in the right lung, known as a pleural effusion, and some cloudy areas in the right lung consistent with inflammation or infection (infiltrates/consolidation). The heart also appears slightly larger than normal. These findings collectively suggest a significant issue in the right lung and potentially some heart involvement. Further clinical correlation and potentially additional imaging may be needed to determine the exact cause.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.303095116",
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/pulmonary-consolidation"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22603,
+    "bytesOut": 22603,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:15:38.951Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

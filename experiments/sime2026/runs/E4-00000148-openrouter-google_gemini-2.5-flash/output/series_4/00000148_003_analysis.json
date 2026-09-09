@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000148/series_4/00000148_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A metallic foreign body, consistent with an endobronchial valve, is noted in the right mid-lung zone.\",\n    \"Bilateral lung fields appear clear with no focal consolidation or pleural effusion.\",\n    \"Cardiomediastinal silhouette is within normal limits.\",\n    \"Diaphragmatic contours are well-defined bilaterally.\",\n    \"Bony thorax appears intact with no acute fractures identified.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Endobronchial Valve\",\n      \"description\": \"A metallic, ring-like foreign body consistent with an endobronchial valve is present in the bronchus of the right mid-lung zone, likely placed for treatment of emphysema or air leak. This is an expected finding post-procedure.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a small, metallic device in the middle part of the right lung. This device is known as an endobronchial valve and is typically placed to help patients with conditions like severe emphysema breathe better by blocking off damaged parts of the lung. Aside from this expected finding, the lungs look clear, and there are no signs of infection, fluid accumulation, or other significant problems. The heart and surrounding structures also appear normal. There are no broken bones in the chest.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/endobronchial-valve\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8905204/\",\n    \"https://www.thoracic.org/patients/patient-resources/topic-specific-factsheets/bronchoscopic-lung-volume-reduction.pdf\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A metallic foreign body, consistent with an endobronchial valve, is noted in the right mid-lung zone.",
+    "Bilateral lung fields appear clear with no focal consolidation or pleural effusion.",
+    "Cardiomediastinal silhouette is within normal limits.",
+    "Diaphragmatic contours are well-defined bilaterally.",
+    "Bony thorax appears intact with no acute fractures identified."
+  ],
+  "abnormalities": [
+    {
+      "name": "Endobronchial Valve",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A metallic, ring-like foreign body consistent with an endobronchial valve is present in the bronchus of the right mid-lung zone, likely placed for treatment of emphysema or air leak. This is an expected finding post-procedure."
+    }
+  ],
+  "summary": "The chest X-ray shows a small, metallic device in the middle part of the right lung. This device is known as an endobronchial valve and is typically placed to help patients with conditions like severe emphysema breathe better by blocking off damaged parts of the lung. Aside from this expected finding, the lungs look clear, and there are no signs of infection, fluid accumulation, or other significant problems. The heart and surrounding structures also appear normal. There are no broken bones in the chest.",
+  "references": [
+    "https://radiopaedia.org/articles/endobronchial-valve",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8905204/",
+    "https://www.thoracic.org/patients/patient-resources/topic-specific-factsheets/bronchoscopic-lung-volume-reduction.pdf"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22876,
+    "bytesOut": 22876,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:16:38.171Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,59 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_4/img_12_00013917_025.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"There is a large, dense opacification in the lower and mid zones of the left lung field, consistent with a large left pleural effusion.\",\n    \"The left hemidiaphragm is obscured by the effusion.\",\n    \"The mediastinum appears shifted to the right, suggesting mass effect from the left pleural effusion.\",\n    \"The right lung field appears clear with no focal consolidation or effusion.\",\n    \"The right hemidiaphragm is well-defined.\",\n    \"The cardiac silhouette is not clearly delineated due to the effusion.\",\n    \"Bony structures appear intact.\",\n    \"Multiple radiopaque clips are noted in the left axillary region and over the bilateral shoulders, likely surgical clips or monitoring devices.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Pleural Effusion\",\n      \"description\": \"A large, dense opacification occupies the majority of the left hemithorax, obscuring the left hemidiaphragm and cardiac border, consistent with a significant pleural effusion. There is associated rightward mediastinal shift.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"The mediastinal structures are shifted to the right due to the mass effect from the large left pleural effusion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This X-ray shows a significant amount of fluid in the left lung space, known as a large left pleural effusion. This fluid is pushing the heart and other central chest structures (the mediastinum) over to the right side. The right lung appears clear. There are also some small metal clips visible in the shoulder and armpit areas, which are likely from previous surgery or medical devices. A pleural effusion can cause shortness of breath and usually requires medical attention to determine the cause and management.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMcp1000320\",\n    \"https://emedicine.medscape.com/article/354784-overview\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "There is a large, dense opacification in the lower and mid zones of the left lung field, consistent with a large left pleural effusion.",
+    "The left hemidiaphragm is obscured by the effusion.",
+    "The mediastinum appears shifted to the right, suggesting mass effect from the left pleural effusion.",
+    "The right lung field appears clear with no focal consolidation or effusion.",
+    "The right hemidiaphragm is well-defined.",
+    "The cardiac silhouette is not clearly delineated due to the effusion.",
+    "Bony structures appear intact.",
+    "Multiple radiopaque clips are noted in the left axillary region and over the bilateral shoulders, likely surgical clips or monitoring devices."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Pleural Effusion",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "A large, dense opacification occupies the majority of the left hemithorax, obscuring the left hemidiaphragm and cardiac border, consistent with a significant pleural effusion. There is associated rightward mediastinal shift."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The mediastinal structures are shifted to the right due to the mass effect from the large left pleural effusion."
+    }
+  ],
+  "summary": "This X-ray shows a significant amount of fluid in the left lung space, known as a large left pleural effusion. This fluid is pushing the heart and other central chest structures (the mediastinum) over to the right side. The right lung appears clear. There are also some small metal clips visible in the shoulder and armpit areas, which are likely from previous surgery or medical devices. A pleural effusion can cause shortness of breath and usually requires medical attention to determine the cause and management.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.nejm.org/doi/full/10.1056/NEJMcp1000320",
+    "https://emedicine.medscape.com/article/354784-overview"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21546,
+    "bytesOut": 21546,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:09:00.892Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

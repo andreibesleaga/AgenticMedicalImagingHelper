@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000296/series_3/00000296_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Presence of a peripherally inserted central catheter (PICC) line, with its tip projected in the superior vena cava.\",\n    \"Lungs appear clear with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is within normal limits.\",\n    \"Osseous structures appear intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"PICC line in situ\",\n      \"description\": \"A peripherally inserted central catheter (PICC) line is visualized, entering from the right upper extremity and extending centrally. Its tip is appropriately positioned in the superior vena cava, which is the large vein that carries deoxygenated blood from the upper half of the body to the right atrium of the heart. There are no immediate complications such as pneumothorax or malposition.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 98\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows that your lungs, heart, and bones in the chest area look healthy. There's a central line (PICC line) in place, which is a tube inserted into a vein, and it's properly positioned in a large vein near your heart. There are no signs of any immediate problems related to the line, and no other significant issues were seen in your chest.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.236025707\",\n    \"https://radiopaedia.org/articles/peripherally-inserted-central-catheter?lang=gb\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMra1510422\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Presence of a peripherally inserted central catheter (PICC) line, with its tip projected in the superior vena cava.",
+    "Lungs appear clear with no focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal silhouette is within normal limits.",
+    "Osseous structures appear intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "PICC line in situ",
+      "severity": "Normal",
+      "confidence": 98,
+      "description": "A peripherally inserted central catheter (PICC) line is visualized, entering from the right upper extremity and extending centrally. Its tip is appropriately positioned in the superior vena cava, which is the large vein that carries deoxygenated blood from the upper half of the body to the right atrium of the heart. There are no immediate complications such as pneumothorax or malposition."
+    }
+  ],
+  "summary": "This X-ray of the chest shows that your lungs, heart, and bones in the chest area look healthy. There's a central line (PICC line) in place, which is a tube inserted into a vein, and it's properly positioned in a large vein near your heart. There are no signs of any immediate problems related to the line, and no other significant issues were seen in your chest.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.236025707",
+    "https://radiopaedia.org/articles/peripherally-inserted-central-catheter?lang=gb",
+    "https://www.nejm.org/doi/full/10.1056/NEJMra1510422"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21200,
+    "bytesOut": 21200,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:18:33.896Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

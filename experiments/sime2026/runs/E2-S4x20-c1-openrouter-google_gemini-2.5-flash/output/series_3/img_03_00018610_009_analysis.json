@@ -1,0 +1,53 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_3/img_03_00018610_009.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Complete opacification of the right hemithorax with mediastinal shift to the left.\",\n    \"The left lung field appears hyperinflated with normal vascular markings.\",\n    \"No obvious bony abnormalities noted.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Hemithorax Opacification\",\n      \"description\": \"The entire right hemithorax is opacified, indicating a significant amount of fluid, consolidation, or mass, obscuring the lung parenchyma. This finding is associated with a marked mediastinal shift to the contralateral (left) side.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 98\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"The mediastinum, including the trachea and heart, is shifted significantly towards the left hemithorax, away from the opacified right side. This indicates substantial mass effect or pressure from the pathology in the right chest.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 98\n    }\n  ],\n  \"summary\": \"The X-ray of the chest shows that the entire right side of the chest is filled with something that blocks the X-rays, making it look completely white. This has pushed the heart and the windpipe over to the left side of the chest. This appearance can be caused by a large collection of fluid (like pus or blood), a collapsed lung, or a large tumor in the right lung. It's an urgent finding that needs immediate medical attention to figure out the exact cause and start treatment.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/complete-white-out-of-hemithorax\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3654483/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Complete opacification of the right hemithorax with mediastinal shift to the left.",
+    "The left lung field appears hyperinflated with normal vascular markings.",
+    "No obvious bony abnormalities noted."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Hemithorax Opacification",
+      "severity": "Severe",
+      "confidence": 98,
+      "description": "The entire right hemithorax is opacified, indicating a significant amount of fluid, consolidation, or mass, obscuring the lung parenchyma. This finding is associated with a marked mediastinal shift to the contralateral (left) side."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Severe",
+      "confidence": 98,
+      "description": "The mediastinum, including the trachea and heart, is shifted significantly towards the left hemithorax, away from the opacified right side. This indicates substantial mass effect or pressure from the pathology in the right chest."
+    }
+  ],
+  "summary": "The X-ray of the chest shows that the entire right side of the chest is filled with something that blocks the X-rays, making it look completely white. This has pushed the heart and the windpipe over to the left side of the chest. This appearance can be caused by a large collection of fluid (like pus or blood), a collapsed lung, or a large tumor in the right lung. It's an urgent finding that needs immediate medical attention to figure out the exact cause and start treatment.",
+  "references": [
+    "https://radiopaedia.org/articles/complete-white-out-of-hemithorax",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3654483/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21040,
+    "bytesOut": 21040,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:07:07.070Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

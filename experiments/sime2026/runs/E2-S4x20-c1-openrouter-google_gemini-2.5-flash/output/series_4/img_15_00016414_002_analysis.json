@@ -1,0 +1,68 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_4/img_15_00016414_002.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Mild cardiomegaly noted.\",\n    \"Bilateral hilar prominence is present, possibly indicative of lymphadenopathy or prominent pulmonary vasculature.\",\n    \"Increased interstitial markings are observed bilaterally, more pronounced in the lower lung fields.\",\n    \"Small bilateral pleural effusions are suggested, particularly at the costophrenic angles.\",\n    \"Vascular clips are visible in the left supraclavicular region, likely post-surgical changes.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette appears enlarged, consistent with mild cardiomegaly. The cardiothoracic ratio is increased.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Hilar Prominence\",\n      \"description\": \"Both hila are prominent, which could represent hilar lymphadenopathy or engorged pulmonary vessels.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    },\n    {\n      \"name\": \"Increased Interstitial Markings\",\n      \"description\": \"Diffuse increase in interstitial markings, particularly in the lower lobes, suggesting interstitial lung disease or edema.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Blunting of the costophrenic angles bilaterally is suggestive of small pleural effusions.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that your heart appears slightly larger than normal (called \\\"cardiomegaly\\\"). There are also some changes in the lung tissue that look like thickening or fluid buildup. The areas where the major blood vessels enter the lungs (called the \\\"hila\\\") appear more prominent than usual, which could be due to swollen lymph nodes or larger blood vessels. There is also a small amount of fluid around your lungs (called \\\"pleural effusions\\\"). Some surgical clips are visible near your left collarbone area, which are not related to the current lung findings.\",\n  \"references\": [\n    \"https://radiologykey.com/cardiomegaly/\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK459178/\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125188\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Mild cardiomegaly noted.",
+    "Bilateral hilar prominence is present, possibly indicative of lymphadenopathy or prominent pulmonary vasculature.",
+    "Increased interstitial markings are observed bilaterally, more pronounced in the lower lung fields.",
+    "Small bilateral pleural effusions are suggested, particularly at the costophrenic angles.",
+    "Vascular clips are visible in the left supraclavicular region, likely post-surgical changes."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "The cardiac silhouette appears enlarged, consistent with mild cardiomegaly. The cardiothoracic ratio is increased."
+    },
+    {
+      "name": "Hilar Prominence",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Both hila are prominent, which could represent hilar lymphadenopathy or engorged pulmonary vessels."
+    },
+    {
+      "name": "Increased Interstitial Markings",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Diffuse increase in interstitial markings, particularly in the lower lobes, suggesting interstitial lung disease or edema."
+    },
+    {
+      "name": "Pleural Effusions",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "Blunting of the costophrenic angles bilaterally is suggestive of small pleural effusions."
+    }
+  ],
+  "summary": "The chest X-ray shows that your heart appears slightly larger than normal (called \"cardiomegaly\"). There are also some changes in the lung tissue that look like thickening or fluid buildup. The areas where the major blood vessels enter the lungs (called the \"hila\") appear more prominent than usual, which could be due to swollen lymph nodes or larger blood vessels. There is also a small amount of fluid around your lungs (called \"pleural effusions\"). Some surgical clips are visible near your left collarbone area, which are not related to the current lung findings.",
+  "references": [
+    "https://radiologykey.com/cardiomegaly/",
+    "https://www.ncbi.nlm.nih.gov/books/NBK459178/",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125188"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22844,
+    "bytesOut": 22844,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:09:16.526Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

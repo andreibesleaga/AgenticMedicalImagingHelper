@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_4/img_19_00011538_000.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Left hemidiaphragm is elevated and obscured, suggesting subpulmonic effusion or atelectasis.\",\n    \"Small metallic foreign body noted overlying the soft tissues of the left supraclavicular region.\",\n    \"Cardiomediastinal silhouette appears within normal limits.\",\n    \"Lungs are clear with no definite focal consolidation or pneumothorax.\",\n    \"Bony thorax is unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Hemidiaphragm Elevation/Obscuration\",\n      \"description\": \"Elevation and obscuration of the left hemidiaphragm, which can be indicative of a subpulmonic effusion, atelectasis in the lower lobe, or possibly diaphragmatic paralysis. Further evaluation may be warranted to determine the exact cause.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Metallic Foreign Body\",\n      \"description\": \"A small metallic foreign body is visible overlying the soft tissues of the left supraclavicular region. Its clinical significance depends on its nature and whether it is superficial or embedded.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows that the left side of the diaphragm (the breathing muscle under the lungs) is a bit high and looks unclear. This could mean there's some fluid under the lung (called a subpulmonic effusion) or a collapsed area in the bottom part of the lung. There's also a small metal object visible near the left collarbone. The heart and the rest of the lungs look normal. Further tests might be needed to understand why the diaphragm is elevated and what the metal object is.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/subpulmonic-effusion-1\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3216719/\",\n    \"https://www.acep.org/patient-care/clinical-policies/foreign-bodies/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Left hemidiaphragm is elevated and obscured, suggesting subpulmonic effusion or atelectasis.",
+    "Small metallic foreign body noted overlying the soft tissues of the left supraclavicular region.",
+    "Cardiomediastinal silhouette appears within normal limits.",
+    "Lungs are clear with no definite focal consolidation or pneumothorax.",
+    "Bony thorax is unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Hemidiaphragm Elevation/Obscuration",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Elevation and obscuration of the left hemidiaphragm, which can be indicative of a subpulmonic effusion, atelectasis in the lower lobe, or possibly diaphragmatic paralysis. Further evaluation may be warranted to determine the exact cause."
+    },
+    {
+      "name": "Metallic Foreign Body",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "A small metallic foreign body is visible overlying the soft tissues of the left supraclavicular region. Its clinical significance depends on its nature and whether it is superficial or embedded."
+    }
+  ],
+  "summary": "This X-ray of the chest shows that the left side of the diaphragm (the breathing muscle under the lungs) is a bit high and looks unclear. This could mean there's some fluid under the lung (called a subpulmonic effusion) or a collapsed area in the bottom part of the lung. There's also a small metal object visible near the left collarbone. The heart and the rest of the lungs look normal. Further tests might be needed to understand why the diaphragm is elevated and what the metal object is.",
+  "references": [
+    "https://radiopaedia.org/articles/subpulmonic-effusion-1",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3216719/",
+    "https://www.acep.org/patient-care/clinical-policies/foreign-bodies/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21157,
+    "bytesOut": 21157,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:09:34.469Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -3,6 +3,7 @@ import {
   CostMeter,
   CostCapExceededError,
   defaultGeminiPricing,
+  formatUsd,
   GEMINI_PRICE_TABLE,
   type GeminiPricing,
 } from "../../../src/infrastructure/cost-meter.js";
@@ -65,6 +66,34 @@ describe("CostMeter", () => {
     expect(e.estimatedUsd).toBeCloseTo(11, 10);
     expect(e.calls).toBe(1);
     expect(e.message).toContain("--max-cost-usd");
+  });
+
+  // The meter guards the Gemini SDK path *and* every OpenRouter-hosted model,
+  // so the abort message must not name one provider — and a `--max-cost-usd
+  // 0.0001` cap must not print as "$0.00", which reads as a cap of zero.
+  it("names no provider in the cap message", () => {
+    const meter = new CostMeter(0.0001, PRICING);
+    let message = "";
+    try {
+      meter.record({ promptTokenCount: 1_000_000, candidatesTokenCount: 0 });
+    } catch (err) {
+      message = (err as Error).message;
+    }
+    expect(message).toContain("Estimated model cost");
+    expect(message).not.toMatch(/gemini/i);
+    expect(message).not.toMatch(/openrouter/i);
+  });
+
+  it("prints a sub-cent cap at full precision", () => {
+    const meter = new CostMeter(0.0001, PRICING);
+    let message = "";
+    try {
+      meter.record({ promptTokenCount: 1_000_000, candidatesTokenCount: 0 });
+    } catch (err) {
+      message = (err as Error).message;
+    }
+    expect(message).toContain("exceeded --max-cost-usd $0.0001 after 1 call(s)");
+    expect(message).not.toContain("$0.00 ");
   });
 
   it("aborts on the call that crosses the cap, after earlier calls succeed", () => {
@@ -187,11 +216,38 @@ describe("CostMeter — provider-reported cost", () => {
     expect(meter.summary().providerReportedUsd).toBe(0);
   });
 
+  it("falls back to the published price table when no pricing is supplied", () => {
+    const meter = new CostMeter();
+    meter.record({ promptTokenCount: 1_000_000, candidatesTokenCount: 0 });
+    expect(meter.summary().estimatedUsd).toBeCloseTo(defaultGeminiPricing().inputUsdPerMillion, 10);
+  });
+
   it("enforces the cap on the estimate, not on the provider-reported figure", () => {
     const meter = new CostMeter(1, PRICING);
     // Estimate $0.000001, provider says $5 — cap is unchanged behaviour: estimate only.
     expect(() =>
       meter.record({ promptTokenCount: 1, candidatesTokenCount: 0, providerCostUsd: 5 })
     ).not.toThrow();
+  });
+});
+
+describe("formatUsd", () => {
+  it("keeps two decimals for whole and round figures", () => {
+    expect(formatUsd(0)).toBe("0.00");
+    expect(formatUsd(5)).toBe("5.00");
+    expect(formatUsd(11)).toBe("11.00");
+    expect(formatUsd(2.5)).toBe("2.50");
+  });
+
+  it("keeps the precision a sub-cent cap needs, trimming no further", () => {
+    expect(formatUsd(0.0001)).toBe("0.0001");
+    expect(formatUsd(0.001)).toBe("0.001");
+    expect(formatUsd(0.01)).toBe("0.01");
+    expect(formatUsd(0.1)).toBe("0.10");
+  });
+
+  it("rounds to four decimals", () => {
+    expect(formatUsd(0.12345)).toBe("0.1235");
+    expect(formatUsd(0.00004)).toBe("0.00");
   });
 });

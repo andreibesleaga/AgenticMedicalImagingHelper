@@ -1,5 +1,5 @@
 /**
- * Allocative-harm probe. Conservative heuristic for whether a piece
+ * Output-level demographic-anchoring probe. Conservative heuristic for whether a piece
  * of AI-generated medical text uses demographic-category words *inside a
  * diagnostic context*. Intended for regression tests, not as a runtime gate.
  *
@@ -51,8 +51,9 @@ export function findDemographicTokens(text: string): string[] {
 /**
  * Stronger check: a demographic token AND a diagnostic justifier in the same
  * 200-character window. Catches "the patient is African American, which
- * suggests sickle-cell" style allocative-harm phrasing while tolerating
- * incidental descriptive mentions.
+ * suggests sickle-cell" style demographic anchoring while tolerating
+ * incidental descriptive mentions. This detects phrasing in the *output*; it
+ * is not a measurement of model bias and makes no allocative-harm claim.
  */
 export function containsDemographicClaim(text: string): boolean {
   const lower = text.toLowerCase();

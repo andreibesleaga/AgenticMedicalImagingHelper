@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4L/00005852/series_1/00005852_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Presence of multiple vascular catheters within the chest.\",\n    \"Bilateral opacities, more prominent on the right side, suggesting pulmonary parenchymal abnormalities.\",\n    \"Cardiac silhouette appears within normal limits for size.\",\n    \"Mediastinum appears unremarkable.\",\n    \"Costophrenic angles are visible, though the right diaphragm may be obscured by overlying opacities.\",\n    \"Bony structures, including ribs and clavicles, show no acute abnormalities.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pulmonary Opacities\",\n      \"description\": \"Bilateral patchy opacities are observed, particularly more dense in the right lung field, suggesting areas of consolidation, atelectasis, or fluid. The specific etiology cannot be determined from this single view alone.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Vascular Catheters\",\n      \"description\": \"Multiple lines are present within the chest, likely central venous catheters or PICC lines, coursing towards the central circulation. Their tips appear to be appropriately positioned, although a definitive assessment would require orthogonal views or clinical context.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows some cloudiness in both lungs, especially on the right side. This could be due to several reasons, such as inflammation, partial collapse of lung tissue, or fluid buildup. There are also several tubes, likely for medication or fluid delivery, visible in the chest. The heart size appears normal, and the major airways and bones look okay. It's important to remember that these findings need to be considered with your medical history and other tests for a complete understanding.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2020200109\",\n    \"https://radiopaedia.org/articles/pulmonary-opacity\",\n    \"https://radiopaedia.org/articles/central-venous-catheter-chest-x-ray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Presence of multiple vascular catheters within the chest.",
+    "Bilateral opacities, more prominent on the right side, suggesting pulmonary parenchymal abnormalities.",
+    "Cardiac silhouette appears within normal limits for size.",
+    "Mediastinum appears unremarkable.",
+    "Costophrenic angles are visible, though the right diaphragm may be obscured by overlying opacities.",
+    "Bony structures, including ribs and clavicles, show no acute abnormalities."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pulmonary Opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Bilateral patchy opacities are observed, particularly more dense in the right lung field, suggesting areas of consolidation, atelectasis, or fluid. The specific etiology cannot be determined from this single view alone."
+    },
+    {
+      "name": "Vascular Catheters",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "Multiple lines are present within the chest, likely central venous catheters or PICC lines, coursing towards the central circulation. Their tips appear to be appropriately positioned, although a definitive assessment would require orthogonal views or clinical context."
+    }
+  ],
+  "summary": "This X-ray of the chest shows some cloudiness in both lungs, especially on the right side. This could be due to several reasons, such as inflammation, partial collapse of lung tissue, or fluid buildup. There are also several tubes, likely for medication or fluid delivery, visible in the chest. The heart size appears normal, and the major airways and bones look okay. It's important to remember that these findings need to be considered with your medical history and other tests for a complete understanding.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2020200109",
+    "https://radiopaedia.org/articles/pulmonary-opacity",
+    "https://radiopaedia.org/articles/central-venous-catheter-chest-x-ray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23975,
+    "bytesOut": 23975,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:21:04.344Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

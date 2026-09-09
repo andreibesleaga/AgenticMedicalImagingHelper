@@ -1,0 +1,183 @@
+{
+  "manifestVersion": "1.0",
+  "toolVersion": "1.1.0",
+  "startedAt": "2026-09-09T07:03:19.710Z",
+  "finishedAt": "2026-09-09T07:04:41.697Z",
+  "provider": "openrouter",
+  "model": "anthropic/claude-sonnet-5",
+  "pricing": {
+    "inputUsdPerMillion": 2,
+    "outputUsdPerMillion": 12
+  },
+  "settings": {
+    "concurrency": 1,
+    "maxCostUsd": 3,
+    "retries": 4
+  },
+  "inputDir": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000008",
+  "outputDir": "/home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime2026/runs/E4-00000008-openrouter-anthropic_claude-sonnet-5/output",
+  "inputs": [
+    {
+      "path": "series_1/00000008_000.png",
+      "sha256": "184a434162ca1e5a84038c3241866af78f2100adfbd16ed27c24a4077a3509ac",
+      "bytes": 23771
+    },
+    {
+      "path": "series_2/00000008_001.png",
+      "sha256": "bc2fc5b2aeb7e7f0ade0069b5d8c95c9ecaf48108d382cf956e07969a7680f4d",
+      "bytes": 22784
+    },
+    {
+      "path": "series_3/00000008_002.png",
+      "sha256": "b6e99809ddbc29360fcd8fe30da33c40b5951c80314a690d657506bc4c501d1f",
+      "bytes": 20207
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "patient_context.txt",
+      "sha256": "eecd068e09fd750318787c208921d6ccb4937be140d864fd710b1a222caa403c",
+      "bytes": 315
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "stage": "image",
+      "timestamp": "2026-09-09T07:03:30.247Z",
+      "tokensIn": 707,
+      "tokensOut": 665,
+      "estimatedUsd": 0.009394000000000001,
+      "providerUsd": 0.00798336,
+      "retries": 0
+    },
+    {
+      "index": 2,
+      "stage": "image",
+      "timestamp": "2026-09-09T07:03:39.038Z",
+      "tokensIn": 707,
+      "tokensOut": 653,
+      "estimatedUsd": 0.00925,
+      "providerUsd": 0.007864560000000001,
+      "retries": 0
+    },
+    {
+      "index": 3,
+      "stage": "image",
+      "timestamp": "2026-09-09T07:03:50.166Z",
+      "tokensIn": 707,
+      "tokensOut": 704,
+      "estimatedUsd": 0.009862,
+      "providerUsd": 0.008369460000000002,
+      "retries": 0
+    },
+    {
+      "index": 4,
+      "stage": "series",
+      "timestamp": "2026-09-09T07:03:58.928Z",
+      "tokensIn": 1075,
+      "tokensOut": 715,
+      "estimatedUsd": 0.01073,
+      "providerUsd": 0.009207,
+      "retries": 0
+    },
+    {
+      "index": 5,
+      "stage": "series",
+      "timestamp": "2026-09-09T07:04:09.575Z",
+      "tokensIn": 1126,
+      "tokensOut": 1028,
+      "estimatedUsd": 0.014587999999999997,
+      "providerUsd": 0.012406680000000003,
+      "retries": 0
+    },
+    {
+      "index": 6,
+      "stage": "series",
+      "timestamp": "2026-09-09T07:04:20.070Z",
+      "tokensIn": 1101,
+      "tokensOut": 839,
+      "estimatedUsd": 0.01226999999999999,
+      "providerUsd": 0.010486080000000002,
+      "retries": 0
+    },
+    {
+      "index": 7,
+      "stage": "evolution",
+      "timestamp": "2026-09-09T07:04:41.671Z",
+      "tokensIn": 2244,
+      "tokensOut": 2106,
+      "estimatedUsd": 0.02976000000000001,
+      "providerUsd": 0.025292519999999992,
+      "retries": 0
+    }
+  ],
+  "outputs": [
+    {
+      "path": "series_1/00000008_000_analysis.json",
+      "sha256": "039caef06cd4568c013132b431021620813c7df244452395498ceb911f9ed3d6",
+      "bytes": 4471
+    },
+    {
+      "path": "series_2/00000008_001_analysis.json",
+      "sha256": "865ce27d25f5fc893748c2c3d9c8fcb0a7d55715276501acdd4c7afa43c5df04",
+      "bytes": 4556
+    },
+    {
+      "path": "series_3/00000008_002_analysis.json",
+      "sha256": "abb1c764ad56b569529fbcf9b5d8841b2ae5c21bebc21abe3bb30c962c9df4fa",
+      "bytes": 4704
+    },
+    {
+      "path": "series_1/series_summary.md",
+      "sha256": "bfdbdcfb8d746b523ef71686f63bb52d83b232ed84f5b60c66be7eab0e01ce39",
+      "bytes": 2921
+    },
+    {
+      "path": "series_2/series_summary.md",
+      "sha256": "e8e4f9949db7a92443841bd4b09e29a462c01203ce57914e74e960346bdffc5c",
+      "bytes": 3515
+    },
+    {
+      "path": "series_3/series_summary.md",
+      "sha256": "0f412590379cd1be228e135ae68c6e4187088f462774e337571e1954b7cb71c7",
+      "bytes": 3045
+    },
+    {
+      "path": "evolution_analysis.json",
+      "sha256": "d5456e1497af4ff7b2378b5b9748e9185bbab6a7663df4ec3e018988702fe8a1",
+      "bytes": 6265
+    },
+    {
+      "path": "combined_diagnostic_report.md",
+      "sha256": "fecd7c5c29278967b57d2c20560da5a8bccfcbee38cb155c12e55e6f4d820f31",
+      "bytes": 6685
+    }
+  ],
+  "totals": {
+    "calls": 7,
+    "tokensIn": 7667,
+    "tokensOut": 6710,
+    "estimatedUsd": 0.095854,
+    "providerUsd": 0.08160966,
+    "images": 3,
+    "imagesSucceeded": 3,
+    "imagesFailed": 0,
+    "series": 3
+  },
+  "exitCode": 0,
+  "warnings": [
+    "Context-consistency: 5 statement(s) in the generated output contradict the supplied patient context [age]. Heuristic, non-blocking — the output still requires clinician review.",
+    "context-consistency [age] \"neonatal\" implies an age of 0–0, the context states 69: \"…feeding tube artifact at the lower chest/upper abdomen, consistent with routine neonatal/pediatric monitoring. ### Assessment This single-view study demonstrates a rad…\"",
+    "context-consistency [age] \"infant\" implies an age of 0–1, the context states 69: \"…f the image (likely positioning/technical markers) This is a chest X-ray of an infant or young child taken from the front while lying down. The lungs look clear and…\"",
+    "context-consistency [age] \"infants\" implies an age of 0–1, the context states 69: \"…uette is prominent, appearing mildly enlarged, which can be a normal variant in infants due to thymic shadow Mediastinal contours are within expected pediatric range…\"",
+    "context-consistency [age] \"child\" implies an age of 0–12, the context states 69: \"This is a chest X-ray of a child, taken from the front. The lungs look clear and evenly filled with air on both…\"",
+    "context-consistency [age] \"pediatric\" implies an age of 0–12, the context states 69: \"…ull clinical context and history of the patient. Frontal chest radiograph of a pediatric patient Lungs appear symmetrically inflated with clear lung fields bilaterally…\""
+  ],
+  "humanReview": {
+    "required": true,
+    "reviewedBy": null
+  },
+  "prevManifestHash": null,
+  "manifestHash": "2ea3c84f5b0dd604c2f90cfcbe78dabdd6346e7c48cf73f43b0ccd1317920b7f"
+}

@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S3x10/series_2/img_05_00022764_006.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Large amount of gas seen within the left hemithorax, displacing the mediastinum to the right.\",\n    \"The left hemidiaphragm is not clearly delineated and appears elevated/obscured by the gas.\",\n    \"A nasogastric tube is present, with its tip visible in the upper abdomen.\",\n    \"Multiple bowel loops are noted within the left hemithorax, consistent with diaphragmatic herniation.\",\n    \"The right lung field appears clear.\",\n    \"No focal consolidation or pleural effusion noted in the right hemithorax.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Diaphragmatic Hernia\",\n      \"description\": \"Significant amount of gas-filled bowel loops are present in the left hemithorax, indicating herniation of abdominal contents through a defect in the diaphragm. This causes marked mediastinal shift to the right and compression of the left lung.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 98\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"The mediastinum, including the heart and great vessels, is significantly displaced to the right due to the mass effect from the herniated bowel in the left hemithorax.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray shows that some of the contents from the belly, specifically parts of the intestine, have moved up into the left side of the chest. This is called a diaphragmatic hernia, which means there's an opening in the diaphragm (the muscle that separates the chest from the belly) that shouldn't be there. This has pushed the heart and other structures in the middle of the chest over to the right side. There's also a tube going down into the stomach, likely for feeding or draining.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/diaphragmatic-hernia-1\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900696/\",\n    \"https://www.ajronline.org/doi/full/10.2214/AJR.08.1725\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Large amount of gas seen within the left hemithorax, displacing the mediastinum to the right.",
+    "The left hemidiaphragm is not clearly delineated and appears elevated/obscured by the gas.",
+    "A nasogastric tube is present, with its tip visible in the upper abdomen.",
+    "Multiple bowel loops are noted within the left hemithorax, consistent with diaphragmatic herniation.",
+    "The right lung field appears clear.",
+    "No focal consolidation or pleural effusion noted in the right hemithorax."
+  ],
+  "abnormalities": [
+    {
+      "name": "Diaphragmatic Hernia",
+      "severity": "Severe",
+      "confidence": 98,
+      "description": "Significant amount of gas-filled bowel loops are present in the left hemithorax, indicating herniation of abdominal contents through a defect in the diaphragm. This causes marked mediastinal shift to the right and compression of the left lung."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "The mediastinum, including the heart and great vessels, is significantly displaced to the right due to the mass effect from the herniated bowel in the left hemithorax."
+    }
+  ],
+  "summary": "This X-ray shows that some of the contents from the belly, specifically parts of the intestine, have moved up into the left side of the chest. This is called a diaphragmatic hernia, which means there's an opening in the diaphragm (the muscle that separates the chest from the belly) that shouldn't be there. This has pushed the heart and other structures in the middle of the chest over to the right side. There's also a tube going down into the stomach, likely for feeding or draining.",
+  "references": [
+    "https://radiopaedia.org/articles/diaphragmatic-hernia-1",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900696/",
+    "https://www.ajronline.org/doi/full/10.2214/AJR.08.1725"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22326,
+    "bytesOut": 22326,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:03:43.559Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

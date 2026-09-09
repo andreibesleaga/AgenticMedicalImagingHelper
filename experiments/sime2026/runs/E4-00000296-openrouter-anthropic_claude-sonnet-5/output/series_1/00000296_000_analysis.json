@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000296/series_1/00000296_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP/PA)\",\"quality\":\"Fair\",\"findings\":[\"Bilateral lung fields visualized with symmetric aeration\",\"Cardiac silhouette appears within upper normal limits, difficult to fully assess due to positioning\",\"Central line/catheter visible on the right side, likely a central venous catheter or PICC line with tip projecting near the cavoatrial junction\",\"Mediastinal structures appear midline\",\"Both hemidiaphragms visualized, costophrenic angles appear relatively clear\",\"Bony thorax including clavicles and ribs appear grossly intact\",\"Soft tissue shadows of the shoulders and chest wall overlie the image\"],\"abnormalities\":[{\"name\":\"Indwelling central venous catheter\",\"description\":\"A thin radiopaque line is seen entering from the right side of the chest, coursing through the mediastinum with tip appearing to terminate near the right atrium/SVC junction. Position should be confirmed for appropriate placement.\",\"severity\":\"Mild\",\"confidence\":55}],\"summary\":\"This chest X-ray shows the lungs and heart within a generally acceptable range, though the image quality makes some fine details harder to assess. There appears to be a thin tube (likely a central line used for medications or fluids) visible on the right side of the chest, which is a common medical device and not necessarily concerning by itself, but its position should be confirmed by a physician to ensure it's correctly placed. No obvious signs of significant lung collapse, large fluid buildup, or major structural abnormality are seen, but this should be verified by a radiologist given the image quality.\",\"references\":[\"https://radiopaedia.org/articles/central-venous-catheter-placement\",\"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria\",\"https://pubs.rsna.org/journal/radiographics\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP/PA)",
+  "quality": "Fair",
+  "findings": [
+    "Bilateral lung fields visualized with symmetric aeration",
+    "Cardiac silhouette appears within upper normal limits, difficult to fully assess due to positioning",
+    "Central line/catheter visible on the right side, likely a central venous catheter or PICC line with tip projecting near the cavoatrial junction",
+    "Mediastinal structures appear midline",
+    "Both hemidiaphragms visualized, costophrenic angles appear relatively clear",
+    "Bony thorax including clavicles and ribs appear grossly intact",
+    "Soft tissue shadows of the shoulders and chest wall overlie the image"
+  ],
+  "abnormalities": [
+    {
+      "name": "Indwelling central venous catheter",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "A thin radiopaque line is seen entering from the right side of the chest, coursing through the mediastinum with tip appearing to terminate near the right atrium/SVC junction. Position should be confirmed for appropriate placement."
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs and heart within a generally acceptable range, though the image quality makes some fine details harder to assess. There appears to be a thin tube (likely a central line used for medications or fluids) visible on the right side of the chest, which is a common medical device and not necessarily concerning by itself, but its position should be confirmed by a physician to ensure it's correctly placed. No obvious signs of significant lung collapse, large fluid buildup, or major structural abnormality are seen, but this should be verified by a radiologist given the image quality.",
+  "references": [
+    "https://radiopaedia.org/articles/central-venous-catheter-placement",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiographics"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 20730,
+    "bytesOut": 20730,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-09T07:16:35.788Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

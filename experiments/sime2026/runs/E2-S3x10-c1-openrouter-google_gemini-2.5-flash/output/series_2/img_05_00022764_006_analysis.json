@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S3x10/series_2/img_05_00022764_006.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Large radiolucency in the left hemithorax, displacing the mediastinum to the right.\",\n    \"Bowel gas patterns are visible within the left hemithorax, suggestive of herniation.\",\n    \"A nasogastric tube is present, with its tip curled within the herniated structures.\",\n    \"Elevated left hemidiaphragm, indistinct due to the herniation.\",\n    \"Right lung appears clear.\",\n    \"No obvious pleural effusions or pneumothorax on the right side.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Diaphragmatic Hernia\",\n      \"description\": \"Significant portion of abdominal contents, including bowel loops, are herniated into the left hemithorax, causing marked mediastinal shift to the right and compression of the left lung.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"The mediastinal structures, including the heart and trachea, are significantly displaced to the right due to the mass effect from the herniated abdominal contents in the left hemithorax.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows that some organs from the belly, like parts of the bowel, have moved up into the left side of the chest. This is called a diaphragmatic hernia. This movement has pushed the heart and other structures in the middle of the chest over to the right side. A tube, likely for feeding or stomach drainage (nasogastric tube), is also seen curled up within these misplaced organs. This condition requires urgent medical attention.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/diaphragmatic-hernia-1\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900408/\",\n    \"https://www.thoracicsurgery.org/diseases-conditions/diaphragmatic-hernia/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Large radiolucency in the left hemithorax, displacing the mediastinum to the right.",
+    "Bowel gas patterns are visible within the left hemithorax, suggestive of herniation.",
+    "A nasogastric tube is present, with its tip curled within the herniated structures.",
+    "Elevated left hemidiaphragm, indistinct due to the herniation.",
+    "Right lung appears clear.",
+    "No obvious pleural effusions or pneumothorax on the right side."
+  ],
+  "abnormalities": [
+    {
+      "name": "Diaphragmatic Hernia",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Significant portion of abdominal contents, including bowel loops, are herniated into the left hemithorax, causing marked mediastinal shift to the right and compression of the left lung."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "The mediastinal structures, including the heart and trachea, are significantly displaced to the right due to the mass effect from the herniated abdominal contents in the left hemithorax."
+    }
+  ],
+  "summary": "This X-ray of the chest shows that some organs from the belly, like parts of the bowel, have moved up into the left side of the chest. This is called a diaphragmatic hernia. This movement has pushed the heart and other structures in the middle of the chest over to the right side. A tube, likely for feeding or stomach drainage (nasogastric tube), is also seen curled up within these misplaced organs. This condition requires urgent medical attention.",
+  "references": [
+    "https://radiopaedia.org/articles/diaphragmatic-hernia-1",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900408/",
+    "https://www.thoracicsurgery.org/diseases-conditions/diaphragmatic-hernia/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22326,
+    "bytesOut": 22326,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:01:56.532Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

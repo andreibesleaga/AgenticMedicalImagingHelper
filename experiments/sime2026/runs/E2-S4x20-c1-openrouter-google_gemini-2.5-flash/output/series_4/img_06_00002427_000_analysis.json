@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_4/img_06_00002427_000.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest and Thoracolumbar Spine (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"S-shaped scoliosis of the thoracic and lumbar spine.\",\n    \"The thoracic curve appears to be to the right, with apex at approximately T8-T9.\",\n    \"The lumbar curve appears to be to the left, with apex at approximately L2-L3.\",\n    \"Rib cages appear symmetric without obvious focal abnormalities.\",\n    \"Lung fields are clear without focal consolidation or pleural effusion.\",\n    \"Cardiomediastinal silhouette is within normal limits.\",\n    \"No acute osseous abnormalities noted in the visualized portions of the shoulders or pelvis, aside from the spinal curvature.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Scoliosis\",\n      \"description\": \"Significant S-shaped curvature of the thoracolumbar spine. The thoracic spine deviates to the right and the lumbar spine deviates to the left. Specific Cobb angles cannot be determined without dedicated scoliosis series or measurement tools, but the curvature is clearly visible.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray shows a noticeable S-shaped curve in the spine, a condition called scoliosis. The upper part of the spine (thoracic) curves to the right, and the lower part (lumbar) curves to the left. The lungs and heart appear normal, and there are no other obvious bone problems seen in the image. This finding suggests that further evaluation by a spine specialist may be beneficial to determine the best course of action.\",\n  \"references\": [\n    \"https://www.mayoclinic.org/diseases-conditions/scoliosis/symptoms-causes/syc-20350716\",\n    \"https://orthoinfo.aaos.org/en/diseases--conditions/scoliosis-in-children/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest and Thoracolumbar Spine (AP)",
+  "quality": "Good",
+  "findings": [
+    "S-shaped scoliosis of the thoracic and lumbar spine.",
+    "The thoracic curve appears to be to the right, with apex at approximately T8-T9.",
+    "The lumbar curve appears to be to the left, with apex at approximately L2-L3.",
+    "Rib cages appear symmetric without obvious focal abnormalities.",
+    "Lung fields are clear without focal consolidation or pleural effusion.",
+    "Cardiomediastinal silhouette is within normal limits.",
+    "No acute osseous abnormalities noted in the visualized portions of the shoulders or pelvis, aside from the spinal curvature."
+  ],
+  "abnormalities": [
+    {
+      "name": "Scoliosis",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Significant S-shaped curvature of the thoracolumbar spine. The thoracic spine deviates to the right and the lumbar spine deviates to the left. Specific Cobb angles cannot be determined without dedicated scoliosis series or measurement tools, but the curvature is clearly visible."
+    }
+  ],
+  "summary": "This X-ray shows a noticeable S-shaped curve in the spine, a condition called scoliosis. The upper part of the spine (thoracic) curves to the right, and the lower part (lumbar) curves to the left. The lungs and heart appear normal, and there are no other obvious bone problems seen in the image. This finding suggests that further evaluation by a spine specialist may be beneficial to determine the best course of action.",
+  "references": [
+    "https://www.mayoclinic.org/diseases-conditions/scoliosis/symptoms-causes/syc-20350716",
+    "https://orthoinfo.aaos.org/en/diseases--conditions/scoliosis-in-children/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22786,
+    "bytesOut": 22786,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:08:33.990Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

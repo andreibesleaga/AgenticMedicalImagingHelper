@@ -1,0 +1,30 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000092/series_4/00000092_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\"?>\": \"ignore\", \":\": \"ignore\", \"modality\": \"X-ray\", \":\": \"ignore\", \"anatomyRegion\": \"Chest (AP)\", \"quality\": \"Fair\", \"findings\": [[\"Bilateral pleural effusions, larger on the right side\", \"Blunting of costophrenic angles and meniscus sign\", \"Right lower lung zone opacity consistent with fluid accumulation\", \"Left lower lung zone opacity consistent with fluid accumulation\", \"Presence of an air-fluid level in the upper abdomen, likely gastric bubble\", \"Mediastinum appears midline\", \"Cardiac silhouette is partially obscured by effusions\"]], \"abnormalities\": [{\"name\": \"Bilateral Pleural Effusions\", \"description\": \"Accumulation of fluid in the pleural space bilaterally, more pronounced on the right, evidenced by the blunting of the costophrenic angles and opacification of the lung bases.\", \"severity\": \"Moderate\", \"confidence\": 95}], \"summary\": \"The X-ray shows fluid buildup around both lungs (pleural effusions), which is more significant on the right side. This fluid can compress the lungs and make breathing difficult. This is often caused by conditions affecting the heart, kidneys, or liver, or by inflammation in the lungs. Further evaluation by a doctor is necessary to determine the underlying cause.\", \"references\": [\"https://radiopaedia.org/articles/pleural-effusion\", \"https://www.acr.org/Clinical-Resources/Chest-Radiography\"]}",
+  "findings": [],
+  "validation": {
+    "ok": false,
+    "issues": [
+      "findings.0: Invalid input: expected string, received array"
+    ]
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 20887,
+    "bytesOut": 20887,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-08T19:26:10.125Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

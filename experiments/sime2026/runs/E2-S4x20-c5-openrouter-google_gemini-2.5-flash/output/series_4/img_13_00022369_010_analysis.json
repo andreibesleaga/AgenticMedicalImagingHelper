@@ -1,0 +1,70 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_4/img_13_00022369_010.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral pleural effusions, larger on the left, with associated mediastinal shift to the right.\",\n    \"Bilateral airspace opacities, more prominent in the right mid-lung field, suggestive of consolidation/infiltrate.\",\n    \"Right-sided chest tube noted with its tip within the pleural space, likely draining the right pleural effusion.\",\n    \"Cardiac silhouette appears enlarged, although assessment is limited by the pleural effusions and AP projection.\",\n    \"Central venous catheter (CVC) or similar line is visible with its tip projected over the superior vena cava/right atrium.\",\n    \"No acute pneumothorax identified.\",\n    \"Bony structures appear unremarkable given the limitations of the study.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Pleural Effusion\",\n      \"description\": \"Large left-sided pleural effusion with blunting of the costophrenic angle and obscuring of the left hemidiaphragm, contributing to mediastinal shift to the right.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Right Pleural Effusion\",\n      \"description\": \"Moderate right-sided pleural effusion, partially drained by a visible chest tube.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"Shift of the mediastinal structures (trachea, heart) to the right, likely secondary to the large left pleural effusion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Bilateral Airspace Opacities\",\n      \"description\": \"Diffuse bilateral airspace opacities, more pronounced in the right mid-lung, consistent with pulmonary edema, pneumonia, or acute respiratory distress syndrome.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows significant fluid accumulation around both lungs, especially on the left side, which is pushing the heart and other central structures towards the right. There are also cloudy areas in both lungs, which could be due to fluid in the lungs (pulmonary edema), an infection (pneumonia), or severe lung inflammation. A tube has been placed on the right side to help drain the fluid. The heart appears enlarged, but it's hard to tell for sure because of all the fluid. These findings suggest serious lung and heart issues that need urgent medical attention.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/pulmonary-oedema-1\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK482329/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral pleural effusions, larger on the left, with associated mediastinal shift to the right.",
+    "Bilateral airspace opacities, more prominent in the right mid-lung field, suggestive of consolidation/infiltrate.",
+    "Right-sided chest tube noted with its tip within the pleural space, likely draining the right pleural effusion.",
+    "Cardiac silhouette appears enlarged, although assessment is limited by the pleural effusions and AP projection.",
+    "Central venous catheter (CVC) or similar line is visible with its tip projected over the superior vena cava/right atrium.",
+    "No acute pneumothorax identified.",
+    "Bony structures appear unremarkable given the limitations of the study."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Pleural Effusion",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Large left-sided pleural effusion with blunting of the costophrenic angle and obscuring of the left hemidiaphragm, contributing to mediastinal shift to the right."
+    },
+    {
+      "name": "Right Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Moderate right-sided pleural effusion, partially drained by a visible chest tube."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Shift of the mediastinal structures (trachea, heart) to the right, likely secondary to the large left pleural effusion."
+    },
+    {
+      "name": "Bilateral Airspace Opacities",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Diffuse bilateral airspace opacities, more pronounced in the right mid-lung, consistent with pulmonary edema, pneumonia, or acute respiratory distress syndrome."
+    }
+  ],
+  "summary": "The chest X-ray shows significant fluid accumulation around both lungs, especially on the left side, which is pushing the heart and other central structures towards the right. There are also cloudy areas in both lungs, which could be due to fluid in the lungs (pulmonary edema), an infection (pneumonia), or severe lung inflammation. A tube has been placed on the right side to help drain the fluid. The heart appears enlarged, but it's hard to tell for sure because of all the fluid. These findings suggest serious lung and heart issues that need urgent medical attention.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/pulmonary-oedema-1",
+    "https://www.ncbi.nlm.nih.gov/books/NBK482329/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22734,
+    "bytesOut": 22734,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:11:27.597Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

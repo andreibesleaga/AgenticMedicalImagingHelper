@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4L/00016493/series_4/00016493_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A radiopaque circular foreign body is noted in the central lower chest, overlying the thoracic spine.\",\n    \"Bilateral lung fields appear clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"The cardiac silhouette is within normal limits for size and contour.\",\n    \"Bony structures, including the ribs, clavicles, and visualized spine, show no obvious acute fractures or significant abnormalities.\",\n    \"There is a small metallic marker 'L' indicating the left side of the patient.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Radiopaque Foreign Body\",\n      \"description\": \"A well-defined, circular, radiopaque foreign body is visualized in the central lower chest, projected over the lower thoracic spine. Its exact nature and anatomical location (e.g., within the gastrointestinal tract, skin, or subcutaneous tissue) cannot be definitively determined from this single AP view without additional orthogonal views or clinical context. It appears consistent with a swallowed coin or a metallic artifact.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows a clear picture of the lungs, heart, and bones, which all appear healthy. However, there is a round, shiny object visible in the lower central part of the chest, near the spine. This object looks like it could be a coin or another small metal item. While it's currently visible, we can't tell exactly where it is (for example, if it's inside the stomach or on the skin) from this single image. Further checks might be needed to understand its exact location and if it needs to be removed.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/foreign-body-ingestion?lang=us\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria/ACR-Appropriateness-Criteria-Detailed-Recommendations/Foreign-Body-Ingestion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A radiopaque circular foreign body is noted in the central lower chest, overlying the thoracic spine.",
+    "Bilateral lung fields appear clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "The cardiac silhouette is within normal limits for size and contour.",
+    "Bony structures, including the ribs, clavicles, and visualized spine, show no obvious acute fractures or significant abnormalities.",
+    "There is a small metallic marker 'L' indicating the left side of the patient."
+  ],
+  "abnormalities": [
+    {
+      "name": "Radiopaque Foreign Body",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "A well-defined, circular, radiopaque foreign body is visualized in the central lower chest, projected over the lower thoracic spine. Its exact nature and anatomical location (e.g., within the gastrointestinal tract, skin, or subcutaneous tissue) cannot be definitively determined from this single AP view without additional orthogonal views or clinical context. It appears consistent with a swallowed coin or a metallic artifact."
+    }
+  ],
+  "summary": "This X-ray of the chest shows a clear picture of the lungs, heart, and bones, which all appear healthy. However, there is a round, shiny object visible in the lower central part of the chest, near the spine. This object looks like it could be a coin or another small metal item. While it's currently visible, we can't tell exactly where it is (for example, if it's inside the stomach or on the skin) from this single image. Further checks might be needed to understand its exact location and if it needs to be removed.",
+  "references": [
+    "https://radiopaedia.org/articles/foreign-body-ingestion?lang=us",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria/ACR-Appropriateness-Criteria-Detailed-Recommendations/Foreign-Body-Ingestion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 20020,
+    "bytesOut": 20020,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:25:21.252Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

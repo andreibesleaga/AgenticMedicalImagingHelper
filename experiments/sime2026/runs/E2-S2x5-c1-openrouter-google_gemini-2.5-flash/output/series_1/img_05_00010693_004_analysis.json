@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S2x5/series_1/img_05_00010693_004.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear lung fields without focal consolidation, pneumothorax, or significant pleural effusion.\",\n    \"Normal cardiac silhouette size and contour.\",\n    \"Bony thorax appears intact.\",\n    \"A metallic embolization coil, consistent with a vascular occlusion device, is noted in the lower mediastinum/epigastric region, projected over the area of the gastroesophageal junction or stomach fundus.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Vascular Occlusion Device\",\n      \"description\": \"A metallic embolization coil is present in the lower mediastinum/epigastric region. Its precise indication cannot be determined from this single projection but is consistent with a prior interventional procedure to occlude a vessel.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This chest X-ray shows healthy-looking lungs and a normal-sized heart. There are no signs of pneumonia, collapsed lung, or excess fluid around the lungs. A metallic coil, likely a device used in a previous procedure to close off a blood vessel, is visible in the upper abdomen area. This device itself is not typically considered an abnormality but rather evidence of a prior medical intervention.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2017160100\",\n    \"https://radiopaedia.org/articles/chest-x-ray-interpretive-approach\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8941797/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Clear lung fields without focal consolidation, pneumothorax, or significant pleural effusion.",
+    "Normal cardiac silhouette size and contour.",
+    "Bony thorax appears intact.",
+    "A metallic embolization coil, consistent with a vascular occlusion device, is noted in the lower mediastinum/epigastric region, projected over the area of the gastroesophageal junction or stomach fundus."
+  ],
+  "abnormalities": [
+    {
+      "name": "Vascular Occlusion Device",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A metallic embolization coil is present in the lower mediastinum/epigastric region. Its precise indication cannot be determined from this single projection but is consistent with a prior interventional procedure to occlude a vessel."
+    }
+  ],
+  "summary": "This chest X-ray shows healthy-looking lungs and a normal-sized heart. There are no signs of pneumonia, collapsed lung, or excess fluid around the lungs. A metallic coil, likely a device used in a previous procedure to close off a blood vessel, is visible in the upper abdomen area. This device itself is not typically considered an abnormality but rather evidence of a prior medical intervention.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2017160100",
+    "https://radiopaedia.org/articles/chest-x-ray-interpretive-approach",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8941797/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22683,
+    "bytesOut": 22683,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T18:59:15.434Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

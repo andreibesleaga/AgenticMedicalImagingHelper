@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000239/series_3/00000239_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest and Abdomen (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No obvious focal lung opacities or effusions identified.\",\n    \"Cardiomediastinal silhouette appears unremarkable.\",\n    \"Visualized osseous structures are intact.\",\n    \"Multiple small, metallic-appearing densities are noted in the lower abdomen/pelvis, consistent with swallowed foreign bodies (e.g., beads or pellets).\",\n    \"Evidence of bowel gas patterns within expected limits for a supine view, without signs of obstruction or free air.\",\n    \"Gas is seen under the left hemidiaphragm, consistent with a left subphrenic gastric bubble, which is a normal finding.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Intra-abdominal foreign bodies\",\n      \"description\": \"Multiple small, metallic-appearing densities are present in the lower abdomen/pelvis, likely representing ingested foreign bodies.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray image shows the chest and upper abdomen. The lungs and heart appear normal. The bones in the chest also look healthy. In the lower part of the abdomen, there are several tiny, bright spots which are consistent with small metal objects that have been swallowed. These objects are currently in the lower belly area. There are no signs of any blockage in the intestines or air outside the bowel that would suggest a perforation. The air pocket under the left side of the diaphragm is normal and represents the stomach bubble.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2017160109\",\n    \"https://radiopaedia.org/articles/ingested-foreign-bodies?lang=us\",\n    \"https://www.sciencedirect.com/topics/medicine-and-dentistry/foreign-body-ingestion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest and Abdomen (AP)",
+  "quality": "Good",
+  "findings": [
+    "No obvious focal lung opacities or effusions identified.",
+    "Cardiomediastinal silhouette appears unremarkable.",
+    "Visualized osseous structures are intact.",
+    "Multiple small, metallic-appearing densities are noted in the lower abdomen/pelvis, consistent with swallowed foreign bodies (e.g., beads or pellets).",
+    "Evidence of bowel gas patterns within expected limits for a supine view, without signs of obstruction or free air.",
+    "Gas is seen under the left hemidiaphragm, consistent with a left subphrenic gastric bubble, which is a normal finding."
+  ],
+  "abnormalities": [
+    {
+      "name": "Intra-abdominal foreign bodies",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "Multiple small, metallic-appearing densities are present in the lower abdomen/pelvis, likely representing ingested foreign bodies."
+    }
+  ],
+  "summary": "The X-ray image shows the chest and upper abdomen. The lungs and heart appear normal. The bones in the chest also look healthy. In the lower part of the abdomen, there are several tiny, bright spots which are consistent with small metal objects that have been swallowed. These objects are currently in the lower belly area. There are no signs of any blockage in the intestines or air outside the bowel that would suggest a perforation. The air pocket under the left side of the diaphragm is normal and represents the stomach bubble.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2017160109",
+    "https://radiopaedia.org/articles/ingested-foreign-bodies?lang=us",
+    "https://www.sciencedirect.com/topics/medicine-and-dentistry/foreign-body-ingestion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22139,
+    "bytesOut": 22139,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:17:39.551Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

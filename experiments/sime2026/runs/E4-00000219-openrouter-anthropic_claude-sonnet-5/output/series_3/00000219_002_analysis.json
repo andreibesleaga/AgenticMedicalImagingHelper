@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000219/series_3/00000219_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP/PA)\",\"quality\":\"Fair\",\"findings\":[\"Bilateral perihilar and lower zone opacities with a somewhat symmetric, hazy appearance\",\"Increased density at both lung bases, right greater than left, obscuring the costophrenic angles\",\"Cardiac silhouette appears mildly enlarged with cardiothoracic ratio difficult to assess precisely due to technique/rotation\",\"Vascular markings appear prominent/indistinct in the perihilar regions, suggestive of possible pulmonary vascular congestion\",\"Mediastinal contours appear grossly midline, though patient rotation limits assessment\",\"No obvious focal consolidative mass identified\",\"Visualized osseous structures (ribs, clavicles) appear intact without acute fracture\"],\"abnormalities\":[{\"name\":\"Bilateral perihilar/basilar opacities\",\"description\":\"Hazy, somewhat symmetric increased opacity in the perihilar and lower lung zones bilaterally, which can be seen with pulmonary edema, atypical infection, or aspiration; right base appears slightly more affected than left\",\"severity\":\"Moderate\",\"confidence\":58},{\"name\":\"Possible cardiomegaly\",\"description\":\"The cardiac silhouette appears enlarged relative to thoracic width, though this is difficult to confirm precisely due to projection/rotation artifact\",\"severity\":\"Mild\",\"confidence\":40},{\"name\":\"Suspected pulmonary vascular congestion\",\"description\":\"Indistinct, prominent vascular markings in the perihilar regions raise concern for vascular congestion, often associated with fluid overload or early heart failure\",\"severity\":\"Mild\",\"confidence\":45}],\"summary\":\"This chest X-ray shows some haziness in both lungs, especially near the middle and lower portions, which can be caused by fluid buildup (like in heart failure), infection, or other lung conditions. The heart shadow looks slightly larger than typical, though the image quality and positioning make this hard to confirm with certainty. There are no obvious broken bones or large masses. Overall, these findings suggest the possibility of fluid in the lungs or a heart-related issue, but this needs to be correlated with the patient's symptoms, physical exam, and possibly additional tests (like blood work or an echocardiogram) for a clear diagnosis. Please have a radiologist and your treating physician review this image directly.\",\"references\":[\"https://radiopaedia.org/articles/pulmonary-oedema\",\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\"https://pubs.rsna.org/doi/10.1148/rg.2020190154\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP/PA)",
+  "quality": "Fair",
+  "findings": [
+    "Bilateral perihilar and lower zone opacities with a somewhat symmetric, hazy appearance",
+    "Increased density at both lung bases, right greater than left, obscuring the costophrenic angles",
+    "Cardiac silhouette appears mildly enlarged with cardiothoracic ratio difficult to assess precisely due to technique/rotation",
+    "Vascular markings appear prominent/indistinct in the perihilar regions, suggestive of possible pulmonary vascular congestion",
+    "Mediastinal contours appear grossly midline, though patient rotation limits assessment",
+    "No obvious focal consolidative mass identified",
+    "Visualized osseous structures (ribs, clavicles) appear intact without acute fracture"
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral perihilar/basilar opacities",
+      "severity": "Moderate",
+      "confidence": 58,
+      "description": "Hazy, somewhat symmetric increased opacity in the perihilar and lower lung zones bilaterally, which can be seen with pulmonary edema, atypical infection, or aspiration; right base appears slightly more affected than left"
+    },
+    {
+      "name": "Possible cardiomegaly",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "The cardiac silhouette appears enlarged relative to thoracic width, though this is difficult to confirm precisely due to projection/rotation artifact"
+    },
+    {
+      "name": "Suspected pulmonary vascular congestion",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "Indistinct, prominent vascular markings in the perihilar regions raise concern for vascular congestion, often associated with fluid overload or early heart failure"
+    }
+  ],
+  "summary": "This chest X-ray shows some haziness in both lungs, especially near the middle and lower portions, which can be caused by fluid buildup (like in heart failure), infection, or other lung conditions. The heart shadow looks slightly larger than typical, though the image quality and positioning make this hard to confirm with certainty. There are no obvious broken bones or large masses. Overall, these findings suggest the possibility of fluid in the lungs or a heart-related issue, but this needs to be correlated with the patient's symptoms, physical exam, and possibly additional tests (like blood work or an echocardiogram) for a clear diagnosis. Please have a radiologist and your treating physician review this image directly.",
+  "references": [
+    "https://radiopaedia.org/articles/pulmonary-oedema",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/doi/10.1148/rg.2020190154"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21768,
+    "bytesOut": 21768,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-09T07:12:05.580Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

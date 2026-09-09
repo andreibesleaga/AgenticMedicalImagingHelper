@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000008/series_2/00000008_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Left hemidiaphragm appears elevated, obscuring the left costophrenic angle.\",\n    \"Bilateral breasts are visible at the inferior aspect of the image.\",\n    \"Bony structures including ribs, clavicles, and thoracic spine appear unremarkable.\",\n    \"Cardiac silhouette is within normal limits for size and contour.\",\n    \"Pulmonary vascularity appears normal.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Elevated Left Hemidiaphragm\",\n      \"description\": \"The left hemidiaphragm is significantly elevated, appearing to rise to the level of the 5th posterior rib, which could be due to volume loss in the left lower lobe, phrenic nerve palsy, or subpulmonic effusion. The costophrenic angle is blunted.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows that your left diaphragm, which is the muscle that helps you breathe and separates your chest from your abdomen, is positioned higher than usual. This elevation might be caused by several factors, such as a partial collapse of the lower part of your left lung, a problem with the nerve that controls your diaphragm (phrenic nerve), or fluid collecting under your lung. Further investigation may be needed to determine the exact cause. Your heart and other visible bones in your chest appear normal.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.301095034\",\n    \"https://radiopaedia.org/articles/diaphragmatic-elevation-1\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Left hemidiaphragm appears elevated, obscuring the left costophrenic angle.",
+    "Bilateral breasts are visible at the inferior aspect of the image.",
+    "Bony structures including ribs, clavicles, and thoracic spine appear unremarkable.",
+    "Cardiac silhouette is within normal limits for size and contour.",
+    "Pulmonary vascularity appears normal."
+  ],
+  "abnormalities": [
+    {
+      "name": "Elevated Left Hemidiaphragm",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The left hemidiaphragm is significantly elevated, appearing to rise to the level of the 5th posterior rib, which could be due to volume loss in the left lower lobe, phrenic nerve palsy, or subpulmonic effusion. The costophrenic angle is blunted."
+    }
+  ],
+  "summary": "The X-ray of your chest shows that your left diaphragm, which is the muscle that helps you breathe and separates your chest from your abdomen, is positioned higher than usual. This elevation might be caused by several factors, such as a partial collapse of the lower part of your left lung, a problem with the nerve that controls your diaphragm (phrenic nerve), or fluid collecting under your lung. Further investigation may be needed to determine the exact cause. Your heart and other visible bones in your chest appear normal.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.301095034",
+    "https://radiopaedia.org/articles/diaphragmatic-elevation-1"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22784,
+    "bytesOut": 22784,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T08:03:19.423Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

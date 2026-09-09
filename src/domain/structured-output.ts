@@ -33,6 +33,58 @@ export type StructuredResult<T> = StructuredSuccess<T> | StructuredFailure;
 const MAX_ISSUES = 20;
 
 /**
+ * Numeric values a model emits *instead of* answering.
+ *
+ * Observed verbatim in the E4 longitudinal cohort from `google/gemma-4-31b-it`,
+ * which answered 24 of 39 records with `{"modality":-1, "quality":-1,
+ * "findings":-1, …}`. The schema correctly refuses them, but "expected string,
+ * received number" hides *why* the run degraded. Tagging the issue makes the
+ * model-dependency finding countable: `grep -c "(model sentinel)"`.
+ */
+const SENTINEL_NUMBERS: readonly number[] = [-1];
+
+/**
+ * Ranges the stage schemas enforce, keyed by the last path segment, so a
+ * sentinel in a bounded numeric field reads as the bound it broke.
+ */
+const RANGE_HINTS: Readonly<Record<string, string>> = {
+  confidence: "0–100",
+};
+
+/** The value at `path` inside `root`, or `undefined` when the path does not resolve. */
+function valueAtPath(root: unknown, path: readonly PropertyKey[]): unknown {
+  let current: unknown = root;
+  for (const key of path) {
+    if (current === null || (typeof current !== "object" && typeof current !== "function")) {
+      return undefined;
+    }
+    current = (current as Record<PropertyKey, unknown>)[key];
+  }
+  return current;
+}
+
+/**
+ * Render one Zod issue as the `path: message` string written into the artefact,
+ * upgrading the message when the offending value is a known model sentinel.
+ */
+function describeIssue(
+  object: Record<string, unknown>,
+  path: readonly PropertyKey[],
+  message: string
+): string {
+  const pathStr = path.length > 0 ? path.map((p) => String(p)).join(".") : "(root)";
+  const value = valueAtPath(object, path);
+  if (typeof value !== "number" || !SENTINEL_NUMBERS.includes(value)) {
+    return `${pathStr}: ${message}`;
+  }
+  // Reaching here means the path resolved to a number, so it is non-empty.
+  const range = RANGE_HINTS[String(path[path.length - 1]!)];
+  return range !== undefined
+    ? `${pathStr}: ${value} is not in ${range} (model sentinel)`
+    : `${pathStr}: ${value} is not a valid value here (model sentinel) — ${message}`;
+}
+
+/**
  * Remove a surrounding Markdown code fence (```json … ``` or ``` … ```).
  * Text without a fence is returned trimmed and unchanged.
  */
@@ -94,9 +146,7 @@ export function parseStructured<T>(
     ok: false,
     issues: result.error.issues
       .slice(0, MAX_ISSUES)
-      .map(
-        (issue) => `${issue.path.length > 0 ? issue.path.join(".") : "(root)"}: ${issue.message}`
-      ),
+      .map((issue) => describeIssue(object, issue.path, issue.message)),
   };
 }
 

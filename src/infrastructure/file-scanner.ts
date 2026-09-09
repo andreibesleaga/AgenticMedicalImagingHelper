@@ -119,6 +119,17 @@ export async function scanInputDirectory(
     throw new FileScanError(`Input directory not found or not readable: ${inputDir}`);
   }
 
+  // Series order is a *documented product decision*, not an accident: PRD §12 Q3
+  // resolves temporal ordering as "alphabetical by series folder name" (users
+  // encode dates in the folder name), and the evolution prompt tells the model
+  // the sessions are "ordered chronologically by series name". `fs.readdir`
+  // guarantees no order at all — POSIX leaves it unspecified and ext4's hashed
+  // directory index returns neither creation nor lexicographic order — so
+  // without this sort the same input could yield a different session order on a
+  // different filesystem, silently inverting a progression verdict. Sorted by
+  // code unit, matching the `imagePaths.sort()` / `txtPaths.sort()` below.
+  entries.sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0));
+
   // Safety: reject if resolvedInput looks like it escaped via traversal
   // (e.g., symlink resolution to parent directories outside expected scope)
   const normalizedInput = path.normalize(resolvedInput);

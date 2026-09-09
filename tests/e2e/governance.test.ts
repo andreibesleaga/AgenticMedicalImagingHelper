@@ -662,3 +662,90 @@ describe("E2E governance — human oversight (Art. 14)", () => {
     }
   });
 });
+
+// ─── 8. Context consistency ──────────────────────────────────────────────────
+
+/**
+ * The fairness probe scored two E4 runs perfectly clean while they described a
+ * 69-year-old female as a child and a 54-year-old as "a young patient". The
+ * context-consistency probe is wired into the CLI to catch that class of
+ * output, and — because it is a heuristic over model prose — it must warn
+ * without ever changing the exit code.
+ */
+describe("E2E governance — context consistency", () => {
+  const AGE_SEX_CONTEXT =
+    "De-identified frontal chest radiographs. Patient age at first study: 69 years; sex: female. " +
+    "No clinical history is available.";
+
+  /** Replies whose narrative invents a paediatric male patient. */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  function contradictingReply(body: any): StubReply {
+    const content = {
+      image: JSON.stringify({
+        modality: "X-ray",
+        anatomyRegion: "Chest (AP)",
+        quality: "Good",
+        findings: ["Normal thymic shadow"],
+        abnormalities: [],
+        summary: "Chest X-ray of a child; his lungs are clear. Likely a paediatric ICU study.",
+        references: [],
+      }),
+      series: SERIES_JSON,
+      evolution: EVOLUTION_JSON,
+    }[stageOf(body)];
+    return { json: { choices: [{ message: { content } }], usage: USAGE } };
+  }
+
+  it("warns on stderr and records the finding in the manifest, without failing the run", async () => {
+    installFetchStub(contradictingReply);
+    const { input, output } = dirs();
+    await makeInput(input, { contextText: AGE_SEX_CONTEXT, images: 1 });
+
+    // Non-blocking: the probe never changes the exit code.
+    expect(await runAnalyze(input, output, BASE_OPTS)).toBe(0);
+
+    expect(cap.stderr).toMatch(/Context-consistency: \d+ statement\(s\)/);
+    expect(cap.stderr).toMatch(/non-blocking/);
+
+    const manifest = (await readManifest(output))!;
+    const headline = manifest.warnings.find((w) => w.startsWith("Context-consistency:"));
+    expect(headline).toBeDefined();
+    expect(headline).toMatch(/\[age, sex\]/);
+
+    const details = manifest.warnings.filter((w) => w.startsWith("context-consistency ["));
+    expect(details.length).toBeGreaterThan(0);
+    expect(details.join(" ")).toContain("the context states 69");
+    expect(details.join(" ")).toContain("Chest X-ray of a child");
+  });
+
+  it("records nothing when the narrative agrees with the supplied context", async () => {
+    const { input, output } = dirs();
+    await makeInput(input, { contextText: AGE_SEX_CONTEXT, images: 1 });
+
+    expect(await runAnalyze(input, output, BASE_OPTS)).toBe(0);
+
+    expect(cap.stderr).not.toMatch(/Context-consistency/);
+    const manifest = (await readManifest(output))!;
+    expect(
+      manifest.warnings.filter((w) => w.toLowerCase().includes("context-consistency"))
+    ).toEqual([]);
+  });
+
+  it("records nothing when the context states no demographics", async () => {
+    installFetchStub(contradictingReply);
+    const { input, output } = dirs();
+    await makeInput(input, { contextText: CLEAN_CONTEXT, images: 1 });
+
+    expect(await runAnalyze(input, output, BASE_OPTS)).toBe(0);
+    expect(cap.stderr).not.toMatch(/Context-consistency/);
+  });
+
+  it("records nothing when there is no context file at all", async () => {
+    installFetchStub(contradictingReply);
+    const { input, output } = dirs();
+    await makeInput(input, { images: 1 });
+
+    expect(await runAnalyze(input, output, BASE_OPTS)).toBe(0);
+    expect(cap.stderr).not.toMatch(/Context-consistency/);
+  });
+});

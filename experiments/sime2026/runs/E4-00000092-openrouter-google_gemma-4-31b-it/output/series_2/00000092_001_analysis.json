@@ -1,0 +1,31 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000092/series_2/00000092_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\":\": \"JSON\", \":2\": \"JSON\", \"modality\": \"X-ray\", \"anatomyRegion\": \"Chest (PA)\", \"quality\": \"Good\", \"findings\": [[\"Lungs are clear of focal consolidations or masses\", \"Right costophrenic angle is blunted\", \"Left costophrenic angle is clear\", \"Heart size is within normal limits\", \"Mediastinum is midline\", \"Bony structures appear intact\"]], \"abnormalities\": [[\"Right pleural effusion\", \"Blunting of the right costophrenic angle suggests a small amount of pleural fluid\", \"Mild\", 90]], \"summary\": \"The chest X-ray shows a small amount of fluid around the bottom of the right lung, known as a right pleural effusion. The rest of the lungs are clear, and the heart is a normal size. This can be caused by several things, including infection, heart failure, or inflammation, and should be correlated with your symptoms by a doctor.\", \"references\": [\"https://radiopaedia.org/articles/pleural-effusion\", \"https://www.acr.org/Clinical-Resources/Radiologic-Guidelines\"]}",
+  "findings": [],
+  "validation": {
+    "ok": false,
+    "issues": [
+      "findings.0: Invalid input: expected string, received array",
+      "abnormalities.0: Invalid input: expected object, received array"
+    ]
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22555,
+    "bytesOut": 22555,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-08T19:25:28.309Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S3x10/series_3/img_01_00014666_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pneumothorax, or large pleural effusion.\",\n    \"Bilateral lung fields appear clear.\",\n    \"Cardiac silhouette is within normal limits for size.\",\n    \"Mediastinal contours are unremarkable.\",\n    \"Bony thorax is intact without acute fracture.\",\n    \"Small metallic foreign bodies are noted in the lower lung fields bilaterally, likely artifacts such as nipple rings.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Nipple rings\",\n      \"description\": \"Two circular metallic foreign bodies are seen overlying the lower lung fields bilaterally, consistent with nipple rings. These are external artifacts and do not represent internal pathology.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This chest X-ray shows clear lungs without any signs of pneumonia, collapsed lung (pneumothorax), or significant fluid around the lungs. The heart appears to be of normal size, and the major blood vessels in the chest look normal. The bones of the chest are intact. There are two metallic objects, likely nipple rings, visible over the lower part of the chest, which are external to the body and do not indicate any medical issue.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8576402/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pneumothorax, or large pleural effusion.",
+    "Bilateral lung fields appear clear.",
+    "Cardiac silhouette is within normal limits for size.",
+    "Mediastinal contours are unremarkable.",
+    "Bony thorax is intact without acute fracture.",
+    "Small metallic foreign bodies are noted in the lower lung fields bilaterally, likely artifacts such as nipple rings."
+  ],
+  "abnormalities": [
+    {
+      "name": "Nipple rings",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Two circular metallic foreign bodies are seen overlying the lower lung fields bilaterally, consistent with nipple rings. These are external artifacts and do not represent internal pathology."
+    }
+  ],
+  "summary": "This chest X-ray shows clear lungs without any signs of pneumonia, collapsed lung (pneumothorax), or significant fluid around the lungs. The heart appears to be of normal size, and the major blood vessels in the chest look normal. The bones of the chest are intact. There are two metallic objects, likely nipple rings, visible over the lower part of the chest, which are external to the body and do not indicate any medical issue.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8576402/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24747,
+    "bytesOut": 24747,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:03:49.501Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

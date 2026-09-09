@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4L/00016493/series_3/00016493_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A metallic foreign body, consistent with a button battery, is visualized in the upper abdomen/lower chest, projected over the gastric fundus or distal esophagus.\",\n    \"No obvious signs of esophageal perforation or mediastinal widening are noted.\",\n    \"Lung fields appear clear without focal consolidation or pneumothorax.\",\n    \"Cardiac silhouette is normal in size and contour.\",\n    \"Bony structures, including ribs and clavicles, show no acute fractures.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Button Battery\",\n      \"description\": \"A circular, radiopaque foreign body consistent with a button battery is identified in the epigastric region, likely within the stomach or distal esophagus. The characteristic 'double-rim' or 'halo' sign is not distinctly seen, but the appearance is consistent with a button battery. Its exact location (esophagus vs. stomach) would be critical to determine clinical management.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray image shows a metallic object, which looks like a button battery, located in the upper part of the belly, possibly in the stomach or the lower part of the food pipe (esophagus). There are no immediate signs of serious damage to the surrounding areas, like the lungs or the chest cavity. The presence of a button battery in the digestive tract, especially the esophagus, is a medical emergency due to the potential for severe chemical burns and tissue damage. It requires urgent medical evaluation to determine its exact location and to plan for its removal.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8309192/\",\n    \"https://www.chop.edu/conditions-diseases/button-battery-ingestion\",\n    \"https://radiopaedia.org/articles/button-battery-ingestion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A metallic foreign body, consistent with a button battery, is visualized in the upper abdomen/lower chest, projected over the gastric fundus or distal esophagus.",
+    "No obvious signs of esophageal perforation or mediastinal widening are noted.",
+    "Lung fields appear clear without focal consolidation or pneumothorax.",
+    "Cardiac silhouette is normal in size and contour.",
+    "Bony structures, including ribs and clavicles, show no acute fractures."
+  ],
+  "abnormalities": [
+    {
+      "name": "Button Battery",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "A circular, radiopaque foreign body consistent with a button battery is identified in the epigastric region, likely within the stomach or distal esophagus. The characteristic 'double-rim' or 'halo' sign is not distinctly seen, but the appearance is consistent with a button battery. Its exact location (esophagus vs. stomach) would be critical to determine clinical management."
+    }
+  ],
+  "summary": "This X-ray image shows a metallic object, which looks like a button battery, located in the upper part of the belly, possibly in the stomach or the lower part of the food pipe (esophagus). There are no immediate signs of serious damage to the surrounding areas, like the lungs or the chest cavity. The presence of a button battery in the digestive tract, especially the esophagus, is a medical emergency due to the potential for severe chemical burns and tissue damage. It requires urgent medical evaluation to determine its exact location and to plan for its removal.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8309192/",
+    "https://www.chop.edu/conditions-diseases/button-battery-ingestion",
+    "https://radiopaedia.org/articles/button-battery-ingestion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 17505,
+    "bytesOut": 17505,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T07:25:16.491Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

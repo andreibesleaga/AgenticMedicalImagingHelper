@@ -470,11 +470,11 @@ This project treats governance under regulation as a first-class concern. The pr
 - [src/domain/fairness.ts](src/domain/fairness.ts) — allocative-harm probe: demographic-token list + diagnostic-justifier window heuristic. Exercised by [tests/e2e/fairness.test.ts](tests/e2e/fairness.test.ts) (mocked) and [tests/live/cli-full.test.ts](tests/live/cli-full.test.ts) (real Gemini output).
 - Mandatory `DISCLAIMER` field on every output type, enforced at the TypeScript type level in [src/domain/types.ts](src/domain/types.ts) and asserted as a walk-the-tree hard test in Scenario 8 of [tests/e2e/full-analysis.test.ts](tests/e2e/full-analysis.test.ts).
 
-### Verified status (2026-09-08)
+### Verified status (2026-09-09, v1.1.0)
 
 | Gate                                            | Result                                                                                            |
 | ----------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `npm test` (default, 19 suites of mocked tests) | **199 / 199 pass** — coverage **98.13 % stmts · 96.41 % branches · 95.72 % funcs · 98.6 % lines** |
+| `npm test` (default, 34 suites of mocked tests) | **814 / 814 pass**, 4 snapshots — coverage **99.18 % stmts · 98.78 % branches · 98.25 % funcs · 99.18 % lines** (floor enforced in `jest.config.js`: 97 / 92 / 94 / 97) |
 | `npm run test:live` (opt-in, real Gemini API)   | requires `GOOGLE_API_KEY`; skipped by default                                                     |
 | `tsc --noEmit`                                  | clean                                                                                             |
 | `eslint src tests`                              | clean                                                                                             |

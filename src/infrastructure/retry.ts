@@ -2,7 +2,7 @@
  * Bounded retry with exponential backoff and full jitter, shared by every model
  * provider adapter.
  *
- * Why it exists: a SIME 2026 reproducibility batch failed mid-run because the
+ * Why it exists: a reproducibility batch failed mid-run because the
  * Gemini API answered concurrent calls with `429 Too Many Requests … exceeded
  * your current quota`. Nothing about that error is permanent, but the clients
  * had no retry, so a whole experiment was lost to a transient rate limit.

@@ -1,0 +1,65 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E4/00000239/series_6/00000239_005.png",
+  "seriesId": "series_6",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Fair\",\"findings\":[\"Frontal chest radiograph demonstrating both lung fields, mediastinum, and upper abdomen\",\"Bilateral increased interstitial/reticular markings noted throughout both lungs\",\"Cardiac silhouette appears mildly enlarged, though partially obscured by overlying density\",\"A well-defined, rounded, homogeneous soft tissue density is seen overlying the left lower chest/upper abdominal region, projecting over the region of the spleen or left hemidiaphragm\",\"Right hemidiaphragm appears preserved; left hemidiaphragm border is less distinct due to overlying density\",\"No obvious pneumothorax identified\",\"Visualized osseous structures (ribs, clavicles, spine) appear grossly intact\",\"Soft tissue markers (skin folds/artifacts) may be contributing to some density variation\"],\"abnormalities\":[{\"name\":\"Left basal rounded opacity\",\"description\":\"A well-circumscribed, oval to round density is seen in the left lower thoracic/upper abdominal region, possibly representing splenomegaly, a mass, pleural-based lesion, or artifact/skin fold. Further characterization with CT is recommended.\",\"severity\":\"Moderate\",\"confidence\":55},{\"name\":\"Bilateral interstitial markings\",\"description\":\"Increased reticular/interstitial pattern in both lungs, which could reflect vascular congestion, interstitial lung disease, or technical rotation/exposure factors.\",\"severity\":\"Mild\",\"confidence\":40},{\"name\":\"Possible cardiomegaly\",\"description\":\"Cardiac silhouette appears prominent relative to thoracic width, though positioning and technique limit precise cardiothoracic ratio measurement.\",\"severity\":\"Mild\",\"confidence\":35}],\"summary\":\"This chest X-ray shows the lungs, heart, and upper abdomen. There is a rounded shadow on the lower left side of the chest that could be due to several things — an enlarged spleen, a mass, fluid, or even just overlapping skin folds — and this would need a follow-up scan (like a CT) to clarify. The lungs show some increased markings that could reflect mild fluid buildup or a lung condition, but this isn't fully clear from this image alone. The heart may look slightly enlarged, but this could also be due to the angle of the X-ray. Overall, these findings are not definitive and require correlation with clinical history, physical exam, and possibly additional imaging for an accurate diagnosis.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria\",\"https://pubs.rsna.org/journal/radiographics\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Fair",
+  "findings": [
+    "Frontal chest radiograph demonstrating both lung fields, mediastinum, and upper abdomen",
+    "Bilateral increased interstitial/reticular markings noted throughout both lungs",
+    "Cardiac silhouette appears mildly enlarged, though partially obscured by overlying density",
+    "A well-defined, rounded, homogeneous soft tissue density is seen overlying the left lower chest/upper abdominal region, projecting over the region of the spleen or left hemidiaphragm",
+    "Right hemidiaphragm appears preserved; left hemidiaphragm border is less distinct due to overlying density",
+    "No obvious pneumothorax identified",
+    "Visualized osseous structures (ribs, clavicles, spine) appear grossly intact",
+    "Soft tissue markers (skin folds/artifacts) may be contributing to some density variation"
+  ],
+  "abnormalities": [
+    {
+      "name": "Left basal rounded opacity",
+      "severity": "Moderate",
+      "confidence": 55,
+      "description": "A well-circumscribed, oval to round density is seen in the left lower thoracic/upper abdominal region, possibly representing splenomegaly, a mass, pleural-based lesion, or artifact/skin fold. Further characterization with CT is recommended."
+    },
+    {
+      "name": "Bilateral interstitial markings",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Increased reticular/interstitial pattern in both lungs, which could reflect vascular congestion, interstitial lung disease, or technical rotation/exposure factors."
+    },
+    {
+      "name": "Possible cardiomegaly",
+      "severity": "Mild",
+      "confidence": 35,
+      "description": "Cardiac silhouette appears prominent relative to thoracic width, though positioning and technique limit precise cardiothoracic ratio measurement."
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs, heart, and upper abdomen. There is a rounded shadow on the lower left side of the chest that could be due to several things — an enlarged spleen, a mass, fluid, or even just overlapping skin folds — and this would need a follow-up scan (like a CT) to clarify. The lungs show some increased markings that could reflect mild fluid buildup or a lung condition, but this isn't fully clear from this image alone. The heart may look slightly enlarged, but this could also be due to the angle of the X-ray. Overall, these findings are not definitive and require correlation with clinical history, physical exam, and possibly additional imaging for an accurate diagnosis.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiographics"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21019,
+    "bytesOut": 21019,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-09T07:14:41.239Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

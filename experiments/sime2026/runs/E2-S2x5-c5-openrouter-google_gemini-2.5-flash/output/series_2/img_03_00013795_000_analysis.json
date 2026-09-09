@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S2x5/series_2/img_03_00013795_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute infiltrates, effusions, or pneumothorax identified.\",\n    \"Cardiac silhouette is mildly enlarged for age.\",\n    \"Vascular markings appear normal.\",\n    \"Diaphragms are intact and clear costophrenic angles.\",\n    \"Bony thorax appears normal.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette appears mildly enlarged relative to the thoracic cage, which could be physiological or indicate underlying cardiac pathology.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 70\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows that the lungs, bones, and surrounding areas appear normal. However, the heart size looks a little larger than expected for a child. This could be a normal variation for this individual, or it might suggest a need to look further into the heart's health. \\\"Cardiomegaly\\\" simply means an enlarged heart. It's important for a doctor to review this finding to determine if any further evaluation is needed.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900696/\",\n    \"https://radiopaedia.org/articles/cardiothoracic-ratio-2\",\n    \"https://www.heart.org/en/health-topics/heart-failure/what-is-heart-failure/types-of-heart-failure/enlarged-heart-cardiomyopathy\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute infiltrates, effusions, or pneumothorax identified.",
+    "Cardiac silhouette is mildly enlarged for age.",
+    "Vascular markings appear normal.",
+    "Diaphragms are intact and clear costophrenic angles.",
+    "Bony thorax appears normal."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 70,
+      "description": "The cardiac silhouette appears mildly enlarged relative to the thoracic cage, which could be physiological or indicate underlying cardiac pathology."
+    }
+  ],
+  "summary": "This X-ray of the chest shows that the lungs, bones, and surrounding areas appear normal. However, the heart size looks a little larger than expected for a child. This could be a normal variation for this individual, or it might suggest a need to look further into the heart's health. \"Cardiomegaly\" simply means an enlarged heart. It's important for a doctor to review this finding to determine if any further evaluation is needed.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900696/",
+    "https://radiopaedia.org/articles/cardiothoracic-ratio-2",
+    "https://www.heart.org/en/health-topics/heart-failure/what-is-heart-failure/types-of-heart-failure/enlarged-heart-cardiomyopathy"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 16861,
+    "bytesOut": 16861,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-09T08:02:49.617Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

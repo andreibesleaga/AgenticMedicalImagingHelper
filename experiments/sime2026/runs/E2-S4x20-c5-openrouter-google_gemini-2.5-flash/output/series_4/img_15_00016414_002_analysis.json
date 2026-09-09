@@ -1,0 +1,63 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_4/img_15_00016414_002.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute pleural effusion or pneumothorax.\",\n    \"Bilateral hilar regions appear prominent, possibly due to vascular engorgement or adenopathy.\",\n    \"Lung fields show increased interstitial markings, particularly in the lower lobes.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Bony thorax is intact without acute fracture or destructive lesion.\",\n    \"Surgical clips are noted in the left axillary region.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Prominent hila\",\n      \"description\": \"Bilateral hilar regions demonstrate prominence, which could represent vascular engorgement (e.g., pulmonary hypertension) or lymphadenopathy. Clinical correlation is recommended.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 75\n    },\n    {\n      \"name\": \"Increased interstitial markings\",\n      \"description\": \"Diffuse increased interstitial markings are observed in both lung fields, more pronounced in the lower lobes. This finding is non-specific and could be related to prior infection, interstitial lung disease, or early pulmonary edema.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 60\n    },\n    {\n      \"name\": \"Surgical clips\",\n      \"description\": \"Multiple surgical clips are present in the left axillary region, consistent with prior surgical intervention (e.g., lymph node dissection).\",\n      \"severity\": \"Normal\",\n      \"confidence\": 99\n    }\n  ],\n  \"summary\": \"The chest X-ray shows some findings that need to be looked at more closely. There are some prominent areas around the middle of the lungs (hila), which could be due to swollen blood vessels or lymph nodes. Also, the lung tissue itself has a somewhat hazy or net-like appearance, especially in the lower parts, which might be due to a previous infection, a lung condition, or early fluid accumulation. The heart size appears normal, and there's no evidence of a collapsed lung or significant fluid around the lungs. There are also surgical clips visible in the left armpit area, likely from a previous operation. These findings are not necessarily alarming on their own but warrant further evaluation by your doctor to determine their cause and significance.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125102\",\n    \"https://radiopaedia.org/articles/interstitial-lung-disease?lang=gb\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMcp1009581\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute pleural effusion or pneumothorax.",
+    "Bilateral hilar regions appear prominent, possibly due to vascular engorgement or adenopathy.",
+    "Lung fields show increased interstitial markings, particularly in the lower lobes.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Bony thorax is intact without acute fracture or destructive lesion.",
+    "Surgical clips are noted in the left axillary region."
+  ],
+  "abnormalities": [
+    {
+      "name": "Prominent hila",
+      "severity": "Moderate",
+      "confidence": 75,
+      "description": "Bilateral hilar regions demonstrate prominence, which could represent vascular engorgement (e.g., pulmonary hypertension) or lymphadenopathy. Clinical correlation is recommended."
+    },
+    {
+      "name": "Increased interstitial markings",
+      "severity": "Mild",
+      "confidence": 60,
+      "description": "Diffuse increased interstitial markings are observed in both lung fields, more pronounced in the lower lobes. This finding is non-specific and could be related to prior infection, interstitial lung disease, or early pulmonary edema."
+    },
+    {
+      "name": "Surgical clips",
+      "severity": "Normal",
+      "confidence": 99,
+      "description": "Multiple surgical clips are present in the left axillary region, consistent with prior surgical intervention (e.g., lymph node dissection)."
+    }
+  ],
+  "summary": "The chest X-ray shows some findings that need to be looked at more closely. There are some prominent areas around the middle of the lungs (hila), which could be due to swollen blood vessels or lymph nodes. Also, the lung tissue itself has a somewhat hazy or net-like appearance, especially in the lower parts, which might be due to a previous infection, a lung condition, or early fluid accumulation. The heart size appears normal, and there's no evidence of a collapsed lung or significant fluid around the lungs. There are also surgical clips visible in the left armpit area, likely from a previous operation. These findings are not necessarily alarming on their own but warrant further evaluation by your doctor to determine their cause and significance.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125102",
+    "https://radiopaedia.org/articles/interstitial-lung-disease?lang=gb",
+    "https://www.nejm.org/doi/full/10.1056/NEJMcp1009581"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22844,
+    "bytesOut": 22844,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:11:28.635Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

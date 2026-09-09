@@ -1,0 +1,62 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14/input-e4l20/E2/S4x20/series_3/img_03_00018610_009.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Complete opacification of the right hemithorax with mediastinal shift to the left.\",\n    \"The left lung field appears hyperinflated with a depressed left hemidiaphragm.\",\n    \"Absence of aerated lung parenchyma in the right hemithorax.\",\n    \"Tracheal deviation to the left.\",\n    \"Left hemidiaphragm appears flattened.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Hemithorax Opacification\",\n      \"description\": \"Complete opacification of the right hemithorax with associated contralateral (left) mediastinal and tracheal shift, consistent with a large right-sided pleural effusion, likely under tension or an extensive mass.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"Significant displacement of the mediastinum (including the trachea and heart) to the left side, indicating substantial pressure build-up in the right hemithorax.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Left Lung Hyperinflation\",\n      \"description\": \"The left lung appears hyperinflated, suggesting a compensatory mechanism due to reduced lung volume on the right.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This X-ray shows that the entire right side of the chest is filled with something that blocks X-rays, making it look completely white. This has pushed the heart and the windpipe (trachea) over to the left side of the chest. The left lung looks a bit over-inflated, possibly working harder to compensate. This appearance is most consistent with a very large collection of fluid (pleural effusion) in the right chest cavity, which is putting pressure on the surrounding structures, or a very large mass.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/tension-pleural-effusion\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3041926/\",\n    \"https://emedicine.medscape.com/article/300465-overview\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Complete opacification of the right hemithorax with mediastinal shift to the left.",
+    "The left lung field appears hyperinflated with a depressed left hemidiaphragm.",
+    "Absence of aerated lung parenchyma in the right hemithorax.",
+    "Tracheal deviation to the left.",
+    "Left hemidiaphragm appears flattened."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Hemithorax Opacification",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Complete opacification of the right hemithorax with associated contralateral (left) mediastinal and tracheal shift, consistent with a large right-sided pleural effusion, likely under tension or an extensive mass."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Significant displacement of the mediastinum (including the trachea and heart) to the left side, indicating substantial pressure build-up in the right hemithorax."
+    },
+    {
+      "name": "Left Lung Hyperinflation",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "The left lung appears hyperinflated, suggesting a compensatory mechanism due to reduced lung volume on the right."
+    }
+  ],
+  "summary": "This X-ray shows that the entire right side of the chest is filled with something that blocks X-rays, making it look completely white. This has pushed the heart and the windpipe (trachea) over to the left side of the chest. The left lung looks a bit over-inflated, possibly working harder to compensate. This appearance is most consistent with a very large collection of fluid (pleural effusion) in the right chest cavity, which is putting pressure on the surrounding structures, or a very large mass.",
+  "references": [
+    "https://radiopaedia.org/articles/tension-pleural-effusion",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3041926/",
+    "https://emedicine.medscape.com/article/300465-overview"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21040,
+    "bytesOut": 21040,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-08T19:11:01.659Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}
