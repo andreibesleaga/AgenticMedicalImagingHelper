@@ -2,11 +2,11 @@
 
 > AI-powered medical image analysis with temporal evolution tracking.
 >
-> First project powered by [GABBE](https://github.com/andreibesleaga/GABBE).
+> Powered by [GABBE](https://github.com/andreibesleaga/GABBE). All project generation flow documents saved in [docs](https://github.com/andreibesleaga/AgenticMedicalImagingHelper/tree/main/docs)
 >
-> All project generation flow documents saved in [docs](https://github.com/andreibesleaga/AgenticMedicalImagingHelper/tree/main/docs)
+> 
 
-A local TypeScript CLI tool that uses Google Gemini AI and LangGraph.js to analyze series of medical images, detect findings, and track how conditions evolve over time across multiple imaging sessions.
+A local TypeScript CLI tool that uses Google Gemini/OpenRouter AI and LangGraph.js to analyze series of medical images, detect findings, and track how conditions evolve over time across multiple imaging sessions.
 
 ⚠️ **DISCLAIMER**: This tool is for **educational and informational purposes only**. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional. **All outputs — findings, series summaries, temporal-evolution narratives and any treatment suggestions — are experimental model output and are NOT clinical recommendations, diagnoses, or medical advice.** This software is not a medical device, has had no clinical validation, and must never be used to make decisions about a real patient. See [`docs/COMPLIANCE.md` §0](./docs/COMPLIANCE.md) for the full scope statement.
 
