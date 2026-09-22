@@ -160,24 +160,175 @@ touches a patient.
 
 ---
 
-## 7. Open decisions
+## 7. Decisions (owner, 2026-09-11)
 
-Recorded so that the next version starts from explicit choices rather than defaults.
+Nine of the ten open questions are resolved below. One further question the owner considered is
+personal and out of scope for this public repository, and is deliberately not recorded here.
 
-1. **Image OCR (S1):** refuse, mask or warn by default when instruction-like text is found in an
-   image? Proposed: warn in research mode, refuse in `--profile clinical`.
-2. **Signing (C9):** hardware token, OS keychain, or a remote signing service? Determines who
-   can verify and how keys are rotated.
-3. **Context threading (R1):** thread the patient note into every stage by default, or keep it
-   evolution-only with an opt-in flag, to preserve comparability with the current batch?
-4. **Router policy (P4):** primary model plus fallback, or run two models always and surface
-   disagreement? The second doubles cost and gives S15 for free.
-5. **On-device model (C5):** which local vision model is good enough to be worth an adapter, and
-   is the quality trade-off acceptable for any use?
-6. **Datasets (§4):** start PhysioNet credentialing now for MIMIC-CXR and VinDr-CXR, or run the
-   1024-px NIH comparison first and decide afterwards?
-7. **Grounding (S4):** keep Google Search grounding at all in a clinical profile?
-8. **CO₂ figure (C4):** which published per-token energy estimate to cite, and how often to
-   refresh it?
-9. **Scope of the next paper:** resolution comparison only, or the full clinician-adjudicated
-   study?
+1. **Image OCR (S1) — DECIDED.** Default mode warns and masks; a `--secure` flag rejects the
+   run outright when instruction-like text is found inside an image. Implementation: OCR pass
+   (S1) classifies hits (instruction-like phrase, URL, identifier pattern); default behaviour
+   logs a warning, masks the region (in-paint or blackout) before the image reaches the model,
+   and records the decision in the manifest; `--secure` turns the same finding into a hard
+   refusal (new exit code, pre-flight, no upload) — the same shape as `--strict-phi` today.
+2. **Signing (C9) — DECIDED, phased.** Local signing only for now: a key held in the OS keychain
+   (or an unencrypted local key file with a documented threat-model caveat, whichever is faster
+   to ship first), no hardware token and no remote signing service yet. That closes the T9 gap
+   partially — tamper-evidence becomes verifiable against a key that still lives on the same
+   machine, which is named as a residual, not hidden. Hardware-token and remote-signer options
+   are deferred to the real-deployment phase (§5), where key custody actually matters.
+3. **Context threading (R1) — DECIDED.** Default behaviour changes: the patient note is threaded
+   into every stage (per-image, per-series, per-evolution), not evolution-only as today. A
+   `--context-scope evolution-only` flag preserves the old, narrower behaviour for anyone who
+   needs to reproduce the current frozen batch exactly. Any new cohort run under the new default
+   is a new batch, not a revision of the old one, and must be labelled as such.
+4. **Router policy (P4) — DECIDED.** Default is quality-first: the two best-suited multimodal
+   models (chosen from live benchmarking at run time, not hard-coded) run in parallel, and their
+   outputs are cross-checked/corroborated into one higher-confidence result, with disagreement
+   surfaced rather than silently resolved. A `--economy` flag switches to a single cheap model
+   for tests, non-critical runs, and large or long batches where doubling cost is not justified.
+   This subsumes S15 (cross-model disagreement) as a first-class default rather than an
+   afterthought.
+5. **On-device model (C5) — DECIDED to add; candidate list in §8.1.** Yes, worth an adapter.
+   Needs a verified shortlist (below) checked against two hardware tiers: the current laptop
+   (6 GB VRAM, NVIDIA) and a target clinic workstation (~€3,000 budget). Not started; §8.1 is the
+   plan, to be re-verified against live pricing/benchmarks before any purchase or download.
+6. **Datasets (§4) — DEFERRED, plan recorded.** Not now. Record every candidate dataset for
+   later, when there is time to open accounts/credentialing and run the complete comparative
+   study properly, feeding into the final architecture/model choice and the next paper. See §8.2
+   for the staged plan. Nothing here is started; this is a plan to execute later, in full.
+7. **Grounding (S4) — DECIDED, conditional.** Keep Google Search grounding, but only where it is
+   actually needed — not on by default in a clinical profile. Exact trigger condition (e.g. only
+   when the model itself flags uncertainty, or only for a named "research context" section) is
+   an implementation detail to fix when P4/C5 land; default to **off** in `--profile clinical`
+   until a specific need is demonstrated.
+8. **CO₂ figure (C4) — DECIDED, criterion only.** Use the most accurate published per-token /
+   per-inference energy estimate available at implementation time (not a specific source picked
+   today) — re-verify the source at build time rather than hard-coding a 2026 figure, since
+   published estimates for LLM inference energy have historically been rough and provider-
+   dependent. Document the source and its date next to the number, every time it is refreshed.
+9. **Scope of the next paper (§4) — DECIDED, deferred, full scope.** The next study is the full
+   scope, not a narrower resolution-only comparison: models (including the §8.1 on-device
+   candidates and the §8.2 datasets), datasets, bias/fairness evaluation, cost, output quality,
+   diagnostic and treatment-suggestion evolution, and clinician review at the end — carried
+   through to a complete, best-possible software version and, where warranted, real clinical
+   deployment with every legal requirement met. Likely deferred in time (after §8.2's dataset
+   work), but the detailed plan is written now so nothing has to be re-derived later — see §8.3.
+
+---
+
+## 8. Detailed plans for the deferred decisions
+
+### 8.1 On-device / open-weight model candidates (decision 5)
+
+**Not yet verified against live pricing, licences or benchmarks — re-check every row before
+committing hardware or downloads.** Two target tiers:
+
+| Tier | Hardware | What it buys |
+| --- | --- | --- |
+| Dev laptop | 6 GB VRAM, NVIDIA | Smoke-testing the on-device adapter path itself; only the smallest quantised vision-language models fit |
+| Clinic workstation | ~€3,000 budget (a consumer/prosumer GPU with 16–24 GB VRAM is the realistic target at that price) | A materially better local model, enough to be a genuine fallback/offline option for a site that forbids cloud calls |
+
+Candidate families to verify (open-weight, vision-capable, permissively or research-licensed —
+confirm the exact licence terms before any clinical-adjacent use):
+
+- **Qwen-VL family** (already proven useful through OpenRouter in this project's own
+  experiments) — check the smallest quantised variant that fits 6 GB (likely a 2B–7B class
+  model at 4-bit) for the laptop tier, and a larger variant for the clinic tier.
+- **LLaVA-family / LLaVA-NeXT derivatives** — mature, widely quantised, good community tooling
+  (llama.cpp / Ollama support), worth checking for both tiers.
+- **Google Gemma vision-capable variants** (already in the four-model comparison via
+  OpenRouter) — check for a locally-runnable quantised release.
+- **Microsoft Phi vision-capable models** — historically strong for their size class; worth
+  checking against the 6 GB tier specifically.
+- **InternVL family** — strong benchmark performance in the open-weight VLM space; check size
+  classes against both tiers.
+
+For each candidate, before adopting it: verify (a) current licence terms, (b) quantised memory
+footprint against the two tiers above with a safety margin, (c) inference speed on the target
+hardware, (d) whether it supports the structured/JSON-schema output style this pipeline expects
+or needs a stricter prompt/parsing adaptation, and (e) a small labelled-benchmark run (reuse the
+E1 fairness benchmark and a handful of E4 images) before trusting it in any experiment. Runner:
+Ollama or llama.cpp are the most likely integration points for a new provider adapter behind the
+existing port (§2.1 P4), consistent with the ports-and-adapters layering already in place.
+
+### 8.2 Dataset programme (decision 6) — staged, deferred
+
+Executed only once accounts/credentialing time is available. Order of work:
+
+1. **Start credentialing early, even before running anything** (PhysioNet CITI certificate +
+   data use agreements for MIMIC-CXR and VinDr-CXR take days to weeks) — this can run in the
+   background while other work continues, without committing to the full study yet.
+2. **NIH ChestX-ray14 original 1024-px** run first once credentialing is moving — the cleanest,
+   already-controlled comparison against the existing 224-px cohort (same patients, same
+   selection files).
+3. **VinDr-CXR** (radiologist-annotated) next — the first dataset that can support an actual
+   accuracy statement rather than descriptive label agreement.
+4. **MIMIC-CXR** (longitudinal, with reports) once granted — depth beyond 3–6 sessions.
+5. **PadChest / CheXpert** as secondary/cross-population checks if time allows.
+6. **Other modalities** (ultrasound, CT, MRI — BUSI, LIDC-IDRI, DeepLesion, BraTS, ISBI-2015/
+   MSSEG) only after the DICOM/NIfTI ingestion adapters (§2.5 H3) exist; treat as a separate
+   release.
+
+Re-price and re-verify every dataset's access terms and every model's pricing/benchmarks
+immediately before this programme starts — nothing above is assumed still current at execution
+time.
+
+### 8.3 Full next-generation study (decision 9) — deferred, complete scope
+
+A single integrated protocol, to run after §8.1 and §8.2 have produced verified model and
+dataset shortlists. Not started; written out now so the shape of the work is fixed.
+
+1. **Models:** the router's quality-first pair (decision 4) plus the on-device candidates
+   (§8.1), benchmarked against each other on the same cohort.
+2. **Datasets:** the full §8.2 programme, at native resolution, with expert labels where
+   available.
+3. **Bias/fairness:** group-stratified error rates (§4 E2), not just the output-level probe.
+4. **Cost:** full provider-reported cost accounting across every model/dataset combination
+   actually used, at the router's default quality-first setting and at `--economy`.
+5. **Output quality, diagnosis and treatment evolution:** systematic scoring of findings,
+   differential diagnoses, longitudinal evolution narratives and treatment suggestions — not
+   just direction agreement.
+6. **Clinician review at the end:** every generated report scored against the images by a
+   qualified clinician (§4 E1), replacing self-adjudicated agreement as the paper's headline
+   result.
+7. **Statistical plan, pre-registration and data-use records** (§4 E4–E5) written before any run.
+8. **Outcome:** feeds directly into (a) the next, complete software version — best architecture,
+   best models (cloud and on-device), best datasets — and (b) a final paper reporting the full
+   study, models, datasets, biases, costs, quality, diagnostics/treatment evolution and clinician
+   review together. Real clinical deployment (§5) follows only after this study and only with
+   every legal requirement in place.
+
+This is explicitly the endpoint the "not yet shown" list in the paper and the video (§14 of the
+presentation deck) points at — the plan by which each "not yet shown" item becomes "demonstrated"
+in a later, separate release.
+## 9. Version 2 programme (planned, 2027) — pointer
+
+Recorded 2026-09-15. Nothing below is started; it sequences §2–§5 into one programme and names the
+constraints found while planning it. The private plan of record (site, legal design, venue, budget)
+lives outside this repository.
+
+1. **v2 engineering (Q1 2027), in this order:** ingest node with DICOM/NIfTI readers, PS3.15 tag
+   de-identification and OCR-based burned-in-text masking (§2.5 H3, §3 S1–S3/S5–S6) → quality-first
+   router (§7 decision 4) → in-graph human-review gate via LangGraph `interrupt()` + a persistent
+   checkpointer (§2.1 P2, §2.2 C8) → locally signed manifests (§7 decision 2) → on-device adapter (§8.1)
+   → probe set v2 (§2.4 R2, §3 S14/S17) → `--profile clinical` (§3 S4/S7/S10/S12/S18–S19) → cost + CO₂
+   ledger (§2.2 C4) → a minimal local reviewer console for clinician scoring → evaluation harness →
+   SBOM, build stamp, Docker (§2.5, §3 S8). Tag `v2.0.0-beta` at the end of the quarter.
+2. **Studies (Q2 2027):** the §4/§8.3 programme, pre-registered, each with a statistical plan and a
+   cost cap. **Data-use constraint (verified 2026-09-15):** the PhysioNet credentialed-data licence
+   forbids sending MIMIC-CXR / VinDr-CXR through third-party APIs or LLM services, and the CheXpert and
+   PadChest agreements forbid redistribution; **those datasets run on the on-device tier or via the providers PhysioNet lists as acceptable**.
+   Cloud model pairs are evaluated freely on NIH ChestX-ray14 originals (no data-use agreement). Tag `v2.0.0` with a
+   software DOI once the study pack is committed under `experiments/v2/`.
+3. **Clinician reader study and a live clinical comparison (Q3 2027):** practising doctors record
+   their own diagnoses on de-identified cases from their practice, the program runs afterwards, and
+   the two are scored against each other. This is a research comparison, not a deployment: the
+   program's output never goes back into patient care, `COMPLIANCE.md` §0 stays true, and the paper
+   carries the usual ethics and data statements. The on-device tier is the default for clinic cases;
+   any cloud route must satisfy the data's own terms (PhysioNet names Vertex AI, Azure OpenAI,
+   Bedrock and Anthropic as acceptable; OpenRouter and the plain Gemini API are not) and the
+   provider's terms (several restrict clinical or medical-advice use — check on the day).
+4. **Paper (Q4 2027):** the full-paper successor to the SIME 2026 work-in-progress paper (§6), reported
+   against DECIDE-AI, CLAIM and TRIPOD+AI, with every number regenerable from the committed run tree as
+   in v1.
