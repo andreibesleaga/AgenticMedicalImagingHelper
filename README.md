@@ -24,7 +24,7 @@ This repository is the **reference implementation** behind two publications. It 
 
 ### Paper
 
-Andrei N. Beșleagă, **"Agentic Multimodal Architectures for Medical Imaging: Orchestration, Deterministic Fairness Probing, and Governance,"** accepted at the **IEEE International Conference on Smart Innovations for Medicine and Engineering (SIME 2026)**, Sousse, Tunisia, 2–4 Nov. 2026. To appear in _IEEE Xplore_.
+Andrei N Besleaga, **"Agentic Multimodal Architectures for Medical Imaging: Orchestration, Deterministic Fairness Probing, and Governance,"** accepted at the **IEEE International Conference on Smart Innovations for Medicine and Engineering (SIME 2026)**, Sousse, Tunisia, 2–4 Nov. 2026. To appear in _IEEE Xplore_.
 
 - Preprint DOI: [10.5281/zenodo.20762929](https://doi.org/10.5281/zenodo.20762929)
 
