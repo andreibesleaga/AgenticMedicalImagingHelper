@@ -332,3 +332,56 @@ lives outside this repository.
 4. **Paper (Q4 2027):** the full-paper successor to the SIME 2026 work-in-progress paper (§6), reported
    against DECIDE-AI, CLAIM and TRIPOD+AI, with every number regenerable from the committed run tree as
    in v1.
+
+## 10. Full-evaluation programme (planned 2026-09-29) — supersedes the study plan in §9
+
+Nothing below is started. It extends §4, §8 and §9 with the datasets, models and interfaces checked on
+2026-09-29. Every model id, price and dataset term is re-verified on the day each part runs.
+
+### 10.1 Experiment folders
+
+| Folder | What it will hold |
+| --- | --- |
+| `experiments/sime2026/` | **Frozen.** The SIME 2026 paper's pack, unchanged. |
+| `experiments/sime-full/` | The same experiments (E2–E5, probes) on the **original 1024-px NIH ChestX-ray14 images**, same patients and selection file, run on Google's paid Gemini API: the paper's model where the project can still call it, the current Gemini 3.x models, and the paper's four model families at full resolution. Includes a paired 224-px vs 1024-px comparison, with the 224-px copies made from the originals by a documented resampler. |
+| `experiments/physionet/` | Code, protocol, selection scripts and **aggregate results only** for credentialed PhysioNet datasets (MS-CXR-T, Chest ImaGenome gold standard, VinDr-CXR, MIMIC-CXR-JPG with MIMIC-IV linkage). No images, identifiers or per-study outputs are published here, as the data use agreement and PhysioNet's 2025 policy on LLM services require. |
+| `experiments/expert-open/` | Openly licensed datasets with radiologist or pathology ground truth: NIH expert labels (Google), RSNA Pneumonia, LIDC-IDRI, NLST, LUMIERE, UCSF-PDGM, ISIC 2020, CBIS-DDSM. |
+| `experiments/evolution/` | Fixed fitness criteria, architecture candidates, results, and the decision record for each adopted change. |
+| `experiments/reader-study/` | Protocol and aggregate results of a clinician reader study (radiologists as co-investigators). |
+
+### 10.2 Data-use rules built into the code
+
+- **PhysioNet credentialed data** runs only on local models or on an enterprise cloud configured for zero data
+  retention, with the configuration recorded in each run manifest. A `--profile physionet` refuses OpenRouter and the
+  Gemini Developer API. This follows PhysioNet's "Use of MIMIC Data with Large Language Models and Online Services"
+  (2025-09-24), which requires that data not be retained by third-party LLM services and strongly recommends local models.
+- Datasets whose agreements forbid redistribution or third-party access (CheXpert, PadChest, ReXGradient) run on local
+  models only, unless their owners confirm otherwise in writing.
+- Openly licensed datasets may use any provider; OpenRouter calls request zero-data-retention routing.
+
+### 10.3 Software
+
+- **Models:** a quality-first pair of current frontier models with disagreement surfaced, an economy mode, and
+  on-device medical models (MedGemma 1.5 4B fits a 6 GB GPU; MedGemma 27B needs 24 GB). The default Gemini model moves
+  from `gemini-2.5-flash`, which Google now limits to earlier users, to a generally available Gemini 3.x model, and a
+  retired or refused model fails with a named exit code.
+- **Evidence-driven evolution:** architecture choices (single model vs pair, verifier pass, medical + frontier
+  ensemble, context scope, resolution, prompts) are compared against criteria fixed in advance, on development splits;
+  the winner is adopted through a decision record and a release. The program never modifies itself.
+- **Library and service:** a typed library API, an HTTP service with an OpenAPI contract, authentication, tenant
+  isolation, cost caps and a signed run manifest per call, and optionally an MCP server. Intended purpose stays
+  research use only; requests marked for clinical use are refused.
+- **Bias governance:** error rates by sex, age, race (where recorded) and site with confidence intervals; a
+  counterfactual test that changes only the demographic details in the patient note; a test of whether the model can
+  infer race or sex from the image; the fairness probe measured on real outputs; one datasheet per dataset.
+- **Compliance evidence pack:** a machine-readable register mapping each claimed control (EU AI Act Articles 9–15,
+  NIST AI RMF and its Generative AI Profile, HIPAA Security Rule technical safeguards, GDPR data minimisation, OWASP
+  Top 10 for LLM Applications and for Agentic Applications, MITRE ATLAS) to code and to an automated test; CI fails if
+  a claimed control has no passing test. This is evidence that supports an adopter's own compliance work. It is not a
+  certification: conformity of any diagnostic use would require the medical-device route in §5, and HIPAA and GDPR
+  duties rest with the organisation that deploys it.
+
+### 10.4 Publication
+
+A full paper reporting all of the above, with clinician review, citing and extending the SIME 2026 work-in-progress
+paper, reported against TRIPOD-LLM, CLAIM 2024, STARD-AI, DECIDE-AI and the STANDING Together recommendations.
