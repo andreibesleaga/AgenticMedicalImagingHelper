@@ -19,8 +19,14 @@ import {
   DEFAULT_OPENROUTER_MODEL,
 } from "../infrastructure/openrouter-client.js";
 import {
+  createLocalClient,
+  DEFAULT_LOCAL_BASE_URL,
+  DEFAULT_LOCAL_MODEL,
+} from "../infrastructure/local-client.js";
+import {
   CostMeter,
   CostCapExceededError,
+  DEFAULT_GEMINI_MODEL,
   defaultGeminiPricing,
 } from "../infrastructure/cost-meter.js";
 import { resolveMaxRetries, type RetryOptions } from "../infrastructure/retry.js";
@@ -47,6 +53,15 @@ import {
   scanContextFilesForPhi,
 } from "../domain/phi-scan.js";
 import { collectGeneratedText, contextConsistencyWarnings } from "../domain/context-consistency.js";
+import { biasProbeWarnings } from "../domain/fairness-v2.js";
+import { measurementProbeWarnings } from "../domain/measurement-probe.js";
+import {
+  findImageMetadata,
+  injectionWarnings,
+  sniffImageType,
+  typeForExtension,
+} from "../domain/input-guard.js";
+import { createHash } from "crypto";
 import { runMedicalImagingAgent } from "../adapters/langgraph-agent.js";
 import type { AnalyzeOptions, ImageAnalysis } from "../domain/types.js";
 
@@ -75,6 +90,25 @@ export interface RunAnalyzeOpts {
   allowPhi?: boolean;
   /** Refuse to upload anything when the PHI scan finds something (exit 7). */
   strictPhi?: boolean;
+  /**
+   * Refuse input that the input guard flags: instruction-like text in a context
+   * file, or an image whose bytes do not match its extension (exit 9).
+   */
+  secure?: boolean;
+  /** Exit 8 (after writing outputs and the manifest) if any governance probe fires. */
+  failOnProbe?: boolean;
+  /**
+   * JSON file mapping image file names to SHA-256 hex digests. Every input image
+   * must be listed and match, or nothing is uploaded (exit 10).
+   */
+  expectHashes?: string;
+}
+
+/** SHA-256 hex of a file's bytes. */
+async function sha256File(file: string): Promise<string> {
+  return createHash("sha256")
+    .update(await fs.readFile(file))
+    .digest("hex");
 }
 
 export async function runAnalyze(
@@ -110,28 +144,39 @@ export async function runAnalyze(
 
   // Provider selection (ADR-006): Google Gemini is the default; OpenRouter is an
   // opt-in second provider behind the same port, used to test the single-model
-  // monoculture risk named in ADR-004. Any other value is a configuration error.
+  // monoculture risk named in ADR-004. `local` is a model served on this machine
+  // through an OpenAI-compatible endpoint (Ollama, vLLM, llama.cpp): no key, no
+  // API cost, no data leaving the host. Any other value is a configuration error.
   const provider = (process.env.AI_PROVIDER ?? "google").trim().toLowerCase();
-  if (provider !== "google" && provider !== "openrouter") {
+  if (provider !== "google" && provider !== "openrouter" && provider !== "local") {
     process.stderr.write(
-      `Error: AI_PROVIDER must be "google" (default) or "openrouter" (got "${provider}").\n`
+      `Error: AI_PROVIDER must be "google" (default), "openrouter" or "local" (got "${provider}").\n`
     );
     return 1;
   }
-  const providerLabel = provider === "openrouter" ? "OpenRouter" : "Gemini";
+  const providerLabel =
+    provider === "openrouter" ? "OpenRouter" : provider === "local" ? "Local" : "Gemini";
 
+  // A local server needs no key; `LOCAL_LLM_API_KEY` is sent only when set.
   const apiKey =
     provider === "openrouter"
       ? process.env.OPENROUTER_API_KEY
-      : (process.env.GOOGLE_API_KEY ?? process.env.GEMINI_API_KEY);
-  // gemini-2.5-pro was retired for new API keys in 2026 (HTTP 404); flash is the
-  // cheapest generally-available multimodal model and the one used in the published experiments.
+      : provider === "local"
+        ? (process.env.LOCAL_LLM_API_KEY ?? "")
+        : (process.env.GOOGLE_API_KEY ?? process.env.GEMINI_API_KEY);
+  const localBaseUrl = process.env.LOCAL_LLM_BASE_URL ?? DEFAULT_LOCAL_BASE_URL;
+  // Google limits the 2.5 models to projects that already used them (checked
+  // 2026-09-29), so the direct-Google default is the GA gemini-3.8-flash. The
+  // OpenRouter default stays google/gemini-2.5-flash, which OpenRouter still
+  // serves and which the SIME 2026 experiments and the demo name explicitly.
   const apiAIModel =
     provider === "openrouter"
       ? (process.env.OPENROUTER_MODEL ?? DEFAULT_OPENROUTER_MODEL)
-      : (process.env.GEMINI_MODEL ?? "gemini-2.5-flash");
+      : provider === "local"
+        ? (process.env.LOCAL_LLM_MODEL ?? DEFAULT_LOCAL_MODEL)
+        : (process.env.GEMINI_MODEL ?? DEFAULT_GEMINI_MODEL);
 
-  if (!apiKey) {
+  if (apiKey === undefined || (apiKey === "" && provider !== "local")) {
     process.stderr.write(
       provider === "openrouter"
         ? "Error: OPENROUTER_API_KEY environment variable is not set (AI_PROVIDER=openrouter).\n" +
@@ -233,6 +278,91 @@ export async function runAnalyze(
     if (opts.allowPhi) warnings.push("PHI findings acknowledged with --allow-phi.");
   }
 
+  // ── Input integrity: are these the expected, original files? ──────────────
+  // Optional. With --expect-hashes, every image must appear in the list under
+  // its file name with the same SHA-256, or nothing is uploaded (exit 10).
+  const allImages = series.flatMap((s) => s.imagePaths);
+  if (opts.expectHashes) {
+    let expected: Record<string, string>;
+    try {
+      expected = JSON.parse(await fs.readFile(opts.expectHashes, "utf-8")) as Record<
+        string,
+        string
+      >;
+      if (typeof expected !== "object" || expected === null || Array.isArray(expected)) {
+        throw new Error("expected a JSON object mapping file names to SHA-256 hex digests");
+      }
+    } catch (err) {
+      process.stderr.write(
+        `Error: cannot read --expect-hashes ${opts.expectHashes}: ${(err as Error).message}\n`
+      );
+      return 10;
+    }
+    const problems: string[] = [];
+    for (const img of allImages) {
+      const name = path.basename(img);
+      // Series folders may prefix copies (img_01_<name>); match the original name.
+      const key = expected[name] !== undefined ? name : name.replace(/^img_\d+_/, "");
+      const want = expected[key];
+      if (want === undefined) {
+        problems.push(`${path.relative(inputDir, img)}: not in the expected list`);
+        continue;
+      }
+      const got = await sha256File(img);
+      if (got !== want.toLowerCase()) {
+        problems.push(`${path.relative(inputDir, img)}: SHA-256 ${got} ≠ expected ${want}`);
+      }
+    }
+    if (problems.length > 0) {
+      process.stderr.write(
+        `Error: input integrity check failed for ${problems.length} image(s); nothing was uploaded.\n` +
+          problems.map((p) => `  ${p}\n`).join("")
+      );
+      return 10;
+    }
+    warnings.push(`input-integrity: ${allImages.length} image(s) matched --expect-hashes.`);
+    log(`Input integrity: all ${allImages.length} image(s) match ${opts.expectHashes}`);
+  }
+
+  // ── Input guard (OWASP LLM01/LLM02): content type, embedded metadata, and
+  //    instruction-like text in context files. Warn by default; --secure refuses
+  //    (exit 9) before anything is uploaded. Metadata is always stripped by the
+  //    image pre-flight, so it is recorded but never a refusal.
+  const guard: string[] = [];
+  const refusals: string[] = [];
+  for (const img of allImages) {
+    const bytes = await fs.readFile(img);
+    const rel = path.relative(inputDir, img);
+    const actual = sniffImageType(bytes.subarray(0, 132));
+    const promised = typeForExtension(path.extname(img));
+    if (actual !== promised) {
+      const line = `input-guard [type-mismatch] ${rel}: extension says ${promised ?? "?"}, bytes say ${actual}`;
+      guard.push(line);
+      refusals.push(line);
+    }
+    const meta = findImageMetadata(bytes);
+    if (meta.length > 0) {
+      guard.push(
+        `input-guard [image-metadata] ${rel}: ${meta.join(", ")} — stripped before upload`
+      );
+    }
+  }
+  const injection = injectionWarnings(contextFiles.map((f) => ({ path: f.rel, text: f.text })));
+  if (injection.length > 0) refusals.push(...injection.slice(1));
+  guard.push(...injection);
+  if (opts.secure && refusals.length > 0) {
+    process.stderr.write(
+      `Error: --secure is set and the input guard found ${refusals.length} problem(s); ` +
+        `nothing was uploaded.\n${refusals.map((r) => `  ${r}\n`).join("")}`
+    );
+    return 9;
+  }
+  if (guard.length > 0) {
+    process.stderr.write(`Warning: ${guard[0]}\n`);
+    for (const line of guard.slice(1)) process.stderr.write(`  ${line}\n`);
+    warnings.push(...guard);
+  }
+
   // Meter is always attached now: it is the only source of the per-call token
   // and cost rows the manifest needs (Art. 12). Its cap semantics are unchanged
   // — `maxCostUsd === undefined` still means "never throws" — and the verbose
@@ -242,9 +372,14 @@ export async function runAnalyze(
   // ("google/gemini-2.5-flash") still maps to the published Gemini rate, anything
   // else falls back to the conservative rate. For OpenRouter the estimate is
   // secondary: the provider-reported `usage.cost` is the figure that matters.
-  const pricing = defaultGeminiPricing(
-    provider === "openrouter" ? apiAIModel.replace(/^google\//, "") : apiAIModel
-  );
+  // A local model has no per-token price: zero pricing, so the estimate is $0
+  // and a cost cap never trips (wall-clock is still recorded per call).
+  const pricing =
+    provider === "local"
+      ? { inputUsdPerMillion: 0, outputUsdPerMillion: 0 }
+      : defaultGeminiPricing(
+          provider === "openrouter" ? apiAIModel.replace(/^google\//, "") : apiAIModel
+        );
   const ledger = new CallLedger();
   const meter = new CostMeter(maxCostUsd, pricing, (info) => {
     ledger.record(info);
@@ -280,7 +415,9 @@ export async function runAnalyze(
     geminiClient =
       provider === "openrouter"
         ? createOpenRouterClient(apiKey, apiAIModel, meter, undefined, { retry })
-        : createGeminiClient(createGeminiModelFromSdk(apiKey, apiAIModel), meter, { retry });
+        : provider === "local"
+          ? createLocalClient(localBaseUrl, apiAIModel, meter, undefined, { retry }, apiKey)
+          : createGeminiClient(createGeminiModelFromSdk(apiKey, apiAIModel), meter, { retry });
   } catch (err) {
     if (err instanceof MissingApiKeyError) {
       process.stderr.write(`Error: ${err.message}\n`);
@@ -298,6 +435,7 @@ export async function runAnalyze(
   let reportPaths: string[] = [];
   let imageResults: ImageAnalysis[] = [];
   let seriesCount = 0;
+  let probeFired = false;
 
   try {
     log("Starting agentic analysis pipeline...");
@@ -332,6 +470,20 @@ export async function runAnalyze(
       warnings.push(...contextWarnings);
     }
 
+    // ── Bias probe v2 and unsupported-measurement probe (non-blocking) ───────
+    // Both read only model-authored text. They warn and are recorded in the
+    // manifest; with --fail-on-probe any probe finding turns exit 0 into exit 8.
+    const generated = collectGeneratedText(finalState);
+    const probeWarnings = [
+      ...biasProbeWarnings(generated),
+      ...measurementProbeWarnings(finalState),
+    ];
+    for (const w of probeWarnings) {
+      if (/^(bias|measurement)-probe: /.test(w)) process.stderr.write(`Warning: ${w}\n`);
+    }
+    warnings.push(...probeWarnings);
+    probeFired = contextWarnings.length > 0 || probeWarnings.length > 0;
+
     const successCount = imageResults.filter((r) => r.status === "success").length;
     const failCount = imageResults.filter((r) => r.status === "error").length;
 
@@ -362,6 +514,12 @@ export async function runAnalyze(
     }
 
     exitCode = failCount > 0 ? 4 : 0;
+    if (exitCode === 0 && opts.failOnProbe && probeFired) {
+      process.stderr.write(
+        "Error: --fail-on-probe is set and a governance probe fired; outputs and manifest were written.\n"
+      );
+      exitCode = 8;
+    }
   } catch (err) {
     if (err instanceof CostCapExceededError) {
       process.stderr.write(`\n${err.message}\n`);

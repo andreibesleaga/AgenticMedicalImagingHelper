@@ -212,6 +212,24 @@ These roadmap items map directly into the compliance gaps above:
 8. Conscience Layer hook between `aggregateSeries` and `analyzeEvolution` (Art. 14; NIST MEASURE 2.11).
 9. Signed, hash-chained per-run manifest (Art. 12 + Art. 26; NIST MANAGE 4.1). ✅ **Hash-chained** and verifiable delivered 2026-09-08b ([ADR-007](architecture/decisions/ADR-007-run-manifest-audit-ledger.md)); **signed** deliberately deferred — a signature is only worth its key management, and a research CLI has nowhere safe to hold a private key on the same disk as the artefacts it signs (THREAT_MODEL T9).
 
+### 6.1 Addendum (2026-09-29) — guardrails and local inference
+
+Additive; nothing above is changed. Each control has tests, listed after it.
+
+| Control | Requirement it supports | Status | Evidence |
+| --- | --- | --- | --- |
+| Local provider (`AI_PROVIDER=local`, Ollama / vLLM / llama.cpp) | Item 5 above; Art. 15 robustness through diversity; NIST MAP 2.3; data minimisation (GDPR Art. 5(1)(c)) — no image leaves the host | ✅ delivered (default model MedGemma 1.5 4B) | `src/infrastructure/local-client.ts`, `tests/unit/infrastructure/local-client.test.ts` |
+| Input integrity (`--expect-hashes`, exit 10) | Art. 10 data governance (provenance of evaluation data); Art. 12 record-keeping | ✅ | `src/main/run-analyze.ts`, `tests/e2e/guardrails.test.ts` |
+| Input guard (type sniffing, image-metadata stripping, instruction-like context text; `--secure`, exit 9) | Art. 15 cybersecurity; OWASP LLM01/LLM02; GDPR Art. 25 (metadata may carry identifiers) | ✅ heuristic | `src/domain/input-guard.ts`, `src/infrastructure/image-policy.ts`, `tests/unit/domain/input-guard.test.ts`, `tests/e2e/guardrails.test.ts` |
+| Output sanitisation | Art. 15 cybersecurity; OWASP LLM05 | ✅ | `src/infrastructure/report-writer.ts`, `tests/unit/infrastructure/report-sanitize.test.ts` |
+| Bias probe v2 at run time | Item 3 above; Art. 10(2)(f)–(g) bias examination; NIST MEASURE 2.11 | ✅ probe; 🔶 group-level disparity evaluation still open | `src/domain/fairness-v2.ts`, `tests/unit/domain/fairness-v2.test.ts` (held-out P 0.929 / R 0.565) |
+| Unsupported-measurement probe | Art. 13 transparency (a stated size is an estimate); Art. 15 accuracy; SIME 2026 failure case F1 | ✅ | `src/domain/measurement-probe.ts`, `tests/unit/domain/measurement-probe.test.ts` |
+| `--fail-on-probe` (exit 8) | Item 8 above (a blocking hook); Art. 14 | 🔶 run-level block delivered; the in-graph gate remains open | `tests/e2e/guardrails.test.ts` |
+| Disclaimer, notice, prior-art record | Art. 13 instructions for use (intended purpose stated); product-liability hygiene | ✅ documents | `DISCLAIMER.md`, `NOTICE`, `docs/PRIOR-ART.md` |
+
+The scope statement in §0 is unchanged: research software, not a medical device.
+These controls are engineering evidence; they are not a conformity assessment.
+
 ---
 
 ## 7. Review cadence

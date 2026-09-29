@@ -51,14 +51,29 @@ function envNumber(name: string, fallback: number): number {
 /**
  * Published standard-tier Gemini prices (USD per 1M tokens, prompts ≤ 200k
  * tokens), as listed on https://ai.google.dev/gemini-api/docs/pricing
- * (page last updated 2026-09-04). Output prices include thinking tokens.
+ * (2.5 and 3.1-pro/3.5-flash rows: page of 2026-09-04; 3.8-flash and the
+ * flash-lite rows: page of 2026-09-24, re-read 2026-09-29). Output prices
+ * include thinking tokens. `gemini-3.8-flash` is priced at its introductory
+ * rate, valid until 2026-12-31 (then 1.50 / 7.50); re-check before relying on it.
  */
 export const GEMINI_PRICE_TABLE: Readonly<Record<string, GeminiPricing>> = {
   "gemini-2.5-flash": { inputUsdPerMillion: 0.3, outputUsdPerMillion: 2.5 },
   "gemini-2.5-pro": { inputUsdPerMillion: 1.25, outputUsdPerMillion: 10 },
   "gemini-3.1-pro-preview": { inputUsdPerMillion: 2, outputUsdPerMillion: 12 },
   "gemini-3.5-flash": { inputUsdPerMillion: 1.5, outputUsdPerMillion: 9 },
+  "gemini-3.8-flash": { inputUsdPerMillion: 0.75, outputUsdPerMillion: 3.75 },
+  "gemini-3.5-flash-lite": { inputUsdPerMillion: 0.3, outputUsdPerMillion: 2.5 },
+  "gemini-3.1-flash-lite": { inputUsdPerMillion: 0.25, outputUsdPerMillion: 1.5 },
 };
+
+/**
+ * Default model for the direct Google route. Google limits the 2.5 models to
+ * projects that already used them ("For any new projects, use our latest
+ * models: 3.5 Flash-Lite or 3.8 Flash", https://ai.google.dev/gemini-api/docs/models,
+ * read 2026-09-29), so a new key calling `gemini-2.5-flash` fails. The SIME 2026
+ * experiments name their model explicitly and are unaffected.
+ */
+export const DEFAULT_GEMINI_MODEL = "gemini-3.8-flash";
 
 /** Conservative fallback for models not in the table (highest rate we know). */
 const FALLBACK_PRICING: GeminiPricing = { inputUsdPerMillion: 2, outputUsdPerMillion: 12 };

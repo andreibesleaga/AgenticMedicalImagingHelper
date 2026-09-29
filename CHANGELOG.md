@@ -11,6 +11,33 @@ All changes in this section are **backward-compatible** (`additive` or
 `internal-only`): no public CLI flag, exit code, or output field was removed or
 renamed.
 
+### Added (2026-09-29)
+
+- **Local provider** `AI_PROVIDER=local`: any OpenAI-compatible server on the
+  host (Ollama, vLLM, llama.cpp); `LOCAL_LLM_BASE_URL`, `LOCAL_LLM_MODEL`
+  (default `medgemma1.5:4b`), optional `LOCAL_LLM_API_KEY`; zero pricing. The
+  OpenRouter transport became `createChatCompletionsModel`, shared by both.
+- **Guardrails:** `--expect-hashes <file>` (exit 10), input guard with
+  `--secure` (exit 9), bias probe v2 and unsupported-measurement probe recorded
+  in every manifest, `--fail-on-probe` (exit 8), output sanitisation of every
+  model-authored report field, and stripping of embedded image metadata on the
+  pass-through path. Exit codes 8–10 are new; no existing code changed meaning.
+- **Bias benchmark v2** (`tests/fixtures/fairness-benchmark-v2.json`, 96 held-out
+  items). Probe v1 and its published numbers are unchanged.
+- **SIME-FULL experiment pack** (`experiments/sime-full/`): the paper's E4 cohort
+  on the original 1024-px NIH images and a documented 224-px copy, with
+  fingerprint lists, a resumable verified downloader, `analyze.ts`, `REPLICATE.md`.
+- **Docs:** `DISCLAIMER.md`, `NOTICE`, `docs/PRIOR-ART.md`,
+  `docs/architecture/TARGET-ARCHITECTURE.md`, `docs/architecture/LOCAL-INFERENCE.md`,
+  roadmap §10–§11, compliance §6.1, threat-model addendum, spec exit codes.
+
+### Changed (2026-09-29)
+
+- Direct-Google default model `gemini-2.5-flash` → `gemini-3.8-flash`: Google
+  now limits the 2.5 models to projects that already used them. The OpenRouter
+  default and the SIME 2026 pack are unchanged. Price table gains the Gemini 3.x
+  flash and flash-lite rows.
+
 ### Changed
 
 - Structured outputs validated with Zod at runtime (image, series, evolution):

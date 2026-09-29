@@ -1,0 +1,15 @@
+[medical-imaging] Scanning input directory: /home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000008
+[medical-imaging] Found 3 series with 3 images total
+[medical-imaging] Root context file loaded: patient_context.txt
+[medical-imaging] Input integrity: all 3 image(s) match /home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/selection-hashes.json
+Warning: input-guard [image-metadata] series_1/00000008_000.png: png:tIME — stripped before upload
+  input-guard [image-metadata] series_2/00000008_001.png: png:tIME — stripped before upload
+  input-guard [image-metadata] series_3/00000008_002.png: png:tIME — stripped before upload
+[medical-imaging] Starting agentic analysis pipeline...
+{"level":"info","time":"2026-09-29T09:40:47.556Z","event":"node:enter","node":"analyzeImages"}
+[medical-imaging] OpenRouter call failed (attempt 1/4, HTTP 429): OpenRouter HTTP 429: {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own  — retrying in 195 ms
+[medical-imaging] OpenRouter call failed (attempt 2/4, HTTP 429): OpenRouter HTTP 429: {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own  — retrying in 3294 ms
+[medical-imaging] OpenRouter call failed (attempt 3/4, HTTP 429): OpenRouter HTTP 429: {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own  — retrying in 7518 ms
+[medical-imaging] OpenRouter call failed (attempt 1/4, HTTP 429): OpenRouter HTTP 429: {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own  — retrying in 318 ms
+[medical-imaging] OpenRouter call failed (attempt 2/4, HTTP 429): OpenRouter HTTP 429: {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own  — retrying in 1668 ms
+[medical-imaging] OpenRouter call failed (attempt 3/4, HTTP 429): OpenRouter HTTP 429: {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own  — retrying in 6746 ms

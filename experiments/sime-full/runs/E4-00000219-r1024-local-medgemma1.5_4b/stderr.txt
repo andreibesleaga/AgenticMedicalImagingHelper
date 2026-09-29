@@ -1,0 +1,22 @@
+[medical-imaging] Scanning input directory: /home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219
+[medical-imaging] Found 4 series with 4 images total
+[medical-imaging] Root context file loaded: patient_context.txt
+[medical-imaging] Input integrity: all 4 image(s) match /home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/selection-hashes.json
+Warning: input-guard [image-metadata] series_1/00000219_000.png: png:tIME — stripped before upload
+  input-guard [image-metadata] series_2/00000219_001.png: png:tIME — stripped before upload
+  input-guard [image-metadata] series_3/00000219_002.png: png:tIME — stripped before upload
+  input-guard [image-metadata] series_4/00000219_003.png: png:tIME — stripped before upload
+[medical-imaging] Starting agentic analysis pipeline...
+[medical-imaging] Local call 1: +684 in / 253 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 2: +684 in / 193 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 3: +684 in / 2 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 4: +684 in / 205 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 5: +588 in / 509 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 6: +528 in / 297 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call failed (attempt 1/4): fetch failed — retrying in 1854 ms
+[medical-imaging] Local call 7: +337 in / 70 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 8: +540 in / 350 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 9: +1343 in / 148 out tokens, est. cumulative $0.0000
+[medical-imaging] Writing reports to output directory...
+[medical-imaging] Estimated Local cost: $0.0000 over 9 call(s) (6072 in / 2027 out tokens incl. thinking; provider local, model medgemma1.5:4b at $0/$0 per 1M; estimate only — provider invoice is authoritative)
+[medical-imaging] Run manifest written: /home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4-00000219-r1024-local-medgemma1.5_4b/output/run_manifest.json

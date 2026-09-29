@@ -218,7 +218,7 @@ contract is the table that follows it, which matches `src/main/run-analyze.ts`,
 | 1    | User error: missing API key, input dir not found, no images found |
 | 2    | System error: unrecoverable LangGraph or file system failure      |
 
-#### 2.3.1 Authoritative exit codes (updated 2026-09-08)
+#### 2.3.1 Authoritative exit codes (updated 2026-09-29)
 
 | Code | Meaning                                                                                                                                                  | Raised by                          |
 | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
@@ -230,7 +230,15 @@ contract is the table that follows it, which matches `src/main/run-analyze.ts`,
 | 5    | `--max-cost-usd` cap exceeded — run aborted (`CostCapExceededError`)                                                                                     | `cost-meter.ts`                    |
 | 6    | **`verify-manifest`**: the run manifest is missing, unparseable, altered, references a changed file, or its ledger link is broken                        | `run-manifest.ts`                  |
 | 7    | **`--strict-phi`**: the PHI/PII scan found something in a context file; nothing was uploaded                                                             | `phi-scan.ts` via `run-analyze.ts` |
+| 8    | **`--fail-on-probe`**: a governance probe (context consistency, bias v2, unsupported measurement) fired; outputs and the manifest were written           | `run-analyze.ts`                   |
+| 9    | **`--secure`**: the input guard found instruction-like context text or an image whose bytes do not match its extension; nothing was uploaded           | `input-guard.ts` via `run-analyze.ts` |
+| 10   | **`--expect-hashes`**: the list is unreadable, or an image is missing from it or differs from the expected SHA-256; nothing was uploaded                 | `run-analyze.ts`                   |
 | 99   | Unexpected internal error (uncaught by the command handler)                                                                                              | `index.ts`                         |
+
+Codes 8, 9 and 10 were added 2026-09-29 with the guardrails (bias probe v2,
+unsupported-measurement probe, input guard, input integrity). They are additive:
+no existing code changed meaning, and each applies only when its flag is given.
+Codes 9 and 10 are pre-flight rejections; code 8 is recorded in the manifest.
 
 Codes 6 and 7 were added 2026-09-08 with the run manifest and the PHI scan
 ([ADR-007](architecture/decisions/ADR-007-run-manifest-audit-ledger.md)). Both

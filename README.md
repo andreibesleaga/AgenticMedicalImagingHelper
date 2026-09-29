@@ -24,7 +24,7 @@ This repository is the **reference implementation** behind two publications. It 
 
 ### Paper
 
-Andrei N Besleaga, **"Agentic Multimodal Architectures for Medical Imaging: Orchestration, Deterministic Fairness Probing, and Governance,"** accepted at the **IEEE International Conference on Smart Innovations for Medicine and Engineering (SIME 2026)**, Sousse, Tunisia, 2–4 Nov. 2026. To appear in _IEEE Xplore_.
+Andrei N. Besleaga, **"Agentic Multimodal Architectures for Medical Imaging: Orchestration, Deterministic Fairness Probing, and Governance,"** accepted at the **IEEE International Conference on Smart Innovations for Medicine and Engineering (SIME 2026)**, Sousse, Tunisia, 2–4 Nov. 2026. To appear in _IEEE Xplore_.
 
 - Preprint DOI: [10.5281/zenodo.20762929](https://doi.org/10.5281/zenodo.20762929)
 
@@ -36,7 +36,7 @@ This project is featured as a reference implementation in the forthcoming Wiley 
 
 ```bibtex
 @inproceedings{besleaga2026agentic,
-  author    = {Be{\c{s}}leag{\u{a}}, Andrei N.},
+  author    = {Besleaga, Andrei N.},
   title     = {Agentic Multimodal Architectures for Medical Imaging:
                Orchestration, Deterministic Fairness Probing, and Governance},
   booktitle = {Proceedings of the IEEE International Conference on Smart
@@ -70,7 +70,7 @@ The experiment scripts, selection manifests and result logs used for the paper l
 - **Context integration** — reads `.txt` files alongside images for additional clinical context
 - **Research grounding** — Gemini built-in Google Search for literature citations
 - **Structured reports** — per-image JSON + per-series Markdown + combined evolution report
-- **Providers** — default **Google Gemini** (`gemini-2.5-flash`; `gemini-2.5-pro` is no longer available to new API keys). Optional **OpenRouter** second provider via `AI_PROVIDER=openrouter` + `OPENROUTER_API_KEY` + `OPENROUTER_MODEL` (default `google/gemini-2.5-flash`), which runs the unchanged pipeline on any vision-capable OpenRouter model. Note: the OpenRouter path has **no Google Search grounding**. See [ADR-006](./docs/architecture/decisions/ADR-006-openrouter-second-provider.md).
+- **Providers** — default **Google Gemini** (`gemini-3.8-flash`; Google limits the 2.5 models to projects that already used them, so new keys cannot call `gemini-2.5-flash` directly). Optional **OpenRouter** second provider via `AI_PROVIDER=openrouter` + `OPENROUTER_API_KEY` + `OPENROUTER_MODEL` (default `google/gemini-2.5-flash`), which runs the unchanged pipeline on any vision-capable OpenRouter model. Note: the OpenRouter path has **no Google Search grounding**. See [ADR-006](./docs/architecture/decisions/ADR-006-openrouter-second-provider.md). Optional **local** provider (`AI_PROVIDER=local`): a model served on this machine by Ollama, vLLM or llama.cpp through an OpenAI-compatible endpoint, default `medgemma1.5:4b`, no key and no API cost — see [LOCAL-INFERENCE.md](docs/architecture/LOCAL-INFERENCE.md).
 
 ## Input Structure
 
@@ -110,7 +110,7 @@ the failing ones — and is described under [Governance controls](#governance-co
 ## Prerequisites
 
 - Node.js 20+
-- Google Gemini API key (default model `gemini-2.5-flash`; override with `GEMINI_MODEL`)
+- Google Gemini API key (default model `gemini-3.8-flash`; override with `GEMINI_MODEL`), or an OpenRouter key, or a local OpenAI-compatible model server (no key)
 
 ## Installation
 
@@ -167,6 +167,14 @@ Options:
       --allow-phi             Acknowledge PHI-scan findings and continue
       --strict-phi            Refuse to upload anything if the PHI scan
                               finds something (exit code 7)
+      --secure                Refuse to upload anything if the input guard
+                              finds instruction-like context text or an image
+                              whose bytes do not match its extension (exit 9)
+      --fail-on-probe         Exit 8 (outputs and manifest still written) if
+                              any governance probe fires
+      --expect-hashes <file>  JSON map of image file name to SHA-256; refuse
+                              to upload anything unless every image matches
+                              the expected original (exit code 10)
   -v, --verbose               Print progress to stderr
   -h, --help                  Show help
       --version               Show version
@@ -201,15 +209,18 @@ Options:
 | 5    | `--max-cost-usd` cap exceeded — run aborted (`CostCapExceededError`)        |
 | 6    | `verify-manifest`: run manifest missing, altered, or its ledger link broken |
 | 7    | `--strict-phi`: PHI/PII found in a context file — nothing was uploaded      |
+| 8    | `--fail-on-probe`: a governance probe fired — outputs and manifest written  |
+| 9    | `--secure`: the input guard found a problem — nothing was uploaded          |
+| 10   | `--expect-hashes`: an image is missing or changed — nothing was uploaded    |
 | 99   | Unexpected internal error                                                   |
 
 Code 2 also covers the input refusals added with the governance controls:
 DICOM input (by extension or by magic bytes), a file over `MAX_IMAGE_BYTES`,
 and a run over `MAX_IMAGES_PER_RUN`.
 
-Codes 1, 2, 3 and 7 are pre-flight rejections: they happen before any model
+Codes 1, 2, 3, 7, 9 and 10 are pre-flight rejections: they happen before any model
 call and before the output directory is created, so they leave no artefacts.
-Codes 0, 4 and 5 each write a run manifest recording that exit code.
+Codes 0, 4, 5 and 8 each write a run manifest recording that exit code.
 
 ## Environment Variables
 
@@ -217,10 +228,13 @@ Codes 0, 4 and 5 each write a run manifest recording that exit code.
 | -------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `GOOGLE_API_KEY`     | Yes (Google path)                 | Google Gemini API key                                                                                                                                                          |
 | `GEMINI_API_KEY`     | Yes (alternative)                 | Alternative env var name                                                                                                                                                       |
-| `GEMINI_MODEL`       | No                                | Gemini model id (default `gemini-2.5-flash`)                                                                                                                                   |
-| `AI_PROVIDER`        | No                                | `google` (default) or `openrouter`                                                                                                                                             |
+| `GEMINI_MODEL`       | No                                | Gemini model id (default `gemini-3.8-flash`)                                                                                                                                   |
+| `AI_PROVIDER`        | No                                | `google` (default), `openrouter`, or `local` (a model served on this machine through an OpenAI-compatible endpoint: Ollama, vLLM, llama.cpp)                                      |
 | `OPENROUTER_API_KEY` | Yes when `AI_PROVIDER=openrouter` | OpenRouter API key                                                                                                                                                             |
 | `OPENROUTER_MODEL`   | No                                | OpenRouter model id (default `google/gemini-2.5-flash`); any vision-capable model works                                                                                        |
+| `LOCAL_LLM_BASE_URL` | No                                | Base URL of the local OpenAI-compatible server (default `http://127.0.0.1:11434/v1`, Ollama); see [LOCAL-INFERENCE.md](docs/architecture/LOCAL-INFERENCE.md)                   |
+| `LOCAL_LLM_MODEL`    | No                                | Local model id (default `medgemma1.5:4b`); zero pricing, so `--max-cost-usd` never trips                                                                                       |
+| `LOCAL_LLM_API_KEY`  | No                                | Sent as a bearer token only when set (servers started with an API key)                                                                                                         |
 | `AI_MAX_RETRIES`     | No                                | Max retry attempts on HTTP 429/5xx/transport errors, shared by both provider adapters (`0` disables retries); see [`src/infrastructure/retry.ts`](src/infrastructure/retry.ts) |
 | `MAX_IMAGES_PER_RUN` | No                                | Hard ceiling on images accepted in one run (default `500`); exceeded ⇒ exit 2                                                                                                  |
 | `MAX_IMAGE_BYTES`    | No                                | Hard ceiling on a single image file in bytes (default `52428800`, 50 MB); exceeded ⇒ exit 2                                                                                    |
@@ -303,8 +317,8 @@ The system uses the **LangGraph Fan-Out/Fan-In** pattern:
 [`docs/PRODUCT.md`](docs/PRODUCT.md) §5) were generated from `docs/PLAN.md`
 when the default model was `gemini-2.5-pro` and Gemini was the only provider.
 They are not regenerated here. The current default model is
-`gemini-2.5-flash` (`gemini-2.5-pro` is no longer available to new API keys)
-with an optional OpenRouter second-provider adapter — read the diagrams as
+`gemini-3.8-flash` (Google limits the 2.5 models to earlier users)
+with optional OpenRouter and local-model adapters — read the diagrams as
 predating [ADR-006](docs/architecture/decisions/ADR-006-openrouter-second-provider.md).
 
 ## Security
@@ -349,6 +363,39 @@ educational research tool that is not a medical device.
   only (`123-45-6789` → `1**-**-****`), so the warning cannot become a second
   disclosure. It is a heuristic: a clean scan means "nothing obvious", never
   "de-identified", and it does not look inside images.
+- **Input integrity** — `--expect-hashes <file>` checks every image against a
+  list of SHA-256 digests of the expected originals before anything is uploaded
+  (exit **10** on a missing or changed file), so a run can prove it used the
+  published dataset files unaltered. `experiments/sime-full/selection-hashes.json`
+  is such a list for the NIH originals.
+- **Input guard** (OWASP LLM01/LLM02) — before any upload: each image's leading
+  bytes must match its extension (a renamed PDF or DICOM is caught); embedded
+  image metadata (PNG `tEXt`/`zTXt`/`iTXt`/`eXIf`/`tIME`, JPEG EXIF/XMP/IPTC/
+  comment) is recorded and **always stripped** by the image pre-flight, which
+  re-encodes any file that carries it; context files are scanned for
+  instruction-like text ("ignore previous instructions", role tags, requests to
+  reveal the prompt, instructions to report "normal"). Default: warning plus
+  manifest record; `--secure` exits **9** instead. Heuristics, not a guarantee.
+- **Output sanitisation** (OWASP LLM05) — every model-authored field is cleaned
+  before it enters a Markdown report: tag-shaped text is escaped (`<script>` →
+  `&lt;script&gt;`), `javascript:`/`data:`/`vbscript:`/`file:` link targets are
+  removed, control characters are dropped.
+- **Bias probe v2** — runs on every completed run's generated text and records
+  each sentence that uses a demographic or social attribute (race and ethnicity,
+  sex and gender stereotypes, religion, socioeconomic status, sexual orientation
+  and gender identity, disability, nationality and migration, language, body
+  size, age stereotypes) as the justification for a diagnostic statement, with
+  negation handling. Measured and pinned in
+  `tests/unit/domain/fairness-v2.test.ts` on a 96-item held-out benchmark
+  (`tests/fixtures/fairness-benchmark-v2.json`): precision 0.929, recall 0.565;
+  indirect proxies (surname, tribe, shelter, accent) are not caught. Version 1,
+  whose numbers the SIME 2026 paper reports, is kept unchanged.
+- **Unsupported-measurement probe** — PNG/JPEG carry no pixel spacing, so every
+  absolute size in the output ("4 cm") is a model estimate stated as a
+  measurement; each is recorded, and sizes on abnormalities reported at ≥ 90 %
+  confidence (the SIME 2026 failure case F1) are listed first.
+- **`--fail-on-probe`** — turns any probe finding (context consistency, bias,
+  measurement) into exit **8** while still writing every output and the manifest.
 - **Mandatory disclaimer** — a required field on every output type, enforced at
   the TypeScript type level, on every JSON and Markdown artefact.
 - **Clinician-review block** — every Markdown report opens with "Requires review
@@ -360,7 +407,7 @@ educational research tool that is not a medical device.
   backoff and full jitter, honouring `Retry-After`; never other 4xx, never a
   validation failure. `AI_MAX_RETRIES=0` disables it.
 - **Run manifest, ledger and verification** — see below.
-- **Deterministic exit codes** — 0–7 and 99, documented in
+- **Deterministic exit codes** — 0–10 and 99, documented in
   [Exit Codes](#exit-codes) and [SPEC §2.3](docs/SPEC.md).
 
 ### Run manifest and audit ledger
@@ -490,3 +537,9 @@ the real-API run. Default `npm test` excludes `tests/live/` via
 ## License
 
 GPL v3 — see [LICENSE](LICENSE) for details.
+
+Copyright © 2026 Andrei N. Besleaga, Independent Researcher and Software Architect.
+See [NOTICE](NOTICE) for copyright and attribution,
+[DISCLAIMER.md](DISCLAIMER.md) for use restrictions (research and education only;
+not a medical device; no warranty), and [docs/PRIOR-ART.md](docs/PRIOR-ART.md) for
+the dated public disclosure of the system's technical elements.

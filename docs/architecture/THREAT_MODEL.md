@@ -425,3 +425,18 @@ This tool may process medical images containing Protected Health Information (PH
 
 _Created by: Claude Code (threat-model.skill) | 2026-02-25_
 _GABBE SDLC Phase: S02 — Design_
+
+## Addendum (2026-09-29) — controls added after SIME 2026
+
+Additive; the analysis above is unchanged. Status of the LLM-specific threats
+after this change set (see `docs/COMPLIANCE.md` §6.1 for tests):
+
+| Threat | Before | Now | Residual |
+| --- | --- | --- | --- |
+| Prompt injection through context text (OWASP LLM01) | Delimited, 2,000-character cap | Plus detection of instruction-like phrases, recorded in the manifest; `--secure` refuses (exit 9) | Heuristic patterns; paraphrased injections pass |
+| Prompt injection through text drawn inside an image | Not mitigated | Not mitigated (OCR planned: roadmap S1, ingest node) | Open |
+| Identifiers or instructions in image metadata (PNG text chunks, JPEG EXIF/XMP/IPTC/comments) | Stripped only when an image was re-encoded | Detected and always stripped before upload | None known for PNG/JPEG containers |
+| Mislabelled file (a PDF or DICOM renamed `.png`) | DICOM caught by magic bytes; others failed at decode | Every image's bytes checked against its extension; `--secure` refuses (exit 9) | None known |
+| Substituted or altered dataset files | Hashed in the manifest after the run | `--expect-hashes` refuses before upload (exit 10) | Requires a trusted hash list |
+| Unsafe model output rendered in a viewer (OWASP LLM05) | Markdown only | Tag-shaped text escaped, unsafe link schemes removed, control characters dropped | Viewers that execute Markdown extensions |
+| Data leaving the host (T7, OWASP LLM02) | Two cloud providers | Local provider on the loopback interface; no image leaves the host | `LOCAL_LLM_BASE_URL` can point elsewhere; the planned `physionet` profile will check it resolves to loopback |

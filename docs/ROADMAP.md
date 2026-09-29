@@ -385,3 +385,49 @@ Nothing below is started. It extends §4, §8 and §9 with the datasets, models 
 
 A full paper reporting all of the above, with clinician review, citing and extending the SIME 2026 work-in-progress
 paper, reported against TRIPOD-LLM, CLAIM 2024, STARD-AI, DECIDE-AI and the STANDING Together recommendations.
+
+## 11. Local and self-hosted inference (planned 2026-09-29)
+
+Nothing below is started. It details §2.2 C5, §7 decision 5 and §8.1, and makes local inference a
+first-class route for the §10.2 data-use rules. The full research, architecture and plan are in
+[`architecture/LOCAL-INFERENCE.md`](architecture/LOCAL-INFERENCE.md).
+
+- **One adapter, many engines.** The hard-coded OpenRouter endpoint becomes a configurable
+  `OpenAICompatibleProvider`: base URL, optional key, and a capability descriptor per model
+  (vision, JSON-schema output, image size, context, zero cost, data residency, licence, pinned
+  digest). The descriptor covers Ollama, vLLM, llama.cpp `llama-server` and SGLang. OpenRouter
+  becomes one preset. A native Ollama adapter adds what its OpenAI layer lacks: per-request
+  context size (the default is 4k below 24 GB VRAM), `keep_alive`, and engine timings.
+- **Engines per tier.** 6 GB laptop: Ollama, with llama.cpp as the alternative, running
+  MedGemma 1.5 4B and Qwen3-VL 4B. 24 GB workstation, if bought: vLLM for batches and Ollama for
+  model swapping, running MedGemma 27B and Gemma 4 or Qwen3-VL.
+- **Structured output.** A per-stage JSON Schema is generated from the Zod schemas, with a
+  fallback ladder from `json_schema` to `json_object` to plain text.
+- **Integration.** Router profiles are `local`, `hybrid` and `physionet`. The `physionet`
+  profile checks that a "local" URL really resolves to loopback. Manifest 1.1 records engine,
+  version, model digest, quantisation, host GPU and wall-clock time. `--max-wall-clock-s` is the
+  binding budget, and energy sampling is optional.
+- **Security.** Servers bind to loopback only. Minimum engine versions are enforced (Ollama
+  ≥ 0.17.1, vLLM ≥ 0.14.1 for the 2026 CVEs). Models come from official sources only, and the
+  licence is passed through (HAI-DEF for MedGemma, Apache-2.0 for Gemma 4 and Qwen3-VL).
+- **Plan.** Phases L0–L8, about 16–21 engineer-days before the evaluation runs.
+- **Jev (TypeSafe AI).** Confirmed by the owner on 2026-09-29. TypeSafe AI's typed-decision
+  model, served locally through Ollama `/v1/systemone` since v0.35.0. It is an optional,
+  text-only, non-gating decision port beside the vision stages, consulted by the probes (fairness
+  proxies, identifiers in text, fabricated specifics), the human-review gate, the router
+  (escalate or retry) and the evaluation harness (label mapping, 224 vs 1024 and counterfactual
+  comparisons). It never reads an image and never writes a finding; each decision is recorded in
+  the run manifest. See [LOCAL-INFERENCE.md §3.7](architecture/LOCAL-INFERENCE.md).
+
+## 12. Status, 2026-09-29
+
+- **Done:** the local provider (`AI_PROVIDER=local`, roadmap C5 in its minimal form); the input guard,
+  input-integrity check, output sanitisation, bias probe v2 and unsupported-measurement probe (roadmap
+  S5 for image metadata, S12, parts of S1–S3 for text and P1); `--fail-on-probe`; the direct-Google
+  default moved to a generally available model (S9 in part). See `docs/COMPLIANCE.md` §6.1.
+- **Done:** the first SIME-FULL study on the paper's E4 cohort at original resolution, seven models,
+  with a run-to-run noise floor: [`experiments/sime-full/RESULTS.md`](../experiments/sime-full/RESULTS.md).
+- **Found and open:** colour words describing image brightness ("white spot") trigger the bias probe;
+  the better/same/worse verdict changes between repeat runs for many patients, so every future study
+  needs repeated runs; Gemini 3.8 Flash returned empty answers for 3 of 31 full-resolution images.
+- **Next:** E4L-20 and E2 at full resolution when the remaining NIH archives are downloaded; then §10.

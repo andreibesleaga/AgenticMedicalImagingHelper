@@ -51,6 +51,16 @@ program
   .option("--reviewer <name>", "Record a human-oversight attestation in the run manifest")
   .option("--allow-phi", "Acknowledge PHI-scan findings in context files and continue", false)
   .option("--strict-phi", "Exit 7 before any upload if the PHI scan finds anything", false)
+  .option(
+    "--secure",
+    "Exit 9 before any upload if the input guard finds instruction-like context text or a mislabelled image",
+    false
+  )
+  .option("--fail-on-probe", "Exit 8 (outputs still written) if any governance probe fires", false)
+  .option(
+    "--expect-hashes <file>",
+    "JSON map of image file name to SHA-256; exit 10 before any upload on a missing or changed file"
+  )
   .action(
     async (
       inputDirArg: string,
@@ -64,6 +74,9 @@ program
         reviewer?: string;
         allowPhi?: boolean;
         strictPhi?: boolean;
+        secure?: boolean;
+        failOnProbe?: boolean;
+        expectHashes?: string;
       }
     ) => {
       const exitCode = await runAnalyze(inputDirArg, outputDirArg, opts);

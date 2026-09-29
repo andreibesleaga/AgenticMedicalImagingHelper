@@ -153,7 +153,7 @@ export function mapOpenRouterUsage(usage: OpenRouterUsage | undefined): TokenUsa
   };
 }
 
-function extractText(json: OpenRouterResponse): string {
+function extractText(json: OpenRouterResponse, label = "OpenRouter"): string {
   const content = json.choices?.[0]?.message?.content;
   if (typeof content === "string") return content;
   // Some providers return an array of typed parts; keep the text ones.
@@ -165,24 +165,42 @@ function extractText(json: OpenRouterResponse): string {
       })
       .join("");
   }
-  throw new OpenRouterError("OpenRouter response has no choices[0].message.content text");
+  throw new OpenRouterError(`${label} response has no choices[0].message.content text`);
 }
 
 // ─── Model shim ───────────────────────────────────────────────────────────────
 
 /**
- * A `ContentGenerator` backed by OpenRouter's chat-completions endpoint.
- *
- * @param apiKey     OpenRouter API key (`OPENROUTER_API_KEY`).
- * @param modelId    OpenRouter model id, e.g. `google/gemini-2.5-flash`,
- *                   `openai/gpt-4o`, `qwen/qwen2.5-vl-72b-instruct`.
- * @param fetchImpl  Injectable fetch (defaults to the global one).
+ * Where an OpenAI-compatible `chat/completions` request goes, and how it is
+ * labelled. OpenRouter is one target; a local server (Ollama, vLLM, llama.cpp
+ * `llama-server`) is another — see `local-client.ts`. The request body, the
+ * response mapping and the error semantics are identical for every target.
  */
-export function createOpenRouterModel(
-  apiKey: string,
+export interface ChatCompletionsTarget {
+  /** Full URL of the `chat/completions` endpoint. */
+  readonly endpoint: string;
+  /** Human-readable name used in error messages ("OpenRouter", "Local"). */
+  readonly label: string;
+  /** `Authorization` header value; omitted when undefined (local servers need none). */
+  readonly authorization?: string;
+  /** Extra non-secret headers (OpenRouter attribution). */
+  readonly extraHeaders?: Readonly<Record<string, string>>;
+  /** Upper bound on one request, in milliseconds. */
+  readonly timeoutMs?: number;
+}
+
+/**
+ * A `ContentGenerator` backed by any OpenAI-compatible `chat/completions`
+ * endpoint. Errors are `OpenRouterError`s (the class predates the local target;
+ * the retry layer reads only `status` and `retryAfterMs`), with the target's
+ * label in the message.
+ */
+export function createChatCompletionsModel(
+  target: ChatCompletionsTarget,
   modelId: string,
   fetchImpl: FetchLike = (input, init) => globalThis.fetch(input, init)
 ): ContentGenerator {
+  const { label } = target;
   return {
     async generateContent(request) {
       const body = {
@@ -195,22 +213,21 @@ export function createOpenRouterModel(
           : {}),
       };
 
-      const res = await fetchImpl(OPENROUTER_ENDPOINT, {
+      const res = await fetchImpl(target.endpoint, {
         method: "POST",
         headers: {
-          Authorization: `Bearer ${apiKey}`,
+          ...(target.authorization !== undefined ? { Authorization: target.authorization } : {}),
           "Content-Type": "application/json",
-          "HTTP-Referer": OPENROUTER_REFERER,
-          "X-Title": OPENROUTER_TITLE,
+          ...(target.extraHeaders ?? {}),
         },
         body: JSON.stringify(body),
-        signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+        signal: AbortSignal.timeout(target.timeoutMs ?? REQUEST_TIMEOUT_MS),
       });
 
       if (!res.ok) {
         const detail = (await res.text().catch(() => "")).slice(0, 300);
         throw new OpenRouterError(
-          `OpenRouter HTTP ${res.status}${detail ? `: ${detail}` : ""}`,
+          `${label} HTTP ${res.status}${detail ? `: ${detail}` : ""}`,
           res.status,
           parseRetryAfterMs(res.headers.get("retry-after"))
         );
@@ -220,20 +237,45 @@ export function createOpenRouterModel(
       try {
         json = (await res.json()) as OpenRouterResponse;
       } catch {
-        throw new OpenRouterError("OpenRouter returned a non-JSON response body", res.status);
+        throw new OpenRouterError(`${label} returned a non-JSON response body`, res.status);
       }
       if (json.error) {
         throw new OpenRouterError(
-          `OpenRouter error: ${json.error.message ?? "unknown"}`,
+          `${label} error: ${json.error.message ?? "unknown"}`,
           json.error.code
         );
       }
 
-      const text = extractText(json);
+      const text = extractText(json, label);
       const usageMetadata = mapOpenRouterUsage(json.usage);
       return { response: { text: () => text, usageMetadata } };
     },
   };
+}
+
+/**
+ * A `ContentGenerator` backed by OpenRouter's chat-completions endpoint.
+ *
+ * @param apiKey     OpenRouter API key (`OPENROUTER_API_KEY`).
+ * @param modelId    OpenRouter model id, e.g. `google/gemini-2.5-flash`,
+ *                   `openai/gpt-4o`, `qwen/qwen2.5-vl-72b-instruct`.
+ * @param fetchImpl  Injectable fetch (defaults to the global one).
+ */
+export function createOpenRouterModel(
+  apiKey: string,
+  modelId: string,
+  fetchImpl?: FetchLike
+): ContentGenerator {
+  return createChatCompletionsModel(
+    {
+      endpoint: OPENROUTER_ENDPOINT,
+      label: "OpenRouter",
+      authorization: `Bearer ${apiKey}`,
+      extraHeaders: { "HTTP-Referer": OPENROUTER_REFERER, "X-Title": OPENROUTER_TITLE },
+    },
+    modelId,
+    fetchImpl
+  );
 }
 
 // ─── Client factory (same port as createGeminiClient) ─────────────────────────

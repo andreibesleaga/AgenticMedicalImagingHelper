@@ -251,3 +251,23 @@ describe("formatUsd", () => {
     expect(formatUsd(0.00004)).toBe("0.00");
   });
 });
+
+describe("current Gemini prices and the direct-Google default (checked 2026-09-29)", () => {
+  it("defaults to the GA gemini-3.8-flash, which new Google projects can call", async () => {
+    const { DEFAULT_GEMINI_MODEL, defaultGeminiPricing: pricing } =
+      await import("../../../src/infrastructure/cost-meter.js");
+    expect(DEFAULT_GEMINI_MODEL).toBe("gemini-3.8-flash");
+    expect(pricing("gemini-3.8-flash")).toEqual({
+      inputUsdPerMillion: 0.75,
+      outputUsdPerMillion: 3.75,
+    });
+    expect(pricing("gemini-3.1-flash-lite")).toEqual({
+      inputUsdPerMillion: 0.25,
+      outputUsdPerMillion: 1.5,
+    });
+    expect(pricing("gemini-3.5-flash-lite")).toEqual({
+      inputUsdPerMillion: 0.3,
+      outputUsdPerMillion: 2.5,
+    });
+  });
+});

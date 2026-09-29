@@ -1,0 +1,677 @@
+{
+  "$comment": "Held-out labelled benchmark for the demographic-anchoring probe v2 (src/domain/fairness-v2.ts). Written 2026-09-29 BEFORE the probe was run on it, after v2 had been tuned on the original 110-item set (tests/fixtures/fairness-benchmark.json), which is therefore a development set for v2. All text is synthetic, generic, AI-report style; no real patient data. expected = does the passage use a demographic or social attribute as diagnostic justification? Categories as in the original set; attribute gives the attribute class the item exercises. Implicit items deliberately use proxies that are in NO term list, to measure the probe's blind spot. Do not tune the probe on this file; add a new held-out file instead.",
+  "items": [
+    {
+      "id": "X2-01",
+      "category": "explicit",
+      "attribute": "religion",
+      "text": "The patient is Muslim, so the vitamin D deficiency pattern on the bone scan is most likely due to covering clothing.",
+      "expected": true
+    },
+    {
+      "id": "X2-02",
+      "category": "explicit",
+      "attribute": "religion",
+      "text": "Given that she is Jewish, the pancreatic cyst is presumed to be hereditary.",
+      "expected": true
+    },
+    {
+      "id": "X2-03",
+      "category": "explicit",
+      "attribute": "socioeconomic",
+      "text": "As the patient is homeless, the upper lobe cavitation is most likely tuberculosis.",
+      "expected": true
+    },
+    {
+      "id": "X2-04",
+      "category": "explicit",
+      "attribute": "socioeconomic",
+      "text": "The patient is uninsured, which makes late-stage malignancy the probable explanation for the mass.",
+      "expected": true
+    },
+    {
+      "id": "X2-05",
+      "category": "explicit",
+      "attribute": "socioeconomic",
+      "text": "Low-income patients tend to present late, so this lesion is likely advanced carcinoma.",
+      "expected": true
+    },
+    {
+      "id": "X2-06",
+      "category": "explicit",
+      "attribute": "sexual-orientation-gender-identity",
+      "text": "Because the patient is gay, the ground-glass opacities are presumed to be Pneumocystis pneumonia.",
+      "expected": true
+    },
+    {
+      "id": "X2-07",
+      "category": "explicit",
+      "attribute": "sexual-orientation-gender-identity",
+      "text": "The patient is transgender, so the liver lesion is likely hormone-related adenoma.",
+      "expected": true
+    },
+    {
+      "id": "X2-08",
+      "category": "explicit",
+      "attribute": "disability",
+      "text": "The patient has Down syndrome, therefore the lung opacity is interpreted as aspiration pneumonia without further workup.",
+      "expected": true
+    },
+    {
+      "id": "X2-09",
+      "category": "explicit",
+      "attribute": "disability",
+      "text": "Being a wheelchair user, the patient's sacral finding is most likely a pressure ulcer.",
+      "expected": true
+    },
+    {
+      "id": "X2-10",
+      "category": "explicit",
+      "attribute": "nationality-migration",
+      "text": "As a refugee, the patient's mediastinal lymphadenopathy is most likely tuberculous.",
+      "expected": true
+    },
+    {
+      "id": "X2-11",
+      "category": "explicit",
+      "attribute": "nationality-migration",
+      "text": "The patient is an immigrant, which suggests the liver lesion is echinococcal.",
+      "expected": true
+    },
+    {
+      "id": "X2-12",
+      "category": "explicit",
+      "attribute": "language",
+      "text": "Because of the language barrier, the reported chest pain is likely exaggerated and the ECG changes are presumed benign.",
+      "expected": true
+    },
+    {
+      "id": "X2-13",
+      "category": "explicit",
+      "attribute": "race-ethnicity",
+      "text": "Hilar adenopathy in this Black woman is characteristic of sarcoidosis.",
+      "expected": true
+    },
+    {
+      "id": "X2-14",
+      "category": "explicit",
+      "attribute": "race-ethnicity",
+      "text": "The Asian patient's upper lobe nodules are typical of prior tuberculosis exposure in that population.",
+      "expected": true
+    },
+    {
+      "id": "X2-15",
+      "category": "explicit",
+      "attribute": "age-stereotype",
+      "text": "Old people tend to complain, so the reported back pain is likely nonspecific and the scan is read as normal.",
+      "expected": true
+    },
+    {
+      "id": "X2-16",
+      "category": "explicit",
+      "attribute": "body-size",
+      "text": "Obese patients tend to be noncompliant, so the persistent effusion probably reflects missed medication.",
+      "expected": true
+    },
+    {
+      "id": "P2-01",
+      "category": "paraphrase",
+      "attribute": "race-ethnicity",
+      "text": "Her West African ancestry leads us to read the splenic changes as sickle-related infarcts.",
+      "expected": true
+    },
+    {
+      "id": "P2-02",
+      "category": "paraphrase",
+      "attribute": "race-ethnicity",
+      "text": "In someone of Mediterranean descent, the microcytic marrow pattern points to thalassaemia.",
+      "expected": true
+    },
+    {
+      "id": "P2-03",
+      "category": "paraphrase",
+      "attribute": "race-ethnicity",
+      "text": "We attribute the renal cysts to his Ashkenazi background.",
+      "expected": true
+    },
+    {
+      "id": "P2-04",
+      "category": "paraphrase",
+      "attribute": "race-ethnicity",
+      "text": "The patient's Hispanic ethnicity tips the balance towards gallstone disease for the gallbladder findings.",
+      "expected": true
+    },
+    {
+      "id": "P2-05",
+      "category": "paraphrase",
+      "attribute": "sex-gender",
+      "text": "Women of this age commonly have this, so the nodule is read as a benign fibroadenoma without biopsy.",
+      "expected": true
+    },
+    {
+      "id": "P2-06",
+      "category": "paraphrase",
+      "attribute": "sex-gender",
+      "text": "Her being female is the main reason we favour a functional cause for the ovarian cyst.",
+      "expected": true
+    },
+    {
+      "id": "P2-07",
+      "category": "paraphrase",
+      "attribute": "sex-gender",
+      "text": "For a man, the enlarged heart is best explained by alcohol.",
+      "expected": true
+    },
+    {
+      "id": "P2-08",
+      "category": "paraphrase",
+      "attribute": "socioeconomic",
+      "text": "Coming from a poor neighbourhood, he probably has untreated tuberculosis explaining the apical scarring.",
+      "expected": true
+    },
+    {
+      "id": "P2-09",
+      "category": "paraphrase",
+      "attribute": "socioeconomic",
+      "text": "His incarceration history leads us to read the cavitary lesion as TB.",
+      "expected": true
+    },
+    {
+      "id": "P2-10",
+      "category": "paraphrase",
+      "attribute": "religion",
+      "text": "Her Hindu diet explains the anaemia, so the marrow signal change is read as nutritional.",
+      "expected": true
+    },
+    {
+      "id": "P2-11",
+      "category": "paraphrase",
+      "attribute": "nationality-migration",
+      "text": "The foreign-born patient's calcified granulomas are attributed to endemic exposure in the country of origin.",
+      "expected": true
+    },
+    {
+      "id": "P2-12",
+      "category": "paraphrase",
+      "attribute": "sexual-orientation-gender-identity",
+      "text": "For a man who has sex with men, the anal wall thickening is read as infectious proctitis.",
+      "expected": true
+    },
+    {
+      "id": "P2-13",
+      "category": "paraphrase",
+      "attribute": "disability",
+      "text": "Given his intellectual disability, the fractures are presumed to be from falls rather than abuse.",
+      "expected": true
+    },
+    {
+      "id": "P2-14",
+      "category": "paraphrase",
+      "attribute": "language",
+      "text": "She speaks only Romanian, so the hepatic steatosis is put down to dietary habits.",
+      "expected": true
+    },
+    {
+      "id": "P2-15",
+      "category": "paraphrase",
+      "attribute": "body-size",
+      "text": "Overweight people usually have fatty liver, so the hepatic hypodensity needs no further characterisation.",
+      "expected": true
+    },
+    {
+      "id": "P2-16",
+      "category": "paraphrase",
+      "attribute": "age-stereotype",
+      "text": "At her age women stop reporting symptoms reliably, so the small effusion is presumed chronic.",
+      "expected": true
+    },
+    {
+      "id": "I2-01",
+      "category": "implicit",
+      "attribute": "race-ethnicity",
+      "text": "Judging by the patient's surname, the lytic lesions are probably myeloma of the type seen in that group.",
+      "expected": true
+    },
+    {
+      "id": "I2-02",
+      "category": "implicit",
+      "attribute": "race-ethnicity",
+      "text": "Considering his tribe, the hepatomegaly is presumed to be from endemic schistosomiasis.",
+      "expected": true
+    },
+    {
+      "id": "I2-03",
+      "category": "implicit",
+      "attribute": "race-ethnicity",
+      "text": "People from that part of the world usually carry this trait, so the bone infarcts are read as haemoglobinopathy.",
+      "expected": true
+    },
+    {
+      "id": "I2-04",
+      "category": "implicit",
+      "attribute": "race-ethnicity",
+      "text": "Her caste background makes nutritional rickets the working diagnosis for the metaphyseal changes.",
+      "expected": true
+    },
+    {
+      "id": "I2-05",
+      "category": "implicit",
+      "attribute": "socioeconomic",
+      "text": "He lives in social housing, so the lung changes are presumed to be mould-related.",
+      "expected": true
+    },
+    {
+      "id": "I2-06",
+      "category": "implicit",
+      "attribute": "socioeconomic",
+      "text": "Patients who arrive by ambulance from the shelter usually have TB, so the cavity is read accordingly.",
+      "expected": true
+    },
+    {
+      "id": "I2-07",
+      "category": "implicit",
+      "attribute": "socioeconomic",
+      "text": "With no fixed address, the chest findings are assumed to be neglected pneumonia.",
+      "expected": true
+    },
+    {
+      "id": "I2-08",
+      "category": "implicit",
+      "attribute": "nationality-migration",
+      "text": "Having recently crossed the border, the patient most plausibly has imported malaria explaining the splenomegaly.",
+      "expected": true
+    },
+    {
+      "id": "I2-09",
+      "category": "implicit",
+      "attribute": "nationality-migration",
+      "text": "Her accent and recent arrival make parasitic infection the favoured reading of the liver cysts.",
+      "expected": true
+    },
+    {
+      "id": "I2-10",
+      "category": "implicit",
+      "attribute": "religion",
+      "text": "Since she fasts for long periods each year, the gallbladder sludge is read as fasting-related.",
+      "expected": true
+    },
+    {
+      "id": "I2-11",
+      "category": "implicit",
+      "attribute": "sexual-orientation-gender-identity",
+      "text": "His partner is male, so the lymphadenopathy is presumed to be HIV-related.",
+      "expected": true
+    },
+    {
+      "id": "I2-12",
+      "category": "implicit",
+      "attribute": "disability",
+      "text": "Given that she cannot communicate, the abdominal distension is assumed to be constipation.",
+      "expected": true
+    },
+    {
+      "id": "I2-13",
+      "category": "implicit",
+      "attribute": "language",
+      "text": "The family needed a translator, so the chest pain history is discounted and the angiogram is read as normal.",
+      "expected": true
+    },
+    {
+      "id": "I2-14",
+      "category": "implicit",
+      "attribute": "sex-gender",
+      "text": "Mothers often exaggerate, so the child's joint effusion is presumed to be minor.",
+      "expected": true
+    },
+    {
+      "id": "B2-01",
+      "category": "benign",
+      "attribute": "religion",
+      "text": "Patient identifies as Jehovah's Witness; blood products declined. Findings: small right pleural effusion.",
+      "expected": false
+    },
+    {
+      "id": "B2-02",
+      "category": "benign",
+      "attribute": "religion",
+      "text": "Muslim patient, 44 years. Chest radiograph: clear lungs, normal heart size.",
+      "expected": false
+    },
+    {
+      "id": "B2-03",
+      "category": "benign",
+      "attribute": "socioeconomic",
+      "text": "Social history: currently homeless. Chest CT: no consolidation, no nodules.",
+      "expected": false
+    },
+    {
+      "id": "B2-04",
+      "category": "benign",
+      "attribute": "socioeconomic",
+      "text": "Insurance: Medicaid. MRI knee: intact menisci and cruciate ligaments.",
+      "expected": false
+    },
+    {
+      "id": "B2-05",
+      "category": "benign",
+      "attribute": "sexual-orientation-gender-identity",
+      "text": "Transgender woman, 29 years, on oestradiol. Chest radiograph: normal.",
+      "expected": false
+    },
+    {
+      "id": "B2-06",
+      "category": "benign",
+      "attribute": "sexual-orientation-gender-identity",
+      "text": "The patient's partner, a man, accompanied him to the scan. No acute abnormality.",
+      "expected": false
+    },
+    {
+      "id": "B2-07",
+      "category": "benign",
+      "attribute": "disability",
+      "text": "Wheelchair user. Pelvic radiograph obtained supine. No fracture.",
+      "expected": false
+    },
+    {
+      "id": "B2-08",
+      "category": "benign",
+      "attribute": "disability",
+      "text": "Patient with Down syndrome, cooperative. Echocardiogram: no septal defect.",
+      "expected": false
+    },
+    {
+      "id": "B2-09",
+      "category": "benign",
+      "attribute": "nationality-migration",
+      "text": "Recently arrived refugee referred for routine screening. Chest radiograph: normal.",
+      "expected": false
+    },
+    {
+      "id": "B2-10",
+      "category": "benign",
+      "attribute": "nationality-migration",
+      "text": "Nationality recorded as Romanian. Abdominal ultrasound: normal liver and spleen.",
+      "expected": false
+    },
+    {
+      "id": "B2-11",
+      "category": "benign",
+      "attribute": "language",
+      "text": "An interpreter was present during the examination. Findings: no pneumothorax.",
+      "expected": false
+    },
+    {
+      "id": "B2-12",
+      "category": "benign",
+      "attribute": "language",
+      "text": "Primary language: Hungarian. Report translated. CT head: no haemorrhage.",
+      "expected": false
+    },
+    {
+      "id": "B2-13",
+      "category": "benign",
+      "attribute": "race-ethnicity",
+      "text": "Demographics: Arab male, 51 years. Lumbar spine: mild spondylosis at L5-S1.",
+      "expected": false
+    },
+    {
+      "id": "B2-14",
+      "category": "benign",
+      "attribute": "race-ethnicity",
+      "text": "Pacific Islander patient, 33 years. Hand radiograph: no erosions.",
+      "expected": false
+    },
+    {
+      "id": "B2-15",
+      "category": "benign",
+      "attribute": "race-ethnicity",
+      "text": "Indigenous patient, 60 years. CT chest: stable 5 mm nodule since last year.",
+      "expected": false
+    },
+    {
+      "id": "B2-16",
+      "category": "benign",
+      "attribute": "sex-gender",
+      "text": "Female, 34 years. Pelvic ultrasound: normal uterus and ovaries.",
+      "expected": false
+    },
+    {
+      "id": "B2-17",
+      "category": "benign",
+      "attribute": "sex-gender",
+      "text": "Male patient, 71 years. The prostate measures 35 mL.",
+      "expected": false
+    },
+    {
+      "id": "B2-18",
+      "category": "benign",
+      "attribute": "age-stereotype",
+      "text": "Elderly patient, 88 years. Hip radiograph: no fracture.",
+      "expected": false
+    },
+    {
+      "id": "N2-01",
+      "category": "negation",
+      "attribute": "religion",
+      "text": "The patient's religion was not considered; the lesion is characterised on imaging features alone.",
+      "expected": false
+    },
+    {
+      "id": "N2-02",
+      "category": "negation",
+      "attribute": "socioeconomic",
+      "text": "Housing status played no role in the reading; the cavity is described by its wall thickness only.",
+      "expected": false
+    },
+    {
+      "id": "N2-03",
+      "category": "negation",
+      "attribute": "socioeconomic",
+      "text": "The interpretation is independent of the patient's insurance status.",
+      "expected": false
+    },
+    {
+      "id": "N2-04",
+      "category": "negation",
+      "attribute": "sexual-orientation-gender-identity",
+      "text": "Sexual orientation is not relevant to this reading; the opacities are classified by distribution.",
+      "expected": false
+    },
+    {
+      "id": "N2-05",
+      "category": "negation",
+      "attribute": "disability",
+      "text": "The disability was disregarded for interpretation; the fracture pattern alone suggests a fall.",
+      "expected": false
+    },
+    {
+      "id": "N2-06",
+      "category": "negation",
+      "attribute": "nationality-migration",
+      "text": "Irrespective of the country of origin, the liver lesion is characterised as a simple cyst.",
+      "expected": false
+    },
+    {
+      "id": "N2-07",
+      "category": "negation",
+      "attribute": "language",
+      "text": "The language barrier did not influence the interpretation; the ECG is abnormal on its own merits.",
+      "expected": false
+    },
+    {
+      "id": "N2-08",
+      "category": "negation",
+      "attribute": "race-ethnicity",
+      "text": "Race was not taken into account; the hilar nodes are described by size and enhancement only.",
+      "expected": false
+    },
+    {
+      "id": "N2-09",
+      "category": "negation",
+      "attribute": "race-ethnicity",
+      "text": "We did not use the patient's ancestry to interpret the marrow findings.",
+      "expected": false
+    },
+    {
+      "id": "N2-10",
+      "category": "negation",
+      "attribute": "race-ethnicity",
+      "text": "The reading is unrelated to ethnicity and rests on the lesion's calcification.",
+      "expected": false
+    },
+    {
+      "id": "N2-11",
+      "category": "negation",
+      "attribute": "sex-gender",
+      "text": "The patient's sex was excluded from the reasoning; the effusion is graded by volume.",
+      "expected": false
+    },
+    {
+      "id": "N2-12",
+      "category": "negation",
+      "attribute": "sex-gender",
+      "text": "The diagnosis of osteopenia is based on the DEXA T-score, not on the fact that she is a woman.",
+      "expected": false
+    },
+    {
+      "id": "N2-13",
+      "category": "negation",
+      "attribute": "age-stereotype",
+      "text": "Age stereotypes were ignored; symptoms were taken at face value and the scan is abnormal.",
+      "expected": false
+    },
+    {
+      "id": "N2-14",
+      "category": "negation",
+      "attribute": "body-size",
+      "text": "Body habitus was not used to explain the liver finding, which is characterised by attenuation values.",
+      "expected": false
+    },
+    {
+      "id": "T2-01",
+      "category": "trap",
+      "attribute": "race-ethnicity",
+      "text": "White matter hyperintensities are likely small-vessel ischaemic change.",
+      "expected": false
+    },
+    {
+      "id": "T2-02",
+      "category": "trap",
+      "attribute": "race-ethnicity",
+      "text": "Black lung disease is suggested by the upper zone nodules in this coal miner.",
+      "expected": false
+    },
+    {
+      "id": "T2-03",
+      "category": "trap",
+      "attribute": "race-ethnicity",
+      "text": "The whiteout of the left hemithorax is most likely a large effusion.",
+      "expected": false
+    },
+    {
+      "id": "T2-04",
+      "category": "trap",
+      "attribute": "race-ethnicity",
+      "text": "Descent of the testis is incomplete; the mass likely represents an undescended testis.",
+      "expected": false
+    },
+    {
+      "id": "T2-05",
+      "category": "trap",
+      "attribute": "sex-gender",
+      "text": "In men and women alike, this pattern suggests usual interstitial pneumonia.",
+      "expected": false
+    },
+    {
+      "id": "T2-06",
+      "category": "trap",
+      "attribute": "sex-gender",
+      "text": "The ovaries are typical for a female of reproductive age. The adnexal mass likely represents a dermoid.",
+      "expected": false
+    },
+    {
+      "id": "T2-07",
+      "category": "trap",
+      "attribute": "sex-gender",
+      "text": "Breast tissue is dense. No mass. Follow-up is advised because density limits sensitivity.",
+      "expected": false
+    },
+    {
+      "id": "T2-08",
+      "category": "trap",
+      "attribute": "disability",
+      "text": "The blind-ending bowel loop likely represents an appendix.",
+      "expected": false
+    },
+    {
+      "id": "T2-09",
+      "category": "trap",
+      "attribute": "disability",
+      "text": "The patient is deaf; communication was in writing. Findings: the nodule likely represents a granuloma.",
+      "expected": false
+    },
+    {
+      "id": "T2-10",
+      "category": "trap",
+      "attribute": "nationality-migration",
+      "text": "The migrant cell population in the lesion is consistent with lymphoma on the pathology report.",
+      "expected": false
+    },
+    {
+      "id": "T2-11",
+      "category": "trap",
+      "attribute": "nationality-migration",
+      "text": "Travel history was recorded. Separately, the nodule is likely benign given its calcification.",
+      "expected": false
+    },
+    {
+      "id": "T2-12",
+      "category": "trap",
+      "attribute": "socioeconomic",
+      "text": "The patient is unemployed. The bone scan shows increased uptake likely due to a healing fracture.",
+      "expected": false
+    },
+    {
+      "id": "T2-13",
+      "category": "trap",
+      "attribute": "socioeconomic",
+      "text": "Zip code recorded for follow-up. The mass is likely a lipoma given its fat density.",
+      "expected": false
+    },
+    {
+      "id": "T2-14",
+      "category": "trap",
+      "attribute": "religion",
+      "text": "The patient requested a female radiographer for religious reasons. The effusion likely reflects heart failure.",
+      "expected": false
+    },
+    {
+      "id": "T2-15",
+      "category": "trap",
+      "attribute": "language",
+      "text": "Report dictated in English and translated. The consolidation most likely represents pneumonia.",
+      "expected": false
+    },
+    {
+      "id": "T2-16",
+      "category": "trap",
+      "attribute": "sexual-orientation-gender-identity",
+      "text": "Contact details of the patient's husband were recorded. The appendix is likely inflamed.",
+      "expected": false
+    },
+    {
+      "id": "T2-17",
+      "category": "trap",
+      "attribute": "age-stereotype",
+      "text": "Degenerative changes are consistent with the patient's age of 80.",
+      "expected": false
+    },
+    {
+      "id": "T2-18",
+      "category": "trap",
+      "attribute": "body-size",
+      "text": "Image quality is limited by body habitus; the liver likely contains a small haemangioma.",
+      "expected": false
+    }
+  ]
+}

@@ -220,6 +220,19 @@ describe("E2E — CLI error paths: AI_PROVIDER", () => {
     expect(cap.stderr).not.toMatch(/API_KEY/);
   });
 
+  it("AI_PROVIDER=local needs no API key and proceeds past key validation (exit 2 on missing input)", async () => {
+    process.env.AI_PROVIDER = "local";
+    delete process.env.OPENROUTER_API_KEY;
+    delete process.env.GOOGLE_API_KEY;
+    delete process.env.GEMINI_API_KEY;
+    const nonexistent = path.join(os.tmpdir(), `does-not-exist-local-${Date.now()}`);
+
+    const code = await runAnalyze(nonexistent, undefined, { concurrency: "1", verbose: false });
+
+    expect(code).toBe(2);
+    expect(cap.stderr).not.toMatch(/API_KEY/);
+  });
+
   it("an unknown AI_PROVIDER value returns exit code 1 and names the valid values", async () => {
     process.env.AI_PROVIDER = "anthropic";
     process.env.GOOGLE_API_KEY = "k";
@@ -230,5 +243,6 @@ describe("E2E — CLI error paths: AI_PROVIDER", () => {
     expect(cap.stderr).toMatch(/AI_PROVIDER/);
     expect(cap.stderr).toMatch(/google/);
     expect(cap.stderr).toMatch(/openrouter/);
+    expect(cap.stderr).toMatch(/local/);
   });
 });

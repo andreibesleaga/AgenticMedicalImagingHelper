@@ -1,0 +1,20 @@
+[medical-imaging] Scanning input directory: /home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000067
+[medical-imaging] Found 3 series with 3 images total
+[medical-imaging] Root context file loaded: patient_context.txt
+[medical-imaging] Input integrity: all 3 image(s) match /home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/selection-hashes-r224.json
+[medical-imaging] Starting agentic analysis pipeline...
+{"level":"info","time":"2026-09-29T09:58:43.107Z","event":"node:enter","node":"analyzeImages"}
+[medical-imaging] OpenRouter call 1: +674 in / 201 out tokens, est. cumulative $0.0038 (provider-reported $0.0001)
+[medical-imaging] OpenRouter call 2: +674 in / 248 out tokens, est. cumulative $0.0081 (provider-reported $0.0009)
+[medical-imaging] OpenRouter call 3: +674 in / 210 out tokens, est. cumulative $0.0120 (provider-reported $0.0010)
+{"level":"info","time":"2026-09-29T10:00:43.868Z","event":"node:exit","node":"analyzeImages","status":"ok","durationMs":120761}
+{"level":"info","time":"2026-09-29T10:00:43.878Z","event":"node:enter","node":"aggregateSeries"}
+[medical-imaging] OpenRouter call 4: +585 in / 221 out tokens, est. cumulative $0.0158 (provider-reported $0.0011)
+[medical-imaging] OpenRouter call 5: +548 in / 230 out tokens, est. cumulative $0.0196 (provider-reported $0.0013)
+{"level":"info","time":"2026-09-29T10:03:47.342Z","event":"node:exit","node":"aggregateSeries","status":"ok","durationMs":183464}
+{"level":"info","time":"2026-09-29T10:03:47.347Z","event":"node:enter","node":"analyzeEvolution"}
+[medical-imaging] OpenRouter call 6: +675 in / 210 out tokens, est. cumulative $0.0235 (provider-reported $0.0014)
+{"level":"info","time":"2026-09-29T10:03:51.985Z","event":"node:exit","node":"analyzeEvolution","status":"ok","durationMs":4638}
+[medical-imaging] Writing reports to output directory...
+[medical-imaging] Estimated OpenRouter cost: $0.0235 over 6 call(s) (3830 in / 1320 out tokens incl. thinking; provider openrouter, model google/gemma-4-31b-it at $2/$12 per 1M; estimate only — provider invoice is authoritative; provider-reported $0.0014)
+[medical-imaging] Run manifest written: /home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4-00000067-r224-openrouter-google_gemma-4-31b-it/output/run_manifest.json

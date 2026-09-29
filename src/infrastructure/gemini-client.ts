@@ -22,7 +22,12 @@ import {
   type ImagePolicy,
   type PreparedImage,
 } from "./image-policy.js";
-import { CostMeter, CostCapExceededError, type TokenUsage } from "./cost-meter.js";
+import {
+  CostMeter,
+  CostCapExceededError,
+  DEFAULT_GEMINI_MODEL,
+  type TokenUsage,
+} from "./cost-meter.js";
 import { withRetry, type RetryOptions } from "./retry.js";
 
 // ─── Prompt Templates ─────────────────────────────────────────────────────────
@@ -140,14 +145,14 @@ ${DISCLAIMER}`;
  * Read from the environment rather than threaded through the composition root
  * so that adding resolution detection changed no public constructor signature.
  * The defaults mirror the CLI's own (`AI_PROVIDER=google`,
- * `GEMINI_MODEL=gemini-2.5-flash`, `OPENROUTER_MODEL=google/gemini-2.5-flash`).
+ * `GEMINI_MODEL=gemini-3.8-flash`, `OPENROUTER_MODEL=google/gemini-2.5-flash`).
  */
 function policyFromEnv(env: NodeJS.ProcessEnv = process.env): ImagePolicy {
   const provider = (env.AI_PROVIDER ?? "google").trim().toLowerCase();
   const model =
     provider === "openrouter"
       ? (env.OPENROUTER_MODEL ?? "google/gemini-2.5-flash")
-      : (env.GEMINI_MODEL ?? "gemini-2.5-flash");
+      : (env.GEMINI_MODEL ?? DEFAULT_GEMINI_MODEL);
   return resolvePolicy(provider, model, env);
 }
 

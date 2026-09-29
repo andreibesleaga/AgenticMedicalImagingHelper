@@ -109,6 +109,7 @@
  */
 import * as fs from "fs/promises";
 import sharp from "sharp";
+import { findImageMetadata } from "../domain/input-guard.js";
 import type {
   ImagePreprocessingAction,
   ImagePreprocessingRecord,
@@ -537,15 +538,18 @@ export interface PreparePayloadOptions {
  * Decision order:
  *
  *   1. **Passthrough** — the file is already ≤ the target on its long edge, is a
- *      PNG or JPEG, carries no alpha, and is 8-bit. The original bytes go on the
+ *      PNG or JPEG, carries no alpha, is 8-bit, and has no embedded text or
+ *      metadata blocks (PNG tEXt/zTXt/iTXt/eXIf/tIME, JPEG EXIF/XMP/IPTC/comment). The original bytes go on the
  *      wire *untouched*: no decode, no re-encode, no possibility of growth. This
  *      is the branch that removes the measured +129.4 % growth on 224-px PNGs.
  *   2. **Resized** — the long edge exceeds the target. `fit: "inside"` with
  *      `withoutEnlargement: true`, so aspect ratio is preserved and a small
  *      image is never upscaled into detail it does not have.
  *   3. **Re-encoded** — the long edge is fine but something else is not: an
- *      alpha channel to strip, a 16-bit source to reduce, or a container
- *      (TIFF, WebP, …) the providers do not accept inline.
+ *      alpha channel to strip, a 16-bit source to reduce, a container
+ *      (TIFF, WebP, …) the providers do not accept inline, or embedded
+ *      metadata, which can carry identifiers or instruction-like text and is
+ *      dropped by the re-encode (sharp writes no metadata unless asked to).
  *
  * Greyscale stays one channel (libvips otherwise promotes a grey source to
  * 3-channel sRGB on PNG save, tripling the payload for no information), alpha is
@@ -589,8 +593,13 @@ export async function preparePayload(
   let action: ImagePreprocessingAction;
   let reason: string;
 
-  if (fits && formatOk && !info.hasAlpha && eightBit) {
-    bytes = await readFile(imagePath);
+  // Metadata is checked on the original bytes; only a clean file may pass through.
+  const original =
+    fits && formatOk && !info.hasAlpha && eightBit ? await readFile(imagePath) : undefined;
+  const metadata = original ? findImageMetadata(original) : [];
+
+  if (original && metadata.length === 0 && isSendable(info.format)) {
+    bytes = original;
     format = info.format;
     sentWidth = info.width;
     sentHeight = info.height;
@@ -604,6 +613,7 @@ export async function preparePayload(
     if (!formatOk) notes.push(`format ${info.format} is not sendable inline`);
     if (info.hasAlpha) notes.push("alpha channel stripped");
     if (!eightBit) notes.push(`${info.depth} source reduced to 8-bit`);
+    if (metadata.length > 0) notes.push(`embedded metadata stripped (${metadata.join(", ")})`);
 
     const encoded = await encode(imagePath, targetDim, info, policy);
     bytes = encoded.bytes;
