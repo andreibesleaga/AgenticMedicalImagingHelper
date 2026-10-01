@@ -56,6 +56,8 @@ Machine-readable citation metadata is in [`CITATION.cff`](./CITATION.cff) — Gi
 
 The experiment scripts, selection manifests and result logs used for the paper live in [`experiments/sime2026/`](./experiments/sime2026/); see the README in that directory for the exact reproduction steps. The dataset is the public NIH Clinical Center **ChestX-ray14** collection (Wang et al., CVPR 2017) — de-identified frontal PA chest radiographs, used here as a 224-px derivative with no accuracy claim attached. See also [`docs/EXPERIMENTS.md`](./docs/EXPERIMENTS.md) for a short index of the individual experiments (E1–E4, payload, scanner stress).
 
+**Follow-up after the paper:** [`experiments/sime-full/`](./experiments/sime-full/) repeats the longitudinal experiment (E4) on the original 1024 × 1024 NIH images of the same patients, with seven models including a local MedGemma run on a laptop GPU (112 runs, every input checked against the original files' hashes, every run manifest verified). [`RESULTS.md`](./experiments/sime-full/RESULTS.md) sets out what matches the paper and what differs; [`REPLICATE.md`](./experiments/sime-full/REPLICATE.md) lists every command.
+
 **Research/educational software — see [docs/COMPLIANCE.md](./docs/COMPLIANCE.md) for scope and regulatory positioning.**
 
 ---
