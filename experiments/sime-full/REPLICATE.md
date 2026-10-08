@@ -47,6 +47,25 @@ This writes `../nih-cxr14-full/input/r1024/E4/…` (original PNGs, byte for byte
 copies, with the Pillow version). Check yours against the committed files: every
 original's SHA-256 must match.
 
+### 2.1 All twelve archives (second batch, 2026-10-08)
+
+The 20-patient cohort (E4L-20) and the scaling test (E2) draw on images from every
+archive. Download all twelve (about 45 GB, roughly one hour per archive from the NIH
+server; safe to stop and run again), check them against the committed checksums, and
+build those two cohorts:
+
+```bash
+cd ../nih-cxr14-full/archives
+bash ../../AgenticMedicalImagingHelper/experiments/sime-full/fetch-nih.sh 1 2 3 4 5 6 7 8 9 10 11 12
+sha256sum -c ../../AgenticMedicalImagingHelper/experiments/sime-full/nih-archives.sha256
+cd ../../AgenticMedicalImagingHelper
+python3 experiments/sime-full/prepare-nih-full.py ../nih-cxr14-full/archives ../nih-cxr14-full/input E4L20 E2
+```
+
+The script reports `found 152 of 152 needed originals` (72 for E4L-20, 80 for E2) and
+adds their fingerprints to the two `selection-hashes*.json` files without changing the
+existing entries.
+
 ## 3. A local model, without administrator rights (optional, free)
 
 ```bash
@@ -92,6 +111,42 @@ cd ../..
 
 The free variant `google/gemma-4-31b-it:free` was tried first and was rate-limited
 upstream (HTTP 429) on 2026-09-29; the evidence is in `free-tier-evidence/`.
+
+### 4.1 Second batch (2026-10-08): E4L-20, E2 and repeat runs
+
+```bash
+cd experiments/sime-full
+set -a; . ../../.env; set +a
+
+# The paper ran E4L-20 and E2 with Gemini 2.5 Flash only: same model, both sizes,
+# plus the local model
+for r in 1024 224; do
+  for what in E4L20 E2; do
+    AI_PROVIDER=openrouter RES=$r ./run.sh $what google/gemini-2.5-flash
+    AI_PROVIDER=local      RES=$r ./run.sh $what medgemma1.5:4b
+  done
+done
+
+# Two more cloud models on E4L-20 at full resolution
+for m in qwen/qwen3-vl-235b-a22b-instruct google/gemini-3.1-pro-preview; do
+  AI_PROVIDER=openrouter RES=1024 ./run.sh E4L20 "$m"
+done
+
+# Two unchanged repeats of E4 at full resolution for the paper's four models
+# (REP appends -rep2 / -rep3 to the run ids; run 1 is the first batch)
+for rep in 2 3; do
+  for m in google/gemini-2.5-flash google/gemma-4-31b-it qwen/qwen3-vl-235b-a22b-instruct \
+           anthropic/claude-sonnet-5; do
+    AI_PROVIDER=openrouter REP=$rep RES=1024 ./run.sh E4 "$m"
+  done
+done
+cd ../..
+```
+
+`SKIP_EXISTING=1` in front of any of these resumes a batch without paying twice for
+runs already recorded. The local and cloud commands can run at the same time (the
+GPU and the network are separate); on 2026-10-08 the cloud runs ran as three
+parallel queues.
 
 ## 5. Checking and analysing
 

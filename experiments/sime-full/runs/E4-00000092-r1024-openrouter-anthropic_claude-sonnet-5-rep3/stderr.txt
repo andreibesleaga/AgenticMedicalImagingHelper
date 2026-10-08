@@ -1,0 +1,31 @@
+[medical-imaging] Scanning input directory: /home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092
+[medical-imaging] Found 4 series with 4 images total
+[medical-imaging] Root context file loaded: patient_context.txt
+[medical-imaging] Input integrity: all 4 image(s) match /home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/selection-hashes.json
+Warning: input-guard [image-metadata] series_1/00000092_000.png: png:tIME — stripped before upload
+  input-guard [image-metadata] series_2/00000092_001.png: png:tIME — stripped before upload
+  input-guard [image-metadata] series_3/00000092_002.png: png:tIME — stripped before upload
+  input-guard [image-metadata] series_4/00000092_003.png: png:tIME — stripped before upload
+[medical-imaging] Starting agentic analysis pipeline...
+{"level":"info","time":"2026-10-08T10:24:35.670Z","event":"node:enter","node":"analyzeImages"}
+[medical-imaging] OpenRouter call 1: +2012 in / 1018 out tokens, est. cumulative $0.0162 (provider-reported $0.0142)
+[medical-imaging] OpenRouter call 2: +2012 in / 618 out tokens, est. cumulative $0.0277 (provider-reported $0.0244)
+[medical-imaging] OpenRouter call 3: +2012 in / 1122 out tokens, est. cumulative $0.0452 (provider-reported $0.0397)
+[medical-imaging] OpenRouter call 4: +2012 in / 1262 out tokens, est. cumulative $0.0643 (provider-reported $0.0563)
+{"level":"info","time":"2026-10-08T10:25:31.220Z","event":"node:exit","node":"analyzeImages","status":"ok","durationMs":55550}
+{"level":"info","time":"2026-10-08T10:25:31.227Z","event":"node:enter","node":"aggregateSeries"}
+[medical-imaging] OpenRouter call 5: +1391 in / 1026 out tokens, est. cumulative $0.0794 (provider-reported $0.0693)
+[medical-imaging] OpenRouter call 6: +1029 in / 862 out tokens, est. cumulative $0.0918 (provider-reported $0.0800)
+[medical-imaging] OpenRouter call 7: +1498 in / 1337 out tokens, est. cumulative $0.1109 (provider-reported $0.0964)
+[medical-imaging] OpenRouter call 8: +1606 in / 1188 out tokens, est. cumulative $0.1283 (provider-reported $0.1115)
+{"level":"info","time":"2026-10-08T10:26:17.229Z","event":"node:exit","node":"aggregateSeries","status":"ok","durationMs":46002}
+{"level":"info","time":"2026-10-08T10:26:17.234Z","event":"node:enter","node":"analyzeEvolution"}
+[medical-imaging] OpenRouter call 9: +3553 in / 3261 out tokens, est. cumulative $0.1746 (provider-reported $0.1512)
+{"level":"info","time":"2026-10-08T10:26:49.017Z","event":"node:exit","node":"analyzeEvolution","status":"ok","durationMs":31783}
+[medical-imaging] Writing reports to output directory...
+Warning: Context-consistency: 3 statement(s) in the generated output contradict the supplied patient context [age]. Heuristic, non-blocking — the output still requires clinician review.
+  context-consistency [age] "pediatric" implies an age of 0–12, the context states 54: "…eating physician given the clinical context. AP portable chest radiograph in a pediatric/young patient with ECG lead artifacts over lower chest/abdomen Large rounded l…"
+  context-consistency [age] "child" implies an age of 0–12, the context states 54: "…l assessment of mediastinal and cardiac structures. This is a chest X-ray of a child, taken from the front. The lungs look clear with no signs of infection, fluid,…"
+  context-consistency [age] "young patient" implies an age of 0–39, the context states 54: "…sician given the clinical context. AP portable chest radiograph in a pediatric/young patient with ECG lead artifacts over lower chest/abdomen Large rounded lucent structur…"
+[medical-imaging] Estimated OpenRouter cost: $0.1746 over 9 call(s) (17125 in / 11694 out tokens incl. thinking; provider openrouter, model anthropic/claude-sonnet-5 at $2/$12 per 1M; estimate only — provider invoice is authoritative; provider-reported $0.1512)
+[medical-imaging] Run manifest written: /home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4-00000092-r1024-openrouter-anthropic_claude-sonnet-5-rep3/output/run_manifest.json

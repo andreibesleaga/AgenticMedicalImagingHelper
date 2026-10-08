@@ -415,5 +415,680 @@
    "patientPairs": 8,
    "sameVerdict": 7
   }
+ ],
+ "e4l20": {
+  "table1": [
+   {
+    "model": "local/medgemma1.5:4b",
+    "res": 224,
+    "patients": 20,
+    "images": 72,
+    "usableImages": 61,
+    "schemaRejected": 11,
+    "callErrors": 0,
+    "exactMatchRate": 0.4918032786885246,
+    "meanJaccard": 0.5191256830601093,
+    "directionAgree": 3,
+    "directionTotal": 20,
+    "runsExit0": 20,
+    "runs": 20,
+    "calls": 164,
+    "wallSeconds": 4907.8,
+    "providerUsd": 0,
+    "biasProbeSentences": 0,
+    "sizeClaims": 0,
+    "sizeClaimsHighConfidence": 0,
+    "contextContradictions": 0
+   },
+   {
+    "model": "local/medgemma1.5:4b",
+    "res": 1024,
+    "patients": 20,
+    "images": 72,
+    "usableImages": 66,
+    "schemaRejected": 6,
+    "callErrors": 0,
+    "exactMatchRate": 0.45454545454545453,
+    "meanJaccard": 0.4878787878787878,
+    "directionAgree": 2,
+    "directionTotal": 20,
+    "runsExit0": 20,
+    "runs": 20,
+    "calls": 164,
+    "wallSeconds": 4406.1,
+    "providerUsd": 0,
+    "biasProbeSentences": 0,
+    "sizeClaims": 0,
+    "sizeClaimsHighConfidence": 0,
+    "contextContradictions": 0
+   },
+   {
+    "model": "openrouter/google/gemini-2.5-flash",
+    "res": 224,
+    "patients": 20,
+    "images": 72,
+    "usableImages": 70,
+    "schemaRejected": 2,
+    "callErrors": 0,
+    "exactMatchRate": 0.42857142857142855,
+    "meanJaccard": 0.444047619047619,
+    "directionAgree": 7,
+    "directionTotal": 20,
+    "runsExit0": 20,
+    "runs": 20,
+    "calls": 164,
+    "wallSeconds": 916.1,
+    "providerUsd": 0.1998,
+    "biasProbeSentences": 0,
+    "sizeClaims": 0,
+    "sizeClaimsHighConfidence": 0,
+    "contextContradictions": 0
+   },
+   {
+    "model": "openrouter/google/gemini-2.5-flash",
+    "res": 1024,
+    "patients": 20,
+    "images": 72,
+    "usableImages": 71,
+    "schemaRejected": 1,
+    "callErrors": 0,
+    "exactMatchRate": 0.4647887323943662,
+    "meanJaccard": 0.4734741784037558,
+    "directionAgree": 8,
+    "directionTotal": 20,
+    "runsExit0": 20,
+    "runs": 20,
+    "calls": 164,
+    "wallSeconds": 756.1,
+    "providerUsd": 0.2312,
+    "biasProbeSentences": 0,
+    "sizeClaims": 0,
+    "sizeClaimsHighConfidence": 0,
+    "contextContradictions": 0
+   },
+   {
+    "model": "openrouter/google/gemini-3.1-pro-preview",
+    "res": 1024,
+    "patients": 20,
+    "images": 72,
+    "usableImages": 72,
+    "schemaRejected": 0,
+    "callErrors": 0,
+    "exactMatchRate": 0.5277777777777778,
+    "meanJaccard": 0.5604166666666667,
+    "directionAgree": 7,
+    "directionTotal": 20,
+    "runsExit0": 20,
+    "runs": 20,
+    "calls": 161,
+    "wallSeconds": 1789.5,
+    "providerUsd": 2.2159,
+    "biasProbeSentences": 0,
+    "sizeClaims": 1,
+    "sizeClaimsHighConfidence": 0,
+    "contextContradictions": 0
+   },
+   {
+    "model": "openrouter/qwen/qwen3-vl-235b-a22b-instruct",
+    "res": 1024,
+    "patients": 20,
+    "images": 72,
+    "usableImages": 72,
+    "schemaRejected": 0,
+    "callErrors": 0,
+    "exactMatchRate": 0.4861111111111111,
+    "meanJaccard": 0.4861111111111111,
+    "directionAgree": 7,
+    "directionTotal": 20,
+    "runsExit0": 20,
+    "runs": 20,
+    "calls": 164,
+    "wallSeconds": 1679.8,
+    "providerUsd": 0.0931,
+    "biasProbeSentences": 0,
+    "sizeClaims": 9,
+    "sizeClaimsHighConfidence": 1,
+    "contextContradictions": 0
+   }
+  ],
+  "table2": [
+   {
+    "model": "local/medgemma1.5:4b",
+    "imagePairs": 56,
+    "identicalClassSets": 35,
+    "meanPairJaccard": 0.66,
+    "patientPairs": 20,
+    "sameVerdict": 10,
+    "agree224": 3,
+    "agree1024": 2
+   },
+   {
+    "model": "openrouter/google/gemini-2.5-flash",
+    "imagePairs": 69,
+    "identicalClassSets": 50,
+    "meanPairJaccard": 0.748,
+    "patientPairs": 20,
+    "sameVerdict": 12,
+    "agree224": 7,
+    "agree1024": 8
+   }
+  ],
+  "table3": [
+   {
+    "model": "openrouter/google/gemini-2.5-flash",
+    "imagePairs": 70,
+    "identicalClassSets": 52,
+    "meanPairJaccard": 0.768,
+    "patientPairs": 20,
+    "sameVerdict": 15
+   }
+  ]
+ },
+ "table4": [
+  {
+   "model": "openrouter/anthropic/claude-sonnet-5",
+   "runs": 3,
+   "imagePairs": 89,
+   "identicalClassSets": 36,
+   "meanPairJaccard": 0.525,
+   "patientPairs": 24,
+   "sameVerdict": 12,
+   "patientsAllRunsSame": 2,
+   "patientsAllRuns": 8,
+   "perRun": [
+    {
+     "run": 1,
+     "usableImages": 31,
+     "images": 31,
+     "exactMatchRate": 0.1935483870967742,
+     "directionAgree": 2,
+     "directionTotal": 8
+    },
+    {
+     "run": 2,
+     "usableImages": 30,
+     "images": 31,
+     "exactMatchRate": 0.2,
+     "directionAgree": 2,
+     "directionTotal": 8
+    },
+    {
+     "run": 3,
+     "usableImages": 30,
+     "images": 31,
+     "exactMatchRate": 0.26666666666666666,
+     "directionAgree": 2,
+     "directionTotal": 8
+    }
+   ]
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "runs": 3,
+   "imagePairs": 91,
+   "identicalClassSets": 52,
+   "meanPairJaccard": 0.654,
+   "patientPairs": 24,
+   "sameVerdict": 14,
+   "patientsAllRunsSame": 3,
+   "patientsAllRuns": 8,
+   "perRun": [
+    {
+     "run": 1,
+     "usableImages": 31,
+     "images": 31,
+     "exactMatchRate": 0.2903225806451613,
+     "directionAgree": 1,
+     "directionTotal": 8
+    },
+    {
+     "run": 2,
+     "usableImages": 31,
+     "images": 31,
+     "exactMatchRate": 0.2903225806451613,
+     "directionAgree": 2,
+     "directionTotal": 8
+    },
+    {
+     "run": 3,
+     "usableImages": 30,
+     "images": 31,
+     "exactMatchRate": 0.26666666666666666,
+     "directionAgree": 3,
+     "directionTotal": 8
+    }
+   ]
+  },
+  {
+   "model": "openrouter/google/gemma-4-31b-it",
+   "runs": 3,
+   "imagePairs": 87,
+   "identicalClassSets": 63,
+   "meanPairJaccard": 0.771,
+   "patientPairs": 24,
+   "sameVerdict": 16,
+   "patientsAllRunsSame": 4,
+   "patientsAllRuns": 8,
+   "perRun": [
+    {
+     "run": 1,
+     "usableImages": 28,
+     "images": 31,
+     "exactMatchRate": 0.39285714285714285,
+     "directionAgree": 3,
+     "directionTotal": 8
+    },
+    {
+     "run": 2,
+     "usableImages": 31,
+     "images": 31,
+     "exactMatchRate": 0.3870967741935484,
+     "directionAgree": 2,
+     "directionTotal": 8
+    },
+    {
+     "run": 3,
+     "usableImages": 31,
+     "images": 31,
+     "exactMatchRate": 0.3870967741935484,
+     "directionAgree": 2,
+     "directionTotal": 8
+    }
+   ]
+  },
+  {
+   "model": "openrouter/qwen/qwen3-vl-235b-a22b-instruct",
+   "runs": 3,
+   "imagePairs": 93,
+   "identicalClassSets": 75,
+   "meanPairJaccard": 0.827,
+   "patientPairs": 24,
+   "sameVerdict": 18,
+   "patientsAllRunsSame": 5,
+   "patientsAllRuns": 8,
+   "perRun": [
+    {
+     "run": 1,
+     "usableImages": 31,
+     "images": 31,
+     "exactMatchRate": 0.45161290322580644,
+     "directionAgree": 2,
+     "directionTotal": 8
+    },
+    {
+     "run": 2,
+     "usableImages": 31,
+     "images": 31,
+     "exactMatchRate": 0.4838709677419355,
+     "directionAgree": 1,
+     "directionTotal": 8
+    },
+    {
+     "run": 3,
+     "usableImages": 31,
+     "images": 31,
+     "exactMatchRate": 0.5161290322580645,
+     "directionAgree": 3,
+     "directionTotal": 8
+    }
+   ]
+  }
+ ],
+ "table5": [
+  {
+   "model": "local/medgemma1.5:4b",
+   "res": 1024,
+   "runs": 8,
+   "runsExit0": 8,
+   "images": 242,
+   "usableImages": 206,
+   "schemaRejected": 36,
+   "callErrors": 0,
+   "exactMatchRate": 0.5679611650485437,
+   "meanJaccard": 0.5857605177993528,
+   "calls": 268,
+   "retries": 5,
+   "wallSeconds": 3317.3,
+   "providerUsd": 0
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "res": 224,
+   "runs": 8,
+   "runsExit0": 8,
+   "images": 242,
+   "usableImages": 242,
+   "schemaRejected": 0,
+   "callErrors": 0,
+   "exactMatchRate": 0.5454545454545454,
+   "meanJaccard": 0.5717138921684377,
+   "calls": 268,
+   "retries": 0,
+   "wallSeconds": 763.3,
+   "providerUsd": 0.3571
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "res": 1024,
+   "runs": 8,
+   "runsExit0": 8,
+   "images": 242,
+   "usableImages": 242,
+   "schemaRejected": 0,
+   "callErrors": 0,
+   "exactMatchRate": 0.5082644628099173,
+   "meanJaccard": 0.5365702479338843,
+   "calls": 268,
+   "retries": 0,
+   "wallSeconds": 1120.5,
+   "providerUsd": 0.4504
+  }
+ ],
+ "table5runs": [
+  {
+   "model": "local/medgemma1.5:4b",
+   "res": 1024,
+   "size": "S1x1",
+   "concurrency": 1,
+   "exit": 0,
+   "calls": 2,
+   "wallSeconds": 47.4,
+   "providerUsd": null
+  },
+  {
+   "model": "local/medgemma1.5:4b",
+   "res": 1024,
+   "size": "S1x1",
+   "concurrency": 5,
+   "exit": 0,
+   "calls": 2,
+   "wallSeconds": 46.1,
+   "providerUsd": null
+  },
+  {
+   "model": "local/medgemma1.5:4b",
+   "res": 1024,
+   "size": "S2x5",
+   "concurrency": 1,
+   "exit": 0,
+   "calls": 13,
+   "wallSeconds": 305,
+   "providerUsd": null
+  },
+  {
+   "model": "local/medgemma1.5:4b",
+   "res": 1024,
+   "size": "S2x5",
+   "concurrency": 5,
+   "exit": 0,
+   "calls": 13,
+   "wallSeconds": 252.7,
+   "providerUsd": null
+  },
+  {
+   "model": "local/medgemma1.5:4b",
+   "res": 1024,
+   "size": "S3x10",
+   "concurrency": 1,
+   "exit": 0,
+   "calls": 34,
+   "wallSeconds": 576.4,
+   "providerUsd": null
+  },
+  {
+   "model": "local/medgemma1.5:4b",
+   "res": 1024,
+   "size": "S3x10",
+   "concurrency": 5,
+   "exit": 0,
+   "calls": 34,
+   "wallSeconds": 606.4,
+   "providerUsd": null
+  },
+  {
+   "model": "local/medgemma1.5:4b",
+   "res": 1024,
+   "size": "S4x20",
+   "concurrency": 1,
+   "exit": 0,
+   "calls": 85,
+   "wallSeconds": 497.7,
+   "providerUsd": null
+  },
+  {
+   "model": "local/medgemma1.5:4b",
+   "res": 1024,
+   "size": "S4x20",
+   "concurrency": 5,
+   "exit": 0,
+   "calls": 85,
+   "wallSeconds": 985.6,
+   "providerUsd": null
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "res": 224,
+   "size": "S1x1",
+   "concurrency": 1,
+   "exit": 0,
+   "calls": 2,
+   "wallSeconds": 5,
+   "providerUsd": 0.0018
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "res": 224,
+   "size": "S1x1",
+   "concurrency": 5,
+   "exit": 0,
+   "calls": 2,
+   "wallSeconds": 7.2,
+   "providerUsd": 0.0018
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "res": 224,
+   "size": "S2x5",
+   "concurrency": 1,
+   "exit": 0,
+   "calls": 13,
+   "wallSeconds": 61.6,
+   "providerUsd": 0.0172
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "res": 224,
+   "size": "S2x5",
+   "concurrency": 5,
+   "exit": 0,
+   "calls": 13,
+   "wallSeconds": 31.3,
+   "providerUsd": 0.0186
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "res": 224,
+   "size": "S3x10",
+   "concurrency": 1,
+   "exit": 0,
+   "calls": 34,
+   "wallSeconds": 145.1,
+   "providerUsd": 0.0471
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "res": 224,
+   "size": "S3x10",
+   "concurrency": 5,
+   "exit": 0,
+   "calls": 34,
+   "wallSeconds": 49.9,
+   "providerUsd": 0.0465
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "res": 224,
+   "size": "S4x20",
+   "concurrency": 1,
+   "exit": 0,
+   "calls": 85,
+   "wallSeconds": 371.3,
+   "providerUsd": 0.114
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "res": 224,
+   "size": "S4x20",
+   "concurrency": 5,
+   "exit": 0,
+   "calls": 85,
+   "wallSeconds": 91.9,
+   "providerUsd": 0.1101
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "res": 1024,
+   "size": "S1x1",
+   "concurrency": 1,
+   "exit": 0,
+   "calls": 2,
+   "wallSeconds": 11.1,
+   "providerUsd": 0.0021
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "res": 1024,
+   "size": "S1x1",
+   "concurrency": 5,
+   "exit": 0,
+   "calls": 2,
+   "wallSeconds": 7.9,
+   "providerUsd": 0.0028
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "res": 1024,
+   "size": "S2x5",
+   "concurrency": 1,
+   "exit": 0,
+   "calls": 13,
+   "wallSeconds": 89.9,
+   "providerUsd": 0.0224
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "res": 1024,
+   "size": "S2x5",
+   "concurrency": 5,
+   "exit": 0,
+   "calls": 13,
+   "wallSeconds": 29.8,
+   "providerUsd": 0.0219
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "res": 1024,
+   "size": "S3x10",
+   "concurrency": 1,
+   "exit": 0,
+   "calls": 34,
+   "wallSeconds": 181.2,
+   "providerUsd": 0.0573
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "res": 1024,
+   "size": "S3x10",
+   "concurrency": 5,
+   "exit": 0,
+   "calls": 34,
+   "wallSeconds": 54.4,
+   "providerUsd": 0.0548
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "res": 1024,
+   "size": "S4x20",
+   "concurrency": 1,
+   "exit": 0,
+   "calls": 85,
+   "wallSeconds": 452.5,
+   "providerUsd": 0.1441
+  },
+  {
+   "model": "openrouter/google/gemini-2.5-flash",
+   "res": 1024,
+   "size": "S4x20",
+   "concurrency": 5,
+   "exit": 0,
+   "calls": 85,
+   "wallSeconds": 293.7,
+   "providerUsd": 0.145
+  }
+ ],
+ "table9": [
+  {
+   "source": "this pack, 224 px",
+   "model": "local/medgemma1.5:4b",
+   "worsening": "1/5",
+   "improving": "0/5",
+   "stable-pathology": "1/5",
+   "stable-normal": "1/5",
+   "total": "3/20"
+  },
+  {
+   "source": "this pack, 1024 px",
+   "model": "local/medgemma1.5:4b",
+   "worsening": "0/5",
+   "improving": "1/5",
+   "stable-pathology": "0/5",
+   "stable-normal": "1/5",
+   "total": "2/20"
+  },
+  {
+   "source": "SIME 2026, 224 px",
+   "model": "openrouter/google/gemini-2.5-flash",
+   "worsening": "1/5",
+   "improving": "2/5",
+   "stable-pathology": "3/5",
+   "stable-normal": "3/5",
+   "total": "9/20"
+  },
+  {
+   "source": "this pack, 224 px",
+   "model": "openrouter/google/gemini-2.5-flash",
+   "worsening": "1/5",
+   "improving": "1/5",
+   "stable-pathology": "2/5",
+   "stable-normal": "3/5",
+   "total": "7/20"
+  },
+  {
+   "source": "this pack, 1024 px",
+   "model": "openrouter/google/gemini-2.5-flash",
+   "worsening": "1/5",
+   "improving": "1/5",
+   "stable-pathology": "2/5",
+   "stable-normal": "4/5",
+   "total": "8/20"
+  },
+  {
+   "source": "this pack, 1024 px",
+   "model": "openrouter/google/gemini-3.1-pro-preview",
+   "worsening": "0/5",
+   "improving": "1/5",
+   "stable-pathology": "2/5",
+   "stable-normal": "4/5",
+   "total": "7/20"
+  },
+  {
+   "source": "this pack, 1024 px",
+   "model": "openrouter/qwen/qwen3-vl-235b-a22b-instruct",
+   "worsening": "0/5",
+   "improving": "0/5",
+   "stable-pathology": "3/5",
+   "stable-normal": "4/5",
+   "total": "7/20"
+  }
  ]
 }

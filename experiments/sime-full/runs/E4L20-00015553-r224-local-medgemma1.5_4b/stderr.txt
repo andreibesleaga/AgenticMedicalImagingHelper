@@ -1,0 +1,21 @@
+[medical-imaging] Scanning input directory: /home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00015553
+[medical-imaging] Found 5 series with 5 images total
+[medical-imaging] Root context file loaded: patient_context.txt
+[medical-imaging] Input integrity: all 5 image(s) match /home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/selection-hashes-r224.json
+[medical-imaging] Starting agentic analysis pipeline...
+[medical-imaging] Local call 1: +684 in / 162 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 2: +684 in / 268 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 3: +684 in / 139 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 4: +684 in / 228 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 5: +684 in / 175 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 6: +499 in / 264 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 7: +605 in / 284 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 8: +476 in / 170 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 9: +565 in / 479 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 10: +512 in / 295 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call failed (attempt 1/4, HTTP 500): Local HTTP 500: {"error":{"message":"prediction aborted, token repeat limit reached","type":"api_error","param":null,"code":null}}
+ — retrying in 961 ms
+[medical-imaging] Local call 11: +1174 in / 1588 out tokens, est. cumulative $0.0000
+[medical-imaging] Writing reports to output directory...
+[medical-imaging] Estimated Local cost: $0.0000 over 11 call(s) (7251 in / 4052 out tokens incl. thinking; provider local, model medgemma1.5:4b at $0/$0 per 1M; estimate only — provider invoice is authoritative)
+[medical-imaging] Run manifest written: /home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4L20-00015553-r224-local-medgemma1.5_4b/output/run_manifest.json

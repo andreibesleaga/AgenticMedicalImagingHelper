@@ -1,0 +1,18 @@
+[medical-imaging] Scanning input directory: /home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00019779
+[medical-imaging] Found 3 series with 3 images total
+[medical-imaging] Root context file loaded: patient_context.txt
+[medical-imaging] Input integrity: all 3 image(s) match /home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/selection-hashes.json
+Warning: input-guard [image-metadata] series_1/00019779_000.png: png:tIME — stripped before upload
+  input-guard [image-metadata] series_2/00019779_001.png: png:tIME — stripped before upload
+  input-guard [image-metadata] series_3/00019779_002.png: png:tIME — stripped before upload
+[medical-imaging] Starting agentic analysis pipeline...
+[medical-imaging] Local call 1: +684 in / 250 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 2: +684 in / 136 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 3: +684 in / 199 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 4: +588 in / 242 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 5: +474 in / 157 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 6: +537 in / 160 out tokens, est. cumulative $0.0000
+[medical-imaging] Local call 7: +743 in / 867 out tokens, est. cumulative $0.0000
+[medical-imaging] Writing reports to output directory...
+[medical-imaging] Estimated Local cost: $0.0000 over 7 call(s) (4394 in / 2011 out tokens incl. thinking; provider local, model medgemma1.5:4b at $0/$0 per 1M; estimate only — provider invoice is authoritative)
+[medical-imaging] Run manifest written: /home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4L20-00019779-r1024-local-medgemma1.5_4b/output/run_manifest.json

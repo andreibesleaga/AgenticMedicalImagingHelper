@@ -10,6 +10,11 @@ This protocol was written on 2026-09-29, before any run in this folder. The runs
 and their results are in [`RESULTS.md`](RESULTS.md) (generated tables in
 [`ANALYSIS.md`](ANALYSIS.md)); every command is in [`REPLICATE.md`](REPLICATE.md).
 
+A second batch on 2026-10-08, after all twelve NIH archives were downloaded and checked
+against [`nih-archives.sha256`](nih-archives.sha256), added the 20-patient cohort
+(E4L-20), the scaling test (E2) and two unchanged repeats of the E4 runs; see
+`RESULTS.md` §8–§11.
+
 ## What it answers
 
 The paper's main stated limit is that every image was a 224-px derivative. Two
@@ -50,7 +55,10 @@ the cohort is eight patients. See the scope statement in `RESULTS.md` when it ex
 | M | `google/gemini-2.5-flash`, `anthropic/claude-sonnet-5`, `qwen/qwen3-vl-235b-a22b-instruct` (the paper's other three models) | OpenRouter | small |
 | C | `google/gemini-3.8-flash`, `google/gemini-3.1-pro-preview` (current Gemini) | OpenRouter | small |
 
-Every arm runs on `r1024` and `r224`. Every invocation carries `--max-cost-usd`; the
+Every arm runs on `r1024` and `r224` for E4. Second batch (2026-10-08): E4L-20 and E2
+with the paper's model (Gemini 2.5 Flash) and arm L at both sizes; E4L-20 also with
+Qwen3-VL and Gemini 3.1 Pro at 1024 px; E4 repeated twice at 1024 px for the paper's
+four models (`REP=2`, `REP=3`). Every invocation carries `--max-cost-usd`; the
 whole pack is capped at USD 10 of provider-reported cost. Free-tier OpenRouter models
 may log prompts; that is acceptable here only because the NIH images are public and
 de-identified. MedGemma is used under Google's Health AI Developer Foundations terms,

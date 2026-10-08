@@ -1,0 +1,27 @@
+[medical-imaging] Scanning input directory: /home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092
+[medical-imaging] Found 4 series with 4 images total
+[medical-imaging] Root context file loaded: patient_context.txt
+[medical-imaging] Input integrity: all 4 image(s) match /home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/selection-hashes.json
+Warning: input-guard [image-metadata] series_1/00000092_000.png: png:tIME — stripped before upload
+  input-guard [image-metadata] series_2/00000092_001.png: png:tIME — stripped before upload
+  input-guard [image-metadata] series_3/00000092_002.png: png:tIME — stripped before upload
+  input-guard [image-metadata] series_4/00000092_003.png: png:tIME — stripped before upload
+[medical-imaging] Starting agentic analysis pipeline...
+{"level":"info","time":"2026-10-08T10:12:40.111Z","event":"node:enter","node":"analyzeImages"}
+[medical-imaging] OpenRouter call 1: +1363 in / 102 out tokens, est. cumulative $0.0040 (provider-reported $0.0005)
+[medical-imaging] OpenRouter call 2: +1363 in / 314 out tokens, est. cumulative $0.0104 (provider-reported $0.0011)
+[medical-imaging] OpenRouter call 3: +1360 in / 361 out tokens, est. cumulative $0.0175 (provider-reported $0.0021)
+[medical-imaging] OpenRouter call 4: +1360 in / 473 out tokens, est. cumulative $0.0259 (provider-reported $0.0033)
+{"level":"info","time":"2026-10-08T10:13:15.532Z","event":"node:exit","node":"analyzeImages","status":"ok","durationMs":35421}
+{"level":"info","time":"2026-10-08T10:13:15.542Z","event":"node:enter","node":"aggregateSeries"}
+[medical-imaging] OpenRouter call 5: +418 in / 173 out tokens, est. cumulative $0.0288 (provider-reported $0.0037)
+[medical-imaging] OpenRouter call 6: +630 in / 242 out tokens, est. cumulative $0.0330 (provider-reported $0.0041)
+[medical-imaging] OpenRouter call 7: +677 in / 329 out tokens, est. cumulative $0.0383 (provider-reported $0.0046)
+[medical-imaging] OpenRouter call 8: +789 in / 354 out tokens, est. cumulative $0.0441 (provider-reported $0.0052)
+{"level":"info","time":"2026-10-08T10:13:37.651Z","event":"node:exit","node":"aggregateSeries","status":"ok","durationMs":22109}
+{"level":"info","time":"2026-10-08T10:13:37.657Z","event":"node:enter","node":"analyzeEvolution"}
+[medical-imaging] OpenRouter call 9: +1283 in / 1048 out tokens, est. cumulative $0.0592 (provider-reported $0.0066)
+{"level":"info","time":"2026-10-08T10:13:57.526Z","event":"node:exit","node":"analyzeEvolution","status":"ok","durationMs":19868}
+[medical-imaging] Writing reports to output directory...
+[medical-imaging] Estimated OpenRouter cost: $0.0592 over 9 call(s) (9243 in / 3396 out tokens incl. thinking; provider openrouter, model qwen/qwen3-vl-235b-a22b-instruct at $2/$12 per 1M; estimate only — provider invoice is authoritative; provider-reported $0.0066)
+[medical-imaging] Run manifest written: /home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4-00000092-r1024-openrouter-qwen_qwen3-vl-235b-a22b-instruct-rep3/output/run_manifest.json

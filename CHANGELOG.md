@@ -11,6 +11,16 @@ All changes in this section are **backward-compatible** (`additive` or
 `internal-only`): no public CLI flag, exit code, or output field was removed or
 renamed.
 
+### Added (2026-10-08)
+
+- **SIME-FULL second batch** (`experiments/sime-full/`): the 20-patient cohort
+  (E4L-20) and the scaling test (E2) on the original NIH images, two unchanged
+  repeats of the E4 runs, checksums of all twelve NIH archives
+  (`nih-archives.sha256`), a `REP` option in `run.sh`, and per-cohort,
+  repeat-run and per-stratum tables in `analyze.ts` (the published E4 tables are
+  unchanged). `RESULTS.md` §8–§11; two first-batch statements corrected with
+  dated notes.
+
 ### Added (2026-09-29)
 
 - **Local provider** `AI_PROVIDER=local`: any OpenAI-compatible server on the

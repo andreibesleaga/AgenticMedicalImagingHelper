@@ -1,0 +1,33 @@
+[medical-imaging] Scanning input directory: /home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092
+[medical-imaging] Found 4 series with 4 images total
+[medical-imaging] Root context file loaded: patient_context.txt
+[medical-imaging] Input integrity: all 4 image(s) match /home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/selection-hashes.json
+Warning: input-guard [image-metadata] series_1/00000092_000.png: png:tIME — stripped before upload
+  input-guard [image-metadata] series_2/00000092_001.png: png:tIME — stripped before upload
+  input-guard [image-metadata] series_3/00000092_002.png: png:tIME — stripped before upload
+  input-guard [image-metadata] series_4/00000092_003.png: png:tIME — stripped before upload
+[medical-imaging] Starting agentic analysis pipeline...
+{"level":"info","time":"2026-10-08T09:38:24.693Z","event":"node:enter","node":"analyzeImages"}
+[medical-imaging] OpenRouter call 1: +2012 in / 969 out tokens, est. cumulative $0.0157 (provider-reported $0.0137)
+[medical-imaging] OpenRouter call 2: +2012 in / 1074 out tokens, est. cumulative $0.0326 (provider-reported $0.0285)
+[medical-imaging] OpenRouter call 3: +2012 in / 1116 out tokens, est. cumulative $0.0500 (provider-reported $0.0437)
+[medical-imaging] OpenRouter call 4: +2012 in / 1126 out tokens, est. cumulative $0.0675 (provider-reported $0.0589)
+{"level":"info","time":"2026-10-08T09:39:23.185Z","event":"node:exit","node":"analyzeImages","status":"ok","durationMs":58492}
+{"level":"info","time":"2026-10-08T09:39:23.191Z","event":"node:enter","node":"aggregateSeries"}
+[medical-imaging] OpenRouter call 5: +1342 in / 869 out tokens, est. cumulative $0.0806 (provider-reported $0.0703)
+[medical-imaging] OpenRouter call 6: +1444 in / 986 out tokens, est. cumulative $0.0953 (provider-reported $0.0831)
+[medical-imaging] OpenRouter call 7: +1590 in / 1167 out tokens, est. cumulative $0.1125 (provider-reported $0.0979)
+[medical-imaging] OpenRouter call 8: +1499 in / 1133 out tokens, est. cumulative $0.1291 (provider-reported $0.1122)
+{"level":"info","time":"2026-10-08T09:40:05.534Z","event":"node:exit","node":"aggregateSeries","status":"ok","durationMs":42343}
+{"level":"info","time":"2026-10-08T09:40:05.539Z","event":"node:enter","node":"analyzeEvolution"}
+[medical-imaging] OpenRouter call 9: +3325 in / 2957 out tokens, est. cumulative $0.1713 (provider-reported $0.1485)
+{"level":"info","time":"2026-10-08T09:40:33.538Z","event":"node:exit","node":"analyzeEvolution","status":"ok","durationMs":27999}
+[medical-imaging] Writing reports to output directory...
+Warning: Context-consistency: 5 statement(s) in the generated output contradict the supplied patient context [age]. Heuristic, non-blocking — the output still requires clinician review.
+  context-consistency [age] "infant" implies an age of 0–1, the context states 54: "…content. This can be a normal variant, especially in a crying or gas-swallowing infant/child, but should be correlated clinically. Suboptimal positioning/rotation M…"
+  context-consistency [age] "children" implies an age of 0–12, the context states 54: "…tomach containing swallowed air — this is often a normal finding, especially in children, but can sometimes indicate distension. The lungs show mild haziness that could…"
+  context-consistency [age] "pediatric" implies an age of 0–12, the context states 54: "…elated clinically by the treating physician. AP portable chest radiograph in a pediatric/young patient Rounded radiopaque marker over right shoulder region (external s…"
+  context-consistency [age] "child" implies an age of 0–12, the context states 54: "…. This can be a normal variant, especially in a crying or gas-swallowing infant/child, but should be correlated clinically. Suboptimal positioning/rotation Mild ro…"
+  context-consistency [age] "young patient" implies an age of 0–39, the context states 54: "…nically by the treating physician. AP portable chest radiograph in a pediatric/young patient Rounded radiopaque marker over right shoulder region (external skin marker) B…"
+[medical-imaging] Estimated OpenRouter cost: $0.1713 over 9 call(s) (17248 in / 11397 out tokens incl. thinking; provider openrouter, model anthropic/claude-sonnet-5 at $2/$12 per 1M; estimate only — provider invoice is authoritative; provider-reported $0.1485)
+[medical-imaging] Run manifest written: /home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4-00000092-r1024-openrouter-anthropic_claude-sonnet-5-rep2/output/run_manifest.json

@@ -25,6 +25,8 @@
 #   MAX_COST=3           --max-cost-usd for every run (default 3).
 #   AI_MAX_RETRIES=3     Transient-failure retries inside the CLI (0 disables).
 #   SKIP_EXISTING=1      Skip run ids already present in results.jsonl (exit 0).
+#   REP=2                Repeat number: appends "-rep2" to every run id, so a repeat
+#                        of the same arm is recorded next to the first run (default: none).
 #
 # Run ids carry the provider and the model with "/" replaced by "_", e.g.
 #   E2-S2x5-c5-google-gemini-2.5-flash
@@ -60,6 +62,7 @@ MAX_COST="${MAX_COST:-1}"
 if [[ "$RES" == "1024" ]]; then HASHES="${HASHES:-$HERE/selection-hashes.json}"
 else HASHES="${HASHES:-$HERE/selection-hashes-r$RES.json}"; fi
 SKIP_EXISTING="${SKIP_EXISTING:-0}"
+REP_TAG="${REP:+-rep$REP}"
 
 # Already recorded? (only consulted when SKIP_EXISTING=1)
 recorded() { [[ -f "$RESULTS" ]] && grep -qF "\"id\":\"$1\"" "$RESULTS"; }
@@ -124,7 +127,7 @@ if [[ "$what" == "E2" || "$what" == "all" ]]; then
   # shellcheck disable=SC2086  # E2_SIZES/E2_CONC are space-separated lists on purpose
   for size in $E2_SIZES; do
     for conc in $E2_CONC; do
-      one "E2-${size}-c${conc}-r${RES}-${PROVIDER}-${model_tag}" "$INPUT/E2/$size" "$conc" "$model"
+      one "E2-${size}-c${conc}-r${RES}-${PROVIDER}-${model_tag}${REP_TAG}" "$INPUT/E2/$size" "$conc" "$model"
     done
   done
 fi
@@ -137,7 +140,7 @@ cohort() { # cohort-dir-name
   fi
   for p in "$INPUT/$cohort"/*/; do
     pid=$(basename "$p")
-    one "${cohort}-${pid}-r${RES}-${PROVIDER}-${model_tag}" "$p" "$E4_CONC" "$model"
+    one "${cohort}-${pid}-r${RES}-${PROVIDER}-${model_tag}${REP_TAG}" "$p" "$E4_CONC" "$model"
   done
 }
 

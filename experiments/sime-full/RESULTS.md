@@ -1,6 +1,7 @@
 # SIME-FULL — results
 
-Runs of 2026-09-29. Every number below is taken from [`ANALYSIS.md`](ANALYSIS.md)
+Runs of 2026-09-29 (first batch, §1–§7) and 2026-10-08 (second batch, §8–§11).
+Every number below is taken from [`ANALYSIS.md`](ANALYSIS.md)
 and [`analysis.json`](analysis.json), which `analyze.ts` regenerates from the
 committed run records (`runs/`, `results.jsonl`). The protocol is in
 [`README.md`](README.md); every command is in [`REPLICATE.md`](REPLICATE.md).
@@ -12,9 +13,11 @@ committed run records (`runs/`, `results.jsonl`). The protocol is in
   labels, which were text-mined from reports (about 90 % accurate). No clinician
   reviewed any image or output. Nothing here is diagnostic accuracy, and no
   model ranking follows from it.
-- **One run per model, resolution and patient.** Models answer
+- **One run per model, resolution and patient in the first batch.** Models answer
   non-deterministically at their default settings (as in the paper), so §4
   measures how much a repeat run changes before any resolution effect is read.
+  The second batch repeated the E4 runs of the paper's four models twice more at
+  1024 px, which measures that variability directly (§8) and corrects part of §4.
 - **Same code, same prompts as the paper**, plus the post-paper guardrails
   (input guard, probes, sanitiser), which only record and clean; they do not
   change what the model is asked.
@@ -116,6 +119,14 @@ What this shows:
    (0.355 vs 0.450)**; for Gemma 4 the two are about equal (0.603 vs 0.622). So
    resolution does change what these models report, but on eight patients and
    without clinician review it cannot be said whether it changes it for the better.
+
+   > **Corrected 2026-10-08 (§8).** Repeat runs measured directly at 1024 px change
+   > the findings more than the 224-px comparison above suggested (mean Jaccard
+   > 0.654 for Gemini 2.5 Flash, 0.827 for Qwen3-VL). Against that, the 224 → 1024
+   > change of those two models (0.604, 0.806) is within run-to-run variability. For
+   > Claude (0.355 against 0.525) and Gemma 4 (0.603 against 0.771) resolution does
+   > change the findings more than a repeat run. Qwen's empty findings lists (§7.3)
+   > remain a clear resolution effect: 4 of 31 in all three 1024-px runs.
 3. Agreement with the NIH labels moved in both directions between resolutions
    (§3), and no model agreed on direction for more than 5 of 8 patients.
 
@@ -136,7 +147,9 @@ Supported:
 - A 4B medical model runs the whole longitudinal pipeline locally on a 6 GB
   laptop GPU at no cost, about 5–6 minutes per patient.
 - Resolution changes the findings of at least two of the paper's models more than
-  a repeat run does.
+  a repeat run does. *(Corrected 2026-10-08: with repeat runs measured directly,
+  the two are Claude Sonnet 5 and Gemma 4, not Gemini 2.5 Flash and Qwen3-VL; for
+  Qwen the resolution effect is in how many images get no findings at all. See §8.)*
 - The new probes catch the paper's F1 pattern automatically, and also produce
   false alarms, which are reported here.
 
@@ -216,4 +229,155 @@ Reading this table:
   leave the machine (roadmap §10).
 - **Still to run:** the 20-patient cohort (E4L-20) and the scaling test (E2) at full
   resolution, when the remaining NIH archives are downloaded, and repeated runs so that
-  run-to-run variability can be measured directly rather than inferred.
+  run-to-run variability can be measured directly rather than inferred. *(Done
+  2026-10-08: §8–§11.)*
+
+## 8. Second batch: repeat runs, measured directly (ANALYSIS Table 4)
+
+The E4 runs of the paper's four models were repeated twice at 1024 px with nothing
+changed (run ids ending `-rep2`, `-rep3`), giving three runs per model and patient.
+"Pairs" are every pair of the three runs.
+
+| Model | Findings unchanged by a repeat (mean Jaccard, 1024 px) | … by 224 → 1024 px (Table 2) | Verdict the same in all three runs | Exact NIH-label match, runs 1 · 2 · 3 | Direction agrees, runs 1 · 2 · 3 |
+| --- | --- | --- | --- | --- | --- |
+| Claude Sonnet 5 | 0.525 | 0.355 | 2 / 8 | 0.194 · 0.200 · 0.267 | 2 · 2 · 2 of 8 |
+| Gemini 2.5 Flash | 0.654 | 0.604 | 3 / 8 | 0.290 · 0.290 · 0.267 | 1 · 2 · 3 of 8 |
+| Gemma 4 31B | 0.771 | 0.603 | 4 / 8 | 0.393 · 0.387 · 0.387 | 3 · 2 · 2 of 8 |
+| Qwen3-VL 235B | 0.827 | 0.806 | 5 / 8 | 0.452 · 0.484 · 0.516 | 2 · 1 · 3 of 8 |
+
+What this shows:
+1. **The verdict is the least stable output.** Only 2 to 5 of 8 patients got the same
+   better/same/worse verdict in three identical runs. One run per patient, as in the
+   paper and in most published evaluations of these models, cannot support a
+   per-patient verdict claim.
+2. **The mechanical direction count moves by up to two patients between identical
+   runs** (Gemini 2.5 Flash 1, 2 and 3 of 8). The paper's E4 counts (2–3 of 8) are
+   inside that range.
+3. **Resolution against repeat noise, corrected.** For Gemini 2.5 Flash and Qwen3-VL
+   the 224 → 1024 change in findings is within repeat-run variability; for Claude and
+   Gemma 4 it is larger. §4's first estimate used the paper's 224-px run against this
+   pack's 224-px run, which turned out steadier than repeats at 1024 px.
+4. **Two resolution effects survive the repeats.** Qwen3-VL left 4 of 31 images with
+   no findings in each of the three 1024-px runs, against 22 at 224 px (and 27 in the
+   paper). Gemma 4's schema rejections were 3, 0 and 0 of 31 at 1024 px, against 3 at
+   224 px and 13 in the paper, so they vary between runs too.
+
+Cost of the two repeats: USD 2.61 (Claude 2.26, Gemini 2.5 Flash 0.24, Qwen 0.08,
+Gemma 0.03).
+
+## 9. Second batch: the 20-patient cohort, E4L-20 (ANALYSIS Tables 6–9)
+
+The paper's second longitudinal cohort: 20 patients, 72 studies, five per NIH-label
+trajectory (worsening-like, improving-like, stable with pathology, stable normal). The
+paper ran it with Gemini 2.5 Flash only, at 224 px. Here: Gemini 2.5 Flash and local
+MedGemma at both sizes, and Gemini 3.1 Pro (preview) and Qwen3-VL at 1024 px.
+
+| Model | px | Usable images | Exact NIH-label match | Direction agrees (mechanical) | Worsening-like | Cost USD |
+| --- | --- | --- | --- | --- | --- | --- |
+| Gemini 2.5 Flash, **paper run** | 224 | — | — | 9 / 20 | 1 / 5 | 0.21 |
+| Gemini 2.5 Flash | 224 | 70 / 72 | 0.429 | 7 / 20 | 1 / 5 | 0.20 |
+| Gemini 2.5 Flash | 1024 | 71 / 72 | 0.465 | 8 / 20 | 1 / 5 | 0.23 |
+| Gemini 3.1 Pro (preview) | 1024 | 72 / 72 | 0.528 | 7 / 20 | 0 / 5 | 2.22 |
+| Qwen3-VL 235B | 1024 | 72 / 72 | 0.486 | 7 / 20 | 0 / 5 | 0.09 |
+| MedGemma 1.5 4B (local) | 224 | 61 / 72 | 0.492 | 3 / 20 | 1 / 5 | 0 |
+| MedGemma 1.5 4B (local) | 1024 | 66 / 72 | 0.455 | 2 / 20 | 0 / 5 | 0 |
+
+(The paper's person-judged result for this cohort is 8/20 agree and 12/20 agree or
+partly agree; the mechanical 9/20 is the same runs scored by the E5 code, as here.)
+
+What this shows:
+1. **Full resolution does not fix the worsening trajectories.** The paper reported 0/5
+   (person-judged) and 1/5 (mechanical) on the worsening-like stratum and attributed it
+   to changes "physically unresolvable at 224 px". At 1024 px Gemini 2.5 Flash still
+   scores 1/5, and Gemini 3.1 Pro, Qwen3-VL and MedGemma score 0/5. Resolution is
+   therefore not the explanation for these models; the remaining candidates are the
+   models themselves and the labels (a worsening-like trajectory is defined by
+   text-mined labels such as "No Finding → Infiltration", which may itself be label
+   noise). Five patients per stratum and no clinician review: this narrows the
+   question, it does not settle it.
+2. **For Gemini 2.5 Flash, resolution moves the findings about as much as a repeat
+   does**: 224 → 1024 mean Jaccard 0.748 with 12/20 verdicts kept (Table 7), against
+   0.768 and 15/20 between the paper's 224-px run and this pack's (Table 8), the same
+   pattern as on E4 (§8).
+3. **The strongest current model is better on labels, not on direction.** Gemini 3.1
+   Pro had the highest exact label match (0.528) and no unusable image, at about ten
+   times the cost of Gemini 2.5 Flash and 24 times that of Qwen3-VL, with the same
+   direction count as both (7/20).
+4. **Most models default to "Stable".** Qwen3-VL called 15 of 20 patients Stable,
+   Gemini 3.1 Pro 12, Gemini 2.5 Flash 10, MedGemma 7 (plus 6 Inconclusive).
+5. **The local 4B model is weakest on direction** (2–3 of 20) and had the most
+   schema rejections (6 at 1024 px, 11 at 224 px), at no cost and about 3.7 minutes
+   per patient at 1024 px (4.1 at 224 px) on the laptop GPU.
+6. **Probes:** no bias-probe sentence and no context contradiction in any E4L-20 run.
+   Ten size claims, one at ≥ 90 % confidence: Qwen3-VL, 1024 px, "a round, radiopaque
+   object measuring approximately 1–2 cm" on 00016493_001 at 95 %. The paper's own
+   review records a real radiopaque disc in this patient, so this is a real object
+   with an estimated size stated as a measurement, not an invented finding.
+
+## 10. Second batch: the scaling test, E2 (ANALYSIS Table 5)
+
+The paper's operational test: 80 images of different patients at four sizes (1 × 1 to
+4 sessions × 20 images), each at concurrency 1 and 5. The paper ran it with Gemini 2.5
+Flash at 224 px. Here: Gemini 2.5 Flash at both sizes and local MedGemma at 1024 px.
+The local 224-px pass was not run: the owner capped the local runs at one more hour on
+2026-10-08, and the queue stopped after the 1024-px pass.
+
+| Size | Paper, c1 → c5 (speed-up) | Gemini 2.5 Flash, 224 px | Gemini 2.5 Flash, 1024 px | MedGemma, 1024 px (local) |
+| --- | --- | --- | --- | --- |
+| 1 × 1 | 7.6 → 4.8 s (1.58×) | 5.0 → 7.2 s (0.69×) | 11.1 → 7.9 s (1.41×) | 47.4 → 46.1 s (1.03×) |
+| 2 × 5 | 53.5 → 30.0 s (1.78×) | 61.6 → 31.3 s (1.97×) | 89.9 → 29.8 s (3.02×) | 305.0 → 252.7 s (1.21×) |
+| 3 × 10 | 152.1 → 54.9 s (2.77×) | 145.1 → 49.9 s (2.91×) | 181.2 → 54.4 s (3.33×) | 576.4 → 606.4 s (0.95×) |
+| 4 × 20 | 361.4 → 114.2 s (3.16×) | 371.3 → 91.9 s (4.04×) | 452.5 → 293.7 s (1.54×) | 497.7 → 985.6 s (0.50×) |
+
+| | Paper (224 px) | Gemini 2.5 Flash, 224 px | Gemini 2.5 Flash, 1024 px | MedGemma, 1024 px |
+| --- | --- | --- | --- | --- |
+| Runs with exit 0 | 8 / 8 (OpenRouter rows) | 8 / 8 | 8 / 8 | 8 / 8 |
+| Calls (all sizes, both concurrencies) | 268 | 268 | 268 | 268 |
+| Usable image answers | 242 / 242 | 242 / 242 | 242 / 242 | 206 / 242 (36 schema-rejected) |
+| Retries | 1 | 0 | 0 | 5 |
+| Cost USD | 0.369 | 0.357 | 0.450 | 0 |
+
+What this shows:
+1. **The paper's E2 result reproduces at 224 px**: the same call structure (calls =
+   images + sessions + one evolution call), no failures, the same cost within 4 %,
+   and speed-ups of the same order (up to 4.0× against the paper's 3.2×).
+2. **At 1024 px the cloud run costs 26 % more and is slower at concurrency 1**
+   (452.5 s against 371.3 s for 4 × 20). One concurrency-5 run (4 × 20, 293.7 s)
+   was much slower than the others; single runs cannot tell provider load from a
+   resolution effect, as the paper's own caveat says.
+3. **Concurrency does not help a single local GPU.** The model server answers one
+   request at a time, so concurrency 5 only queues requests: speed-ups of 0.5× to
+   1.2×. One local run (4 × 20 at concurrency 1) generated text more than twice as
+   fast as the others for reasons these runs cannot show; it is reported as measured.
+4. **The local 4B model is usable for batch work but rejects more**: 36 of 242 answers
+   failed the schema (15 %), against none for Gemini 2.5 Flash.
+
+## 11. Second batch: what it adds to the conclusions
+
+Runs of 2026-10-08: **208** (E4 repeats 64, E4L-20 120, E2 24), all exit 0, all 208
+sealed records verify, all inputs matched the fingerprint lists. Cloud cost USD 6.16
+(provider-reported; the OpenRouter account shows USD 6.1563 for the month, the same); local model 48 runs, 3.5 hours on the laptop GPU, USD 0. With
+the first batch: **320 runs, USD 11.19.**
+
+Supported, in addition to §6:
+- **Run-to-run variability is large and must be measured, not assumed.** Three
+  identical runs kept the same verdict for only 2–5 of 8 patients, and the direction
+  count moved by up to two patients. Single-run verdict comparisons, including the
+  paper's, describe one draw.
+- **Full resolution does not resolve the worsening trajectories** of E4L-20 for any
+  model tried (0–1 of 5), so the paper's explanation of its worst result (224 px) is
+  not supported; the model or the labels remain the candidates.
+- **Resolution has two robust, model-specific effects**: Qwen3-VL leaves far fewer
+  images without findings (4 against 22 of 31, in three runs out of three), and
+  Claude and Gemma 4 change their findings more with resolution than between repeats.
+- **The paper's operational results (E2) reproduce** at 224 px; full resolution costs
+  about a quarter more.
+- **Local inference covers the whole pipeline at zero cost**, with more schema
+  rejections and no benefit from concurrency on one GPU.
+
+Still not supported: any statement about diagnostic accuracy, any model ranking, and
+any claim that 1024 px is better than 224 px. Those need expert labels, more patients
+and clinician review (`docs/ROADMAP.md` §10).
+
+Not run: MedGemma on E2 at 224 px (time cap above); E4L-20 at 224 px for Qwen3-VL and
+Gemini 3.1 Pro (no paper run to compare with; only Gemini 2.5 Flash has one).
