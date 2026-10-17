@@ -1,10 +1,8 @@
 # Conference demo pack
 
 A self-contained, scripted demo of AgenticMedicalImagingHelper on two real
-NIH ChestX-ray14 patients, built for the SIME 2026 paper #154 video (see
-`/home/andrei/work/IEEE/SIME2026/camera-ready/DEMO-STRATEGY.md` §2 — demo 1
-and demo 2). It runs the built CLI exactly as a user would; nothing here is
-demo-only code inside `src/`.
+NIH ChestX-ray14 patients, built to accompany the SIME 2026 paper. It runs the
+built CLI exactly as a user would; nothing here is demo-only code inside `src/`.
 
 ⚠️ **Research/educational software, not a clinical tool.** Every output below
 is AI-generated, experimental model output — not a diagnosis, not a clinical
@@ -39,8 +37,8 @@ studies (all frontal PA chest radiographs, 224-px NIH derivative):
 | "improving-like" | `00003158` | improving-like | M / 8 | **Effusion** → No Finding → No Finding |
 
 Selection criteria, applied on top of the cohort table: exactly 3 studies
-(so the demo stays small and the narrative reads cleanly in a few seconds of
-video), and a trajectory with a **single** finding change rather than a
+(so the demo stays small and the narrative reads cleanly in a few seconds), and
+a trajectory with a **single** finding change rather than a
 multi-label jump — `00011264` gains exactly one new finding at the last
 study; `00003158` clears its one finding by the second study. Several other
 cohort members also qualify (e.g. `00002407`, `00007845` for worsening;
@@ -97,25 +95,23 @@ recreates both.
 
 ## Expected duration and cost
 
-Measured on one live OpenRouter run (`google/gemini-2.5-flash`), see
-[`SAMPLE-RUN.md`](./SAMPLE-RUN.md) for the full console output:
+Measured on one live OpenRouter run (`google/gemini-2.5-flash`):
 
 - **Duration:** ~2–3 minutes end to end, including `npm test`.
 - **Cost:** a few cents total (provider-reported), across the two golden-path
   runs (3 images each) plus the two single-image governance calls. Exact
-  figures are in the Summary section at the end of `SAMPLE-RUN.md` and in
-  each run's `run_manifest.json`.
+  figures are in each run's `run_manifest.json`.
 
 The DICOM refusal and `--strict-phi` demos are pre-flight rejections — no
 model call, no cost, no output directory. The cost-cap and `--allow-phi`
 demos are each restricted to one image (`--series series_1 --concurrency 1`)
 specifically to keep the demo's cost bounded.
 
-## Narration cues (for the video)
+## One sentence per banner
 
-One sentence per banner the script prints, in order:
+What each banner the script prints means, in order:
 
-| Banner | Narration cue |
+| Banner | Meaning |
 | --- | --- |
 | Setup | "We're running the built CLI on real, de-identified NIH chest X-rays, provider-agnostic — OpenRouter or Gemini." |
 | Golden path — worsening-like patient | "Three chronological studies, one patient — the pipeline fans out per image, aggregates per series, then compares series over time." |
@@ -140,10 +136,10 @@ One sentence per banner the script prints, in order:
   billed, *then* the cumulative-cost check throws and the run aborts before
   a second call. The script therefore restricts this demo to
   `--series series_1 --concurrency 1` (one image only) and asserts the
-  **observed** exit code rather than assuming zero calls happened — see the
-  Summary in `SAMPLE-RUN.md` for what that run actually recorded.
+  **observed** exit code rather than assuming zero calls happened; the run's
+  `run_manifest.json` records what actually happened.
 - Everything else (exit codes 5 for the cost cap, 2 for DICOM, 7 for
   `--strict-phi`, 0 for the golden path and `verify-manifest`, and the
   layout `demo/output/<patient>/output/…` that
   `experiments/sime2026/probe-outputs.ts` expects) matched the design as
-  written — see `SAMPLE-RUN.md` for the live run that confirmed it.
+  written in the live run that confirmed it.

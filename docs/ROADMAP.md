@@ -299,9 +299,8 @@ dataset shortlists. Not started; written out now so the shape of the work is fix
    review together. Real clinical deployment (§5) follows only after this study and only with
    every legal requirement in place.
 
-This is explicitly the endpoint the "not yet shown" list in the paper and the video (§14 of the
-presentation deck) points at — the plan by which each "not yet shown" item becomes "demonstrated"
-in a later, separate release.
+This is explicitly the endpoint the "not yet shown" list in the paper points at — the plan by
+which each "not yet shown" item becomes "demonstrated" in a later, separate release.
 ## 9. Version 2 programme (planned, 2027) — pointer
 
 Recorded 2026-09-15. Nothing below is started; it sequences §2–§5 into one programme and names the
