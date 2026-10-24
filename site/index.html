@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AgenticMedicalImagingHelper - Research CLI</title>
+<meta name="description" content="Open-source research CLI: LangGraph.js agents analyse medical image series and track change over time. Research and education only; not a medical device.">
+<link rel="canonical" href="https://andreibesleaga.github.io/AgenticMedicalImagingHelper/">
+<meta name="author" content="Andrei N. Besleaga">
+<meta name="color-scheme" content="light dark">
+<meta name="tdm-reservation" content="1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AgenticMedicalImagingHelper">
+<meta property="og:title" content="AgenticMedicalImagingHelper - Research CLI">
+<meta property="og:description" content="Open-source research CLI: LangGraph.js agents analyse medical image series and track change over time. Research and education only; not a medical device.">
+<meta property="og:url" content="https://andreibesleaga.github.io/AgenticMedicalImagingHelper/">
+<meta property="og:image" content="https://andreibesleaga.github.io/AgenticMedicalImagingHelper/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AgenticMedicalImagingHelper: the fan-out, fan-in analysis pipeline with a governance layer, and the notice that it is for research and education only and is not a medical device">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AgenticMedicalImagingHelper - Research CLI">
+<meta name="twitter:description" content="Open-source research CLI that analyses medical image series with LangGraph.js agents. Research and education only; not a medical device.">
+<meta name="twitter:image" content="https://andreibesleaga.github.io/AgenticMedicalImagingHelper/img/og.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://andreibesleaga.github.io/AgenticMedicalImagingHelper/#software",
+      "name": "AgenticMedicalImagingHelper",
+      "description": "Open-source research and educational TypeScript CLI that orchestrates a multimodal model with LangGraph.js to analyse series of medical images and track how findings evolve across imaging sessions. Not a medical device; not clinically validated.",
+      "url": "https://andreibesleaga.github.io/AgenticMedicalImagingHelper/",
+      "codeRepository": "https://github.com/andreibesleaga/AgenticMedicalImagingHelper",
+      "programmingLanguage": "TypeScript",
+      "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+      "version": "1.1.1",
+      "image": "https://andreibesleaga.github.io/AgenticMedicalImagingHelper/img/og.png",
+      "citation": { "@id": "https://andreibesleaga.github.io/AgenticMedicalImagingHelper/#paper" },
+      "author": {
+        "@type": "Person",
+        "name": "Andrei N. Besleaga",
+        "url": "https://andreibesleaga.com/",
+        "sameAs": ["https://github.com/andreibesleaga", "https://orcid.org/0009-0001-3464-5283"]
+      }
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://andreibesleaga.github.io/AgenticMedicalImagingHelper/#paper",
+      "name": "Agentic Multimodal Architectures for Medical Imaging: Orchestration, Deterministic Fairness Probing, and Governance",
+      "author": {
+        "@type": "Person",
+        "name": "Andrei N. Besleaga",
+        "url": "https://andreibesleaga.com/",
+        "sameAs": ["https://github.com/andreibesleaga", "https://orcid.org/0009-0001-3464-5283"]
+      },
+      "isPartOf": {
+        "@type": "Collection",
+        "name": "Proceedings of the IEEE International Conference on Smart Innovations for Medicine and Engineering (SIME 2026)"
+      },
+      "publisher": { "@type": "Organization", "name": "IEEE" },
+      "sameAs": "https://doi.org/10.5281/zenodo.20762929"
+    }
+  ]
+}
+</script>
+<style>
+:root{--bg:#fff;--fg:#1d2330;--muted:#556070;--line:#dde2ea;--link:#1a55b8;--code-bg:#f2f4f8;--warn-bg:#fdf1f0;--warn-line:#b3261e;--warn-fg:#7a1a14;--panel:#fff;--bar:#1a55b8}
+@media (prefers-color-scheme:dark){:root{--bg:#10141c;--fg:#e4e8ef;--muted:#a3adbd;--line:#2a3140;--link:#8db8ff;--code-bg:#1a2030;--warn-bg:#2a1517;--warn-line:#f08a82;--warn-fg:#ffd9d5;--bar:#8db8ff}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+main,footer{max-width:42rem;margin:0 auto;padding:0 1rem}
+header{max-width:42rem;margin:0 auto;padding:2rem 1rem 0}
+h1{font-size:clamp(1.4rem,7vw,2rem);line-height:1.2;margin:0 0 .25rem;letter-spacing:-.01em}
+h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:2.5rem 0 .75rem;padding-top:1rem;border-top:1px solid var(--line)}
+h3{font-size:1rem;margin:1.5rem 0 .25rem}
+p{margin:.5rem 0}
+.sub{color:var(--muted);margin:0 0 .75rem}
+.lead{font-size:1.05rem}
+ul{margin:.5rem 0;padding-left:1.25rem}
+li{margin:.3rem 0}
+a{color:var(--link);text-underline-offset:.15em}
+a:focus-visible,summary:focus-visible,.scroll:focus-visible{outline:2px solid var(--link);outline-offset:2px;border-radius:2px}
+pre{margin:.75rem 0;padding:.75rem 1rem;background:var(--code-bg);border:1px solid var(--line);border-radius:6px;overflow-x:auto;font-size:.85rem;line-height:1.5}
+code{font:.88em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+p code,li code,td code,dd code{background:var(--code-bg);padding:.05em .3em;border-radius:3px;overflow-wrap:anywhere}
+.small{font-size:.875rem;color:var(--muted)}
+dl{margin:.5rem 0}
+dt{font-weight:600;margin-top:.6rem}
+dd{margin:0}
+.links{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.4rem 1.25rem}
+.links li{margin:0}
+.notice{margin:1rem 0;padding:.75rem 1rem;background:var(--warn-bg);color:var(--warn-fg);border:2px solid var(--warn-line);border-radius:6px;font-size:.95rem;line-height:1.5}
+.notice p{margin:.3rem 0}
+.notice a{color:inherit}
+.fig{margin:1rem 0}
+.fig .panel{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:.5rem;text-align:center}
+.fig img{max-width:100%;height:auto;display:inline-block}
+.fig figcaption{font-size:.875rem;color:var(--muted);margin-top:.4rem}
+.scroll{overflow-x:auto;margin:.75rem 0}
+table{border-collapse:collapse;width:100%;font-size:.875rem;min-width:32rem}
+th,td{text-align:left;vertical-align:top;padding:.4rem .6rem;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:600}
+.chart{margin:.75rem 0}
+.chart svg{width:100%;height:auto;display:block}
+.chart text{fill:var(--fg);font:13px system-ui,sans-serif}
+.chart .bar{fill:var(--bar)}
+.chart .axis{stroke:var(--line)}
+footer{padding-top:1rem;padding-bottom:3rem;margin-top:2.5rem;border-top:1px solid var(--line);font-size:.875rem;color:var(--muted)}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:1rem;top:1rem;background:var(--bg);padding:.25rem .5rem;z-index:1}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<h1>Agentic<wbr>Medical<wbr>Imaging<wbr>Helper</h1>
+<p class="sub">Research CLI &middot; TypeScript &middot; LangGraph.js &middot; v1.1.1 &middot; GPL-3.0</p>
+<p class="lead">An open-source command-line tool that uses a multimodal model to analyse series of medical images and track how findings change across imaging sessions. The reference implementation of a SIME 2026 paper.</p>
+<aside class="notice" aria-label="Disclaimer">
+<p><strong>Research and education only. Not a medical device.</strong> It has had no clinical validation and has no regulatory clearance. Its outputs, including any &ldquo;treatment ideas&rdquo;, are experimental model output: not a diagnosis, not medical advice, not a recommendation.</p>
+<p><strong>Never use it to make decisions about a real patient.</strong> Every output needs review by a qualified clinician and may then be used only for research or teaching. See <a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/DISCLAIMER.md">DISCLAIMER.md</a>.</p>
+</aside>
+<ul class="links">
+<li><a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper">GitHub</a></li>
+<li><a href="#start">Get started</a></li>
+<li><a href="#results">Results</a></li>
+<li><a href="#paper">Paper</a></li>
+</ul>
+</header>
+<main id="main">
+
+<h2 id="what">What it does</h2>
+<ul>
+<li><strong>Image-series analysis.</strong> Reads series of images (CT, MRI, X-ray, ultrasound) with optional <code>.txt</code> context files, analyses every image in parallel and merges the findings per series.</li>
+<li><strong>Temporal evolution.</strong> Compares series across imaging sessions and reports each finding as Improving, Stable or Worsening in a combined evolution report.</li>
+<li><strong>Agentic orchestration.</strong> A LangGraph.js fan-out / fan-in graph (<code>analyzeImages</code>, <code>aggregateSeries</code>, <code>analyzeEvolution</code>) with <code>p-limit</code> concurrency control. Output: per-image JSON, per-series Markdown and a combined report.</li>
+<li><strong>Three providers.</strong> Google Gemini by default; OpenRouter as an optional second provider (any vision-capable model, no Google Search grounding); or a local model served by Ollama, vLLM or llama.cpp (default <code>medgemma1.5:4b</code>, no key, no API cost). The default Google model is <code>gemini-3.8-flash</code>; new Google keys cannot call <code>gemini-2.5-flash</code> directly, OpenRouter can.</li>
+<li><strong>Governance and privacy controls.</strong> PHI/PII scan of context text before the first upload, DICOM refusal, an input guard, output sanitisation, a cost cap, and a hash-sealed run manifest with an audit ledger and <code>verify-manifest</code>. They are heuristics and engineering controls: a clean result means &ldquo;nothing obvious&rdquo;, never &ldquo;safe&rdquo; or &ldquo;compliant&rdquo;.</li>
+<li><strong>Deterministic fairness probing.</strong> A rule-based probe records sentences that use a demographic attribute to justify a diagnostic statement, plus a probe for size claims that cannot be measured from a PNG or JPEG. Its measured limits are reported below.</li>
+<li><strong>Disclaimer in every output.</strong> A mandatory field enforced at the TypeScript type level; every Markdown report opens with a clinician-review block.</li>
+</ul>
+
+<h2 id="start">Get started</h2>
+<p class="small">Needs Node.js 20+, and a Gemini API key, an OpenRouter key or a local OpenAI-compatible model server. Use only de-identified data; images leave your machine only through the provider call.</p>
+<pre tabindex="0"><code>git clone https://github.com/andreibesleaga/AgenticMedicalImagingHelper.git
+cd AgenticMedicalImagingHelper
+npm install
+cp .env.example .env   # then set GOOGLE_API_KEY in .env
+npm run build
+npm run dev -- analyze ./input ./output --concurrency 3 --verbose</code></pre>
+<p class="small">Input is a folder with one sub-folder per imaging session. To use another provider set <code>AI_PROVIDER=openrouter</code> or <code>AI_PROVIDER=local</code>. Check a finished run with <code>medical-imaging verify-manifest ./output</code>. Full options, exit codes and environment variables: <a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper#readme">README</a>.</p>
+
+<h2 id="how">How it works</h2>
+<figure class="fig">
+<div class="panel"><a href="img/pipeline.webp"><img src="img/pipeline.webp" width="938" height="937" alt="Flow diagram: scanInputDirectory feeds a fan-out of per-image analyses, which fan in to aggregateSeries, then analyzeEvolution, then writeReports to JSON and Markdown. A governance layer (allocative-harm probe, token cost meter, type-enforced disclaimer) is attached to every step." style="max-height:34rem;width:auto"></a></div>
+<figcaption>Pipeline: images are analysed in parallel, merged per session, compared across sessions, then written as reports. Governance applies to every step. Select the image for full size.</figcaption>
+</figure>
+<details>
+<summary>More architecture diagrams</summary>
+<figure class="fig">
+<div class="panel"><a href="img/context.webp"><img src="img/context.webp" width="1184" height="370" alt="System context diagram: an operator runs the CLI, which reads a series folder, sends per-image prompts to Google Gemini and writes JSON and Markdown reports that a qualified healthcare professional must review."></a></div>
+<figcaption>Context: the operator, the CLI, the model provider and the mandatory human review of reports.</figcaption>
+</figure>
+<figure class="fig">
+<div class="panel"><a href="img/components.webp"><img src="img/components.webp" width="1184" height="875" alt="Component diagram of the hexagonal source layout: main calls the LangGraph adapter, which uses application use-cases, which use domain and infrastructure modules, on top of zod, the Google generative-ai SDK, LangGraph and p-limit."></a></div>
+<figcaption>Components: hexagonal layout (domain, application, infrastructure, adapters, main).</figcaption>
+</figure>
+<figure class="fig">
+<div class="panel"><a href="img/runtime.webp"><img src="img/runtime.webp" width="366" height="916" alt="Runtime activity diagram: scan the input folder, fan out per image, fan in, aggregate series, analyse evolution, write reports." style="max-height:30rem;width:auto"></a></div>
+<figcaption>Runtime: fan-out, fan-in, evolution, reports.</figcaption>
+</figure>
+<p class="small">The context, components and runtime diagrams were drawn when Gemini was the only provider; read them as predating the OpenRouter and local adapters (<a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/docs/architecture/decisions/ADR-006-openrouter-second-provider.md">ADR-006</a>).</p>
+</details>
+
+<h2 id="uses">Use cases</h2>
+<p>All research or education uses; none is clinical.</p>
+<ul>
+<li><strong>Research on agentic imaging workflows.</strong> A worked reference implementation of parallel per-image analysis, per-series merging and temporal comparison.</li>
+<li><strong>Benchmarking multimodal models.</strong> The same pipeline, prompts and schemas run on Gemini, OpenRouter models and a local MedGemma; the follow-up study compares seven models this way.</li>
+<li><strong>Reproducible experiments.</strong> Fixed cohort selections, SHA-256 checks of every input before upload (<code>--expect-hashes</code>), sealed run manifests and every command listed.</li>
+<li><strong>Studying governance under regulation.</strong> An EU AI Act and NIST AI RMF cross-walk, a threat model and seven decision records, written as an inspectable example of ethically deployed, regulated AI. The mappings are not a certification.</li>
+<li><strong>Teaching agentic architecture.</strong> A small, strictly typed, test-covered LangGraph application with the governance controls in plain view.</li>
+<li><strong>Local-model experiments.</strong> A 4B medical model runs the whole pipeline on a 6 GB laptop GPU at no API cost.</li>
+</ul>
+
+<h2 id="results">Research results</h2>
+<p>Descriptive, not diagnostic. The reference labels are NIH text-mined labels (about 90 % accurate), the cohorts are small, no clinician reviewed any image or output, and no accuracy claim and no model ranking follows. Dataset: public, de-identified NIH Clinical Center ChestX-ray14 (X. Wang et al., &ldquo;ChestX-ray8: Hospital-scale chest X-ray database and benchmarks on weakly-supervised classification and localization of common thorax diseases,&rdquo; CVPR 2017, pp. 2097&ndash;2106). No dataset images are shown on this page.</p>
+
+<h3>SIME 2026 paper experiments</h3>
+<section class="scroll" tabindex="0" aria-label="Table: SIME 2026 paper experiments">
+<table>
+<thead><tr><th scope="col">Experiment</th><th scope="col">Result</th></tr></thead>
+<tbody>
+<tr><th scope="row">E1 fairness probe, 110 labelled items</th><td>Explicit anchoring caught 20 of 20, paraphrased 4 of 20, implicit 0 of 15. Overall precision 0.545, recall 0.436. A regression guard for one failure mode, not a general detector.</td></tr>
+<tr><th scope="row">E2 scaling, 1&times;1 to 4&times;20 images</th><td>Concurrency 5 against 1 gave speed-ups of 1.58&times; to 3.16&times;. Calls equal images plus sessions, plus one evolution call. Against the Google free tier the control run hit a quota error (limit 20), reported as a negative result.</td></tr>
+<tr><th scope="row">E3 request payload</th><td>0.9 % fewer bytes on the real 224-px inputs; 86.7 % fewer on synthetic large plates. Image-token cost unchanged. Measures bytes and estimated tokens only, not diagnostic content.</td></tr>
+<tr><th scope="row">Full-dataset offline scan</th><td>112,120 images, 0 errors, 453.19 s. Preprocessing increased total bytes by 131.06 % on this already downscaled archive, a negative result that led to the model-aware pre-flight.</td></tr>
+<tr><th scope="row">E4 longitudinal, 8 patients, 31 studies, four models</th><td>Person-judged direction agreement (descriptive, noisy labels, not accuracy): Gemini 2.5 Flash 3 of 8, Claude Sonnet 5 2 of 8, Gemma 4 0 of 8, Qwen3-VL 0 of 8 (agree or partly agree: 7, 5, 0 and 6 of 8). The four models agreed on 1 patient and gave 3 or more different verdicts on 5 of 8. Cost USD 1.03.</td></tr>
+<tr><th scope="row">E4L-20 longitudinal, 20 patients, 72 studies</th><td>Gemini 2.5 Flash: 8 of 20 agree (12 of 20 agree or partly agree); descriptive agreement with noisy labels, not accuracy. On the worsening-like stratum: 0 of 5. The paper calls this a limitation, not a capability.</td></tr>
+</tbody>
+</table>
+</section>
+<p class="small">The paper also documents two failure cases: a fabricated 4 cm cavitary lesion stated at 95 % confidence that passed schema validation, and a 69-year-old woman described as an infant. Source: <a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/experiments/sime2026/RESULTS.md">experiments/sime2026/RESULTS.md</a>.</p>
+
+<h3>Follow-up on the original 1024-px images</h3>
+<p>After the paper, <a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/tree/main/experiments/sime-full">experiments/sime-full</a> repeated the longitudinal experiment on the original 1024 &times; 1024 NIH images of the same patients, with seven models including a local MedGemma run on a laptop GPU. In all 320 runs, USD 11.19; every input was checked against the original files&rsquo; hashes and every run manifest verified.</p>
+<ul>
+<li><strong>The paper&rsquo;s operational results reproduce</strong> at 224 px (scaling, call counts, cost within 4 %). Its explanation of its worst result, low resolution, is not supported: full resolution does not fix the worsening cases, and a single run&rsquo;s verdicts describe one draw.</li>
+<li><strong>The better/same/worse verdict changes between identical runs.</strong> In three unchanged runs, only 2 to 5 of 8 patients kept the same verdict (chart below). A single run cannot support a per-patient verdict claim.</li>
+<li><strong>Full resolution does not fix the cases that get worse.</strong> On the 20-patient worsening-like stratum, Gemini 2.5 Flash scored 1 of 5 at 1024 px; Gemini 3.1 Pro, Qwen3-VL and MedGemma scored 0 of 5.</li>
+<li><strong>Resolution does change what some models report.</strong> Qwen3-VL left 4 of 31 images without findings at 1024 px against 22 at 224 px.</li>
+<li><strong>Local inference works.</strong> MedGemma 1.5 4B ran the whole pipeline at no cost, about 5 to 6 minutes per patient, with more schema rejections (36 of 242 answers in the scaling test).</li>
+<li><strong>Free tiers are not dependable for experiments.</strong> The free OpenRouter Gemma variant was rate-limited on the first patient.</li>
+</ul>
+<figure class="chart">
+<svg viewBox="0 0 440 190" role="img" aria-labelledby="ch-t ch-d">
+<title id="ch-t">Patients with the same verdict in all three identical runs</title>
+<desc id="ch-d">Out of 8 patients, the better, same or worse verdict stayed the same in all three identical runs for 2 patients with Claude Sonnet 5, 3 with Gemini 2.5 Flash, 4 with Gemma 4 31B and 5 with Qwen3-VL 235B.</desc>
+<line class="axis" x1="150" y1="10" x2="150" y2="150"/>
+<text x="140" y="38" text-anchor="end">Claude Sonnet 5</text><rect class="bar" x="150" y="22" width="100" height="24"/><text x="258" y="39">2</text>
+<text x="140" y="72" text-anchor="end">Gemini 2.5 Flash</text><rect class="bar" x="150" y="56" width="150" height="24"/><text x="308" y="73">3</text>
+<text x="140" y="106" text-anchor="end">Gemma 4 31B</text><rect class="bar" x="150" y="90" width="200" height="24"/><text x="358" y="107">4</text>
+<text x="140" y="140" text-anchor="end">Qwen3-VL 235B</text><rect class="bar" x="150" y="124" width="250" height="24"/><text x="408" y="141">5</text>
+<text x="150" y="176">Patients of 8 with the same verdict in all 3 runs</text>
+</svg>
+<figcaption>Verdict stability across three unchanged runs at 1024 px (E4 cohort). Source: experiments/sime-full/RESULTS.md, section 8.</figcaption>
+</figure>
+<p class="small">Sources: <a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/experiments/sime-full/RESULTS.md">RESULTS.md</a>, <a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/experiments/sime-full/ANALYSIS.md">ANALYSIS.md</a>, <a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/experiments/sime-full/REPLICATE.md">REPLICATE.md</a> (every command).</p>
+
+<h2 id="paper">Publication</h2>
+<p>Andrei N. Besleaga, <strong>&ldquo;Agentic Multimodal Architectures for Medical Imaging: Orchestration, Deterministic Fairness Probing, and Governance,&rdquo;</strong> accepted at the <strong>IEEE International Conference on Smart Innovations for Medicine and Engineering (SIME 2026)</strong>, Sousse, Tunisia, 2&ndash;4 Nov. 2026. To appear in <em>IEEE Xplore</em>.</p>
+<ul>
+<li><a href="https://doi.org/10.5281/zenodo.20762929">Preprint record on Zenodo, DOI 10.5281/zenodo.20762929</a> (access restricted until publication)</li>
+</ul>
+<p>This project is featured as a reference implementation in the forthcoming Wiley book <strong>&ldquo;Agentic AI Architectures&rdquo;</strong> by Andrei Besleaga.</p>
+<pre tabindex="0"><code>@inproceedings{besleaga2026agentic,
+  author    = {Besleaga, Andrei N.},
+  title     = {Agentic Multimodal Architectures for Medical Imaging:
+               Orchestration, Deterministic Fairness Probing, and Governance},
+  booktitle = {Proceedings of the IEEE International Conference on Smart
+               Innovations for Medicine and Engineering (SIME 2026)},
+  address   = {Sousse, Tunisia},
+  month     = nov,
+  year      = {2026},
+  publisher = {IEEE},
+  note      = {to appear in IEEE Xplore; preprint: https://doi.org/10.5281/zenodo.20762929}
+}</code></pre>
+<p class="small">Machine-readable citation metadata: <a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/CITATION.cff">CITATION.cff</a> (GitHub shows it under &ldquo;Cite this repository&rdquo;).</p>
+
+<h2 id="links">Links</h2>
+<ul class="links">
+<li><a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper">GitHub</a></li>
+<li><a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper#readme">README</a></li>
+<li><a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/tree/main/docs">Documentation</a></li>
+<li><a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/docs/COMPLIANCE.md">Compliance</a></li>
+<li><a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/tree/main/experiments/sime2026">Experiments (SIME 2026)</a></li>
+<li><a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/tree/main/experiments/sime-full">Experiments (follow-up)</a></li>
+<li><a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/releases">Releases</a></li>
+<li><a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/CHANGELOG.md">Changelog</a></li>
+<li><a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/LICENSE">Licence</a></li>
+<li><a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/CITATION.cff">CITATION.cff</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.20762929">Preprint record</a> (restricted)</li>
+<li><a href="https://andreibesleaga.com/projects-demos/">Author&rsquo;s site</a></li>
+</ul>
+
+<h2 id="built">Built with GABBE</h2>
+<p>Powered by <a href="https://github.com/andreibesleaga/GABBE">GABBE</a>, the open-source agentic engineering kit (<a href="https://andreibesleaga.github.io/GABBE/">GABBE site</a>).</p>
+
+<h2 id="licence">Licence and notices</h2>
+<p>GPL-3.0; see <a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/LICENSE">LICENSE</a>. Copyright &copy; 2026 Andrei N. Besleaga, Independent Researcher and Software Architect (<a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/NOTICE">NOTICE</a>). Provided as is, without warranty. Datasets and models keep their own licences and terms; model and provider names identify them only and imply no endorsement (<a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/DISCLAIMER.md">DISCLAIMER.md</a>).</p>
+</main>
+<footer>
+<p>By <a href="https://andreibesleaga.com/">Andrei N. Besleaga</a> &middot; <a href="https://andreibesleaga.com/projects-demos/">Projects and demos</a></p>
+</footer>
+</body>
+</html>
