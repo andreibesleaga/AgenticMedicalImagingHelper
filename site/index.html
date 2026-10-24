@@ -66,8 +66,8 @@
 }
 </script>
 <style>
-:root{--bg:#fff;--fg:#1d2330;--muted:#556070;--line:#dde2ea;--link:#1a55b8;--code-bg:#f2f4f8;--warn-bg:#fdf1f0;--warn-line:#b3261e;--warn-fg:#7a1a14;--panel:#fff;--bar:#1a55b8}
-@media (prefers-color-scheme:dark){:root{--bg:#10141c;--fg:#e4e8ef;--muted:#a3adbd;--line:#2a3140;--link:#8db8ff;--code-bg:#1a2030;--warn-bg:#2a1517;--warn-line:#f08a82;--warn-fg:#ffd9d5;--bar:#8db8ff}}
+:root{--bg:#fff;--fg:#1d2330;--muted:#556070;--line:#dde2ea;--link:#1a55b8;--code-bg:#f2f4f8;--warn-bg:#fdf1f0;--warn-line:#b3261e;--warn-fg:#7a1a14;--panel:#fff;--bar:#1a55b8;--track:#e6eaf1}
+@media (prefers-color-scheme:dark){:root{--bg:#10141c;--fg:#e4e8ef;--muted:#a3adbd;--line:#2a3140;--link:#8db8ff;--code-bg:#1a2030;--warn-bg:#2a1517;--warn-line:#f08a82;--warn-fg:#ffd9d5;--bar:#8db8ff;--track:#262d3c}}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
@@ -108,6 +108,11 @@ th{color:var(--muted);font-weight:600}
 .chart text{fill:var(--fg);font:13px system-ui,sans-serif}
 .chart .bar{fill:var(--bar)}
 .chart .axis{stroke:var(--line)}
+.chart figcaption{font-size:.875rem;color:var(--muted);margin-top:.3rem}
+.chart .track{fill:var(--track)}
+.chart .lbl{font-size:12.5px}
+.chart .val{font-weight:600}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 footer{padding-top:1rem;padding-bottom:3rem;margin-top:2.5rem;border-top:1px solid var(--line);font-size:.875rem;color:var(--muted)}
 .skip{position:absolute;left:-999px}
 .skip:focus{left:1rem;top:1rem;background:var(--bg);padding:.25rem .5rem;z-index:1}
@@ -126,6 +131,7 @@ footer{padding-top:1rem;padding-bottom:3rem;margin-top:2.5rem;border-top:1px sol
 <ul class="links">
 <li><a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper">GitHub</a></li>
 <li><a href="#start">Get started</a></li>
+<li><a href="#highlights">Highlights</a></li>
 <li><a href="#results">Results</a></li>
 <li><a href="#paper">Paper</a></li>
 </ul>
@@ -142,6 +148,39 @@ footer{padding-top:1rem;padding-bottom:3rem;margin-top:2.5rem;border-top:1px sol
 <li><strong>Deterministic fairness probing.</strong> A rule-based probe records sentences that use a demographic attribute to justify a diagnostic statement, plus a probe for size claims that cannot be measured from a PNG or JPEG. Its measured limits are reported below.</li>
 <li><strong>Disclaimer in every output.</strong> A mandatory field enforced at the TypeScript type level; every Markdown report opens with a clinician-review block.</li>
 </ul>
+
+<h2 id="highlights">Highlights</h2>
+<p class="small">What the tool does well: the software and its evidence. None of these figures measures diagnostic accuracy; see the results below for what is and is not supported.</p>
+<h3>Software and evidence checks</h3>
+<figure class="chart">
+<svg viewBox="0 0 440 178" role="img" aria-labelledby="hl1-t hl1-d">
+<title id="hl1-t">Software and evidence checks</title>
+<desc id="hl1-d">Bars: 874 of 874 tests pass; 112,120 of 112,120 images scanned with 0 errors; 320 of 320 run manifests verified; the demographic-language probe has precision 0.929 and recall 0.565 on 96 held-out items.</desc>
+<text class="lbl" x="0" y="12">Unit tests passing</text><rect class="track" x="0" y="18" width="300" height="12" rx="2"/><rect class="bar" x="0" y="18" width="300" height="12" rx="2"/><text class="val" x="310" y="29">874 of 874</text><text class="lbl" x="0" y="48">Images scanned without an error</text><rect class="track" x="0" y="54" width="300" height="12" rx="2"/><rect class="bar" x="0" y="54" width="300" height="12" rx="2"/><text class="val" x="310" y="65">112,120 of 112,120</text><text class="lbl" x="0" y="84">Sealed run manifests that verify</text><rect class="track" x="0" y="90" width="300" height="12" rx="2"/><rect class="bar" x="0" y="90" width="300" height="12" rx="2"/><text class="val" x="310" y="101">320 of 320</text><text class="lbl" x="0" y="120">Demographic-language probe: precision</text><rect class="track" x="0" y="126" width="300" height="12" rx="2"/><rect class="bar" x="0" y="126" width="278.7" height="12" rx="2"/><text class="val" x="310" y="137">0.929</text><text class="lbl" x="0" y="156">Demographic-language probe: recall</text><rect class="track" x="0" y="162" width="300" height="12" rx="2"/><rect class="bar" x="0" y="162" width="169.5" height="12" rx="2"/><text class="val" x="310" y="173">0.565</text>
+</svg>
+<div class="vh"><table><caption>Software and evidence checks</caption><thead><tr><th scope="col">Check</th><th scope="col">Result</th></tr></thead><tbody><tr><th scope="row">Unit tests passing</th><td>874 of 874</td></tr><tr><th scope="row">Images scanned without an error</th><td>112,120 of 112,120</td></tr><tr><th scope="row">Sealed run manifests that verify</th><td>320 of 320</td></tr><tr><th scope="row">Demographic-language probe: precision</th><td>0.929</td></tr><tr><th scope="row">Demographic-language probe: recall</th><td>0.565</td></tr></tbody></table></div>
+<figcaption>Pipeline and evidence checks, not diagnostic accuracy. Tests: <code>npm test</code> on main, 24 Oct 2026 (40 suites). Scan: <a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/experiments/sime2026/RESULTS.md">sime2026/RESULTS.md</a> section 4 (453.19 s, 8 workers). Manifests: <a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/experiments/sime-full/RESULTS.md">sime-full/RESULTS.md</a> sections 1 and 11. Probe: <a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/README.md">README</a>, 96-item benchmark; it flags sentences that justify a diagnosis by a demographic attribute and misses indirect proxies, so recall is modest.</figcaption>
+</figure>
+<h3>Speed-up from parallel fan-out</h3>
+<figure class="chart">
+<svg viewBox="0 0 440 142" role="img" aria-labelledby="hl2-t hl2-d">
+<title id="hl2-t">Speed-up from parallel fan-out</title>
+<desc id="hl2-d">Concurrency 5 against concurrency 1 on four workload sizes: 1.58 times for 1 image, 1.78 times for 2 sessions of 5, 2.77 times for 3 of 10 and 3.16 times for 4 of 20.</desc>
+<text class="lbl" x="0" y="12">1 session &times; 1 image</text><rect class="track" x="0" y="18" width="300" height="12" rx="2"/><rect class="bar" x="0" y="18" width="135.4" height="12" rx="2"/><text class="val" x="310" y="29">1.58&times;</text><text class="lbl" x="0" y="48">2 &times; 5</text><rect class="track" x="0" y="54" width="300" height="12" rx="2"/><rect class="bar" x="0" y="54" width="152.6" height="12" rx="2"/><text class="val" x="310" y="65">1.78&times;</text><text class="lbl" x="0" y="84">3 &times; 10</text><rect class="track" x="0" y="90" width="300" height="12" rx="2"/><rect class="bar" x="0" y="90" width="237.4" height="12" rx="2"/><text class="val" x="310" y="101">2.77&times;</text><text class="lbl" x="0" y="120">4 &times; 20</text><rect class="track" x="0" y="126" width="300" height="12" rx="2"/><rect class="bar" x="0" y="126" width="270.9" height="12" rx="2"/><text class="val" x="310" y="137">3.16&times;</text>
+</svg>
+<div class="vh"><table><caption>Speed-up, concurrency 5 against 1</caption><thead><tr><th scope="col">Workload (sessions x images)</th><th scope="col">Speed-up</th></tr></thead><tbody><tr><th scope="row">1 session &times; 1 image</th><td>1.58x</td></tr><tr><th scope="row">2 &times; 5</th><td>1.78x</td></tr><tr><th scope="row">3 &times; 10</th><td>2.77x</td></tr><tr><th scope="row">4 &times; 20</th><td>3.16x</td></tr></tbody></table></div>
+<figcaption>Wall-clock speed-up, concurrency 5 against 1 (7.6 s to 4.8 s up to 361.4 s to 114.2 s); bars scaled to the largest value. Source: <a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/experiments/sime2026/RESULTS.md">sime2026/RESULTS.md</a> section 7; single runs, so an order of magnitude, not a benchmark.</figcaption>
+</figure>
+<h3>Mean cost per patient</h3>
+<figure class="chart">
+<svg viewBox="0 0 440 190" role="img" aria-labelledby="hl3-t hl3-d">
+<title id="hl3-t">Mean cost per patient by model</title>
+<desc id="hl3-d">Mean cost in US dollars per patient: Claude Sonnet 5 0.11249, Gemini 2.5 Flash 0.01166, Qwen3-VL 235B 0.00275, Gemma 4 31B 0.00169. The local MedGemma 1.5 4B model has no API cost.</desc>
+<text class="lbl" x="0" y="12">Claude Sonnet 5</text><rect class="track" x="0" y="18" width="300" height="12" rx="2"/><rect class="bar" x="0" y="18" width="300.0" height="12" rx="2"/><text class="val" x="310" y="29">$0.11249</text><text class="lbl" x="0" y="48">Gemini 2.5 Flash</text><rect class="track" x="0" y="54" width="300" height="12" rx="2"/><rect class="bar" x="0" y="54" width="31.1" height="12" rx="2"/><text class="val" x="310" y="65">$0.01166</text><text class="lbl" x="0" y="84">Qwen3-VL 235B</text><rect class="track" x="0" y="90" width="300" height="12" rx="2"/><rect class="bar" x="0" y="90" width="7.3" height="12" rx="2"/><text class="val" x="310" y="101">$0.00275</text><text class="lbl" x="0" y="120">Gemma 4 31B</text><rect class="track" x="0" y="126" width="300" height="12" rx="2"/><rect class="bar" x="0" y="126" width="4.5" height="12" rx="2"/><text class="val" x="310" y="137">$0.00169</text><text class="lbl" x="0" y="156">MedGemma 1.5 4B, local laptop GPU</text><text class="val" x="0" y="174">$0 API cost</text>
+</svg>
+<div class="vh"><table><caption>Mean cost per patient</caption><thead><tr><th scope="col">Model</th><th scope="col">USD</th></tr></thead><tbody><tr><th scope="row">Claude Sonnet 5</th><td>$0.11249</td></tr><tr><th scope="row">Gemini 2.5 Flash</th><td>$0.01166</td></tr><tr><th scope="row">Qwen3-VL 235B</th><td>$0.00275</td></tr><tr><th scope="row">Gemma 4 31B</th><td>$0.00169</td></tr><tr><th scope="row">MedGemma 1.5 4B (local)</th><td>0 API cost</td></tr></tbody></table></div>
+<figcaption>Mean cost per patient, 8-patient cohort at 224 px, via OpenRouter. Source: <a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/experiments/sime2026/RESULTS.md">sime2026/RESULTS.md</a> section 8; local run: <a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/experiments/sime-full/RESULTS.md">sime-full/RESULTS.md</a> section 11. A cost comparison only, not a quality ranking; bars scaled to the largest value; MedGemma figure from a different run.</figcaption>
+</figure>
 
 <h2 id="start">Get started</h2>
 <p class="small">Needs Node.js 20+, and a Gemini API key, an OpenRouter key or a local OpenAI-compatible model server. Use only de-identified data; images leave your machine only through the provider call.</p>
