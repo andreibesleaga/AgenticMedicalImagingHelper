@@ -18,6 +18,8 @@ See [`docs/PRODUCT.md`](./docs/PRODUCT.md) for the unified PRD / SPEC / user sto
 
 ![Screenshot](./docs/screenshot.png)
 
+![System context: an operator runs the CLI, which reads the image series and context files, sends per-image prompts to the AI model, and writes structured reports that a qualified healthcare professional must review](./docs/context.png)
+
 ---
 
 ## Publications & citation

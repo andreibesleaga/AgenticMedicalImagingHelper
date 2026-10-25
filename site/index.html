@@ -17,7 +17,7 @@
 <meta property="og:image" content="https://andreibesleaga.github.io/AgenticMedicalImagingHelper/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="AgenticMedicalImagingHelper: the fan-out, fan-in analysis pipeline with a governance layer, and the notice that it is for research and education only and is not a medical device">
+<meta property="og:image:alt" content="AgenticMedicalImagingHelper: the system context diagram (operator, CLI, image series, AI model, reports reviewed by a qualified healthcare professional) and the notice that it is for research and education only and is not a medical device">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AgenticMedicalImagingHelper - Research CLI">
 <meta name="twitter:description" content="Open-source research CLI that analyses medical image series with LangGraph.js agents. Research and education only; not a medical device.">
@@ -194,14 +194,14 @@ npm run dev -- analyze ./input ./output --concurrency 3 --verbose</code></pre>
 
 <h2 id="how">How it works</h2>
 <figure class="fig">
-<div class="panel"><a href="img/pipeline.webp"><img src="img/pipeline.webp" width="938" height="937" alt="Flow diagram: scanInputDirectory feeds a fan-out of per-image analyses, which fan in to aggregateSeries, then analyzeEvolution, then writeReports to JSON and Markdown. A governance layer (allocative-harm probe, token cost meter, type-enforced disclaimer) is attached to every step." style="max-height:34rem;width:auto"></a></div>
-<figcaption>Pipeline: images are analysed in parallel, merged per session, compared across sessions, then written as reports. Governance applies to every step. Select the image for full size.</figcaption>
+<div class="panel"><a href="img/context.webp"><img src="img/context.webp" width="1184" height="370" alt="System context diagram: an operator runs the CLI, which reads a series folder, sends per-image prompts to Google Gemini and writes JSON and Markdown reports that a qualified healthcare professional must review."></a></div>
+<figcaption>Context: the operator, the CLI, the model provider and the mandatory human review of reports (drawn when Gemini was the only provider). Select the image for full size.</figcaption>
 </figure>
 <details>
 <summary>More architecture diagrams</summary>
 <figure class="fig">
-<div class="panel"><a href="img/context.webp"><img src="img/context.webp" width="1184" height="370" alt="System context diagram: an operator runs the CLI, which reads a series folder, sends per-image prompts to Google Gemini and writes JSON and Markdown reports that a qualified healthcare professional must review."></a></div>
-<figcaption>Context: the operator, the CLI, the model provider and the mandatory human review of reports.</figcaption>
+<div class="panel"><a href="img/pipeline.webp"><img src="img/pipeline.webp" width="938" height="937" alt="Flow diagram: scanInputDirectory feeds a fan-out of per-image analyses, which fan in to aggregateSeries, then analyzeEvolution, then writeReports to JSON and Markdown. A governance layer (allocative-harm probe, token cost meter, type-enforced disclaimer) is attached to every step." style="max-height:34rem;width:auto"></a></div>
+<figcaption>Pipeline: images are analysed in parallel, merged per session, compared across sessions, then written as reports. Governance applies to every step.</figcaption>
 </figure>
 <figure class="fig">
 <div class="panel"><a href="img/components.webp"><img src="img/components.webp" width="1184" height="875" alt="Component diagram of the hexagonal source layout: main calls the LangGraph adapter, which uses application use-cases, which use domain and infrastructure modules, on top of zod, the Google generative-ai SDK, LangGraph and p-limit."></a></div>
@@ -211,7 +211,7 @@ npm run dev -- analyze ./input ./output --concurrency 3 --verbose</code></pre>
 <div class="panel"><a href="img/runtime.webp"><img src="img/runtime.webp" width="366" height="916" alt="Runtime activity diagram: scan the input folder, fan out per image, fan in, aggregate series, analyse evolution, write reports." style="max-height:30rem;width:auto"></a></div>
 <figcaption>Runtime: fan-out, fan-in, evolution, reports.</figcaption>
 </figure>
-<p class="small">The context, components and runtime diagrams were drawn when Gemini was the only provider; read them as predating the OpenRouter and local adapters (<a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/docs/architecture/decisions/ADR-006-openrouter-second-provider.md">ADR-006</a>).</p>
+<p class="small">The components and runtime diagrams, like the context diagram above, were drawn when Gemini was the only provider; read them as predating the OpenRouter and local adapters (<a href="https://github.com/andreibesleaga/AgenticMedicalImagingHelper/blob/main/docs/architecture/decisions/ADR-006-openrouter-second-provider.md">ADR-006</a>).</p>
 </details>
 
 <h2 id="uses">Use cases</h2>
