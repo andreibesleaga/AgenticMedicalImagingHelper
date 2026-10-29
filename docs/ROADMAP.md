@@ -78,7 +78,7 @@ Grouped by where they were first recorded. "Now" describes the tagged release.
 | --- | --- | --- |
 | H1 | `docs/PLAN.md` C4 diagrams and `docs/context.png` predate ADR-006 | Redraw with the provider port and both adapters; regenerate PNGs |
 | H2 | TypeScript 7 upgrade blocked by the `@typescript-eslint` peer range | Take it when typescript-eslint supports TS 7; keep the Dependabot PR closed until then |
-| H3 | Modality-aware ingestion (DICOM/NIfTI) is a new `ingest` node, not a change to the graph | Design in the DEMO-STRATEGY modality table: DICOM series → slice sampler → PNG tiles; NIfTI reader; de-identification gate before any upload |
+| H3 | Modality-aware ingestion (DICOM/NIfTI) is a new `ingest` node, not a change to the graph | Design: DICOM series → slice sampler → PNG tiles; NIfTI reader; de-identification gate before any upload |
 | H4 | README hard-coded numbers | Policy already states "do not hard-code a test count"; extend the same rule to coverage figures and experiment numbers (link RESULTS.md instead) |
 | H5 | Docker image | Rebuild with the OpenRouter adapter and the demo pack; publish a digest in the release notes |
 
@@ -430,3 +430,7 @@ first-class route for the §10.2 data-use rules. The full research, architecture
   the better/same/worse verdict changes between repeat runs for many patients, so every future study
   needs repeated runs; Gemini 3.8 Flash returned empty answers for 3 of 31 full-resolution images.
 - **Next:** E4L-20 and E2 at full resolution when the remaining NIH archives are downloaded; then §10.
+- **Update, 2026-10-08:** that second SIME-FULL batch ran: the 20-patient cohort (E4L-20), the scaling
+  test (E2) and two unchanged repeats of the E4 runs, after all twelve NIH archives were checked
+  against `nih-archives.sha256` — [`experiments/sime-full/RESULTS.md`](../experiments/sime-full/RESULTS.md)
+  §8–§11.

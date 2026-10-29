@@ -4,6 +4,15 @@
 <!-- Strategic Context: docs/strategic/BUSINESS_CASE.md -->
 <!-- Status: PENDING HUMAN APPROVAL before proceeding to S02 Design -->
 
+> **Scope — read first.** This is the pre-implementation requirements document
+> of 2026-02-25, kept as the record of the project's generation flow. Its users,
+> user stories and success metric describe the idea as first written, not a
+> permitted use. The software is research and educational software, **not a
+> medical device**, and must not be used on patients; every output requires
+> review by a qualified clinician. See [`DISCLAIMER.md`](../DISCLAIMER.md) and
+> [`COMPLIANCE.md` §0](COMPLIANCE.md); where this file disagrees with them, they
+> apply.
+
 ---
 
 ## 1. Feature Summary
