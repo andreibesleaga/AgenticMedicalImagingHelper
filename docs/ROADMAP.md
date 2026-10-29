@@ -162,7 +162,7 @@ touches a patient.
 
 ## 7. Decisions (owner, 2026-09-11)
 
-Nine of the ten open questions are resolved below. One further question the owner considered is
+Nine of the ten open questions are resolved below. One further question the maintainer considered is
 personal and out of scope for this public repository, and is deliberately not recorded here.
 
 1. **Image OCR (S1) — DECIDED.** Default mode warns and masks; a `--secure` flag rejects the
@@ -410,7 +410,7 @@ first-class route for the §10.2 data-use rules. The full research, architecture
   ≥ 0.17.1, vLLM ≥ 0.14.1 for the 2026 CVEs). Models come from official sources only, and the
   licence is passed through (HAI-DEF for MedGemma, Apache-2.0 for Gemma 4 and Qwen3-VL).
 - **Plan.** Phases L0–L8, about 16–21 engineer-days before the evaluation runs.
-- **Jev (TypeSafe AI).** Confirmed by the owner on 2026-09-29. TypeSafe AI's typed-decision
+- **Jev (TypeSafe AI).** Confirmed by the maintainer on 2026-09-29. TypeSafe AI's typed-decision
   model, served locally through Ollama `/v1/systemone` since v0.35.0. It is an optional,
   text-only, non-gating decision port beside the vision stages, consulted by the probes (fairness
   proxies, identifiers in text, fabricated specifics), the human-review gate, the router
