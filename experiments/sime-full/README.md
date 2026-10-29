@@ -29,7 +29,7 @@ questions follow, and this pack answers both on the paper's own cohort:
 
 It does **not** answer whether any output is clinically correct. The labels are still
 the NIH text-mined labels (about 90 % accurate), no clinician reviewed anything, and
-the cohort is eight patients. See the scope statement in `RESULTS.md` when it exists.
+the cohort is eight patients. See the scope statement in [`RESULTS.md`](RESULTS.md) §0.
 
 ## Data
 

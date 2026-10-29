@@ -733,3 +733,8 @@ by this repository or the accompanying paper:
 
 That work belongs to a later dataset, a later software version and a separate
 paper. Nothing here should be read as anticipating its results.
+
+Since the paper's evaluation, the first item has been run on the paper's own
+patients in [`experiments/sime-full/`](../experiments/sime-full/) (the original
+1024 × 1024 NIH images; no clinician review, so the other three items stay
+open). It is a follow-up pack, not part of the paper.

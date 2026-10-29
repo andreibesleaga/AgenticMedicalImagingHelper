@@ -11,6 +11,8 @@ All changes in this section are **backward-compatible** (`additive` or
 `internal-only`): no public CLI flag, exit code, or output field was removed or
 renamed.
 
+- Docs: documentation audit of 2026-10-29 — provider-neutral data-handling text, exit-code lists completed, current architecture diagrams, AGENTS.md, CI and release notes in CONTRIBUTING, scope notes on the pre-implementation PRD and business case.
+
 ### Added (2026-10-08)
 
 - **SIME-FULL second batch** (`experiments/sime-full/`): the 20-patient cohort

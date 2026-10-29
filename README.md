@@ -125,11 +125,12 @@ the failing ones — and is described under [Governance controls](#governance-co
 git clone https://github.com/andreibesleaga/AgenticMedicalImagingHelper.git
 cd AgenticMedicalImagingHelper
 
-# Install dependencies
-npm install
+# Install dependencies (exact versions from the committed package-lock.json)
+npm ci
 
 # Copy environment template, then edit .env in your editor to set
 # GOOGLE_API_KEY (and optionally GEMINI_MODEL and LOG_LEVEL).
+cp .env.example .env
 $EDITOR .env
 ```
 
@@ -139,7 +140,7 @@ $EDITOR .env
 # Build
 npm run build
 
-# Analyze images (default: ./input → ./output)
+# Analyze images in ./input (output directory defaults to ./output)
 npm run dev -- analyze ./input
 
 # With options
@@ -149,12 +150,18 @@ npm run dev -- analyze ./input ./output --concurrency 3 --verbose
 npm run dev -- analyze ./input --series series_1 series_2
 
 # Using the built binary
-./dist/main/index.js analyze ./input --verbose
+node dist/main/index.js analyze ./input --verbose
 ```
 
 ### CLI Options
 
 ```
+medical-imaging [options] [command]
+
+Options:
+  -V, --version               Show version
+  -h, --help                  Show help
+
 analyze <inputDir> [outputDir]
 
 Arguments:
@@ -163,7 +170,7 @@ Arguments:
 
 Options:
   -s, --series <ids...>       Process only specified series IDs
-  -c, --concurrency <n>       Max parallel Gemini API calls (default: 5)
+  -c, --concurrency <n>       Max parallel model API calls (default: 5)
       --max-cost-usd <n>      Abort the run once estimated cost exceeds this
                               USD figure (client-side soft cap; exit code 5)
       --manifest-chain <file> Append this run's manifest hash to an
@@ -183,7 +190,6 @@ Options:
                               the expected original (exit code 10)
   -v, --verbose               Print progress to stderr
   -h, --help                  Show help
-      --version               Show version
 
 verify-manifest <outputDir>
 
@@ -222,11 +228,14 @@ Options:
 
 Code 2 also covers the input refusals added with the governance controls:
 DICOM input (by extension or by magic bytes), a file over `MAX_IMAGE_BYTES`,
-and a run over `MAX_IMAGES_PER_RUN`.
+and a run over `MAX_IMAGES_PER_RUN`. Code 1 also covers an unknown `AI_PROVIDER`
+value and an invalid `--max-cost-usd` value; code 10 also covers an
+`--expect-hashes` file that cannot be read as a JSON object.
 
 Codes 1, 2, 3, 7, 9 and 10 are pre-flight rejections: they happen before any model
 call and before the output directory is created, so they leave no artefacts.
-Codes 0, 4, 5 and 8 each write a run manifest recording that exit code.
+Codes 0, 4, 5 and 8 each write a run manifest recording that exit code, and so
+does an unexpected error (99) raised after the run has started.
 
 ## Environment Variables
 
@@ -335,13 +344,18 @@ predating [ADR-006](docs/architecture/decisions/ADR-006-openrouter-second-provid
 - DICOM input refused; per-image and per-run size limits enforced pre-upload
 - Context truncated to 2000 characters to prevent prompt injection, and scanned
   for PHI/PII before the first upload
-- Images re-encoded and bounded before API submission
+- Images bounded before API submission by a model-aware long-edge cap
+  ([ADR-003](docs/architecture/decisions/ADR-003-image-preprocessing.md)): a
+  file over the cap is resized; only an 8-bit PNG or JPEG within the cap, with no
+  alpha channel and no embedded metadata, is sent byte-for-byte; anything else is
+  re-encoded, which drops the metadata
 - All output includes the mandatory medical disclaimer and a clinician-review block
 - Every run leaves a hash-sealed, verifiable manifest
 
 See [Governance controls](#governance-controls) for what each of those does.
 
-See [docs/SECURITY_CHECKLIST.md](docs/SECURITY_CHECKLIST.md) for full security audit,
+See [docs/SECURITY_CHECKLIST.md](docs/SECURITY_CHECKLIST.md) for the full security
+audit of v1.0.0 (2026-02-26),
 and [SECURITY.md](SECURITY.md) for the vulnerability-disclosure policy and Gemini
 API-key handling guidance.
 
@@ -473,6 +487,9 @@ billed. `providerUsd` appears only when the provider reports its own charge
 (OpenRouter does; the Gemini SDK does not). `stage` is `image`, `series` or
 `evolution`.
 
+`medical-imaging` is the package's `bin` name; the package is not published to
+npm, so from a clone run `node dist/main/index.js` in its place.
+
 ```bash
 # Link each run into an append-only ledger and attest who reviewed it
 medical-imaging analyze ./input ./output \
@@ -498,16 +515,22 @@ if you need more.
 
 ## Data handling & privacy
 
-Images you provide are sent to the Google Gemini API for analysis — they leave
-your machine **only** via that API call. The tool stores nothing remotely and
-keeps no telemetry.
+Images you provide are sent to the configured model provider for analysis — the
+Google Gemini API by default; OpenRouter and the upstream vendor it routes to
+with `AI_PROVIDER=openrouter`; the server at `LOCAL_LLM_BASE_URL` (the loopback
+interface by default) with `AI_PROVIDER=local` — and they leave your machine
+**only** via that API call. The tool stores nothing remotely and keeps no
+telemetry.
 
 - **You must de-identify inputs.** Strip PHI / patient identifiers, including
-  EXIF/DICOM metadata, **before** running. The tool does not do this for you.
+  EXIF/DICOM metadata, **before** running. The tool strips embedded PNG/JPEG
+  metadata before upload and refuses DICOM, but it does not de-identify image
+  pixels or context text for you.
 - **Compliance is the operator's responsibility.** If you process real patient
   data you — not this project — are responsible for **HIPAA** (45 CFR Part 164),
   **GDPR Art. 9** (special-category health data), and local equivalents. Gemini's
-  data-retention terms are governed by _your_ contract with Google.
+  data-retention terms are governed by _your_ contract with Google (and, on the
+  OpenRouter path, by OpenRouter's and the upstream vendor's terms).
 - **Cost control.** A single run can fan out to many paid Gemini calls. Set a
   hard ceiling with a Google Cloud billing quota, and optionally
   `--max-cost-usd <n>` as a client-side soft cap.

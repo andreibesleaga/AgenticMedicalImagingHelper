@@ -10,7 +10,10 @@
 This is a local, single-user CLI tool. There is no hosted service and no network
 surface beyond outbound calls to the configured model provider — Google Gemini
 by default, or OpenRouter and the upstream vendor it proxies to when
-`AI_PROVIDER=openrouter` ([ADR-006](docs/architecture/decisions/ADR-006-openrouter-second-provider.md)).
+`AI_PROVIDER=openrouter` ([ADR-006](docs/architecture/decisions/ADR-006-openrouter-second-provider.md)),
+or the OpenAI-compatible server at `LOCAL_LLM_BASE_URL` (the loopback interface
+by default) when `AI_PROVIDER=local`
+([LOCAL-INFERENCE.md](docs/architecture/LOCAL-INFERENCE.md)).
 
 The full analysis lives in [docs/architecture/THREAT_MODEL.md](docs/architecture/THREAT_MODEL.md)
 (STRIDE, T1–T10, with residual risks stated rather than mitigated away). This
@@ -38,7 +41,9 @@ and `OPENROUTER_API_KEY` when `AI_PROVIDER=openrouter`. Because a single run can
 fan out to many paid API calls, key hygiene matters:
 
 - **Never commit a real key.** `.env` is git-ignored; only `.env.example`
-  (placeholder) is tracked. Verify with `git grep -i AIza` before any commit.
+  (placeholder) is tracked. Verify with the `git grep` under
+  [Dependency and secret scanning in CI](#dependency-and-secret-scanning-in-ci)
+  before any commit.
 - **Never log the key.** The key is read from the environment and is never printed
   to stdout/stderr or written to any report. `src/infrastructure/logger.ts`
   redacts **every** provider key it knows about — `GOOGLE_API_KEY`,
@@ -58,8 +63,10 @@ fan out to many paid API calls, key hygiene matters:
 
 ## Handling medical image data (user responsibility)
 
-Images you pass in are sent to the Google Gemini API for analysis. They leave your
-machine only via that call.
+Images you pass in are sent to the configured model provider for analysis: the
+Google Gemini API by default, OpenRouter and its upstream vendor with
+`AI_PROVIDER=openrouter`, or the server at `LOCAL_LLM_BASE_URL` with
+`AI_PROVIDER=local`. They leave your machine only via that call.
 
 - **De-identify first.** You are responsible for stripping PHI / patient
   identifiers (including EXIF and DICOM tags) before submission. The tool does
@@ -122,9 +129,11 @@ research CLI. Keep the ledger on separate, append-only storage if you need more.
   (default 50 MB), enforced before any upload.
 - PHI/PII heuristic scan of context files before the first upload.
 - Text context truncated to 2000 characters to limit prompt-injection surface.
-- Images re-encoded and bounded before submission (payload-size bound,
-  [ADR-003](docs/architecture/decisions/ADR-003-image-preprocessing.md));
-  ancillary PNG metadata does not survive the re-encode.
+- Images bounded before submission by a model-aware long-edge cap
+  ([ADR-003](docs/architecture/decisions/ADR-003-image-preprocessing.md)); a
+  file is sent byte-for-byte only when it is an 8-bit PNG or JPEG within the
+  cap with no alpha channel and no embedded metadata, otherwise it is resized
+  or re-encoded, and embedded PNG/JPEG metadata does not survive the re-encode.
 - Bounded retry with jitter on HTTP 429/5xx only, and a client-side
   `--max-cost-usd` cap, so a rate limit or a runaway loop cannot become an
   unbounded bill.
@@ -133,7 +142,7 @@ research CLI. Keep the ledger on separate, append-only storage if you need more.
   Markdown report.
 - Hash-sealed run manifest with an optional hash-chained ledger and an offline
   `verify-manifest` command.
-- Deterministic exit codes (0–7, 99) so failures are scriptable rather than
+- Deterministic exit codes (0–10, 99) so failures are scriptable rather than
   guessed at.
 
 ## Dependency and secret scanning in CI
@@ -167,8 +176,10 @@ Alongside that:
   Review the CI result _and_ the diff on each one — a dependency PR with red CI
   is a blocker, not noise.
 - **Secrets.** `.env` is git-ignored and only `.env.example` (placeholders) is
-  tracked. Before any commit that touches configuration, `git grep -i AIza` and
-  `git grep -i "sk-or-"` should both come back empty.
+  tracked. Before any commit that touches configuration,
+  `git grep -i -E 'AIza|sk-or-' -- ':!tests' ':!SECURITY.md'` should come back
+  empty (the fake keys in `tests/` and the patterns quoted in this file are
+  expected matches).
 - **Reproducibility.** `package-lock.json` is committed and CI installs with
   `npm ci`, so a build cannot silently float to a different transitive tree.
   Actions are pinned by tag, and Trivy by commit SHA.

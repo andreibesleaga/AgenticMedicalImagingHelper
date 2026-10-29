@@ -211,3 +211,20 @@ does any claim of diagnostic equivalence — bytes and tokens are not diagnosis.
 ---
 
 *Update by: Claude Code | 2026-09-08*
+
+---
+
+## Addendum — 2026-09-29: embedded metadata now prevents passthrough
+
+Rule 4 above gained one more condition with the input guard (CHANGELOG, Added
+2026-09-29): the file must carry no embedded text or metadata block (PNG
+`tEXt`/`zTXt`/`iTXt`/`eXIf`/`tIME`, JPEG EXIF/XMP/IPTC/comment). A file that
+does is re-encoded, which drops the metadata (`preparePayload` in
+`src/infrastructure/image-policy.ts`).
+
+The 224-px NIH ChestX-ray14 PNGs carry `tIME` and `tEXt` chunks, so on the
+`e4-224px` cohort the current pre-flight re-encodes all 31 images: 684,548 B on
+disk → 669,973 B sent (−2.1 %), measured with `measure-payload.ts` on
+2026-10-29. The table above (30 passthrough, −0.9 %) is the build the SIME 2026
+paper used; `experiments/sime2026/E3-payload-e4-224px.md` belongs to that frozen
+pack and is not regenerated.

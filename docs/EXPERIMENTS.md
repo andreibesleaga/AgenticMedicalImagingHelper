@@ -9,9 +9,9 @@ itself, so it can't go stale the way a copied figure would.
 - **How to reproduce:** [`experiments/sime2026/README.md`](../experiments/sime2026/README.md)
   — dataset provenance, environment setup, `run.sh` usage, and per-experiment
   commands.
-- **Results:** `experiments/sime2026/RESULTS.md` (to be written) will hold the
-  consolidated findings; until then see the per-experiment Markdown files in
-  `experiments/sime2026/` (e.g. `E1-fairness-benchmark-results.md`,
+- **Results:** [`experiments/sime2026/RESULTS.md`](../experiments/sime2026/RESULTS.md)
+  holds the consolidated findings; behind it are the per-experiment Markdown
+  files in `experiments/sime2026/` (e.g. `E1-fairness-benchmark-results.md`,
   `E3-payload-large-study.md`, `E4L-cohort.md`) and `results.jsonl` for raw
   per-run figures. No numbers are duplicated here — see those files.
 
@@ -21,9 +21,10 @@ itself, so it can't go stale the way a copied figure would.
 | ----------------------------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **E1**                        | Fairness benchmark          | How well does the deterministic allocative-harm probe ([`src/domain/fairness.ts`](../src/domain/fairness.ts)) classify a labeled fixture of explicit / implicit / paraphrased / benign / negation / trap items?                         |
 | **E2**                        | Scalability                 | How do wall-clock time, token usage and cost scale with study size (`1×1`, `2×5`, `3×10`, `4×20`) and concurrency?                                                                                                                      |
-| **E3**                        | Payload reduction           | How much request payload does the client-side image pre-flight (`sharp` resize to 1024 px) remove, measured in bytes only (no diagnostic-equivalence claim)?                                                                            |
+| **E3**                        | Payload reduction           | How much request payload does the client-side, model-aware image pre-flight ([ADR-003](architecture/decisions/ADR-003-image-preprocessing.md)) remove, measured in bytes only (no diagnostic-equivalence claim)?                        |
 | **E4**                        | Longitudinal cohort         | Does the pipeline produce coherent longitudinal (multi-session) output on a real, small cohort of NIH ChestX-ray14 patients?                                                                                                            |
 | **E4L**                       | Longitudinal cohort, larger | Same question as E4 on a larger, label-trajectory-stratified cohort — opt-in because it costs roughly 5× E4.                                                                                                                            |
+| **E5**                        | Label agreement             | How far does each model's free text agree with the dataset's own 14 labels, through a negation-aware keyword mapper (`experiments/sime2026/label-agreement.ts`)? Descriptive agreement only, not accuracy.                              |
 | **Full-dataset offline scan** | Corpus sanity scan          | Offline, non-API scan of the full prepared dataset (`experiments/sime2026/full-dataset-scan.ts` / `.csv` / `.md`) — file counts, per-patient study counts, label distribution; no model calls.                                          |
 | **Scanner stress**            | File-scanner stress test    | Exercises [`src/infrastructure/file-scanner.ts`](../src/infrastructure/file-scanner.ts) (`experiments/sime2026/scanner-stress.ts`) against a large synthetic input tree to check the scanner and path-traversal guard hold up at scale. |
 
@@ -41,3 +42,4 @@ images). No accuracy claim is made against this dataset — see the paper's
 - [`docs/architecture/decisions/ADR-004-single-model-monoculture-risk.md`](architecture/decisions/ADR-004-single-model-monoculture-risk.md) — the single-model risk E2/E4 partly evidence.
 - [`docs/architecture/decisions/ADR-006-openrouter-second-provider.md`](architecture/decisions/ADR-006-openrouter-second-provider.md) — the second-provider adapter these experiments can also be run against.
 - [`docs/COMPLIANCE.md`](COMPLIANCE.md) — how the fairness probe (E1) maps to EU AI Act Art. 10/15 and NIST AI RMF MEASURE.
+- [`experiments/sime-full/`](../experiments/sime-full/) — the post-paper follow-up that repeats E4 (and later E4L-20 and E2) on the original 1024 × 1024 NIH images; not part of the paper's pack.

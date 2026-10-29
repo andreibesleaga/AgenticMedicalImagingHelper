@@ -24,7 +24,7 @@ The functional + non-functional spec is in [`docs/SPEC.md`](./SPEC.md). Key surf
 - Strict TypeScript, ESM, Jest tests, CLI entry under `src/main/`.
 - Fairness logic: `src/domain/fairness.ts` (domain module).
 - Compliance documentation: [`docs/COMPLIANCE.md`](./COMPLIANCE.md) — EU AI Act / NIST AI RMF / ISO cross-walks and gap roadmap.
-- Architecture decisions: [`docs/architecture/`](./architecture/) — threat model + four ADRs (ADR-004 covers the single-model monoculture risk).
+- Architecture decisions: [`docs/architecture/`](./architecture/) — threat model + seven ADRs, ADR-001…007 (ADR-004 covers the single-model monoculture risk).
 
 ## 4. User Stories
 
@@ -61,6 +61,12 @@ The functional + non-functional spec is in [`docs/SPEC.md`](./SPEC.md). Key surf
 > API keys), and an optional OpenRouter second-provider adapter now
 > implements the same port — see
 > [ADR-006](./architecture/decisions/ADR-006-openrouter-second-provider.md).
+>
+> **Since 2026-09-29:** the direct-Google default is `gemini-3.8-flash` (Google
+> limits the 2.5 models to projects that already used them), and a third
+> adapter, `AI_PROVIDER=local` (`src/infrastructure/local-client.ts`), runs the
+> same port against an OpenAI-compatible server (loopback by default) — see
+> [`architecture/LOCAL-INFERENCE.md`](./architecture/LOCAL-INFERENCE.md).
 
 For the threat model and ADRs see [`docs/architecture/`](./architecture/).
 
@@ -78,9 +84,9 @@ For the threat model and ADRs see [`docs/architecture/`](./architecture/).
 
 This project is an **ethical-deployment exemplar**: a real LangGraph application whose repo artefacts (compliance cross-walk, ADRs, threat model) make its governance posture inspectable. It is intentionally larger than most example projects because it treats _governance under regulation_ as a first-class concern.
 
-> **Note:** HITL sign-off and a hash-chained audit trail are discussed in `COMPLIANCE.md` as part of the regulatory _target state_; they are not implemented in the current three-node graph. Keep PRODUCT.md describing what the code does today.
+> **Note:** a hash-chained audit trail and a recorded reviewer attestation are implemented outside the three-node graph: every run writes a hash-sealed `run_manifest.json`, `--manifest-chain` links runs into an append-only ledger, `verify-manifest` re-checks them, and `--reviewer` records who reviewed (no clinical effect) — `src/infrastructure/run-manifest.ts`, [ADR-007](./architecture/decisions/ADR-007-run-manifest-audit-ledger.md). An in-graph HITL approval gate is still part of the regulatory _target state_ in `COMPLIANCE.md` (§6 item 2), not implemented. Keep PRODUCT.md describing what the code does today.
 
 ## 8. References
 
 - Code: `src/main/` (CLI entry), `src/adapters/langgraph-agent.ts` (the three-node graph), `src/application/` (per-image / per-series / evolution use-cases), `src/domain/` (`fairness.ts`, types), `src/infrastructure/` (Gemini client, file scanner, report writer).
-- Docs: [`PRD.md`](./PRD.md), [`SPEC.md`](./SPEC.md), [`COMPLIANCE.md`](./COMPLIANCE.md), [`PLAN.md`](./PLAN.md), [`SECURITY_CHECKLIST.md`](./SECURITY_CHECKLIST.md), [`BOOTSTRAP_MISSION.md`](./BOOTSTRAP_MISSION.md), `architecture/`, `strategic/`.
+- Docs: [`PRD.md`](./PRD.md), [`SPEC.md`](./SPEC.md), [`COMPLIANCE.md`](./COMPLIANCE.md), [`PLAN.md`](./PLAN.md), [`SECURITY_CHECKLIST.md`](./SECURITY_CHECKLIST.md), `architecture/`, `strategic/`.

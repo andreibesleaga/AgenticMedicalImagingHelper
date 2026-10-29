@@ -5,6 +5,13 @@ and behaviour below was read from the cited page on 2026-09-29; anything not con
 primary source is marked **UNVERIFIED**. Re-check each row on the day the matching work item
 starts.
 
+**Built since (CHANGELOG, Added 2026-09-29).** The minimal local route exists:
+`AI_PROVIDER=local` (`src/infrastructure/local-client.ts`) sends the unchanged pipeline to any
+OpenAI-compatible server at `LOCAL_LLM_BASE_URL` (default `http://127.0.0.1:11434/v1`, model
+`medgemma1.5:4b`), on the transport it shares with OpenRouter, at zero pricing. The rest of this
+plan (descriptor registry, native Ollama adapter, profiles, manifest 1.1, decision port) is not
+started; see [`../ROADMAP.md`](../ROADMAP.md) §12.
+
 **Scope reminder.** Research software, not a medical device. Running a model locally changes where
 data is processed. It does not change the intended purpose, the mandatory clinician review, or
 anything in [`../COMPLIANCE.md`](../COMPLIANCE.md).

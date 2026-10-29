@@ -3,6 +3,16 @@
 <!-- Created by: business-case.skill | Phase: S0 | Date: 2026-02-25 -->
 <!-- Classification: Internal -->
 
+> **Scope — read first.** This is the pre-implementation business case of
+> 2026-02-25, kept as the record of the project's generation flow. Its users,
+> time savings and value figures are estimates written before any run, not
+> measurements, and they describe the idea as first written, not a permitted
+> use. The software is research and educational software, **not a medical
+> device**, and must not be used on patients; every output requires review by a
+> qualified clinician. See [`DISCLAIMER.md`](../../DISCLAIMER.md) and
+> [`COMPLIANCE.md` §0](../COMPLIANCE.md); where this file disagrees with them,
+> they apply.
+
 ---
 
 ## 1. Problem Definition

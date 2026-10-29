@@ -3,6 +3,63 @@
 `AgenticMedicalImagingHelper` is a local CLI that orchestrates Google Gemini
 through a LangGraph.js `StateGraph` using a **fan-out / fan-in** topology.
 
+## System context
+
+Who and what the CLI talks to. Exactly one model provider is used per run,
+chosen by `AI_PROVIDER`.
+
+```mermaid
+C4Context
+    title System context — AgenticMedicalImagingHelper
+    Person(operator, "Operator", "Runs the CLI on a workstation; de-identifies every input first")
+    Person(reviewer, "Qualified clinician", "Must review every report before any use")
+    System(cli, "AgenticMedicalImagingHelper CLI", "medical-imaging analyze / verify-manifest; Node.js, TypeScript")
+    System_Ext(files, "Local file system", "input series folders and context .txt files; output reports, run_manifest.json, optional ledger")
+    System_Ext(gemini, "Google Gemini API", "AI_PROVIDER=google (default)")
+    System_Ext(openrouter, "OpenRouter", "AI_PROVIDER=openrouter; routes to the upstream model vendor")
+    System_Ext(local, "Local model server", "AI_PROVIDER=local; Ollama, vLLM or llama.cpp at LOCAL_LLM_BASE_URL")
+    Rel(operator, cli, "Runs", "terminal")
+    Rel(cli, files, "Reads images and context; writes reports and manifest", "fs")
+    Rel(cli, gemini, "Image + prompt per call", "HTTPS, @google/generative-ai")
+    Rel(cli, openrouter, "Image + prompt per call", "HTTPS, chat/completions")
+    Rel(cli, local, "Image + prompt per call", "HTTP, chat/completions")
+    Rel(reviewer, files, "Reads the reports")
+```
+
+## Components
+
+The modules one `analyze` run passes through, in `src/`. `run-analyze.ts` runs
+the pre-flight checks, builds one provider adapter, runs the graph, writes the
+reports, runs the probes and seals the manifest.
+
+```mermaid
+flowchart LR
+    IDX["main/index.ts<br/>(commander CLI)"] --> RUN["main/run-analyze.ts"]
+    RUN --> SCAN["infrastructure/file-scanner.ts"]
+    RUN --> PHI["domain/phi-scan.ts"]
+    RUN --> GUARD["domain/input-guard.ts"]
+    RUN --> MET["infrastructure/cost-meter.ts"]
+    RUN --> PROV{"provider adapter<br/>(GeminiClient port)"}
+    PROV --> GEM["infrastructure/gemini-client.ts"]
+    PROV --> OR["infrastructure/openrouter-client.ts"]
+    PROV --> LOC["infrastructure/local-client.ts"]
+    OR --> GEM
+    LOC --> OR
+    GEM --> POL["infrastructure/image-policy.ts"]
+    GEM --> SO["domain/structured-output.ts"]
+    GEM --> RET["infrastructure/retry.ts"]
+    RUN --> AGENT["adapters/langgraph-agent.ts"]
+    AGENT --> UC["application/*.use-case.ts"]
+    UC --> PROV
+    RUN --> REP["infrastructure/report-writer.ts"]
+    RUN --> PROBES["domain/context-consistency.ts<br/>domain/fairness-v2.ts<br/>domain/measurement-probe.ts"]
+    RUN --> MAN["infrastructure/run-manifest.ts"]
+```
+
+`openrouter-client.ts` and `local-client.ts` supply the transport and reuse
+`createGeminiClient` from `gemini-client.ts`, so prompts, parsing, validation
+and retries are the same on every provider.
+
 ## StateGraph topology
 
 ```mermaid
@@ -35,7 +92,7 @@ graph TD
 
 - `domain/` — pure types, errors, fairness probe (no I/O).
 - `application/` — use-cases (orchestration only).
-- `infrastructure/` — Gemini client, OpenRouter client, file scanner, report writer, cost meter (outside-world adapters).
+- `infrastructure/` — Gemini client, OpenRouter client, local client, file scanner, report writer, cost meter (outside-world adapters).
 - `adapters/` — LangGraph wiring (`langgraph-agent.ts`).
 - `main/` — CLI composition root (`index.ts`) + handler (`run-analyze.ts`).
 
@@ -45,17 +102,21 @@ would not touch the domain or application layers.
 ## Model providers
 
 The graph talks to the model only through the `GeminiClient` port
-(`analyzeImage` / `synthesizeSeries` / `analyzeEvolution`). Two adapters
-implement it: Google Gemini via the official SDK (default, `AI_PROVIDER=google`)
-and **OpenRouter** (`AI_PROVIDER=openrouter`, `infrastructure/openrouter-client.ts`),
+(`analyzeImage` / `synthesizeSeries` / `analyzeEvolution`). Three adapters
+implement it: Google Gemini via the official SDK (default, `AI_PROVIDER=google`),
+a **local** OpenAI-compatible server (`AI_PROVIDER=local`,
+`infrastructure/local-client.ts`, which reuses the OpenRouter transport; see
+[LOCAL-INFERENCE.md](architecture/LOCAL-INFERENCE.md)), and
+**OpenRouter** (`AI_PROVIDER=openrouter`, `infrastructure/openrouter-client.ts`),
 an OpenAI-compatible `chat/completions` shim that satisfies the same
 `generateContent` surface, so prompts, parsers, error handling and the LangGraph
 wiring are shared verbatim and any OpenRouter vision model can be run from the
 unchanged CLI. Differences are deliberate and documented in
 [ADR-006](architecture/decisions/ADR-006-openrouter-second-provider.md): the
 OpenRouter path has **no Google Search grounding** (ADR-002 is Gemini-only; the
-"Research Context" section is answered from model knowledge alone), it sends no
-JSON-mode flag because the pipeline consumes Markdown, and it forwards the
+"Research Context" section is answered from model knowledge alone), it maps the
+shared client's JSON-mode request to `response_format: { type: "json_object" }`,
+and it forwards the
 provider's own `usage.cost` (USD) to the cost meter as `providerReportedUsd`
 next to the token-based estimate. Gemini remains the default; OpenRouter exists
 to test the single-model monoculture risk tracked in ADR-004.
@@ -75,22 +136,28 @@ to test the single-model monoculture risk tracked in ADR-004.
   when present; attempt count is configurable via `AI_MAX_RETRIES` (`0`
   disables retries). The cost meter records a failed attempt's usage once, not
   once per retry. See [ADR-006](architecture/decisions/ADR-006-openrouter-second-provider.md#update-2026-09-08).
-- **Structured-output validation** — model responses are parsed to Markdown
-  fields at all three pipeline stages (`analyzeImage`, `aggregateSeries` /
-  `synthesizeSeries`, `analyzeEvolution`) and then checked against a Zod
+- **Structured-output validation** — at all three pipeline stages
+  (`analyzeImage`, `aggregateSeries` / `synthesizeSeries`, `analyzeEvolution`)
+  the model is asked for one JSON object (JSON mode on both transports; a
+  request whose JSON mode the provider refuses is replayed once without it), which
+  `domain/structured-output.ts` extracts and checks against the stage's Zod
   schema (`domain/types.ts`). A schema failure is recorded in a `validation`
   field on the corresponding output rather than aborting the run, and the
-  free-text fields extracted by the Markdown parser are still returned, so a
+  free-text parsers still extract what they can from the raw response, so a
   validation failure degrades to free text instead of failing the pipeline.
 - **Exit codes** — `main/index.ts` / `main/run-analyze.ts` return one of:
-  `0` all series processed (even if individual images failed), `1` user error
+  `0` every image analyzed successfully, `1` user error
   (missing/invalid API key, bad `--max-cost-usd` value, unknown `AI_PROVIDER`),
   `2` input directory not found or unreadable, `3` no image series found,
   `4` partial failure (some images could not be analyzed), `5` the
   `--max-cost-usd` cap was exceeded and the run was aborted
   (`CostCapExceededError`), `6` `verify-manifest` found the run manifest
   missing, altered or unlinked, `7` `--strict-phi` found a likely identifier in
-  a context file and refused to upload, `99` unexpected internal error. See
+  a context file and refused to upload, `8` `--fail-on-probe` and a governance
+  probe fired (outputs and manifest still written), `9` `--secure` and the input
+  guard found a problem (nothing uploaded), `10` `--expect-hashes` and an image
+  is missing from the list or changed (nothing uploaded), `99` unexpected
+  internal error. See
   [SPEC.md §2.3](SPEC.md#23-exit-codes) and the README [Exit Codes](../README.md#exit-codes)
   table.
 - **Run manifest and audit ledger** — every admitted run writes a
@@ -111,7 +178,7 @@ to test the single-model monoculture risk tracked in ADR-004.
 <outputDir> [--chain <file>]` re-checks all of it offline (exit 6 on failure).
   The manifest is written on every exit path from the point the run is admitted
   — including the failing ones — as a best-effort side effect that can never
-  change the exit code; pre-flight rejections (1, 2, 3, 7) deliberately leave
+  change the exit code; pre-flight rejections (1, 2, 3, 7, 9, 10) deliberately leave
   nothing behind. This is tamper-_evidence_, not tamper-proofing: see
   THREAT_MODEL **T9** for the residual local-write risk.
 - **PHI pre-flight** — `domain/phi-scan.ts` scans context files for likely
