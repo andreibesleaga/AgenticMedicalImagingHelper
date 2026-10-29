@@ -115,7 +115,7 @@ the failing ones — and is described under [Governance controls](#governance-co
 
 ## Prerequisites
 
-- Node.js 20+
+- Node.js 22+
 - Google Gemini API key (default model `gemini-3.8-flash`; override with `GEMINI_MODEL`), or an OpenRouter key, or a local OpenAI-compatible model server (no key)
 
 ## Installation

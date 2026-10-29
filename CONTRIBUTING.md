@@ -7,7 +7,7 @@ Thanks for your interest in improving **AgenticMedicalImagingHelper**.
 
 ## Prerequisites
 
-- Node.js **>= 20** (CI runs on Node 20 and 22).
+- Node.js **>= 22** (CI runs on Node 22 and 24).
 - npm (the repo ships a committed `package-lock.json`; use `npm ci`).
 
 ## Getting started
@@ -60,7 +60,7 @@ Three workflows live in `.github/workflows/`:
 
 | Workflow                | Runs on                                                                       | What it does                                                                                                                                                   |
 | ----------------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `ci.yml`                | push and pull request to `main`                                               | On Node 20 and 22: `npm ci`, `typecheck`, `lint`, `build`, `test:coverage`. It does not run `test:live` or `format:check`.                                     |
+| `ci.yml`                | push and pull request to `main`                                               | On Node 22 and 24: `npm ci`, `typecheck`, `lint`, `build`, `test:coverage`. It does not run `test:live` or `format:check`.                                     |
 | `security-baseline.yml` | push and pull request to `main`; weekly, Monday 06:00 UTC                     | `npm audit`, CycloneDX SBOM, licence allow-list, OSV-Scanner and Trivy, all report-only — see [SECURITY.md](SECURITY.md#dependency-and-secret-scanning-in-ci). |
 | `pages.yml`             | push to `main` that changes `site/**` or the workflow itself; manual dispatch | Publishes `site/` to GitHub Pages. `docs/` is not published.                                                                                                   |
 

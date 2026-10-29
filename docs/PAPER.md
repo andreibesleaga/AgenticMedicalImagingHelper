@@ -436,7 +436,7 @@ comparisons against report-derived labels, never diagnostic accuracy.
 ### 1. Prerequisites (free)
 
 ```bash
-node --version          # Node 22 (see .nvmrc; package.json requires >= 20)
+node --version          # Node 22 (see .nvmrc; package.json requires >= 22)
 npm ci
 npm run build           # the experiments drive the built CLI at dist/main/index.js
 cp .env.example .env    # then edit it
