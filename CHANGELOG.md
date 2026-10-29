@@ -23,6 +23,8 @@ renamed.
   unchanged). `RESULTS.md` §8–§11; two first-batch statements corrected with
   dated notes.
 
+## [1.1.1] - 2026-10-01
+
 ### Added (2026-09-29)
 
 - **Local provider** `AI_PROVIDER=local`: any OpenAI-compatible server on the
@@ -49,6 +51,8 @@ renamed.
   now limits the 2.5 models to projects that already used them. The OpenRouter
   default and the SIME 2026 pack are unchanged. Price table gains the Gemini 3.x
   flash and flash-lite rows.
+
+## [1.1.0] - 2026-09-10
 
 ### Changed
 
@@ -270,7 +274,7 @@ renamed. Recorded in
 - `.dicom` files are **refused** rather than silently ignored (previous
   behaviour: skipped as an unsupported extension).
 
-## [1.0.0]
+## 1.0.0
 
 ### Added
 
@@ -279,5 +283,6 @@ renamed. Recorded in
   fan-out/fan-in StateGraph. Per-image JSON, per-series Markdown, and a combined
   evolution report — each carrying a mandatory medical disclaimer.
 
-[Unreleased]: https://github.com/andreibesleaga/AgenticMedicalImagingHelper/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/andreibesleaga/AgenticMedicalImagingHelper/releases/tag/v1.0.0
+[Unreleased]: https://github.com/andreibesleaga/AgenticMedicalImagingHelper/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/andreibesleaga/AgenticMedicalImagingHelper/compare/v1.1.0...v1.1.1
+[1.1.0]: https://github.com/andreibesleaga/AgenticMedicalImagingHelper/releases/tag/v1.1.0
