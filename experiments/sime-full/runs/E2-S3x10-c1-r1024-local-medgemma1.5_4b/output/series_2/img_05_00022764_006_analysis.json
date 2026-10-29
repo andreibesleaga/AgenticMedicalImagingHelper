@@ -1,0 +1,59 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_2/img_05_00022764_006.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right lung is clear.\",\n    \"Left lung has areas of consolidation.\",\n    \"Left pneumothorax.\",\n    \"Left chest tube is present.\",\n    \"Right picc line is present.\",\n    \"Heart size is normal.\",\n    \"Mediastinum is normal.\",\n    \"No bony abnormalities.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left pneumothorax\",\n      \"description\": \"Left pneumothorax with collapsed left lung.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Left consolidation\",\n      \"description\": \"Left consolidation\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a collapsed left lung with air in the pleural space (pneumothorax). A chest tube is in place. There is also some consolidation seen in the right lung. A right-sided intravenous line is also visible. The findings likely represent a complication from a lung procedure.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5169710/\",\n    \"https://radiopaedia.org/articles/pneumothorax\",\n    \"https://radiopaedia.org/articles/consolidation\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Right lung is clear.",
+    "Left lung has areas of consolidation.",
+    "Left pneumothorax.",
+    "Left chest tube is present.",
+    "Right picc line is present.",
+    "Heart size is normal.",
+    "Mediastinum is normal.",
+    "No bony abnormalities."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left pneumothorax",
+      "severity": "Moderate",
+      "confidence": 100,
+      "description": "Left pneumothorax with collapsed left lung."
+    },
+    {
+      "name": "Left consolidation",
+      "severity": "Moderate",
+      "confidence": 100,
+      "description": "Left consolidation"
+    }
+  ],
+  "summary": "The chest X-ray shows a collapsed left lung with air in the pleural space (pneumothorax). A chest tube is in place. There is also some consolidation seen in the right lung. A right-sided intravenous line is also visible. The findings likely represent a complication from a lung procedure.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5169710/",
+    "https://radiopaedia.org/articles/pneumothorax",
+    "https://radiopaedia.org/articles/consolidation"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 444722,
+    "bytesOut": 337789,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T11:53:48.500Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

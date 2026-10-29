@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_3/00000148_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A medical device, likely an implanted port or venous access device, is noted in the right upper lung zone. It appears to be positioned appropriately with its catheter coursing inferiorly.\",\n    \"Lungs are clear with no obvious focal consolidation, pneumothorax, or large pleural effusions.\",\n    \"Bilateral diaphragmatic contours are intact.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Osseous structures (ribs, clavicles, scapulae) appear unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Implanted port\",\n      \"description\": \"A well-positioned implanted port (venous access device) is visible in the right hemithorax, with its catheter extending inferiorly. This is a common medical device for long-term venous access and is not inherently an abnormality, but rather an expected finding in a patient with such a device.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows an implanted medical device, likely a port, in the upper right part of the chest. This device is typically used for long-term delivery of medications or fluids. The device appears to be in a good position. The lungs, heart, and surrounding bones all look normal for this type of scan, with no signs of infection, collapsed lung, or significant fluid buildup. This means the main structures in your chest appear healthy.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/implantable-venous-port\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900696/\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A medical device, likely an implanted port or venous access device, is noted in the right upper lung zone. It appears to be positioned appropriately with its catheter coursing inferiorly.",
+    "Lungs are clear with no obvious focal consolidation, pneumothorax, or large pleural effusions.",
+    "Bilateral diaphragmatic contours are intact.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Osseous structures (ribs, clavicles, scapulae) appear unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Implanted port",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A well-positioned implanted port (venous access device) is visible in the right hemithorax, with its catheter extending inferiorly. This is a common medical device for long-term venous access and is not inherently an abnormality, but rather an expected finding in a patient with such a device."
+    }
+  ],
+  "summary": "This X-ray of the chest shows an implanted medical device, likely a port, in the upper right part of the chest. This device is typically used for long-term delivery of medications or fluids. The device appears to be in a good position. The lungs, heart, and surrounding bones all look normal for this type of scan, with no signs of infection, collapsed lung, or significant fluid buildup. This means the main structures in your chest appear healthy.",
+  "references": [
+    "https://radiopaedia.org/articles/implantable-venous-port",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900696/",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 453156,
+    "bytesOut": 452383,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:18:27.397Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

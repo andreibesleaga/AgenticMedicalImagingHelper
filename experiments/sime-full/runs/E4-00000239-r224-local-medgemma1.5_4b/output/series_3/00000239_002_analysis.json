@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000239/series_3/00000239_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\": \"X-ray\", \"anatomyRegion\": \"Chest (AP)\", \"quality\": \"Good\", \"findings\": [ \"The lungs are clear. The heart size is normal. There is no pleural effusion. The mediastinum is normal.\", \"The bony structures of the ribs and clavicles are intact.\", \"The diaphragms are well-defined.\", \"The aortic knob is unremarkable.\"], \"abnormalities\": [], \"summary\": \"The chest X-ray shows no obvious signs of pneumonia or other lung problems. The heart and major blood vessels appear normal. The bones of the chest wall look intact.\", \"references\": [\"https://medlineplus.gov/ency/article/000056.htm\", \"https://radiopaedia.org/articles/chest-x-ray\", \"https://www.thoracicradiology.org/publications/the-chest-x-ray-in-the-diagnosis-of-chest-pathology/\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear. The heart size is normal. There is no pleural effusion. The mediastinum is normal.",
+    "The bony structures of the ribs and clavicles are intact.",
+    "The diaphragms are well-defined.",
+    "The aortic knob is unremarkable."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows no obvious signs of pneumonia or other lung problems. The heart and major blood vessels appear normal. The bones of the chest wall look intact.",
+  "references": [
+    "https://medlineplus.gov/ency/article/000056.htm",
+    "https://radiopaedia.org/articles/chest-x-ray",
+    "https://www.thoracicradiology.org/publications/the-chest-x-ray-in-the-diagnosis-of-chest-pathology/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23540,
+    "bytesOut": 23540,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:58:59.469Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

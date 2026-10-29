@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_1/img_05_00010693_004.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary process identified.\",\n    \"Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Bilateral hilar and mediastinal contours are unremarkable.\",\n    \"Bones of the thoracic cage are intact.\",\n    \"A metallic foreign body, consistent with a gastric band or similar device, is noted in the left upper quadrant of the abdomen, projecting inferior to the cardiac silhouette.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Gastric band\",\n      \"description\": \"A metallic, ring-like foreign body, consistent with a gastric banding device, is visible in the left upper quadrant of the abdomen, below the left hemidiaphragm. Its position appears stable.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows normal lung fields and heart size. There are no signs of pneumonia, fluid around the lungs, or a collapsed lung. A medical device, likely a gastric band used for weight loss, is visible in the upper abdomen. This device is an expected finding for someone who has had this type of surgery and its appearance on the X-ray is consistent with its typical placement.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.301095034\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3052601/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary process identified.",
+    "Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Bilateral hilar and mediastinal contours are unremarkable.",
+    "Bones of the thoracic cage are intact.",
+    "A metallic foreign body, consistent with a gastric band or similar device, is noted in the left upper quadrant of the abdomen, projecting inferior to the cardiac silhouette."
+  ],
+  "abnormalities": [
+    {
+      "name": "Gastric band",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A metallic, ring-like foreign body, consistent with a gastric banding device, is visible in the left upper quadrant of the abdomen, below the left hemidiaphragm. Its position appears stable."
+    }
+  ],
+  "summary": "The chest X-ray shows normal lung fields and heart size. There are no signs of pneumonia, fluid around the lungs, or a collapsed lung. A medical device, likely a gastric band used for weight loss, is visible in the upper abdomen. This device is an expected finding for someone who has had this type of surgery and its appearance on the X-ray is consistent with its typical placement.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.301095034",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3052601/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 424246,
+    "bytesOut": 422012,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:45:35.488Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

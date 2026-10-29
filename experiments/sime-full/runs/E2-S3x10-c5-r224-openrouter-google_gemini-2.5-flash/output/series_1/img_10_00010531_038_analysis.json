@@ -1,0 +1,45 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S3x10/series_1/img_10_00010531_038.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA upright)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are well-inflated without evidence of focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Bilateral costophrenic angles are sharp.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Pulmonary vasculature appears normal.\",\n    \"Bony thorax is intact without acute fracture or destructive lesion. Bilateral clavicles and ribs are unremarkable.\",\n    \"Presence of bilateral breast shadows, which are normal.\",\n    \"Small amount of subdiaphragmatic gas is noted on the left, likely within the gastric fundus.\",\n    \"A medical device, likely a cardiac monitor electrode or similar, is noted over the left shoulder region.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray shows healthy lungs with no signs of pneumonia, fluid around the lungs (pleural effusion), or a collapsed lung (pneumothorax). The heart and major blood vessels appear normal in size and shape. The bones of the chest, including the ribs and collarbones, are also normal. There's a small amount of gas visible under the left side of the diaphragm, which is typically normal for gas in the stomach. There's also a medical sticker or electrode on the left shoulder.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.294095066\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA upright)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are well-inflated without evidence of focal consolidation, pleural effusion, or pneumothorax.",
+    "Bilateral costophrenic angles are sharp.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Pulmonary vasculature appears normal.",
+    "Bony thorax is intact without acute fracture or destructive lesion. Bilateral clavicles and ribs are unremarkable.",
+    "Presence of bilateral breast shadows, which are normal.",
+    "Small amount of subdiaphragmatic gas is noted on the left, likely within the gastric fundus.",
+    "A medical device, likely a cardiac monitor electrode or similar, is noted over the left shoulder region."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray shows healthy lungs with no signs of pneumonia, fluid around the lungs (pleural effusion), or a collapsed lung (pneumothorax). The heart and major blood vessels appear normal in size and shape. The bones of the chest, including the ribs and collarbones, are also normal. There's a small amount of gas visible under the left side of the diaphragm, which is typically normal for gas in the stomach. There's also a medical sticker or electrode on the left shoulder.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.294095066",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23552,
+    "bytesOut": 23552,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:54:42.606Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

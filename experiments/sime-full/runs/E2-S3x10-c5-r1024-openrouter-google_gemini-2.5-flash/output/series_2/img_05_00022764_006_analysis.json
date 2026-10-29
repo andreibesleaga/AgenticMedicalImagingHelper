@@ -1,0 +1,62 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_2/img_05_00022764_006.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Large left-sided pleural effusion with an air-fluid level, suggestive of hydropneumothorax.\",\n    \"Mediastinal shift to the right.\",\n    \"Evidence of a chest tube (thoracostomy tube) in the left hemithorax, with its tip likely within the fluid collection.\",\n    \"The right lung appears relatively clear with preserved lung volumes.\",\n    \"Costophrenic angles are blunted on the left due to the effusion.\",\n    \"Cardiac silhouette is partially obscured by the effusion on the left.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Hydropneumothorax\",\n      \"description\": \"A significant collection of both fluid and air is present in the left pleural space, indicated by a prominent air-fluid level and blunting of the left costophrenic angle. This causes mass effect with mediastinal shift to the right.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"The mediastinum, including the heart and trachea, is displaced to the right side of the chest due to the pressure exerted by the left hydropneumothorax.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Chest Tube\",\n      \"description\": \"A thoracostomy tube is identified within the left hemithorax, presumably placed to drain the hydropneumothorax. Its tip appears to be appropriately positioned within the fluid collection.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 99\n    }\n  ],\n  \"summary\": \"This X-ray shows a large collection of both fluid and air in the left side of the chest, a condition called a hydropneumothorax. This is causing the central structures of the chest, like the heart, to be pushed over to the right side. A tube has been inserted into the left side of the chest to help drain this fluid and air. The right lung appears clear. A hydropneumothorax can be caused by various factors, including trauma, infection, or rupture of air sacs in the lung, and it needs prompt medical attention.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/hydropneumothorax\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK441865/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Large left-sided pleural effusion with an air-fluid level, suggestive of hydropneumothorax.",
+    "Mediastinal shift to the right.",
+    "Evidence of a chest tube (thoracostomy tube) in the left hemithorax, with its tip likely within the fluid collection.",
+    "The right lung appears relatively clear with preserved lung volumes.",
+    "Costophrenic angles are blunted on the left due to the effusion.",
+    "Cardiac silhouette is partially obscured by the effusion on the left."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Hydropneumothorax",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "A significant collection of both fluid and air is present in the left pleural space, indicated by a prominent air-fluid level and blunting of the left costophrenic angle. This causes mass effect with mediastinal shift to the right."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The mediastinum, including the heart and trachea, is displaced to the right side of the chest due to the pressure exerted by the left hydropneumothorax."
+    },
+    {
+      "name": "Chest Tube",
+      "severity": "Normal",
+      "confidence": 99,
+      "description": "A thoracostomy tube is identified within the left hemithorax, presumably placed to drain the hydropneumothorax. Its tip appears to be appropriately positioned within the fluid collection."
+    }
+  ],
+  "summary": "This X-ray shows a large collection of both fluid and air in the left side of the chest, a condition called a hydropneumothorax. This is causing the central structures of the chest, like the heart, to be pushed over to the right side. A tube has been inserted into the left side of the chest to help drain this fluid and air. The right lung appears clear. A hydropneumothorax can be caused by various factors, including trauma, infection, or rupture of air sacs in the lung, and it needs prompt medical attention.",
+  "references": [
+    "https://radiopaedia.org/articles/hydropneumothorax",
+    "https://www.ncbi.nlm.nih.gov/books/NBK441865/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 444722,
+    "bytesOut": 443869,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:37:21.213Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

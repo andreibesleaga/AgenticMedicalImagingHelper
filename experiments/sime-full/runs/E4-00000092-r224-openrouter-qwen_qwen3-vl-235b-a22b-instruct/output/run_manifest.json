@@ -1,0 +1,214 @@
+{
+  "manifestVersion": "1.0",
+  "toolVersion": "1.1.0",
+  "startedAt": "2026-09-29T10:28:10.733Z",
+  "finishedAt": "2026-09-29T10:28:51.795Z",
+  "provider": "openrouter",
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "pricing": {
+    "inputUsdPerMillion": 2,
+    "outputUsdPerMillion": 12
+  },
+  "settings": {
+    "concurrency": 1,
+    "maxCostUsd": 1,
+    "retries": 3,
+    "imageQuality": "auto"
+  },
+  "inputDir": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000092",
+  "outputDir": "/home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4-00000092-r224-openrouter-qwen_qwen3-vl-235b-a22b-instruct/output",
+  "inputs": [
+    {
+      "path": "series_1/00000092_000.png",
+      "sha256": "5304d3e16677819b231128813b809ed273cf1d6ff048a8b5603c73fdb8ac7b1d",
+      "bytes": 24381
+    },
+    {
+      "path": "series_2/00000092_001.png",
+      "sha256": "37de782065ba92ac6653d3e54b3e4178445bfb2c8ed51e40d6d565934587c865",
+      "bytes": 23905
+    },
+    {
+      "path": "series_3/00000092_002.png",
+      "sha256": "b530406ef33d678b23caea4fc891cda167cb8b86ddaa864eb0285eed42ce44ad",
+      "bytes": 23204
+    },
+    {
+      "path": "series_4/00000092_003.png",
+      "sha256": "ed12218ca736c779863ffa9040808364915aa570150b2ef0b6d16b07873c7baa",
+      "bytes": 22273
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "patient_context.txt",
+      "sha256": "422b67a07b87658db92594eb2437b42b00f18b8815aeb444e24f3fbfd5deb711",
+      "bytes": 359
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:28:15.052Z",
+      "tokensIn": 466,
+      "tokensOut": 96,
+      "estimatedUsd": 0.002084,
+      "providerUsd": 0.0002838,
+      "retries": 0
+    },
+    {
+      "index": 2,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:28:18.890Z",
+      "tokensIn": 466,
+      "tokensOut": 92,
+      "estimatedUsd": 0.0020359999999999996,
+      "providerUsd": 0.0002778,
+      "retries": 0
+    },
+    {
+      "index": 3,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:28:22.718Z",
+      "tokensIn": 466,
+      "tokensOut": 109,
+      "estimatedUsd": 0.0022400000000000007,
+      "providerUsd": 0.00030330000000000005,
+      "retries": 0
+    },
+    {
+      "index": 4,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:28:26.164Z",
+      "tokensIn": 466,
+      "tokensOut": 104,
+      "estimatedUsd": 0.0021800000000000005,
+      "providerUsd": 0.0002957999999999999,
+      "retries": 0
+    },
+    {
+      "index": 5,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:28:32.258Z",
+      "tokensIn": 411,
+      "tokensOut": 145,
+      "estimatedUsd": 0.002562,
+      "providerUsd": 0.00034080000000000004,
+      "retries": 0
+    },
+    {
+      "index": 6,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:28:36.523Z",
+      "tokensIn": 407,
+      "tokensOut": 155,
+      "estimatedUsd": 0.0026739999999999993,
+      "providerUsd": 0.00035460000000000005,
+      "retries": 0
+    },
+    {
+      "index": 7,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:28:38.869Z",
+      "tokensIn": 424,
+      "tokensOut": 157,
+      "estimatedUsd": 0.0027319999999999983,
+      "providerUsd": 0.00036269999999999987,
+      "retries": 0
+    },
+    {
+      "index": 8,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:28:43.040Z",
+      "tokensIn": 419,
+      "tokensOut": 167,
+      "estimatedUsd": 0.0028420000000000042,
+      "providerUsd": 0.00037620000000000015,
+      "retries": 0
+    },
+    {
+      "index": 9,
+      "stage": "evolution",
+      "timestamp": "2026-09-29T10:28:51.726Z",
+      "tokensIn": 837,
+      "tokensOut": 277,
+      "estimatedUsd": 0.004997999999999999,
+      "providerUsd": 0.0006665999999999998,
+      "retries": 0
+    }
+  ],
+  "outputs": [
+    {
+      "path": "series_1/00000092_000_analysis.json",
+      "sha256": "a620919ae8354c75dc29a54096648243c4009db60268e9835accfc75f9068209",
+      "bytes": 1733
+    },
+    {
+      "path": "series_2/00000092_001_analysis.json",
+      "sha256": "6e69dbf357d47e82984570900fd7b5f86dc0abf01f37fbbcc66b6b19d6af658b",
+      "bytes": 1709
+    },
+    {
+      "path": "series_3/00000092_002_analysis.json",
+      "sha256": "6d44d6911e04cbe7657f4c0d262dad7f5432928582e0118684c08bf0aa20dd02",
+      "bytes": 1855
+    },
+    {
+      "path": "series_4/00000092_003_analysis.json",
+      "sha256": "0e1a7419b4dc61e5befe9496dbc5bef44d400a9d045d5154927d6c833b10f7c5",
+      "bytes": 1833
+    },
+    {
+      "path": "series_1/series_summary.md",
+      "sha256": "56dd12e0cea7972c69fe54d360906079287c3197b2e9aef544164368b7b4b83b",
+      "bytes": 1545
+    },
+    {
+      "path": "series_2/series_summary.md",
+      "sha256": "2eed44a7fcc885a110c3048616620df28de68d7c25bd85c5dea4e36c0e1d363f",
+      "bytes": 1616
+    },
+    {
+      "path": "series_3/series_summary.md",
+      "sha256": "3ec4836242d8429769c72115a45d1a0a8e251d1f8086c2f9ade2b5572bee5365",
+      "bytes": 1619
+    },
+    {
+      "path": "series_4/series_summary.md",
+      "sha256": "03f6b17e117bdf2ad14979345a8e1ad9ab1cc744cc124242273fa8677ce42cc2",
+      "bytes": 1665
+    },
+    {
+      "path": "evolution_analysis.json",
+      "sha256": "839c466326063b1c9a083dd7150bef9d8936123760dd526f0147915b4fa13e3b",
+      "bytes": 1721
+    },
+    {
+      "path": "combined_diagnostic_report.md",
+      "sha256": "0dcc0d034d8b99ebe00df68fa39e70dfc0076aa618212f3c3d3d16c0cd9950dd",
+      "bytes": 2422
+    }
+  ],
+  "totals": {
+    "calls": 9,
+    "tokensIn": 4362,
+    "tokensOut": 1302,
+    "estimatedUsd": 0.024348,
+    "providerUsd": 0.0032616,
+    "images": 4,
+    "imagesSucceeded": 4,
+    "imagesFailed": 0,
+    "series": 4
+  },
+  "exitCode": 0,
+  "warnings": [
+    "input-integrity: 4 image(s) matched --expect-hashes."
+  ],
+  "humanReview": {
+    "required": true,
+    "reviewedBy": null
+  },
+  "prevManifestHash": null,
+  "manifestHash": "5bb504d614b44764c3bd0777cbbed6721f55b40a09ea1d60f5fb4b9e4409c8f1"
+}

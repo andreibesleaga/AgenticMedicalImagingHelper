@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_1/img_19_00022519_004.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral interstitial opacities with a reticulonodular pattern throughout both lung fields.\",\n    \"Bilateral hilar prominence, possibly related to vascular engorgement or lymphadenopathy.\",\n    \"Cardiomediastinal silhouette appears within normal limits for size and contour.\",\n    \"Both hemidiaphragms are intact and appear at expected levels.\",\n    \"Costophrenic angles are clear.\",\n    \"Bony thorax is unremarkable for acute fractures or significant destructive lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Interstitial Lung Disease\",\n      \"description\": \"Diffuse bilateral interstitial opacities with a reticulonodular pattern are noted throughout both lung fields, suggestive of interstitial lung disease.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Bilateral Hilar Prominence\",\n      \"description\": \"Prominence of both hila is observed, which could be due to vascular congestion or lymphadenopathy, often seen in conditions associated with interstitial lung changes.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"The chest X-ray shows changes in both lungs consistent with interstitial lung disease. This means there is widespread inflammation or scarring in the tissues and spaces around the air sacs of the lungs. The central areas of the lungs (hila) also appear prominent, which could be related to these lung changes or possibly enlarged lymph nodes. The heart and other structures appear normal.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2018180024\",\n    \"https://radiopaedia.org/articles/interstitial-lung-disease\",\n    \"https://www.thoracic.org/patients/patient-resources/lung-disease-list/interstitial-lung-disease.php\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral interstitial opacities with a reticulonodular pattern throughout both lung fields.",
+    "Bilateral hilar prominence, possibly related to vascular engorgement or lymphadenopathy.",
+    "Cardiomediastinal silhouette appears within normal limits for size and contour.",
+    "Both hemidiaphragms are intact and appear at expected levels.",
+    "Costophrenic angles are clear.",
+    "Bony thorax is unremarkable for acute fractures or significant destructive lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Interstitial Lung Disease",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse bilateral interstitial opacities with a reticulonodular pattern are noted throughout both lung fields, suggestive of interstitial lung disease."
+    },
+    {
+      "name": "Bilateral Hilar Prominence",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "Prominence of both hila is observed, which could be due to vascular congestion or lymphadenopathy, often seen in conditions associated with interstitial lung changes."
+    }
+  ],
+  "summary": "The chest X-ray shows changes in both lungs consistent with interstitial lung disease. This means there is widespread inflammation or scarring in the tissues and spaces around the air sacs of the lungs. The central areas of the lungs (hila) also appear prominent, which could be related to these lung changes or possibly enlarged lymph nodes. The heart and other structures appear normal.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2018180024",
+    "https://radiopaedia.org/articles/interstitial-lung-disease",
+    "https://www.thoracic.org/patients/patient-resources/lung-disease-list/interstitial-lung-disease.php"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 406550,
+    "bytesOut": 403759,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:39:32.679Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

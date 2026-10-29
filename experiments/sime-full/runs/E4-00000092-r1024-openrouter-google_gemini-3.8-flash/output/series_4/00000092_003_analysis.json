@@ -1,0 +1,63 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_4/00000092_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\"modality\": \"X-ray\", \"anatomyRegion\": \"Chest (AP)\", \"quality\": \"Fair\", \"findings\": [\"There is blunting of the left costophrenic angle with a classic meniscus sign, consistent with a small-to-moderate left-sided pleural effusion.\", \"Accompanying opacity in the left retrocardiac region and left base, consistent with compressive atelectasis, with underlying pneumonia not excluded.\", \"Mild hazy opacity at the right base likely representing minor atelectasis.\", \"Cardiac silhouette is mildly enlarged, though partly obscured by left basilar opacification and AP projection technique.\", \"Prominent gastric air-fluid level beneath the left hemidiaphragm, which is a normal physiologic variant in an upright patient.\", \"Degenerative changes and superior elevation of the left humeral head, suggestive of severe rotator cuff tear arthropathy.\", \"External monitoring cables and radiopaque clips superimposed on the chest.\"], \"abnormalities\": [{\"name\": \"Left pleural effusion\", \"description\": \"Blunting of the left lateral and posterior costophrenic sulci with meniscus formation, indicating fluid collection within the pleural space.\", \"severity\": \"Moderate\", \"confidence\": 90}, {\"name\": \"Left lower lobe atelectasis\", \"description\": \"Increased opacity at the left lung base contiguous with the pleural effusion, typical for volume loss and compressive atelectasis.\", \"severity\": \"Moderate\", \"confidence\": 85}, {\"name\": \"Left shoulder arthropathy\", \"description\": \"Superior migration and articular remodeling of the left humeral head relative to the glenoid, consistent with chronic rotator cuff arthropathy.\", \"severity\": \"Moderate\", \"confidence\": 80}], \"summary\": \"The chest X-ray shows an accumulation of fluid around the base of the left lung (called a pleural effusion) along with partial collapse or under-inflation of the lower lung tissue (atelectasis). There is no obvious collapsed lung (pneumothorax). Degenerative arthritis is also noted in the left shoulder. Follow-up imaging or clinical correlation is recommended to determine the cause of the fluid collection.\", \"references\": [\"https://radiopaedia.org/articles/pleural-effusion\", \"https://radiopaedia.org/articles/atelectasis\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Fair",
+  "findings": [
+    "There is blunting of the left costophrenic angle with a classic meniscus sign, consistent with a small-to-moderate left-sided pleural effusion.",
+    "Accompanying opacity in the left retrocardiac region and left base, consistent with compressive atelectasis, with underlying pneumonia not excluded.",
+    "Mild hazy opacity at the right base likely representing minor atelectasis.",
+    "Cardiac silhouette is mildly enlarged, though partly obscured by left basilar opacification and AP projection technique.",
+    "Prominent gastric air-fluid level beneath the left hemidiaphragm, which is a normal physiologic variant in an upright patient.",
+    "Degenerative changes and superior elevation of the left humeral head, suggestive of severe rotator cuff tear arthropathy.",
+    "External monitoring cables and radiopaque clips superimposed on the chest."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left pleural effusion",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Blunting of the left lateral and posterior costophrenic sulci with meniscus formation, indicating fluid collection within the pleural space."
+    },
+    {
+      "name": "Left lower lobe atelectasis",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Increased opacity at the left lung base contiguous with the pleural effusion, typical for volume loss and compressive atelectasis."
+    },
+    {
+      "name": "Left shoulder arthropathy",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Superior migration and articular remodeling of the left humeral head relative to the glenoid, consistent with chronic rotator cuff arthropathy."
+    }
+  ],
+  "summary": "The chest X-ray shows an accumulation of fluid around the base of the left lung (called a pleural effusion) along with partial collapse or under-inflation of the lower lung tissue (atelectasis). There is no obvious collapsed lung (pneumothorax). Degenerative arthritis is also noted in the left shoulder. Follow-up imaging or clinical correlation is recommended to determine the cause of the fluid collection.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/atelectasis"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 378291,
+    "bytesOut": 375348,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:20:06.013Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

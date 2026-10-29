@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000148/series_1/00000148_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Presence of a well-defined, oval-shaped opacity in the right mid-lung zone, adjacent to the lateral chest wall\",\n    \"The opacity is dense and has smooth margins\",\n    \"The remainder of the lung fields are clear without evidence of consolidation or pleural effusion\",\n    \"Cardiac silhouette is within normal limits for size and shape\",\n    \"Hilar structures appear normal\",\n    \"Diaphragm is intact and costophrenic angles are sharp\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pulmonary Nodule/Mass\",\n      \"description\": \"A solitary, well-circumscribed opacity is seen in the peripheral right mid-lung, suggestive of a pulmonary nodule or mass.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a single, round spot (nodule or mass) in the middle part of the right lung. While this could be several things—including a benign growth, an infection, or a more serious tumor—further imaging, typically a CT scan, is necessary to determine the exact nature of the spot.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/solitary-pulmonary-nodule\",\n    \"https://www.acr.org/Clinical-Resources/Radiologic-Practice-Guidelines\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Presence of a well-defined, oval-shaped opacity in the right mid-lung zone, adjacent to the lateral chest wall",
+    "The opacity is dense and has smooth margins",
+    "The remainder of the lung fields are clear without evidence of consolidation or pleural effusion",
+    "Cardiac silhouette is within normal limits for size and shape",
+    "Hilar structures appear normal",
+    "Diaphragm is intact and costophrenic angles are sharp"
+  ],
+  "abnormalities": [
+    {
+      "name": "Pulmonary Nodule/Mass",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "A solitary, well-circumscribed opacity is seen in the peripheral right mid-lung, suggestive of a pulmonary nodule or mass."
+    }
+  ],
+  "summary": "The chest X-ray shows a single, round spot (nodule or mass) in the middle part of the right lung. While this could be several things—including a benign growth, an infection, or a more serious tumor—further imaging, typically a CT scan, is necessary to determine the exact nature of the spot.",
+  "references": [
+    "https://radiopaedia.org/articles/solitary-pulmonary-nodule",
+    "https://www.acr.org/Clinical-Resources/Radiologic-Practice-Guidelines"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22900,
+    "bytesOut": 22900,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:07:46.033Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

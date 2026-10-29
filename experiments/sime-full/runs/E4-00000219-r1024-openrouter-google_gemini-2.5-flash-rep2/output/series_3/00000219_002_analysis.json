@@ -1,0 +1,76 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_3/00000219_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Postsurgical changes with sternal wires are noted.\",\n    \"Bilateral hilar regions show increased interstitial markings, more prominent in the left.\",\n    \"Scattered small nodular opacities are seen in both lung fields, particularly in the lower lobes.\",\n    \"A small left pleural effusion is noted, with blunting of the left costophrenic angle.\",\n    \"Cardiac silhouette is mildly enlarged.\",\n    \"No acute pneumothorax is identified.\",\n    \"Bony structures appear intact for the visualized portions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Postsurgical changes\",\n      \"description\": \"Sternal wires are visible, indicating prior sternotomy, likely for cardiac surgery.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Increased interstitial markings\",\n      \"description\": \"Prominent interstitial markings are observed in both hilar regions, suggesting interstitial lung disease or vascular congestion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Nodular opacities\",\n      \"description\": \"Multiple small nodular opacities are scattered throughout both lung fields, raising concern for granulomatous disease, metastatic disease, or chronic inflammatory processes.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    },\n    {\n      \"name\": \"Left pleural effusion\",\n      \"description\": \"Blunting of the left costophrenic angle indicates a small collection of fluid in the left pleural space.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette appears mildly enlarged, suggesting possible cardiac chamber dilation or pericardial effusion.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"The chest X-ray shows changes from a previous surgery on the breastbone (sternal wires). There are some increased markings in the central part of both lungs and small spots scattered throughout the lungs, which could be due to various conditions. There is also a small amount of fluid around the left lung, and the heart appears slightly enlarged. These findings suggest the need for further evaluation to determine their cause and significance, especially given the history of surgery.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125027\",\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/pleural-effusion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Postsurgical changes with sternal wires are noted.",
+    "Bilateral hilar regions show increased interstitial markings, more prominent in the left.",
+    "Scattered small nodular opacities are seen in both lung fields, particularly in the lower lobes.",
+    "A small left pleural effusion is noted, with blunting of the left costophrenic angle.",
+    "Cardiac silhouette is mildly enlarged.",
+    "No acute pneumothorax is identified.",
+    "Bony structures appear intact for the visualized portions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Postsurgical changes",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Sternal wires are visible, indicating prior sternotomy, likely for cardiac surgery."
+    },
+    {
+      "name": "Increased interstitial markings",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Prominent interstitial markings are observed in both hilar regions, suggesting interstitial lung disease or vascular congestion."
+    },
+    {
+      "name": "Nodular opacities",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Multiple small nodular opacities are scattered throughout both lung fields, raising concern for granulomatous disease, metastatic disease, or chronic inflammatory processes."
+    },
+    {
+      "name": "Left pleural effusion",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Blunting of the left costophrenic angle indicates a small collection of fluid in the left pleural space."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "The cardiac silhouette appears mildly enlarged, suggesting possible cardiac chamber dilation or pericardial effusion."
+    }
+  ],
+  "summary": "The chest X-ray shows changes from a previous surgery on the breastbone (sternal wires). There are some increased markings in the central part of both lungs and small spots scattered throughout the lungs, which could be due to various conditions. There is also a small amount of fluid around the left lung, and the heart appears slightly enlarged. These findings suggest the need for further evaluation to determine their cause and significance, especially given the history of surgery.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125027",
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/pleural-effusion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 380748,
+    "bytesOut": 376448,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:07:28.814Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,63 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00005852/series_1/00005852_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Frontal chest radiograph.\",\n    \"Multiple tubes and lines are present, including a right internal jugular central venous catheter with tip terminating in the superior vena cava, a right-sided chest tube with tip directed apically, and another tube/line overlying the right lower lung zone.\",\n    \"The right lung demonstrates patchy opacities and areas of consolidation, particularly in the middle and lower lung zones.\",\n    \"The left lung is clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"The cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"The bony thorax appears intact without acute fracture or dislocation.\",\n    \"Subcutaneous emphysema is noted along the right lateral chest wall.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right lung opacities\",\n      \"description\": \"Patchy opacities and areas of consolidation in the right middle and lower lung zones, likely representing atelectasis, pneumonia, or contusion in the setting of trauma/intervention.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Subcutaneous emphysema\",\n      \"description\": \"Air tracking within the soft tissues of the right lateral chest wall, often seen post-chest tube placement or in the setting of trauma/pneumothorax.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Support apparatus\",\n      \"description\": \"Presence of a right internal jugular central venous catheter and a right-sided chest tube, appropriately positioned.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray shows the chest of a patient who has a chest tube and a central venous line placed on the right side. There are hazy areas in the right lung, which could be due to infection, fluid, or partial collapse of the lung tissue. There is also some air trapped in the soft tissues of the right chest wall, which is common after having a chest tube placed or following trauma. The left lung and heart appear normal. Your doctor will use these findings along with your clinical picture to decide on the best treatment plan.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-radiograph-in-the-intensive-care-unit\",\n    \"https://radiopaedia.org/articles/subcutaneous-emphysema\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Frontal chest radiograph.",
+    "Multiple tubes and lines are present, including a right internal jugular central venous catheter with tip terminating in the superior vena cava, a right-sided chest tube with tip directed apically, and another tube/line overlying the right lower lung zone.",
+    "The right lung demonstrates patchy opacities and areas of consolidation, particularly in the middle and lower lung zones.",
+    "The left lung is clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "The cardiomediastinal silhouette is within normal limits for size and contour.",
+    "The bony thorax appears intact without acute fracture or dislocation.",
+    "Subcutaneous emphysema is noted along the right lateral chest wall."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lung opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Patchy opacities and areas of consolidation in the right middle and lower lung zones, likely representing atelectasis, pneumonia, or contusion in the setting of trauma/intervention."
+    },
+    {
+      "name": "Subcutaneous emphysema",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "Air tracking within the soft tissues of the right lateral chest wall, often seen post-chest tube placement or in the setting of trauma/pneumothorax."
+    },
+    {
+      "name": "Support apparatus",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Presence of a right internal jugular central venous catheter and a right-sided chest tube, appropriately positioned."
+    }
+  ],
+  "summary": "This X-ray shows the chest of a patient who has a chest tube and a central venous line placed on the right side. There are hazy areas in the right lung, which could be due to infection, fluid, or partial collapse of the lung tissue. There is also some air trapped in the soft tissues of the right chest wall, which is common after having a chest tube placed or following trauma. The left lung and heart appear normal. Your doctor will use these findings along with your clinical picture to decide on the best treatment plan.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-in-the-intensive-care-unit",
+    "https://radiopaedia.org/articles/subcutaneous-emphysema"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 413155,
+    "bytesOut": 411185,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:38:34.745Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

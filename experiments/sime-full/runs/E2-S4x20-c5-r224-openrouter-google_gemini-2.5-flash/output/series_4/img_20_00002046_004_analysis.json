@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_4/img_20_00002046_004.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Extensive patchy airspace opacities are noted in the right upper and mid lung zones, consistent with consolidation.\",\n    \"Similar but less confluent patchy opacities are present in the left lower lung zone.\",\n    \"The heart size appears within normal limits.\",\n    \"Bilateral costophrenic angles are clear.\",\n    \"The visualized bony structures show no acute abnormalities.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Lung Consolidation\",\n      \"description\": \"Extensive patchy airspace opacities in the right upper and mid lung zones, suggestive of consolidation.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Left Lung Opacities\",\n      \"description\": \"Less confluent patchy airspace opacities in the left lower lung zone.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows areas of cloudiness or haziness in both lungs, which are more prominent in the right upper and middle parts, and also present in the lower left part. These findings are often seen when there is inflammation or fluid in the air sacs of the lungs, commonly due to an infection like pneumonia. The heart size looks normal, and there's no obvious fluid around the lungs. This type of pattern typically means there's an active process in the lungs that needs further medical evaluation.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/consolidation\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900698/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Extensive patchy airspace opacities are noted in the right upper and mid lung zones, consistent with consolidation.",
+    "Similar but less confluent patchy opacities are present in the left lower lung zone.",
+    "The heart size appears within normal limits.",
+    "Bilateral costophrenic angles are clear.",
+    "The visualized bony structures show no acute abnormalities."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Lung Consolidation",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Extensive patchy airspace opacities in the right upper and mid lung zones, suggestive of consolidation."
+    },
+    {
+      "name": "Left Lung Opacities",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Less confluent patchy airspace opacities in the left lower lung zone."
+    }
+  ],
+  "summary": "This X-ray of the chest shows areas of cloudiness or haziness in both lungs, which are more prominent in the right upper and middle parts, and also present in the lower left part. These findings are often seen when there is inflammation or fluid in the air sacs of the lungs, commonly due to an infection like pneumonia. The heart size looks normal, and there's no obvious fluid around the lungs. This type of pattern typically means there's an active process in the lungs that needs further medical evaluation.",
+  "references": [
+    "https://radiopaedia.org/articles/consolidation",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900698/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23632,
+    "bytesOut": 23632,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:02:36.422Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

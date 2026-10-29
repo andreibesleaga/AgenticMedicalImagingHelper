@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00011264/series_1/00011264_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear lung fields with no evidence of consolidation, mass, or effusion.\",\n    \"Cardiac silhouette within normal size limits.\",\n    \"Diaphragm domes well-defined; no blunting of costophrenic angles.\",\n    \"Bony thorax intact; no fractures or lytic lesions noted.\",\n    \"Trachea midline; mediastinal contours normal.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray appears normal. No signs of pneumonia, fluid, tumors, or structural abnormalities are visible. The heart and lungs look healthy, and the bones of the chest are intact. This is a reassuring result and typically indicates no acute chest pathology.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://www.uptodate.com/contents/chest-radiography-in-adults\",\n    \"https://radiopaedia.org/articles/chest-x-ray-an-approach\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Clear lung fields with no evidence of consolidation, mass, or effusion.",
+    "Cardiac silhouette within normal size limits.",
+    "Diaphragm domes well-defined; no blunting of costophrenic angles.",
+    "Bony thorax intact; no fractures or lytic lesions noted.",
+    "Trachea midline; mediastinal contours normal."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray appears normal. No signs of pneumonia, fluid, tumors, or structural abnormalities are visible. The heart and lungs look healthy, and the bones of the chest are intact. This is a reassuring result and typically indicates no acute chest pathology.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://www.uptodate.com/contents/chest-radiography-in-adults",
+    "https://radiopaedia.org/articles/chest-x-ray-an-approach"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 456470,
+    "bytesOut": 413239,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:11:07.724Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

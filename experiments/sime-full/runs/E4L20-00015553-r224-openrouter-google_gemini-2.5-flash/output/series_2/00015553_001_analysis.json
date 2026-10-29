@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00015553/series_2/00015553_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No evidence of acute cardiopulmonary pathology on this chest X-ray.\",\n    \"Lungs are clear bilaterally without focal consolidation, effusions, or pneumothorax.\",\n    \"Cardiac silhouette is normal in size and contour.\",\n    \"Mediastinum is unremarkable.\",\n    \"Bony thorax appears intact without acute fractures or significant abnormalities.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray appears normal. We don't see any signs of lung infections like pneumonia, fluid buildup around the lungs, or a collapsed lung. The heart size and shape look normal, and there are no obvious problems with the bones of the chest. Everything appears to be in good order.\",\n  \"references\": [\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://radiopaedia.org/articles/chest-x-ray-pa-view-anatomy\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No evidence of acute cardiopulmonary pathology on this chest X-ray.",
+    "Lungs are clear bilaterally without focal consolidation, effusions, or pneumothorax.",
+    "Cardiac silhouette is normal in size and contour.",
+    "Mediastinum is unremarkable.",
+    "Bony thorax appears intact without acute fractures or significant abnormalities."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray appears normal. We don't see any signs of lung infections like pneumonia, fluid buildup around the lungs, or a collapsed lung. The heart size and shape look normal, and there are no obvious problems with the bones of the chest. Everything appears to be in good order.",
+  "references": [
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://radiopaedia.org/articles/chest-x-ray-pa-view-anatomy"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 15796,
+    "bytesOut": 15796,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:23:42.068Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

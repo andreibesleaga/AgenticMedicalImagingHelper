@@ -1,0 +1,61 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_3/img_03_00018610_009.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Complete opacification of the right hemithorax with associated mediastinal shift to the left.\",\n    \"Trachea is deviated to the left.\",\n    \"Left lung appears hyperinflated, suggesting compensatory changes.\",\n    \"Diaphragmatic contours are obscured on the right.\",\n    \"No obvious skeletal abnormalities are seen.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Hemithorax Opacification\",\n      \"description\": \"The entire right hemithorax is opacified, indicating a significant consolidation or effusion. The associated mediastinal shift to the left suggests a large mass effect, most consistent with a massive pleural effusion or complete lung collapse (atelectasis) of the right lung.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"The mediastinum, including the trachea, is significantly shifted to the left, which is a direct consequence of the mass effect within the right hemithorax.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Left Lung Compensatory Hyperinflation\",\n      \"description\": \"The left lung appears hyperinflated, which is a common compensatory mechanism when the contralateral lung is compromised.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This X-ray shows that the entire right side of the chest is cloudy or white (opacified), and the central structures of the chest, like the windpipe, are pushed over to the left side. This is a significant finding that could be caused by a large collection of fluid around the lung (pleural effusion) or a complete collapse of the right lung. The left lung appears to be working harder to compensate for the right side's issue. This requires urgent medical attention to determine the exact cause and appropriate treatment.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/lobar-collapse\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Complete opacification of the right hemithorax with associated mediastinal shift to the left.",
+    "Trachea is deviated to the left.",
+    "Left lung appears hyperinflated, suggesting compensatory changes.",
+    "Diaphragmatic contours are obscured on the right.",
+    "No obvious skeletal abnormalities are seen."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Hemithorax Opacification",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "The entire right hemithorax is opacified, indicating a significant consolidation or effusion. The associated mediastinal shift to the left suggests a large mass effect, most consistent with a massive pleural effusion or complete lung collapse (atelectasis) of the right lung."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "The mediastinum, including the trachea, is significantly shifted to the left, which is a direct consequence of the mass effect within the right hemithorax."
+    },
+    {
+      "name": "Left Lung Compensatory Hyperinflation",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "The left lung appears hyperinflated, which is a common compensatory mechanism when the contralateral lung is compromised."
+    }
+  ],
+  "summary": "This X-ray shows that the entire right side of the chest is cloudy or white (opacified), and the central structures of the chest, like the windpipe, are pushed over to the left side. This is a significant finding that could be caused by a large collection of fluid around the lung (pleural effusion) or a complete collapse of the right lung. The left lung appears to be working harder to compensate for the right side's issue. This requires urgent medical attention to determine the exact cause and appropriate treatment.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/lobar-collapse"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22630,
+    "bytesOut": 22630,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:58:14.606Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00016493/series_1/00016493_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A central venous catheter is present, entering from the right neck, with its tip overlying the lower SVC or cavoatrial junction.\",\n    \"A circular radiopaque device is overlying the lower thoracic spine, consistent with a feeding tube bumper or similar external device.\",\n    \"The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"The cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"The osseous structures are intact without acute fracture or destructive lesion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Central Venous Catheter\",\n      \"description\": \"A central venous catheter is seen entering from the right, with its tip positioned appropriately in the lower superior vena cava or cavoatrial junction.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 98\n    },\n    {\n      \"name\": \"External Radiopaque Device\",\n      \"description\": \"A circular radiopaque device is visualized overlying the lower thoracic spine, likely representing an external device such as a feeding tube bumper. However, its exact location (internal vs external) cannot be definitively determined on a single AP view.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a central venous catheter (a thin tube inserted into a large vein) with its tip in a normal position. There is also a circular object visible, which is likely a medical device on the outside of the body, such as part of a feeding tube. The lungs, heart, and bones appear normal without signs of infection, fluid, or fractures.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/central-venous-catheter?lang=us\",\n    \"https://radiopaedia.org/articles/medical-devices-in-the-thorax?lang=us\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A central venous catheter is present, entering from the right neck, with its tip overlying the lower SVC or cavoatrial junction.",
+    "A circular radiopaque device is overlying the lower thoracic spine, consistent with a feeding tube bumper or similar external device.",
+    "The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "The cardiomediastinal silhouette is within normal limits for size and contour.",
+    "The osseous structures are intact without acute fracture or destructive lesion."
+  ],
+  "abnormalities": [
+    {
+      "name": "Central Venous Catheter",
+      "severity": "Normal",
+      "confidence": 98,
+      "description": "A central venous catheter is seen entering from the right, with its tip positioned appropriately in the lower superior vena cava or cavoatrial junction."
+    },
+    {
+      "name": "External Radiopaque Device",
+      "severity": "Normal",
+      "confidence": 90,
+      "description": "A circular radiopaque device is visualized overlying the lower thoracic spine, likely representing an external device such as a feeding tube bumper. However, its exact location (internal vs external) cannot be definitively determined on a single AP view."
+    }
+  ],
+  "summary": "The chest X-ray shows a central venous catheter (a thin tube inserted into a large vein) with its tip in a normal position. There is also a circular object visible, which is likely a medical device on the outside of the body, such as part of a feeding tube. The lungs, heart, and bones appear normal without signs of infection, fluid, or fractures.",
+  "references": [
+    "https://radiopaedia.org/articles/central-venous-catheter?lang=us",
+    "https://radiopaedia.org/articles/medical-devices-in-the-thorax?lang=us"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 380377,
+    "bytesOut": 376902,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:50:43.808Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

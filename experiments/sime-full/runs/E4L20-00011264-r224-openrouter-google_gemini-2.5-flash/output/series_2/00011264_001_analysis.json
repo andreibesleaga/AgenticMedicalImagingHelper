@@ -1,0 +1,44 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00011264/series_2/00011264_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pneumothorax, or large pleural effusion.\",\n    \"Cardiomediastinal contours are within normal limits for this projection.\",\n    \"Hilar regions appear unremarkable.\",\n    \"Diaphragms are intact and clear costophrenic angles.\",\n    \"A gastric air bubble is noted below the left hemidiaphragm.\",\n    \"Bony structures appear intact without acute fracture or destructive lesions.\",\n    \"A small metallic object is noted overlying the superior aspect of the left shoulder region, likely an external artifact.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray shows normal lung fields, heart, and surrounding structures. There are no signs of pneumonia, collapsed lung, or fluid around the lungs. The bones also appear normal. A small metallic object, likely a clip or jewelry, is seen on the left shoulder but is outside the body and not concerning.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.231025064\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pneumothorax, or large pleural effusion.",
+    "Cardiomediastinal contours are within normal limits for this projection.",
+    "Hilar regions appear unremarkable.",
+    "Diaphragms are intact and clear costophrenic angles.",
+    "A gastric air bubble is noted below the left hemidiaphragm.",
+    "Bony structures appear intact without acute fracture or destructive lesions.",
+    "A small metallic object is noted overlying the superior aspect of the left shoulder region, likely an external artifact."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows normal lung fields, heart, and surrounding structures. There are no signs of pneumonia, collapsed lung, or fluid around the lungs. The bones also appear normal. A small metallic object, likely a clip or jewelry, is seen on the left shoulder but is outside the body and not concerning.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.231025064",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23725,
+    "bytesOut": 23725,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:20:58.250Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

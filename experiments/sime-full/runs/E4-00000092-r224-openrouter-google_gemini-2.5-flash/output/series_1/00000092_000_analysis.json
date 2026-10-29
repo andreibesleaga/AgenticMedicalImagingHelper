@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000092/series_1/00000092_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right hemithorax shows an extensive opacification with an associated pleural effusion, partially obscuring the right hemidiaphragm and cardiac border.\",\n    \"Multiple curvilinear lucencies are seen within the opacified right lung, consistent with bronchograms.\",\n    \"The left lung appears clear with no focal consolidation or pleural effusion.\",\n    \"The cardiac silhouette is within normal limits for size and contour, though the right cardiac border is obscured.\",\n    \"A small gastric air-fluid level is noted under the left hemidiaphragm.\",\n    \"No obvious pneumothorax is seen.\",\n    \"Bony structures appear intact with no acute fractures or significant degenerative changes.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Lung Consolidation and Pleural Effusion\",\n      \"description\": \"Extensive consolidation and associated pleural effusion are noted in the right hemithorax, with air bronchograms suggesting an underlying parenchymal process such as pneumonia or atelectasis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows a significant area of cloudiness in the right lung, which could be due to an infection like pneumonia or a collapse of lung tissue (atelectasis). There is also fluid around the right lung (pleural effusion). The left lung appears clear, and the heart size seems normal, although part of its right border is hidden by the fluid and cloudiness. These findings suggest a medical condition affecting the right lung that would require further medical evaluation.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/consolidation-lung-1\",\n    \"https://radiopaedia.org/articles/pleural-effusion-1\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right hemithorax shows an extensive opacification with an associated pleural effusion, partially obscuring the right hemidiaphragm and cardiac border.",
+    "Multiple curvilinear lucencies are seen within the opacified right lung, consistent with bronchograms.",
+    "The left lung appears clear with no focal consolidation or pleural effusion.",
+    "The cardiac silhouette is within normal limits for size and contour, though the right cardiac border is obscured.",
+    "A small gastric air-fluid level is noted under the left hemidiaphragm.",
+    "No obvious pneumothorax is seen.",
+    "Bony structures appear intact with no acute fractures or significant degenerative changes."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Lung Consolidation and Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Extensive consolidation and associated pleural effusion are noted in the right hemithorax, with air bronchograms suggesting an underlying parenchymal process such as pneumonia or atelectasis."
+    }
+  ],
+  "summary": "This X-ray of the chest shows a significant area of cloudiness in the right lung, which could be due to an infection like pneumonia or a collapse of lung tissue (atelectasis). There is also fluid around the right lung (pleural effusion). The left lung appears clear, and the heart size seems normal, although part of its right border is hidden by the fluid and cloudiness. These findings suggest a medical condition affecting the right lung that would require further medical evaluation.",
+  "references": [
+    "https://radiopaedia.org/articles/consolidation-lung-1",
+    "https://radiopaedia.org/articles/pleural-effusion-1"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24381,
+    "bytesOut": 24381,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:22:55.733Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

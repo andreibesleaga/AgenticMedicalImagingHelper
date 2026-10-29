@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000092/series_2/00000092_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP/PA view)\",\"quality\":\"Fair\",\"findings\":[\"Frontal chest radiograph showing bilateral lung fields\",\"Cardiac silhouette appears within normal size limits\",\"Bony thorax including ribs, clavicles, and visible spine appears grossly intact\",\"Increased opacity/density noted in the right lower lung zone\",\"Costophrenic angles are partially visualized\",\"Soft tissue shadows of shoulders symmetrically visualized\"],\"abnormalities\":[{\"name\":\"Right lower lobe opacity\",\"description\":\"There is an area of increased density/opacity in the right lower lung zone, which could represent consolidation, atelectasis, or an overlying structure artifact. Further clinical correlation and possibly a lateral view are needed for characterization.\",\"severity\":\"Mild\",\"confidence\":45}],\"summary\":\"This chest X-ray shows the lungs, heart, and bones of the chest. The heart size appears normal, and the rib cage looks intact. There is a hazy area in the lower right part of the lung that may need further evaluation - this could be from various causes such as fluid, partial lung collapse, or simply positioning during the X-ray. It's important to note that image quality and positioning can affect how findings appear, so this should be correlated with the patient's symptoms and possibly additional imaging by a qualified radiologist or physician.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria\",\"https://pubmed.ncbi.nlm.nih.gov/?term=chest+radiograph+interpretation+guidelines\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP/PA view)",
+  "quality": "Fair",
+  "findings": [
+    "Frontal chest radiograph showing bilateral lung fields",
+    "Cardiac silhouette appears within normal size limits",
+    "Bony thorax including ribs, clavicles, and visible spine appears grossly intact",
+    "Increased opacity/density noted in the right lower lung zone",
+    "Costophrenic angles are partially visualized",
+    "Soft tissue shadows of shoulders symmetrically visualized"
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lower lobe opacity",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "There is an area of increased density/opacity in the right lower lung zone, which could represent consolidation, atelectasis, or an overlying structure artifact. Further clinical correlation and possibly a lateral view are needed for characterization."
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs, heart, and bones of the chest. The heart size appears normal, and the rib cage looks intact. There is a hazy area in the lower right part of the lung that may need further evaluation - this could be from various causes such as fluid, partial lung collapse, or simply positioning during the X-ray. It's important to note that image quality and positioning can affect how findings appear, so this should be correlated with the patient's symptoms and possibly additional imaging by a qualified radiologist or physician.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria",
+    "https://pubmed.ncbi.nlm.nih.gov/?term=chest+radiograph+interpretation+guidelines"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23905,
+    "bytesOut": 23905,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-29T10:37:18.738Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

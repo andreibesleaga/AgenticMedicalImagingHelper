@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_4/00000092_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP/PA)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Bilateral lower zone opacities with a meniscus sign on the right side\",\n    \"Blunting of the costophrenic angles bilaterally\",\n    \"Presence of an air-fluid level in the left upper abdomen/lower chest region, suggesting possible diaphragmatic eventration or a large gastric bubble\",\n    \"Increased interstitial markings in the mid-to-lower lung fields\",\n    \"Mediastinal contours appear within normal limits\",\n    \"Bony structures of the shoulders and ribs are visible without acute fracture\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Bilateral pleural effusions, more prominent on the right, characterized by opacity at the lung bases with meniscus signs and blunting of costophrenic angles.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pulmonary Opacities\",\n      \"description\": \"Bilateral lower lobe opacities, likely representing a combination of atelectasis and pleural fluid.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows signs of fluid buildup around the lungs (pleural effusions) on both sides, particularly the right. This can cause shortness of breath. There is also some collapse or consolidation of the lung tissue in the lower areas. A large gas bubble is seen in the stomach area, which is common but can sometimes displace the diaphragm. These findings can be associated with several conditions, such as heart failure, infection, or kidney issues, and require clinical correlation by your doctor.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.acr.org/Clinical-Resources/Radiology-Resources\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP/PA)",
+  "quality": "Fair",
+  "findings": [
+    "Bilateral lower zone opacities with a meniscus sign on the right side",
+    "Blunting of the costophrenic angles bilaterally",
+    "Presence of an air-fluid level in the left upper abdomen/lower chest region, suggesting possible diaphragmatic eventration or a large gastric bubble",
+    "Increased interstitial markings in the mid-to-lower lung fields",
+    "Mediastinal contours appear within normal limits",
+    "Bony structures of the shoulders and ribs are visible without acute fracture"
+  ],
+  "abnormalities": [
+    {
+      "name": "Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Bilateral pleural effusions, more prominent on the right, characterized by opacity at the lung bases with meniscus signs and blunting of costophrenic angles."
+    },
+    {
+      "name": "Pulmonary Opacities",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Bilateral lower lobe opacities, likely representing a combination of atelectasis and pleural fluid."
+    }
+  ],
+  "summary": "The chest X-ray shows signs of fluid buildup around the lungs (pleural effusions) on both sides, particularly the right. This can cause shortness of breath. There is also some collapse or consolidation of the lung tissue in the lower areas. A large gas bubble is seen in the stomach area, which is common but can sometimes displace the diaphragm. These findings can be associated with several conditions, such as heart failure, infection, or kidney issues, and require clinical correlation by your doctor.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.acr.org/Clinical-Resources/Radiology-Resources"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 378291,
+    "bytesOut": 288219,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:01:44.275Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

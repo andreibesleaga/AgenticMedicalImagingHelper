@@ -1,0 +1,60 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00027230/series_3/00027230_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right lower lobe consolidation\",\n    \"Mediastinal widening\",\n    \"Right pleural effusion\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right lower lobe consolidation\",\n      \"description\": \"Ill-defined opacity in the right lower lung field consistent with consolidation, potentially pneumonia.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Mediastinal widening\",\n      \"description\": \"The mediastinum appears wider than normal, possibly due to lymphadenopathy or other mass.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    },\n    {\n      \"name\": \"Right pleural effusion\",\n      \"description\": \"There is a small-to-moderate right pleural effusion identified.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows an opacity in the right lower lung (likely pneumonia), a widened mediastinum (consider lymph nodes), and a small-to-moderate fluid collection in the right pleural space (pleural effusion).\",\n  \"references\": [\n    \"https://pubmed.ncbi.nlm.nih.gov/28969124/ (Study on chest X-ray interpretation)\",\n    \"https://pubmed.ncbi.nlm.nih.gov/28172689/ (Study on mediastinal widening)\",\n    \"https://pubmed.ncbi.nlm.nih.gov/26901936/ (Study on pleural effusion)\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right lower lobe consolidation",
+    "Mediastinal widening",
+    "Right pleural effusion"
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lower lobe consolidation",
+      "severity": "Moderate",
+      "confidence": 100,
+      "description": "Ill-defined opacity in the right lower lung field consistent with consolidation, potentially pneumonia."
+    },
+    {
+      "name": "Mediastinal widening",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "The mediastinum appears wider than normal, possibly due to lymphadenopathy or other mass."
+    },
+    {
+      "name": "Right pleural effusion",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "There is a small-to-moderate right pleural effusion identified."
+    }
+  ],
+  "summary": "The chest X-ray shows an opacity in the right lower lung (likely pneumonia), a widened mediastinum (consider lymph nodes), and a small-to-moderate fluid collection in the right pleural space (pleural effusion).",
+  "references": [
+    "https://pubmed.ncbi.nlm.nih.gov/28969124/ (Study on chest X-ray interpretation)",
+    "https://pubmed.ncbi.nlm.nih.gov/28172689/ (Study on mediastinal widening)",
+    "https://pubmed.ncbi.nlm.nih.gov/26901936/ (Study on pleural effusion)"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 428188,
+    "bytesOut": 327147,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:13:25.482Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

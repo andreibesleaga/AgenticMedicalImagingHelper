@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000008/series_3/00000008_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Good\",\"findings\":[\"Bilateral lung fields visualized with symmetric inflation\",\"Cardiac silhouette appears within normal limits, though partially obscured by overlying density in the left lower zone\",\"There is a well-defined, rounded radiopaque density projected over the left lower chest/upper abdominal region, possibly overlying or within the left hemidiaphragm area\",\"Mediastinal structures appear midline\",\"Visible osseous structures (ribs, clavicles) show no obvious acute fracture\",\"Soft tissue markers 'S' and 'H' noted in the right upper corner of the image, likely side/technician markers\"],\"abnormalities\":[{\"name\":\"Left lower chest/subdiaphragmatic radiopaque density\",\"description\":\"A well-circumscribed, oval to round radiopaque density is seen in the left lower thoracic/upper abdominal region, possibly representing an artifact, external object, or an intrinsic finding (e.g., mass, foreign body, or overlying structure). Further correlation with clinical history and additional imaging is recommended.\",\"severity\":\"Moderate\",\"confidence\":55},{\"name\":\"Possible costophrenic angle blunting\",\"description\":\"Subtle blunting or haziness noted at the left costophrenic angle, which could suggest a small pleural effusion or overlying soft tissue density; correlation with lateral view recommended.\",\"severity\":\"Mild\",\"confidence\":40}],\"summary\":\"This is a chest X-ray showing the lungs, heart, and surrounding bones. Overall, the lungs appear well-expanded and the heart looks normal in size. However, there is a rounded dense area on the lower left side of the chest that stands out and needs further evaluation to determine if it's an external object, an artifact from the X-ray process, or something inside the body such as a mass. There may also be slight blunting at the bottom edge of the left lung, which sometimes indicates a small amount of fluid, but this is not certain from this view alone. It's important to have a radiologist review this image directly and possibly get additional views or tests to clarify these findings.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph-an-approach-to-review\",\"https://www.ncbi.nlm.nih.gov/books/NBK537239/\",\"https://www.radiologyinfo.org/en/info/chestrad\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral lung fields visualized with symmetric inflation",
+    "Cardiac silhouette appears within normal limits, though partially obscured by overlying density in the left lower zone",
+    "There is a well-defined, rounded radiopaque density projected over the left lower chest/upper abdominal region, possibly overlying or within the left hemidiaphragm area",
+    "Mediastinal structures appear midline",
+    "Visible osseous structures (ribs, clavicles) show no obvious acute fracture",
+    "Soft tissue markers 'S' and 'H' noted in the right upper corner of the image, likely side/technician markers"
+  ],
+  "abnormalities": [
+    {
+      "name": "Left lower chest/subdiaphragmatic radiopaque density",
+      "severity": "Moderate",
+      "confidence": 55,
+      "description": "A well-circumscribed, oval to round radiopaque density is seen in the left lower thoracic/upper abdominal region, possibly representing an artifact, external object, or an intrinsic finding (e.g., mass, foreign body, or overlying structure). Further correlation with clinical history and additional imaging is recommended."
+    },
+    {
+      "name": "Possible costophrenic angle blunting",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Subtle blunting or haziness noted at the left costophrenic angle, which could suggest a small pleural effusion or overlying soft tissue density; correlation with lateral view recommended."
+    }
+  ],
+  "summary": "This is a chest X-ray showing the lungs, heart, and surrounding bones. Overall, the lungs appear well-expanded and the heart looks normal in size. However, there is a rounded dense area on the lower left side of the chest that stands out and needs further evaluation to determine if it's an external object, an artifact from the X-ray process, or something inside the body such as a mass. There may also be slight blunting at the bottom edge of the left lung, which sometimes indicates a small amount of fluid, but this is not certain from this view alone. It's important to have a radiologist review this image directly and possibly get additional views or tests to clarify these findings.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-an-approach-to-review",
+    "https://www.ncbi.nlm.nih.gov/books/NBK537239/",
+    "https://www.radiologyinfo.org/en/info/chestrad"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21590,
+    "bytesOut": 21590,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-29T10:33:10.080Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,87 @@
+> **Requires review by a qualified clinician before any use.**
+> This report is unreviewed AI research output. No finding, diagnosis, trend, forecast or
+> treatment suggestion in it has been checked by a human clinician, and none may be acted
+> on until one has. Recorded as `humanReview` in `run_manifest.json` (EU AI Act Art. 14).
+
+# Combined Diagnostic Report
+
+> ⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made.
+
+**Generated**: 2026-10-08T10:26:17.234Z
+**Series analyzed**: 4 (series_1, series_2, series_3, series_4)
+**Overall progression**: Worsening
+**Structured output**: schema-validated
+
+## Temporal Evolution Analysis
+
+# Temporal Chest Radiograph Analysis Across 4 Sessions
+
+## Overview
+Four sequential single-view chest radiographs were reviewed in chronological order. Findings evolve from an essentially clear chest radiograph with an ambiguous gastric air-fluid structure (Series 1-2) to a clearly defined and progressively worsening **left hydropneumothorax with compressive atelectasis** (Series 3-4), accompanied by new right lung interstitial changes and incidental neck surgical clips by the final session.
+
+## Key Trends
+
+### 1. Left Hemithorax Air-Fluid Collection / Hydropneumothorax
+- **Series 1:** Prominent rounded lucency with air-fluid level in the left upper abdomen/lower chest, favoring a distended gastric bubble; dilated bowel loop not excluded.
+- **Series 2:** Normal gastric bubble in the expected left upper quadrant position; lungs clear—appears as an interval normalization or different positioning.
+- **Series 3 (Inflection Point):** New distinct air-fluid level in the **left lower hemithorax**, raising concern for hydropneumothorax, loculated effusion, or diaphragmatic hernia.
+- **Series 4:** Well-defined **left hydropneumothorax** with associated left lung volume loss/compressive atelectasis — clear progression from Series 3.
+- **Trend:** Worsening.
+
+### 2. Right Lung Parenchyma
+- Clear in Series 1 and 2; not specifically described as abnormal in Series 3.
+- **Series 4:** New coarse reticular/interstitial markings suggesting a chronic parenchymal process (e.g., fibrosis or old infection).
+- **Trend:** Worsening (new finding at final session).
+
+### 3. Cardiomediastinal Silhouette
+- Consistently unremarkable across all sessions, though assessment is limited by rotation in each study.
+- **Trend:** Stable.
+
+### 4. Skeletal Structures
+- No fractures or skeletal abnormalities identified in any session.
+- **Trend:** Stable.
+
+### 5. Incidental Findings
+- Series 1-3: External monitoring leads, markers, and nonspecific linear/punctate radiopaque artifacts.
+- **Series 4:** New bilateral neck surgical clips/sutures, indicating an interval surgical procedure (e.g., thyroidectomy) not previously present.
+- **Trend:** Worsening (new finding, implying an interval clinical event).
+
+## Overall Progression
+**Worsening** — The most significant change is the emergence and progression of a left-sided hydropneumothorax between Series 2 and Series 4, accompanied by new compressive atelectasis and right lung interstitial changes.
+
+#### Forecasted Evolution (Without Treatment) (model text — experimental, not clinical recommendations)
+If left untreated, the hydropneumothorax is likely to enlarge or become loculated, worsening compressive atelectasis and potentially leading to empyema or bronchopleural fistula. The right lung interstitial changes may progress toward more diffuse chronic parenchymal disease.
+
+#### Educational Treatment Considerations (model text — experimental, not clinical recommendations)
+- CT chest for definitive characterization of the pleural collection
+- Consideration of thoracentesis or chest tube drainage if clinically indicated
+- Fluid analysis/culture to exclude infection (empyema)
+- Correlation with recent surgical/traumatic history
+- Multidisciplinary pulmonology/thoracic surgery evaluation
+- Serial imaging follow-up to track both pleural and interstitial findings
+
+*This analysis is AI-generated for educational purposes only and does not replace professional radiological or clinical review.*
+
+## Per-Finding Trends
+- **Left hemithorax air-fluid collection / hydropneumothorax** — Worsening: Series 1 shows an ambiguous air-fluid lucency in the left upper abdomen/lower chest (possible distended gastric bubble). Series 2 shows a normal, unremarkable gastric bubble with otherwise clear lungs—apparent interval normalization or a different patient positioning. Series 3 introduces a distinct air-fluid level in the left lower hemithorax, newly concerning for hydropneumothorax, loculated effusion, or diaphragmatic hernia. Series 4 confirms a well-defined left hydropneumothorax with superimposed left lung volume loss/compressive atelectasis, indicating progression of the pleural process and worsening mass effect on the adjacent lung. Inflection point: between Series 2 and Series 3, where a new pleural/abdominal air-fluid abnormality emerges and then progresses by Series 4.
+- **Right lung parenchyma** — Worsening: Lungs are clear bilaterally in Series 1 and 2. By Series 4, coarse reticular/interstitial markings appear in the right lung, suggesting a new or evolving chronic parenchymal process (e.g., fibrosis, infection) not present in earlier sessions. No right lung finding is described in Series 3, so the inflection point for this finding is at Series 4.
+- **Cardiomediastinal silhouette** — Stable: Described as unremarkable or normal in Series 1, 2, and partially assessable in Series 3 and 4, though consistently limited by rotation and overlying structures across all sessions; no definite interval change reported.
+- **Skeletal structures** — Stable: No acute fracture or skeletal abnormality identified in any of the four series; clavicles, ribs, and scapulae remain unremarkable throughout.
+- **Incidental findings (lines/markers/surgical clips)** — Worsening: Series 1-3 show only external markers, ECG leads, or nonspecific linear/punctate radiopaque artifacts. Series 4 newly introduces bilateral neck surgical clips/sutures, indicating an interval surgical intervention (e.g., thyroid/parathyroid surgery) between Series 3 and Series 4 that was not present previously.
+
+## Forecasted Evolution
+Based strictly on the observed imaging trend, the left-sided hydropneumothorax is likely to progressively enlarge or organize without intervention, leading to further compressive atelectasis, potential loculation, and risk of secondary infection (empyema) or bronchopleural fistula formation. The newly noted right-sided interstitial changes may represent an evolving chronic process that could progress to more diffuse fibrosis or recurrent infection if untreated. Continued lung volume loss on the left and functional compromise of respiratory mechanics would be expected if the underlying etiology (e.g., post-surgical, infectious, or traumatic) is not addressed.
+
+## Treatment Suggestions (experimental — not clinical recommendations)
+_AI-generated suggestions for educational use only. They are not clinical recommendations and must not be acted on._
+
+- Obtain cross-sectional imaging (CT chest) to characterize the pleural collection, confirm loculation, and assess for bronchopleural fistula or underlying lung pathology
+- Consider diagnostic/therapeutic thoracentesis or chest tube drainage if hydropneumothorax is confirmed and clinically significant
+- Evaluate for infectious etiology (e.g., empyema) with fluid analysis/culture if drainage is performed
+- Correlate with surgical history (neck surgery) and any recent thoracic procedures to determine etiology of pleural findings
+- Pulmonology or thoracic surgery referral for multidisciplinary management of the pleural collection and right-sided interstitial changes
+- Follow-up chest radiographs or CT to monitor progression or resolution of both the left pleural process and right lung interstitial findings
+
+---
+*Generated by AgenticMedicalImagingHelper v1.1.0 | Educational use only*
+*This report is AI-generated for educational purposes only. Professional clinical review required.*

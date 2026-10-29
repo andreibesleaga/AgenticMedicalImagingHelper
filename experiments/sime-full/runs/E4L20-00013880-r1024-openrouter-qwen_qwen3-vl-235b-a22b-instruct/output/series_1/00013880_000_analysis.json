@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00013880/series_1/00013880_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear lung fields with no evidence of consolidation, mass, or effusion.\",\n    \"Normal cardiac silhouette and mediastinal contours.\",\n    \"Intact bony thorax including ribs, clavicles, and spine without fracture or lytic lesion.\",\n    \"A radiopaque circular object consistent with a pacemaker generator is visible in the left upper chest region.\",\n    \"Diaphragm domes are well-defined; costophrenic angles are sharp.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pacemaker Device\",\n      \"description\": \"A radiopaque device consistent with a cardiac pacemaker generator is present in the left upper chest. Leads are not clearly visualized but likely extend into the cardiac silhouette. No signs of device malfunction or migration on static image.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This chest X-ray shows normal lungs and heart size. A pacemaker device is visible in the left upper chest, which is expected if the patient has a history of heart rhythm issues. The device appears properly positioned, and there are no signs of complications like fluid buildup or pneumonia. This is a routine finding for patients with implanted cardiac devices.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/books/NBK538206/\",\n    \"https://radiopaedia.org/articles/chest-x-ray-pacemaker\",\n    \"https://www.radiologyinfo.org/en/info/chestxray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Clear lung fields with no evidence of consolidation, mass, or effusion.",
+    "Normal cardiac silhouette and mediastinal contours.",
+    "Intact bony thorax including ribs, clavicles, and spine without fracture or lytic lesion.",
+    "A radiopaque circular object consistent with a pacemaker generator is visible in the left upper chest region.",
+    "Diaphragm domes are well-defined; costophrenic angles are sharp."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pacemaker Device",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "A radiopaque device consistent with a cardiac pacemaker generator is present in the left upper chest. Leads are not clearly visualized but likely extend into the cardiac silhouette. No signs of device malfunction or migration on static image."
+    }
+  ],
+  "summary": "This chest X-ray shows normal lungs and heart size. A pacemaker device is visible in the left upper chest, which is expected if the patient has a history of heart rhythm issues. The device appears properly positioned, and there are no signs of complications like fluid buildup or pneumonia. This is a routine finding for patients with implanted cardiac devices.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK538206/",
+    "https://radiopaedia.org/articles/chest-x-ray-pacemaker",
+    "https://www.radiologyinfo.org/en/info/chestxray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 460972,
+    "bytesOut": 417189,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:12:12.415Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

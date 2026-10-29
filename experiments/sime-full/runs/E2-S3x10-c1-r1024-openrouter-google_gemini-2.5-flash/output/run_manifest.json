@@ -1,0 +1,749 @@
+{
+  "manifestVersion": "1.0",
+  "toolVersion": "1.1.0",
+  "startedAt": "2026-10-08T09:34:06.670Z",
+  "finishedAt": "2026-10-08T09:37:06.523Z",
+  "provider": "openrouter",
+  "model": "google/gemini-2.5-flash",
+  "pricing": {
+    "inputUsdPerMillion": 0.3,
+    "outputUsdPerMillion": 2.5
+  },
+  "settings": {
+    "concurrency": 1,
+    "maxCostUsd": 1,
+    "retries": 3,
+    "imageQuality": "auto"
+  },
+  "inputDir": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10",
+  "outputDir": "/home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E2-S3x10-c1-r1024-openrouter-google_gemini-2.5-flash/output",
+  "inputs": [
+    {
+      "path": "series_1/img_01_00013464_000.png",
+      "sha256": "f0a18066fc135cc853f68624a164093492b747a4e836fa4e0316ec297d5c6ced",
+      "bytes": 385399
+    },
+    {
+      "path": "series_1/img_02_00010727_000.png",
+      "sha256": "55f0e6d4387db358bd0900b81a31ade5a430602b527157104f8799e8bde60d66",
+      "bytes": 438682
+    },
+    {
+      "path": "series_1/img_03_00019238_009.png",
+      "sha256": "1c0c8c5324292b6c5b3dcfad2a9d891389b3a9fcf03068a92a1b23e8fa9326da",
+      "bytes": 450035
+    },
+    {
+      "path": "series_1/img_04_00007040_002.png",
+      "sha256": "c2725cfc823d725a5d13ec9dd4ef2280e30e95ab023a37504b76a5e468b7644c",
+      "bytes": 384040
+    },
+    {
+      "path": "series_1/img_05_00010693_004.png",
+      "sha256": "30b10b07545a2746960f67583f6ba5e9cb6fa24631a60aa336acc46cfbe10553",
+      "bytes": 424246
+    },
+    {
+      "path": "series_1/img_06_00027163_000.png",
+      "sha256": "105af4a25ad9240635a5a313f7b3bc6260aef2154747d49a32867fe8765cdcee",
+      "bytes": 396187
+    },
+    {
+      "path": "series_1/img_07_00019169_019.png",
+      "sha256": "f5ead004a4cc7097a5b87f8fa07981cef40dd821eb3c481108ef4ced4e78c6f7",
+      "bytes": 409656
+    },
+    {
+      "path": "series_1/img_08_00013795_000.png",
+      "sha256": "527669c274d81073c0b1cee56340273b75024a29ee6827671bd8167a9319ea45",
+      "bytes": 288090
+    },
+    {
+      "path": "series_1/img_09_00000623_005.png",
+      "sha256": "92e1b39c19a504832bdfc3739bb60eed47f5b06cfa007db4d37d2061081d1fa2",
+      "bytes": 394827
+    },
+    {
+      "path": "series_1/img_10_00010531_038.png",
+      "sha256": "4ab715effcb1c59c14c7b6c8469684e528d663a5132b6b74ee4c0afabaa6dedf",
+      "bytes": 412585
+    },
+    {
+      "path": "series_2/img_01_00028504_001.png",
+      "sha256": "962478a9df45741949e05dc61a19f2ae8c88055dd2711662bd167c1c94103629",
+      "bytes": 385786
+    },
+    {
+      "path": "series_2/img_02_00006186_005.png",
+      "sha256": "d0482eab66752a178e6e28b3ec3b11faeb9d52cdf43325eecf80989ab5e89b3b",
+      "bytes": 399840
+    },
+    {
+      "path": "series_2/img_03_00029998_005.png",
+      "sha256": "947586ece0cb4d38608ed41241344cbafadd324675b789ca600e0c613aec4446",
+      "bytes": 395339
+    },
+    {
+      "path": "series_2/img_04_00011823_001.png",
+      "sha256": "9e8331ad34e68c135183d0559b6ea6c33c5a68a8c6561be67bd8682ea97ae01e",
+      "bytes": 405605
+    },
+    {
+      "path": "series_2/img_05_00022764_006.png",
+      "sha256": "aca27eafd3be9701ec6f5715a0d1197264c4456d3faed2404568bc02aca9fdcb",
+      "bytes": 444722
+    },
+    {
+      "path": "series_2/img_06_00024750_000.png",
+      "sha256": "1aab4fe80d70788ac51bf339ed644fb64d01f9f7617389c00382e865b4f7f8b2",
+      "bytes": 407984
+    },
+    {
+      "path": "series_2/img_07_00010980_004.png",
+      "sha256": "6db4f1ae9b78584b8794583367789b751904cf288e97be7631fce0c34acac4a4",
+      "bytes": 459063
+    },
+    {
+      "path": "series_2/img_08_00012359_000.png",
+      "sha256": "83da3235f74bb3258de84aa66d13144f6920a84e73e24e172f4f1302754ccc1b",
+      "bytes": 445074
+    },
+    {
+      "path": "series_2/img_09_00022519_004.png",
+      "sha256": "6b468ef7139169f72972f02bb607b5ac3153e64e4bd7705305e322705ff245d3",
+      "bytes": 406550
+    },
+    {
+      "path": "series_2/img_10_00023092_000.png",
+      "sha256": "f40ad24eb64507285581c8597d118c4bd54f4cf3f99060e0f591f99ccbaf2b9b",
+      "bytes": 440634
+    },
+    {
+      "path": "series_3/img_01_00014666_000.png",
+      "sha256": "3af8a43fe1cc3a6a41baf0d95f0b641587cdfe6eb06ddaa65f549168486c6dc9",
+      "bytes": 468627
+    },
+    {
+      "path": "series_3/img_02_00021748_002.png",
+      "sha256": "d969f6a33154d0b069e464e5fde65285074f2ea83a85c172fde142708e04a1fa",
+      "bytes": 467292
+    },
+    {
+      "path": "series_3/img_03_00004349_000.png",
+      "sha256": "cf14e49f0c04958abad070ef73e049747d09e638ec20d934c662866f4ccd062e",
+      "bytes": 382516
+    },
+    {
+      "path": "series_3/img_04_00002275_000.png",
+      "sha256": "5bafefd42eb68d86c10753883905c89064c6f831875e1c4149f53c1290620795",
+      "bytes": 396643
+    },
+    {
+      "path": "series_3/img_05_00023143_000.png",
+      "sha256": "6472a5c3a2c3602b1dd3889337dfefd6d487a5257e5671f103ad786e8f5c5af6",
+      "bytes": 369669
+    },
+    {
+      "path": "series_3/img_06_00003940_000.png",
+      "sha256": "e56d7424c80a501a1bcb74e830f96dc6228ceed4745fa00ee2de4cdc4d7ca58b",
+      "bytes": 388526
+    },
+    {
+      "path": "series_3/img_07_00015068_007.png",
+      "sha256": "8997082a60e56560c73a94af91e152ce1b4987744e437bb95834be820395e600",
+      "bytes": 396270
+    },
+    {
+      "path": "series_3/img_08_00029278_002.png",
+      "sha256": "873763b6bc9808e6bbcfb5797efba20e113b893d07941f29131bfe426effc5a0",
+      "bytes": 418408
+    },
+    {
+      "path": "series_3/img_09_00009918_001.png",
+      "sha256": "fcde443cc6eaad7eb1753fe570740b0adf9e18f2d72268ed9b44346cb3545486",
+      "bytes": 388899
+    },
+    {
+      "path": "series_3/img_10_00029872_000.png",
+      "sha256": "63647b09aced597df40f6f734d810dd9fd2e0098c6577bd715ef6f8261a8180b",
+      "bytes": 414992
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "patient_context.txt",
+      "sha256": "8955917daa6f3d85ab2ce7373e53649a209e6946e8fd2a106752f7edfaba1df9",
+      "bytes": 197
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:34:11.155Z",
+      "tokensIn": 1693,
+      "tokensOut": 309,
+      "estimatedUsd": 0.0012804000000000001,
+      "providerUsd": 0.0012804,
+      "retries": 0
+    },
+    {
+      "index": 2,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:34:15.950Z",
+      "tokensIn": 1693,
+      "tokensOut": 272,
+      "estimatedUsd": 0.0011879,
+      "providerUsd": 0.0011878999999999998,
+      "retries": 0
+    },
+    {
+      "index": 3,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:34:21.095Z",
+      "tokensIn": 1693,
+      "tokensOut": 443,
+      "estimatedUsd": 0.0016154,
+      "providerUsd": 0.0016153999999999995,
+      "retries": 0
+    },
+    {
+      "index": 4,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:34:26.676Z",
+      "tokensIn": 1693,
+      "tokensOut": 422,
+      "estimatedUsd": 0.0015628999999999999,
+      "providerUsd": 0.0015628999999999999,
+      "retries": 0
+    },
+    {
+      "index": 5,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:34:32.367Z",
+      "tokensIn": 1693,
+      "tokensOut": 412,
+      "estimatedUsd": 0.0015379,
+      "providerUsd": 0.0015379,
+      "retries": 0
+    },
+    {
+      "index": 6,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:34:48.907Z",
+      "tokensIn": 1693,
+      "tokensOut": 447,
+      "estimatedUsd": 0.0016254000000000008,
+      "providerUsd": 0.0016254,
+      "retries": 0
+    },
+    {
+      "index": 7,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:34:53.957Z",
+      "tokensIn": 1693,
+      "tokensOut": 352,
+      "estimatedUsd": 0.0013878999999999992,
+      "providerUsd": 0.001387900000000001,
+      "retries": 0
+    },
+    {
+      "index": 8,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:34:58.423Z",
+      "tokensIn": 1693,
+      "tokensOut": 214,
+      "estimatedUsd": 0.0010428999999999994,
+      "providerUsd": 0.0010428999999999994,
+      "retries": 0
+    },
+    {
+      "index": 9,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:35:03.569Z",
+      "tokensIn": 1693,
+      "tokensOut": 343,
+      "estimatedUsd": 0.001365400000000001,
+      "providerUsd": 0.0013653999999999993,
+      "retries": 0
+    },
+    {
+      "index": 10,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:35:06.021Z",
+      "tokensIn": 1693,
+      "tokensOut": 253,
+      "estimatedUsd": 0.0011403999999999997,
+      "providerUsd": 0.0011403999999999997,
+      "retries": 0
+    },
+    {
+      "index": 11,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:35:10.618Z",
+      "tokensIn": 1693,
+      "tokensOut": 284,
+      "estimatedUsd": 0.0012178999999999992,
+      "providerUsd": 0.001217900000000001,
+      "retries": 0
+    },
+    {
+      "index": 12,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:35:15.057Z",
+      "tokensIn": 1693,
+      "tokensOut": 294,
+      "estimatedUsd": 0.0012429000000000016,
+      "providerUsd": 0.0012429000000000016,
+      "retries": 0
+    },
+    {
+      "index": 13,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:35:25.635Z",
+      "tokensIn": 1693,
+      "tokensOut": 715,
+      "estimatedUsd": 0.0022953999999999995,
+      "providerUsd": 0.0022953999999999995,
+      "retries": 0
+    },
+    {
+      "index": 14,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:35:29.743Z",
+      "tokensIn": 1693,
+      "tokensOut": 292,
+      "estimatedUsd": 0.0012379000000000001,
+      "providerUsd": 0.0012379000000000001,
+      "retries": 0
+    },
+    {
+      "index": 15,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:35:34.651Z",
+      "tokensIn": 1693,
+      "tokensOut": 465,
+      "estimatedUsd": 0.001670399999999999,
+      "providerUsd": 0.001670399999999999,
+      "retries": 0
+    },
+    {
+      "index": 16,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:35:37.809Z",
+      "tokensIn": 1693,
+      "tokensOut": 447,
+      "estimatedUsd": 0.001625399999999999,
+      "providerUsd": 0.001625399999999999,
+      "retries": 0
+    },
+    {
+      "index": 17,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:35:43.801Z",
+      "tokensIn": 1693,
+      "tokensOut": 577,
+      "estimatedUsd": 0.001950399999999998,
+      "providerUsd": 0.0019504000000000014,
+      "retries": 0
+    },
+    {
+      "index": 18,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:35:48.200Z",
+      "tokensIn": 1693,
+      "tokensOut": 288,
+      "estimatedUsd": 0.001227900000000004,
+      "providerUsd": 0.0012279000000000005,
+      "retries": 0
+    },
+    {
+      "index": 19,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:35:54.365Z",
+      "tokensIn": 1693,
+      "tokensOut": 378,
+      "estimatedUsd": 0.0014529,
+      "providerUsd": 0.0014529,
+      "retries": 0
+    },
+    {
+      "index": 20,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:35:59.299Z",
+      "tokensIn": 1693,
+      "tokensOut": 317,
+      "estimatedUsd": 0.0013004000000000002,
+      "providerUsd": 0.0013004000000000002,
+      "retries": 0
+    },
+    {
+      "index": 21,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:36:04.177Z",
+      "tokensIn": 1693,
+      "tokensOut": 284,
+      "estimatedUsd": 0.001217900000000001,
+      "providerUsd": 0.001217900000000001,
+      "retries": 0
+    },
+    {
+      "index": 22,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:36:05.273Z",
+      "tokensIn": 1693,
+      "tokensOut": 267,
+      "estimatedUsd": 0.0011754,
+      "providerUsd": 0.0011754,
+      "retries": 0
+    },
+    {
+      "index": 23,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:36:09.888Z",
+      "tokensIn": 1693,
+      "tokensOut": 281,
+      "estimatedUsd": 0.0012104000000000004,
+      "providerUsd": 0.0012104000000000004,
+      "retries": 0
+    },
+    {
+      "index": 24,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:36:14.988Z",
+      "tokensIn": 1693,
+      "tokensOut": 390,
+      "estimatedUsd": 0.0014829000000000023,
+      "providerUsd": 0.0014829000000000023,
+      "retries": 0
+    },
+    {
+      "index": 25,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:36:19.103Z",
+      "tokensIn": 1693,
+      "tokensOut": 271,
+      "estimatedUsd": 0.0011853999999999962,
+      "providerUsd": 0.0011854000000000031,
+      "retries": 0
+    },
+    {
+      "index": 26,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:36:22.951Z",
+      "tokensIn": 1693,
+      "tokensOut": 255,
+      "estimatedUsd": 0.0011454000000000047,
+      "providerUsd": 0.0011453999999999978,
+      "retries": 0
+    },
+    {
+      "index": 27,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:36:27.966Z",
+      "tokensIn": 1693,
+      "tokensOut": 375,
+      "estimatedUsd": 0.0014453999999999925,
+      "providerUsd": 0.0014453999999999995,
+      "retries": 0
+    },
+    {
+      "index": 28,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:36:33.426Z",
+      "tokensIn": 1693,
+      "tokensOut": 341,
+      "estimatedUsd": 0.0013603999999999977,
+      "providerUsd": 0.0013603999999999977,
+      "retries": 0
+    },
+    {
+      "index": 29,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:36:35.902Z",
+      "tokensIn": 1693,
+      "tokensOut": 340,
+      "estimatedUsd": 0.001357900000000009,
+      "providerUsd": 0.0013579000000000022,
+      "retries": 0
+    },
+    {
+      "index": 30,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:36:40.945Z",
+      "tokensIn": 1693,
+      "tokensOut": 348,
+      "estimatedUsd": 0.0013778999999999944,
+      "providerUsd": 0.0013779000000000013,
+      "retries": 0
+    },
+    {
+      "index": 31,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:36:46.854Z",
+      "tokensIn": 4420,
+      "tokensOut": 933,
+      "estimatedUsd": 0.003658500000000002,
+      "providerUsd": 0.003658500000000002,
+      "retries": 0
+    },
+    {
+      "index": 32,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:36:53.381Z",
+      "tokensIn": 5012,
+      "tokensOut": 1218,
+      "estimatedUsd": 0.0045486,
+      "providerUsd": 0.0045486,
+      "retries": 0
+    },
+    {
+      "index": 33,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:36:59.576Z",
+      "tokensIn": 4107,
+      "tokensOut": 794,
+      "estimatedUsd": 0.0032171000000000005,
+      "providerUsd": 0.0032171000000000005,
+      "retries": 0
+    },
+    {
+      "index": 34,
+      "stage": "evolution",
+      "timestamp": "2026-10-08T09:37:06.368Z",
+      "tokensIn": 2163,
+      "tokensOut": 1317,
+      "estimatedUsd": 0.003941399999999998,
+      "providerUsd": 0.003941399999999998,
+      "retries": 0
+    }
+  ],
+  "outputs": [
+    {
+      "path": "series_1/img_01_00013464_000_analysis.json",
+      "sha256": "6a8727628db335c43d7a6e76de351259297cb938c65da600a504cf1dd09c653f",
+      "bytes": 3177
+    },
+    {
+      "path": "series_1/img_02_00010727_000_analysis.json",
+      "sha256": "5fead5ef18953f0574c77c8892a90f3ae71eb62c5e07d87ffa9f97874defa04b",
+      "bytes": 2978
+    },
+    {
+      "path": "series_1/img_03_00019238_009_analysis.json",
+      "sha256": "a0717ab6e87cde70b57260f95588aa47f9f39fcf43208bbc2ca14d424a4a08b9",
+      "bytes": 4319
+    },
+    {
+      "path": "series_1/img_04_00007040_002_analysis.json",
+      "sha256": "f6c183c8155ee15c9a2d0780d8ca82d49e7e5014f66898d166e33788b3c8b1ab",
+      "bytes": 4587
+    },
+    {
+      "path": "series_1/img_05_00010693_004_analysis.json",
+      "sha256": "1f918351072575ce184db10d460ea51b76e9ff70a1179fe50122868ccd5505c2",
+      "bytes": 4020
+    },
+    {
+      "path": "series_1/img_06_00027163_000_analysis.json",
+      "sha256": "021d0bbf86b90002da030fe8d2aac1afef0fee2dda0cac4d530e7eaaf4ae7083",
+      "bytes": 4562
+    },
+    {
+      "path": "series_1/img_07_00019169_019_analysis.json",
+      "sha256": "9ee40d9c1ab90c6978846c3a6edf726992c2cfc162ce7939691c0266a44036eb",
+      "bytes": 3635
+    },
+    {
+      "path": "series_1/img_08_00013795_000_analysis.json",
+      "sha256": "c7d8b9daf0bb58e86bb154513270921a590d322d33a6420ed6b094b489bda6fa",
+      "bytes": 2537
+    },
+    {
+      "path": "series_1/img_09_00000623_005_analysis.json",
+      "sha256": "c035ace3f7062e6b8a0835385f7b8f0666f9dee4b4a41034a18cc11966aa8ff4",
+      "bytes": 3378
+    },
+    {
+      "path": "series_1/img_10_00010531_038_analysis.json",
+      "sha256": "8cc206eb48ed35588b67c8c7613edfdca92039ad9fd8f4beb4cc4091963e0954",
+      "bytes": 2867
+    },
+    {
+      "path": "series_2/img_01_00028504_001_analysis.json",
+      "sha256": "cd0d4de6dbe9b2f45f9a0c3154d4618f8936e9b22b4df9891796744d3bcbbbee",
+      "bytes": 3123
+    },
+    {
+      "path": "series_2/img_02_00006186_005_analysis.json",
+      "sha256": "0301742e15728428cbe7411b3b8b573cb9c84c1e6b9998113057fac5bd2c7e88",
+      "bytes": 2980
+    },
+    {
+      "path": "series_2/img_03_00029998_005_analysis.json",
+      "sha256": "d8c3a364cba50b6a5ffd5b5a3a52d96b5d7108b6e53b1ff6ad0112ee879f706d",
+      "bytes": 6902
+    },
+    {
+      "path": "series_2/img_04_00011823_001_analysis.json",
+      "sha256": "c7ba44057c07db29f41cb893332a1077a7cdf3690815517ebf90298e436cd9da",
+      "bytes": 3110
+    },
+    {
+      "path": "series_2/img_05_00022764_006_analysis.json",
+      "sha256": "94e8424a812373520639c6c2d10215d93a9a82111af048fcaf25c3e4fdc2daa1",
+      "bytes": 4591
+    },
+    {
+      "path": "series_2/img_06_00024750_000_analysis.json",
+      "sha256": "c05615f6d78ace8cf41ae6f1af2cb8c3abb65857506f149c0a47fbb4b949a7a9",
+      "bytes": 4348
+    },
+    {
+      "path": "series_2/img_07_00010980_004_analysis.json",
+      "sha256": "512bf2453e6af9eb1386a5ef44c923a93bcf33d4baacb99f85faedf50e92bfed",
+      "bytes": 5303
+    },
+    {
+      "path": "series_2/img_08_00012359_000_analysis.json",
+      "sha256": "4402db1ce203cb3b0557b8d13b7df1b9d931066fe618eb50fec176922addd3df",
+      "bytes": 2968
+    },
+    {
+      "path": "series_2/img_09_00022519_004_analysis.json",
+      "sha256": "e9723952ac9730c25b329ad61b7d4cd1a225da9d1935a5370c806338091d9741",
+      "bytes": 4004
+    },
+    {
+      "path": "series_2/img_10_00023092_000_analysis.json",
+      "sha256": "829c3b30523d3f4f2cac07abe119a48a510012d1dd0cc407662e249a7b231881",
+      "bytes": 3249
+    },
+    {
+      "path": "series_3/img_01_00014666_000_analysis.json",
+      "sha256": "bb3e9c0961fcc81621165a7c0856fd5359e4004bf08e9191b350ee48bbdd7643",
+      "bytes": 2988
+    },
+    {
+      "path": "series_3/img_02_00021748_002_analysis.json",
+      "sha256": "caca4c3693ae2fadb6eab312a8627001863429c65d241eeb8166ff9c99d1f5d0",
+      "bytes": 2868
+    },
+    {
+      "path": "series_3/img_03_00004349_000_analysis.json",
+      "sha256": "509a648aa586374fef6f01549a484b344f25aca14b936c0d63e190574a295fbe",
+      "bytes": 2962
+    },
+    {
+      "path": "series_3/img_04_00002275_000_analysis.json",
+      "sha256": "a625c5b01fcf4a1603e9aafc9303fb8cf9a8b4d37bd74f0b31ce9f19082a8c30",
+      "bytes": 4051
+    },
+    {
+      "path": "series_3/img_05_00023143_000_analysis.json",
+      "sha256": "ad9eeb8ce57604a6a50b46703ef1b481cb0459dbe30338758e2feda767e8fec8",
+      "bytes": 2735
+    },
+    {
+      "path": "series_3/img_06_00003940_000_analysis.json",
+      "sha256": "59fc91c1d6f627281f0c0d2286e28053d47126f14f6d10381066dae07e178b84",
+      "bytes": 2673
+    },
+    {
+      "path": "series_3/img_07_00015068_007_analysis.json",
+      "sha256": "58eb14ad9cbf0510dd7a7dcb1d50cc880df196a47e89010b8c85bb83001cbe36",
+      "bytes": 3801
+    },
+    {
+      "path": "series_3/img_08_00029278_002_analysis.json",
+      "sha256": "7ebbd9306203b9ccc45b46e86921256af3c03c2186a5acb96782083690606b7d",
+      "bytes": 3548
+    },
+    {
+      "path": "series_3/img_09_00009918_001_analysis.json",
+      "sha256": "24ecf9620252f8632d97adf57ced3e545f52d9fae39820e2f7ce1c51da8a2e3f",
+      "bytes": 3406
+    },
+    {
+      "path": "series_3/img_10_00029872_000_analysis.json",
+      "sha256": "f44260d422e620047f092fe4222544dabd16c013c41ccac048e53eab964702ca",
+      "bytes": 3706
+    },
+    {
+      "path": "series_1/series_summary.md",
+      "sha256": "395e8551082cfa71342a9ca2eebae101a5f0878856f099d7815f0d92369e5f24",
+      "bytes": 4798
+    },
+    {
+      "path": "series_2/series_summary.md",
+      "sha256": "d584338533ef350c56cd76dd5f2a1709fddc13935718decb07719b48b5194b5c",
+      "bytes": 6104
+    },
+    {
+      "path": "series_3/series_summary.md",
+      "sha256": "9463c4fe3dd66ddae9db772f956772615841fca1617f462c2e79fa91fdfe8db9",
+      "bytes": 4499
+    },
+    {
+      "path": "evolution_analysis.json",
+      "sha256": "80745485b58f9e6343aa407b00ebf2d24ecc4cbea31ff6c09970f3c5f8af6c54",
+      "bytes": 6947
+    },
+    {
+      "path": "combined_diagnostic_report.md",
+      "sha256": "2ccce05b95fec9b3bb0650d5192524d1b9e79528efb76e358d705f7e4ad0d559",
+      "bytes": 7568
+    }
+  ],
+  "totals": {
+    "calls": 34,
+    "tokensIn": 66492,
+    "tokensOut": 14938,
+    "estimatedUsd": 0.0572926,
+    "providerUsd": 0.057292600000000006,
+    "images": 30,
+    "imagesSucceeded": 30,
+    "imagesFailed": 0,
+    "series": 3
+  },
+  "exitCode": 0,
+  "warnings": [
+    "input-integrity: 30 image(s) matched --expect-hashes.",
+    "input-guard [image-metadata] series_1/img_01_00013464_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_1/img_02_00010727_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_1/img_03_00019238_009.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_1/img_04_00007040_002.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_1/img_05_00010693_004.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_1/img_06_00027163_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_1/img_07_00019169_019.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_1/img_08_00013795_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_1/img_09_00000623_005.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_1/img_10_00010531_038.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_01_00028504_001.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_02_00006186_005.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_03_00029998_005.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_04_00011823_001.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_05_00022764_006.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_06_00024750_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_07_00010980_004.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_08_00012359_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_09_00022519_004.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_10_00023092_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_01_00014666_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_02_00021748_002.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_03_00004349_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_04_00002275_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_05_00023143_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_06_00003940_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_07_00015068_007.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_08_00029278_002.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_09_00009918_001.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_10_00029872_000.png: png:tIME — stripped before upload"
+  ],
+  "humanReview": {
+    "required": true,
+    "reviewedBy": null
+  },
+  "prevManifestHash": null,
+  "manifestHash": "7eb3fe63c1e5e67877b7b4fe2acb6cb6fef2375ab6bca5e990ac06b6d7ec3453"
+}

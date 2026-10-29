@@ -1,0 +1,70 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_2/img_20_00004738_004.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Cardiomegaly is noted with an increased cardiothoracic ratio.\",\n    \"Bilateral diffuse interstitial and alveolar opacities are present, more pronounced in the left lung.\",\n    \"A left-sided implantable port (port-a-cath) is visible with its catheter extending into the superior vena cava.\",\n    \"Sclerotic changes are seen in the left shoulder/clavicle region, possibly related to prior radiation or surgical intervention.\",\n    \"The costophrenic angles are blunted bilaterally, suggesting small pleural effusions or scarring.\",\n    \"No acute pneumothorax is identified.\",\n    \"Degenerative changes are noted in the thoracic spine.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlargement of the cardiac silhouette with an increased cardiothoracic ratio, suggesting an enlarged heart.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pulmonary Opacities\",\n      \"description\": \"Bilateral diffuse interstitial and alveolar opacities, more prominent in the left lung, consistent with pulmonary edema or diffuse infiltrative lung disease.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Bilateral blunting of the costophrenic angles, consistent with small pleural effusions or chronic pleural changes.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    },\n    {\n      \"name\": \"Sclerotic Changes\",\n      \"description\": \"Sclerotic changes in the left shoulder/clavicle region, which could be related to previous treatment such as radiation or surgery.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"The X-ray shows an enlarged heart and widespread haziness in both lungs, which could be due to fluid buildup or other lung problems. There is also evidence of some fluid at the base of the lungs. A medical device is present under the skin on the left side, with a tube going towards the heart. Some changes are seen in the left shoulder bone and the spine, likely from previous conditions or aging. These findings suggest potential heart and lung issues that may require further investigation.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxr\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK482390/\",\n    \"https://www.uptodate.com/contents/overview-of-the-chest-radiograph-in-the-adult\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Cardiomegaly is noted with an increased cardiothoracic ratio.",
+    "Bilateral diffuse interstitial and alveolar opacities are present, more pronounced in the left lung.",
+    "A left-sided implantable port (port-a-cath) is visible with its catheter extending into the superior vena cava.",
+    "Sclerotic changes are seen in the left shoulder/clavicle region, possibly related to prior radiation or surgical intervention.",
+    "The costophrenic angles are blunted bilaterally, suggesting small pleural effusions or scarring.",
+    "No acute pneumothorax is identified.",
+    "Degenerative changes are noted in the thoracic spine."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Enlargement of the cardiac silhouette with an increased cardiothoracic ratio, suggesting an enlarged heart."
+    },
+    {
+      "name": "Pulmonary Opacities",
+      "severity": "Severe",
+      "confidence": 90,
+      "description": "Bilateral diffuse interstitial and alveolar opacities, more prominent in the left lung, consistent with pulmonary edema or diffuse infiltrative lung disease."
+    },
+    {
+      "name": "Pleural Effusions",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Bilateral blunting of the costophrenic angles, consistent with small pleural effusions or chronic pleural changes."
+    },
+    {
+      "name": "Sclerotic Changes",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "Sclerotic changes in the left shoulder/clavicle region, which could be related to previous treatment such as radiation or surgery."
+    }
+  ],
+  "summary": "The X-ray shows an enlarged heart and widespread haziness in both lungs, which could be due to fluid buildup or other lung problems. There is also evidence of some fluid at the base of the lungs. A medical device is present under the skin on the left side, with a tube going towards the heart. Some changes are seen in the left shoulder bone and the spine, likely from previous conditions or aging. These findings suggest potential heart and lung issues that may require further investigation.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxr",
+    "https://www.ncbi.nlm.nih.gov/books/NBK482390/",
+    "https://www.uptodate.com/contents/overview-of-the-chest-radiograph-in-the-adult"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 398119,
+    "bytesOut": 393822,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:41:04.535Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

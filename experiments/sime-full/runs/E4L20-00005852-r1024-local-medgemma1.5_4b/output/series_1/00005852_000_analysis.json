@@ -1,0 +1,71 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00005852/series_1/00005852_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right-sided chest tube terminates in the right lung apex.\",\n    \"Right pleural effusion with loculations.\",\n    \"Right pneumothorax.\",\n    \"Right chest wall subcutaneous emphysema.\",\n    \"Left lung is clear.\",\n    \"Heart size is normal.\",\n    \"Mediastinum is normal.\",\n    \"Bones are unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right pneumothorax\",\n      \"description\": \"Presence of air in the pleural space causing lung collapse.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Right pleural effusion with loculations\",\n      \"description\": \"Collection of fluid in the pleural space, appearing compartmentalized (loculated).\",\n      \"severity\": \"Severe\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Right chest wall subcutaneous emphysema\",\n      \"description\": \"Presence of air in the subcutaneous tissues of the right chest wall.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Right-sided chest tube\",\n      \"description\": \"Presence of a chest tube in the right hemithorax.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This chest X-ray shows significant findings on the right side. There is air in the space around the lung (pneumothorax), fluid collection in the space next to the lung (pleural effusion), and small air pockets under the skin on the right chest wall. A chest tube is seen on the right side. The left lung appears clear.\",\n  \"references\": [\n    \"https://pubmed.ncbi.nlm.nih.gov/31690874/\",\n    \"https://pubmed.ncbi.nlm.nih.gov/21825776/\",\n    \"https://pubmed.ncbi.nlm.nih.gov/28632079/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right-sided chest tube terminates in the right lung apex.",
+    "Right pleural effusion with loculations.",
+    "Right pneumothorax.",
+    "Right chest wall subcutaneous emphysema.",
+    "Left lung is clear.",
+    "Heart size is normal.",
+    "Mediastinum is normal.",
+    "Bones are unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right pneumothorax",
+      "severity": "Moderate",
+      "confidence": 100,
+      "description": "Presence of air in the pleural space causing lung collapse."
+    },
+    {
+      "name": "Right pleural effusion with loculations",
+      "severity": "Severe",
+      "confidence": 100,
+      "description": "Collection of fluid in the pleural space, appearing compartmentalized (loculated)."
+    },
+    {
+      "name": "Right chest wall subcutaneous emphysema",
+      "severity": "Moderate",
+      "confidence": 100,
+      "description": "Presence of air in the subcutaneous tissues of the right chest wall."
+    },
+    {
+      "name": "Right-sided chest tube",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Presence of a chest tube in the right hemithorax."
+    }
+  ],
+  "summary": "This chest X-ray shows significant findings on the right side. There is air in the space around the lung (pneumothorax), fluid collection in the space next to the lung (pleural effusion), and small air pockets under the skin on the right chest wall. A chest tube is seen on the right side. The left lung appears clear.",
+  "references": [
+    "https://pubmed.ncbi.nlm.nih.gov/31690874/",
+    "https://pubmed.ncbi.nlm.nih.gov/21825776/",
+    "https://pubmed.ncbi.nlm.nih.gov/28632079/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 413155,
+    "bytesOut": 324267,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T09:18:58.189Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_3/img_07_00015068_007.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A left-sided port-a-cath is noted with the catheter tip projecting over the superior vena cava.\",\n    \"Normal lung volumes are observed.\",\n    \"No focal consolidation, pneumothorax, or significant pleural effusion is identified.\",\n    \"Cardiomediastinal contours are within normal limits for the technique.\",\n    \"Bony structures appear intact without acute abnormality.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Port-a-cath\",\n      \"description\": \"A left-sided port-a-cath is present with its catheter appropriately positioned within the superior vena cava, indicating proper placement for venous access.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a normal appearance of the lungs and heart. A port-a-cath, which is a small medical device used for easy access to a vein for treatments, is visible on the left side of the chest, and it appears to be correctly placed. There are no signs of lung infection, collapsed lung, or fluid around the lungs. The bones also look normal. In simple terms, everything appears as expected for a patient with this type of device, with no immediate concerns seen on this X-ray.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4366524/\",\n    \"https://www.escardio.org/Journals/E-Journal-of-Cardiology-Practice/Volume-13/The-Chest-X-ray-in-Cardiology-Interpretation-and-Clinical-Significance\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "A left-sided port-a-cath is noted with the catheter tip projecting over the superior vena cava.",
+    "Normal lung volumes are observed.",
+    "No focal consolidation, pneumothorax, or significant pleural effusion is identified.",
+    "Cardiomediastinal contours are within normal limits for the technique.",
+    "Bony structures appear intact without acute abnormality."
+  ],
+  "abnormalities": [
+    {
+      "name": "Port-a-cath",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A left-sided port-a-cath is present with its catheter appropriately positioned within the superior vena cava, indicating proper placement for venous access."
+    }
+  ],
+  "summary": "The chest X-ray shows a normal appearance of the lungs and heart. A port-a-cath, which is a small medical device used for easy access to a vein for treatments, is visible on the left side of the chest, and it appears to be correctly placed. There are no signs of lung infection, collapsed lung, or fluid around the lungs. The bones also look normal. In simple terms, everything appears as expected for a patient with this type of device, with no immediate concerns seen on this X-ray.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4366524/",
+    "https://www.escardio.org/Journals/E-Journal-of-Cardiology-Practice/Volume-13/The-Chest-X-ray-in-Cardiology-Interpretation-and-Clinical-Significance"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 396270,
+    "bytesOut": 391661,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:37:34.402Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

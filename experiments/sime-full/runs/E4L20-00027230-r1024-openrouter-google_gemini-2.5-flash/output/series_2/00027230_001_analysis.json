@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00027230/series_2/00027230_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear lung fields bilaterally, except for patchy opacities in the right lower lung zone.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Diaphragms are intact and clear costophrenic angles are seen on the left. The right costophrenic angle is blunted with an associated ill-defined opacity.\",\n    \"Osseous structures appear unremarkable.\",\n    \"Surgical clips are noted in the left axillary region, consistent with prior surgery.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right lower lung opacity with blunted costophrenic angle\",\n      \"description\": \"Ill-defined, patchy opacities are noted in the right lower lung zone, obscuring the right hemidiaphragm and blunting the right costophrenic angle. This suggests atelectasis, consolidation, or pleural effusion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Surgical clips\",\n      \"description\": \"Multiple surgical clips are present in the left axillary region, likely related to prior surgical intervention, such as lymph node dissection.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows an area of haziness and a blunted angle in the lower right part of the lung. This could be due to a few things, such as an area of collapsed lung tissue (atelectasis), an infection or inflammation in the lung (consolidation), or fluid accumulation around the lung (pleural effusion). The heart and major blood vessels appear normal. There are also surgical clips visible in the left armpit area, which are typically seen after an operation, such as removal of lymph nodes. Further evaluation may be needed to determine the exact cause of the changes in the right lung.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.371160074\",\n    \"https://radiologykey.com/pulmonary-atelectasis-2/\",\n    \"https://emedicine.medscape.com/article/358897-overview\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Clear lung fields bilaterally, except for patchy opacities in the right lower lung zone.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Diaphragms are intact and clear costophrenic angles are seen on the left. The right costophrenic angle is blunted with an associated ill-defined opacity.",
+    "Osseous structures appear unremarkable.",
+    "Surgical clips are noted in the left axillary region, consistent with prior surgery."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lower lung opacity with blunted costophrenic angle",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Ill-defined, patchy opacities are noted in the right lower lung zone, obscuring the right hemidiaphragm and blunting the right costophrenic angle. This suggests atelectasis, consolidation, or pleural effusion."
+    },
+    {
+      "name": "Surgical clips",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Multiple surgical clips are present in the left axillary region, likely related to prior surgical intervention, such as lymph node dissection."
+    }
+  ],
+  "summary": "The chest X-ray shows an area of haziness and a blunted angle in the lower right part of the lung. This could be due to a few things, such as an area of collapsed lung tissue (atelectasis), an infection or inflammation in the lung (consolidation), or fluid accumulation around the lung (pleural effusion). The heart and major blood vessels appear normal. There are also surgical clips visible in the left armpit area, which are typically seen after an operation, such as removal of lymph nodes. Further evaluation may be needed to determine the exact cause of the changes in the right lung.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.371160074",
+    "https://radiologykey.com/pulmonary-atelectasis-2/",
+    "https://emedicine.medscape.com/article/358897-overview"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 431941,
+    "bytesOut": 430076,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:15:40.248Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

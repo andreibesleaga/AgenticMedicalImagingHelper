@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000086/series_1/00000086_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (Frontal)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The trachea is midline.\",\n    \"The cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"The left lung is clear without focal consolidation, pneumothorax, or pleural effusion. The left costophrenic angle is sharp.\",\n    \"In the right mid-lung zone, there is a thin-walled radiolucent (cystic or cavitary) lesion, measuring approximately 3-4 cm in diameter, with some overlapping curvilinear linear densities.\",\n    \"There is increased heterogeneous opacity in the right lower lung zone.\",\n    \"The right hemidiaphragm is partially obscured and the right costophrenic angle is blunted.\",\n    \"The visible bony thorax appears intact with no obvious acute fractures.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right mid-lung cystic/cavitary lesion\",\n      \"description\": \"A well-circumscribed, thin-walled radiolucency in the right mid-lung zone, which may represent a pulmonary bulla, cyst, or thin-walled cavity.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Right lower lung opacity and pleural effusion\",\n      \"description\": \"Right basilar opacity with obscuration of the hemidiaphragm and blunting of the costophrenic angle, suggestive of a small pleural effusion and adjacent atelectasis or consolidation.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows normal findings on the left side, with a normal heart size. On the right side, there are two main findings: a thin-walled, ring-like pocket of air in the middle of the lung (which could be a cyst, cavity, or bulla), and an area of haziness at the very bottom of the lung with fluid accumulation (pleural effusion) and possible partial lung collapse or infection. These findings should be correlated with the patient's symptoms and medical history, and further imaging such as a CT scan may be recommended to get a clearer look at the cyst-like structure.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cavitating-lung-mass\",\n    \"https://radiopaedia.org/articles/pleural-effusion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (Frontal)",
+  "quality": "Good",
+  "findings": [
+    "The trachea is midline.",
+    "The cardiomediastinal silhouette is within normal limits for size and contour.",
+    "The left lung is clear without focal consolidation, pneumothorax, or pleural effusion. The left costophrenic angle is sharp.",
+    "In the right mid-lung zone, there is a thin-walled radiolucent (cystic or cavitary) lesion, measuring approximately 3-4 cm in diameter, with some overlapping curvilinear linear densities.",
+    "There is increased heterogeneous opacity in the right lower lung zone.",
+    "The right hemidiaphragm is partially obscured and the right costophrenic angle is blunted.",
+    "The visible bony thorax appears intact with no obvious acute fractures."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right mid-lung cystic/cavitary lesion",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "A well-circumscribed, thin-walled radiolucency in the right mid-lung zone, which may represent a pulmonary bulla, cyst, or thin-walled cavity."
+    },
+    {
+      "name": "Right lower lung opacity and pleural effusion",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Right basilar opacity with obscuration of the hemidiaphragm and blunting of the costophrenic angle, suggestive of a small pleural effusion and adjacent atelectasis or consolidation."
+    }
+  ],
+  "summary": "The chest X-ray shows normal findings on the left side, with a normal heart size. On the right side, there are two main findings: a thin-walled, ring-like pocket of air in the middle of the lung (which could be a cyst, cavity, or bulla), and an area of haziness at the very bottom of the lung with fluid accumulation (pleural effusion) and possible partial lung collapse or infection. These findings should be correlated with the patient's symptoms and medical history, and further imaging such as a CT scan may be recommended to get a clearer look at the cyst-like structure.",
+  "references": [
+    "https://radiopaedia.org/articles/cavitating-lung-mass",
+    "https://radiopaedia.org/articles/pleural-effusion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22312,
+    "bytesOut": 22312,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:31:14.971Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

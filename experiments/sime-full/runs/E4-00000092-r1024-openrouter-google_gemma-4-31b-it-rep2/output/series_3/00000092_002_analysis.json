@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_3/00000092_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Bilateral blunting of the costophrenic angles\",\n    \"Right-sided pleural effusion with a meniscus sign\",\n    \"Left-sided pleural effusion\",\n    \"Presence of a large air-fluid level in the left upper quadrant of the abdomen, likely representing gastric distension or a hiatal hernia\",\n    \"Increased interstitial markings in the lower lung zones\",\n    \"Cardiomediastinal silhouette is partially obscured by the effusions\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Pleural Effusions\",\n      \"description\": \"Fluid accumulation in the pleural space bilaterally, evidenced by the loss of sharp costophrenic angles and the presence of fluid densities in the lower chest\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Gastric Distension / Air-Fluid Level\",\n      \"description\": \"A prominent horizontal air-fluid level is seen below the left hemidiaphragm, consistent with a distended stomach or possible hiatal hernia\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The X-ray shows fluid around both lungs, known as pleural effusions. This can be caused by several conditions, including heart failure, infection, or inflammation. There is also a large amount of air and fluid in the stomach area, which may be normal depending on recent eating/drinking or could indicate a digestive issue. You should discuss these results with your doctor for a definitive diagnosis based on your symptoms.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.acr.org/Clinical-Resources/Chest-X-Ray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Fair",
+  "findings": [
+    "Bilateral blunting of the costophrenic angles",
+    "Right-sided pleural effusion with a meniscus sign",
+    "Left-sided pleural effusion",
+    "Presence of a large air-fluid level in the left upper quadrant of the abdomen, likely representing gastric distension or a hiatal hernia",
+    "Increased interstitial markings in the lower lung zones",
+    "Cardiomediastinal silhouette is partially obscured by the effusions"
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Fluid accumulation in the pleural space bilaterally, evidenced by the loss of sharp costophrenic angles and the presence of fluid densities in the lower chest"
+    },
+    {
+      "name": "Gastric Distension / Air-Fluid Level",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "A prominent horizontal air-fluid level is seen below the left hemidiaphragm, consistent with a distended stomach or possible hiatal hernia"
+    }
+  ],
+  "summary": "The X-ray shows fluid around both lungs, known as pleural effusions. This can be caused by several conditions, including heart failure, infection, or inflammation. There is also a large amount of air and fluid in the stomach area, which may be normal depending on recent eating/drinking or could indicate a digestive issue. You should discuss these results with your doctor for a definitive diagnosis based on your symptoms.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.acr.org/Clinical-Resources/Chest-X-Ray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 400591,
+    "bytesOut": 305467,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T09:13:39.213Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

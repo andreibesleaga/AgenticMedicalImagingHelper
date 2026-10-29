@@ -1,0 +1,71 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S2x5/series_1/img_03_00019238_009.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral pleural effusions, larger on the left.\",\n    \"Left chest tube in place, with its tip in the left costophrenic sulcus.\",\n    \"Right chest tube in place, with its tip in the right costophrenic sulcus.\",\n    \"Central venous catheter noted with its tip projecting over the superior vena cava.\",\n    \"No definite pneumothorax identified.\",\n    \"Lungs are partially obscured by the effusions but appear otherwise unremarkable where visible.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Bony thorax appears intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Pleural Effusions\",\n      \"description\": \"Significant fluid accumulation in both pleural spaces, more prominent on the left, obscuring the diaphragmatic contours and costophrenic angles. This suggests ongoing fluid collection despite the presence of bilateral chest tubes.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Left Chest Tube\",\n      \"description\": \"A chest tube is present in the left hemithorax, with its distal tip appropriately positioned in the left costophrenic sulcus, indicating drainage of the left pleural space.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 98\n    },\n    {\n      \"name\": \"Right Chest Tube\",\n      \"description\": \"A chest tube is present in the right hemithorax, with its distal tip appropriately positioned in the right costophrenic sulcus, indicating drainage of the right pleural space.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 98\n    },\n    {\n      \"name\": \"Central Venous Catheter\",\n      \"description\": \"A central venous catheter is noted with its tip projecting over the superior vena cava, indicating appropriate placement for central venous access.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 98\n    }\n  ],\n  \"summary\": \"The chest X-ray shows fluid around both lungs, which is called pleural effusion. This fluid is more noticeable on the left side. There are tubes in place on both sides of the chest, likely to help drain this fluid. A central line, used for giving medications or fluids, is also in a good position. There is no sign of a collapsed lung (pneumothorax). The heart and major blood vessels appear normal in size and shape. The bones of the chest look intact.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK459199/\",\n    \"https://www.thoracic.org/patients/patient-resources/resources/chest-tube-placement.pdf\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral pleural effusions, larger on the left.",
+    "Left chest tube in place, with its tip in the left costophrenic sulcus.",
+    "Right chest tube in place, with its tip in the right costophrenic sulcus.",
+    "Central venous catheter noted with its tip projecting over the superior vena cava.",
+    "No definite pneumothorax identified.",
+    "Lungs are partially obscured by the effusions but appear otherwise unremarkable where visible.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Bony thorax appears intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Significant fluid accumulation in both pleural spaces, more prominent on the left, obscuring the diaphragmatic contours and costophrenic angles. This suggests ongoing fluid collection despite the presence of bilateral chest tubes."
+    },
+    {
+      "name": "Left Chest Tube",
+      "severity": "Normal",
+      "confidence": 98,
+      "description": "A chest tube is present in the left hemithorax, with its distal tip appropriately positioned in the left costophrenic sulcus, indicating drainage of the left pleural space."
+    },
+    {
+      "name": "Right Chest Tube",
+      "severity": "Normal",
+      "confidence": 98,
+      "description": "A chest tube is present in the right hemithorax, with its distal tip appropriately positioned in the right costophrenic sulcus, indicating drainage of the right pleural space."
+    },
+    {
+      "name": "Central Venous Catheter",
+      "severity": "Normal",
+      "confidence": 98,
+      "description": "A central venous catheter is noted with its tip projecting over the superior vena cava, indicating appropriate placement for central venous access."
+    }
+  ],
+  "summary": "The chest X-ray shows fluid around both lungs, which is called pleural effusion. This fluid is more noticeable on the left side. There are tubes in place on both sides of the chest, likely to help drain this fluid. A central line, used for giving medications or fluids, is also in a good position. There is no sign of a collapsed lung (pneumothorax). The heart and major blood vessels appear normal in size and shape. The bones of the chest look intact.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.ncbi.nlm.nih.gov/books/NBK459199/",
+    "https://www.thoracic.org/patients/patient-resources/resources/chest-tube-placement.pdf"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 450035,
+    "bytesOut": 449847,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:32:17.935Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

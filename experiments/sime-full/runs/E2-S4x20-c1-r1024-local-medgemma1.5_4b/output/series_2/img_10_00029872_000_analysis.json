@@ -1,0 +1,48 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_2/img_10_00029872_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right middle lobe opacity\",\n    \"Lung volumes are clear\",\n    \"Heart size is normal\",\n    \"Mediastinum is normal\",\n    \"Bones are intact\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right middle lobe consolidation/opacity\",\n      \"description\": \"There is an area of increased density occupying the right middle lobe, consistent with consolidation or opacity.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a significant opacity in the right middle lung lobe. This suggests a possible infection or inflammation in that area.\",\n  \"references\": [\n    \"https://www.radiologyassistant.com/topic/pulmonary-nodules/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Right middle lobe opacity",
+    "Lung volumes are clear",
+    "Heart size is normal",
+    "Mediastinum is normal",
+    "Bones are intact"
+  ],
+  "abnormalities": [
+    {
+      "name": "Right middle lobe consolidation/opacity",
+      "severity": "Severe",
+      "confidence": 100,
+      "description": "There is an area of increased density occupying the right middle lobe, consistent with consolidation or opacity."
+    }
+  ],
+  "summary": "The chest X-ray shows a significant opacity in the right middle lung lobe. This suggests a possible infection or inflammation in that area.",
+  "references": [
+    "https://www.radiologyassistant.com/topic/pulmonary-nodules/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 414992,
+    "bytesOut": 320828,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:12:05.808Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

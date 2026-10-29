@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_3/00000092_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral lung fields show increased interstitial markings and areas of consolidation, particularly in the lower lobes.\",\n    \"Cardiac silhouette appears within normal limits.\",\n    \"No obvious pleural effusion or pneumothorax.\",\n    \"Diaphragm is well-defined; no subdiaphragmatic free air noted.\",\n    \"Bony thorax including ribs, clavicles, and spine appear intact without fracture or lytic lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pulmonary Infiltrates\",\n      \"description\": \" patchy opacities and increased interstitial markings are present bilaterally, predominantly in the lower lung zones, suggesting possible infectious or inflammatory process such as pneumonia or interstitial lung disease.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows signs of inflammation or infection in both lungs, especially in the lower parts. This could indicate pneumonia or another lung condition. The heart and bones look normal. A doctor should review this with your symptoms to determine the cause and best treatment.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/books/NBK537019/\",\n    \"https://radiopaedia.org/articles/consolidation\",\n    \"https://www.uptodate.com/contents/chest-radiography-in-adults\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral lung fields show increased interstitial markings and areas of consolidation, particularly in the lower lobes.",
+    "Cardiac silhouette appears within normal limits.",
+    "No obvious pleural effusion or pneumothorax.",
+    "Diaphragm is well-defined; no subdiaphragmatic free air noted.",
+    "Bony thorax including ribs, clavicles, and spine appear intact without fracture or lytic lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pulmonary Infiltrates",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": " patchy opacities and increased interstitial markings are present bilaterally, predominantly in the lower lung zones, suggesting possible infectious or inflammatory process such as pneumonia or interstitial lung disease."
+    }
+  ],
+  "summary": "The chest X-ray shows signs of inflammation or infection in both lungs, especially in the lower parts. This could indicate pneumonia or another lung condition. The heart and bones look normal. A doctor should review this with your symptoms to determine the cause and best treatment.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK537019/",
+    "https://radiopaedia.org/articles/consolidation",
+    "https://www.uptodate.com/contents/chest-radiography-in-adults"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 400591,
+    "bytesOut": 361351,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-09-29T10:19:14.256Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

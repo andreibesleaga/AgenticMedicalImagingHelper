@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000086/series_2/00000086_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A well-defined curvilinear, rim-calcified lesion measuring approximately 3 to 4 cm in diameter is seen in the right mid-to-lower perihilar lung region.\",\n    \"Mild basal pleural thickening and tenting of the right hemidiaphragm, suggestive of chronic scarring or previous pleuritis.\",\n    \"The left lung field is clear without evidence of focal consolidation, effusion, or pneumothorax.\",\n    \"The cardiac silhouette is normal in size and contour; the cardiothoracic ratio is within normal limits.\",\n    \"Mediastinal and hilar contours are otherwise unremarkable, and the trachea is midline.\",\n    \"Thoracic cage and osseous structures appear intact without visible acute fractures or destructive lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Calcified pulmonary lesion\",\n      \"description\": \"Curvilinear, calcified round-to-oval opacity in the right mid-to-lower lung zone, which may represent a healed granulomatous cavity, calcified hydatid/bronchogenic cyst, or vascular calcification/aneurysm.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Right basal pleural thickening/scarring\",\n      \"description\": \"Blunting and tenting of the right hemidiaphragm, consistent with chronic scarring or prior inflammation.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a rounded area with a calcified (hardened, calcium-lined) rim in the middle-to-lower part of the right lung. This is most commonly a sign of a past, healed infection or cyst that has calcified over time, though further imaging such as a chest CT scan may be recommended to assess its exact structure. There is also minor scarring at the base of the right lung. The heart size is normal, and the left lung is completely clear.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/calcified-pulmonary-nodule-differential\",\n    \"https://pubs.rsna.org/doi/10.1148/rg.2018170179\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "A well-defined curvilinear, rim-calcified lesion measuring approximately 3 to 4 cm in diameter is seen in the right mid-to-lower perihilar lung region.",
+    "Mild basal pleural thickening and tenting of the right hemidiaphragm, suggestive of chronic scarring or previous pleuritis.",
+    "The left lung field is clear without evidence of focal consolidation, effusion, or pneumothorax.",
+    "The cardiac silhouette is normal in size and contour; the cardiothoracic ratio is within normal limits.",
+    "Mediastinal and hilar contours are otherwise unremarkable, and the trachea is midline.",
+    "Thoracic cage and osseous structures appear intact without visible acute fractures or destructive lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Calcified pulmonary lesion",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Curvilinear, calcified round-to-oval opacity in the right mid-to-lower lung zone, which may represent a healed granulomatous cavity, calcified hydatid/bronchogenic cyst, or vascular calcification/aneurysm."
+    },
+    {
+      "name": "Right basal pleural thickening/scarring",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Blunting and tenting of the right hemidiaphragm, consistent with chronic scarring or prior inflammation."
+    }
+  ],
+  "summary": "The chest X-ray shows a rounded area with a calcified (hardened, calcium-lined) rim in the middle-to-lower part of the right lung. This is most commonly a sign of a past, healed infection or cyst that has calcified over time, though further imaging such as a chest CT scan may be recommended to assess its exact structure. There is also minor scarring at the base of the right lung. The heart size is normal, and the left lung is completely clear.",
+  "references": [
+    "https://radiopaedia.org/articles/calcified-pulmonary-nodule-differential",
+    "https://pubs.rsna.org/doi/10.1148/rg.2018170179"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 639281,
+    "bytesOut": 489372,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "alpha channel stripped",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:18:32.025Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

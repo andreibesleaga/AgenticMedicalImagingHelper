@@ -1,0 +1,60 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_1/00000092_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP, supine/portable)\",\"quality\":\"Fair\",\"findings\":[\"AP portable chest radiograph in a pediatric/young patient with ECG lead artifacts over lower chest/abdomen\",\"Large rounded lucent structure overlying the left lower chest/upper abdomen with an air-fluid-like level, suggestive of a markedly distended stomach bubble or dilated bowel loop\",\"Lungs appear grossly clear bilaterally with no focal consolidation or pleural effusion\",\"Cardiac silhouette size difficult to assess fully due to overlying structures but appears within normal limits\",\"Mediastinal contours appear unremarkable\",\"Skeletal structures (ribs, clavicles, scapulae) appear intact without acute fracture\",\"Rotational positioning noted with asymmetric clavicle/rib alignment\",\"External marker 'R L HS' denotes side and facility marker\",\"ECG lead wires with metallic connectors seen over lower abdomen\"],\"abnormalities\":[{\"name\":\"Dilated gastric bubble / bowel loop\",\"description\":\"Large rounded lucency with an air-fluid level in the left upper abdomen, likely representing a distended stomach (possibly from aerophagia, feeding tube placement, or obstruction) or a dilated proximal bowel loop. Clinical correlation needed.\",\"severity\":\"Mild\",\"confidence\":55},{\"name\":\"Suboptimal positioning/rotation\",\"description\":\"Mild rotation of the patient is noted based on asymmetric position of clavicles and ribs, which can limit full assessment of mediastinal and cardiac structures.\",\"severity\":\"Mild\",\"confidence\":60}],\"summary\":\"This chest X-ray was taken with the patient lying down, likely in an ICU or emergency setting given the attached monitoring wires. The lungs look clear without signs of pneumonia or fluid buildup. There is a rounded gas-filled structure in the upper left abdomen that appears to have a fluid level within it — this most likely represents a normal but somewhat distended stomach bubble, though it should be correlated clinically to exclude bowel dilation or obstruction. No fractures or acute bone abnormalities are seen. The image is of fair quality due to mild rotation, which can affect assessment of the heart and central structures. Overall, no immediate dangerous findings are seen in the lungs themselves, but the abdominal/gastric finding should be reviewed by the treating physician given the clinical context.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph-normal-pediatric\",\"https://www.ncbi.nlm.nih.gov/books/NBK556086/\",\"https://pubs.rsna.org/doi/10.1148/rg.2019190050\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP, supine/portable)",
+  "quality": "Fair",
+  "findings": [
+    "AP portable chest radiograph in a pediatric/young patient with ECG lead artifacts over lower chest/abdomen",
+    "Large rounded lucent structure overlying the left lower chest/upper abdomen with an air-fluid-like level, suggestive of a markedly distended stomach bubble or dilated bowel loop",
+    "Lungs appear grossly clear bilaterally with no focal consolidation or pleural effusion",
+    "Cardiac silhouette size difficult to assess fully due to overlying structures but appears within normal limits",
+    "Mediastinal contours appear unremarkable",
+    "Skeletal structures (ribs, clavicles, scapulae) appear intact without acute fracture",
+    "Rotational positioning noted with asymmetric clavicle/rib alignment",
+    "External marker 'R L HS' denotes side and facility marker",
+    "ECG lead wires with metallic connectors seen over lower abdomen"
+  ],
+  "abnormalities": [
+    {
+      "name": "Dilated gastric bubble / bowel loop",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Large rounded lucency with an air-fluid level in the left upper abdomen, likely representing a distended stomach (possibly from aerophagia, feeding tube placement, or obstruction) or a dilated proximal bowel loop. Clinical correlation needed."
+    },
+    {
+      "name": "Suboptimal positioning/rotation",
+      "severity": "Mild",
+      "confidence": 60,
+      "description": "Mild rotation of the patient is noted based on asymmetric position of clavicles and ribs, which can limit full assessment of mediastinal and cardiac structures."
+    }
+  ],
+  "summary": "This chest X-ray was taken with the patient lying down, likely in an ICU or emergency setting given the attached monitoring wires. The lungs look clear without signs of pneumonia or fluid buildup. There is a rounded gas-filled structure in the upper left abdomen that appears to have a fluid level within it — this most likely represents a normal but somewhat distended stomach bubble, though it should be correlated clinically to exclude bowel dilation or obstruction. No fractures or acute bone abnormalities are seen. The image is of fair quality due to mild rotation, which can affect assessment of the heart and central structures. Overall, no immediate dangerous findings are seen in the lungs themselves, but the abdominal/gastric finding should be reviewed by the treating physician given the clinical context.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-normal-pediatric",
+    "https://www.ncbi.nlm.nih.gov/books/NBK556086/",
+    "https://pubs.rsna.org/doi/10.1148/rg.2019190050"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 389503,
+    "bytesOut": 383960,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T10:24:35.671Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

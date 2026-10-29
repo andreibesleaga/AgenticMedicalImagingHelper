@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000086/series_1/00000086_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A curvilinear metallic density consistent with an embolization coil or endobronchial lung volume reduction coil is visible in the right mid-lung zone.\",\n    \"Surrounding the metallic density in the right perihilar/mid-lung field, there is mild local scarring and an adjacent well-defined radiolucency/bulla.\",\n    \"Cardiac silhouette and mediastinal contours are within normal limits for size and configuration.\",\n    \"Costophrenic angles and hemidiaphragms are sharp and well-delineated, without evidence of pleural effusion.\",\n    \"No focal consolidation, pneumothorax, or large pleural effusion detected in either lung field.\",\n    \"Osseous structures and soft tissues of the thorax appear unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Mid-Lung Embolization Coil / Endobronchial Device\",\n      \"description\": \"Focal radiopaque curvilinear metallic material in the right mid-lung zone with associated localized parenchymal scarring, likely representing a previous endovascular embolization coil or endobronchial lung volume reduction device.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 88\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a small metallic foreign body in the middle of the right lung, most likely a coil from a prior medical procedure (such as embolization of an abnormal blood vessel or lung treatment). The surrounding lung tissue shows minor scarring. The heart is normal in size, and there are no signs of pneumonia, fluid buildup around the lungs, or collapsed lung.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pulmonary-arteriovenous-malformation-coiling\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4988771/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "A curvilinear metallic density consistent with an embolization coil or endobronchial lung volume reduction coil is visible in the right mid-lung zone.",
+    "Surrounding the metallic density in the right perihilar/mid-lung field, there is mild local scarring and an adjacent well-defined radiolucency/bulla.",
+    "Cardiac silhouette and mediastinal contours are within normal limits for size and configuration.",
+    "Costophrenic angles and hemidiaphragms are sharp and well-delineated, without evidence of pleural effusion.",
+    "No focal consolidation, pneumothorax, or large pleural effusion detected in either lung field.",
+    "Osseous structures and soft tissues of the thorax appear unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Mid-Lung Embolization Coil / Endobronchial Device",
+      "severity": "Mild",
+      "confidence": 88,
+      "description": "Focal radiopaque curvilinear metallic material in the right mid-lung zone with associated localized parenchymal scarring, likely representing a previous endovascular embolization coil or endobronchial lung volume reduction device."
+    }
+  ],
+  "summary": "The chest X-ray shows a small metallic foreign body in the middle of the right lung, most likely a coil from a prior medical procedure (such as embolization of an abnormal blood vessel or lung treatment). The surrounding lung tissue shows minor scarring. The heart is normal in size, and there are no signs of pneumonia, fluid buildup around the lungs, or collapsed lung.",
+  "references": [
+    "https://radiopaedia.org/articles/pulmonary-arteriovenous-malformation-coiling",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4988771/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22312,
+    "bytesOut": 22312,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:30:48.250Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

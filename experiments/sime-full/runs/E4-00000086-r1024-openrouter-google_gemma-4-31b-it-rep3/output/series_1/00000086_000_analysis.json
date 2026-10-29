@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000086/series_1/00000086_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear overall with no evidence of focal consolidation, masses, or pleural effusion.\",\n    \"Heart size and mediastinal contours are within normal limits.\",\n    \"Hilar regions are unremarkable.\",\n    \"Bony thorax and soft tissues are intact.\",\n    \"Diaphragmatic contours are sharp.\",\n    \"There is a small, linear metallic opacity in the lower zone of the right lung, likely representing a surgical clip or a foreign body.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Metallic opacity\",\n      \"description\": \"A small, linear, radio-opaque object is seen in the right lower lung field, consistent with a surgical clip.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray is generally normal. The heart and lungs appear healthy with no signs of infection or fluid. A small metallic object, likely a surgical clip from a previous procedure, was noted in the right lower lung area, which is typically a benign finding.\",\n  \"references\": [\n    \"https://radiologyassistant.nl/chest/chest-x-ray-basics\",\n    \"https://www.radiopaedia.org/articles/chest-radiograph-pa-and-lateral\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear overall with no evidence of focal consolidation, masses, or pleural effusion.",
+    "Heart size and mediastinal contours are within normal limits.",
+    "Hilar regions are unremarkable.",
+    "Bony thorax and soft tissues are intact.",
+    "Diaphragmatic contours are sharp.",
+    "There is a small, linear metallic opacity in the lower zone of the right lung, likely representing a surgical clip or a foreign body."
+  ],
+  "abnormalities": [
+    {
+      "name": "Metallic opacity",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "A small, linear, radio-opaque object is seen in the right lower lung field, consistent with a surgical clip."
+    }
+  ],
+  "summary": "The chest X-ray is generally normal. The heart and lungs appear healthy with no signs of infection or fluid. A small metallic object, likely a surgical clip from a previous procedure, was noted in the right lower lung area, which is typically a benign finding.",
+  "references": [
+    "https://radiologyassistant.nl/chest/chest-x-ray-basics",
+    "https://www.radiopaedia.org/articles/chest-radiograph-pa-and-lateral"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 412436,
+    "bytesOut": 317617,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T09:59:47.914Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

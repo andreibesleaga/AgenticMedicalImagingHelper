@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00016493/series_2/00016493_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are well-expanded and clear, with no obvious focal opacities, effusions, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Hilar regions appear unremarkable.\",\n    \"Diaphragms are intact and clear, with costophrenic angles patent.\",\n    \"Osseous structures of the thoracic cage (ribs, clavicles, visualized scapulae, humeri, and thoracic spine) show no acute fractures or destructive lesions.\",\n    \"A metallic ring-like foreign body is noted in the central lower mediastinum, likely within the esophagus or stomach.\",\n    \"An external metallic marker labeled 'L' is present over the left shoulder region, indicating the left side of the patient.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Foreign Body\",\n      \"description\": \"A well-defined metallic ring-like foreign body is visualized in the central lower mediastinum, projecting over the T10-T11 vertebral bodies, consistent with an ingested object.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows healthy lungs and a normal heart size. The bones in the chest area look fine. However, there is a metallic ring-shaped object visible in the central lower part of the chest, which is likely something that was swallowed. This might be a concern depending on what the object is and whether it's causing any symptoms.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.301095066\",\n    \"https://radiopaedia.org/articles/chest-x-ray-interpretive-approach-1\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are well-expanded and clear, with no obvious focal opacities, effusions, or pneumothorax.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Hilar regions appear unremarkable.",
+    "Diaphragms are intact and clear, with costophrenic angles patent.",
+    "Osseous structures of the thoracic cage (ribs, clavicles, visualized scapulae, humeri, and thoracic spine) show no acute fractures or destructive lesions.",
+    "A metallic ring-like foreign body is noted in the central lower mediastinum, likely within the esophagus or stomach.",
+    "An external metallic marker labeled 'L' is present over the left shoulder region, indicating the left side of the patient."
+  ],
+  "abnormalities": [
+    {
+      "name": "Foreign Body",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "A well-defined metallic ring-like foreign body is visualized in the central lower mediastinum, projecting over the T10-T11 vertebral bodies, consistent with an ingested object."
+    }
+  ],
+  "summary": "The chest X-ray shows healthy lungs and a normal heart size. The bones in the chest area look fine. However, there is a metallic ring-shaped object visible in the central lower part of the chest, which is likely something that was swallowed. This might be a concern depending on what the object is and whether it's causing any symptoms.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.301095066",
+    "https://radiopaedia.org/articles/chest-x-ray-interpretive-approach-1"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22937,
+    "bytesOut": 22937,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:26:38.260Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

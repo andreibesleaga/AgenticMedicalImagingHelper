@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000296/series_3/00000296_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A central venous catheter is present, entering from the left chest/neck area.\",\n    \"The catheter courses inferiorly.\",\n    \"The distal tip of the catheter is seen overlying the left paraspinal region.\",\n    \"The tip appears to be curled or looped in the region of the upper left chest, likely within the left brachiocephalic vein or potentially extra-vascular.\",\n    \"It does not project over the expected location of the superior vena cava or cavoatrial junction.\",\n    \"The lungs are clear of focal consolidation, effusion, or pneumothorax.\",\n    \"The cardiomediastinal silhouette is within normal limits.\",\n    \"The bony thorax appears intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Malpositioned Central Venous Catheter\",\n      \"description\": \"The central venous catheter entering from the left side has a curled tip in the upper left chest, not reaching the superior vena cava. It may be curled within a vein (like the left brachiocephalic) or malpositioned elsewhere.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that a central venous line (a type of IV catheter) placed on the left side is not in the correct position. Its tip is curled in the upper left chest instead of reaching the main vein leading to the heart. This needs to be adjusted or replaced by a healthcare professional to ensure it functions properly and safely. The lungs and heart appear normal.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/10.1148/rg.2017160167\",\n    \"https://radiopaedia.org/articles/central-venous-catheter-malposition\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A central venous catheter is present, entering from the left chest/neck area.",
+    "The catheter courses inferiorly.",
+    "The distal tip of the catheter is seen overlying the left paraspinal region.",
+    "The tip appears to be curled or looped in the region of the upper left chest, likely within the left brachiocephalic vein or potentially extra-vascular.",
+    "It does not project over the expected location of the superior vena cava or cavoatrial junction.",
+    "The lungs are clear of focal consolidation, effusion, or pneumothorax.",
+    "The cardiomediastinal silhouette is within normal limits.",
+    "The bony thorax appears intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Malpositioned Central Venous Catheter",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "The central venous catheter entering from the left side has a curled tip in the upper left chest, not reaching the superior vena cava. It may be curled within a vein (like the left brachiocephalic) or malpositioned elsewhere."
+    }
+  ],
+  "summary": "The chest X-ray shows that a central venous line (a type of IV catheter) placed on the left side is not in the correct position. Its tip is curled in the upper left chest instead of reaching the main vein leading to the heart. This needs to be adjusted or replaced by a healthcare professional to ensure it functions properly and safely. The lungs and heart appear normal.",
+  "references": [
+    "https://pubs.rsna.org/doi/10.1148/rg.2017160167",
+    "https://radiopaedia.org/articles/central-venous-catheter-malposition"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22944,
+    "bytesOut": 22944,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:39:29.312Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

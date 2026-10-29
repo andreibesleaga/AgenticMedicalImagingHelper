@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000086/series_2/00000086_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A radiopaque object, resembling a medical device or surgical clip, is visible in the right middle to lower lung zone.\",\n    \"The lungs appear generally clear, with no obvious consolidation, pneumothorax, or large pleural effusions.\",\n    \"The heart size is within normal limits.\",\n    \"The mediastinal contours appear normal.\",\n    \"The bony thorax and soft tissues show no significant abnormalities.\",\n    \"The diaphragm is well-defined, and the costophrenic angles are clear.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Radiopaque Object\",\n      \"description\": \"A well-defined radiopaque structure, likely a metallic foreign body, surgical clip, or medical implant, is located in the right middle to lower lung field.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This chest X-ray reveals a metallic object in the right lung area. This could be a surgical clip from a past procedure, an implanted device, or another type of foreign body. The rest of the lungs, heart, and surrounding structures appear normal. Further investigation or a review of your medical history is recommended to determine the exact nature and significance of this object.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/foreign-bodies-chest\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2020190111\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A radiopaque object, resembling a medical device or surgical clip, is visible in the right middle to lower lung zone.",
+    "The lungs appear generally clear, with no obvious consolidation, pneumothorax, or large pleural effusions.",
+    "The heart size is within normal limits.",
+    "The mediastinal contours appear normal.",
+    "The bony thorax and soft tissues show no significant abnormalities.",
+    "The diaphragm is well-defined, and the costophrenic angles are clear."
+  ],
+  "abnormalities": [
+    {
+      "name": "Radiopaque Object",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "A well-defined radiopaque structure, likely a metallic foreign body, surgical clip, or medical implant, is located in the right middle to lower lung field."
+    }
+  ],
+  "summary": "This chest X-ray reveals a metallic object in the right lung area. This could be a surgical clip from a past procedure, an implanted device, or another type of foreign body. The rest of the lungs, heart, and surrounding structures appear normal. Further investigation or a review of your medical history is recommended to determine the exact nature and significance of this object.",
+  "references": [
+    "https://radiopaedia.org/articles/foreign-bodies-chest",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2020190111"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 639281,
+    "bytesOut": 489372,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "alpha channel stripped",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:18:22.899Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

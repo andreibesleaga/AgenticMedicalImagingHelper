@@ -1,0 +1,65 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000219/series_3/00000219_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP/PA view)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Bilateral lung fields visualized with symmetric aeration\",\n    \"Cardiac silhouette appears within upper normal limits to mildly enlarged\",\n    \"Mediastinal contours grossly midline\",\n    \"Increased bilateral perihilar/lower zone haziness noted, more pronounced on the right base\",\n    \"Costophrenic angles appear slightly blunted, particularly on the right\",\n    \"Visible surgical/monitoring clip artifact in the right upper chest region\",\n    \"Bony thorax grossly intact, no obvious fracture visualized\",\n    \"Soft tissue shadows overlying the image consistent with patient positioning\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bibasilar haziness / possible airspace opacity\",\n      \"description\": \"Increased density in the bilateral lower and perihilar lung zones, could represent atelectasis, early infiltrate, or pulmonary edema; right base slightly more affected with possible blunting of costophrenic angle suggesting small effusion\",\n      \"severity\": \"Mild\",\n      \"confidence\": 55\n    },\n    {\n      \"name\": \"Cardiac silhouette prominence\",\n      \"description\": \"Heart shadow appears borderline enlarged; cardiothoracic ratio difficult to precisely calculate on this projection but silhouette breadth suggests possible mild cardiomegaly or magnification artifact from AP technique\",\n      \"severity\": \"Mild\",\n      \"confidence\": 40\n    },\n    {\n      \"name\": \"Right-sided metallic clip artifact\",\n      \"description\": \"Small metallic clip-like density projected over the right upper chest/shoulder region, likely an external monitoring lead marker or surgical clip; incidental finding\",\n      \"severity\": \"Normal\",\n      \"confidence\": 60\n    }\n  ],\n  \"summary\": \"This chest X-ray shows the lungs and heart. There is some mild haziness at the bottom of both lungs, which could be due to shallow breathing, mild fluid buildup, or early signs of infection/inflammation — this would need clinical correlation with symptoms (cough, fever, shortness of breath) to clarify. The heart shadow looks slightly full but this can also happen simply because of how the X-ray was taken (AP portable views often make the heart look bigger than it is). There's also a small metal clip visible near the right shoulder area, which is likely just a monitoring device marker and not something to worry about on its own. Overall, this image suggests some findings that a doctor should review directly, ideally alongside symptoms and possibly a follow-up scan, to determine if there is any fluid, infection, or heart-related issue that needs treatment.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-radiograph-assessment\",\n    \"https://pubs.rsna.org/doi/10.1148/radiol.2020192226\",\n    \"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP/PA view)",
+  "quality": "Fair",
+  "findings": [
+    "Bilateral lung fields visualized with symmetric aeration",
+    "Cardiac silhouette appears within upper normal limits to mildly enlarged",
+    "Mediastinal contours grossly midline",
+    "Increased bilateral perihilar/lower zone haziness noted, more pronounced on the right base",
+    "Costophrenic angles appear slightly blunted, particularly on the right",
+    "Visible surgical/monitoring clip artifact in the right upper chest region",
+    "Bony thorax grossly intact, no obvious fracture visualized",
+    "Soft tissue shadows overlying the image consistent with patient positioning"
+  ],
+  "abnormalities": [
+    {
+      "name": "Bibasilar haziness / possible airspace opacity",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Increased density in the bilateral lower and perihilar lung zones, could represent atelectasis, early infiltrate, or pulmonary edema; right base slightly more affected with possible blunting of costophrenic angle suggesting small effusion"
+    },
+    {
+      "name": "Cardiac silhouette prominence",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Heart shadow appears borderline enlarged; cardiothoracic ratio difficult to precisely calculate on this projection but silhouette breadth suggests possible mild cardiomegaly or magnification artifact from AP technique"
+    },
+    {
+      "name": "Right-sided metallic clip artifact",
+      "severity": "Normal",
+      "confidence": 60,
+      "description": "Small metallic clip-like density projected over the right upper chest/shoulder region, likely an external monitoring lead marker or surgical clip; incidental finding"
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs and heart. There is some mild haziness at the bottom of both lungs, which could be due to shallow breathing, mild fluid buildup, or early signs of infection/inflammation — this would need clinical correlation with symptoms (cough, fever, shortness of breath) to clarify. The heart shadow looks slightly full but this can also happen simply because of how the X-ray was taken (AP portable views often make the heart look bigger than it is). There's also a small metal clip visible near the right shoulder area, which is likely just a monitoring device marker and not something to worry about on its own. Overall, this image suggests some findings that a doctor should review directly, ideally alongside symptoms and possibly a follow-up scan, to determine if there is any fluid, infection, or heart-related issue that needs treatment.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-assessment",
+    "https://pubs.rsna.org/doi/10.1148/radiol.2020192226",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23371,
+    "bytesOut": 23371,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-29T10:41:20.866Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

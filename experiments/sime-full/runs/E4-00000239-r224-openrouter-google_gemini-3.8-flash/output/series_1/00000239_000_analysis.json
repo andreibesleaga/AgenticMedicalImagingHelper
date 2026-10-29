@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000239/series_1/00000239_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear bilaterally with no focal consolidation, mass, or suspicious nodule.\",\n    \"No evidence of pleural effusion or pneumothorax; costophrenic angles are sharp.\",\n    \"The cardiomediastinal silhouette is normal in size, shape, and position.\",\n    \"Pulmonary vascular markings are normal in caliber and distribution.\",\n    \"Visualized osseous structures, including the ribs and clavicles, show no acute fracture or aggressive lytic lesion.\",\n    \"Small radiopaque surgical clips are noted in the upper abdomen, consistent with previous abdominal surgery.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray is within normal limits. The lungs are clear with no signs of infection (such as pneumonia), fluid accumulation, or lung collapse. The heart is normal in size and shape. Small surgical clips seen in the upper abdomen are typical evidence of a past procedure (such as gallbladder removal) and do not represent a problem.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/normal-chest-radiograph\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK537124/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear bilaterally with no focal consolidation, mass, or suspicious nodule.",
+    "No evidence of pleural effusion or pneumothorax; costophrenic angles are sharp.",
+    "The cardiomediastinal silhouette is normal in size, shape, and position.",
+    "Pulmonary vascular markings are normal in caliber and distribution.",
+    "Visualized osseous structures, including the ribs and clavicles, show no acute fracture or aggressive lytic lesion.",
+    "Small radiopaque surgical clips are noted in the upper abdomen, consistent with previous abdominal surgery."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray is within normal limits. The lungs are clear with no signs of infection (such as pneumonia), fluid accumulation, or lung collapse. The heart is normal in size and shape. Small surgical clips seen in the upper abdomen are typical evidence of a past procedure (such as gallbladder removal) and do not represent a problem.",
+  "references": [
+    "https://radiopaedia.org/articles/normal-chest-radiograph",
+    "https://www.ncbi.nlm.nih.gov/books/NBK537124/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23729,
+    "bytesOut": 23729,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:37:54.163Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

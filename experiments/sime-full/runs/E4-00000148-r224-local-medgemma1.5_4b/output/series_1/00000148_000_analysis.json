@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000148/series_1/00000148_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear bilaterally.\",\n    \"The heart size is normal.\",\n    \"The mediastinum is unremarkable.\",\n    \"The visualized osseous structures are intact.\",\n    \"The diaphragms are clear.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray appears normal. The lungs, heart, and other structures visible in the image are unremarkable. There are no obvious signs of infection, inflammation, or other issues.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-x-ray\",\n    \"https://www.radiologyinfo.org/en/professional/chest-x-ray\",\n    \"https://www.ats.org/education/teaching-resources/resources-for-educators/chest-x-ray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear bilaterally.",
+    "The heart size is normal.",
+    "The mediastinum is unremarkable.",
+    "The visualized osseous structures are intact.",
+    "The diaphragms are clear."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray appears normal. The lungs, heart, and other structures visible in the image are unremarkable. There are no obvious signs of infection, inflammation, or other issues.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-x-ray",
+    "https://www.radiologyinfo.org/en/professional/chest-x-ray",
+    "https://www.ats.org/education/teaching-resources/resources-for-educators/chest-x-ray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22900,
+    "bytesOut": 22900,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:43:04.871Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

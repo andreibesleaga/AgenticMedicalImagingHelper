@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000296/series_1/00000296_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Overall lung volumes appear adequate.\",\n    \"No focal consolidations, effusions, or pneumothorax identified.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Osseous structures appear intact.\",\n    \"A nasogastric tube (NGT) is seen projecting over the left hemithorax. Its tip appears to be positioned within the stomach, below the diaphragm.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Nasogastric Tube Placement\",\n      \"description\": \"The nasogastric tube (NGT) is appropriately positioned with its distal tip located within the stomach, caudal to the diaphragm. There is no evidence of coiling or aberrant positioning in the esophagus or tracheobronchial tree.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows no signs of pneumonia, fluid around the lungs (effusion), or collapsed lung (pneumothorax). The heart and major blood vessels appear normal in size and shape. The bones of the chest are also normal. A feeding tube (nasogastric tube) is correctly placed with its tip in the stomach, which is the intended position.\",\n  \"references\": [\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2017160105\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6679900/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Overall lung volumes appear adequate.",
+    "No focal consolidations, effusions, or pneumothorax identified.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Osseous structures appear intact.",
+    "A nasogastric tube (NGT) is seen projecting over the left hemithorax. Its tip appears to be positioned within the stomach, below the diaphragm."
+  ],
+  "abnormalities": [
+    {
+      "name": "Nasogastric Tube Placement",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "The nasogastric tube (NGT) is appropriately positioned with its distal tip located within the stomach, caudal to the diaphragm. There is no evidence of coiling or aberrant positioning in the esophagus or tracheobronchial tree."
+    }
+  ],
+  "summary": "The chest X-ray shows no signs of pneumonia, fluid around the lungs (effusion), or collapsed lung (pneumothorax). The heart and major blood vessels appear normal in size and shape. The bones of the chest are also normal. A feeding tube (nasogastric tube) is correctly placed with its tip in the stomach, which is the intended position.",
+  "references": [
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2017160105",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6679900/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22549,
+    "bytesOut": 22549,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:25:31.533Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

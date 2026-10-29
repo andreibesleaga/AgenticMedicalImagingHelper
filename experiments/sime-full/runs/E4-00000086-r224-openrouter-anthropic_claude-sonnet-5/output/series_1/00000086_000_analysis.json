@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000086/series_1/00000086_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Fair\",\"findings\":[\"Bilateral lung fields visualized with symmetric aeration\",\"Cardiac silhouette appears within normal limits for size and contour, though slightly obscured by positioning\",\"Mediastinal structures grossly midline\",\"Increased perihilar and central lung markings noted bilaterally, more prominent on the right\",\"Costophrenic angles appear preserved bilaterally\",\"Visualized osseous structures (ribs, clavicles) without obvious acute fracture\",\"Soft tissue shadows overlying the right upper quadrant of the abdomen may represent artifact or overlying structure\"],\"abnormalities\":[{\"name\":\"Perihilar/central bronchovascular prominence\",\"description\":\"Increased density and prominence of central bronchovascular markings bilaterally, right greater than left, which may reflect vascular congestion, bronchial wall thickening, or early infiltrative process; correlation with clinical symptoms recommended\",\"severity\":\"Mild\",\"confidence\":55},{\"name\":\"Suboptimal image quality/positioning\",\"description\":\"Slight rotation and soft tissue overlap limits full assessment of cardiac borders and lower lung fields\",\"severity\":\"Mild\",\"confidence\":60}],\"summary\":\"This chest X-ray shows the lungs, heart, and bones of the chest. The lungs appear generally well-aerated without a clear focal mass or large area of pneumonia. There is some increased prominence of markings near the center of the lungs (close to the airways and blood vessels), which can be a normal variant or could suggest mild vascular congestion, bronchial thickening, or early changes from an infection—this would need correlation with symptoms like cough, fever, or shortness of breath. The image quality is fair, with slight positioning artifact that limits some detail. Overall, no obvious large abnormality (like a mass, large fluid collection, or major fracture) is seen, but a professional radiologist's review is essential for a definitive diagnosis.\",\"references\":[\"https://www.radiologyassistant.nl/chest/chest-x-ray-basic-interpretation\",\"https://www.rcr.ac.uk/media/uwjnesoc/rcr-publication-chest-x-ray-interpretation.pdf\",\"https://pubs.rsna.org/doi/10.1148/rg.2020190020\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Fair",
+  "findings": [
+    "Bilateral lung fields visualized with symmetric aeration",
+    "Cardiac silhouette appears within normal limits for size and contour, though slightly obscured by positioning",
+    "Mediastinal structures grossly midline",
+    "Increased perihilar and central lung markings noted bilaterally, more prominent on the right",
+    "Costophrenic angles appear preserved bilaterally",
+    "Visualized osseous structures (ribs, clavicles) without obvious acute fracture",
+    "Soft tissue shadows overlying the right upper quadrant of the abdomen may represent artifact or overlying structure"
+  ],
+  "abnormalities": [
+    {
+      "name": "Perihilar/central bronchovascular prominence",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Increased density and prominence of central bronchovascular markings bilaterally, right greater than left, which may reflect vascular congestion, bronchial wall thickening, or early infiltrative process; correlation with clinical symptoms recommended"
+    },
+    {
+      "name": "Suboptimal image quality/positioning",
+      "severity": "Mild",
+      "confidence": 60,
+      "description": "Slight rotation and soft tissue overlap limits full assessment of cardiac borders and lower lung fields"
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs, heart, and bones of the chest. The lungs appear generally well-aerated without a clear focal mass or large area of pneumonia. There is some increased prominence of markings near the center of the lungs (close to the airways and blood vessels), which can be a normal variant or could suggest mild vascular congestion, bronchial thickening, or early changes from an infection—this would need correlation with symptoms like cough, fever, or shortness of breath. The image quality is fair, with slight positioning artifact that limits some detail. Overall, no obvious large abnormality (like a mass, large fluid collection, or major fracture) is seen, but a professional radiologist's review is essential for a definitive diagnosis.",
+  "references": [
+    "https://www.radiologyassistant.nl/chest/chest-x-ray-basic-interpretation",
+    "https://www.rcr.ac.uk/media/uwjnesoc/rcr-publication-chest-x-ray-interpretation.pdf",
+    "https://pubs.rsna.org/doi/10.1148/rg.2020190020"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22312,
+    "bytesOut": 22312,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-29T10:35:44.064Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

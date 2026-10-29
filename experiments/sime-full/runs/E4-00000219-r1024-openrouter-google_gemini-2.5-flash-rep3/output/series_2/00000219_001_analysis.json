@@ -1,0 +1,77 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_2/00000219_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Mild cardiomegaly, with a cardiothoracic ratio estimated to be greater than 0.5.\",\n    \"Bilateral hilar vascular congestion noted.\",\n    \"Bilateral pleural effusions are present, more prominent on the right, blunting costophrenic angles.\",\n    \"Pulmonary vascular congestion is evident in both lungs.\",\n    \"Multiple surgical clips are present within the mediastinum and adjacent to the thoracic spine, consistent with previous cardiac surgery (likely sternotomy and coronary artery bypass grafting given the location and commonality of these findings).\",\n    \"A pacemaker lead is visible, terminating in the right ventricle.\",\n    \"No acute focal consolidation or pneumothorax is identified.\",\n    \"Bony structures appear unremarkable for age, aside from surgical changes.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Mild enlargement of the cardiac silhouette, with a cardiothoracic ratio greater than 0.5, suggesting cardiac dilatation or hypertrophy.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pulmonary Congestion\",\n      \"description\": \"Increased vascular markings and hazy opacities in both lung fields, consistent with pulmonary vascular congestion, likely due to left heart failure.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Blunting of both costophrenic angles, with a larger collection of fluid on the right side, indicating bilateral pleural effusions.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Surgical Clips\",\n      \"description\": \"Presence of multiple metallic surgical clips in the mediastinum and around the thoracic spine, typical findings after cardiac surgery.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pacemaker Lead\",\n      \"description\": \"A radiopaque lead is seen extending into the right ventricle, consistent with a functioning pacemaker.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that the heart appears slightly enlarged. There is fluid around both lungs, more so on the right side, and signs of increased blood in the lung vessels, suggesting some degree of heart failure. Multiple surgical clips are visible in the chest, which are expected after prior heart surgery. A pacemaker lead is also seen properly placed in the heart. There are no signs of immediate serious conditions like lung collapse or new infections.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiothoracic-ratio\",\n    \"https://radiopaedia.org/articles/pulmonary-oedema-1\",\n    \"https://radiopaedia.org/articles/pleural-effusion-1\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Mild cardiomegaly, with a cardiothoracic ratio estimated to be greater than 0.5.",
+    "Bilateral hilar vascular congestion noted.",
+    "Bilateral pleural effusions are present, more prominent on the right, blunting costophrenic angles.",
+    "Pulmonary vascular congestion is evident in both lungs.",
+    "Multiple surgical clips are present within the mediastinum and adjacent to the thoracic spine, consistent with previous cardiac surgery (likely sternotomy and coronary artery bypass grafting given the location and commonality of these findings).",
+    "A pacemaker lead is visible, terminating in the right ventricle.",
+    "No acute focal consolidation or pneumothorax is identified.",
+    "Bony structures appear unremarkable for age, aside from surgical changes."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Mild enlargement of the cardiac silhouette, with a cardiothoracic ratio greater than 0.5, suggesting cardiac dilatation or hypertrophy."
+    },
+    {
+      "name": "Pulmonary Congestion",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Increased vascular markings and hazy opacities in both lung fields, consistent with pulmonary vascular congestion, likely due to left heart failure."
+    },
+    {
+      "name": "Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Blunting of both costophrenic angles, with a larger collection of fluid on the right side, indicating bilateral pleural effusions."
+    },
+    {
+      "name": "Surgical Clips",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Presence of multiple metallic surgical clips in the mediastinum and around the thoracic spine, typical findings after cardiac surgery."
+    },
+    {
+      "name": "Pacemaker Lead",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A radiopaque lead is seen extending into the right ventricle, consistent with a functioning pacemaker."
+    }
+  ],
+  "summary": "The chest X-ray shows that the heart appears slightly enlarged. There is fluid around both lungs, more so on the right side, and signs of increased blood in the lung vessels, suggesting some degree of heart failure. Multiple surgical clips are visible in the chest, which are expected after prior heart surgery. A pacemaker lead is also seen properly placed in the heart. There are no signs of immediate serious conditions like lung collapse or new infections.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiothoracic-ratio",
+    "https://radiopaedia.org/articles/pulmonary-oedema-1",
+    "https://radiopaedia.org/articles/pleural-effusion-1"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 385977,
+    "bytesOut": 381054,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:55:19.831Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

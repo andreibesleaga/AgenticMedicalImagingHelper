@@ -1,0 +1,66 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000086/series_1/00000086_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Good\",\"findings\":[\"Lungs are well-expanded and grossly clear bilaterally, no focal consolidation\",\"Cardiac silhouette appears mildly enlarged/borderline, within upper limits given projection\",\"Mediastinal contours appear unremarkable; trachea midline\",\"Linear opacity in the right mid-lung zone, likely a skin fold or minor linear scarring artifact\",\"Metallic surgical clip/staple-like radiopaque marker overlying the left shoulder/soft tissue (possibly skin marker or prior surgical clip)\",\"Costophrenic angles appear sharp bilaterally\",\"Osseous structures of the shoulders, clavicles, and visible ribs appear intact without acute fracture\",\"Soft tissues of the neck and chest wall are unremarkable\",\"Faint calcified/nodular densities noted in the upper abdomen below the left hemidiaphragm, possibly costal cartilage calcification or incidental finding\"],\"abnormalities\":[{\"name\":\"Linear opacity, right mid-lung\",\"description\":\"A thin linear density is seen projecting over the right mid-lung field, likely representing a skin fold artifact given its course, though a subtle scar or pleural line cannot be entirely excluded.\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Radiopaque marker, left shoulder region\",\"description\":\"A small L-shaped/hook metallic density overlies the soft tissues near the left shoulder, likely an external skin marker or electrode artifact rather than an internal surgical clip.\",\"severity\":\"Mild\",\"confidence\":50},{\"name\":\"Borderline cardiac size\",\"description\":\"The cardiothoracic ratio appears at the upper range of normal; this could be due to projection/technique (AP portable film can exaggerate heart size) rather than true cardiomegaly.\",\"severity\":\"Mild\",\"confidence\":35}],\"summary\":\"This chest X-ray shows lungs that are well-expanded and generally clear, without evidence of pneumonia, significant fluid buildup, or collapse. The heart size appears slightly large, but this can often be due to the way the X-ray was taken (such as patient positioning) rather than an actual heart problem. There is a thin line in the right lung area that most likely represents a skin fold from positioning rather than a true lung abnormality. There is also a small metal-like marker near the left shoulder, which is likely an external object (like a clothing snap or skin marker) rather than something inside the body. Overall, no acute or serious findings are strongly identified, but these details should be reviewed by a radiologist, and correlation with the patient's clinical history and prior imaging is recommended for complete accuracy.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.acr.org/-/media/ACR/Files/Practice-Parameters/chest-radiography.pdf\",\"https://pubs.rsna.org/doi/10.1148/radiol.2019182716\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are well-expanded and grossly clear bilaterally, no focal consolidation",
+    "Cardiac silhouette appears mildly enlarged/borderline, within upper limits given projection",
+    "Mediastinal contours appear unremarkable; trachea midline",
+    "Linear opacity in the right mid-lung zone, likely a skin fold or minor linear scarring artifact",
+    "Metallic surgical clip/staple-like radiopaque marker overlying the left shoulder/soft tissue (possibly skin marker or prior surgical clip)",
+    "Costophrenic angles appear sharp bilaterally",
+    "Osseous structures of the shoulders, clavicles, and visible ribs appear intact without acute fracture",
+    "Soft tissues of the neck and chest wall are unremarkable",
+    "Faint calcified/nodular densities noted in the upper abdomen below the left hemidiaphragm, possibly costal cartilage calcification or incidental finding"
+  ],
+  "abnormalities": [
+    {
+      "name": "Linear opacity, right mid-lung",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "A thin linear density is seen projecting over the right mid-lung field, likely representing a skin fold artifact given its course, though a subtle scar or pleural line cannot be entirely excluded."
+    },
+    {
+      "name": "Radiopaque marker, left shoulder region",
+      "severity": "Mild",
+      "confidence": 50,
+      "description": "A small L-shaped/hook metallic density overlies the soft tissues near the left shoulder, likely an external skin marker or electrode artifact rather than an internal surgical clip."
+    },
+    {
+      "name": "Borderline cardiac size",
+      "severity": "Mild",
+      "confidence": 35,
+      "description": "The cardiothoracic ratio appears at the upper range of normal; this could be due to projection/technique (AP portable film can exaggerate heart size) rather than true cardiomegaly."
+    }
+  ],
+  "summary": "This chest X-ray shows lungs that are well-expanded and generally clear, without evidence of pneumonia, significant fluid buildup, or collapse. The heart size appears slightly large, but this can often be due to the way the X-ray was taken (such as patient positioning) rather than an actual heart problem. There is a thin line in the right lung area that most likely represents a skin fold from positioning rather than a true lung abnormality. There is also a small metal-like marker near the left shoulder, which is likely an external object (like a clothing snap or skin marker) rather than something inside the body. Overall, no acute or serious findings are strongly identified, but these details should be reviewed by a radiologist, and correlation with the patient's clinical history and prior imaging is recommended for complete accuracy.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.acr.org/-/media/ACR/Files/Practice-Parameters/chest-radiography.pdf",
+    "https://pubs.rsna.org/doi/10.1148/radiol.2019182716"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 412436,
+    "bytesOut": 410514,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T10:23:00.126Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

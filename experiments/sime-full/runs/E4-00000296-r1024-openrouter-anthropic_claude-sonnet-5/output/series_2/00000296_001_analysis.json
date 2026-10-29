@@ -1,0 +1,59 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000296/series_2/00000296_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP upright)\",\"quality\":\"Good\",\"findings\":[\"Central venous catheter (looped/coiled) present in the left upper chest, with a pigtail-like coil at its tip overlying the left mid-lung zone/hilar region, likely a malpositioned or looped catheter (possible tunneled dialysis catheter or PICC with coiling)\",\"Cardiac silhouette appears mildly enlarged but within acceptable limits for AP projection\",\"Lungs appear grossly clear without focal consolidation, though there is mild increased perihilar/bibasilar haziness which may represent mild vascular congestion or technique-related density\",\"No definite pneumothorax identified\",\"No large pleural effusion evident\",\"Bony thorax including clavicles, ribs, and shoulders appear intact without acute fracture\",\"Soft tissue overlying bilateral breast regions noted, more prominent on the right, likely representing normal breast tissue silhouette\",\"Mediastinal contours appear within normal limits, trachea midline\"],\"abnormalities\":[{\"name\":\"Catheter malposition/coiling\",\"description\":\"A radiopaque catheter is seen entering from the left upper chest with an unusual coiled/looped configuration at its terminal tip, situated in the left mid-lung field rather than following an expected straight course to the SVC/right atrium. This raises concern for a malpositioned, kinked, or intentionally coiled catheter (such as a Cook-type triple lumen or drainage catheter) rather than a standard central line terminating at the cavoatrial junction.\",\"severity\":\"Moderate\",\"confidence\":72},{\"name\":\"Mild perihilar haziness\",\"description\":\"Subtle increased density in the perihilar and lower lung regions bilaterally, which could reflect mild vascular congestion, atelectasis, or be an artifact of positioning/exposure; no discrete consolidation is seen.\",\"severity\":\"Mild\",\"confidence\":40}],\"summary\":\"This chest X-ray shows a thin tube (catheter) that has been placed into the chest from the left side. Instead of running in a straight line to the large vein near the heart as expected, the tip of the tube appears to curl into a loop within the lung area. This could mean the tube is not in the ideal position and may need to be checked or adjusted by the medical team. The lungs themselves look mostly clear, without signs of major infection or fluid buildup, though there is a slight haziness near the central lung areas which is usually not serious but should be correlated clinically. The heart size and bones of the chest appear normal. Overall, the main point of concern is the positioning of the catheter, which your doctor should review to ensure it is functioning safely and correctly.\",\"references\":[\"https://radiopaedia.org/articles/central-venous-catheter-malposition\",\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5586647/\",\"https://pubs.rsna.org/doi/10.1148/rg.2016150175\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Good",
+  "findings": [
+    "Central venous catheter (looped/coiled) present in the left upper chest, with a pigtail-like coil at its tip overlying the left mid-lung zone/hilar region, likely a malpositioned or looped catheter (possible tunneled dialysis catheter or PICC with coiling)",
+    "Cardiac silhouette appears mildly enlarged but within acceptable limits for AP projection",
+    "Lungs appear grossly clear without focal consolidation, though there is mild increased perihilar/bibasilar haziness which may represent mild vascular congestion or technique-related density",
+    "No definite pneumothorax identified",
+    "No large pleural effusion evident",
+    "Bony thorax including clavicles, ribs, and shoulders appear intact without acute fracture",
+    "Soft tissue overlying bilateral breast regions noted, more prominent on the right, likely representing normal breast tissue silhouette",
+    "Mediastinal contours appear within normal limits, trachea midline"
+  ],
+  "abnormalities": [
+    {
+      "name": "Catheter malposition/coiling",
+      "severity": "Moderate",
+      "confidence": 72,
+      "description": "A radiopaque catheter is seen entering from the left upper chest with an unusual coiled/looped configuration at its terminal tip, situated in the left mid-lung field rather than following an expected straight course to the SVC/right atrium. This raises concern for a malpositioned, kinked, or intentionally coiled catheter (such as a Cook-type triple lumen or drainage catheter) rather than a standard central line terminating at the cavoatrial junction."
+    },
+    {
+      "name": "Mild perihilar haziness",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Subtle increased density in the perihilar and lower lung regions bilaterally, which could reflect mild vascular congestion, atelectasis, or be an artifact of positioning/exposure; no discrete consolidation is seen."
+    }
+  ],
+  "summary": "This chest X-ray shows a thin tube (catheter) that has been placed into the chest from the left side. Instead of running in a straight line to the large vein near the heart as expected, the tip of the tube appears to curl into a loop within the lung area. This could mean the tube is not in the ideal position and may need to be checked or adjusted by the medical team. The lungs themselves look mostly clear, without signs of major infection or fluid buildup, though there is a slight haziness near the central lung areas which is usually not serious but should be correlated clinically. The heart size and bones of the chest appear normal. Overall, the main point of concern is the positioning of the catheter, which your doctor should review to ensure it is functioning safely and correctly.",
+  "references": [
+    "https://radiopaedia.org/articles/central-venous-catheter-malposition",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5586647/",
+    "https://pubs.rsna.org/doi/10.1148/rg.2016150175"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 415316,
+    "bytesOut": 413672,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:30:50.352Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

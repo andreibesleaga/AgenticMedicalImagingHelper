@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00027230/series_1/00027230_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A focal area of increased opacity is present in the right middle/lower lung zone.\",\n    \"The right hemidiaphragm is partially obscured by the opacity.\",\n    \"The left lung is clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"The cardiomediastinal silhouette is within normal limits.\",\n    \"The bony thorax is intact.\",\n    \"Surgical clips are noted in the left axilla.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Lung Opacity\",\n      \"description\": \"Focal consolidation in the right middle/lower lung zone, suspicious for pneumonia.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Surgical Clips\",\n      \"description\": \"Surgical clips are visualized in the left axilla, likely indicating a prior lymph node dissection or other surgical procedure.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows an area of cloudiness in the right lung, which could be an infection such as pneumonia. Small metal clips are also seen in the left armpit, which are from a previous surgery. The left lung, heart, and bones appear normal. It is important to discuss these findings with your doctor, who may recommend further testing or treatment.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/lobar-pneumonia\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3734893/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "A focal area of increased opacity is present in the right middle/lower lung zone.",
+    "The right hemidiaphragm is partially obscured by the opacity.",
+    "The left lung is clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "The cardiomediastinal silhouette is within normal limits.",
+    "The bony thorax is intact.",
+    "Surgical clips are noted in the left axilla."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Lung Opacity",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Focal consolidation in the right middle/lower lung zone, suspicious for pneumonia."
+    },
+    {
+      "name": "Surgical Clips",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Surgical clips are visualized in the left axilla, likely indicating a prior lymph node dissection or other surgical procedure."
+    }
+  ],
+  "summary": "The chest X-ray shows an area of cloudiness in the right lung, which could be an infection such as pneumonia. Small metal clips are also seen in the left armpit, which are from a previous surgery. The left lung, heart, and bones appear normal. It is important to discuss these findings with your doctor, who may recommend further testing or treatment.",
+  "references": [
+    "https://radiopaedia.org/articles/lobar-pneumonia",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3734893/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 377475,
+    "bytesOut": 375014,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:59:51.875Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

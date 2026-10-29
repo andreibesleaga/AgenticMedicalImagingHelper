@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000296/series_1/00000296_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA/AP upright)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Central venous catheter (likely PICC or central line) with coiled tip overlying the left mid-to-upper chest, entering from the left shoulder/axillary region, with catheter tip appearing to coil in the region of the left subclavian/axillary vein rather than advancing centrally into the SVC\",\n    \"Lungs are grossly clear bilaterally without focal consolidation, effusion, or pneumothorax\",\n    \"Cardiac silhouette appears within normal limits in size\",\n    \"Mediastinal contours are unremarkable\",\n    \"Visualized osseous structures (clavicles, ribs, scapulae) appear intact without acute fracture\",\n    \"No obvious pneumothorax or subcutaneous emphysema identified\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Malpositioned central venous catheter\",\n      \"description\": \"The catheter inserted via the left side forms a coiled/looped configuration in the upper left chest near the axillary/subclavian region rather than following an expected straight course toward the SVC/right atrium junction, suggesting possible malposition or coiling of the catheter tip.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 65\n    }\n  ],\n  \"summary\": \"This chest X-ray shows a tube (catheter) that has been placed into a vein on the left side of the chest, likely for giving medications or fluids directly into the bloodstream. Normally, the tip of this type of catheter should travel in a relatively straight path down into a large vein near the heart. In this image, the catheter appears to curl or loop within the upper chest area instead of continuing in the expected direction, which could mean it is not positioned ideally. The lungs, heart, and bones all appear otherwise normal, with no signs of air leakage (pneumothorax), fluid buildup, or infection. A healthcare provider should review the catheter position to determine if repositioning is needed to ensure it works properly and safely.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5337150/\",\n    \"https://radiopaedia.org/articles/central-venous-catheter-malposition\",\n    \"https://pubs.rsna.org/doi/10.1148/rg.2016150209\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Good",
+  "findings": [
+    "Central venous catheter (likely PICC or central line) with coiled tip overlying the left mid-to-upper chest, entering from the left shoulder/axillary region, with catheter tip appearing to coil in the region of the left subclavian/axillary vein rather than advancing centrally into the SVC",
+    "Lungs are grossly clear bilaterally without focal consolidation, effusion, or pneumothorax",
+    "Cardiac silhouette appears within normal limits in size",
+    "Mediastinal contours are unremarkable",
+    "Visualized osseous structures (clavicles, ribs, scapulae) appear intact without acute fracture",
+    "No obvious pneumothorax or subcutaneous emphysema identified"
+  ],
+  "abnormalities": [
+    {
+      "name": "Malpositioned central venous catheter",
+      "severity": "Moderate",
+      "confidence": 65,
+      "description": "The catheter inserted via the left side forms a coiled/looped configuration in the upper left chest near the axillary/subclavian region rather than following an expected straight course toward the SVC/right atrium junction, suggesting possible malposition or coiling of the catheter tip."
+    }
+  ],
+  "summary": "This chest X-ray shows a tube (catheter) that has been placed into a vein on the left side of the chest, likely for giving medications or fluids directly into the bloodstream. Normally, the tip of this type of catheter should travel in a relatively straight path down into a large vein near the heart. In this image, the catheter appears to curl or loop within the upper chest area instead of continuing in the expected direction, which could mean it is not positioned ideally. The lungs, heart, and bones all appear otherwise normal, with no signs of air leakage (pneumothorax), fluid buildup, or infection. A healthcare provider should review the catheter position to determine if repositioning is needed to ensure it works properly and safely.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5337150/",
+    "https://radiopaedia.org/articles/central-venous-catheter-malposition",
+    "https://pubs.rsna.org/doi/10.1148/rg.2016150209"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 411000,
+    "bytesOut": 408812,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T10:34:55.548Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000239/series_6/00000239_005.png",
+  "seriesId": "series_6",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest and Abdomen (PA upright)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diaphragms are elevated bilaterally with a large gas bubble noted under the left hemidiaphragm, consistent with a dilated stomach. A smaller air-fluid level is seen under the right hemidiaphragm, consistent with a dilated gastric fundus or colon.\",\n    \"The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"The cardiac silhouette is within normal limits for size and contour.\",\n    \"Bowel gas pattern in the abdomen appears unremarkable, with no signs of obstruction.\",\n    \"No free air is seen under the right hemidiaphragm.\",\n    \"Surgical clips are noted in the right upper quadrant, likely from a prior cholecystectomy.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Gastric Dilation\",\n      \"description\": \"Significant dilation of the stomach is evident, with a large gas bubble occupying a substantial portion of the upper abdomen, pushing up both hemidiaphragms. This appearance suggests gastric outlet obstruction or gastroparesis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Diaphragmatic Elevation\",\n      \"description\": \"Bilateral elevation of the hemidiaphragms is observed, secondary to the underlying gastric distension.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The X-ray shows a significantly enlarged stomach, which is full of gas and is pushing up the muscular partitions (diaphragms) that separate the chest from the abdomen. This could mean there's a blockage at the exit of the stomach or that the stomach's muscles aren't working properly (gastroparesis). The lungs and heart appear normal, and there are no signs of a collapsed lung or fluid around the lungs. There's no evidence of air outside the bowel or stomach where it shouldn't be, which could indicate a perforation. Surgical clips are visible in the upper right abdomen, suggesting a previous gallbladder removal surgery. Further evaluation, such as with a CT scan or endoscopy, would likely be needed to determine the exact cause of the stomach enlargement.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/gastric-outlet-obstruction\",\n    \"https://www.niddk.nih.gov/health-information/digestive-diseases/gastroparesis\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3576135/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest and Abdomen (PA upright)",
+  "quality": "Good",
+  "findings": [
+    "Diaphragms are elevated bilaterally with a large gas bubble noted under the left hemidiaphragm, consistent with a dilated stomach. A smaller air-fluid level is seen under the right hemidiaphragm, consistent with a dilated gastric fundus or colon.",
+    "The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "The cardiac silhouette is within normal limits for size and contour.",
+    "Bowel gas pattern in the abdomen appears unremarkable, with no signs of obstruction.",
+    "No free air is seen under the right hemidiaphragm.",
+    "Surgical clips are noted in the right upper quadrant, likely from a prior cholecystectomy."
+  ],
+  "abnormalities": [
+    {
+      "name": "Gastric Dilation",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Significant dilation of the stomach is evident, with a large gas bubble occupying a substantial portion of the upper abdomen, pushing up both hemidiaphragms. This appearance suggests gastric outlet obstruction or gastroparesis."
+    },
+    {
+      "name": "Diaphragmatic Elevation",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Bilateral elevation of the hemidiaphragms is observed, secondary to the underlying gastric distension."
+    }
+  ],
+  "summary": "The X-ray shows a significantly enlarged stomach, which is full of gas and is pushing up the muscular partitions (diaphragms) that separate the chest from the abdomen. This could mean there's a blockage at the exit of the stomach or that the stomach's muscles aren't working properly (gastroparesis). The lungs and heart appear normal, and there are no signs of a collapsed lung or fluid around the lungs. There's no evidence of air outside the bowel or stomach where it shouldn't be, which could indicate a perforation. Surgical clips are visible in the upper right abdomen, suggesting a previous gallbladder removal surgery. Further evaluation, such as with a CT scan or endoscopy, would likely be needed to determine the exact cause of the stomach enlargement.",
+  "references": [
+    "https://radiopaedia.org/articles/gastric-outlet-obstruction",
+    "https://www.niddk.nih.gov/health-information/digestive-diseases/gastroparesis",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3576135/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22688,
+    "bytesOut": 22688,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:25:02.755Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

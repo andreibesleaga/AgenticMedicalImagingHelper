@@ -1,0 +1,60 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S3x10/series_2/img_05_00022764_006.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP upright)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Large radiolucency with an air-fluid level in the left hemithorax, displacing the mediastinum to the right and depressing the left hemidiaphragm.\",\n    \"Bowel gas patterns are visible within the left hemithorax.\",\n    \"A nasogastric tube is present, with its tip likely in the stomach, which appears to be herniated into the chest.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Diaphragmatic Hernia\",\n      \"description\": \"Significant herniation of abdominal contents, including stomach and bowel, into the left hemithorax, evidenced by the large air-fluid level and displaced bowel loops. This is consistent with a large diaphragmatic hernia.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 98\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"The mediastinum, including the heart and trachea, is significantly shifted to the right due to the mass effect from the herniated abdominal contents in the left chest.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Left Lung Compression\",\n      \"description\": \"The left lung is likely compressed by the herniated abdominal organs, though its complete extent is not fully visualized.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The X-ray shows a large hole in the diaphragm, which is the muscle separating the chest from the abdomen. Through this hole, abdominal organs, particularly the stomach and intestines, have moved up into the left side of the chest. This is called a diaphragmatic hernia. This movement of organs has pushed the heart and other structures in the middle of the chest over to the right side, and it's also likely squishing the left lung. There's also a feeding tube (nasogastric tube) visible, with its end appearing to be in the stomach, which is now located in the chest.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/diaphragmatic-hernia-1\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900696/\",\n    \"https://emedicine.medscape.com/article/368297-overview\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP upright)",
+  "quality": "Good",
+  "findings": [
+    "Large radiolucency with an air-fluid level in the left hemithorax, displacing the mediastinum to the right and depressing the left hemidiaphragm.",
+    "Bowel gas patterns are visible within the left hemithorax.",
+    "A nasogastric tube is present, with its tip likely in the stomach, which appears to be herniated into the chest."
+  ],
+  "abnormalities": [
+    {
+      "name": "Diaphragmatic Hernia",
+      "severity": "Severe",
+      "confidence": 98,
+      "description": "Significant herniation of abdominal contents, including stomach and bowel, into the left hemithorax, evidenced by the large air-fluid level and displaced bowel loops. This is consistent with a large diaphragmatic hernia."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "The mediastinum, including the heart and trachea, is significantly shifted to the right due to the mass effect from the herniated abdominal contents in the left chest."
+    },
+    {
+      "name": "Left Lung Compression",
+      "severity": "Severe",
+      "confidence": 90,
+      "description": "The left lung is likely compressed by the herniated abdominal organs, though its complete extent is not fully visualized."
+    }
+  ],
+  "summary": "The X-ray shows a large hole in the diaphragm, which is the muscle separating the chest from the abdomen. Through this hole, abdominal organs, particularly the stomach and intestines, have moved up into the left side of the chest. This is called a diaphragmatic hernia. This movement of organs has pushed the heart and other structures in the middle of the chest over to the right side, and it's also likely squishing the left lung. There's also a feeding tube (nasogastric tube) visible, with its end appearing to be in the stomach, which is now located in the chest.",
+  "references": [
+    "https://radiopaedia.org/articles/diaphragmatic-hernia-1",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900696/",
+    "https://emedicine.medscape.com/article/368297-overview"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23803,
+    "bytesOut": 23803,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:53:11.321Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

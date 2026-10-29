@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000219/series_4/00000219_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No evidence of acute cardiopulmonary pathology on this chest X-ray.\",\n    \"Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiac silhouette is within normal limits for size and contour.\",\n    \"Mediastinum is unremarkable.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"Osseous structures appear grossly normal for age, though specific evaluation for subtle fractures is limited by projection.\",\n    \"Multiple small metallic clips/coils are noted in the mid-lower thoracic region, likely postoperative changes (e.g., from prior esophageal or gastric surgery).\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Metallic Clips/Coils\",\n      \"description\": \"Multiple small metallic clips/coils are visible in the mid-lower thoracic region, likely representing postsurgical changes. Without clinical history, the exact etiology is not certain, but they are common after procedures such as esophageal surgery, gastric surgery, or aneurysm repair. They do not appear to be causing any immediate complications.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray of your chest shows no signs of acute problems with your heart or lungs, such as pneumonia, fluid around the lungs (pleural effusion), or a collapsed lung (pneumothorax). Your heart appears to be of normal size. There are some small metallic clips visible in the lower part of your chest, which are commonly seen after previous surgeries in that area, such as on the esophagus or stomach. These clips are a normal finding if you've had such a surgery and are not typically a cause for concern.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.294085025\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No evidence of acute cardiopulmonary pathology on this chest X-ray.",
+    "Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiac silhouette is within normal limits for size and contour.",
+    "Mediastinum is unremarkable.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "Osseous structures appear grossly normal for age, though specific evaluation for subtle fractures is limited by projection.",
+    "Multiple small metallic clips/coils are noted in the mid-lower thoracic region, likely postoperative changes (e.g., from prior esophageal or gastric surgery)."
+  ],
+  "abnormalities": [
+    {
+      "name": "Metallic Clips/Coils",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Multiple small metallic clips/coils are visible in the mid-lower thoracic region, likely representing postsurgical changes. Without clinical history, the exact etiology is not certain, but they are common after procedures such as esophageal surgery, gastric surgery, or aneurysm repair. They do not appear to be causing any immediate complications."
+    }
+  ],
+  "summary": "This X-ray of your chest shows no signs of acute problems with your heart or lungs, such as pneumonia, fluid around the lungs (pleural effusion), or a collapsed lung (pneumothorax). Your heart appears to be of normal size. There are some small metallic clips visible in the lower part of your chest, which are commonly seen after previous surgeries in that area, such as on the esophagus or stomach. These clips are a normal finding if you've had such a surgery and are not typically a cause for concern.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.294085025",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23416,
+    "bytesOut": 23416,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:24:25.134Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

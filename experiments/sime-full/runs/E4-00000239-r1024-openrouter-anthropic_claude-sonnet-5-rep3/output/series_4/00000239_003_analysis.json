@@ -1,0 +1,66 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_4/00000239_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP upright)\",\"quality\":\"Fair\",\"findings\":[\"Markedly elevated right hemidiaphragm with gas-filled bowel loops visualized within the right lower hemithorax, consistent with herniated abdominal contents into the chest\",\"Large air-filled, haustrated structure (likely colon) projecting above the expected diaphragmatic contour on the right\",\"Mediastinal structures appear midline to slightly shifted\",\"Lung fields bilaterally show no focal consolidation; right lower lung zone obscured by underlying bowel gas pattern\",\"Surgical clips/sutures noted in the right axillary/chest wall region, suggesting prior thoracic or chest wall surgery\",\"Metallic skin marker visible in right upper chest (likely radiopaque lead marker)\",\"Cardiac silhouette size appears within normal limits, though partially obscured\",\"Degenerative changes noted in the visualized thoracic spine\",\"Soft tissue prominence in bilateral breast regions, consistent with patient habitus\"],\"abnormalities\":[{\"name\":\"Elevated right hemidiaphragm with suspected diaphragmatic hernia/eventration\",\"description\":\"The right hemidiaphragm is abnormally elevated with gas-filled, haustrated bowel loops seen projecting into the right lower chest, highly suggestive of diaphragmatic hernia (traumatic, congenital, or post-surgical) or severe eventration allowing herniation of abdominal viscera into the thoracic cavity.\",\"severity\":\"Severe\",\"confidence\":75},{\"name\":\"Post-surgical changes, right chest wall\",\"description\":\"Surgical clips are seen in the right axillary/lateral chest wall region, indicating prior surgical intervention, possibly related to thoracic, breast, or diaphragmatic repair.\",\"severity\":\"Mild\",\"confidence\":60},{\"name\":\"Obscuration of right lower lung field\",\"description\":\"The right lower lung zone is partially obscured due to overlying bowel gas pattern from the herniated/elevated bowel, limiting full assessment of the right lower lobe.\",\"severity\":\"Moderate\",\"confidence\":65}],\"summary\":\"This chest X-ray shows that the right side of the diaphragm (the muscle that separates the chest from the abdomen) is pushed up higher than normal, and gas-filled loops of bowel appear to be located within the lower right chest area. This pattern is concerning for a diaphragmatic hernia, which means part of the intestines may have moved up into the chest through a weak or torn area in the diaphragm. There are also surgical clips visible in the right underarm/chest wall area, suggesting the patient has had prior surgery in that region, which could be related to this finding. The lungs themselves look relatively clear, though the bowel gas is obscuring part of the right lower lung making it harder to fully evaluate. This finding needs urgent clinical correlation and likely follow-up imaging (such as a CT scan) to confirm the diagnosis and determine the best treatment, which may include surgical repair.\",\"references\":[\"https://radiopaedia.org/articles/diaphragmatic-hernia\",\"https://pubs.rsna.org/doi/10.1148/rg.2019190025\",\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6534553/\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Fair",
+  "findings": [
+    "Markedly elevated right hemidiaphragm with gas-filled bowel loops visualized within the right lower hemithorax, consistent with herniated abdominal contents into the chest",
+    "Large air-filled, haustrated structure (likely colon) projecting above the expected diaphragmatic contour on the right",
+    "Mediastinal structures appear midline to slightly shifted",
+    "Lung fields bilaterally show no focal consolidation; right lower lung zone obscured by underlying bowel gas pattern",
+    "Surgical clips/sutures noted in the right axillary/chest wall region, suggesting prior thoracic or chest wall surgery",
+    "Metallic skin marker visible in right upper chest (likely radiopaque lead marker)",
+    "Cardiac silhouette size appears within normal limits, though partially obscured",
+    "Degenerative changes noted in the visualized thoracic spine",
+    "Soft tissue prominence in bilateral breast regions, consistent with patient habitus"
+  ],
+  "abnormalities": [
+    {
+      "name": "Elevated right hemidiaphragm with suspected diaphragmatic hernia/eventration",
+      "severity": "Severe",
+      "confidence": 75,
+      "description": "The right hemidiaphragm is abnormally elevated with gas-filled, haustrated bowel loops seen projecting into the right lower chest, highly suggestive of diaphragmatic hernia (traumatic, congenital, or post-surgical) or severe eventration allowing herniation of abdominal viscera into the thoracic cavity."
+    },
+    {
+      "name": "Post-surgical changes, right chest wall",
+      "severity": "Mild",
+      "confidence": 60,
+      "description": "Surgical clips are seen in the right axillary/lateral chest wall region, indicating prior surgical intervention, possibly related to thoracic, breast, or diaphragmatic repair."
+    },
+    {
+      "name": "Obscuration of right lower lung field",
+      "severity": "Moderate",
+      "confidence": 65,
+      "description": "The right lower lung zone is partially obscured due to overlying bowel gas pattern from the herniated/elevated bowel, limiting full assessment of the right lower lobe."
+    }
+  ],
+  "summary": "This chest X-ray shows that the right side of the diaphragm (the muscle that separates the chest from the abdomen) is pushed up higher than normal, and gas-filled loops of bowel appear to be located within the lower right chest area. This pattern is concerning for a diaphragmatic hernia, which means part of the intestines may have moved up into the chest through a weak or torn area in the diaphragm. There are also surgical clips visible in the right underarm/chest wall area, suggesting the patient has had prior surgery in that region, which could be related to this finding. The lungs themselves look relatively clear, though the bowel gas is obscuring part of the right lower lung making it harder to fully evaluate. This finding needs urgent clinical correlation and likely follow-up imaging (such as a CT scan) to confirm the diagnosis and determine the best treatment, which may include surgical repair.",
+  "references": [
+    "https://radiopaedia.org/articles/diaphragmatic-hernia",
+    "https://pubs.rsna.org/doi/10.1148/rg.2019190025",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6534553/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 431092,
+    "bytesOut": 428915,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T10:32:19.913Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

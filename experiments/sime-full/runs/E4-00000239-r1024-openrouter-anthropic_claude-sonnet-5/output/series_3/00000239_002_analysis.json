@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_3/00000239_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP, likely supine/portable)\",\"quality\":\"Fair\",\"findings\":[\"Lungs are clear bilaterally with no focal consolidation, effusion, or pneumothorax\",\"Cardiomediastinal silhouette appears within normal limits given projection\",\"Prominent gas-distended bowel loops visible in the upper abdomen, projecting into the lower chest field, suggestive of dilated stomach/bowel\",\"Air-fluid level or gastric bubble noted on the left upper abdomen just below the diaphragm\",\"Multiple small metallic/radiopaque markers or clips seen in the lower abdomen, likely surgical clips or skin markers\",\"Skeletal structures (clavicles, ribs, scapulae, cervical spine) appear grossly intact without obvious fracture\",\"Soft tissue of both shoulders and upper arms symmetric\"],\"abnormalities\":[{\"name\":\"Abdominal bowel gas distension\",\"description\":\"Dilated, gas-filled loops of bowel are seen occupying the upper abdomen, extending up to the diaphragmatic region; this could represent normal bowel gas pattern or early ileus/obstruction depending on clinical context\",\"severity\":\"Mild\",\"confidence\":55},{\"name\":\"Radiopaque markers/clips in lower abdomen\",\"description\":\"Several small linear and dot-like metallic densities are seen in the lower abdomen, most consistent with surgical clips, sutures, or skin markers from prior procedure\",\"severity\":\"Normal\",\"confidence\":60}],\"summary\":\"This chest X-ray shows clear lungs without signs of pneumonia, fluid buildup, or collapsed lung. The heart and major chest structures appear normal in size and position. In the upper abdomen, there is a noticeable amount of gas in the bowel, which can be a normal finding but sometimes indicates the bowel is not moving contents through as expected (called ileus) - this would need correlation with the patient's symptoms and abdominal exam. Several small metal-appearing dots and lines in the lower abdomen are most likely surgical clips or skin markers from a prior procedure, not a cause for concern on their own. Overall, the chest itself looks unremarkable, but the abdominal gas pattern may warrant further evaluation by the treating physician.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.ncbi.nlm.nih.gov/books/NBK537355/\",\"https://www.radiologyinfo.org/en/info/chestrad\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP, likely supine/portable)",
+  "quality": "Fair",
+  "findings": [
+    "Lungs are clear bilaterally with no focal consolidation, effusion, or pneumothorax",
+    "Cardiomediastinal silhouette appears within normal limits given projection",
+    "Prominent gas-distended bowel loops visible in the upper abdomen, projecting into the lower chest field, suggestive of dilated stomach/bowel",
+    "Air-fluid level or gastric bubble noted on the left upper abdomen just below the diaphragm",
+    "Multiple small metallic/radiopaque markers or clips seen in the lower abdomen, likely surgical clips or skin markers",
+    "Skeletal structures (clavicles, ribs, scapulae, cervical spine) appear grossly intact without obvious fracture",
+    "Soft tissue of both shoulders and upper arms symmetric"
+  ],
+  "abnormalities": [
+    {
+      "name": "Abdominal bowel gas distension",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Dilated, gas-filled loops of bowel are seen occupying the upper abdomen, extending up to the diaphragmatic region; this could represent normal bowel gas pattern or early ileus/obstruction depending on clinical context"
+    },
+    {
+      "name": "Radiopaque markers/clips in lower abdomen",
+      "severity": "Normal",
+      "confidence": 60,
+      "description": "Several small linear and dot-like metallic densities are seen in the lower abdomen, most consistent with surgical clips, sutures, or skin markers from prior procedure"
+    }
+  ],
+  "summary": "This chest X-ray shows clear lungs without signs of pneumonia, fluid buildup, or collapsed lung. The heart and major chest structures appear normal in size and position. In the upper abdomen, there is a noticeable amount of gas in the bowel, which can be a normal finding but sometimes indicates the bowel is not moving contents through as expected (called ileus) - this would need correlation with the patient's symptoms and abdominal exam. Several small metal-appearing dots and lines in the lower abdomen are most likely surgical clips or skin markers from a prior procedure, not a cause for concern on their own. Overall, the chest itself looks unremarkable, but the abdominal gas pattern may warrant further evaluation by the treating physician.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.ncbi.nlm.nih.gov/books/NBK537355/",
+    "https://www.radiologyinfo.org/en/info/chestrad"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 413987,
+    "bytesOut": 412168,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:27:41.285Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

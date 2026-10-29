@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_4/00000148_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Excellent\",\n  \"findings\": [\n    \"Lungs are clear with no evidence of focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Bony structures are intact.\",\n    \"A port-a-cath device is present in the right chest wall with the catheter tip terminating in the lower superior vena cava.\",\n    \"Diaphragms are well-defined and the costophrenic angles are sharp.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Implanted Port-a-Cath\",\n      \"description\": \"Medical device (port-a-cath) implanted in the right upper chest with a catheter extending toward the superior vena cava.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows normal heart and lung function. There are no signs of pneumonia or fluid buildup. A port-a-cath (a small implanted device used for easy intravenous access, often for chemotherapy or long-term medications) is correctly positioned in the right side of the chest.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/port-a-cath\",\n    \"https://www.acr.org/Clinical-Resources/Chest-X-Ray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Excellent",
+  "findings": [
+    "Lungs are clear with no evidence of focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Bony structures are intact.",
+    "A port-a-cath device is present in the right chest wall with the catheter tip terminating in the lower superior vena cava.",
+    "Diaphragms are well-defined and the costophrenic angles are sharp."
+  ],
+  "abnormalities": [
+    {
+      "name": "Implanted Port-a-Cath",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Medical device (port-a-cath) implanted in the right upper chest with a catheter extending toward the superior vena cava."
+    }
+  ],
+  "summary": "The chest X-ray shows normal heart and lung function. There are no signs of pneumonia or fluid buildup. A port-a-cath (a small implanted device used for easy intravenous access, often for chemotherapy or long-term medications) is correctly positioned in the right side of the chest.",
+  "references": [
+    "https://radiopaedia.org/articles/port-a-cath",
+    "https://www.acr.org/Clinical-Resources/Chest-X-Ray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 457930,
+    "bytesOut": 347701,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:03:16.325Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

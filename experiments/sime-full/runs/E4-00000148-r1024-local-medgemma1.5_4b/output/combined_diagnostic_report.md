@@ -1,0 +1,66 @@
+> **Requires review by a qualified clinician before any use.**
+> This report is unreviewed AI research output. No finding, diagnosis, trend, forecast or
+> treatment suggestion in it has been checked by a human clinician, and none may be acted
+> on until one has. Recorded as `humanReview` in `run_manifest.json` (EU AI Act Art. 14).
+
+# Combined Diagnostic Report
+
+> ⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made.
+
+**Generated**: 2026-09-29T09:56:28.908Z
+**Series analyzed**: 4 (series_1, series_2, series_3, series_4)
+**Overall progression**: Inconclusive
+**Structured output**: schema validation FAILED (2 issue(s)) — narrative fallback used
+> - progression: Invalid option: expected one of "Improving"|"Stable"|"Worsening"|"Inconclusive"
+> - progression: keyword fallback ("Inconclusive")
+
+## Temporal Evolution Analysis
+
+{
+  "progression": "Improving | Stable | Worsening | Inconclusive (overall trend across the sessions)",
+  "trends": [
+    {
+      "finding": "pleural effusion",
+      "trend": "Worsening",
+      "details": "The chest X-ray progression shows a moderate right pleural effusion (Series 2), a nodular mass (Series 3), and a large amount of fluid in the right pleural space (Series 4). The effusion appears to be increasing in severity or quantity based on the description."
+    },
+    {
+      "finding": "nodular mass",
+      "trend": "Stable",
+      "details": "A nodular mass measuring 2.0 x 1.9 cm is present in the right lung periphery in Series 3 and Series 4. No mention of change in Series 2."
+    },
+    {
+      "finding": "cardiomegaly",
+      "trend": "Stable",
+      "details": "The heart appears slightly enlarged (mild cardiomegaly) in Series 4. No mention in Series 2 or 3."
+    },
+    {
+      "finding": "right-sided port-a-cath",
+      "trend": "Stable",
+      "details": "A right-sided port-a-cath is present in all series."
+    }
+  ],
+  "forecastedEvolution": "The effusion is expected to potentially worsen, while the nodular mass is likely stable. Cardiomegaly is unlikely to change.",
+  "treatmentRecommendations": [
+    "Further investigation, potentially including CT scan or biopsy, is recommended for the nodular mass.",
+    "Management of the pleural effusion would depend on the underlying cause.",
+    "Cardiomegaly warrant further evaluation for potential underlying causes like heart failure or pericardial effusion, especially given the effusion.",
+    "Correlate findings with clinical presentation."
+  ],
+  "combinedReport": "## Chest X-ray Progression Analysis\n\n**Series 1: series_1**\n*   The chest X-ray shows a right-sided port implanted, with the tip located in the right atrium.\n*   **Moderate Right Pleural Effusion:** There is a noticeable amount of fluid in the right side of the chest cavity (pleural effusion), obscuring the right costophrenic angle.\n*   **Clear Left Lung:** The left lung appears normal.\n*   **Normal Heart Size:** The heart size seems within normal limits.\n*   **No Pneumothorax:** There is no sign of collapsed lung.\n\n**Series 2: series_2**\n*   ## Chest X-ray Analysis\n*   This chest X-ray shows a right-sided port implanted, with the tip located in the right atrium.\n*   Key findings include:\n    *   **Moderate Right Pleural Effusion:** There is a noticeable amount of fluid in the right side of the chest cavity (pleural effusion), obscuring the right costophrenic angle.\n    *   **Clear Left Lung:** The left lung appears normal.\n    *   **Normal Heart Size:** The heart size seems within normal limits.\n    *   **No Pneumothorax:** There is no sign of collapsed lung.\n*   Overall, the primary finding is a moderate right pleural effusion. Further clinical correlation and potentially further imaging are recommended to determine the underlying cause.\n\n**Series 3: series_3**\n*   ## Chest X-ray Findings\n*   **Series:** series_3\n*   **Image:** 00000148_002\n*   **Summary:**\n    *   A nodular mass measuring approximately 2.0 x 1.9 cm is identified in the right lung periphery.\n    *   The lungs are otherwise clear.\n    *   The heart and mediastinum are unremarkable.\n    *   The bony structures are intact.\n    *   A right-sided central venous catheter is present.\n*   **Findings:**\n    *   **Right Lung:** A nodular mass measuring approximately 2.0 x 1.9 cm is present.\n    *   **Left Lung:** Clear.\n    *   **Heart:** Normal size.\n    *   **Mediastinum:** Unremarkable.\n    *   **Bones:** Intact.\n    *   **Other:** Right-sided central venous catheter.\n\n**Series 4: series_4**\n*   **Series Overview:**\n    *   **Findings:**\n        *   The chest X-ray shows a right-sided port-a-cath terminating in the superior vena cava.\n        *   There is a large amount of fluid in the right pleural space (pleural effusion).\n        *   The heart appears slightly enlarged (mild cardiomegaly).\n        *   The lungs appear clear.\n        *   The mediastinal structures (like the trachea and heart border) appear normal.\n    *   **Key Observations:**\nThe presence of a significant right pleural effusion is the most notable finding. The effusion is likely causing some collapse of the right lung tissue (volume loss). Cardiomegaly is also present.\n"
+}
+
+## Per-Finding Trends
+_No per-finding trends extracted_
+
+## Forecasted Evolution
+_Not extracted_
+
+## Treatment Suggestions (experimental — not clinical recommendations)
+_AI-generated suggestions for educational use only. They are not clinical recommendations and must not be acted on._
+
+_See full report above_
+
+---
+*Generated by AgenticMedicalImagingHelper v1.1.0 | Educational use only*
+*This report is AI-generated for educational purposes only. Professional clinical review required.*

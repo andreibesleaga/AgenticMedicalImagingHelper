@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000219/series_3/00000219_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Presence of metallic surgical clips/staples along the midline/anterior mediastinum in the region of the sternum\",\n    \"Heart size is within normal limits\",\n    \"Lungs are clear with no visible consolidations, pleural effusions, or pneumothorax\",\n    \"Bony structures of the thorax appear intact\",\n    \"Trachea is midline\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical Material\",\n      \"description\": \"Linear arrangement of radiopaque metallic clips/staples along the sternum, consistent with a prior sternotomy (e.g., cardiac surgery).\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray shows a clear chest with no signs of active infection (like pneumonia) or heart failure. The most notable finding is the presence of surgical clips in the center of the chest, which is common and expected in patients who have had previous open-heart or chest surgery (sternotomy).\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/sternotomy\",\n    \"https://www.acr.org/Clinical-Resources/Chest-Radiograph\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Presence of metallic surgical clips/staples along the midline/anterior mediastinum in the region of the sternum",
+    "Heart size is within normal limits",
+    "Lungs are clear with no visible consolidations, pleural effusions, or pneumothorax",
+    "Bony structures of the thorax appear intact",
+    "Trachea is midline"
+  ],
+  "abnormalities": [
+    {
+      "name": "Surgical Material",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Linear arrangement of radiopaque metallic clips/staples along the sternum, consistent with a prior sternotomy (e.g., cardiac surgery)."
+    }
+  ],
+  "summary": "The X-ray shows a clear chest with no signs of active infection (like pneumonia) or heart failure. The most notable finding is the presence of surgical clips in the center of the chest, which is common and expected in patients who have had previous open-heart or chest surgery (sternotomy).",
+  "references": [
+    "https://radiopaedia.org/articles/sternotomy",
+    "https://www.acr.org/Clinical-Resources/Chest-Radiograph"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23371,
+    "bytesOut": 23371,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:11:30.344Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

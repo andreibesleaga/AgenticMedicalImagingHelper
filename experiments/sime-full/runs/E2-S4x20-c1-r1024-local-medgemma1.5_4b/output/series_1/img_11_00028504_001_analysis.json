@@ -1,0 +1,46 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_1/img_11_00028504_001.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"Radiography\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear.\",\n    \"The heart size is normal.\",\n    \"The mediastinum is unremarkable.\",\n    \"There is a left pleural effusion.\",\n    \"The visualized bones are unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Pleural Effusion\",\n      \"description\": \"There is a moderate-sized left pleural effusion. The fluid obscures the left costophrenic angle.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 0\n    }\n  ],\n  \"summary\": \"A chest X-ray shows a likely moderate amount of fluid in the left space around the lung (pleural effusion). The right lung and heart look normal,\"\n  \n  }",
+  "modality": "Radiography",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear.",
+    "The heart size is normal.",
+    "The mediastinum is unremarkable.",
+    "There is a left pleural effusion.",
+    "The visualized bones are unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 0,
+      "description": "There is a moderate-sized left pleural effusion. The fluid obscures the left costophrenic angle."
+    }
+  ],
+  "summary": "A chest X-ray shows a likely moderate amount of fluid in the left space around the lung (pleural effusion). The right lung and heart look normal,",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 385786,
+    "bytesOut": 296022,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:10:22.574Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

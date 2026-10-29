@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_3/img_18_00019940_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary findings.\",\n    \"Bilateral lung fields are clear without evidence of focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Bony thorax is intact.\",\n    \"Endotracheal tube (ETT) tip is seen projecting at the level of the T3-T4 vertebral bodies, approximately 4.5 cm above the carina.\",\n    \"Naso-gastric tube (NGT) is seen coursing inferiorly with its tip projected within the stomach.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Endotracheal Tube Malposition\",\n      \"description\": \"The endotracheal tube (ETT) tip appears high, projecting at the level of T3-T4 vertebral bodies, which is approximately 4.5 cm above the carina. Ideal placement is typically 3-5 cm above the carina. While not critically malpositioned, it warrants re-evaluation to ensure optimal ventilation and prevent accidental extubation.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This chest X-ray shows that your heart and lungs look generally healthy, with no major problems like infections, fluid around the lungs, or a collapsed lung. There's a breathing tube in place, which appears a little high, but it's still within the windpipe. There's also a feeding tube that goes into your stomach, which is correctly positioned. The high placement of the breathing tube means it should be checked to make sure it's in the best position for your breathing.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/endotracheal-tube-placement\",\n    \"https://litfl.com/endotracheal-tube-ett-xray-chest/\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7484433/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary findings.",
+    "Bilateral lung fields are clear without evidence of focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Bony thorax is intact.",
+    "Endotracheal tube (ETT) tip is seen projecting at the level of the T3-T4 vertebral bodies, approximately 4.5 cm above the carina.",
+    "Naso-gastric tube (NGT) is seen coursing inferiorly with its tip projected within the stomach."
+  ],
+  "abnormalities": [
+    {
+      "name": "Endotracheal Tube Malposition",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "The endotracheal tube (ETT) tip appears high, projecting at the level of T3-T4 vertebral bodies, which is approximately 4.5 cm above the carina. Ideal placement is typically 3-5 cm above the carina. While not critically malpositioned, it warrants re-evaluation to ensure optimal ventilation and prevent accidental extubation."
+    }
+  ],
+  "summary": "This chest X-ray shows that your heart and lungs look generally healthy, with no major problems like infections, fluid around the lungs, or a collapsed lung. There's a breathing tube in place, which appears a little high, but it's still within the windpipe. There's also a feeding tube that goes into your stomach, which is correctly positioned. The high placement of the breathing tube means it should be checked to make sure it's in the best position for your breathing.",
+  "references": [
+    "https://radiopaedia.org/articles/endotracheal-tube-placement",
+    "https://litfl.com/endotracheal-tube-ett-xray-chest/",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7484433/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 401082,
+    "bytesOut": 398844,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:46:32.293Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00016493/series_2/00016493_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear lung fields with no focal consolidation, mass, or effusion.\",\n    \"Cardiac silhouette within normal size limits for patient age and body habitus.\",\n    \"Diaphragms well-defined with sharp costophrenic angles bilaterally.\",\n    \"Trachea midline; mediastinal contours unremarkable.\",\n    \"No evidence of rib fractures or bony abnormalities.\",\n    \"A radiopaque circular object (likely a button battery or foreign body) is visible overlying the mid-esophagus or gastric region.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Radiopaque Foreign Body\",\n      \"description\": \"A round, radiopaque object measuring approximately 1–2 cm in diameter is visualized in the midline, likely located in the esophagus or proximal stomach. This is highly suspicious for an ingested foreign body such as a button battery, which can cause rapid mucosal injury if not promptly removed.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows clear lungs and normal heart size. However, there is a small, round, bright object seen in the center of the image near the stomach or lower esophagus. This is very likely a swallowed object — commonly a button battery — which can be dangerous if left inside the body. Immediate medical attention is needed to remove it safely before it causes damage to the surrounding tissues.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7308644/\",\n    \"https://www.aap.org/en/patient-care/foreign-body-ingestion/\",\n    \"https://radiopaedia.org/articles/button-battery-ingestion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Clear lung fields with no focal consolidation, mass, or effusion.",
+    "Cardiac silhouette within normal size limits for patient age and body habitus.",
+    "Diaphragms well-defined with sharp costophrenic angles bilaterally.",
+    "Trachea midline; mediastinal contours unremarkable.",
+    "No evidence of rib fractures or bony abnormalities.",
+    "A radiopaque circular object (likely a button battery or foreign body) is visible overlying the mid-esophagus or gastric region."
+  ],
+  "abnormalities": [
+    {
+      "name": "Radiopaque Foreign Body",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "A round, radiopaque object measuring approximately 1–2 cm in diameter is visualized in the midline, likely located in the esophagus or proximal stomach. This is highly suspicious for an ingested foreign body such as a button battery, which can cause rapid mucosal injury if not promptly removed."
+    }
+  ],
+  "summary": "The chest X-ray shows clear lungs and normal heart size. However, there is a small, round, bright object seen in the center of the image near the stomach or lower esophagus. This is very likely a swallowed object — commonly a button battery — which can be dangerous if left inside the body. Immediate medical attention is needed to remove it safely before it causes damage to the surrounding tissues.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7308644/",
+    "https://www.aap.org/en/patient-care/foreign-body-ingestion/",
+    "https://radiopaedia.org/articles/button-battery-ingestion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 425194,
+    "bytesOut": 384457,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:23:04.802Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

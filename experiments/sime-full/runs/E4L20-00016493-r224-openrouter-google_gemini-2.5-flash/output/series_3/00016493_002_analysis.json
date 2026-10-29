@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00016493/series_3/00016493_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral pulmonary opacities, more prominent in the mid-to-lower lung zones.\",\n    \"Bilateral pleural effusions.\",\n    \"Cardiomegaly, with an enlarged cardiac silhouette.\",\n    \"Pulmonary vascular congestion.\",\n    \"A nasogastric tube is present, with its tip projecting over the abdomen.\",\n    \"A metallic ring-like foreign body is noted in the mid-abdomen, likely external or a swallowed object.\",\n    \"Multiple small metallic objects are seen projected over the left shoulder region, consistent with external artifacts or surgical clips.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pulmonary Edema/Congestion\",\n      \"description\": \"Diffuse bilateral pulmonary opacities and pulmonary vascular congestion suggest pulmonary edema, likely secondary to cardiac dysfunction.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Bilateral pleural effusions are noted, contributing to the pulmonary opacities and suggesting fluid accumulation in the pleural spaces.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette is enlarged, indicating cardiomegaly, which is a common cause of pulmonary edema and effusions.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This X-ray shows significant fluid buildup in both lungs and around the lungs (pulmonary edema and pleural effusions). The heart appears enlarged (cardiomegaly), which is a common reason for these fluid issues. There's also a tube in the stomach (nasogastric tube) and some small metallic items that appear to be outside the body or swallowed, as well as some tiny metallic objects near the left shoulder, which are likely external to the body or surgical clips. These findings together suggest significant heart and lung issues, possibly heart failure.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK539958/\",\n    \"https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.119.043526\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral pulmonary opacities, more prominent in the mid-to-lower lung zones.",
+    "Bilateral pleural effusions.",
+    "Cardiomegaly, with an enlarged cardiac silhouette.",
+    "Pulmonary vascular congestion.",
+    "A nasogastric tube is present, with its tip projecting over the abdomen.",
+    "A metallic ring-like foreign body is noted in the mid-abdomen, likely external or a swallowed object.",
+    "Multiple small metallic objects are seen projected over the left shoulder region, consistent with external artifacts or surgical clips."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pulmonary Edema/Congestion",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Diffuse bilateral pulmonary opacities and pulmonary vascular congestion suggest pulmonary edema, likely secondary to cardiac dysfunction."
+    },
+    {
+      "name": "Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Bilateral pleural effusions are noted, contributing to the pulmonary opacities and suggesting fluid accumulation in the pleural spaces."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Severe",
+      "confidence": 90,
+      "description": "The cardiac silhouette is enlarged, indicating cardiomegaly, which is a common cause of pulmonary edema and effusions."
+    }
+  ],
+  "summary": "This X-ray shows significant fluid buildup in both lungs and around the lungs (pulmonary edema and pleural effusions). The heart appears enlarged (cardiomegaly), which is a common reason for these fluid issues. There's also a tube in the stomach (nasogastric tube) and some small metallic items that appear to be outside the body or swallowed, as well as some tiny metallic objects near the left shoulder, which are likely external to the body or surgical clips. These findings together suggest significant heart and lung issues, possibly heart failure.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://www.ncbi.nlm.nih.gov/books/NBK539958/",
+    "https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.119.043526"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 18723,
+    "bytesOut": 18723,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:26:45.541Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

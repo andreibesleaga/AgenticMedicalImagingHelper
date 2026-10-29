@@ -1,0 +1,65 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_6/00000239_005.png",
+  "seriesId": "series_6",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP, supine/portable)\",\"quality\":\"Fair\",\"findings\":[\"Large gas-filled, air-fluid containing structure with a horizontal fluid level projecting over the left lower/mid chest, inferior to the cardiac silhouette, consistent with a herniated, dilated viscus (likely stomach) within the thoracic cavity\",\"Mediastinal structures appear shifted, with cardiac silhouette displaced/obscured on the left\",\"Lung fields are grossly clear bilaterally without focal consolidation, though left lower lung is partially obscured by the underlying air-fluid structure\",\"No definite pleural effusion identified, though costophrenic angles are difficult to assess due to overlying structure\",\"Visualized osseous structures (clavicles, ribs, shoulders) appear intact without acute fracture\",\"Patient positioning is rotated with soft tissue overlying left chest, limiting full evaluation\",\"Radiopaque artifact in right upper image corner (skin marker or clip)\",\"No obvious free intraperitoneal air identified on this single view\"],\"abnormalities\":[{\"name\":\"Large air-fluid level in left lower thorax\",\"description\":\"A well-defined, rounded lucent structure with a distinct horizontal air-fluid level is seen in the left lower chest, situated posterior/inferior to the heart. This appearance is highly suggestive of a hiatal or diaphragmatic hernia with a distended, gas- and fluid-filled stomach herniated into the thoracic cavity\",\"severity\":\"Moderate\",\"confidence\":75},{\"name\":\"Possible mediastinal displacement\",\"description\":\"The cardiac silhouette and mediastinal contours appear altered/displaced, which may be secondary to mass effect from the herniated viscus\",\"severity\":\"Mild\",\"confidence\":50},{\"name\":\"Suboptimal image quality/positioning\",\"description\":\"Rotation and overlying soft tissue limit complete assessment of the left lung base and costophrenic angle\",\"severity\":\"Mild\",\"confidence\":60}],\"summary\":\"This chest X-ray shows a large, rounded air-and-fluid-filled structure in the lower left part of the chest, situated behind and below the heart. This appearance is typical of a large hiatal (or diaphragmatic) hernia, where part of the stomach has moved up into the chest cavity through an opening in the diaphragm (the muscle that separates the chest and abdomen). This is a common condition, especially in older adults, and can sometimes cause symptoms like heartburn, difficulty swallowing, or chest discomfort, though many cases are found incidentally. In some cases, if the herniated stomach becomes twisted or obstructed, it can become an emergency. The lungs themselves appear largely clear on this image, without signs of pneumonia or significant fluid buildup. Because the image quality is limited by patient positioning, further imaging (such as a CT scan) and clinical correlation with a doctor are recommended to confirm the diagnosis and assess for any complications.\",\"references\":[\"https://radiopaedia.org/articles/hiatal-hernia\",\"https://pubs.rsna.org/doi/10.1148/rg.2017160187\",\"https://www.uptodate.com/contents/clinical-manifestations-and-diagnosis-of-hiatus-hernia\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP, supine/portable)",
+  "quality": "Fair",
+  "findings": [
+    "Large gas-filled, air-fluid containing structure with a horizontal fluid level projecting over the left lower/mid chest, inferior to the cardiac silhouette, consistent with a herniated, dilated viscus (likely stomach) within the thoracic cavity",
+    "Mediastinal structures appear shifted, with cardiac silhouette displaced/obscured on the left",
+    "Lung fields are grossly clear bilaterally without focal consolidation, though left lower lung is partially obscured by the underlying air-fluid structure",
+    "No definite pleural effusion identified, though costophrenic angles are difficult to assess due to overlying structure",
+    "Visualized osseous structures (clavicles, ribs, shoulders) appear intact without acute fracture",
+    "Patient positioning is rotated with soft tissue overlying left chest, limiting full evaluation",
+    "Radiopaque artifact in right upper image corner (skin marker or clip)",
+    "No obvious free intraperitoneal air identified on this single view"
+  ],
+  "abnormalities": [
+    {
+      "name": "Large air-fluid level in left lower thorax",
+      "severity": "Moderate",
+      "confidence": 75,
+      "description": "A well-defined, rounded lucent structure with a distinct horizontal air-fluid level is seen in the left lower chest, situated posterior/inferior to the heart. This appearance is highly suggestive of a hiatal or diaphragmatic hernia with a distended, gas- and fluid-filled stomach herniated into the thoracic cavity"
+    },
+    {
+      "name": "Possible mediastinal displacement",
+      "severity": "Mild",
+      "confidence": 50,
+      "description": "The cardiac silhouette and mediastinal contours appear altered/displaced, which may be secondary to mass effect from the herniated viscus"
+    },
+    {
+      "name": "Suboptimal image quality/positioning",
+      "severity": "Mild",
+      "confidence": 60,
+      "description": "Rotation and overlying soft tissue limit complete assessment of the left lung base and costophrenic angle"
+    }
+  ],
+  "summary": "This chest X-ray shows a large, rounded air-and-fluid-filled structure in the lower left part of the chest, situated behind and below the heart. This appearance is typical of a large hiatal (or diaphragmatic) hernia, where part of the stomach has moved up into the chest cavity through an opening in the diaphragm (the muscle that separates the chest and abdomen). This is a common condition, especially in older adults, and can sometimes cause symptoms like heartburn, difficulty swallowing, or chest discomfort, though many cases are found incidentally. In some cases, if the herniated stomach becomes twisted or obstructed, it can become an emergency. The lungs themselves appear largely clear on this image, without signs of pneumonia or significant fluid buildup. Because the image quality is limited by patient positioning, further imaging (such as a CT scan) and clinical correlation with a doctor are recommended to confirm the diagnosis and assess for any complications.",
+  "references": [
+    "https://radiopaedia.org/articles/hiatal-hernia",
+    "https://pubs.rsna.org/doi/10.1148/rg.2017160187",
+    "https://www.uptodate.com/contents/clinical-manifestations-and-diagnosis-of-hiatus-hernia"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 378298,
+    "bytesOut": 374356,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:28:28.241Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

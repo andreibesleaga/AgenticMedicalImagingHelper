@@ -1,0 +1,61 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_3/00000219_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Sternotomy wires present in the midline of the chest\",\n    \"Cardiac silhouette is enlarged, particularly in the left ventricular region\",\n    \"Aortic knob appears prominent and tortuous\",\n    \"Lungs are clear without focal consolidations, pleural effusions, or pneumothorax\",\n    \"Diaphragms are normally positioned and sharp\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlargement of the cardiac silhouette, suggestive of left ventricular hypertrophy or heart failure\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Post-surgical changes\",\n      \"description\": \"Presence of sternotomy wires indicating a previous open-heart surgery (e.g., CABG or valve replacement)\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Aortic ectasia\",\n      \"description\": \"Prominence and tortuosity of the aortic knob, often associated with hypertension or aging\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The X-ray shows evidence of previous chest surgery, indicated by the metal wires (sternotomy wires) used to close the breastbone. The heart appears larger than normal (cardiomegaly), which can be a sign of high blood pressure or heart disease. The lungs are clear, meaning there are no signs of pneumonia or fluid buildup in the lung tissue.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/sternotomy-wires\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Sternotomy wires present in the midline of the chest",
+    "Cardiac silhouette is enlarged, particularly in the left ventricular region",
+    "Aortic knob appears prominent and tortuous",
+    "Lungs are clear without focal consolidations, pleural effusions, or pneumothorax",
+    "Diaphragms are normally positioned and sharp"
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Enlargement of the cardiac silhouette, suggestive of left ventricular hypertrophy or heart failure"
+    },
+    {
+      "name": "Post-surgical changes",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Presence of sternotomy wires indicating a previous open-heart surgery (e.g., CABG or valve replacement)"
+    },
+    {
+      "name": "Aortic ectasia",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Prominence and tortuosity of the aortic knob, often associated with hypertension or aging"
+    }
+  ],
+  "summary": "The X-ray shows evidence of previous chest surgery, indicated by the metal wires (sternotomy wires) used to close the breastbone. The heart appears larger than normal (cardiomegaly), which can be a sign of high blood pressure or heart disease. The lungs are clear, meaning there are no signs of pneumonia or fluid buildup in the lung tissue.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/sternotomy-wires"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 380748,
+    "bytesOut": 295973,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:04:32.876Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,70 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_13_00022369_010.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral pulmonary opacities, more prominent in the right lower and mid lung fields.\",\n    \"Bilateral pleural effusions, larger on the right.\",\n    \"Left lower lung field shows consolidation or atelectasis.\",\n    \"Cardiomegaly is noted.\",\n    \"Central venous catheter (CVC) tip appears to be in the superior vena cava.\",\n    \"Multiple surgical clips are present in the lower thoracic/upper abdominal region, likely related to prior spinal surgery.\",\n    \"Multiple other medical devices including what appears to be monitoring leads or external tubes are visible.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Pleural Effusions\",\n      \"description\": \"Significant blunting of both costophrenic angles, with a larger fluid collection on the right side, consistent with bilateral pleural effusions.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Bilateral Pulmonary Opacities\",\n      \"description\": \"Diffuse hazy opacities throughout both lung fields, particularly dense in the right lower and mid zones, suggestive of pulmonary edema, infiltrates, or atelectasis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Left Lower Lobe Consolidation/Atelectasis\",\n      \"description\": \"Increased opacification and volume loss in the left lower lung, consistent with consolidation or atelectasis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette is enlarged, suggesting cardiomegaly.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"This X-ray shows fluid around both lungs, which is called a pleural effusion. There is also increased haziness in both lungs, indicating either fluid buildup (pulmonary edema), inflammation (infiltrates), or collapsed lung tissue (atelectasis). The heart appears enlarged. Several medical devices, including a central venous catheter and surgical clips from a previous spine surgery, are also visible. These findings suggest potential heart failure, infection, or other conditions affecting the lungs and heart.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2016150143\",\n    \"https://radiologykey.com/pulmonary-edema-13/\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMcp1012921\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral pulmonary opacities, more prominent in the right lower and mid lung fields.",
+    "Bilateral pleural effusions, larger on the right.",
+    "Left lower lung field shows consolidation or atelectasis.",
+    "Cardiomegaly is noted.",
+    "Central venous catheter (CVC) tip appears to be in the superior vena cava.",
+    "Multiple surgical clips are present in the lower thoracic/upper abdominal region, likely related to prior spinal surgery.",
+    "Multiple other medical devices including what appears to be monitoring leads or external tubes are visible."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Significant blunting of both costophrenic angles, with a larger fluid collection on the right side, consistent with bilateral pleural effusions."
+    },
+    {
+      "name": "Bilateral Pulmonary Opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse hazy opacities throughout both lung fields, particularly dense in the right lower and mid zones, suggestive of pulmonary edema, infiltrates, or atelectasis."
+    },
+    {
+      "name": "Left Lower Lobe Consolidation/Atelectasis",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Increased opacification and volume loss in the left lower lung, consistent with consolidation or atelectasis."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "The cardiac silhouette is enlarged, suggesting cardiomegaly."
+    }
+  ],
+  "summary": "This X-ray shows fluid around both lungs, which is called a pleural effusion. There is also increased haziness in both lungs, indicating either fluid buildup (pulmonary edema), inflammation (infiltrates), or collapsed lung tissue (atelectasis). The heart appears enlarged. Several medical devices, including a central venous catheter and surgical clips from a previous spine surgery, are also visible. These findings suggest potential heart failure, infection, or other conditions affecting the lungs and heart.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2016150143",
+    "https://radiologykey.com/pulmonary-edema-13/",
+    "https://www.nejm.org/doi/full/10.1056/NEJMcp1012921"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 445092,
+    "bytesOut": 443518,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:46:46.910Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

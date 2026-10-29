@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_2/img_06_00024750_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pleural effusion, or pneumothorax identified.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Hilar contours are unremarkable.\",\n    \"Diaphragms are intact and clear costophrenic angles are seen.\",\n    \"Osseous structures appear grossly unremarkable.\",\n    \"Diffuse reticulonodular opacities are noted throughout both lung fields, more prominent in the mid and lower zones.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Reticulonodular opacities\",\n      \"description\": \"Diffuse reticulonodular opacities are present bilaterally, particularly in the mid and lower lung fields. This pattern suggests interstitial lung disease.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows diffuse changes in both lungs, appearing as a network of fine lines and small dots, especially in the middle and lower parts of the lungs. This pattern, called reticulonodular opacities, often indicates a type of lung condition affecting the tissue between the air sacs, known as interstitial lung disease. The heart and major blood vessels appear normal, and there is no sign of fluid around the lungs (pleural effusion), collapsed lung (pneumothorax), or pneumonia. Further evaluation would be needed to determine the specific cause of these lung changes.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2017170068\",\n    \"https://radiopaedia.org/articles/interstitial-lung-disease-3\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8753232/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pleural effusion, or pneumothorax identified.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Hilar contours are unremarkable.",
+    "Diaphragms are intact and clear costophrenic angles are seen.",
+    "Osseous structures appear grossly unremarkable.",
+    "Diffuse reticulonodular opacities are noted throughout both lung fields, more prominent in the mid and lower zones."
+  ],
+  "abnormalities": [
+    {
+      "name": "Reticulonodular opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse reticulonodular opacities are present bilaterally, particularly in the mid and lower lung fields. This pattern suggests interstitial lung disease."
+    }
+  ],
+  "summary": "The chest X-ray shows diffuse changes in both lungs, appearing as a network of fine lines and small dots, especially in the middle and lower parts of the lungs. This pattern, called reticulonodular opacities, often indicates a type of lung condition affecting the tissue between the air sacs, known as interstitial lung disease. The heart and major blood vessels appear normal, and there is no sign of fluid around the lungs (pleural effusion), collapsed lung (pneumothorax), or pneumonia. Further evaluation would be needed to determine the specific cause of these lung changes.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2017170068",
+    "https://radiopaedia.org/articles/interstitial-lung-disease-3",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8753232/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 407984,
+    "bytesOut": 404788,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:35:34.652Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

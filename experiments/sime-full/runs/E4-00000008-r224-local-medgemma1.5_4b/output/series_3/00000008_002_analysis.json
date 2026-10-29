@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000008/series_3/00000008_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"Radiography\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear.\",\n    \"The heart size is normal.\",\n    \"The mediastinum is unremarkable.\",\n    \"There is no pleural effusion or pneumothorax.\",\n    \"The visualized osseous structures are unremarkable.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This is a chest X-ray showing clear lungs, normal heart size, and no other significant findings.\",\n  \"references\": [\n    \"https://pubmed.ncbi.nlm.nih.gov/33151097/\",\n    \"https://pubmed.ncbi.nlm.nih.gov/24442814/\",\n    \"https://pubmed.ncbi.nlm.nih.gov/22924284/\"\n  ]\n}",
+  "modality": "Radiography",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear.",
+    "The heart size is normal.",
+    "The mediastinum is unremarkable.",
+    "There is no pleural effusion or pneumothorax.",
+    "The visualized osseous structures are unremarkable."
+  ],
+  "abnormalities": [],
+  "summary": "This is a chest X-ray showing clear lungs, normal heart size, and no other significant findings.",
+  "references": [
+    "https://pubmed.ncbi.nlm.nih.gov/33151097/",
+    "https://pubmed.ncbi.nlm.nih.gov/24442814/",
+    "https://pubmed.ncbi.nlm.nih.gov/22924284/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21590,
+    "bytesOut": 21590,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:26:38.742Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

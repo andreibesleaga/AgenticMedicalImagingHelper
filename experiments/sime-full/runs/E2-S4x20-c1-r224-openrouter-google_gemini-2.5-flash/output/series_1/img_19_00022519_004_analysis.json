@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_1/img_19_00022519_004.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral reticulonodular opacities are observed throughout both lung fields, more prominent in the lower zones.\",\n    \"Perihilar congestion and increased interstitial markings are noted.\",\n    \"Bilateral pleural effusions are not evident.\",\n    \"Cardiomediastinal silhouette appears within normal limits for size and contour, though subtle blurring of cardiac borders may suggest perihilar infiltrate/edema.\",\n    \"Bony structures appear unremarkable without acute fractures or destructive lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Reticulonodular Opacities\",\n      \"description\": \"Diffuse reticulonodular opacities are present bilaterally, indicating interstitial lung disease or edema. These are more pronounced in the lower lung zones.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Increased Interstitial Markings\",\n      \"description\": \"Prominent interstitial markings are noted throughout both lung fields, consistent with thickening of the interstitial septa, which can be seen in conditions like pulmonary fibrosis or interstitial edema.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows changes in both lungs, appearing as a widespread network of fine lines and small dots, particularly noticeable in the lower parts of your lungs. This pattern can be a sign of different lung conditions that affect the lung tissue itself, such as inflammation or fluid buildup. Your heart and surrounding structures appear generally normal in size and shape. Further evaluation may be needed to understand the exact cause of these changes.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.303095116\",\n    \"https://radiopaedia.org/articles/interstitial-lung-disease\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMicm1902047\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral reticulonodular opacities are observed throughout both lung fields, more prominent in the lower zones.",
+    "Perihilar congestion and increased interstitial markings are noted.",
+    "Bilateral pleural effusions are not evident.",
+    "Cardiomediastinal silhouette appears within normal limits for size and contour, though subtle blurring of cardiac borders may suggest perihilar infiltrate/edema.",
+    "Bony structures appear unremarkable without acute fractures or destructive lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Reticulonodular Opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse reticulonodular opacities are present bilaterally, indicating interstitial lung disease or edema. These are more pronounced in the lower lung zones."
+    },
+    {
+      "name": "Increased Interstitial Markings",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Prominent interstitial markings are noted throughout both lung fields, consistent with thickening of the interstitial septa, which can be seen in conditions like pulmonary fibrosis or interstitial edema."
+    }
+  ],
+  "summary": "The X-ray of your chest shows changes in both lungs, appearing as a widespread network of fine lines and small dots, particularly noticeable in the lower parts of your lungs. This pattern can be a sign of different lung conditions that affect the lung tissue itself, such as inflammation or fluid buildup. Your heart and surrounding structures appear generally normal in size and shape. Further evaluation may be needed to understand the exact cause of these changes.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.303095116",
+    "https://radiopaedia.org/articles/interstitial-lung-disease",
+    "https://www.nejm.org/doi/full/10.1056/NEJMicm1902047"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22103,
+    "bytesOut": 22103,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:56:48.477Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,65 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000008/series_1/00000008_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP, supine)\",\"quality\":\"Fair\",\"findings\":[\"Supine AP chest radiograph with ECG leads overlying the lower chest/abdomen\",\"Right-sided calcified/rounded density projected over the left shoulder region, likely skin marker or external artifact\",\"Small rounded opacity noted in the left mid-lung field, possibly a nodule or overlying artifact, approximately 5-8mm\",\"Cardiac silhouette appears mildly enlarged, though this may be exaggerated due to AP supine positioning\",\"Lung fields appear grossly clear bilaterally without obvious consolidation, effusion, or pneumothorax\",\"Bony thorax and visible spine appear intact without obvious fracture\",\"Mediastinal contours appear within normal limits for supine positioning\",\"Diaphragmatic contours are visualized with some blurring at the bases, limiting full costophrenic angle assessment\"],\"abnormalities\":[{\"name\":\"Left lung nodular opacity\",\"description\":\"Small rounded density seen in the left mid-lung zone near the hilum; could represent a pulmonary nodule, calcified granuloma, or overlying structure such as a rib or vascular marking. Further characterization with dedicated PA/lateral views or CT would be needed.\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Possible cardiomegaly\",\"description\":\"Cardiac silhouette appears enlarged relative to thoracic width; however, this is a supine AP view which commonly exaggerates cardiac size. Correlation with upright PA film recommended.\",\"severity\":\"Mild\",\"confidence\":35},{\"name\":\"External markers/artifact\",\"description\":\"Radiopaque marker over left shoulder and ECG lead placements visible over the lower chest, consistent with monitoring equipment rather than pathology.\",\"severity\":\"Normal\",\"confidence\":90}],\"summary\":\"This chest X-ray was taken while the patient was lying down (supine), which is common in bedside or emergency imaging. The lungs appear mostly clear without signs of significant infection, fluid, or collapsed lung. There is a small round spot noted in the left lung area that could be a minor nodule, old scar tissue, or simply an overlapping structure like a blood vessel – this would need a follow-up scan to clarify. The heart may look slightly enlarged, but this is often due to the supine position itself and not necessarily a true finding; an upright image would give a clearer picture. The ECG leads and a round marker on the skin are medical equipment, not body abnormalities. Overall, no urgent or severe abnormality is clearly identified, but follow-up imaging is advisable to confirm these observations.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\"https://pubs.rsna.org/journal/radiology\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP, supine)",
+  "quality": "Fair",
+  "findings": [
+    "Supine AP chest radiograph with ECG leads overlying the lower chest/abdomen",
+    "Right-sided calcified/rounded density projected over the left shoulder region, likely skin marker or external artifact",
+    "Small rounded opacity noted in the left mid-lung field, possibly a nodule or overlying artifact, approximately 5-8mm",
+    "Cardiac silhouette appears mildly enlarged, though this may be exaggerated due to AP supine positioning",
+    "Lung fields appear grossly clear bilaterally without obvious consolidation, effusion, or pneumothorax",
+    "Bony thorax and visible spine appear intact without obvious fracture",
+    "Mediastinal contours appear within normal limits for supine positioning",
+    "Diaphragmatic contours are visualized with some blurring at the bases, limiting full costophrenic angle assessment"
+  ],
+  "abnormalities": [
+    {
+      "name": "Left lung nodular opacity",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "Small rounded density seen in the left mid-lung zone near the hilum; could represent a pulmonary nodule, calcified granuloma, or overlying structure such as a rib or vascular marking. Further characterization with dedicated PA/lateral views or CT would be needed."
+    },
+    {
+      "name": "Possible cardiomegaly",
+      "severity": "Mild",
+      "confidence": 35,
+      "description": "Cardiac silhouette appears enlarged relative to thoracic width; however, this is a supine AP view which commonly exaggerates cardiac size. Correlation with upright PA film recommended."
+    },
+    {
+      "name": "External markers/artifact",
+      "severity": "Normal",
+      "confidence": 90,
+      "description": "Radiopaque marker over left shoulder and ECG lead placements visible over the lower chest, consistent with monitoring equipment rather than pathology."
+    }
+  ],
+  "summary": "This chest X-ray was taken while the patient was lying down (supine), which is common in bedside or emergency imaging. The lungs appear mostly clear without signs of significant infection, fluid, or collapsed lung. There is a small round spot noted in the left lung area that could be a minor nodule, old scar tissue, or simply an overlapping structure like a blood vessel – this would need a follow-up scan to clarify. The heart may look slightly enlarged, but this is often due to the supine position itself and not necessarily a true finding; an upright image would give a clearer picture. The ECG leads and a round marker on the skin are medical equipment, not body abnormalities. Overall, no urgent or severe abnormality is clearly identified, but follow-up imaging is advisable to confirm these observations.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiology"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 410034,
+    "bytesOut": 406526,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T10:19:50.704Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

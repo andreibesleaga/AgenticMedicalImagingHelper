@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000067/series_1/00000067_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP view)\",\"quality\":\"Fair\",\"findings\":[\"Frontal chest radiograph showing bilateral lung fields\",\"Cardiac silhouette visualized centrally\",\"Both hemidiaphragms and costophrenic angles included\",\"Bony thorax including clavicles, ribs, and upper cervical/thoracic spine visible\",\"Soft tissue shadows overlying lower chest bilaterally\"],\"abnormalities\":[{\"name\":\"Suboptimal image quality/positioning\",\"description\":\"Image shows some rotation and overlying soft tissue density in the lower chest region which may limit full assessment of lung bases and costophrenic angles\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Possible increased density at lung bases\",\"description\":\"There appears to be some haziness or increased opacity at the bilateral lung bases, though this could be due to patient positioning, breast tissue overlay, or technical factors rather than true pathology\",\"severity\":\"Mild\",\"confidence\":30}],\"summary\":\"This is a chest X-ray, a common imaging test that uses radiation to create pictures of the lungs, heart, and bones in the chest. The image shows the lungs, heart, and rib cage. There is some overlying shadow at the lower part of the lungs which is often due to normal soft tissue (such as breast tissue) rather than a health problem, but this can sometimes make it harder to see the lung bases clearly. The overall image quality is fair, meaning some details are a bit hard to evaluate. It's important that a radiologist or your doctor review this image directly, as they can correlate it with your clinical history and determine if any further testing is needed. This AI analysis is not a diagnosis.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria\",\"https://pubs.rsna.org/journal/radiographics\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP view)",
+  "quality": "Fair",
+  "findings": [
+    "Frontal chest radiograph showing bilateral lung fields",
+    "Cardiac silhouette visualized centrally",
+    "Both hemidiaphragms and costophrenic angles included",
+    "Bony thorax including clavicles, ribs, and upper cervical/thoracic spine visible",
+    "Soft tissue shadows overlying lower chest bilaterally"
+  ],
+  "abnormalities": [
+    {
+      "name": "Suboptimal image quality/positioning",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "Image shows some rotation and overlying soft tissue density in the lower chest region which may limit full assessment of lung bases and costophrenic angles"
+    },
+    {
+      "name": "Possible increased density at lung bases",
+      "severity": "Mild",
+      "confidence": 30,
+      "description": "There appears to be some haziness or increased opacity at the bilateral lung bases, though this could be due to patient positioning, breast tissue overlay, or technical factors rather than true pathology"
+    }
+  ],
+  "summary": "This is a chest X-ray, a common imaging test that uses radiation to create pictures of the lungs, heart, and bones in the chest. The image shows the lungs, heart, and rib cage. There is some overlying shadow at the lower part of the lungs which is often due to normal soft tissue (such as breast tissue) rather than a health problem, but this can sometimes make it harder to see the lung bases clearly. The overall image quality is fair, meaning some details are a bit hard to evaluate. It's important that a radiologist or your doctor review this image directly, as they can correlate it with your clinical history and determine if any further testing is needed. This AI analysis is not a diagnosis.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiographics"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23597,
+    "bytesOut": 23597,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-29T10:34:16.720Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

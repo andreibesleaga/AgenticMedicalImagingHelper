@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000296/series_3/00000296_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP, supine)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Supine AP chest radiograph\",\n    \"Central venous catheter/line present with tip projecting over the right atrium/SVC region\",\n    \"Cardiomediastinal silhouette appears enlarged, possibly due to supine positioning and rotation\",\n    \"Bilateral lung fields show increased haziness, more pronounced at the bases, suggesting possible effusion or atelectasis\",\n    \"No obvious focal consolidation clearly delineated\",\n    \"Skeletal structures (ribs, clavicles) appear grossly intact\",\n    \"Soft tissue overlying shoulders shows external markers/leads\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Central line placement\",\n      \"description\": \"Linear catheter density seen extending from the right side of the neck/shoulder area into the chest, with tip appearing to terminate near the cavoatrial junction/SVC region - consistent with central venous catheter placement\",\n      \"severity\": \"Mild\",\n      \"confidence\": 55\n    },\n    {\n      \"name\": \"Bibasilar haziness\",\n      \"description\": \"Increased opacity at both lung bases, which could represent atelectasis, pleural effusion, or supine technique artifact; further clinical correlation needed\",\n      \"severity\": \"Mild\",\n      \"confidence\": 40\n    },\n    {\n      \"name\": \"Cardiomegaly (possible)\",\n      \"description\": \"Cardiac silhouette appears somewhat enlarged, though this may be exaggerated by supine AP positioning and magnification\",\n      \"severity\": \"Mild\",\n      \"confidence\": 30\n    }\n  ],\n  \"summary\": \"This chest X-ray was taken with the patient lying down, which can make the heart look bigger and the lung details less clear than a standing X-ray. There appears to be a thin tube (a central line) placed in a vein near the neck/chest, which is a device sometimes used to give medications or fluids directly into a large vein - its position looks reasonable but should be confirmed by a doctor. There's also some haziness at the bottom of both lungs, which could mean fluid, partial lung collapse, or just be related to the way the picture was taken while lying down. None of these findings are necessarily dangerous, but they should be reviewed by a radiologist or your treating physician who has access to your full clinical picture and can compare with prior imaging if available.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/central-venous-catheter-placement\",\n    \"https://www.acr.org/Clinical-Resources/Radiology-Safety/Contrast-Manual\",\n    \"https://pubs.rsna.org/journal/radiographics\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP, supine)",
+  "quality": "Fair",
+  "findings": [
+    "Supine AP chest radiograph",
+    "Central venous catheter/line present with tip projecting over the right atrium/SVC region",
+    "Cardiomediastinal silhouette appears enlarged, possibly due to supine positioning and rotation",
+    "Bilateral lung fields show increased haziness, more pronounced at the bases, suggesting possible effusion or atelectasis",
+    "No obvious focal consolidation clearly delineated",
+    "Skeletal structures (ribs, clavicles) appear grossly intact",
+    "Soft tissue overlying shoulders shows external markers/leads"
+  ],
+  "abnormalities": [
+    {
+      "name": "Central line placement",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Linear catheter density seen extending from the right side of the neck/shoulder area into the chest, with tip appearing to terminate near the cavoatrial junction/SVC region - consistent with central venous catheter placement"
+    },
+    {
+      "name": "Bibasilar haziness",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Increased opacity at both lung bases, which could represent atelectasis, pleural effusion, or supine technique artifact; further clinical correlation needed"
+    },
+    {
+      "name": "Cardiomegaly (possible)",
+      "severity": "Mild",
+      "confidence": 30,
+      "description": "Cardiac silhouette appears somewhat enlarged, though this may be exaggerated by supine AP positioning and magnification"
+    }
+  ],
+  "summary": "This chest X-ray was taken with the patient lying down, which can make the heart look bigger and the lung details less clear than a standing X-ray. There appears to be a thin tube (a central line) placed in a vein near the neck/chest, which is a device sometimes used to give medications or fluids directly into a large vein - its position looks reasonable but should be confirmed by a doctor. There's also some haziness at the bottom of both lungs, which could mean fluid, partial lung collapse, or just be related to the way the picture was taken while lying down. None of these findings are necessarily dangerous, but they should be reviewed by a radiologist or your treating physician who has access to your full clinical picture and can compare with prior imaging if available.",
+  "references": [
+    "https://radiopaedia.org/articles/central-venous-catheter-placement",
+    "https://www.acr.org/Clinical-Resources/Radiology-Safety/Contrast-Manual",
+    "https://pubs.rsna.org/journal/radiographics"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22944,
+    "bytesOut": 22944,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-29T10:46:38.490Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

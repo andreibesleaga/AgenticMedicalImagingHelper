@@ -4,8 +4,8 @@
 
 | Version | Supported |
 | ------- | --------- |
-| 1.0.x   | ✅        |
-| < 1.0   | ❌        |
+| 1.1.x   | ✅        |
+| < 1.1   | ❌        |
 
 This is a local, single-user CLI tool. There is no hosted service and no network
 surface beyond outbound calls to the configured model provider — Google Gemini
@@ -47,9 +47,10 @@ fan out to many paid API calls, key hygiene matters:
 - **Never log the key.** The key is read from the environment and is never printed
   to stdout/stderr or written to any report. `src/infrastructure/logger.ts`
   redacts **every** provider key it knows about — `GOOGLE_API_KEY`,
-  `GEMINI_API_KEY` and `OPENROUTER_API_KEY` — both by value (any occurrence of
-  the secret in a rendered line becomes `[REDACTED]`) and by field name
-  (`authorization`, `token`, `apiKey`, `openrouter_api_key`, …).
+  `GEMINI_API_KEY`, `OPENROUTER_API_KEY` and `LOCAL_LLM_API_KEY` — both by value
+  (any occurrence of the secret in a rendered line becomes `[REDACTED]`) and by
+  field name (`authorization`, `token`, `apiKey`, `openrouter_api_key`,
+  `local_llm_api_key`, …).
   **When a new provider or key variable is added, it must be added to
   `secretValues()` in the same change**, or that key leaks verbatim into every
   structured log line. Keys never enter the run manifest: it records the

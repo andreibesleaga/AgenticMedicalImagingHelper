@@ -1,0 +1,46 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00015863/series_1/00015863_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Multiple bilateral pulmonary nodules of varying sizes.\",\n    \"A medical device, likely a catheter, is visible extending downwards on the right side of the chest.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Multiple Pulmonary Nodules\",\n      \"description\": \"Numerous distinct, rounded opacities are distributed throughout both lung fields, consistent with multiple pulmonary nodules. These are suspicious for metastatic disease.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This chest X-ray shows multiple abnormal spots (nodules) in both lungs. Given the number of these spots, they are highly concerning for cancer that has spread to the lungs from elsewhere in the body (metastasis). Further testing, such as a CT scan and potentially a biopsy, will be necessary to determine the exact nature of these spots and the best course of action. A medical tube is also seen on the right side.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pulmonary-metastases\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3533909/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Multiple bilateral pulmonary nodules of varying sizes.",
+    "A medical device, likely a catheter, is visible extending downwards on the right side of the chest."
+  ],
+  "abnormalities": [
+    {
+      "name": "Multiple Pulmonary Nodules",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Numerous distinct, rounded opacities are distributed throughout both lung fields, consistent with multiple pulmonary nodules. These are suspicious for metastatic disease."
+    }
+  ],
+  "summary": "This chest X-ray shows multiple abnormal spots (nodules) in both lungs. Given the number of these spots, they are highly concerning for cancer that has spread to the lungs from elsewhere in the body (metastasis). Further testing, such as a CT scan and potentially a biopsy, will be necessary to determine the exact nature of these spots and the best course of action. A medical tube is also seen on the right side.",
+  "references": [
+    "https://radiopaedia.org/articles/pulmonary-metastases",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3533909/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 310079,
+    "bytesOut": 304550,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:46:47.292Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

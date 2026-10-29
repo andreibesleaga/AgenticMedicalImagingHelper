@@ -1,0 +1,66 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_5/00000239_004.png",
+  "seriesId": "series_5",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP, upright/supine)\",\"quality\":\"Fair\",\"findings\":[\"Prominent gastric bubble and dilated loops of bowel with multiple air-fluid/gas patterns visible in the upper abdomen, suggestive of significant bowel gas pattern\",\"Cardiac silhouette appears mildly enlarged with cardiothoracic ratio difficult to assess precisely due to positioning\",\"Lungs are grossly clear bilaterally without focal consolidation, though right lung base shows slight haziness possibly due to overlying soft tissue/breast shadow\",\"Mediastinal structures midline, trachea appears central\",\"Visualized osseous structures (clavicles, scapulae, humeral heads, ribs) without acute fracture\",\"Surgical clips or sutures noted in the right upper chest/axillary region\",\"Dashed radiopaque markers present over the upper abdomen, likely skin markers or lead markers placed by technologist\",\"No definite pneumothorax or large pleural effusion identified\",\"Diaphragm contours are partially obscured by underlying bowel gas pattern\"],\"abnormalities\":[{\"name\":\"Markedly dilated bowel loops in upper abdomen\",\"description\":\"Multiple rounded and oval lucencies with a bubbly/soap-bubble appearance are seen in the upper abdomen just below the diaphragm, consistent with dilated, gas-filled bowel loops; this could represent ileus, obstruction, or simply a prominent gas pattern depending on clinical context\",\"severity\":\"Moderate\",\"confidence\":55},{\"name\":\"Surgical clips/hardware right chest wall\",\"description\":\"Small linear/curvilinear metallic densities are seen in the right axillary/chest wall region, likely from prior surgery (e.g., lymph node biopsy or breast surgery)\",\"severity\":\"Mild\",\"confidence\":60},{\"name\":\"Possible mild cardiomegaly\",\"description\":\"The cardiac silhouette appears enlarged relative to the thoracic width, though this may be affected by AP technique and patient positioning (magnification effect)\",\"severity\":\"Mild\",\"confidence\":40}],\"summary\":\"This is a chest X-ray showing the lungs, heart, and top part of the abdomen. The lungs themselves look mostly clear, without signs of pneumonia or fluid buildup. There is a notable amount of gas/air seen in the bowel loops just below the diaphragm, which can be a normal finding but sometimes indicates the bowels are not moving air through normally (called ileus) or, less commonly, a blockage — this would need correlation with the patient's symptoms and possibly an abdominal X-ray or CT for further evaluation. The heart shadow appears slightly enlarged, though this can sometimes be due to the X-ray technique itself rather than a true heart problem. Small metal clips are visible in the right underarm area, likely from a previous surgery. Overall, please have a physician review this together with the patient's symptoms and history for accurate interpretation.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\"https://pubs.rsna.org/journal/radiographics\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP, upright/supine)",
+  "quality": "Fair",
+  "findings": [
+    "Prominent gastric bubble and dilated loops of bowel with multiple air-fluid/gas patterns visible in the upper abdomen, suggestive of significant bowel gas pattern",
+    "Cardiac silhouette appears mildly enlarged with cardiothoracic ratio difficult to assess precisely due to positioning",
+    "Lungs are grossly clear bilaterally without focal consolidation, though right lung base shows slight haziness possibly due to overlying soft tissue/breast shadow",
+    "Mediastinal structures midline, trachea appears central",
+    "Visualized osseous structures (clavicles, scapulae, humeral heads, ribs) without acute fracture",
+    "Surgical clips or sutures noted in the right upper chest/axillary region",
+    "Dashed radiopaque markers present over the upper abdomen, likely skin markers or lead markers placed by technologist",
+    "No definite pneumothorax or large pleural effusion identified",
+    "Diaphragm contours are partially obscured by underlying bowel gas pattern"
+  ],
+  "abnormalities": [
+    {
+      "name": "Markedly dilated bowel loops in upper abdomen",
+      "severity": "Moderate",
+      "confidence": 55,
+      "description": "Multiple rounded and oval lucencies with a bubbly/soap-bubble appearance are seen in the upper abdomen just below the diaphragm, consistent with dilated, gas-filled bowel loops; this could represent ileus, obstruction, or simply a prominent gas pattern depending on clinical context"
+    },
+    {
+      "name": "Surgical clips/hardware right chest wall",
+      "severity": "Mild",
+      "confidence": 60,
+      "description": "Small linear/curvilinear metallic densities are seen in the right axillary/chest wall region, likely from prior surgery (e.g., lymph node biopsy or breast surgery)"
+    },
+    {
+      "name": "Possible mild cardiomegaly",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "The cardiac silhouette appears enlarged relative to the thoracic width, though this may be affected by AP technique and patient positioning (magnification effect)"
+    }
+  ],
+  "summary": "This is a chest X-ray showing the lungs, heart, and top part of the abdomen. The lungs themselves look mostly clear, without signs of pneumonia or fluid buildup. There is a notable amount of gas/air seen in the bowel loops just below the diaphragm, which can be a normal finding but sometimes indicates the bowels are not moving air through normally (called ileus) or, less commonly, a blockage — this would need correlation with the patient's symptoms and possibly an abdominal X-ray or CT for further evaluation. The heart shadow appears slightly enlarged, though this can sometimes be due to the X-ray technique itself rather than a true heart problem. Small metal clips are visible in the right underarm area, likely from a previous surgery. Overall, please have a physician review this together with the patient's symptoms and history for accurate interpretation.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiographics"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 427509,
+    "bytesOut": 425196,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:28:09.448Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

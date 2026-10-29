@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00016054/series_3/00016054_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear lung fields with no focal consolidation or mass.\",\n    \"Cardiac silhouette within normal size limits for patient age and body habitus.\",\n    \"Normal diaphragm contours bilaterally without elevation or blunting of costophrenic angles.\",\n    \"No evidence of pneumothorax, pleural effusion, or mediastinal widening.\",\n    \"Bony thorax including ribs, clavicles, and spine appear intact without fracture or lytic lesion.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray shows normal lungs, heart, and bones. There are no signs of infection, fluid buildup, or structural damage. Everything looks healthy and as expected for a routine imaging study.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-x-ray-interpretation\",\n    \"https://www.mayoclinic.org/tests-procedures/chest-x-ray/about/pac-20393478\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Clear lung fields with no focal consolidation or mass.",
+    "Cardiac silhouette within normal size limits for patient age and body habitus.",
+    "Normal diaphragm contours bilaterally without elevation or blunting of costophrenic angles.",
+    "No evidence of pneumothorax, pleural effusion, or mediastinal widening.",
+    "Bony thorax including ribs, clavicles, and spine appear intact without fracture or lytic lesion."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray shows normal lungs, heart, and bones. There are no signs of infection, fluid buildup, or structural damage. Everything looks healthy and as expected for a routine imaging study.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-x-ray-interpretation",
+    "https://www.mayoclinic.org/tests-procedures/chest-x-ray/about/pac-20393478"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 416213,
+    "bytesOut": 375307,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:21:09.722Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

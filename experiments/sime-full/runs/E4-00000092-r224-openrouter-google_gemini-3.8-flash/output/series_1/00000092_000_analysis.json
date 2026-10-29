@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000092/series_1/00000092_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Cardiomegaly is present, with the cardiothoracic ratio exceeding 50%.\",\n    \"Bilateral blunting of the costophrenic angles with classic meniscus signs, consistent with bilateral pleural effusions.\",\n    \"Bilateral basilar opacities reflecting compressive atelectasis secondary to pleural fluid collections.\",\n    \"Mild pulmonary vascular engorgement suggestive of elevated venous pressure.\",\n    \"The trachea is centrally aligned; no definite focal consolidation to suggest pneumonia.\",\n    \"No pneumothorax identified.\",\n    \"Bony thorax and visualized soft tissues are grossly unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Pleural Effusions\",\n      \"description\": \"Blunting of the right and left costophrenic sulci with lateral upward curving meniscus signs, representing bilateral fluid accumulation in the pleural space.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 92\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlarged cardiac silhouette with a cardiothoracic ratio noticeably greater than 0.50, suggestive of ventricular enlargement or pericardial fluid.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 88\n    },\n    {\n      \"name\": \"Compressive Atelectasis\",\n      \"description\": \"Patchy basilar opacities in both lung bases immediately adjacent to the pleural fluid, consistent with under-aeration and volume loss.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This chest radiograph reveals an enlarged heart (cardiomegaly) accompanied by fluid accumulation around the bases of both lungs (pleural effusions). The weight and volume of this fluid has caused mild partial collapse (atelectasis) in the lower lung tissue. These findings typically point toward fluid overload or congestive heart failure, where the heart's reduced pumping efficiency leads to fluid pooling in the body.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK448187/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Cardiomegaly is present, with the cardiothoracic ratio exceeding 50%.",
+    "Bilateral blunting of the costophrenic angles with classic meniscus signs, consistent with bilateral pleural effusions.",
+    "Bilateral basilar opacities reflecting compressive atelectasis secondary to pleural fluid collections.",
+    "Mild pulmonary vascular engorgement suggestive of elevated venous pressure.",
+    "The trachea is centrally aligned; no definite focal consolidation to suggest pneumonia.",
+    "No pneumothorax identified.",
+    "Bony thorax and visualized soft tissues are grossly unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 92,
+      "description": "Blunting of the right and left costophrenic sulci with lateral upward curving meniscus signs, representing bilateral fluid accumulation in the pleural space."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 88,
+      "description": "Enlarged cardiac silhouette with a cardiothoracic ratio noticeably greater than 0.50, suggestive of ventricular enlargement or pericardial fluid."
+    },
+    {
+      "name": "Compressive Atelectasis",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Patchy basilar opacities in both lung bases immediately adjacent to the pleural fluid, consistent with under-aeration and volume loss."
+    }
+  ],
+  "summary": "This chest radiograph reveals an enlarged heart (cardiomegaly) accompanied by fluid accumulation around the bases of both lungs (pleural effusions). The weight and volume of this fluid has caused mild partial collapse (atelectasis) in the lower lung tissue. These findings typically point toward fluid overload or congestive heart failure, where the heart's reduced pumping efficiency leads to fluid pooling in the body.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://www.ncbi.nlm.nih.gov/books/NBK448187/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24381,
+    "bytesOut": 24381,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:32:03.853Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

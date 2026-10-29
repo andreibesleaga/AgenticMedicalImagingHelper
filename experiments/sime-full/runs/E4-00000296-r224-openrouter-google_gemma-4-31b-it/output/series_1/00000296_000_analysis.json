@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000296/series_1/00000296_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Presence of a pigtail catheter in the left hemithorax.\",\n    \"The catheter tip is positioned in the mid-to-lower left lung field/pleural space.\",\n    \"Lungs are clear with no evidence of significant pneumothorax or pleural effusion at this time.\",\n    \"Cardiac silhouette is within normal limits for size and shape.\",\n    \"Hilar structures and mediastinum appear unremarkable.\",\n    \"Bony structures are intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pleural pigtail catheter\",\n      \"description\": \"An indwelling pigtail-type drainage catheter is present in the left pleural space, likely placed for the drainage of a prior pleural effusion or pneumothorax.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray shows a drainage tube (pigtail catheter) in the left side of the chest. This is commonly used to remove fluid or air from the space around the lung. Currently, the lungs appear clear, suggesting that the tube is effectively managing the condition or that the issue has resolved.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pigtail-catheter\",\n    \"https://www.rcr.ac.uk/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Presence of a pigtail catheter in the left hemithorax.",
+    "The catheter tip is positioned in the mid-to-lower left lung field/pleural space.",
+    "Lungs are clear with no evidence of significant pneumothorax or pleural effusion at this time.",
+    "Cardiac silhouette is within normal limits for size and shape.",
+    "Hilar structures and mediastinum appear unremarkable.",
+    "Bony structures are intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pleural pigtail catheter",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "An indwelling pigtail-type drainage catheter is present in the left pleural space, likely placed for the drainage of a prior pleural effusion or pneumothorax."
+    }
+  ],
+  "summary": "The X-ray shows a drainage tube (pigtail catheter) in the left side of the chest. This is commonly used to remove fluid or air from the space around the lung. Currently, the lungs appear clear, suggesting that the tube is effectively managing the condition or that the issue has resolved.",
+  "references": [
+    "https://radiopaedia.org/articles/pigtail-catheter",
+    "https://www.rcr.ac.uk/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22549,
+    "bytesOut": 22549,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:19:52.844Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

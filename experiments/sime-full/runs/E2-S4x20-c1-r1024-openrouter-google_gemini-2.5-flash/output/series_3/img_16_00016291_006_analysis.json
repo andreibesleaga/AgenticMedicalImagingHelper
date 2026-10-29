@@ -1,0 +1,75 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_3/img_16_00016291_006.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral patchy opacities and reticular shadowing in both lung fields.\",\n    \"Bilateral pleural effusions, greater on the right, with blunting of costophrenic angles.\",\n    \"Cardiomegaly, with an enlarged cardiac silhouette.\",\n    \"Left internal jugular central venous catheter with its tip projecting over the right atrium/SVC junction.\",\n    \"Multiple small, hyperdense opacities are noted in the soft tissues of the neck and supraclavicular regions bilaterally, consistent with subcutaneous emphysema or possibly air locules from a surgical procedure.\",\n    \"Mild to moderate subcutaneous emphysema or free air tracking into the supraclavicular regions and neck.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral patchy opacities and reticular shadowing\",\n      \"description\": \"Diffuse patchy opacities and reticular shadowing are present in both lung fields, suggestive of pulmonary edema, pneumonia, or acute respiratory distress syndrome.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Bilateral pleural effusions\",\n      \"description\": \"There are bilateral pleural effusions, more pronounced on the right, indicated by blunting of the costophrenic angles and diffuse haziness over the lower lung zones.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette is enlarged, indicating cardiomegaly.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Subcutaneous Emphysema/Free Air\",\n      \"description\": \"Multiple small, hyperdense opacities in the soft tissues of the neck and supraclavicular regions bilaterally are consistent with subcutaneous emphysema or free air.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    },\n    {\n      \"name\": \"Central Venous Catheter\",\n      \"description\": \"A left internal jugular central venous catheter is present with its tip appearing to be appropriately positioned at the right atrium/superior vena cava junction.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 98\n    }\n  ],\n  \"summary\": \"This X-ray shows signs of significant lung problems, including widespread cloudiness and a net-like pattern in both lungs, which could be due to fluid buildup or infection. There's also fluid around both lungs, more on the right side, and the heart appears enlarged. Additionally, there are small pockets of air under the skin in the neck and shoulder area. A tube placed into a large vein in the neck appears to be in the correct position. These findings together suggest conditions like severe lung inflammation, fluid overload, or heart issues.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125178\",\n    \"https://radiopaedia.org/articles/cardiomegaly-1\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMicm1513222\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral patchy opacities and reticular shadowing in both lung fields.",
+    "Bilateral pleural effusions, greater on the right, with blunting of costophrenic angles.",
+    "Cardiomegaly, with an enlarged cardiac silhouette.",
+    "Left internal jugular central venous catheter with its tip projecting over the right atrium/SVC junction.",
+    "Multiple small, hyperdense opacities are noted in the soft tissues of the neck and supraclavicular regions bilaterally, consistent with subcutaneous emphysema or possibly air locules from a surgical procedure.",
+    "Mild to moderate subcutaneous emphysema or free air tracking into the supraclavicular regions and neck."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral patchy opacities and reticular shadowing",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Diffuse patchy opacities and reticular shadowing are present in both lung fields, suggestive of pulmonary edema, pneumonia, or acute respiratory distress syndrome."
+    },
+    {
+      "name": "Bilateral pleural effusions",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "There are bilateral pleural effusions, more pronounced on the right, indicated by blunting of the costophrenic angles and diffuse haziness over the lower lung zones."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "The cardiac silhouette is enlarged, indicating cardiomegaly."
+    },
+    {
+      "name": "Subcutaneous Emphysema/Free Air",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Multiple small, hyperdense opacities in the soft tissues of the neck and supraclavicular regions bilaterally are consistent with subcutaneous emphysema or free air."
+    },
+    {
+      "name": "Central Venous Catheter",
+      "severity": "Normal",
+      "confidence": 98,
+      "description": "A left internal jugular central venous catheter is present with its tip appearing to be appropriately positioned at the right atrium/superior vena cava junction."
+    }
+  ],
+  "summary": "This X-ray shows signs of significant lung problems, including widespread cloudiness and a net-like pattern in both lungs, which could be due to fluid buildup or infection. There's also fluid around both lungs, more on the right side, and the heart appears enlarged. Additionally, there are small pockets of air under the skin in the neck and shoulder area. A tube placed into a large vein in the neck appears to be in the correct position. These findings together suggest conditions like severe lung inflammation, fluid overload, or heart issues.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125178",
+    "https://radiopaedia.org/articles/cardiomegaly-1",
+    "https://www.nejm.org/doi/full/10.1056/NEJMicm1513222"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 426604,
+    "bytesOut": 425678,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:42:25.249Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00003980/series_1/00003980_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A peripherally inserted central catheter (PICC) line is noted with its tip projecting over the superior vena cava.\",\n    \"Bilateral opacities are present within the lung fields, particularly in the right mid and lower zones, consistent with multifocal consolidation or infiltrates.\",\n    \"Cardiomediastinal silhouette appears within normal limits for size and contour.\",\n    \"Both hemidiaphragms are intact.\",\n    \"Costophrenic angles are clear bilaterally.\",\n    \"No evidence of pneumothorax or pleural effusion.\",\n    \"Osseous structures appear unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"PICC line in SVC\",\n      \"description\": \"A peripherally inserted central catheter is appropriately positioned with its tip in the superior vena cava.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pulmonary opacities\",\n      \"description\": \"Multifocal patchy opacities are observed in both lung fields, more prominent in the right mid and lower zones, suggestive of consolidation or infiltrates.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This X-ray shows a PICC line, which is a tube inserted into a vein, properly placed in a large vein near the heart. There are also cloudy areas in both lungs, especially on the right side, which could be due to inflammation or infection. The heart and the rest of the chest structures look normal. These cloudy areas (also called infiltrates or consolidation) often mean there is fluid or inflammation in the lung tissue.\",\n  \"references\": [\n    \"https://radiologyassistant.nl/chest/chest-x-ray-lines-tubes-devices\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK534241/\",\n    \"https://www.thoracic.org/patients/patient-resources/glossary/consolidation.php\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A peripherally inserted central catheter (PICC) line is noted with its tip projecting over the superior vena cava.",
+    "Bilateral opacities are present within the lung fields, particularly in the right mid and lower zones, consistent with multifocal consolidation or infiltrates.",
+    "Cardiomediastinal silhouette appears within normal limits for size and contour.",
+    "Both hemidiaphragms are intact.",
+    "Costophrenic angles are clear bilaterally.",
+    "No evidence of pneumothorax or pleural effusion.",
+    "Osseous structures appear unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "PICC line in SVC",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A peripherally inserted central catheter is appropriately positioned with its tip in the superior vena cava."
+    },
+    {
+      "name": "Pulmonary opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Multifocal patchy opacities are observed in both lung fields, more prominent in the right mid and lower zones, suggestive of consolidation or infiltrates."
+    }
+  ],
+  "summary": "This X-ray shows a PICC line, which is a tube inserted into a vein, properly placed in a large vein near the heart. There are also cloudy areas in both lungs, especially on the right side, which could be due to inflammation or infection. The heart and the rest of the chest structures look normal. These cloudy areas (also called infiltrates or consolidation) often mean there is fluid or inflammation in the lung tissue.",
+  "references": [
+    "https://radiologyassistant.nl/chest/chest-x-ray-lines-tubes-devices",
+    "https://www.ncbi.nlm.nih.gov/books/NBK534241/",
+    "https://www.thoracic.org/patients/patient-resources/glossary/consolidation.php"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 395727,
+    "bytesOut": 391354,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:04:58.748Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

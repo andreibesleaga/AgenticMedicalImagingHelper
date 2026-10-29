@@ -1,0 +1,71 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_2/img_20_00004738_004.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Evidence of left pneumonectomy with associated mediastinal shift to the left.\",\n    \"Prominent cardiac silhouette, shifted to the left hemithorax.\",\n    \"Surgical clips and a vascular access port (presumably Port-A-Cath) are noted in the left supraclavicular/upper thoracic region.\",\n    \"A chest tube is visible in the left pleural space, with its tip likely within the mediastinal region or collapsed left pleural cavity.\",\n    \"Right lung appears clear with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Diaphragmatic contours are visible on the right, but obscured on the left due to the pneumonectomy status.\",\n    \"Osseous structures appear intact without acute fracture or destructive lesions.\",\n    \"Soft tissues are unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Pneumonectomy\",\n      \"description\": \"Surgical absence of the left lung, resulting in complete opacification of the left hemithorax and significant mediastinal shift towards the left.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"Displacement of the heart and other mediastinal structures into the left hemithorax due to volume loss from the left pneumonectomy.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Chest Tube\",\n      \"description\": \"Presence of a chest tube in the left pleural space/mediastinum, indicating prior or ongoing management of the post-surgical space.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Vascular Access Port\",\n      \"description\": \"Implanted vascular access device (Port-A-Cath) in the left upper chest, commonly used for long-term intravenous access.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows that the patient has had their left lung surgically removed (a procedure called a pneumonectomy). As a result, the heart and other structures in the middle of the chest have shifted towards the left side where the lung used to be. There is also a tube placed in the left chest, likely related to the surgery, and a port under the skin on the left side, which is a device for giving medicines or fluids. The right lung appears healthy. These findings are expected after a pneumonectomy.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pneumonectomy-2\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8979310/\",\n    \"https://www.thoracic.org/patients/patient-resources/topic-specific-resources/pneumonectomy.pdf\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Evidence of left pneumonectomy with associated mediastinal shift to the left.",
+    "Prominent cardiac silhouette, shifted to the left hemithorax.",
+    "Surgical clips and a vascular access port (presumably Port-A-Cath) are noted in the left supraclavicular/upper thoracic region.",
+    "A chest tube is visible in the left pleural space, with its tip likely within the mediastinal region or collapsed left pleural cavity.",
+    "Right lung appears clear with no focal consolidation, pleural effusion, or pneumothorax.",
+    "Diaphragmatic contours are visible on the right, but obscured on the left due to the pneumonectomy status.",
+    "Osseous structures appear intact without acute fracture or destructive lesions.",
+    "Soft tissues are unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Pneumonectomy",
+      "severity": "Severe",
+      "confidence": 100,
+      "description": "Surgical absence of the left lung, resulting in complete opacification of the left hemithorax and significant mediastinal shift towards the left."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Severe",
+      "confidence": 100,
+      "description": "Displacement of the heart and other mediastinal structures into the left hemithorax due to volume loss from the left pneumonectomy."
+    },
+    {
+      "name": "Chest Tube",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Presence of a chest tube in the left pleural space/mediastinum, indicating prior or ongoing management of the post-surgical space."
+    },
+    {
+      "name": "Vascular Access Port",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Implanted vascular access device (Port-A-Cath) in the left upper chest, commonly used for long-term intravenous access."
+    }
+  ],
+  "summary": "This X-ray of the chest shows that the patient has had their left lung surgically removed (a procedure called a pneumonectomy). As a result, the heart and other structures in the middle of the chest have shifted towards the left side where the lung used to be. There is also a tube placed in the left chest, likely related to the surgery, and a port under the skin on the left side, which is a device for giving medicines or fluids. The right lung appears healthy. These findings are expected after a pneumonectomy.",
+  "references": [
+    "https://radiopaedia.org/articles/pneumonectomy-2",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8979310/",
+    "https://www.thoracic.org/patients/patient-resources/topic-specific-resources/pneumonectomy.pdf"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24060,
+    "bytesOut": 24060,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:58:01.685Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

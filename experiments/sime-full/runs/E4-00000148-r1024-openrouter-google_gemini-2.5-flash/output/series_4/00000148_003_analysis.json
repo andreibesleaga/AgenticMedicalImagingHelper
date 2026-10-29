@@ -1,0 +1,48 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_4/00000148_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A left-sided single lumen port-a-cath is noted with its tip overlying the superior vena cava. The port reservoir is located in the left upper chest wall.\",\n    \"Bilateral lung fields are clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"The cardiomediastinal silhouette is within normal limits.\",\n    \"Bilateral hemidiaphragms are intact and clear costophrenic angles are seen.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Port-a-cath\",\n      \"description\": \"A left-sided single lumen port-a-cath is visible, with the port reservoir in the left upper chest wall and the catheter tip appropriately positioned within the superior vena cava.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows a left-sided port-a-cath, which is a small medical device placed under the skin to allow easy access to a vein, usually for medication delivery or blood draws. The tip of this catheter is correctly positioned in a large vein called the superior vena cava. The lungs, heart, and surrounding structures appear normal, with no signs of infection, fluid collection, or collapsed lung.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1147/JBR.12.3.167\",\n    \"https://radiologykey.com/chest-radiograph-evaluation-of-line-and-tube-placement-2/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A left-sided single lumen port-a-cath is noted with its tip overlying the superior vena cava. The port reservoir is located in the left upper chest wall.",
+    "Bilateral lung fields are clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "The cardiomediastinal silhouette is within normal limits.",
+    "Bilateral hemidiaphragms are intact and clear costophrenic angles are seen."
+  ],
+  "abnormalities": [
+    {
+      "name": "Port-a-cath",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A left-sided single lumen port-a-cath is visible, with the port reservoir in the left upper chest wall and the catheter tip appropriately positioned within the superior vena cava."
+    }
+  ],
+  "summary": "This X-ray of the chest shows a left-sided port-a-cath, which is a small medical device placed under the skin to allow easy access to a vein, usually for medication delivery or blood draws. The tip of this catheter is correctly positioned in a large vein called the superior vena cava. The lungs, heart, and surrounding structures appear normal, with no signs of infection, fluid collection, or collapsed lung.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1147/JBR.12.3.167",
+    "https://radiologykey.com/chest-radiograph-evaluation-of-line-and-tube-placement-2/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 457930,
+    "bytesOut": 457674,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:18:33.002Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,59 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_1/00000219_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP upright)\",\"quality\":\"Fair\",\"findings\":[\"Cardiac silhouette appears enlarged with cardiothoracic ratio increased\",\"Prominent left heart border with convex contour of the left atrial/pulmonary outflow region\",\"Mediastinal contours otherwise within normal limits for midline structures\",\"Lung fields appear grossly clear bilaterally without focal consolidation or large effusion\",\"Bony thorax and visualized skeletal structures appear intact without acute fracture\",\"Soft tissue overlying the chest wall appears prominent bilaterally, may reflect patient body habitus\",\"Rotational positioning noted with asymmetric clavicular projection, which may affect assessment of mediastinal width\",\"Skin marker visible over right chest wall (possible lead marker or incidental finding)\"],\"abnormalities\":[{\"name\":\"Cardiomegaly\",\"description\":\"The cardiac silhouette appears enlarged relative to thoracic width, suggestive of cardiomegaly. This could be due to various causes including hypertensive heart disease, valvular disease, or cardiomyopathy; further echocardiographic correlation recommended.\",\"severity\":\"Moderate\",\"confidence\":65},{\"name\":\"Suboptimal positioning/rotation\",\"description\":\"Mild rotation of the patient is noted based on asymmetric clavicle projection, which can affect accurate assessment of mediastinal and cardiac measurements.\",\"severity\":\"Mild\",\"confidence\":55}],\"summary\":\"This chest X-ray shows that the heart appears larger than normal, a finding called 'cardiomegaly.' The lungs themselves look clear, without signs of infection or fluid buildup. The image was taken with a slight rotation of the body, which can sometimes make the heart or chest structures look slightly different in size, so this should be confirmed with a repeat image or additional tests like an echocardiogram (heart ultrasound). An enlarged heart can have many causes, including long-standing high blood pressure, heart valve problems, or weakened heart muscle, and will need further evaluation by a doctor to determine the exact cause and appropriate treatment.\",\"references\":[\"https://radiopaedia.org/articles/cardiomegaly\",\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\"https://pubs.rsna.org/doi/10.1148/radiol.2019182316\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Fair",
+  "findings": [
+    "Cardiac silhouette appears enlarged with cardiothoracic ratio increased",
+    "Prominent left heart border with convex contour of the left atrial/pulmonary outflow region",
+    "Mediastinal contours otherwise within normal limits for midline structures",
+    "Lung fields appear grossly clear bilaterally without focal consolidation or large effusion",
+    "Bony thorax and visualized skeletal structures appear intact without acute fracture",
+    "Soft tissue overlying the chest wall appears prominent bilaterally, may reflect patient body habitus",
+    "Rotational positioning noted with asymmetric clavicular projection, which may affect assessment of mediastinal width",
+    "Skin marker visible over right chest wall (possible lead marker or incidental finding)"
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 65,
+      "description": "The cardiac silhouette appears enlarged relative to thoracic width, suggestive of cardiomegaly. This could be due to various causes including hypertensive heart disease, valvular disease, or cardiomyopathy; further echocardiographic correlation recommended."
+    },
+    {
+      "name": "Suboptimal positioning/rotation",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Mild rotation of the patient is noted based on asymmetric clavicle projection, which can affect accurate assessment of mediastinal and cardiac measurements."
+    }
+  ],
+  "summary": "This chest X-ray shows that the heart appears larger than normal, a finding called 'cardiomegaly.' The lungs themselves look clear, without signs of infection or fluid buildup. The image was taken with a slight rotation of the body, which can sometimes make the heart or chest structures look slightly different in size, so this should be confirmed with a repeat image or additional tests like an echocardiogram (heart ultrasound). An enlarged heart can have many causes, including long-standing high blood pressure, heart valve problems, or weakened heart muscle, and will need further evaluation by a doctor to determine the exact cause and appropriate treatment.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/doi/10.1148/radiol.2019182316"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 383333,
+    "bytesOut": 378599,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T09:42:31.274Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

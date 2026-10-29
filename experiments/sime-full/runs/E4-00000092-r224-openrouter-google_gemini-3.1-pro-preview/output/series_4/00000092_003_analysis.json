@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000092/series_4/00000092_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right lung demonstrates hazy opacity in the lower lobe with obscuration of the right hemidiaphragm and costophrenic angle.\",\n    \"Left lung shows a distinct meniscus sign in the lower zone, consistent with a pleural effusion.\",\n    \"Large air-fluid level is visible in the left upper quadrant, consistent with the stomach.\",\n    \"Cardiac silhouette appears within normal limits for size.\",\n    \"Bony thorax is intact with no acute fractures evident.\",\n    \"ECG leads are present on the chest.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right lower lobe consolidation/atelectasis\",\n      \"description\": \"Hazy opacity in the right lower lung zone obscuring the right hemidiaphragm and costophrenic angle, suggestive of consolidation or atelectasis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Left pleural effusion\",\n      \"description\": \"Meniscus sign visible in the left lower lung zone, indicating the presence of fluid in the pleural space.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows fluid accumulating around the left lung, which is called a pleural effusion. There is also cloudiness in the lower part of the right lung, which could be due to an infection (pneumonia) or a small area of collapsed lung tissue (atelectasis). A large air bubble with fluid is seen in the stomach area on the left side, which is a normal finding. These results should be discussed with a doctor to determine the underlying cause and appropriate treatment.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/lobar-consolidation\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right lung demonstrates hazy opacity in the lower lobe with obscuration of the right hemidiaphragm and costophrenic angle.",
+    "Left lung shows a distinct meniscus sign in the lower zone, consistent with a pleural effusion.",
+    "Large air-fluid level is visible in the left upper quadrant, consistent with the stomach.",
+    "Cardiac silhouette appears within normal limits for size.",
+    "Bony thorax is intact with no acute fractures evident.",
+    "ECG leads are present on the chest."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lower lobe consolidation/atelectasis",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Hazy opacity in the right lower lung zone obscuring the right hemidiaphragm and costophrenic angle, suggestive of consolidation or atelectasis."
+    },
+    {
+      "name": "Left pleural effusion",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Meniscus sign visible in the left lower lung zone, indicating the presence of fluid in the pleural space."
+    }
+  ],
+  "summary": "The chest X-ray shows fluid accumulating around the left lung, which is called a pleural effusion. There is also cloudiness in the lower part of the right lung, which could be due to an infection (pneumonia) or a small area of collapsed lung tissue (atelectasis). A large air bubble with fluid is seen in the stomach area on the left side, which is a normal finding. These results should be discussed with a doctor to determine the underlying cause and appropriate treatment.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/lobar-consolidation"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22273,
+    "bytesOut": 22273,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:33:04.290Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

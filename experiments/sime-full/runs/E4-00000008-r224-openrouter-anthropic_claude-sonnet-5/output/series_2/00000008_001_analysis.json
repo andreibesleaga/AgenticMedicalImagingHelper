@@ -1,0 +1,59 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000008/series_2/00000008_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP/frontal projection)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Frontal (AP) chest radiograph demonstrating bilateral lung fields, cardiac silhouette, and thoracic cage\",\n    \"Lung fields appear grossly symmetric with visible vascular/bronchial markings\",\n    \"Cardiac silhouette is midline; size difficult to definitively assess given projection/rotation\",\n    \"Mediastinal contours appear within a generally expected configuration for an AP supine/semi-erect view\",\n    \"A radiopaque band-like structure is seen overlying the lower chest/upper abdomen, likely representing an external strap, ECG lead, or monitoring device rather than an anatomic finding\",\n    \"Faint 'R' side marker noted in the upper right corner of the image, consistent with standard radiographic side-marking convention\",\n    \"No obvious focal consolidation, large pleural effusion, or pneumothorax clearly identified, though image clarity limits confident exclusion\",\n    \"Diaphragmatic contours are partially visualized; costophrenic angles not fully assessed due to image cropping\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"External radiopaque band/device overlay\",\n      \"description\": \"A linear, band-like radiopaque structure crosses the lower thorax/upper abdomen, most consistent with an external monitoring lead, strap, or clothing artifact rather than a true intrathoracic or osseous abnormality.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 55\n    },\n    {\n      \"name\": \"Suboptimal image quality/rotation\",\n      \"description\": \"Some asymmetry in soft tissue and rib alignment suggests slight patient rotation or positioning artifact, which can limit accurate assessment of mediastinal and cardiac contours.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 40\n    }\n  ],\n  \"summary\": \"This is a front-view chest X-ray showing the lungs, heart, and rib cage. The lungs appear generally symmetric without an obvious sign of significant fluid buildup, collapsed lung, or a clear area of pneumonia-like haziness, though the image quality and slight body positioning make it a bit harder to be fully certain about smaller details. There is a band-like line crossing the lower chest that most likely represents an external object, like a monitor lead, strap, or piece of clothing, rather than something inside the body. Overall, no major life-threatening abnormality jumps out from this single image, but any chest X-ray should be reviewed by a radiologist or your treating physician to confirm there are no subtle findings that need follow-up, and it is often helpful to compare with a lateral view or a repeat, well-positioned film if there are ongoing symptoms.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-radiograph\",\n    \"https://www.rcr.ac.uk/our-services/quality-image-interpretation-standards/\",\n    \"https://pubs.rsna.org/doi/10.1148/radiol.2019182716\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP/frontal projection)",
+  "quality": "Fair",
+  "findings": [
+    "Frontal (AP) chest radiograph demonstrating bilateral lung fields, cardiac silhouette, and thoracic cage",
+    "Lung fields appear grossly symmetric with visible vascular/bronchial markings",
+    "Cardiac silhouette is midline; size difficult to definitively assess given projection/rotation",
+    "Mediastinal contours appear within a generally expected configuration for an AP supine/semi-erect view",
+    "A radiopaque band-like structure is seen overlying the lower chest/upper abdomen, likely representing an external strap, ECG lead, or monitoring device rather than an anatomic finding",
+    "Faint 'R' side marker noted in the upper right corner of the image, consistent with standard radiographic side-marking convention",
+    "No obvious focal consolidation, large pleural effusion, or pneumothorax clearly identified, though image clarity limits confident exclusion",
+    "Diaphragmatic contours are partially visualized; costophrenic angles not fully assessed due to image cropping"
+  ],
+  "abnormalities": [
+    {
+      "name": "External radiopaque band/device overlay",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "A linear, band-like radiopaque structure crosses the lower thorax/upper abdomen, most consistent with an external monitoring lead, strap, or clothing artifact rather than a true intrathoracic or osseous abnormality."
+    },
+    {
+      "name": "Suboptimal image quality/rotation",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Some asymmetry in soft tissue and rib alignment suggests slight patient rotation or positioning artifact, which can limit accurate assessment of mediastinal and cardiac contours."
+    }
+  ],
+  "summary": "This is a front-view chest X-ray showing the lungs, heart, and rib cage. The lungs appear generally symmetric without an obvious sign of significant fluid buildup, collapsed lung, or a clear area of pneumonia-like haziness, though the image quality and slight body positioning make it a bit harder to be fully certain about smaller details. There is a band-like line crossing the lower chest that most likely represents an external object, like a monitor lead, strap, or piece of clothing, rather than something inside the body. Overall, no major life-threatening abnormality jumps out from this single image, but any chest X-ray should be reviewed by a radiologist or your treating physician to confirm there are no subtle findings that need follow-up, and it is often helpful to compare with a lateral view or a repeat, well-positioned film if there are ongoing symptoms.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.rcr.ac.uk/our-services/quality-image-interpretation-standards/",
+    "https://pubs.rsna.org/doi/10.1148/radiol.2019182716"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24413,
+    "bytesOut": 24413,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-29T10:32:52.456Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

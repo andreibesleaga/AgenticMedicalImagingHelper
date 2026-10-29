@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_1/img_15_00022764_006.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Large left-sided pleural effusion with an air-fluid level, extending superiorly to the level of the hilum.\",\n    \"Mediastinal shift to the right.\",\n    \"Presence of a left-sided chest tube with its tip in the base of the left hemithorax, confirming drainage of the effusion.\",\n    \"Right lung appears clear.\",\n    \"Cardiac silhouette is partially obscured by the left pleural effusion but appears shifted.\",\n    \"Bilateral shoulders and clavicles are visualized.\",\n    \"No acute bony abnormalities seen.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left-sided pleural effusion with air-fluid level\",\n      \"description\": \"A significant collection of fluid and air is noted in the left pleural space, occupying a large portion of the left hemithorax and extending superiorly to the hilum. This finding is consistent with a hydropneumothorax.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Mediastinal shift\",\n      \"description\": \"The large left-sided pleural effusion with air-fluid level is causing a noticeable displacement of the mediastinum (heart and great vessels) towards the right side of the chest.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Chest tube in situ\",\n      \"description\": \"A medical device (chest tube) is present in the left hemithorax, with its tip positioned to drain the pleural space, likely in response to the effusion and air.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray shows a large collection of fluid and air in the left lung area, which is known as a hydropneumothorax. This condition has pushed the heart and other central chest structures towards the right side of the chest. A tube has been inserted into the left side of the chest to help drain this fluid and air. The right lung appears clear, and there are no immediate concerns with the bones visible in the image. A hydropneumothorax can be caused by various factors, including trauma, infection, or medical procedures, and its presence can impair lung function.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/hydropneumothorax\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK441865/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Large left-sided pleural effusion with an air-fluid level, extending superiorly to the level of the hilum.",
+    "Mediastinal shift to the right.",
+    "Presence of a left-sided chest tube with its tip in the base of the left hemithorax, confirming drainage of the effusion.",
+    "Right lung appears clear.",
+    "Cardiac silhouette is partially obscured by the left pleural effusion but appears shifted.",
+    "Bilateral shoulders and clavicles are visualized.",
+    "No acute bony abnormalities seen."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left-sided pleural effusion with air-fluid level",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "A significant collection of fluid and air is noted in the left pleural space, occupying a large portion of the left hemithorax and extending superiorly to the hilum. This finding is consistent with a hydropneumothorax."
+    },
+    {
+      "name": "Mediastinal shift",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The large left-sided pleural effusion with air-fluid level is causing a noticeable displacement of the mediastinum (heart and great vessels) towards the right side of the chest."
+    },
+    {
+      "name": "Chest tube in situ",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A medical device (chest tube) is present in the left hemithorax, with its tip positioned to drain the pleural space, likely in response to the effusion and air."
+    }
+  ],
+  "summary": "This X-ray shows a large collection of fluid and air in the left lung area, which is known as a hydropneumothorax. This condition has pushed the heart and other central chest structures towards the right side of the chest. A tube has been inserted into the left side of the chest to help drain this fluid and air. The right lung appears clear, and there are no immediate concerns with the bones visible in the image. A hydropneumothorax can be caused by various factors, including trauma, infection, or medical procedures, and its presence can impair lung function.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/hydropneumothorax",
+    "https://www.ncbi.nlm.nih.gov/books/NBK441865/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 444722,
+    "bytesOut": 443869,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:45:48.084Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,61 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_1/img_08_00013795_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Cardiomegaly is present with an increased cardiothoracic ratio, suggesting cardiac enlargement.\",\n    \"Bilateral perihilar and peribronchial thickening are noted, consistent with interstitial lung disease or inflammation.\",\n    \"Bilateral pleural effusions are identified, with blunting of the costophrenic angles.\",\n    \"A nasogastric tube is visible in the upper abdomen, with its tip appropriately positioned.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The heart appears enlarged, with an increased cardiothoracic ratio, suggesting cardiac dilatation or hypertrophy.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Bilateral Perihilar and Peribronchial Thickening\",\n      \"description\": \"Evidence of thickening around the hilar regions and bronchial walls, which could indicate inflammation, infection, or chronic lung disease.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Bilateral Pleural Effusions\",\n      \"description\": \"Fluid accumulation in both pleural spaces, indicated by blunting of the costophrenic angles.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows that the patient's heart is larger than normal, a condition called cardiomegaly. There are also signs of thickening around the major airways and the central part of the lungs (perihilar and peribronchial thickening), which can be due to inflammation or other lung conditions. Additionally, there is some fluid build-up around both lungs, known as pleural effusions. A tube used for feeding or suction (nasogastric tube) is also seen in the correct position. These findings suggest potential issues with the heart and lungs, which may require further investigation.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/peribronchial-cuffing\",\n    \"https://radiopaedia.org/articles/pleural-effusion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Cardiomegaly is present with an increased cardiothoracic ratio, suggesting cardiac enlargement.",
+    "Bilateral perihilar and peribronchial thickening are noted, consistent with interstitial lung disease or inflammation.",
+    "Bilateral pleural effusions are identified, with blunting of the costophrenic angles.",
+    "A nasogastric tube is visible in the upper abdomen, with its tip appropriately positioned."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The heart appears enlarged, with an increased cardiothoracic ratio, suggesting cardiac dilatation or hypertrophy."
+    },
+    {
+      "name": "Bilateral Perihilar and Peribronchial Thickening",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Evidence of thickening around the hilar regions and bronchial walls, which could indicate inflammation, infection, or chronic lung disease."
+    },
+    {
+      "name": "Bilateral Pleural Effusions",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Fluid accumulation in both pleural spaces, indicated by blunting of the costophrenic angles."
+    }
+  ],
+  "summary": "This X-ray of the chest shows that the patient's heart is larger than normal, a condition called cardiomegaly. There are also signs of thickening around the major airways and the central part of the lungs (perihilar and peribronchial thickening), which can be due to inflammation or other lung conditions. Additionally, there is some fluid build-up around both lungs, known as pleural effusions. A tube used for feeding or suction (nasogastric tube) is also seen in the correct position. These findings suggest potential issues with the heart and lungs, which may require further investigation.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/peribronchial-cuffing",
+    "https://radiopaedia.org/articles/pleural-effusion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 288090,
+    "bytesOut": 281467,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:38:35.769Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

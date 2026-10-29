@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_4/img_15_00016414_002.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Mild cardiomegaly, with an increased cardiothoracic ratio.\",\n    \"Bilateral interstitial opacities, more prominent in the lower lung zones, suggesting pulmonary congestion or edema.\",\n    \"Pleural effusions are not clearly visualized.\",\n    \"Aortic arch is mildly prominent.\",\n    \"Hilar regions appear somewhat prominent, potentially due to vascular congestion.\",\n    \"Bony structures appear intact, without acute fractures or destructive lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette is enlarged, indicating an increased cardiothoracic ratio, suggestive of cardiomegaly.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pulmonary Congestion/Edema\",\n      \"description\": \"Bilateral, diffuse interstitial opacities are observed, particularly in the lower lung zones, consistent with pulmonary vascular congestion or edema.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows that the heart appears slightly enlarged. There are also some hazy, cloudy areas in both lungs, especially in the lower parts, which suggests that there might be extra fluid in the lungs, possibly due to issues with how the heart is pumping blood. This is often called 'pulmonary congestion' or 'pulmonary edema.' The main blood vessel coming from the heart (aorta) also looks a bit prominent.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.274065176\",\n    \"https://radiopaedia.org/articles/cardiomegaly-2\",\n    \"https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.109.192621\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Mild cardiomegaly, with an increased cardiothoracic ratio.",
+    "Bilateral interstitial opacities, more prominent in the lower lung zones, suggesting pulmonary congestion or edema.",
+    "Pleural effusions are not clearly visualized.",
+    "Aortic arch is mildly prominent.",
+    "Hilar regions appear somewhat prominent, potentially due to vascular congestion.",
+    "Bony structures appear intact, without acute fractures or destructive lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "The cardiac silhouette is enlarged, indicating an increased cardiothoracic ratio, suggestive of cardiomegaly."
+    },
+    {
+      "name": "Pulmonary Congestion/Edema",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Bilateral, diffuse interstitial opacities are observed, particularly in the lower lung zones, consistent with pulmonary vascular congestion or edema."
+    }
+  ],
+  "summary": "This X-ray of the chest shows that the heart appears slightly enlarged. There are also some hazy, cloudy areas in both lungs, especially in the lower parts, which suggests that there might be extra fluid in the lungs, possibly due to issues with how the heart is pumping blood. This is often called 'pulmonary congestion' or 'pulmonary edema.' The main blood vessel coming from the heart (aorta) also looks a bit prominent.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.274065176",
+    "https://radiopaedia.org/articles/cardiomegaly-2",
+    "https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.109.192621"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24128,
+    "bytesOut": 24128,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:02:32.030Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

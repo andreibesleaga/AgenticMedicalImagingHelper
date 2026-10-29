@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_3/00000239_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP/PA)\",\"quality\":\"Fair\",\"findings\":[\"Lungs are clear bilaterally with no focal consolidation, mass, or pleural effusion\",\"Cardiac silhouette appears normal in size\",\"Mediastinal and hilar structures are unremarkable\",\"Prominent gas-filled bowel loops visible in the upper abdomen beneath the diaphragm, consistent with normal bowel gas pattern\",\"Multiple small metallic/radiopaque densities noted in the lower abdomen, likely surgical clips or sutures\",\"Bony thorax including clavicles, scapulae, and visible ribs appear intact without acute fracture\",\"Soft tissues of the chest wall are symmetric\"],\"abnormalities\":[{\"name\":\"Abdominal surgical clips/sutures\",\"description\":\"Small linear and dash-like metallic densities seen in the lower abdominal field, likely representing surgical clips or sutures from prior abdominal surgery\",\"severity\":\"Mild\",\"confidence\":55},{\"name\":\"Prominent bowel gas pattern\",\"description\":\"Dilated, gas-filled loops of bowel visible in the upper abdomen just below the diaphragm; could represent normal variant or mild ileus, correlate clinically\",\"severity\":\"Mild\",\"confidence\":40}],\"summary\":\"This chest X-ray shows clear lungs with no signs of pneumonia, fluid buildup, or masses. The heart size looks normal. There is some gas visible in the bowel loops near the top of the abdomen, which can be a normal finding but should be correlated with symptoms. Small metallic markings in the lower abdomen likely represent clips from a previous surgery and are not a cause for concern on their own. Overall, the chest findings appear unremarkable, but please have a radiologist confirm these findings and correlate with clinical history.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\"https://pubs.rsna.org/journal/radiology\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP/PA)",
+  "quality": "Fair",
+  "findings": [
+    "Lungs are clear bilaterally with no focal consolidation, mass, or pleural effusion",
+    "Cardiac silhouette appears normal in size",
+    "Mediastinal and hilar structures are unremarkable",
+    "Prominent gas-filled bowel loops visible in the upper abdomen beneath the diaphragm, consistent with normal bowel gas pattern",
+    "Multiple small metallic/radiopaque densities noted in the lower abdomen, likely surgical clips or sutures",
+    "Bony thorax including clavicles, scapulae, and visible ribs appear intact without acute fracture",
+    "Soft tissues of the chest wall are symmetric"
+  ],
+  "abnormalities": [
+    {
+      "name": "Abdominal surgical clips/sutures",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Small linear and dash-like metallic densities seen in the lower abdominal field, likely representing surgical clips or sutures from prior abdominal surgery"
+    },
+    {
+      "name": "Prominent bowel gas pattern",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Dilated, gas-filled loops of bowel visible in the upper abdomen just below the diaphragm; could represent normal variant or mild ileus, correlate clinically"
+    }
+  ],
+  "summary": "This chest X-ray shows clear lungs with no signs of pneumonia, fluid buildup, or masses. The heart size looks normal. There is some gas visible in the bowel loops near the top of the abdomen, which can be a normal finding but should be correlated with symptoms. Small metallic markings in the lower abdomen likely represent clips from a previous surgery and are not a cause for concern on their own. Overall, the chest findings appear unremarkable, but please have a radiologist confirm these findings and correlate with clinical history.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiology"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 413987,
+    "bytesOut": 412168,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T10:32:08.006Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

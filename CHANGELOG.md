@@ -12,6 +12,19 @@ All changes in this section are **backward-compatible** (`additive` or
 renamed.
 
 - Docs: documentation audit of 2026-10-29 — provider-neutral data-handling text, exit-code lists completed, current architecture diagrams, AGENTS.md, CI and release notes in CONTRIBUTING, scope notes on the pre-implementation PRD and business case.
+- Security: the logger now also redacts `LOCAL_LLM_API_KEY`, by value and by
+  field name (`local_llm_api_key`).
+- Runtime: Node 20 reached end of life on 2026-04-30. `engines` is now
+  `>=22.0.0`, CI runs on Node 22 and 24, and the Docker image is built on
+  `node:22-alpine`. This is the one entry here that is not backward-compatible:
+  Node 20 is no longer supported (npm warns on install there, and refuses only
+  when `engine-strict` is set).
+- Evidence: the sime-full per-run outputs and sealed manifests
+  (`experiments/sime-full/runs/*/output/`) are committed, as `RESULTS.md`
+  already said; Prettier ignores the generated sime-full files.
+- Docs: `.env.example` leaves `GEMINI_MODEL` commented out (default
+  `gemini-3.8-flash`); SECURITY.md lists 1.1.x as supported; dated superseded
+  notes in `docs/SPEC.md` §2.1, §2.2, §5 and §6 and under THREAT_MODEL T6.
 
 ### Added (2026-10-08)
 
@@ -22,6 +35,8 @@ renamed.
   repeat-run and per-stratum tables in `analyze.ts` (the published E4 tables are
   unchanged). `RESULTS.md` §8–§11; two first-batch statements corrected with
   dated notes.
+
+## [1.1.1] - 2026-10-01
 
 ### Added (2026-09-29)
 
@@ -49,6 +64,8 @@ renamed.
   now limits the 2.5 models to projects that already used them. The OpenRouter
   default and the SIME 2026 pack are unchanged. Price table gains the Gemini 3.x
   flash and flash-lite rows.
+
+## [1.1.0] - 2026-09-10
 
 ### Changed
 
@@ -270,7 +287,7 @@ renamed. Recorded in
 - `.dicom` files are **refused** rather than silently ignored (previous
   behaviour: skipped as an unsupported extension).
 
-## [1.0.0]
+## 1.0.0
 
 ### Added
 
@@ -279,5 +296,6 @@ renamed. Recorded in
   fan-out/fan-in StateGraph. Per-image JSON, per-series Markdown, and a combined
   evolution report — each carrying a mandatory medical disclaimer.
 
-[Unreleased]: https://github.com/andreibesleaga/AgenticMedicalImagingHelper/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/andreibesleaga/AgenticMedicalImagingHelper/releases/tag/v1.0.0
+[Unreleased]: https://github.com/andreibesleaga/AgenticMedicalImagingHelper/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/andreibesleaga/AgenticMedicalImagingHelper/compare/v1.1.0...v1.1.1
+[1.1.0]: https://github.com/andreibesleaga/AgenticMedicalImagingHelper/releases/tag/v1.1.0

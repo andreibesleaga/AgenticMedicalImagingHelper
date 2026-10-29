@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_3/img_18_00019940_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A nasogastric tube is visualized, with its tip projected over the stomach.\",\n    \"A central venous catheter is noted, with its tip likely in the superior vena cava, though exact positioning is difficult to confirm without lateral view.\",\n    \"Bilateral lung fields appear clear without focal consolidation or pleural effusion.\",\n    \"Cardiac silhouette is within normal limits for size and contour.\",\n    \"Bony structures, including ribs and clavicles, are intact without acute fractures.\",\n    \"No pneumothorax is evident.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Nasogastric tube placement\",\n      \"description\": \"Nasogastric tube courses down the esophagus and its tip is projected over the stomach, consistent with appropriate placement.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Central venous catheter placement\",\n      \"description\": \"Central venous catheter is visualized, with its tip projecting into the mediastinum, likely within the superior vena cava. Optimal tip position for central venous catheters is typically in the lower superior vena cava or cavoatrial junction. A single AP view makes precise localization challenging.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows the lungs, heart, and bones. A tube placed through the nose into the stomach (nasogastric tube) appears to be in the correct position. Another tube, a central venous catheter, which goes into a large vein, also appears to be correctly placed, likely in the main vein leading to the heart. The lungs look clear, the heart size is normal, and the bones appear healthy. There are no signs of any lung infections, fluid around the lungs, or collapsed lung.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.292085133\",\n    \"https://radiologykey.com/nasogastric-and-feeding-tubes/\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4288075/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A nasogastric tube is visualized, with its tip projected over the stomach.",
+    "A central venous catheter is noted, with its tip likely in the superior vena cava, though exact positioning is difficult to confirm without lateral view.",
+    "Bilateral lung fields appear clear without focal consolidation or pleural effusion.",
+    "Cardiac silhouette is within normal limits for size and contour.",
+    "Bony structures, including ribs and clavicles, are intact without acute fractures.",
+    "No pneumothorax is evident."
+  ],
+  "abnormalities": [
+    {
+      "name": "Nasogastric tube placement",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Nasogastric tube courses down the esophagus and its tip is projected over the stomach, consistent with appropriate placement."
+    },
+    {
+      "name": "Central venous catheter placement",
+      "severity": "Normal",
+      "confidence": 90,
+      "description": "Central venous catheter is visualized, with its tip projecting into the mediastinum, likely within the superior vena cava. Optimal tip position for central venous catheters is typically in the lower superior vena cava or cavoatrial junction. A single AP view makes precise localization challenging."
+    }
+  ],
+  "summary": "This X-ray of the chest shows the lungs, heart, and bones. A tube placed through the nose into the stomach (nasogastric tube) appears to be in the correct position. Another tube, a central venous catheter, which goes into a large vein, also appears to be correctly placed, likely in the main vein leading to the heart. The lungs look clear, the heart size is normal, and the bones appear healthy. There are no signs of any lung infections, fluid around the lungs, or collapsed lung.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.292085133",
+    "https://radiologykey.com/nasogastric-and-feeding-tubes/",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4288075/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22363,
+    "bytesOut": 22363,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:59:16.998Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

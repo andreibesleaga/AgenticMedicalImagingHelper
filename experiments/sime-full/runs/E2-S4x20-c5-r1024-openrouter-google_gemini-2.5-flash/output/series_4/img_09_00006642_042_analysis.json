@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_09_00006642_042.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral reticular and nodular opacities are present throughout both lung fields, more prominent in the lower zones.\",\n    \"The cardiac silhouette is within normal limits for size and contour.\",\n    \"The diaphragm and costophrenic angles are clear.\",\n    \"No focal consolidation, pneumothorax, or large pleural effusion is identified.\",\n    \"Bony structures appear intact without acute fractures.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Interstitial Lung Disease\",\n      \"description\": \"Diffuse bilateral reticular and nodular opacities are noted throughout both lung fields, suggestive of an interstitial lung process. These changes are more pronounced in the lower lobes.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The X-ray shows changes in both lungs that look like a pattern of fine lines and small spots. This appearance is often seen in conditions that affect the tissue and space around the air sacs in the lungs, collectively known as interstitial lung disease. Your heart size looks normal, and there's no sign of collapsed lung or significant fluid around the lungs. This finding suggests a lung condition that would likely need further investigation to understand the specific cause and treatment options.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2018180023\",\n    \"https://radiologyassistant.nl/chest/interstitial-lung-disease-hrct-basics\",\n    \"https://www.thoracic.org/patients/patient-resources/glossary/interstitial-lung-disease.php\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral reticular and nodular opacities are present throughout both lung fields, more prominent in the lower zones.",
+    "The cardiac silhouette is within normal limits for size and contour.",
+    "The diaphragm and costophrenic angles are clear.",
+    "No focal consolidation, pneumothorax, or large pleural effusion is identified.",
+    "Bony structures appear intact without acute fractures."
+  ],
+  "abnormalities": [
+    {
+      "name": "Interstitial Lung Disease",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse bilateral reticular and nodular opacities are noted throughout both lung fields, suggestive of an interstitial lung process. These changes are more pronounced in the lower lobes."
+    }
+  ],
+  "summary": "The X-ray shows changes in both lungs that look like a pattern of fine lines and small spots. This appearance is often seen in conditions that affect the tissue and space around the air sacs in the lungs, collectively known as interstitial lung disease. Your heart size looks normal, and there's no sign of collapsed lung or significant fluid around the lungs. This finding suggests a lung condition that would likely need further investigation to understand the specific cause and treatment options.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2018180023",
+    "https://radiologyassistant.nl/chest/interstitial-lung-disease-hrct-basics",
+    "https://www.thoracic.org/patients/patient-resources/glossary/interstitial-lung-disease.php"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 405957,
+    "bytesOut": 403468,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:46:42.833Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

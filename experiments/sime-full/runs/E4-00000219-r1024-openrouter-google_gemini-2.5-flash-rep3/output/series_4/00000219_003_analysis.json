@@ -1,0 +1,65 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_4/00000219_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Sternal wires are noted, consistent with prior sternotomy.\",\n    \"Multiple surgical clips are present in the mediastinum, likely related to prior coronary artery bypass grafting (CABG) or other cardiac surgery.\",\n    \"The cardiac silhouette is enlarged.\",\n    \"There is prominence of the pulmonary vasculature, suggestive of pulmonary congestion.\",\n    \"Bilateral hilar regions appear prominent.\",\n    \"Costophrenic angles are clear.\",\n    \"No focal consolidation, pneumothorax, or pleural effusion is seen.\",\n    \"Osseous structures appear unremarkable given the limitations of the projection.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Sternal Wires and Surgical Clips\",\n      \"description\": \"Presence of sternal wires and multiple surgical clips in the mediastinum indicates a history of prior sternotomy and likely cardiac surgery.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette is enlarged, suggesting cardiomegaly.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pulmonary Congestion\",\n      \"description\": \"Prominence of the pulmonary vasculature and hilar regions is consistent with pulmonary congestion.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows signs of previous heart surgery, including wires in the breastbone and surgical clips near the heart. The heart appears larger than normal, and there are signs of mild fluid buildup in the lungs (pulmonary congestion). These findings often suggest a history of heart conditions and potential ongoing cardiac issues.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.301095034\",\n    \"https://radiologykey.com/chest-radiograph-in-cardiac-disease-2/\",\n    \"https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.109.192131\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Sternal wires are noted, consistent with prior sternotomy.",
+    "Multiple surgical clips are present in the mediastinum, likely related to prior coronary artery bypass grafting (CABG) or other cardiac surgery.",
+    "The cardiac silhouette is enlarged.",
+    "There is prominence of the pulmonary vasculature, suggestive of pulmonary congestion.",
+    "Bilateral hilar regions appear prominent.",
+    "Costophrenic angles are clear.",
+    "No focal consolidation, pneumothorax, or pleural effusion is seen.",
+    "Osseous structures appear unremarkable given the limitations of the projection."
+  ],
+  "abnormalities": [
+    {
+      "name": "Sternal Wires and Surgical Clips",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Presence of sternal wires and multiple surgical clips in the mediastinum indicates a history of prior sternotomy and likely cardiac surgery."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The cardiac silhouette is enlarged, suggesting cardiomegaly."
+    },
+    {
+      "name": "Pulmonary Congestion",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Prominence of the pulmonary vasculature and hilar regions is consistent with pulmonary congestion."
+    }
+  ],
+  "summary": "The chest X-ray shows signs of previous heart surgery, including wires in the breastbone and surgical clips near the heart. The heart appears larger than normal, and there are signs of mild fluid buildup in the lungs (pulmonary congestion). These findings often suggest a history of heart conditions and potential ongoing cardiac issues.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.301095034",
+    "https://radiologykey.com/chest-radiograph-in-cardiac-disease-2/",
+    "https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.109.192131"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 392020,
+    "bytesOut": 388042,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:55:33.043Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

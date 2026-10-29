@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00004946/series_2/00004946_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral reticular and nodular opacities are noted throughout both lung fields, more prominent in the lower lobes.\",\n    \"Bilateral pleural effusions are present, more significant on the right side, blunting the costophrenic angles.\",\n    \"Cardiomediastinal silhouette appears within normal limits for size and contour.\",\n    \"Hilar regions are not overtly enlarged.\",\n    \"Bony thorax appears intact without acute fracture or destructive lesion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Interstitial Lung Disease\",\n      \"description\": \"Diffuse bilateral reticular and nodular opacities are observed throughout both lungs, suggestive of interstitial lung disease. These changes are more pronounced in the lower lobes, indicating a widespread parenchymal process.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Bilateral Pleural Effusions\",\n      \"description\": \"Blunting of both costophrenic angles indicates the presence of bilateral pleural effusions. The effusion on the right side appears larger than on the left, suggesting accumulation of fluid in the pleural space.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows changes in both lungs, including widespread hazy patterns and small spots, which suggest a condition affecting the lung tissue itself (like interstitial lung disease). There is also fluid around both lungs, more so on the right side, which is known as pleural effusion. The heart and major blood vessels appear normal in size and shape. These findings indicate a significant lung process that would require further investigation to determine the exact cause.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.38079.180209\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900609/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral reticular and nodular opacities are noted throughout both lung fields, more prominent in the lower lobes.",
+    "Bilateral pleural effusions are present, more significant on the right side, blunting the costophrenic angles.",
+    "Cardiomediastinal silhouette appears within normal limits for size and contour.",
+    "Hilar regions are not overtly enlarged.",
+    "Bony thorax appears intact without acute fracture or destructive lesion."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Interstitial Lung Disease",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Diffuse bilateral reticular and nodular opacities are observed throughout both lungs, suggestive of interstitial lung disease. These changes are more pronounced in the lower lobes, indicating a widespread parenchymal process."
+    },
+    {
+      "name": "Bilateral Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Blunting of both costophrenic angles indicates the presence of bilateral pleural effusions. The effusion on the right side appears larger than on the left, suggesting accumulation of fluid in the pleural space."
+    }
+  ],
+  "summary": "The chest X-ray shows changes in both lungs, including widespread hazy patterns and small spots, which suggest a condition affecting the lung tissue itself (like interstitial lung disease). There is also fluid around both lungs, more so on the right side, which is known as pleural effusion. The heart and major blood vessels appear normal in size and shape. These findings indicate a significant lung process that would require further investigation to determine the exact cause.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.38079.180209",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900609/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24416,
+    "bytesOut": 24416,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:19:12.509Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

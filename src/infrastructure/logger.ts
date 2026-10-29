@@ -33,13 +33,15 @@ function resolveLevel(explicit?: LogLevel): LogLevel {
 /**
  * Concrete secret values that must never appear in any log line — every
  * provider key the CLI accepts (`AI_PROVIDER=openrouter` uses
- * `OPENROUTER_API_KEY`, so omitting it would leak that key verbatim).
+ * `OPENROUTER_API_KEY` and `AI_PROVIDER=local` sends the optional
+ * `LOCAL_LLM_API_KEY`, so omitting either would leak that key verbatim).
  */
 function secretValues(): string[] {
   return [
     process.env.GOOGLE_API_KEY,
     process.env.GEMINI_API_KEY,
     process.env.OPENROUTER_API_KEY,
+    process.env.LOCAL_LLM_API_KEY,
   ].filter((v): v is string => typeof v === "string" && v.length >= 6);
 }
 
@@ -52,6 +54,8 @@ const REDACT_KEYS = new Set([
   "gemini_api_key",
   "openrouterapikey",
   "openrouter_api_key",
+  "localllmapikey",
+  "local_llm_api_key",
   "authorization",
   "token",
   "password",

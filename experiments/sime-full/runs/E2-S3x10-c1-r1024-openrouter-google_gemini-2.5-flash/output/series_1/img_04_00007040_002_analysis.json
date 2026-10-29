@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_1/img_04_00007040_002.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pneumothorax, or large pleural effusion identified.\",\n    \"The cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Bilateral hilar and mediastinal contours are unremarkable.\",\n    \"No significant acute osseous abnormalities of the visualized thoracic cage.\",\n    \"There is some increased reticular and possibly nodular interstitial prominence, particularly at the lung bases, which may represent chronic interstitial changes, early interstitial edema, or atypical infection.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Interstitial Prominence\",\n      \"description\": \"Increased reticular and possibly nodular interstitial markings noted predominantly in the bilateral lung bases. This finding is non-specific and could be due to chronic interstitial changes, early interstitial edema, or atypical infection.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"The chest X-ray shows no signs of acute pneumonia, collapsed lung, or significant fluid around the lungs. The heart and major blood vessels appear normal in size and shape. There are some subtle changes in the lung tissue, particularly at the bottom parts of both lungs, which could indicate mild scarring or thickening of the lung tissue, early fluid buildup in the lungs, or an unusual type of infection. These findings are not specific to one condition and might warrant further investigation or clinical correlation.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.301095066\",\n    \"https://radiopaedia.org/articles/interstitial-lung-disease\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pneumothorax, or large pleural effusion identified.",
+    "The cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Bilateral hilar and mediastinal contours are unremarkable.",
+    "No significant acute osseous abnormalities of the visualized thoracic cage.",
+    "There is some increased reticular and possibly nodular interstitial prominence, particularly at the lung bases, which may represent chronic interstitial changes, early interstitial edema, or atypical infection."
+  ],
+  "abnormalities": [
+    {
+      "name": "Interstitial Prominence",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "Increased reticular and possibly nodular interstitial markings noted predominantly in the bilateral lung bases. This finding is non-specific and could be due to chronic interstitial changes, early interstitial edema, or atypical infection."
+    }
+  ],
+  "summary": "The chest X-ray shows no signs of acute pneumonia, collapsed lung, or significant fluid around the lungs. The heart and major blood vessels appear normal in size and shape. There are some subtle changes in the lung tissue, particularly at the bottom parts of both lungs, which could indicate mild scarring or thickening of the lung tissue, early fluid buildup in the lungs, or an unusual type of infection. These findings are not specific to one condition and might warrant further investigation or clinical correlation.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.301095066",
+    "https://radiopaedia.org/articles/interstitial-lung-disease",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 384040,
+    "bytesOut": 379889,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:34:21.097Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

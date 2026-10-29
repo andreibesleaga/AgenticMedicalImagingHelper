@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00016493/series_1/00016493_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear visualization of lung fields.\",\n    \"Heart size appears within normal limits.\",\n    \"Mediastinal structures are unremarkable.\",\n    \"No pleural effusion or pneumothorax noted.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The image shows a chest X-ray (AP view). The lungs appear clear, heart size is normal, and there are no visible signs of fluid or collapsed lung. No significant abnormalities are identified.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-x-ray-ap\",\n    \"https://www.hopkinsmedicine.org/health/conditions-and-diseases/chest-x-ray\",\n    \"https://www.radiologyinfo.org/en/professional/chest-x-ray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Clear visualization of lung fields.",
+    "Heart size appears within normal limits.",
+    "Mediastinal structures are unremarkable.",
+    "No pleural effusion or pneumothorax noted."
+  ],
+  "abnormalities": [],
+  "summary": "The image shows a chest X-ray (AP view). The lungs appear clear, heart size is normal, and there are no visible signs of fluid or collapsed lung. No significant abnormalities are identified.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-x-ray-ap",
+    "https://www.hopkinsmedicine.org/health/conditions-and-diseases/chest-x-ray",
+    "https://www.radiologyinfo.org/en/professional/chest-x-ray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 20947,
+    "bytesOut": 20947,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T11:08:28.698Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

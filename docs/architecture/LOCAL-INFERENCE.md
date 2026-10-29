@@ -35,14 +35,14 @@ This document specifies:
   need so that a local route is a first-class route and not a special case;
 - a model shortlist for two hardware tiers: the current development laptop (RTX 3060 Laptop, 6 GB
   VRAM, 31 GB RAM, WSL2) and a possible 24 GB GPU workstation (not yet decided);
-- tests, security, evaluation, a phased plan and the questions the owner needs to answer.
+- tests, security, evaluation, a phased plan and the open questions that need a decision.
 
 It applies the zero-budget constraint: every phase works with free, locally installed tools. No
 phase needs a paid account or new hardware, except the workstation-tier validation.
 
 ### 1.1 Terminology: Jev (TypeSafe AI)
 
-"Jev" in the owner's request means **Jev (TypeSafe AI)**, confirmed by the owner on 2026-09-29.
+"Jev" in the original request means **Jev (TypeSafe AI)**, confirmed by the maintainer on 2026-09-29.
 
 **Jev (TypeSafe AI)** is a "System One" decision model released in September 2026. It returns
 typed answers (choice, yes/no probability, score) with probabilities instead of free text
@@ -640,7 +640,7 @@ Estimates are in engineer-days. Each phase ends green: tests, coverage floor and
 
 | Phase                               | Work items                                                                                                                                                                                     | Acceptance criteria                                                                                                                        | Effort                        |
 | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------- |
-| **L0** Decisions                    | Owner answers §10; ADR-008 "Local and self-hosted inference" records the engine per tier, the descriptor and the residency rule                                                                | ADR merged; open questions closed or deferred by name                                                                                      | 0.5                           |
+| **L0** Decisions                    | §10 answered; ADR-008 "Local and self-hosted inference" records the engine per tier, the descriptor and the residency rule                                                                     | ADR merged; open questions closed or deferred by name                                                                                      | 0.5                           |
 | **L1** Generalise the shim          | `openai-compatible-client.ts`; OpenRouter becomes a preset; `createOpenRouterClient` kept; config parsing for `AI_PROVIDER=local` / `openai-compatible`; descriptor type and built-in registry | All existing OpenRouter tests pass unchanged; new unit tests cover presets and errors; no behaviour change for `google` / `openrouter`     | 2–3                           |
 | **L2** Structured output            | Per-stage JSON Schema from Zod; `json_schema` → `json_object` → text ladder; widened `isJsonModeUnsupported`; `gemma4` image family                                                            | Recorded-fixture contract tests pass for vLLM and llama.cpp bodies; a replay test proves the ladder                                        | 2                             |
 | **L3** Ollama native                | `OllamaNativeProvider` (`format`, `num_ctx`, `keep_alive`, `think`, timings); pre-flight discovery (`/api/version`, `/api/show`); digest pin check                                             | Offline tests; the live smoke test passes on the laptop with `medgemma1.5:4b` (all three stages schema-valid)                              | 2–3                           |
@@ -655,11 +655,11 @@ L1–L4 can land before the router, and L5 lands with it.
 
 ---
 
-## 10. Open questions for the owner
+## 10. Open questions
 
 Each question has a recommended answer.
 
-1. **What did "jev" mean?** _Resolved 2026-09-29 by the owner:_ Jev (TypeSafe AI). It is served
+1. **What did "jev" mean?** _Resolved 2026-09-29 by the maintainer:_ Jev (TypeSafe AI). It is served
    locally through Ollama's `/v1/systemone` and treated as the experimental decision port (§3.7),
    not as a vision engine.
 2. **Laptop engine.** _Recommended:_ Ollama (native API); llama.cpp as the alternative.

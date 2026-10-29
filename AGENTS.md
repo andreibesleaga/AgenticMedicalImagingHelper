@@ -43,7 +43,7 @@ node dist/main/index.js --help
 
 `npm run test:live` calls a real provider and costs money; run it only when
 asked. CI (`.github/workflows/ci.yml`) runs `npm ci`, `typecheck`, `lint`,
-`build` and `test:coverage` on Node 20 and 22.
+`build` and `test:coverage` on Node 22 and 24.
 
 ## Rules
 

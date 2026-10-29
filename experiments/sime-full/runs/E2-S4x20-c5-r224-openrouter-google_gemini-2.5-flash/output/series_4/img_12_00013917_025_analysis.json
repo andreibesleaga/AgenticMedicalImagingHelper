@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_4/img_12_00013917_025.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Left hemithorax shows an extensive opacification with an air-fluid level, consistent with a large left-sided pleural effusion.\",\n    \"The effusion appears to consolidate the lower lobe of the left lung.\",\n    \"Mediastinal structures are shifted to the right, indicating significant mass effect from the left pleural effusion.\",\n    \"Right lung appears clear with no overt consolidations or effusions.\",\n    \"Bony structures appear intact with no obvious fractures or destructive lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Pleural Effusion\",\n      \"description\": \"Large left-sided pleural effusion occupying the majority of the left hemithorax, with an air-fluid level. This suggests either an empyema, hemothorax, or a hydro-pneumothorax.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"Significant shift of the mediastinal structures (trachea, heart) to the right due to the mass effect from the large left pleural effusion.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows a large collection of fluid and air in the left lung space, which is causing the heart and other central chest structures to be pushed to the right. This fluid collection is called a pleural effusion, and the presence of both fluid and air (an air-fluid level) can suggest conditions like an infection (empyema), blood in the chest (hemothorax), or a combination of fluid and a collapsed lung (hydropneumothorax). This is a significant finding that requires urgent medical attention to determine the cause and appropriate treatment.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8945417/\",\n    \"https://emedicine.medscape.com/article/300489-overview\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Left hemithorax shows an extensive opacification with an air-fluid level, consistent with a large left-sided pleural effusion.",
+    "The effusion appears to consolidate the lower lobe of the left lung.",
+    "Mediastinal structures are shifted to the right, indicating significant mass effect from the left pleural effusion.",
+    "Right lung appears clear with no overt consolidations or effusions.",
+    "Bony structures appear intact with no obvious fractures or destructive lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Pleural Effusion",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Large left-sided pleural effusion occupying the majority of the left hemithorax, with an air-fluid level. This suggests either an empyema, hemothorax, or a hydro-pneumothorax."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Severe",
+      "confidence": 90,
+      "description": "Significant shift of the mediastinal structures (trachea, heart) to the right due to the mass effect from the large left pleural effusion."
+    }
+  ],
+  "summary": "This X-ray of the chest shows a large collection of fluid and air in the left lung space, which is causing the heart and other central chest structures to be pushed to the right. This fluid collection is called a pleural effusion, and the presence of both fluid and air (an air-fluid level) can suggest conditions like an infection (empyema), blood in the chest (hemothorax), or a combination of fluid and a collapsed lung (hydropneumothorax). This is a significant finding that requires urgent medical attention to determine the cause and appropriate treatment.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8945417/",
+    "https://emedicine.medscape.com/article/300489-overview"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23081,
+    "bytesOut": 23081,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:02:30.235Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

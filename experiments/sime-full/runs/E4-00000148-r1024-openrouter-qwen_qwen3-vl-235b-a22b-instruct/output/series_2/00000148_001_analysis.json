@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_2/00000148_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right-sided pleural effusion with blunting of the right costophrenic angle and obscuration of the right hemidiaphragm.\",\n    \"A radiopaque foreign body, consistent with a swallowed coin, is visible in the mid-esophagus, projecting over the thoracic spine.\",\n    \"Lungs otherwise clear without focal consolidation or mass.\",\n    \"Cardiac silhouette within normal limits for this projection.\",\n    \"No evidence of pneumothorax or mediastinal widening.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Esophageal Foreign Body\",\n      \"description\": \"A circular, radiopaque object consistent with a coin is lodged in the esophagus at the level of the thoracic spine. This is a common pediatric finding and requires clinical correlation for removal if symptomatic or persistent.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Right Pleural Effusion\",\n      \"description\": \"Blunting of the right costophrenic angle and obscuration of the right hemidiaphragm suggest a small to moderate volume of fluid in the right pleural space. Clinical correlation is needed to determine etiology (e.g., infection, heart failure, malignancy).\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows two main findings: a coin stuck in the esophagus (swallowed object) and some fluid around the right lung (pleural effusion). The coin may need removal by a doctor if it’s causing symptoms like trouble swallowing or pain. The fluid could be due to various causes like infection or heart issues and should be evaluated further. Both findings require follow-up with your healthcare provider.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/books/NBK537046/\",\n    \"https://radiopaedia.org/articles/pleural-effusion-x-ray\",\n    \"https://www.aap.org/en/patient-care/foreign-body-aspiration-and-ingestion/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Right-sided pleural effusion with blunting of the right costophrenic angle and obscuration of the right hemidiaphragm.",
+    "A radiopaque foreign body, consistent with a swallowed coin, is visible in the mid-esophagus, projecting over the thoracic spine.",
+    "Lungs otherwise clear without focal consolidation or mass.",
+    "Cardiac silhouette within normal limits for this projection.",
+    "No evidence of pneumothorax or mediastinal widening."
+  ],
+  "abnormalities": [
+    {
+      "name": "Esophageal Foreign Body",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "A circular, radiopaque object consistent with a coin is lodged in the esophagus at the level of the thoracic spine. This is a common pediatric finding and requires clinical correlation for removal if symptomatic or persistent."
+    },
+    {
+      "name": "Right Pleural Effusion",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Blunting of the right costophrenic angle and obscuration of the right hemidiaphragm suggest a small to moderate volume of fluid in the right pleural space. Clinical correlation is needed to determine etiology (e.g., infection, heart failure, malignancy)."
+    }
+  ],
+  "summary": "The chest X-ray shows two main findings: a coin stuck in the esophagus (swallowed object) and some fluid around the right lung (pleural effusion). The coin may need removal by a doctor if it’s causing symptoms like trouble swallowing or pain. The fluid could be due to various causes like infection or heart issues and should be evaluated further. Both findings require follow-up with your healthcare provider.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK537046/",
+    "https://radiopaedia.org/articles/pleural-effusion-x-ray",
+    "https://www.aap.org/en/patient-care/foreign-body-aspiration-and-ingestion/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 440372,
+    "bytesOut": 398705,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-09-29T10:20:07.454Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

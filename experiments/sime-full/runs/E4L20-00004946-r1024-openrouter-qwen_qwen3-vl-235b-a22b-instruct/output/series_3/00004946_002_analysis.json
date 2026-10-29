@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00004946/series_3/00004946_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral diffuse reticular opacities predominantly in the lower lung zones\",\n    \"Increased interstitial markings with possible honeycombing pattern in the peripheral lung bases\",\n    \"No acute focal consolidation or pleural effusion\",\n    \"Cardiac silhouette within normal limits\",\n    \"Trachea midline, no mediastinal widening\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Interstitial Lung Disease\",\n      \"description\": \"Diffuse reticular pattern with increased interstitial markings and possible honeycombing in the lower lobes, suggestive of fibrotic lung disease. No acute findings such as pneumonia or pneumothorax are present.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows signs of chronic lung changes, specifically a pattern consistent with interstitial lung disease. This means the tissue around the air sacs in the lungs appears thickened or scarred, which can affect breathing. Common causes include autoimmune conditions, environmental exposures, or idiopathic pulmonary fibrosis. Further evaluation with high-resolution CT and pulmonary function tests is recommended to determine the exact cause and severity. There are no signs of infection or acute lung problems in this image.\",\n  \"references\": [\n    \"https://www.uptodate.com/contents/interstitial-lung-disease-clinical-manifestations-and-diagnosis\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7405049/\",\n    \"https://www.thoracic.org/patients/patient-resources/resources/interstitial-lung-disease.pdf\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral diffuse reticular opacities predominantly in the lower lung zones",
+    "Increased interstitial markings with possible honeycombing pattern in the peripheral lung bases",
+    "No acute focal consolidation or pleural effusion",
+    "Cardiac silhouette within normal limits",
+    "Trachea midline, no mediastinal widening"
+  ],
+  "abnormalities": [
+    {
+      "name": "Interstitial Lung Disease",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Diffuse reticular pattern with increased interstitial markings and possible honeycombing in the lower lobes, suggestive of fibrotic lung disease. No acute findings such as pneumonia or pneumothorax are present."
+    }
+  ],
+  "summary": "The chest X-ray shows signs of chronic lung changes, specifically a pattern consistent with interstitial lung disease. This means the tissue around the air sacs in the lungs appears thickened or scarred, which can affect breathing. Common causes include autoimmune conditions, environmental exposures, or idiopathic pulmonary fibrosis. Further evaluation with high-resolution CT and pulmonary function tests is recommended to determine the exact cause and severity. There are no signs of infection or acute lung problems in this image.",
+  "references": [
+    "https://www.uptodate.com/contents/interstitial-lung-disease-clinical-manifestations-and-diagnosis",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7405049/",
+    "https://www.thoracic.org/patients/patient-resources/resources/interstitial-lung-disease.pdf"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 370323,
+    "bytesOut": 339027,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:07:48.534Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

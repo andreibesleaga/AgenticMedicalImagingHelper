@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00016493/series_1/00016493_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pleural effusion, or pneumothorax identified.\",\n    \"Cardiomediastinal contours are within normal limits.\",\n    \"Pulmonary vascularity appears normal.\",\n    \"Bony thorax appears intact.\",\n    \"Presence of a metallic foreign body in the mid-abdomen overlying the lumbar spine, likely outside the chest cavity.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray appears largely normal. The lungs are clear without any signs of pneumonia, fluid around the lungs (pleural effusion), or a collapsed lung (pneumothorax). The heart and major blood vessels appear to be of normal size and shape. The bones of the chest also look intact. There is a metallic object seen in the abdomen, which is likely outside the chest, and does not appear to be affecting the chest organs shown in this image.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2018170097\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7212457/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pleural effusion, or pneumothorax identified.",
+    "Cardiomediastinal contours are within normal limits.",
+    "Pulmonary vascularity appears normal.",
+    "Bony thorax appears intact.",
+    "Presence of a metallic foreign body in the mid-abdomen overlying the lumbar spine, likely outside the chest cavity."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray appears largely normal. The lungs are clear without any signs of pneumonia, fluid around the lungs (pleural effusion), or a collapsed lung (pneumothorax). The heart and major blood vessels appear to be of normal size and shape. The bones of the chest also look intact. There is a metallic object seen in the abdomen, which is likely outside the chest, and does not appear to be affecting the chest organs shown in this image.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2018170097",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7212457/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 20947,
+    "bytesOut": 20947,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:26:36.436Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

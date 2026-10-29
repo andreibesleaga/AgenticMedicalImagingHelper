@@ -1,0 +1,72 @@
+> **Requires review by a qualified clinician before any use.**
+> This report is unreviewed AI research output. No finding, diagnosis, trend, forecast or
+> treatment suggestion in it has been checked by a human clinician, and none may be acted
+> on until one has. Recorded as `humanReview` in `run_manifest.json` (EU AI Act Art. 14).
+
+# Combined Diagnostic Report
+
+> ⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made.
+
+**Generated**: 2026-10-08T09:08:35.073Z
+**Series analyzed**: 3 (series_1, series_2, series_3)
+**Overall progression**: Worsening
+**Structured output**: schema-validated
+
+## Temporal Evolution Analysis
+
+# Temporal Analysis of Chest X-ray Series (Chronological: Series_1 → Series_2 → Series_3)
+
+## Overall Progression: Worsening
+
+### Key Trends Observed
+
+- **Series 1 (Baseline):** Normal PA chest X-ray. No radiographic abnormalities in lungs, pleura, mediastinum, or cardiac silhouette. Lung fields clear.
+- **Series 2 (Intermediate):** Emergence of bilateral diffuse reticular opacities with ground-glass appearance, predominantly in lower lung zones. Suggests early interstitial lung disease (ILD) with no honeycombing or traction bronchiectasis.
+- **Series 3 (Most Recent):** Findings consistent with chronic interstitial lung disease. Increased interstitial markings with possible honeycombing at lung bases — indicative of fibrotic remodeling.
+
+### Interpretation
+
+- The progression from normal lung fields (Series 1) to early interstitial changes (Series 2) to chronic fibrotic disease (Series 3) demonstrates a clear worsening trajectory.
+- The appearance of honeycombing in Series 3 is a critical inflection point, suggesting irreversible parenchymal damage.
+- No acute findings (e.g., consolidation, effusion) were observed in any series, supporting a chronic, progressive ILD pattern.
+
+### Clinical Implications
+
+- Urgent need for high-resolution CT to confirm fibrosis pattern and rule out other ILD subtypes.
+- Pulmonary function testing and rheumatologic evaluation are warranted to guide etiology and management.
+- Smoking history and occupational/environmental exposures should be assessed to identify potential triggers.
+
+#### Forecasted Evolution Without Treatment (model text — experimental, not clinical recommendations)
+
+- Continued decline in lung function and worsening fibrosis.
+- Risk of respiratory failure, increased hospitalizations, and reduced survival if progressive fibrotic ILD is confirmed.
+- Potential for development of pulmonary hypertension or cor pulmonale in advanced stages.
+
+#### Educational Treatment Suggestions (model text — experimental, not clinical recommendations)
+
+- High-resolution CT chest for detailed parenchymal assessment.
+- Pulmonary function tests (spirometry, DLCO) to quantify impairment.
+- Autoimmune serology panel (e.g., ANA, RF, anti-CCP, anti-ENA) if connective tissue disease suspected.
+- Referral to ILD specialist for consideration of antifibrotic agents (e.g., pirfenidone, nintedanib) if IPF is diagnosed.
+- Smoking cessation counseling and environmental exposure mitigation if applicable.
+
+> *Note: This analysis is AI-generated for educational purposes only. Clinical decisions must be made by qualified healthcare professionals.*
+
+## Per-Finding Trends
+- **interstitial lung pattern** — Worsening: Series 1 shows normal lung fields with no abnormalities. Series 2 reveals bilateral diffuse reticular opacities with ground-glass appearance, indicating early interstitial disease. Series 3 shows progression to chronic interstitial lung disease with possible honeycombing at the bases, suggesting fibrotic remodeling. The transition from normal (Series 1) to acute interstitial changes (Series 2) to chronic fibrotic changes (Series 3) indicates a clear worsening trend.
+
+## Forecasted Evolution
+Without intervention, the disease is likely to progress further, potentially leading to worsening pulmonary function, increased fibrosis, respiratory failure, and reduced quality of life. The presence of honeycombing in Series 3 suggests irreversible structural damage, which may accelerate without targeted therapy.
+
+## Treatment Suggestions (experimental — not clinical recommendations)
+_AI-generated suggestions for educational use only. They are not clinical recommendations and must not be acted on._
+
+- Consider high-resolution CT for detailed characterization of fibrosis and honeycombing
+- Evaluate for autoimmune or connective tissue disease with serologic testing
+- Assess pulmonary function with spirometry and DLCO to quantify impairment
+- Screen for occupational or environmental exposures contributing to ILD
+- Refer to a pulmonologist for potential antifibrotic therapy if idiopathic pulmonary fibrosis is confirmed
+
+---
+*Generated by AgenticMedicalImagingHelper v1.1.0 | Educational use only*
+*This report is AI-generated for educational purposes only. Professional clinical review required.*

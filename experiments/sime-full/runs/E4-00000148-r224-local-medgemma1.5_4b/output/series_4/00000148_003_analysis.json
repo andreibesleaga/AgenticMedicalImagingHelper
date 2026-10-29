@@ -1,0 +1,54 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000148/series_4/00000148_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest/Thorax (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Small right upper lobe nodule with a central radiopaque component.\",\n    \"Large right pleural effusion.\",\n    \"Right-sided chest tube.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Large right pleural effusion with collapse of right lung.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Nodule\",\n      \"description\": \"Right upper lobe lung nodule with central radiopaque component.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The X-ray shows a large collection of fluid (pleural effusion) in the right side of the chest, pushing the right lung downwards. There is a tube inserted into the right side of the chest (chest tube). Also visible is a small spot (nodule) in the right lung tissue.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/benign-pleural-effusion\",\n    \"https://radiopaedia.org/articles/lung-nodule\",\n    \"https://radiopaedia.org/articles/pneumothorax\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest/Thorax (AP)",
+  "quality": "Good",
+  "findings": [
+    "Small right upper lobe nodule with a central radiopaque component.",
+    "Large right pleural effusion.",
+    "Right-sided chest tube."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pleural Effusion",
+      "severity": "Severe",
+      "confidence": 100,
+      "description": "Large right pleural effusion with collapse of right lung."
+    },
+    {
+      "name": "Nodule",
+      "severity": "Normal",
+      "confidence": 80,
+      "description": "Right upper lobe lung nodule with central radiopaque component."
+    }
+  ],
+  "summary": "The X-ray shows a large collection of fluid (pleural effusion) in the right side of the chest, pushing the right lung downwards. There is a tube inserted into the right side of the chest (chest tube). Also visible is a small spot (nodule) in the right lung tissue.",
+  "references": [
+    "https://radiopaedia.org/articles/benign-pleural-effusion",
+    "https://radiopaedia.org/articles/lung-nodule",
+    "https://radiopaedia.org/articles/pneumothorax"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24147,
+    "bytesOut": 24147,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:44:36.764Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

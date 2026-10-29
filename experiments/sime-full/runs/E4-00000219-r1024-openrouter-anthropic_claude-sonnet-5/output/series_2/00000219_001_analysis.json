@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_2/00000219_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA/AP)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Cardiac silhouette appears enlarged with increased cardiothoracic ratio, suggestive of cardiomegaly\",\n    \"Lung fields are grossly clear bilaterally without focal consolidation or pleural effusion\",\n    \"Prominence at the left heart border/pulmonary outflow region\",\n    \"Mediastinal contour is midline; trachea appears central\",\n    \"Osseous structures of the thorax and shoulders appear grossly intact without acute fracture\",\n    \"Multiple skin markers/electrodes overlying the chest\",\n    \"Some rotation and magnification distortion present, limiting precise assessment\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlarged cardiac silhouette with cardiothoracic ratio appearing greater than 50%, most notable along the left heart border\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 55\n    },\n    {\n      \"name\": \"Prominent pulmonary vasculature/hilum\",\n      \"description\": \"Increased density and prominence in the left perihilar region, which may represent vascular prominence versus early congestion\",\n      \"severity\": \"Mild\",\n      \"confidence\": 40\n    }\n  ],\n  \"summary\": \"This chest X-ray shows the heart appears larger than expected relative to the chest cavity, a finding called cardiomegaly. The lungs themselves look mostly clear without signs of infection or fluid buildup. There is also some prominence near the blood vessels leading from the heart, which could be a normal variant or may need further evaluation. The image quality is affected by some positioning artifacts and overlying skin markers, which can limit fine detail. These findings should be correlated with the patient's clinical history and possibly followed up with echocardiography for a more definitive heart size assessment.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria\",\n    \"https://pubs.rsna.org/journal/radiology\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Fair",
+  "findings": [
+    "Cardiac silhouette appears enlarged with increased cardiothoracic ratio, suggestive of cardiomegaly",
+    "Lung fields are grossly clear bilaterally without focal consolidation or pleural effusion",
+    "Prominence at the left heart border/pulmonary outflow region",
+    "Mediastinal contour is midline; trachea appears central",
+    "Osseous structures of the thorax and shoulders appear grossly intact without acute fracture",
+    "Multiple skin markers/electrodes overlying the chest",
+    "Some rotation and magnification distortion present, limiting precise assessment"
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 55,
+      "description": "Enlarged cardiac silhouette with cardiothoracic ratio appearing greater than 50%, most notable along the left heart border"
+    },
+    {
+      "name": "Prominent pulmonary vasculature/hilum",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Increased density and prominence in the left perihilar region, which may represent vascular prominence versus early congestion"
+    }
+  ],
+  "summary": "This chest X-ray shows the heart appears larger than expected relative to the chest cavity, a finding called cardiomegaly. The lungs themselves look mostly clear without signs of infection or fluid buildup. There is also some prominence near the blood vessels leading from the heart, which could be a normal variant or may need further evaluation. The image quality is affected by some positioning artifacts and overlying skin markers, which can limit fine detail. These findings should be correlated with the patient's clinical history and possibly followed up with echocardiography for a more definitive heart size assessment.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiology"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 385977,
+    "bytesOut": 381054,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:24:50.701Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

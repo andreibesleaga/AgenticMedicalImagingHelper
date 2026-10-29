@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_2/00000148_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP upright)\",\"quality\":\"Good\",\"findings\":[\"Round metallic/radiopaque device with central lucency and surrounding radiopaque markers overlying the right mid lung field, appears to be catheter port or vascular access device (e.g., implanted port chamber) with attached catheter tubing coursing superiorly toward the neck/subclavian region\",\"Lungs are clear bilaterally without focal consolidation, effusion, or pneumothorax\",\"Cardiomediastinal silhouette is within normal limits in size and contour\",\"Trachea is midline\",\"Visualized osseous structures (ribs, clavicles, scapulae, cervical/thoracic spine) appear intact without acute fracture\",\"Gastric bubble noted in left upper quadrant, unremarkable\"],\"abnormalities\":[{\"name\":\"Implanted vascular access port\",\"description\":\"Rounded radiopaque device with central lucent chamber and attached catheter seen in the right chest wall/upper lung field, consistent with a subcutaneous chemotherapy port or similar implanted venous access device with catheter tip likely terminating near the superior vena cava/right atrial junction\",\"severity\":\"Normal\",\"confidence\":85}],\"summary\":\"This chest X-ray shows a small round device with a tube attached in the right side of the chest. This is a medical device called an implanted port (sometimes used for giving medications like chemotherapy or long-term IV access) — it is not a disease finding but rather medical equipment. The lungs, heart, and bones all appear normal with no signs of infection, fluid buildup, or fractures. Overall, this looks like a routine follow-up X-ray to check the position of the device, and no acute abnormality is seen.\",\"references\":[\"https://radiopaedia.org/articles/central-venous-catheter-port\",\"https://pubs.rsna.org/doi/10.1148/rg.2016150175\",\"https://www.acr.org/Clinical-Resources/Radiology-Safety/Contrast-Manual\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Good",
+  "findings": [
+    "Round metallic/radiopaque device with central lucency and surrounding radiopaque markers overlying the right mid lung field, appears to be catheter port or vascular access device (e.g., implanted port chamber) with attached catheter tubing coursing superiorly toward the neck/subclavian region",
+    "Lungs are clear bilaterally without focal consolidation, effusion, or pneumothorax",
+    "Cardiomediastinal silhouette is within normal limits in size and contour",
+    "Trachea is midline",
+    "Visualized osseous structures (ribs, clavicles, scapulae, cervical/thoracic spine) appear intact without acute fracture",
+    "Gastric bubble noted in left upper quadrant, unremarkable"
+  ],
+  "abnormalities": [
+    {
+      "name": "Implanted vascular access port",
+      "severity": "Normal",
+      "confidence": 85,
+      "description": "Rounded radiopaque device with central lucent chamber and attached catheter seen in the right chest wall/upper lung field, consistent with a subcutaneous chemotherapy port or similar implanted venous access device with catheter tip likely terminating near the superior vena cava/right atrial junction"
+    }
+  ],
+  "summary": "This chest X-ray shows a small round device with a tube attached in the right side of the chest. This is a medical device called an implanted port (sometimes used for giving medications like chemotherapy or long-term IV access) — it is not a disease finding but rather medical equipment. The lungs, heart, and bones all appear normal with no signs of infection, fluid buildup, or fractures. Overall, this looks like a routine follow-up X-ray to check the position of the device, and no acute abnormality is seen.",
+  "references": [
+    "https://radiopaedia.org/articles/central-venous-catheter-port",
+    "https://pubs.rsna.org/doi/10.1148/rg.2016150175",
+    "https://www.acr.org/Clinical-Resources/Radiology-Safety/Contrast-Manual"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 440372,
+    "bytesOut": 439172,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:22:59.284Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

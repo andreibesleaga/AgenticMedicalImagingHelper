@@ -172,6 +172,12 @@ export const ImageAnalysisSchema = z.object({
 
 ### 2.1 Command Structure
 
+_Superseded (note added 2026-10-29): the block below is the v0 draft, kept
+verbatim for traceability. There is no `version` command; the version is
+printed by `-V, --version`, and the CLI also has a `verify-manifest` command.
+The current commands and options are in the README
+[CLI Options](../README.md#cli-options)._
+
 ```
 medical-imaging <command> [options]
 
@@ -184,6 +190,15 @@ Global Options:
 ```
 
 ### 2.2 `analyze` Command
+
+_Superseded (note added 2026-10-29): the block below is the v0 draft, kept
+verbatim for traceability. In the code, `-s, --series <ids...>` takes
+space-separated series ids, not a comma-separated list; `--verbose` prints to
+stderr; `MAX_CONCURRENCY` was never read (`--concurrency` is the only control);
+the default model is `gemini-3.8-flash`; with `LOG_LEVEL` unset the logger is
+silent; and many options were added. The README
+[CLI Options](../README.md#cli-options) and
+[Environment Variables](../README.md#environment-variables) are current._
 
 ```
 Usage: medical-imaging analyze <input-dir> [output-dir] [options]
@@ -410,6 +425,13 @@ input/                                         <- Root input directory
 
 ## 5. Environment Variables
 
+_Superseded (note added 2026-10-29): the table below is the v0 draft, kept
+verbatim for traceability. `MAX_CONCURRENCY` was never read, the default model
+is `gemini-3.8-flash`, `LOG_LEVEL` defaults to silent, and the provider,
+retry, image and input-limit variables are missing. The README
+[Environment Variables](../README.md#environment-variables) table and
+[`.env.example`](../.env.example) are current._
+
 | Variable          | Required | Default            | Description                                                   |
 | ----------------- | -------- | ------------------ | ------------------------------------------------------------- |
 | `GOOGLE_API_KEY`  | Yes      | —                  | Google AI Studio API key                                      |
@@ -420,6 +442,13 @@ input/                                         <- Root input directory
 ---
 
 ## 6. Testing Strategy
+
+_Superseded (note added 2026-10-29): the tables below are the v0 plan, kept
+verbatim for traceability. There is no `tests/integration/` folder and no
+`analyze-image.test.ts`; the suite is organised as `tests/unit/`, `tests/e2e/`,
+`tests/live/` and `tests/fixtures/`, as listed in the README
+[Development](../README.md#development) section. The coverage target below is
+still the one `jest.config.js` enforces._
 
 ### Unit Tests (Jest + ts-jest, mock all external I/O)
 

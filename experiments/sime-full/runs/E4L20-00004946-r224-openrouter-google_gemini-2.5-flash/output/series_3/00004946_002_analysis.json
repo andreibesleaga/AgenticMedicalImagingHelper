@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00004946/series_3/00004946_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse, bilateral reticulonodular opacities are noted throughout both lung fields, more prominent in the lower zones.\",\n    \"Bilateral pleural effusions are present, more significant on the right, causing blunting of the costophrenic angles.\",\n    \"The heart size appears within normal limits.\",\n    \"The mediastinal contours are unremarkable.\",\n    \"No definite focal consolidation or pneumothorax is identified.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Reticulonodular Opacities\",\n      \"description\": \"Diffuse, bilateral reticulonodular opacities are observed throughout both lung fields, suggesting interstitial lung disease or an infiltrative process.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Bilateral pleural effusions are noted, more pronounced on the right, indicated by blunting of the costophrenic angles.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows changes in both lungs, appearing as a network of fine lines and small dots, which suggests a problem with the lung tissue itself, possibly an interstitial lung disease. There is also fluid around both lungs, more on the right side, which is called a pleural effusion. The heart and the central chest area (mediastinum) appear normal. These findings warrant further investigation by a doctor to determine the exact cause and appropriate treatment.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2020190126\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900451/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse, bilateral reticulonodular opacities are noted throughout both lung fields, more prominent in the lower zones.",
+    "Bilateral pleural effusions are present, more significant on the right, causing blunting of the costophrenic angles.",
+    "The heart size appears within normal limits.",
+    "The mediastinal contours are unremarkable.",
+    "No definite focal consolidation or pneumothorax is identified."
+  ],
+  "abnormalities": [
+    {
+      "name": "Reticulonodular Opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse, bilateral reticulonodular opacities are observed throughout both lung fields, suggesting interstitial lung disease or an infiltrative process."
+    },
+    {
+      "name": "Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Bilateral pleural effusions are noted, more pronounced on the right, indicated by blunting of the costophrenic angles."
+    }
+  ],
+  "summary": "The chest X-ray shows changes in both lungs, appearing as a network of fine lines and small dots, which suggests a problem with the lung tissue itself, possibly an interstitial lung disease. There is also fluid around both lungs, more on the right side, which is called a pleural effusion. The heart and the central chest area (mediastinum) appear normal. These findings warrant further investigation by a doctor to determine the exact cause and appropriate treatment.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2020190126",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900451/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23474,
+    "bytesOut": 23474,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:19:16.816Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

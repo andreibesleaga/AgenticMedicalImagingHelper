@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000296/series_2/00000296_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A left-sided venous catheter is seen with its tip projecting over the left hemithorax, looping upwards and then downwards, terminating in the expected location of the left atrium or left ventricle. This course is consistent with a left-sided PICC line or similar central venous catheter that has been inadvertently placed into the arterial system or has an unusual venous course, such as via a persistent left superior vena cava (PLSVC) entering the coronary sinus.\",\n    \"The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"The cardiomediastinal silhouette is within normal limits.\",\n    \"The bony thorax appears intact.\",\n    \"No free air is seen under the diaphragm.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Aberrant Left-Sided Catheter Placement\",\n      \"description\": \"The left-sided catheter takes an unusual course, looping in the left upper chest before descending to terminate in the left hemithorax, possibly within the left atrium or ventricle. This suggests inadvertent arterial placement or a venous anomaly like a persistent left superior vena cava.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a catheter (a thin tube) inserted on the left side, but its path and final position are unusual. It appears to loop and end on the left side of the heart, rather than taking the typical path to the right side of the heart. This could mean the tube was accidentally placed in an artery instead of a vein, or the patient has an anatomical variation in their veins. The lungs and heart otherwise look normal. The placement of the tube needs to be investigated further.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/10.1148/rg.2021200155\",\n    \"https://radiopaedia.org/articles/persistent-left-superior-vena-cava?lang=us\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "A left-sided venous catheter is seen with its tip projecting over the left hemithorax, looping upwards and then downwards, terminating in the expected location of the left atrium or left ventricle. This course is consistent with a left-sided PICC line or similar central venous catheter that has been inadvertently placed into the arterial system or has an unusual venous course, such as via a persistent left superior vena cava (PLSVC) entering the coronary sinus.",
+    "The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "The cardiomediastinal silhouette is within normal limits.",
+    "The bony thorax appears intact.",
+    "No free air is seen under the diaphragm."
+  ],
+  "abnormalities": [
+    {
+      "name": "Aberrant Left-Sided Catheter Placement",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "The left-sided catheter takes an unusual course, looping in the left upper chest before descending to terminate in the left hemithorax, possibly within the left atrium or ventricle. This suggests inadvertent arterial placement or a venous anomaly like a persistent left superior vena cava."
+    }
+  ],
+  "summary": "The chest X-ray shows a catheter (a thin tube) inserted on the left side, but its path and final position are unusual. It appears to loop and end on the left side of the heart, rather than taking the typical path to the right side of the heart. This could mean the tube was accidentally placed in an artery instead of a vein, or the patient has an anatomical variation in their veins. The lungs and heart otherwise look normal. The placement of the tube needs to be investigated further.",
+  "references": [
+    "https://pubs.rsna.org/doi/10.1148/rg.2021200155",
+    "https://radiopaedia.org/articles/persistent-left-superior-vena-cava?lang=us"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 415316,
+    "bytesOut": 413672,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:28:03.273Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

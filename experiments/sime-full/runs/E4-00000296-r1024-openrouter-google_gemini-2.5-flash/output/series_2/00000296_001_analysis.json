@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000296/series_2/00000296_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Centrally located heart, normal in size.\",\n    \"Lungs appear clear with no obvious infiltrates or effusions.\",\n    \"Bony structures, including ribs, clavicles, and scapulae, are intact with no acute fractures or dislocations.\",\n    \"A PICC line is observed, inserted from the left arm, with its distal tip positioned in the superior vena cava, which appears to be in a good position.\",\n    \"No pneumothorax or pleural effusion identified.\",\n    \"Diaphragms are clear and free.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"PICC line in SVC\",\n      \"description\": \"A peripherally inserted central catheter (PICC) is noted, inserted from the left arm, with the distal tip terminating within the superior vena cava. The position appears appropriate for central venous access.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows the lungs, heart, and bones of the chest. The heart appears to be of normal size and in the correct position. The lungs are clear, meaning there are no signs of infection or fluid buildup. All the visible bones are intact. A tube, called a PICC line, which is used for giving medication or fluids, is seen coming from the left arm and properly positioned in a large vein near the heart called the superior vena cava. This is a normal finding if a PICC line is expected to be in place. There are no signs of collapsed lung or fluid around the lungs.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.274065126\",\n    \"https://radiologykey.com/chest-radiograph-evaluation-of-central-venous-catheters/\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4018683/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Centrally located heart, normal in size.",
+    "Lungs appear clear with no obvious infiltrates or effusions.",
+    "Bony structures, including ribs, clavicles, and scapulae, are intact with no acute fractures or dislocations.",
+    "A PICC line is observed, inserted from the left arm, with its distal tip positioned in the superior vena cava, which appears to be in a good position.",
+    "No pneumothorax or pleural effusion identified.",
+    "Diaphragms are clear and free."
+  ],
+  "abnormalities": [
+    {
+      "name": "PICC line in SVC",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A peripherally inserted central catheter (PICC) is noted, inserted from the left arm, with the distal tip terminating within the superior vena cava. The position appears appropriate for central venous access."
+    }
+  ],
+  "summary": "The chest X-ray shows the lungs, heart, and bones of the chest. The heart appears to be of normal size and in the correct position. The lungs are clear, meaning there are no signs of infection or fluid buildup. All the visible bones are intact. A tube, called a PICC line, which is used for giving medication or fluids, is seen coming from the left arm and properly positioned in a large vein near the heart called the superior vena cava. This is a normal finding if a PICC line is expected to be in place. There are no signs of collapsed lung or fluid around the lungs.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.274065126",
+    "https://radiologykey.com/chest-radiograph-evaluation-of-central-venous-catheters/",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4018683/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 415316,
+    "bytesOut": 413672,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:20:59.303Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

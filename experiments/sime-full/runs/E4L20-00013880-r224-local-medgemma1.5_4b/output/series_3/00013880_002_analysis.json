@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00013880/series_3/00013880_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs demonstrate clear identification of vascular structures.\",\n    \"The heart appears within normal limits.\",\n    \"The mediastinum is unremarkable.\",\n    \"There is a rounded opacity within the left lung field, consistent with a medical device.\",\n    \"There is a moderate right pleural effusion.\",\n    \"The left lung is clear.\",\n    \"The ribs are intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pleural effusion\",\n      \"description\": \"Moderate right pleural effusion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This chest X-ray shows a moderate amount of fluid in the space around the right lung (pleural effusion). The left lung is clear, and there's a device visible in the left lung. The overall lung fields are clear.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8086322/\",\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.auanet.org/education/educational-programs/continuing-medical-education/chest-x-ray-interpretation-for-physicians-and-medical-students\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The lungs demonstrate clear identification of vascular structures.",
+    "The heart appears within normal limits.",
+    "The mediastinum is unremarkable.",
+    "There is a rounded opacity within the left lung field, consistent with a medical device.",
+    "There is a moderate right pleural effusion.",
+    "The left lung is clear.",
+    "The ribs are intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pleural effusion",
+      "severity": "Moderate",
+      "confidence": 100,
+      "description": "Moderate right pleural effusion."
+    }
+  ],
+  "summary": "This chest X-ray shows a moderate amount of fluid in the space around the right lung (pleural effusion). The left lung is clear, and there's a device visible in the left lung. The overall lung fields are clear.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8086322/",
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.auanet.org/education/educational-programs/continuing-medical-education/chest-x-ray-interpretation-for-physicians-and-medical-students"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24900,
+    "bytesOut": 24900,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:42:39.154Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

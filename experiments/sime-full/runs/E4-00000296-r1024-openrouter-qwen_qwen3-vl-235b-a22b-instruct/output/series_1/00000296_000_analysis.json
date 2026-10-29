@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000296/series_1/00000296_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear lung fields with no overt consolidation or mass.\",\n    \"Normal cardiac silhouette and mediastinal contours.\",\n    \"Visible chest tube in right hemithorax, coiled near the apex, descending toward the costophrenic angle.\",\n    \"No evidence of pneumothorax or significant pleural effusion.\",\n    \"Diaphragm and costophrenic angles appear sharp.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Chest Tube Placement\",\n      \"description\": \"A chest tube is present in the right hemithorax, positioned appropriately for drainage, with its tip directed toward the pleural space. No signs of malposition or complications such as kinking or dislodgement are evident on this view.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This chest X-ray shows a properly placed chest tube in the right lung area, likely inserted to drain air or fluid from around the lung. The lungs themselves look clear without signs of pneumonia, collapse, or large fluid buildup. The heart and diaphragm appear normal. This is commonly seen after trauma, surgery, or conditions like pneumothorax. Follow-up imaging may be needed to confirm resolution of the underlying issue.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/books/NBK541063/\",\n    \"https://radiopaedia.org/articles/chest-tube-placement\",\n    \"https://www.radiologyinfo.org/en/info/chesttube\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Clear lung fields with no overt consolidation or mass.",
+    "Normal cardiac silhouette and mediastinal contours.",
+    "Visible chest tube in right hemithorax, coiled near the apex, descending toward the costophrenic angle.",
+    "No evidence of pneumothorax or significant pleural effusion.",
+    "Diaphragm and costophrenic angles appear sharp."
+  ],
+  "abnormalities": [
+    {
+      "name": "Chest Tube Placement",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "A chest tube is present in the right hemithorax, positioned appropriately for drainage, with its tip directed toward the pleural space. No signs of malposition or complications such as kinking or dislodgement are evident on this view."
+    }
+  ],
+  "summary": "This chest X-ray shows a properly placed chest tube in the right lung area, likely inserted to drain air or fluid from around the lung. The lungs themselves look clear without signs of pneumonia, collapse, or large fluid buildup. The heart and diaphragm appear normal. This is commonly seen after trauma, surgery, or conditions like pneumothorax. Follow-up imaging may be needed to confirm resolution of the underlying issue.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK541063/",
+    "https://radiopaedia.org/articles/chest-tube-placement",
+    "https://www.radiologyinfo.org/en/info/chesttube"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 411000,
+    "bytesOut": 374137,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-09-29T10:25:02.509Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,62 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_4/00000092_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral lung fields show increased interstitial markings and areas of consolidation, particularly in the lower lobes.\",\n    \"Cardiac silhouette appears enlarged, suggesting possible cardiomegaly.\",\n    \"Blunting of the left costophrenic angle is noted, indicating possible small pleural effusion.\",\n    \"No obvious fractures or skeletal abnormalities detected.\",\n    \"Diaphragm appears elevated on the right side.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pulmonary Consolidation\",\n      \"description\": \"Areas of increased opacity in the lower lung zones, consistent with consolidation, possibly due to infection or inflammatory process.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Cardiac silhouette occupies more than half the thoracic width, suggesting enlargement of the heart.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 78\n    },\n    {\n      \"name\": \"Pleural Effusion (Small)\",\n      \"description\": \"Blunting of the left costophrenic angle without visible meniscus, suggestive of a small amount of fluid in the pleural space.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 70\n    }\n  ],\n  \"summary\": \"The chest X-ray shows signs of lung inflammation or infection, particularly in the lower lungs, and suggests the heart may be enlarged. There may also be a small amount of fluid around the left lung. These findings could be due to pneumonia, heart failure, or other conditions. Further clinical evaluation and possibly additional tests (like a CT scan or echocardiogram) are needed to determine the exact cause and appropriate treatment.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-x-ray-interpretation\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK537025/\",\n    \"https://www.mayoclinic.org/tests-procedures/chest-x-ray/about/pac-20393469\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral lung fields show increased interstitial markings and areas of consolidation, particularly in the lower lobes.",
+    "Cardiac silhouette appears enlarged, suggesting possible cardiomegaly.",
+    "Blunting of the left costophrenic angle is noted, indicating possible small pleural effusion.",
+    "No obvious fractures or skeletal abnormalities detected.",
+    "Diaphragm appears elevated on the right side."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pulmonary Consolidation",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Areas of increased opacity in the lower lung zones, consistent with consolidation, possibly due to infection or inflammatory process."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 78,
+      "description": "Cardiac silhouette occupies more than half the thoracic width, suggesting enlargement of the heart."
+    },
+    {
+      "name": "Pleural Effusion (Small)",
+      "severity": "Mild",
+      "confidence": 70,
+      "description": "Blunting of the left costophrenic angle without visible meniscus, suggestive of a small amount of fluid in the pleural space."
+    }
+  ],
+  "summary": "The chest X-ray shows signs of lung inflammation or infection, particularly in the lower lungs, and suggests the heart may be enlarged. There may also be a small amount of fluid around the left lung. These findings could be due to pneumonia, heart failure, or other conditions. Further clinical evaluation and possibly additional tests (like a CT scan or echocardiogram) are needed to determine the exact cause and appropriate treatment.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-x-ray-interpretation",
+    "https://www.ncbi.nlm.nih.gov/books/NBK537025/",
+    "https://www.mayoclinic.org/tests-procedures/chest-x-ray/about/pac-20393469"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 378291,
+    "bytesOut": 341492,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T10:13:04.272Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,187 @@
+{
+  "manifestVersion": "1.0",
+  "toolVersion": "1.1.0",
+  "startedAt": "2026-09-29T10:15:37.952Z",
+  "finishedAt": "2026-09-29T10:17:06.155Z",
+  "provider": "openrouter",
+  "model": "google/gemini-3.8-flash",
+  "pricing": {
+    "inputUsdPerMillion": 0.75,
+    "outputUsdPerMillion": 3.75
+  },
+  "settings": {
+    "concurrency": 1,
+    "maxCostUsd": 1,
+    "retries": 3,
+    "imageQuality": "auto"
+  },
+  "inputDir": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000008",
+  "outputDir": "/home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4-00000008-r1024-openrouter-google_gemini-3.8-flash/output",
+  "inputs": [
+    {
+      "path": "series_1/00000008_000.png",
+      "sha256": "c61f7d421528466a26d05780feea470273c699d947f5c977ff0e5e84e449e64c",
+      "bytes": 410034
+    },
+    {
+      "path": "series_2/00000008_001.png",
+      "sha256": "54c5174ef10e9f5db0f3be4553998dfd8a0feb15699683d10d9fa159b10408ba",
+      "bytes": 390119
+    },
+    {
+      "path": "series_3/00000008_002.png",
+      "sha256": "d33f173e1ee90e487e84af413622302a9212cd145287e949adf1fd058ffc6b38",
+      "bytes": 361319
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "patient_context.txt",
+      "sha256": "dbec03a5fce42f1e60d203950bc627956dff901a2f3165a1605351db67801787",
+      "bytes": 328
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:15:54.680Z",
+      "tokensIn": 1492,
+      "tokensOut": 983,
+      "estimatedUsd": 0.00480525,
+      "providerUsd": 0.00480525,
+      "retries": 0
+    },
+    {
+      "index": 2,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:16:09.364Z",
+      "tokensIn": 1493,
+      "tokensOut": 1189,
+      "estimatedUsd": 0.005578499999999999,
+      "providerUsd": 0.005578500000000001,
+      "retries": 0
+    },
+    {
+      "index": 3,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:16:24.666Z",
+      "tokensIn": 1492,
+      "tokensOut": 1027,
+      "estimatedUsd": 0.004970250000000001,
+      "providerUsd": 0.004970249999999999,
+      "retries": 0
+    },
+    {
+      "index": 4,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:16:31.883Z",
+      "tokensIn": 880,
+      "tokensOut": 980,
+      "estimatedUsd": 0.004335000000000002,
+      "providerUsd": 0.004334999999999999,
+      "retries": 0
+    },
+    {
+      "index": 5,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:16:39.427Z",
+      "tokensIn": 793,
+      "tokensOut": 565,
+      "estimatedUsd": 0.002713499999999997,
+      "providerUsd": 0.0027135000000000006,
+      "retries": 0
+    },
+    {
+      "index": 6,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:16:51.724Z",
+      "tokensIn": 724,
+      "tokensOut": 767,
+      "estimatedUsd": 0.003419250000000002,
+      "providerUsd": 0.0034192499999999987,
+      "retries": 0
+    },
+    {
+      "index": 7,
+      "stage": "evolution",
+      "timestamp": "2026-09-29T10:17:06.078Z",
+      "tokensIn": 1132,
+      "tokensOut": 1711,
+      "estimatedUsd": 0.007265249999999997,
+      "providerUsd": 0.007265250000000001,
+      "retries": 0
+    }
+  ],
+  "outputs": [
+    {
+      "path": "series_1/00000008_000_analysis.json",
+      "sha256": "e0b0afb5b24f0688cff3d288bf86205fc5dd595dc4f9e01d13e285649a49b816",
+      "bytes": 5490
+    },
+    {
+      "path": "series_2/00000008_001_analysis.json",
+      "sha256": "e76cdb61dfa2fc219fab59d9677d658615ac2e8121cdfea4a792d76ce5c388ab",
+      "bytes": 4698
+    },
+    {
+      "path": "series_3/00000008_002_analysis.json",
+      "sha256": "15550ea22012b16c197b07219ab3269920538be5bd3473de218dcb750d46cffd",
+      "bytes": 4299
+    },
+    {
+      "path": "series_1/series_summary.md",
+      "sha256": "6707596d05dcd515a8fc0f29d4407b4f341e19368d94ffb56c2fb2988fa0d3b8",
+      "bytes": 2790
+    },
+    {
+      "path": "series_2/series_summary.md",
+      "sha256": "7c467909b0af147d61a31c1b941c964a78112995c71a8f6a86fa13b6c0a7419a",
+      "bytes": 2726
+    },
+    {
+      "path": "series_3/series_summary.md",
+      "sha256": "f88e4ca85ceef488524c6f3f6db9fbb6b52e34fe3fea26fa9512abe072c02003",
+      "bytes": 2748
+    },
+    {
+      "path": "evolution_analysis.json",
+      "sha256": "b5d78edc30765438cab3ae8ffea2e238d368ae2bb3c979bf9e794185ec965d7f",
+      "bytes": 4038
+    },
+    {
+      "path": "combined_diagnostic_report.md",
+      "sha256": "03b4b8d8b2d9939d27d365a444913b3e9d8c163ea53c4e447b9f087a681df6b6",
+      "bytes": 4427
+    }
+  ],
+  "totals": {
+    "calls": 7,
+    "tokensIn": 8006,
+    "tokensOut": 7222,
+    "estimatedUsd": 0.033087,
+    "providerUsd": 0.033087,
+    "images": 3,
+    "imagesSucceeded": 3,
+    "imagesFailed": 0,
+    "series": 3
+  },
+  "exitCode": 0,
+  "warnings": [
+    "input-integrity: 3 image(s) matched --expect-hashes.",
+    "input-guard [image-metadata] series_1/00000008_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/00000008_001.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/00000008_002.png: png:tIME — stripped before upload",
+    "measurement-probe: 4 absolute size claim(s) in generated text. PNG/JPEG inputs carry no pixel spacing, so these are model estimates, not measurements; verify against the image.",
+    "measurement-probe [absolute-size] image series_2/00000008_001.png: \"4 mm\" — \"ell-circumscribed calcified density measuring approximately 4 mm in the left mid-to-upper lung zone, typical of a benign calcified granuloma.\"",
+    "measurement-probe [absolute-size] series series_2: \"4 mm\" — \", or pulmonary edema. A solitary, dense, well-circumscribed 4 mm calcification is identified in the left mid-to-upper lung zone, characteristic of a stable, ben...\"",
+    "measurement-probe [absolute-size] series series_2: \"4 mm\" — \"Small (approximately 4 mm) well-circumscribed calcified nodule in the left mid-to-upper lung zone compatible with a benign healed granuloma.\"",
+    "measurement-probe [absolute-size] evolution: \"4 mm\" — \"ions:** A solitary, well-circumscribed calcified granuloma (4 mm) in the left lung remains morphologically stable and benign. * **Musculoskeletal:** Stable mild...\""
+  ],
+  "humanReview": {
+    "required": true,
+    "reviewedBy": null
+  },
+  "prevManifestHash": null,
+  "manifestHash": "dec60a385055f770ad63b5276abecab2a99d3b043db6a3aaf97f1a77fa9e9339"
+}

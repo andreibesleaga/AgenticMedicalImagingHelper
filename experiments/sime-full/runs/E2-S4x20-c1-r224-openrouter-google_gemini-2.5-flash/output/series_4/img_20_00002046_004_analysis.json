@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_4/img_20_00002046_004.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right lung shows extensive patchy and confluent opacities, particularly in the mid and lower zones, consistent with consolidation.\",\n    \"Bilateral multifocal ground-glass opacities are observed, more prominent on the right side.\",\n    \"Left lung shows patchy opacities, less severe than the right, with areas suggestive of consolidation and ground-glass opacities.\",\n    \"Hilar regions appear unremarkable.\",\n    \"Cardiomediastinal silhouette is within normal limits.\",\n    \"Diaphragmatic contours are visible.\",\n    \"No obvious pleural effusion or pneumothorax is seen.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Pneumonia\",\n      \"description\": \"Extensive patchy and confluent opacities, ground-glass opacities, and consolidation in both lungs, more pronounced on the right side. These findings are highly suggestive of a severe bilateral pneumonia.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows significant cloudiness and patches in both of your lungs, which is much more noticeable on the right side. This appearance is commonly seen with severe pneumonia, an infection that inflames the air sacs in one or both lungs. This condition can lead to difficulties in breathing.\",\n  \"references\": [\n    \"https://radiologyassistant.nl/chest/pneumonia\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7216654/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right lung shows extensive patchy and confluent opacities, particularly in the mid and lower zones, consistent with consolidation.",
+    "Bilateral multifocal ground-glass opacities are observed, more prominent on the right side.",
+    "Left lung shows patchy opacities, less severe than the right, with areas suggestive of consolidation and ground-glass opacities.",
+    "Hilar regions appear unremarkable.",
+    "Cardiomediastinal silhouette is within normal limits.",
+    "Diaphragmatic contours are visible.",
+    "No obvious pleural effusion or pneumothorax is seen."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Pneumonia",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Extensive patchy and confluent opacities, ground-glass opacities, and consolidation in both lungs, more pronounced on the right side. These findings are highly suggestive of a severe bilateral pneumonia."
+    }
+  ],
+  "summary": "The X-ray of your chest shows significant cloudiness and patches in both of your lungs, which is much more noticeable on the right side. This appearance is commonly seen with severe pneumonia, an infection that inflames the air sacs in one or both lungs. This condition can lead to difficulties in breathing.",
+  "references": [
+    "https://radiologyassistant.nl/chest/pneumonia",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7216654/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23632,
+    "bytesOut": 23632,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:00:58.745Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

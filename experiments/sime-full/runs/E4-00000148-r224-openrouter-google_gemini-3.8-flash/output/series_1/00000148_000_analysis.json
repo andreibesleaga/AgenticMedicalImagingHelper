@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000148/series_1/00000148_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A well-circumscribed, pleural-based soft-tissue opacity is identified along the right lateral mid-to-upper chest wall.\",\n    \"The lesion forms obtuse angles with the adjacent chest wall, characteristic of an extrapleural or pleural origin (such as a localized fibrous tumor of the pleura, pleural plaque, schwannoma, or chest wall lesion).\",\n    \"No overt bone destruction or focal cortical disruption is visualized in the adjacent ribs.\",\n    \"The remainder of the right lung and the entire left lung are clear without focal consolidation, pneumothorax, or large pleural effusion.\",\n    \"The cardiomediastinal silhouette and bilateral hilar contours are within normal limits.\",\n    \"Both costophrenic angles are sharp and preserved.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Pleural-Based Lesion\",\n      \"description\": \"Well-defined soft tissue mass along the right lateral chest wall, with smooth borders and obtuse angles typical of an extrapleural or pleural lesion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a distinct, rounded tissue density along the inside of the right chest wall. This appearance is typically associated with a growth arising from the pleura (the lining of the lungs and chest wall) or the chest wall itself, rather than within the lung tissue. While many such lesions are benign, a contrast-enhanced chest CT scan is recommended to better evaluate its internal features, exact origin, and to guide further management.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/extrapleural-sign\",\n    \"https://radiopaedia.org/articles/solitary-fibrous-tumour-of-the-pleura\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "A well-circumscribed, pleural-based soft-tissue opacity is identified along the right lateral mid-to-upper chest wall.",
+    "The lesion forms obtuse angles with the adjacent chest wall, characteristic of an extrapleural or pleural origin (such as a localized fibrous tumor of the pleura, pleural plaque, schwannoma, or chest wall lesion).",
+    "No overt bone destruction or focal cortical disruption is visualized in the adjacent ribs.",
+    "The remainder of the right lung and the entire left lung are clear without focal consolidation, pneumothorax, or large pleural effusion.",
+    "The cardiomediastinal silhouette and bilateral hilar contours are within normal limits.",
+    "Both costophrenic angles are sharp and preserved."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Pleural-Based Lesion",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Well-defined soft tissue mass along the right lateral chest wall, with smooth borders and obtuse angles typical of an extrapleural or pleural lesion."
+    }
+  ],
+  "summary": "The chest X-ray shows a distinct, rounded tissue density along the inside of the right chest wall. This appearance is typically associated with a growth arising from the pleura (the lining of the lungs and chest wall) or the chest wall itself, rather than within the lung tissue. While many such lesions are benign, a contrast-enhanced chest CT scan is recommended to better evaluate its internal features, exact origin, and to guide further management.",
+  "references": [
+    "https://radiopaedia.org/articles/extrapleural-sign",
+    "https://radiopaedia.org/articles/solitary-fibrous-tumour-of-the-pleura"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22900,
+    "bytesOut": 22900,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:34:07.625Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

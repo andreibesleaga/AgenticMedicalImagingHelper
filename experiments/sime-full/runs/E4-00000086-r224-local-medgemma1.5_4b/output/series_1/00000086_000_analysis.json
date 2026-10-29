@@ -1,0 +1,41 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000086/series_1/00000086_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"The right lung volume is increased compared to the left lung, possibly due to right pleural effusion.\",\n    \"The right costophrenic angle is blunted.\",\n    \"There is streaky opacity in the right lower lung field.\",\n    \"The left lung is clear.\",\n    \"The cardiac silhouette is normal in size.\",\n    \"The mediastinum is normal in position.\",\n    \"The visualized bony structures are unremarkable.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray shows evidence of fluid in the right pleural space (pleural effusion), indicated by the increased right lung volume, blunted right costophrenic angle, and streaky opacity in the lower right lung. The left lung appears clear.\",\n  \"references\": []\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Fair",
+  "findings": [
+    "The right lung volume is increased compared to the left lung, possibly due to right pleural effusion.",
+    "The right costophrenic angle is blunted.",
+    "There is streaky opacity in the right lower lung field.",
+    "The left lung is clear.",
+    "The cardiac silhouette is normal in size.",
+    "The mediastinum is normal in position.",
+    "The visualized bony structures are unremarkable."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray shows evidence of fluid in the right pleural space (pleural effusion), indicated by the increased right lung volume, blunted right costophrenic angle, and streaky opacity in the lower right lung. The left lung appears clear.",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22312,
+    "bytesOut": 22312,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:31:26.553Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

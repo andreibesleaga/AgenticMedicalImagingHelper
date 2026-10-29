@@ -1,0 +1,41 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00027141/series_1/00027141_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lung volumes appear adequate.\",\n    \"The heart size is within normal limits.\",\n    \"The mediastinum is normal in width.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray shows a normal heart size and lung appearance. These findings are consistent with a typical chest X-ray.\",\n  \"references\": [\n    \"https://pubmed.ncbi.nlm.nih.gov/6695199/\",\n    \"https://radiologyinfo.org/en/imaging/chest-x-ray\",\n    \"https://www.ats.org/unbound/what-chest-x-ray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lung volumes appear adequate.",
+    "The heart size is within normal limits.",
+    "The mediastinum is normal in width."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows a normal heart size and lung appearance. These findings are consistent with a typical chest X-ray.",
+  "references": [
+    "https://pubmed.ncbi.nlm.nih.gov/6695199/",
+    "https://radiologyinfo.org/en/imaging/chest-x-ray",
+    "https://www.ats.org/unbound/what-chest-x-ray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23547,
+    "bytesOut": 23547,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T11:30:32.096Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

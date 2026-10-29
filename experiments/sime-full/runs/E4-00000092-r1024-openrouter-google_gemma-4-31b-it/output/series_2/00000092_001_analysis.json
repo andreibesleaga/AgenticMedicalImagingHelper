@@ -1,0 +1,61 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_2/00000092_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA/AP)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Presence of a large, thin-walled cystic lesion in the right upper lobe of the lung\",\n    \"Bilateral blunting of the costophrenic angles, more pronounced on the right side\",\n    \"Increased opacity in the lower lung zones, suggesting pleural effusion or atelectasis\",\n    \"Mild enlargement of the cardiac silhouette\",\n    \"Degenerative changes observed in the bilateral shoulder joints\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pulmonary Cyst/Bulla\",\n      \"description\": \"Large, air-filled, thin-walled space in the right apex, characteristic of a bulla or a large pulmonary cyst.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Blunting of the costophrenic angles, particularly on the right, indicating fluid accumulation in the pleural space.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The heart silhouette appears mildly enlarged relative to the thoracic width.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 70\n    }\n  ],\n  \"summary\": \"The X-ray shows a large air-filled sac (called a bulla or cyst) in the upper part of the right lung. There is also evidence of fluid around the lungs (pleural effusion), and the heart appears slightly enlarged. These findings can be associated with various conditions, such as chronic lung disease or heart failure. A doctor will correlate these images with your symptoms and medical history to make a diagnosis.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/bullous-emphysema\",\n    \"https://radiopaedia.org/articles/pleural-effusion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Fair",
+  "findings": [
+    "Presence of a large, thin-walled cystic lesion in the right upper lobe of the lung",
+    "Bilateral blunting of the costophrenic angles, more pronounced on the right side",
+    "Increased opacity in the lower lung zones, suggesting pleural effusion or atelectasis",
+    "Mild enlargement of the cardiac silhouette",
+    "Degenerative changes observed in the bilateral shoulder joints"
+  ],
+  "abnormalities": [
+    {
+      "name": "Pulmonary Cyst/Bulla",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Large, air-filled, thin-walled space in the right apex, characteristic of a bulla or a large pulmonary cyst."
+    },
+    {
+      "name": "Pleural Effusion",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Blunting of the costophrenic angles, particularly on the right, indicating fluid accumulation in the pleural space."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 70,
+      "description": "The heart silhouette appears mildly enlarged relative to the thoracic width."
+    }
+  ],
+  "summary": "The X-ray shows a large air-filled sac (called a bulla or cyst) in the upper part of the right lung. There is also evidence of fluid around the lungs (pleural effusion), and the heart appears slightly enlarged. These findings can be associated with various conditions, such as chronic lung disease or heart failure. A doctor will correlate these images with your symptoms and medical history to make a diagnosis.",
+  "references": [
+    "https://radiopaedia.org/articles/bullous-emphysema",
+    "https://radiopaedia.org/articles/pleural-effusion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 421309,
+    "bytesOut": 319961,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T09:45:55.280Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

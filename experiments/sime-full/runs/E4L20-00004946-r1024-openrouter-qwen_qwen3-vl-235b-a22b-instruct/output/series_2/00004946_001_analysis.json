@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00004946/series_2/00004946_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral diffuse reticular opacities with a ground-glass appearance, more prominent in the lower lung zones.\",\n    \"No focal consolidation, mass, or pleural effusion identified.\",\n    \"Cardiac silhouette and mediastinal contours appear within normal limits.\",\n    \"Diaphragm and costophrenic angles are sharp and clear.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Interstitial Lung Disease Pattern\",\n      \"description\": \"Diffuse bilateral reticular opacities with ground-glass attenuation suggest interstitial involvement. The distribution is predominantly basal and peripheral, which may be seen in conditions such as idiopathic pulmonary fibrosis, hypersensitivity pneumonitis, or connective tissue disease-related lung disease. No honeycombing or traction bronchiectasis is evident on this projection.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"The chest X-ray shows signs of possible interstitial lung disease — a condition where the tissue around the air sacs in the lungs becomes inflamed or scarred. This can cause shortness of breath and a dry cough. The pattern seen here is not specific to one disease and requires further evaluation, possibly with a CT scan and clinical correlation. It’s important to discuss these findings with your doctor for next steps.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/books/NBK539821/\",\n    \"https://radiopaedia.org/articles/interstitial-lung-disease\",\n    \"https://www.thoracic.org/statements/resources/pulmonary-function-testing/ats-ers-guidelines-for-pft.pdf\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral diffuse reticular opacities with a ground-glass appearance, more prominent in the lower lung zones.",
+    "No focal consolidation, mass, or pleural effusion identified.",
+    "Cardiac silhouette and mediastinal contours appear within normal limits.",
+    "Diaphragm and costophrenic angles are sharp and clear."
+  ],
+  "abnormalities": [
+    {
+      "name": "Interstitial Lung Disease Pattern",
+      "severity": "Moderate",
+      "confidence": 75,
+      "description": "Diffuse bilateral reticular opacities with ground-glass attenuation suggest interstitial involvement. The distribution is predominantly basal and peripheral, which may be seen in conditions such as idiopathic pulmonary fibrosis, hypersensitivity pneumonitis, or connective tissue disease-related lung disease. No honeycombing or traction bronchiectasis is evident on this projection."
+    }
+  ],
+  "summary": "The chest X-ray shows signs of possible interstitial lung disease — a condition where the tissue around the air sacs in the lungs becomes inflamed or scarred. This can cause shortness of breath and a dry cough. The pattern seen here is not specific to one disease and requires further evaluation, possibly with a CT scan and clinical correlation. It’s important to discuss these findings with your doctor for next steps.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK539821/",
+    "https://radiopaedia.org/articles/interstitial-lung-disease",
+    "https://www.thoracic.org/statements/resources/pulmonary-function-testing/ats-ers-guidelines-for-pft.pdf"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 387715,
+    "bytesOut": 356254,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:07:39.833Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

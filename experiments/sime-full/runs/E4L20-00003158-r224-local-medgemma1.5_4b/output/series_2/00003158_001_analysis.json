@@ -1,0 +1,39 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00003158/series_2/00003158_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear with expected lung markings.\",\n    \"The heart size is within normal limits.\",\n    \"The mediastinum appears normal.\",\n    \"The ribs and clavicles are unremarkable.\",\n    \"Visualized bony structures appear intact.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This is a chest X-ray image. The lungs appear clear, and the heart size seems normal. There are no obvious bone fractures or other issues visible in this image.\",\n  \"references\": []\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear with expected lung markings.",
+    "The heart size is within normal limits.",
+    "The mediastinum appears normal.",
+    "The ribs and clavicles are unremarkable.",
+    "Visualized bony structures appear intact."
+  ],
+  "abnormalities": [],
+  "summary": "This is a chest X-ray image. The lungs appear clear, and the heart size seems normal. There are no obvious bone fractures or other issues visible in this image.",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21938,
+    "bytesOut": 21938,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:17:27.445Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

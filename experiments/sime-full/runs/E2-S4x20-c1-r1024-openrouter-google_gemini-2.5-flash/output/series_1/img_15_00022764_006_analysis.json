@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_1/img_15_00022764_006.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Large left pleural effusion with a horizontal air-fluid level, likely representing a hydropneumothorax.\",\n    \"Mediastinal shift to the right due to mass effect from the left hydropneumothorax.\",\n    \"Complete opacification of the left hemithorax inferiorly with blunting of the left costophrenic angle.\",\n    \"Right lung appears relatively clear with normal vascular markings.\",\n    \"Central venous catheter (CVC) noted with its tip projecting over the right subclavian vein/SVC junction.\",\n    \"Nasogastric tube or similar catheter is seen extending into the stomach, with its tip curled in the gastric fundus.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Hydropneumothorax\",\n      \"description\": \"A large collection of fluid and air within the left pleural space, evidenced by a significant air-fluid level occupying the majority of the left hemithorax. This causes complete opacification of the lower left lung field and displaces the mediastinum to the right.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 98\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"Significant displacement of the mediastinal structures, including the trachea and heart, towards the right hemithorax, indicative of severe mass effect from the left hydropneumothorax.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray shows a large collection of fluid and air in the left lung space. This is called a hydropneumothorax and it's causing the heart and other central chest structures to shift to the right. This condition is severe and requires urgent medical attention. There is also a tube in the stomach (likely a feeding tube or for drainage) and a catheter in a major vein on the right side of the chest (for medication or fluids).\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/hydropneumothorax\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK539824/\",\n    \"https://emedicine.medscape.com/article/299945-overview\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Large left pleural effusion with a horizontal air-fluid level, likely representing a hydropneumothorax.",
+    "Mediastinal shift to the right due to mass effect from the left hydropneumothorax.",
+    "Complete opacification of the left hemithorax inferiorly with blunting of the left costophrenic angle.",
+    "Right lung appears relatively clear with normal vascular markings.",
+    "Central venous catheter (CVC) noted with its tip projecting over the right subclavian vein/SVC junction.",
+    "Nasogastric tube or similar catheter is seen extending into the stomach, with its tip curled in the gastric fundus."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Hydropneumothorax",
+      "severity": "Severe",
+      "confidence": 98,
+      "description": "A large collection of fluid and air within the left pleural space, evidenced by a significant air-fluid level occupying the majority of the left hemithorax. This causes complete opacification of the lower left lung field and displaces the mediastinum to the right."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Significant displacement of the mediastinal structures, including the trachea and heart, towards the right hemithorax, indicative of severe mass effect from the left hydropneumothorax."
+    }
+  ],
+  "summary": "The X-ray shows a large collection of fluid and air in the left lung space. This is called a hydropneumothorax and it's causing the heart and other central chest structures to shift to the right. This condition is severe and requires urgent medical attention. There is also a tube in the stomach (likely a feeding tube or for drainage) and a catheter in a major vein on the right side of the chest (for medication or fluids).",
+  "references": [
+    "https://radiopaedia.org/articles/hydropneumothorax",
+    "https://www.ncbi.nlm.nih.gov/books/NBK539824/",
+    "https://emedicine.medscape.com/article/299945-overview"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 444722,
+    "bytesOut": 443869,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:39:10.597Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

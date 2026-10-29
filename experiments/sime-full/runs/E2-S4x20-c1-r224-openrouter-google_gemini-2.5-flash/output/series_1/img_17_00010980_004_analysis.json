@@ -1,0 +1,62 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_1/img_17_00010980_004.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Cardiomegaly, with an enlarged cardiac silhouette.\",\n    \"Bilateral pleural effusions, more prominent on the left, indicated by blunting of the costophrenic angles.\",\n    \"Prominent pulmonary vascularity, suggestive of pulmonary congestion.\",\n    \"No convincing evidence of pneumothorax or definite focal consolidation.\",\n    \"Surgical clips are noted in the left supraclavicular region, likely indicating prior intervention.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlargement of the cardiac silhouette, suggesting cardiomegaly.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Bilateral blunting of the costophrenic angles, consistent with pleural effusions, more pronounced on the left.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Pulmonary Congestion\",\n      \"description\": \"Increased prominence of pulmonary vascular markings, indicative of pulmonary congestion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that your heart appears larger than normal (cardiomegaly). There is also fluid accumulating around both lungs, more noticeable on the left side (pleural effusions), which can make it harder to breathe. The blood vessels in your lungs also appear more prominent, suggesting that there might be some fluid buildup in the lungs themselves (pulmonary congestion). There are no signs of a collapsed lung or a significant lung infection. Some surgical clips are visible near your left collarbone, likely from a previous surgery in that area. These findings collectively suggest a possible issue with heart function or fluid balance.\",\n  \"references\": [\n    \"https://radiologykey.com/chest-x-ray-interpretation-basic-technique-and-common-findings/\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6003737/\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMra1604085\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Cardiomegaly, with an enlarged cardiac silhouette.",
+    "Bilateral pleural effusions, more prominent on the left, indicated by blunting of the costophrenic angles.",
+    "Prominent pulmonary vascularity, suggestive of pulmonary congestion.",
+    "No convincing evidence of pneumothorax or definite focal consolidation.",
+    "Surgical clips are noted in the left supraclavicular region, likely indicating prior intervention."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Enlargement of the cardiac silhouette, suggesting cardiomegaly."
+    },
+    {
+      "name": "Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Bilateral blunting of the costophrenic angles, consistent with pleural effusions, more pronounced on the left."
+    },
+    {
+      "name": "Pulmonary Congestion",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Increased prominence of pulmonary vascular markings, indicative of pulmonary congestion."
+    }
+  ],
+  "summary": "The chest X-ray shows that your heart appears larger than normal (cardiomegaly). There is also fluid accumulating around both lungs, more noticeable on the left side (pleural effusions), which can make it harder to breathe. The blood vessels in your lungs also appear more prominent, suggesting that there might be some fluid buildup in the lungs themselves (pulmonary congestion). There are no signs of a collapsed lung or a significant lung infection. Some surgical clips are visible near your left collarbone, likely from a previous surgery in that area. These findings collectively suggest a possible issue with heart function or fluid balance.",
+  "references": [
+    "https://radiologykey.com/chest-x-ray-interpretation-basic-technique-and-common-findings/",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6003737/",
+    "https://www.nejm.org/doi/full/10.1056/NEJMra1604085"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 25177,
+    "bytesOut": 25177,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:56:39.753Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_4/img_06_00002427_000.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Thoracolumbar Spine (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lateral curvature of the thoracic spine to the right, consistent with levoscoliosis.\",\n    \"Lateral curvature of the lumbar spine to the left, consistent with dextroscoliosis, forming an 'S' shape.\",\n    \"Ribs and clavicles appear normal for an AP projection.\",\n    \"Lung fields are clear without obvious infiltrates or effusions.\",\n    \"Cardiac silhouette is within normal limits.\",\n    \"Pelvis appears unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Scoliosis\",\n      \"description\": \"Significant 'S' shaped scoliosis involving both the thoracic and lumbar spine. The thoracic curve is convex to the right (levoscoliosis), and the lumbar curve is convex to the left (dextroscoliosis). The precise Cobb angles cannot be determined without specific measurements, but the curves appear moderate to severe.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray shows an 'S' shaped curvature of the spine, which is called scoliosis. The upper part of the spine (thoracic region) curves to the right, and the lower part of the spine (lumbar region) curves to the left. The lungs, heart, and other visible structures in the chest and pelvis appear normal. This type of spinal curvature is often monitored and sometimes treated, depending on its severity and whether it causes symptoms.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/scoliosis-1\",\n    \"https://www.srs.org/patients-and-families/conditions-and-treatments/parents-and-patients/scoliosis\",\n    \"https://www.spine-health.com/conditions/scoliosis/what-scoliosis\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Thoracolumbar Spine (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lateral curvature of the thoracic spine to the right, consistent with levoscoliosis.",
+    "Lateral curvature of the lumbar spine to the left, consistent with dextroscoliosis, forming an 'S' shape.",
+    "Ribs and clavicles appear normal for an AP projection.",
+    "Lung fields are clear without obvious infiltrates or effusions.",
+    "Cardiac silhouette is within normal limits.",
+    "Pelvis appears unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Scoliosis",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Significant 'S' shaped scoliosis involving both the thoracic and lumbar spine. The thoracic curve is convex to the right (levoscoliosis), and the lumbar curve is convex to the left (dextroscoliosis). The precise Cobb angles cannot be determined without specific measurements, but the curves appear moderate to severe."
+    }
+  ],
+  "summary": "This X-ray shows an 'S' shaped curvature of the spine, which is called scoliosis. The upper part of the spine (thoracic region) curves to the right, and the lower part of the spine (lumbar region) curves to the left. The lungs, heart, and other visible structures in the chest and pelvis appear normal. This type of spinal curvature is often monitored and sometimes treated, depending on its severity and whether it causes symptoms.",
+  "references": [
+    "https://radiopaedia.org/articles/scoliosis-1",
+    "https://www.srs.org/patients-and-families/conditions-and-treatments/parents-and-patients/scoliosis",
+    "https://www.spine-health.com/conditions/scoliosis/what-scoliosis"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24130,
+    "bytesOut": 24130,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:59:52.846Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

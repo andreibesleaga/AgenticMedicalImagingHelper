@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000296/series_3/00000296_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A peripherally inserted central catheter (PICC) is noted with its tip positioned in the superior vena cava (SVC).\",\n    \"No acute cardiopulmonary abnormalities detected.\",\n    \"Bilateral lung fields are clear.\",\n    \"Cardiomediastinal silhouette is within normal limits.\",\n    \"Bony thorax is unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"PICC line placement\",\n      \"description\": \"A peripherally inserted central catheter is present, with its distal tip appropriately positioned within the superior vena cava. No evidence of pneumothorax, hemothorax, or malposition.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows that the tubes (called a PICC line) going into a major vein in your arm is correctly placed, with its tip in a large vein near your heart. We don't see any immediate concerns with your lungs or heart, and your bones in the chest appear normal. Everything looks as expected for someone with a PICC line in place.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900894/\",\n    \"https://radiopaedia.org/articles/peripherally-inserted-central-catheter-picc\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A peripherally inserted central catheter (PICC) is noted with its tip positioned in the superior vena cava (SVC).",
+    "No acute cardiopulmonary abnormalities detected.",
+    "Bilateral lung fields are clear.",
+    "Cardiomediastinal silhouette is within normal limits.",
+    "Bony thorax is unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "PICC line placement",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A peripherally inserted central catheter is present, with its distal tip appropriately positioned within the superior vena cava. No evidence of pneumothorax, hemothorax, or malposition."
+    }
+  ],
+  "summary": "This X-ray of the chest shows that the tubes (called a PICC line) going into a major vein in your arm is correctly placed, with its tip in a large vein near your heart. We don't see any immediate concerns with your lungs or heart, and your bones in the chest appear normal. Everything looks as expected for someone with a PICC line in place.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900894/",
+    "https://radiopaedia.org/articles/peripherally-inserted-central-catheter-picc"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 417130,
+    "bytesOut": 415513,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:09:16.322Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

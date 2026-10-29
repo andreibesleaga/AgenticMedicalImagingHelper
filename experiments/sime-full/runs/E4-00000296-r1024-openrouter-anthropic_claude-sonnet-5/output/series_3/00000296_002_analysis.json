@@ -1,0 +1,59 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000296/series_3/00000296_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP/PA, upright)\",\"quality\":\"Good\",\"findings\":[\"Left-sided central venous catheter present with pigtail/coiled tip positioned in the left upper chest, tracking inferomedially with terminal loop overlying the mid-left thorax near the cardiac silhouette, likely within the pulmonary artery or a central vein - configuration suggestive of a catheter (e.g., pigtail drainage catheter or possibly malpositioned central line) with a curled tip\",\"Lungs appear grossly clear bilaterally without focal consolidation, though there is mild peribronchial/interstitial prominence\",\"Cardiac silhouette size appears within normal limits, though partially obscured by patient positioning and rotation\",\"Mediastinal contours are midline; trachea appears midline\",\"Bony thorax: clavicles, ribs, and visualized shoulder girdles appear symmetric without acute fracture\",\"Soft tissues show no significant subcutaneous emphysema or free air\",\"There is slight rotation of the patient and some patient motion artifact\",\"'L' marker denotes left side of image\"],\"abnormalities\":[{\"name\":\"Central venous catheter with pigtail/coiled distal tip\",\"description\":\"A catheter enters from the left upper chest with its distal end forming a coiled/pigtail loop projecting over the left hilar/mid-mediastinal region, raising consideration for a malpositioned catheter (e.g., tip curled within a pulmonary artery branch, SVC, or right atrium) versus an intentionally placed pigtail drainage catheter (e.g., pleural or pericardial drain). Clinical correlation and lateral view are recommended to confirm exact anatomic location.\",\"severity\":\"Moderate\",\"confidence\":62},{\"name\":\"Mild interstitial lung markings\",\"description\":\"Subtle increased bronchovascular/interstitial markings noted bilaterally, which may reflect mild pulmonary vascular congestion, atelectasis, or be within normal variation; no definite consolidation or effusion identified.\",\"severity\":\"Mild\",\"confidence\":40}],\"summary\":\"This chest X-ray shows a tube (catheter) that enters through the left side of the upper chest and curls into a loop shape near the middle of the chest, close to the heart and major blood vessels. This coiled tip appearance needs to be checked by the medical team to make sure the catheter is in the correct position — it could be a specially designed catheter (like a drainage tube) that is supposed to curl, or it may need to be repositioned if it's not where it should be. The lungs otherwise look mostly clear, and there's no sign of significant fluid buildup, collapsed lung, or infection. The heart size looks normal. Overall, the main thing to follow up on is confirming that the catheter tip is properly placed by comparing with other imaging views or clinical records.\",\"references\":[\"https://radiopaedia.org/articles/central-venous-catheter-malposition\",\"https://pubs.rsna.org/doi/10.1148/rg.2016150054\",\"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP/PA, upright)",
+  "quality": "Good",
+  "findings": [
+    "Left-sided central venous catheter present with pigtail/coiled tip positioned in the left upper chest, tracking inferomedially with terminal loop overlying the mid-left thorax near the cardiac silhouette, likely within the pulmonary artery or a central vein - configuration suggestive of a catheter (e.g., pigtail drainage catheter or possibly malpositioned central line) with a curled tip",
+    "Lungs appear grossly clear bilaterally without focal consolidation, though there is mild peribronchial/interstitial prominence",
+    "Cardiac silhouette size appears within normal limits, though partially obscured by patient positioning and rotation",
+    "Mediastinal contours are midline; trachea appears midline",
+    "Bony thorax: clavicles, ribs, and visualized shoulder girdles appear symmetric without acute fracture",
+    "Soft tissues show no significant subcutaneous emphysema or free air",
+    "There is slight rotation of the patient and some patient motion artifact",
+    "'L' marker denotes left side of image"
+  ],
+  "abnormalities": [
+    {
+      "name": "Central venous catheter with pigtail/coiled distal tip",
+      "severity": "Moderate",
+      "confidence": 62,
+      "description": "A catheter enters from the left upper chest with its distal end forming a coiled/pigtail loop projecting over the left hilar/mid-mediastinal region, raising consideration for a malpositioned catheter (e.g., tip curled within a pulmonary artery branch, SVC, or right atrium) versus an intentionally placed pigtail drainage catheter (e.g., pleural or pericardial drain). Clinical correlation and lateral view are recommended to confirm exact anatomic location."
+    },
+    {
+      "name": "Mild interstitial lung markings",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Subtle increased bronchovascular/interstitial markings noted bilaterally, which may reflect mild pulmonary vascular congestion, atelectasis, or be within normal variation; no definite consolidation or effusion identified."
+    }
+  ],
+  "summary": "This chest X-ray shows a tube (catheter) that enters through the left side of the upper chest and curls into a loop shape near the middle of the chest, close to the heart and major blood vessels. This coiled tip appearance needs to be checked by the medical team to make sure the catheter is in the correct position — it could be a specially designed catheter (like a drainage tube) that is supposed to curl, or it may need to be repositioned if it's not where it should be. The lungs otherwise look mostly clear, and there's no sign of significant fluid buildup, collapsed lung, or infection. The heart size looks normal. Overall, the main thing to follow up on is confirming that the catheter tip is properly placed by comparing with other imaging views or clinical records.",
+  "references": [
+    "https://radiopaedia.org/articles/central-venous-catheter-malposition",
+    "https://pubs.rsna.org/doi/10.1148/rg.2016150054",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 417130,
+    "bytesOut": 415513,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:31:05.861Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

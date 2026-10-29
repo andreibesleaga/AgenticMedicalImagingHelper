@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000239/series_3/00000239_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear without focal consolidations, masses, or pleural effusions\",\n    \"Heart size and mediastinal contour are within normal limits\",\n    \"Bony structures of the chest wall and shoulders are intact\",\n    \"Large amount of gas and fecal material present within the colon in the upper abdomen\",\n    \"Diaphragms are normally positioned\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Fecal loading\",\n      \"description\": \"Presence of significant amounts of gas and mottled fecal densities throughout the colon, visible below the diaphragm\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that the lungs and heart are normal and healthy. There is a significant amount of gas and stool visible in the large intestine (colon) in the upper abdomen, which is common and often associated with constipation, but is not a chest-related problem.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-radiograph-approach\",\n    \"https://www.acr.org/Clinical-Resources/Radiologic-Guidelines\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear without focal consolidations, masses, or pleural effusions",
+    "Heart size and mediastinal contour are within normal limits",
+    "Bony structures of the chest wall and shoulders are intact",
+    "Large amount of gas and fecal material present within the colon in the upper abdomen",
+    "Diaphragms are normally positioned"
+  ],
+  "abnormalities": [
+    {
+      "name": "Fecal loading",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Presence of significant amounts of gas and mottled fecal densities throughout the colon, visible below the diaphragm"
+    }
+  ],
+  "summary": "The chest X-ray shows that the lungs and heart are normal and healthy. There is a significant amount of gas and stool visible in the large intestine (colon) in the upper abdomen, which is common and often associated with constipation, but is not a chest-related problem.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-approach",
+    "https://www.acr.org/Clinical-Resources/Radiologic-Guidelines"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23540,
+    "bytesOut": 23540,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:15:56.843Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

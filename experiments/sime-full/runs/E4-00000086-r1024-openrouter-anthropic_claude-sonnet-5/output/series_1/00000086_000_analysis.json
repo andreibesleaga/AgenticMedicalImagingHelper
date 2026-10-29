@@ -1,0 +1,66 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000086/series_1/00000086_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP upright)\",\"quality\":\"Good\",\"findings\":[\"Lungs are well aerated bilaterally with clear costophrenic angles.\",\"Cardiac silhouette is within normal limits for size.\",\"Mediastinal contours and trachea are midline without widening.\",\"Faint linear opacity in the right mid lung zone, likely a benign scar or vascular marking.\",\"Small radiopaque densities projected over the left upper abdomen, likely gallstones or bowel content overlying the film.\",\"Surgical/orthopedic staple-like metallic marker overlying the left shoulder soft tissue, likely a skin marker or artifact.\",\"Osseous structures of the shoulders and upper ribs appear intact without acute fracture.\",\"No pleural effusion or pneumothorax identified.\",\"No focal consolidation or mass lesion identified within the lung fields.\"],\"abnormalities\":[{\"name\":\"Right mid lung linear opacity\",\"description\":\"Subtle linear density in the right mid-zone, likely representing a scar or vascular structure without associated mass effect.\",\"severity\":\"Mild\",\"confidence\":40},{\"name\":\"Left upper quadrant calcified densities\",\"description\":\"Small rounded calcific densities projected over the left upper abdomen/lower thoracic region, possibly representing gallstones or costal cartilage calcification; correlate with abdominal imaging if clinically indicated.\",\"severity\":\"Mild\",\"confidence\":35},{\"name\":\"External metallic marker\",\"description\":\"Small L-shaped metallic marker overlying the left shoulder, likely a skin marker/lead marker used during image acquisition, not a pathological finding.\",\"severity\":\"Normal\",\"confidence\":70}],\"summary\":\"This chest X-ray shows lungs that appear well-expanded and clear, with no signs of pneumonia, fluid buildup, or collapsed lung. The heart size looks normal, and the bones of the chest and shoulders appear intact. There is a faint line in the right lung that is most likely an old scar and not a current problem. There are also a few small calcified spots near the upper abdomen that could be related to gallstones or normal cartilage calcification - these are not typically related to lung health but may warrant follow-up if there are abdominal symptoms. A small metal object seen near the left shoulder is likely just a marker placed on the skin during the X-ray and is not part of the body. Overall, this looks like a fairly unremarkable chest X-ray, but as always, review by a radiologist or your doctor is recommended for a complete interpretation.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.rsna.org/en/education/patients/patient-safety/chest-x-ray\",\"https://pubs.rsna.org/journal/radiology\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are well aerated bilaterally with clear costophrenic angles.",
+    "Cardiac silhouette is within normal limits for size.",
+    "Mediastinal contours and trachea are midline without widening.",
+    "Faint linear opacity in the right mid lung zone, likely a benign scar or vascular marking.",
+    "Small radiopaque densities projected over the left upper abdomen, likely gallstones or bowel content overlying the film.",
+    "Surgical/orthopedic staple-like metallic marker overlying the left shoulder soft tissue, likely a skin marker or artifact.",
+    "Osseous structures of the shoulders and upper ribs appear intact without acute fracture.",
+    "No pleural effusion or pneumothorax identified.",
+    "No focal consolidation or mass lesion identified within the lung fields."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right mid lung linear opacity",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Subtle linear density in the right mid-zone, likely representing a scar or vascular structure without associated mass effect."
+    },
+    {
+      "name": "Left upper quadrant calcified densities",
+      "severity": "Mild",
+      "confidence": 35,
+      "description": "Small rounded calcific densities projected over the left upper abdomen/lower thoracic region, possibly representing gallstones or costal cartilage calcification; correlate with abdominal imaging if clinically indicated."
+    },
+    {
+      "name": "External metallic marker",
+      "severity": "Normal",
+      "confidence": 70,
+      "description": "Small L-shaped metallic marker overlying the left shoulder, likely a skin marker/lead marker used during image acquisition, not a pathological finding."
+    }
+  ],
+  "summary": "This chest X-ray shows lungs that appear well-expanded and clear, with no signs of pneumonia, fluid buildup, or collapsed lung. The heart size looks normal, and the bones of the chest and shoulders appear intact. There is a faint line in the right lung that is most likely an old scar and not a current problem. There are also a few small calcified spots near the upper abdomen that could be related to gallstones or normal cartilage calcification - these are not typically related to lung health but may warrant follow-up if there are abdominal symptoms. A small metal object seen near the left shoulder is likely just a marker placed on the skin during the X-ray and is not part of the body. Overall, this looks like a fairly unremarkable chest X-ray, but as always, review by a radiologist or your doctor is recommended for a complete interpretation.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.rsna.org/en/education/patients/patient-safety/chest-x-ray",
+    "https://pubs.rsna.org/journal/radiology"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 412436,
+    "bytesOut": 410514,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:18:46.130Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

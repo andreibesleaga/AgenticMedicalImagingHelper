@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S3x10/series_1/img_07_00019169_019.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pleural effusion, or pneumothorax identified.\",\n    \"Cardiac silhouette and mediastinum appear within normal limits.\",\n    \"Bilateral hilar regions are unremarkable.\",\n    \"Bony thorax is intact without acute fracture.\",\n    \"Presence of a peripherally inserted central catheter (PICC line) noted, with its tip likely in the superior vena cava, though full visualization is limited by the image borders.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"PICC line in situ\",\n      \"description\": \"A peripherally inserted central catheter is present, with its course noted from the right upper extremity towards the superior vena cava. The tip position appears appropriate, but cannot be definitively confirmed due to image cropping.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows no signs of pneumonia, fluid around the lungs (pleural effusion), or a collapsed lung (pneumothorax). The heart and major blood vessels in the center of the chest appear normal in size and shape. The bones of the rib cage are also intact. There is a peripherally inserted central catheter (PICC line) visible, which is a thin tube inserted into a vein, and its position seems appropriate for its function, although the very tip is not fully seen.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7692254/\",\n    \"https://radiologykey.com/chest-x-ray-interpretation-basic-approach/\",\n    \"https://www.uptodate.com/contents/image-guidance-for-placement-of-central-venous-catheters-in-adults\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pleural effusion, or pneumothorax identified.",
+    "Cardiac silhouette and mediastinum appear within normal limits.",
+    "Bilateral hilar regions are unremarkable.",
+    "Bony thorax is intact without acute fracture.",
+    "Presence of a peripherally inserted central catheter (PICC line) noted, with its tip likely in the superior vena cava, though full visualization is limited by the image borders."
+  ],
+  "abnormalities": [
+    {
+      "name": "PICC line in situ",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A peripherally inserted central catheter is present, with its course noted from the right upper extremity towards the superior vena cava. The tip position appears appropriate, but cannot be definitively confirmed due to image cropping."
+    }
+  ],
+  "summary": "The chest X-ray shows no signs of pneumonia, fluid around the lungs (pleural effusion), or a collapsed lung (pneumothorax). The heart and major blood vessels in the center of the chest appear normal in size and shape. The bones of the rib cage are also intact. There is a peripherally inserted central catheter (PICC line) visible, which is a thin tube inserted into a vein, and its position seems appropriate for its function, although the very tip is not fully seen.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7692254/",
+    "https://radiologykey.com/chest-x-ray-interpretation-basic-approach/",
+    "https://www.uptodate.com/contents/image-guidance-for-placement-of-central-venous-catheters-in-adults"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 25007,
+    "bytesOut": 25007,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:54:41.605Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

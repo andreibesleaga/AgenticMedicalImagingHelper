@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_3/img_06_00006249_006.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal contours are within normal limits.\",\n    \"Bony thorax appears intact without acute fracture or destructive lesion.\",\n    \"A metallic ring-like foreign body is noted projected over the left mid-lung field.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Foreign Body\",\n      \"description\": \"A metallic ring-like foreign body is visualized projected over the left mid-lung field. Its exact anatomical location (intra-bronchial, esophageal, or cutaneous/clothing) cannot be definitively determined from a single AP view without further clinical correlation or additional imaging.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows clear lungs and normal heart size and shape. The bones of the chest also appear normal. However, there is a metallic ring-shaped object visible over the left lung area. It's not clear from this single X-ray exactly where this object is located – it could be on the skin, in clothing, or potentially inside the body, such as in an airway or the esophagus. Further evaluation might be needed to determine its precise location and clinical significance.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.294085731\",\n    \"https://radiologykey.com/chest-radiography-3/\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMicm040776\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal contours are within normal limits.",
+    "Bony thorax appears intact without acute fracture or destructive lesion.",
+    "A metallic ring-like foreign body is noted projected over the left mid-lung field."
+  ],
+  "abnormalities": [
+    {
+      "name": "Foreign Body",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "A metallic ring-like foreign body is visualized projected over the left mid-lung field. Its exact anatomical location (intra-bronchial, esophageal, or cutaneous/clothing) cannot be definitively determined from a single AP view without further clinical correlation or additional imaging."
+    }
+  ],
+  "summary": "The chest X-ray shows clear lungs and normal heart size and shape. The bones of the chest also appear normal. However, there is a metallic ring-shaped object visible over the left lung area. It's not clear from this single X-ray exactly where this object is located – it could be on the skin, in clothing, or potentially inside the body, such as in an airway or the esophagus. Further evaluation might be needed to determine its precise location and clinical significance.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.294085731",
+    "https://radiologykey.com/chest-radiography-3/",
+    "https://www.nejm.org/doi/full/10.1056/NEJMicm040776"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 25621,
+    "bytesOut": 25621,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:02:12.041Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

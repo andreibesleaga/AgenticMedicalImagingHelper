@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_1/img_16_00024750_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pleural effusion, or pneumothorax identified.\",\n    \"Bilateral hilar regions are unremarkable.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Diaphragms are intact and clear costophrenic angles bilaterally.\",\n    \"Bony thorax is unremarkable.\",\n    \"Mild peribronchial thickening and interstitial markings noted, more prominent in the left lung mid-zone.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Peribronchial thickening\",\n      \"description\": \"Mild peribronchial thickening and interstitial markings, most noticeable in the left mid-lung field, suggesting mild inflammatory or reactive changes.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The chest X-ray shows generally healthy lungs with no signs of pneumonia, collapsed lung, or fluid around the lungs. The heart and major blood vessels appear normal in size and shape. There is some mild thickening around the airways and in the tissue of the lungs, particularly in the left lung, which could be due to minor irritation or a past infection. This is a common finding and often not a cause for concern, but can sometimes be associated with conditions like asthma or bronchitis. No acute problems were identified.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/peribronchial-cuffing\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4367372/\",\n    \"https://www.thoracic.org/patients/patient-resources/glossary/interstitial-lung-disease.php\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pleural effusion, or pneumothorax identified.",
+    "Bilateral hilar regions are unremarkable.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Diaphragms are intact and clear costophrenic angles bilaterally.",
+    "Bony thorax is unremarkable.",
+    "Mild peribronchial thickening and interstitial markings noted, more prominent in the left lung mid-zone."
+  ],
+  "abnormalities": [
+    {
+      "name": "Peribronchial thickening",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Mild peribronchial thickening and interstitial markings, most noticeable in the left mid-lung field, suggesting mild inflammatory or reactive changes."
+    }
+  ],
+  "summary": "The chest X-ray shows generally healthy lungs with no signs of pneumonia, collapsed lung, or fluid around the lungs. The heart and major blood vessels appear normal in size and shape. There is some mild thickening around the airways and in the tissue of the lungs, particularly in the left lung, which could be due to minor irritation or a past infection. This is a common finding and often not a cause for concern, but can sometimes be associated with conditions like asthma or bronchitis. No acute problems were identified.",
+  "references": [
+    "https://radiopaedia.org/articles/peribronchial-cuffing",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4367372/",
+    "https://www.thoracic.org/patients/patient-resources/glossary/interstitial-lung-disease.php"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 407984,
+    "bytesOut": 404788,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:39:16.160Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

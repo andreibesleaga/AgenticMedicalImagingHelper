@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S3x10/series_2/img_09_00022519_004.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral reticulonodular opacities are observed throughout both lung fields, more prominent in the lower zones.\",\n    \"Bilateral hilar regions appear enlarged and somewhat ill-defined.\",\n    \"Cardiomediastinal contours are within normal limits.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Reticulonodular Opacities\",\n      \"description\": \"Widespread reticulonodular opacities are seen across both lungs, suggesting interstitial lung disease. The pattern appears more pronounced in the lower lung zones.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Bilateral Hilar Enlargement\",\n      \"description\": \"Both hilar regions appear enlarged and indistinct, which could indicate lymphadenopathy or prominent pulmonary vasculature.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The chest X-ray shows changes in both lungs, specifically a 'net-like' and 'small spots' pattern (reticulonodular opacities) spread throughout, which is often a sign of an underlying lung condition that affects the tissue between the air sacs. The areas where the main blood vessels and airways enter the lungs (hilar regions) also appear a bit larger than usual. These findings collectively suggest an interstitial lung disease, which is a group of disorders that cause progressive scarring of lung tissue. The heart and the spaces around the lungs look normal.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/interstitial-lung-disease\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900451/\",\n    \"https://www.thoracic.org/patients/patient-resources/glossary/interstitial-lung-disease.php\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral reticulonodular opacities are observed throughout both lung fields, more prominent in the lower zones.",
+    "Bilateral hilar regions appear enlarged and somewhat ill-defined.",
+    "Cardiomediastinal contours are within normal limits.",
+    "Diaphragms are intact and costophrenic angles are clear."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Reticulonodular Opacities",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Widespread reticulonodular opacities are seen across both lungs, suggesting interstitial lung disease. The pattern appears more pronounced in the lower lung zones."
+    },
+    {
+      "name": "Bilateral Hilar Enlargement",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Both hilar regions appear enlarged and indistinct, which could indicate lymphadenopathy or prominent pulmonary vasculature."
+    }
+  ],
+  "summary": "The chest X-ray shows changes in both lungs, specifically a 'net-like' and 'small spots' pattern (reticulonodular opacities) spread throughout, which is often a sign of an underlying lung condition that affects the tissue between the air sacs. The areas where the main blood vessels and airways enter the lungs (hilar regions) also appear a bit larger than usual. These findings collectively suggest an interstitial lung disease, which is a group of disorders that cause progressive scarring of lung tissue. The heart and the spaces around the lungs look normal.",
+  "references": [
+    "https://radiopaedia.org/articles/interstitial-lung-disease",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900451/",
+    "https://www.thoracic.org/patients/patient-resources/glossary/interstitial-lung-disease.php"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22103,
+    "bytesOut": 22103,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:54:50.813Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

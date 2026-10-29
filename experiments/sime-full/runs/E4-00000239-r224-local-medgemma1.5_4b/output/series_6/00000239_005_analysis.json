@@ -1,0 +1,31 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000239/series_6/00000239_005.png",
+  "seriesId": "series_6",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear with normal vascular markings.\",\n    \"Prominent pulmonary vasculature.\",\n    \"The heart size is normal.\",\n    \"Mild cardiomegaly.\",\n    \"No pleural effusion.\",\n    \"There is a moderate amount of free air under both hemidiaphragms.\",\n    \"Small bowel loops are seen in the left upper quadrant.\",\n    \"The mediastinum is unremarkable.\",\n    \"There is dextrocardia.\"\n  ],\n  \"abnormalities\": [\n    \"free air under both hemidiaphragms\",\n    \"Dextrocardia\"\n  ],\n  \"summary\": \"This is an X-ray of the chest. The lungs are clear. The heart size is normal. There is free air under the diaphragm, which could indicate a perforated bowel. The heart is on the right side (dextrocardia).\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/imaging/free-air-under-the-diaphragm\",\n    \"https://www.radiologyinfo.org/en/imaging/dextrocardia\"\n  ]\n}",
+  "findings": [],
+  "validation": {
+    "ok": false,
+    "issues": [
+      "abnormalities.0: Invalid input: expected object, received string",
+      "abnormalities.1: Invalid input: expected object, received string"
+    ]
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22688,
+    "bytesOut": 22688,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T11:00:02.577Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

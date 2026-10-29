@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000008/series_1/00000008_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear lung fields with no evidence of consolidation, mass, or effusion.\",\n    \"Cardiac silhouette within normal size limits.\",\n    \"Normal diaphragmatic contours and costophrenic angles.\",\n    \"No mediastinal widening or tracheal deviation.\",\n    \"Bony thorax including ribs, clavicles, and spine appear intact without acute fracture or lesion.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray appears normal. There are no signs of pneumonia, fluid buildup, tumors, or bone fractures. The heart and lungs look healthy for now. If you’re experiencing symptoms like cough or shortness of breath, your doctor may consider other tests.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-x-ray-interpretation\",\n    \"https://www.uptodate.com/contents/chest-radiography-in-adults\",\n    \"https://www.aap.org/en/patient-care/radiology/chest-x-ray-interpretation/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Clear lung fields with no evidence of consolidation, mass, or effusion.",
+    "Cardiac silhouette within normal size limits.",
+    "Normal diaphragmatic contours and costophrenic angles.",
+    "No mediastinal widening or tracheal deviation.",
+    "Bony thorax including ribs, clavicles, and spine appear intact without acute fracture or lesion."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray appears normal. There are no signs of pneumonia, fluid buildup, tumors, or bone fractures. The heart and lungs look healthy for now. If you’re experiencing symptoms like cough or shortness of breath, your doctor may consider other tests.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-x-ray-interpretation",
+    "https://www.uptodate.com/contents/chest-radiography-in-adults",
+    "https://www.aap.org/en/patient-care/radiology/chest-x-ray-interpretation/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 410034,
+    "bytesOut": 374578,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-09-29T10:15:38.042Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

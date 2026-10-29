@@ -1,0 +1,67 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_4/00000239_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP upright)\",\"quality\":\"Fair\",\"findings\":[\"Large gas-filled structure with air-fluid level projecting over the lower left hemithorax/upper abdomen, displacing mediastinum and heart to the right\",\"Markedly elevated left hemidiaphragm contour obscured by bowel gas pattern suggesting herniated abdominal contents into the thoracic cavity\",\"Dilated bowel loops with haustral pattern visible in the upper abdomen extending toward the chest\",\"Right lung appears relatively clear with normal vascular markings\",\"Cardiac silhouette shifted rightward, likely due to mass effect from herniated viscera\",\"Surgical clips/sutures noted in the right upper chest/shoulder region, suggesting prior surgery\",\"Small metallic markers noted in the right upper abdomen\",\"Degenerative changes of the thoracic spine and clavicles\",\"No obvious free air under diaphragm visualized, though this view is limited for that assessment\",\"Bony thorax and soft tissues of the shoulders are symmetric\"],\"abnormalities\":[{\"name\":\"Suspected diaphragmatic hernia (likely paraesophageal or traumatic)\",\"description\":\"A large gas- and fluid-filled viscus (likely stomach and/or bowel) is seen occupying the lower left chest with an air-fluid level, causing rightward mediastinal shift. This appearance is consistent with herniation of abdominal contents through a diaphragmatic defect, such as a large hiatal/paraesophageal hernia or diaphragmatic rupture.\",\"severity\":\"Severe\",\"confidence\":72},{\"name\":\"Mediastinal shift\",\"description\":\"The cardiac silhouette and mediastinal structures appear displaced to the right, likely secondary to mass effect from the herniated, distended abdominal viscera in the left chest.\",\"severity\":\"Moderate\",\"confidence\":65},{\"name\":\"Prior surgical clips\",\"description\":\"Metallic surgical clips are seen in the right axillary/shoulder region, indicating prior surgical intervention (etiology not determined from this image alone).\",\"severity\":\"Mild\",\"confidence\":55}],\"summary\":\"This chest X-ray shows a large air- and fluid-filled pocket in the lower left part of the chest that is pushing the heart and central chest structures toward the right side. This pattern is typical of part of the stomach or intestines pushing up through an opening in the diaphragm (the muscle that separates the chest from the abdomen), a condition called a diaphragmatic or paraesophageal hernia. This can sometimes cause symptoms like chest discomfort, bloating, or breathing difficulty, and in some cases can become urgent if the bowel becomes trapped or its blood supply is compromised. There are also some small metal clips from a prior surgery and degenerative (wear-and-tear) changes in the spine, which are not immediately concerning. These findings should be correlated with the patient's symptoms and may require a CT scan for further evaluation and surgical consultation.\",\"references\":[\"https://radiopaedia.org/articles/diaphragmatic-hernia\",\"https://www.ncbi.nlm.nih.gov/books/NBK499900/\",\"https://pubs.rsna.org/doi/10.1148/rg.2020190173\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Fair",
+  "findings": [
+    "Large gas-filled structure with air-fluid level projecting over the lower left hemithorax/upper abdomen, displacing mediastinum and heart to the right",
+    "Markedly elevated left hemidiaphragm contour obscured by bowel gas pattern suggesting herniated abdominal contents into the thoracic cavity",
+    "Dilated bowel loops with haustral pattern visible in the upper abdomen extending toward the chest",
+    "Right lung appears relatively clear with normal vascular markings",
+    "Cardiac silhouette shifted rightward, likely due to mass effect from herniated viscera",
+    "Surgical clips/sutures noted in the right upper chest/shoulder region, suggesting prior surgery",
+    "Small metallic markers noted in the right upper abdomen",
+    "Degenerative changes of the thoracic spine and clavicles",
+    "No obvious free air under diaphragm visualized, though this view is limited for that assessment",
+    "Bony thorax and soft tissues of the shoulders are symmetric"
+  ],
+  "abnormalities": [
+    {
+      "name": "Suspected diaphragmatic hernia (likely paraesophageal or traumatic)",
+      "severity": "Severe",
+      "confidence": 72,
+      "description": "A large gas- and fluid-filled viscus (likely stomach and/or bowel) is seen occupying the lower left chest with an air-fluid level, causing rightward mediastinal shift. This appearance is consistent with herniation of abdominal contents through a diaphragmatic defect, such as a large hiatal/paraesophageal hernia or diaphragmatic rupture."
+    },
+    {
+      "name": "Mediastinal shift",
+      "severity": "Moderate",
+      "confidence": 65,
+      "description": "The cardiac silhouette and mediastinal structures appear displaced to the right, likely secondary to mass effect from the herniated, distended abdominal viscera in the left chest."
+    },
+    {
+      "name": "Prior surgical clips",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Metallic surgical clips are seen in the right axillary/shoulder region, indicating prior surgical intervention (etiology not determined from this image alone)."
+    }
+  ],
+  "summary": "This chest X-ray shows a large air- and fluid-filled pocket in the lower left part of the chest that is pushing the heart and central chest structures toward the right side. This pattern is typical of part of the stomach or intestines pushing up through an opening in the diaphragm (the muscle that separates the chest from the abdomen), a condition called a diaphragmatic or paraesophageal hernia. This can sometimes cause symptoms like chest discomfort, bloating, or breathing difficulty, and in some cases can become urgent if the bowel becomes trapped or its blood supply is compromised. There are also some small metal clips from a prior surgery and degenerative (wear-and-tear) changes in the spine, which are not immediately concerning. These findings should be correlated with the patient's symptoms and may require a CT scan for further evaluation and surgical consultation.",
+  "references": [
+    "https://radiopaedia.org/articles/diaphragmatic-hernia",
+    "https://www.ncbi.nlm.nih.gov/books/NBK499900/",
+    "https://pubs.rsna.org/doi/10.1148/rg.2020190173"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 431092,
+    "bytesOut": 428915,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T09:45:30.123Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

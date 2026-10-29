@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_3/00000092_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Bilateral blunting of the costophrenic angles\",\n    \"Presence of a large air-fluid level in the lower left hemithorax\",\n    \"Opacity in the lower lung zones bilaterally\",\n    \"Right diaphragmatic contour is obscured by opacity\",\n    \"Left lung base shows a prominent horizontal interface between gas and fluid\",\n    \"Trachea is midline\",\n    \"Cardiac silhouette is partially obscured by lower lobe opacities\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Hydropneumothorax\",\n      \"description\": \"A large air-fluid level in the left lower chest indicates the simultaneous presence of fluid (hydro) and air (pneumo) within the pleural space.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Bilateral blunting of costophrenic angles and opacity at the bases suggest fluid accumulation in the pleural space, more pronounced on the right where the diaphragm is obscured.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The X-ray shows signs of fluid and air trapped in the space surrounding the lungs (the pleural space). On the left side, there is a clear 'level' showing both air and fluid, which is known as a hydropneumothorax. On the right side, there is evidence of fluid buildup (pleural effusion). This can be caused by various conditions including infection, injury, or organ failure and requires immediate medical evaluation.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/hydropneumothorax\",\n    \"https://radiopaedia.org/articles/pleural-effusion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Fair",
+  "findings": [
+    "Bilateral blunting of the costophrenic angles",
+    "Presence of a large air-fluid level in the lower left hemithorax",
+    "Opacity in the lower lung zones bilaterally",
+    "Right diaphragmatic contour is obscured by opacity",
+    "Left lung base shows a prominent horizontal interface between gas and fluid",
+    "Trachea is midline",
+    "Cardiac silhouette is partially obscured by lower lobe opacities"
+  ],
+  "abnormalities": [
+    {
+      "name": "Hydropneumothorax",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "A large air-fluid level in the left lower chest indicates the simultaneous presence of fluid (hydro) and air (pneumo) within the pleural space."
+    },
+    {
+      "name": "Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Bilateral blunting of costophrenic angles and opacity at the bases suggest fluid accumulation in the pleural space, more pronounced on the right where the diaphragm is obscured."
+    }
+  ],
+  "summary": "The X-ray shows signs of fluid and air trapped in the space surrounding the lungs (the pleural space). On the left side, there is a clear 'level' showing both air and fluid, which is known as a hydropneumothorax. On the right side, there is evidence of fluid buildup (pleural effusion). This can be caused by various conditions including infection, injury, or organ failure and requires immediate medical evaluation.",
+  "references": [
+    "https://radiopaedia.org/articles/hydropneumothorax",
+    "https://radiopaedia.org/articles/pleural-effusion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 400591,
+    "bytesOut": 305467,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:01:27.030Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

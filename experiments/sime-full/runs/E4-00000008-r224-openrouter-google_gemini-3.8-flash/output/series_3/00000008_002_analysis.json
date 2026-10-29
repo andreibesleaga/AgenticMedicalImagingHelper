@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000008/series_3/00000008_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The cardiac silhouette is mildly enlarged, with a cardiothoracic ratio exceeding 0.50.\",\n    \"Pulmonary vasculature shows normal distribution without signs of congestion or cephalization.\",\n    \"Lungs are well-expanded and clear of focal infiltrates, consolidations, or masses.\",\n    \"Costophrenic angles and cardiophrenic sulci are sharp and clear bilaterally, with no evidence of pleural effusion.\",\n    \"Trachea is midline, and the mediastinal contours are otherwise within normal limits.\",\n    \"Visualized osseous structures and chest wall soft tissues appear unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Mild enlargement of the cardiac silhouette with an increased cardiothoracic ratio (>0.50) without evidence of acute pulmonary edema or vascular redistribution.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 88\n    }\n  ],\n  \"summary\": \"The chest X-ray shows an enlarged heart size (cardiomegaly), which means the width of the heart is greater than half the width of the inside of the chest. The lungs themselves are completely clear, with no signs of fluid buildup, infection, or pneumonia. An enlarged heart can be associated with conditions such as high blood pressure or heart disease, and clinical correlation or an echocardiogram (ultrasound of the heart) may be recommended by your physician to assess heart function.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK553149/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The cardiac silhouette is mildly enlarged, with a cardiothoracic ratio exceeding 0.50.",
+    "Pulmonary vasculature shows normal distribution without signs of congestion or cephalization.",
+    "Lungs are well-expanded and clear of focal infiltrates, consolidations, or masses.",
+    "Costophrenic angles and cardiophrenic sulci are sharp and clear bilaterally, with no evidence of pleural effusion.",
+    "Trachea is midline, and the mediastinal contours are otherwise within normal limits.",
+    "Visualized osseous structures and chest wall soft tissues appear unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 88,
+      "description": "Mild enlargement of the cardiac silhouette with an increased cardiothoracic ratio (>0.50) without evidence of acute pulmonary edema or vascular redistribution."
+    }
+  ],
+  "summary": "The chest X-ray shows an enlarged heart size (cardiomegaly), which means the width of the heart is greater than half the width of the inside of the chest. The lungs themselves are completely clear, with no signs of fluid buildup, infection, or pneumonia. An enlarged heart can be associated with conditions such as high blood pressure or heart disease, and clinical correlation or an echocardiogram (ultrasound of the heart) may be recommended by your physician to assess heart function.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://www.ncbi.nlm.nih.gov/books/NBK553149/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21590,
+    "bytesOut": 21590,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:28:59.650Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

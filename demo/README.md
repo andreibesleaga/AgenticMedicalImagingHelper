@@ -56,7 +56,7 @@ trajectory, not a verified clinical outcome.
 
 ## Prerequisites
 
-- Node.js 20+, this repo built (`npm run build`, or let the script build it).
+- Node.js 22+, this repo built (`npm run build`, or let the script build it).
 - An API key for the provider you'll use: `OPENROUTER_API_KEY` (default) or
   `GOOGLE_API_KEY` / `GEMINI_API_KEY`, in `.env` or exported.
 - The showcase images already staged: `demo/input/00011264/` and

@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_4/img_06_00002427_000.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Thoracolumbar Spine (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"S-shaped scoliosis of the thoracolumbar spine.\",\n    \"Left convex curve in the thoracic spine.\",\n    \"Right convex curve in the lumbar spine.\",\n    \"Ribs and clavicles appear unremarkable.\",\n    \"Lungs are clear to the periphery without focal consolidation or pleural effusion.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Scoliosis\",\n      \"description\": \"S-shaped curvature of the thoracolumbar spine, characterized by a left convex curve in the thoracic region and a right convex curve in the lumbar region. The Cobb angles would need to be measured for precise severity assessment, but visually the curves appear significant.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray of your back shows a significant S-shaped curve, which is known as scoliosis. This means your spine isn't perfectly straight; it curves to the left in the upper part of your back and to the right in the lower part. The good news is that your lungs and heart appear normal, and there are no other obvious problems seen in this image. Scoliosis can sometimes cause back pain or uneven shoulders/hips, but many people live with it without major issues. It's important to discuss these findings with your doctor to determine the best course of action for you.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/books/NBK441869/\",\n    \"https://www.srs.org/patients-and-families/conditions-and-treatments/parents-to-be/pediatric-spinal-conditions/scoliosis\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Thoracolumbar Spine (AP)",
+  "quality": "Good",
+  "findings": [
+    "S-shaped scoliosis of the thoracolumbar spine.",
+    "Left convex curve in the thoracic spine.",
+    "Right convex curve in the lumbar spine.",
+    "Ribs and clavicles appear unremarkable.",
+    "Lungs are clear to the periphery without focal consolidation or pleural effusion.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour."
+  ],
+  "abnormalities": [
+    {
+      "name": "Scoliosis",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "S-shaped curvature of the thoracolumbar spine, characterized by a left convex curve in the thoracic region and a right convex curve in the lumbar region. The Cobb angles would need to be measured for precise severity assessment, but visually the curves appear significant."
+    }
+  ],
+  "summary": "The X-ray of your back shows a significant S-shaped curve, which is known as scoliosis. This means your spine isn't perfectly straight; it curves to the left in the upper part of your back and to the right in the lower part. The good news is that your lungs and heart appear normal, and there are no other obvious problems seen in this image. Scoliosis can sometimes cause back pain or uneven shoulders/hips, but many people live with it without major issues. It's important to discuss these findings with your doctor to determine the best course of action for you.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK441869/",
+    "https://www.srs.org/patients-and-families/conditions-and-treatments/parents-to-be/pediatric-spinal-conditions/scoliosis"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24130,
+    "bytesOut": 24130,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:02:23.575Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

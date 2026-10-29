@@ -1,0 +1,186 @@
+{
+  "manifestVersion": "1.0",
+  "toolVersion": "1.1.0",
+  "startedAt": "2026-09-29T10:18:23.512Z",
+  "finishedAt": "2026-09-29T10:19:28.937Z",
+  "provider": "openrouter",
+  "model": "google/gemini-3.8-flash",
+  "pricing": {
+    "inputUsdPerMillion": 0.75,
+    "outputUsdPerMillion": 3.75
+  },
+  "settings": {
+    "concurrency": 1,
+    "maxCostUsd": 1,
+    "retries": 3,
+    "imageQuality": "auto"
+  },
+  "inputDir": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000086",
+  "outputDir": "/home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4-00000086-r1024-openrouter-google_gemini-3.8-flash/output",
+  "inputs": [
+    {
+      "path": "series_1/00000086_000.png",
+      "sha256": "56ca8e943a116aa80781786f83189aa4bc2ee88340fcd8c8855782f19103b7cc",
+      "bytes": 412436
+    },
+    {
+      "path": "series_2/00000086_001.png",
+      "sha256": "27a47d6a614402438935f615815961276988ffbe98b591e05b01e0611a85a584",
+      "bytes": 639281
+    },
+    {
+      "path": "series_3/00000086_002.png",
+      "sha256": "4bb27077b9807bd83c1ee0d5ac902c6a84c771107bdc28e735d2805794ac151f",
+      "bytes": 371103
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "patient_context.txt",
+      "sha256": "958a66263518b9f7565bc6a9db940ece8bab63954173358d34b8279d7c11b10b",
+      "bytes": 326
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:18:32.019Z",
+      "tokensIn": 1492,
+      "tokensOut": 1047,
+      "estimatedUsd": 0.00504525,
+      "providerUsd": 0.00504525,
+      "retries": 0
+    },
+    {
+      "index": 2,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:18:47.893Z",
+      "tokensIn": 1492,
+      "tokensOut": 1411,
+      "estimatedUsd": 0.00641025,
+      "providerUsd": 0.00641025,
+      "retries": 0
+    },
+    {
+      "index": 3,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:18:59.438Z",
+      "tokensIn": 1492,
+      "tokensOut": 1259,
+      "estimatedUsd": 0.005840249999999998,
+      "providerUsd": 0.005840249999999998,
+      "retries": 0
+    },
+    {
+      "index": 4,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:19:06.320Z",
+      "tokensIn": 831,
+      "tokensOut": 756,
+      "estimatedUsd": 0.003458250000000003,
+      "providerUsd": 0.0034582499999999995,
+      "retries": 0
+    },
+    {
+      "index": 5,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:19:11.369Z",
+      "tokensIn": 863,
+      "tokensOut": 550,
+      "estimatedUsd": 0.002709749999999997,
+      "providerUsd": 0.0027097500000000004,
+      "retries": 0
+    },
+    {
+      "index": 6,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:19:17.717Z",
+      "tokensIn": 793,
+      "tokensOut": 614,
+      "estimatedUsd": 0.002897249999999997,
+      "providerUsd": 0.0028972500000000005,
+      "retries": 0
+    },
+    {
+      "index": 7,
+      "stage": "evolution",
+      "timestamp": "2026-09-29T10:19:28.866Z",
+      "tokensIn": 1193,
+      "tokensOut": 1189,
+      "estimatedUsd": 0.005353500000000004,
+      "providerUsd": 0.005353500000000001,
+      "retries": 0
+    }
+  ],
+  "outputs": [
+    {
+      "path": "series_1/00000086_000_analysis.json",
+      "sha256": "4ba3c9a9f3ef9c68ec770df470d8cc59072e94598a4c764e104e807f2062c1c0",
+      "bytes": 5186
+    },
+    {
+      "path": "series_2/00000086_001_analysis.json",
+      "sha256": "b613a98636d9ea50a4d0f0ef40aafe2d2715c6bc8be493da8cea4a54235aebfd",
+      "bytes": 5108
+    },
+    {
+      "path": "series_3/00000086_002_analysis.json",
+      "sha256": "ee0c3581ac443cd3d10606815863a01a9c8962656306a115cc53907bdeed13b2",
+      "bytes": 4750
+    },
+    {
+      "path": "series_1/series_summary.md",
+      "sha256": "3042201ab51af9939867ace5333f468b6518f1ae96e969f7260f9d6a4171557a",
+      "bytes": 2947
+    },
+    {
+      "path": "series_2/series_summary.md",
+      "sha256": "e71c26df7e3b90f8e55f283113fe3c816541c4ef23563778ae1f6d9d1235d660",
+      "bytes": 3259
+    },
+    {
+      "path": "series_3/series_summary.md",
+      "sha256": "be1bd397e3ae7cd3c2fce965c90a39b3bb457d4de85ffc6140c854bd179d63a5",
+      "bytes": 2800
+    },
+    {
+      "path": "evolution_analysis.json",
+      "sha256": "ca406c907e3c52baf6ef921bdb7f6de199997b65f7e883c7061d08d9635489a0",
+      "bytes": 3406
+    },
+    {
+      "path": "combined_diagnostic_report.md",
+      "sha256": "2fa1423de8ab8e3a062a64005177417b90d3228c4ed3e2f4b6ecc73bc780c19c",
+      "bytes": 3912
+    }
+  ],
+  "totals": {
+    "calls": 7,
+    "tokensIn": 8156,
+    "tokensOut": 6826,
+    "estimatedUsd": 0.0317145,
+    "providerUsd": 0.0317145,
+    "images": 3,
+    "imagesSucceeded": 3,
+    "imagesFailed": 0,
+    "series": 3
+  },
+  "exitCode": 0,
+  "warnings": [
+    "input-integrity: 3 image(s) matched --expect-hashes.",
+    "input-guard [image-metadata] series_1/00000086_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/00000086_001.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/00000086_002.png: png:tIME — stripped before upload",
+    "measurement-probe: 3 absolute size claim(s) in generated text. PNG/JPEG inputs carry no pixel spacing, so these are model estimates, not measurements; verify against the image.",
+    "measurement-probe [absolute-size] image series_2/00000086_001.png: \"4 cm\" — \"vilinear, rim-calcified lesion measuring approximately 3 to 4 cm in diameter is seen in the right mid-to-lower perihilar lung region.\"",
+    "measurement-probe [absolute-size] series series_2: \"4 cm\" — \"hilar/mid-to-lower lung field, measuring approximately 3 to 4 cm in diameter. The appearance favors a benign, chronic, or healed etiology. - **Pleura and Diaphr...\"",
+    "measurement-probe [absolute-size] series series_2: \"4 cm\" — \"fined curvilinear, rim-calcified lesion measuring roughly 3-4 cm in the right mid-to-lower perihilar lung region.\""
+  ],
+  "humanReview": {
+    "required": true,
+    "reviewedBy": null
+  },
+  "prevManifestHash": null,
+  "manifestHash": "6f098c7298c64b96d2f2a77a98062c15327c8159efdf791e03ce3c341a74e360"
+}

@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_2/img_14_00006587_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs demonstrate mild linear atelectasis and consolidation in the right lower lobe. The cardiomediastinal silhouette is normal in size. The hila are unremarkable. The osseous structures are unremarkable.\",\n    \"Lung volumes are slightly low.\",\n    \"The heart size is unremarkable.\",\n    \"There is no pleural effusion or pneumothorax identified.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"Chest X-ray shows some minor issues. There is a small area of lung collapse (atelectasis) and a small area of infection or inflammation (consolidation) in the lower part of the right lung. The heart looks normal, and there's no fluid around the lungs or any collapsed lung on the left side. The bones appear fine.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/atelectasis\",\n    \"https://www.radiologyinfo.org/en/info/consolidation-chest-x-ray\",\n    \"https://www.radiologyinfo.org/en/info/pneumonia-chest-x-ray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs demonstrate mild linear atelectasis and consolidation in the right lower lobe. The cardiomediastinal silhouette is normal in size. The hila are unremarkable. The osseous structures are unremarkable.",
+    "Lung volumes are slightly low.",
+    "The heart size is unremarkable.",
+    "There is no pleural effusion or pneumothorax identified."
+  ],
+  "abnormalities": [],
+  "summary": "Chest X-ray shows some minor issues. There is a small area of lung collapse (atelectasis) and a small area of infection or inflammation (consolidation) in the lower part of the right lung. The heart looks normal, and there's no fluid around the lungs or any collapsed lung on the left side. The bones appear fine.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/atelectasis",
+    "https://www.radiologyinfo.org/en/info/consolidation-chest-x-ray",
+    "https://www.radiologyinfo.org/en/info/pneumonia-chest-x-ray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 378969,
+    "bytesOut": 296379,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:12:29.088Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

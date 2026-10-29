@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000086/series_3/00000086_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Evidence of an old right posterior rib fracture.\",\n    \"A pacemaker or similar cardiac device is noted in the left supraclavicular region, with leads projecting towards the heart.\",\n    \"Prominent interstitial markings in the right lower lung field, with associated volume loss and elevation of the right hemidiaphragm, suggesting atelectasis or chronic inflammatory changes.\",\n    \"A cavitary lesion or significant bronchiectatic changes are noted in the right mid-to-lower lung field.\",\n    \"The left lung appears clear without focal consolidation or pleural effusion.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"No definite pleural effusions or pneumothorax.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Lung Abnormalities\",\n      \"description\": \"Right lower lobe exhibits prominent interstitial markings, volume loss, and elevation of the right hemidiaphragm. Additionally, a cavitary lesion or severe bronchiectasis is present in the right mid-to-lower lung field. These findings are suggestive of chronic inflammatory changes, atelectasis, or an old infectious process.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Cardiac Device\",\n      \"description\": \"A cardiac device (likely a pacemaker or ICD) is present in the left supraclavicular region, with leads extending into the chest.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Old Rib Fracture\",\n      \"description\": \"Evidence of an old fracture is noted in the right posterior rib, likely a healed injury.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The chest X-ray shows changes in the lower part of the right lung, including some scarring or collapse of lung tissue and a notable abnormal pocket or dilated airways. These findings suggest a chronic issue, possibly from a past infection or inflammation. There is also a cardiac device (like a pacemaker) implanted in the left shoulder area, and signs of an old, healed rib fracture on the right side. The rest of the lungs and the heart appear normal on this X-ray. It is important to understand that 'cavitary lesion' refers to a hollow space within the lung, which can be due to various causes, and 'bronchiectasis' means widening of the airways, often due to infection or inflammation.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2017160098\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3586088/\",\n    \"https://www.acc.org/latest-in-cardiology/articles/2021/08/17/12/32/imaging-of-cardiac-implantable-electronic-devices\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Evidence of an old right posterior rib fracture.",
+    "A pacemaker or similar cardiac device is noted in the left supraclavicular region, with leads projecting towards the heart.",
+    "Prominent interstitial markings in the right lower lung field, with associated volume loss and elevation of the right hemidiaphragm, suggesting atelectasis or chronic inflammatory changes.",
+    "A cavitary lesion or significant bronchiectatic changes are noted in the right mid-to-lower lung field.",
+    "The left lung appears clear without focal consolidation or pleural effusion.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "No definite pleural effusions or pneumothorax."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Lung Abnormalities",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Right lower lobe exhibits prominent interstitial markings, volume loss, and elevation of the right hemidiaphragm. Additionally, a cavitary lesion or severe bronchiectasis is present in the right mid-to-lower lung field. These findings are suggestive of chronic inflammatory changes, atelectasis, or an old infectious process."
+    },
+    {
+      "name": "Cardiac Device",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A cardiac device (likely a pacemaker or ICD) is present in the left supraclavicular region, with leads extending into the chest."
+    },
+    {
+      "name": "Old Rib Fracture",
+      "severity": "Normal",
+      "confidence": 80,
+      "description": "Evidence of an old fracture is noted in the right posterior rib, likely a healed injury."
+    }
+  ],
+  "summary": "The chest X-ray shows changes in the lower part of the right lung, including some scarring or collapse of lung tissue and a notable abnormal pocket or dilated airways. These findings suggest a chronic issue, possibly from a past infection or inflammation. There is also a cardiac device (like a pacemaker) implanted in the left shoulder area, and signs of an old, healed rib fracture on the right side. The rest of the lungs and the heart appear normal on this X-ray. It is important to understand that 'cavitary lesion' refers to a hollow space within the lung, which can be due to various causes, and 'bronchiectasis' means widening of the airways, often due to infection or inflammation.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2017160098",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3586088/",
+    "https://www.acc.org/latest-in-cardiology/articles/2021/08/17/12/32/imaging-of-cardiac-implantable-electronic-devices"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 371103,
+    "bytesOut": 363567,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:05:12.384Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

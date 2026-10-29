@@ -1,0 +1,44 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_3/img_12_00002027_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear visualization of the lungs.\",\n    \"Normal heart size and mediastinal contours.\",\n    \"No pleural effusion or pneumothorax.\",\n    \"Prominent pulmonary vessels, especially in the lower lobes.\",\n    \"Slightly increased opacity in the right lower lobe.\",\n    \"Normal bony structures.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray shows clear lungs and heart. There is a slightly increased opacity in the right lower lobe, which may represent atelectasis or early consolidation. The pulmonary vessels appear slightly prominent. No signs of fluid or air around the lung. The bones look normal.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-x-ray-pa-and-lateral-views\",\n    \"https://www.bmj.com/content/345/7811/334\",\n    \"https://www.rsna.org/imaging/body-ct/chest-ct.csp\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Clear visualization of the lungs.",
+    "Normal heart size and mediastinal contours.",
+    "No pleural effusion or pneumothorax.",
+    "Prominent pulmonary vessels, especially in the lower lobes.",
+    "Slightly increased opacity in the right lower lobe.",
+    "Normal bony structures."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray shows clear lungs and heart. There is a slightly increased opacity in the right lower lobe, which may represent atelectasis or early consolidation. The pulmonary vessels appear slightly prominent. No signs of fluid or air around the lung. The bones look normal.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-x-ray-pa-and-lateral-views",
+    "https://www.bmj.com/content/345/7811/334",
+    "https://www.rsna.org/imaging/body-ct/chest-ct.csp"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 407389,
+    "bytesOut": 315601,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:30:25.909Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

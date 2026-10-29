@@ -1,0 +1,66 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_5/00000239_004.png",
+  "seriesId": "series_5",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest and Abdomen (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary abnormalities identified.\",\n    \"Lungs are clear with no evidence of focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiac silhouette is normal in size and contour.\",\n    \"Diaphragms are intact.\",\n    \"Osseous structures of the thoracic cage and shoulders appear unremarkable.\",\n    \"Multiple surgical clips are noted in the left axillary region, likely related to prior surgery (e.g., sentinel lymph node biopsy or mastectomy).\",\n    \"Multiple surgical clips are also noted in the lower abdomen/pelvis, suggestive of prior abdominal or gynecological surgery.\",\n    \"Several surgical clips are noted in the left upper extremity, potentially related to vascular access or another procedure.\",\n    \"Gas pattern in the abdomen is within normal limits; no evidence of acute bowel obstruction or free air under the diaphragm.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical Clips, Left Axilla\",\n      \"description\": \"Multiple radiopaque surgical clips are visualized in the soft tissues of the left axillary region. These are commonly seen after procedures such as sentinel lymph node biopsy or other breast/axillary surgeries.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Surgical Clips, Abdomen/Pelvis\",\n      \"description\": \"Several radiopaque surgical clips are present in the lower abdominal and pelvic regions. These are consistent with previous abdominal or gynecological surgery.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Surgical Clips, Left Upper Extremity\",\n      \"description\": \"Multiple radiopaque surgical clips are noted in the soft tissues of the left upper arm. These could be related to prior vascular access procedures or other interventions.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The X-ray shows the chest and upper abdomen. The lungs and heart appear healthy. There are no signs of any immediate lung or heart problems. Several small metal clips are visible in the left armpit area, in the lower belly, and on the left arm. These are common findings after previous surgeries and are not usually a cause for concern on an X-ray. The bowels look normal, with no signs of blockages or air where it shouldn't be. Overall, the study does not show any new or urgent issues in the chest or abdomen.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.274075051\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4802099/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest and Abdomen (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary abnormalities identified.",
+    "Lungs are clear with no evidence of focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiac silhouette is normal in size and contour.",
+    "Diaphragms are intact.",
+    "Osseous structures of the thoracic cage and shoulders appear unremarkable.",
+    "Multiple surgical clips are noted in the left axillary region, likely related to prior surgery (e.g., sentinel lymph node biopsy or mastectomy).",
+    "Multiple surgical clips are also noted in the lower abdomen/pelvis, suggestive of prior abdominal or gynecological surgery.",
+    "Several surgical clips are noted in the left upper extremity, potentially related to vascular access or another procedure.",
+    "Gas pattern in the abdomen is within normal limits; no evidence of acute bowel obstruction or free air under the diaphragm."
+  ],
+  "abnormalities": [
+    {
+      "name": "Surgical Clips, Left Axilla",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Multiple radiopaque surgical clips are visualized in the soft tissues of the left axillary region. These are commonly seen after procedures such as sentinel lymph node biopsy or other breast/axillary surgeries."
+    },
+    {
+      "name": "Surgical Clips, Abdomen/Pelvis",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Several radiopaque surgical clips are present in the lower abdominal and pelvic regions. These are consistent with previous abdominal or gynecological surgery."
+    },
+    {
+      "name": "Surgical Clips, Left Upper Extremity",
+      "severity": "Normal",
+      "confidence": 90,
+      "description": "Multiple radiopaque surgical clips are noted in the soft tissues of the left upper arm. These could be related to prior vascular access procedures or other interventions."
+    }
+  ],
+  "summary": "The X-ray shows the chest and upper abdomen. The lungs and heart appear healthy. There are no signs of any immediate lung or heart problems. Several small metal clips are visible in the left armpit area, in the lower belly, and on the left arm. These are common findings after previous surgeries and are not usually a cause for concern on an X-ray. The bowels look normal, with no signs of blockages or air where it shouldn't be. Overall, the study does not show any new or urgent issues in the chest or abdomen.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.274075051",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4802099/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 427509,
+    "bytesOut": 425196,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:08:22.227Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

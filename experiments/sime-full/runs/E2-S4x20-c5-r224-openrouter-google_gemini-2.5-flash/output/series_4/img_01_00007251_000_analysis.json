@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_4/img_01_00007251_000.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pneumothorax, or large pleural effusion.\",\n    \"Cardiomediastinal silhouette appears normal in size and contour.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"Bony thorax appears unremarkable.\",\n    \"There is a small artifact noted superior to the right shoulder, likely external.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray shows no significant abnormalities in the lungs, heart, or surrounding structures. The images appear clear with no signs of pneumonia, collapsed lung, or fluid around the lungs. The bones in the chest also look normal. There is a small object visible near the right shoulder, but it is external to the body and not related to the chest itself.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2020200057\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7323891/\",\n    \"https://radiologykey.com/chest-x-ray-interpretation/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pneumothorax, or large pleural effusion.",
+    "Cardiomediastinal silhouette appears normal in size and contour.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "Bony thorax appears unremarkable.",
+    "There is a small artifact noted superior to the right shoulder, likely external."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows no significant abnormalities in the lungs, heart, or surrounding structures. The images appear clear with no signs of pneumonia, collapsed lung, or fluid around the lungs. The bones in the chest also look normal. There is a small object visible near the right shoulder, but it is external to the body and not related to the chest itself.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2020200057",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7323891/",
+    "https://radiologykey.com/chest-x-ray-interpretation/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22191,
+    "bytesOut": 22191,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:02:19.913Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

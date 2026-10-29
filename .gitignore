@@ -57,6 +57,10 @@ experiments/sime2026/runs/**/stderr.txt
 # working directories; the run archive's per-run output/ trees are evidence.
 !experiments/sime2026/runs/*/output/
 !experiments/sime2026/runs/*/input/
+# The follow-up experiment's per-run model outputs and sealed manifests are
+# evidence too (experiments/sime-full/RESULTS.md, analyze.ts); images are not
+# committed, so only output/ is re-included.
+!experiments/sime-full/runs/*/output/
 experiments/sime2026/*.csv
 experiments/sime2026/*.csv.gz
 experiments/sime2026/batch-resume.log

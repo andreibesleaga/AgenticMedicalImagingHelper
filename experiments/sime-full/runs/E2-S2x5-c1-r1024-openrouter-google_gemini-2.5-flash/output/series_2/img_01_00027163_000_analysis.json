@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S2x5/series_2/img_01_00027163_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Mild cardiomegaly with a cardiothoracic ratio estimated to be at the upper limits of normal or mildly elevated.\",\n    \"Prominent bilateral interstitial markings, particularly in the lower lung zones, suggestive of interstitial disease or pulmonary edema.\",\n    \"Costophrenic angles appear clear bilaterally, though there is some blunting of the right costophrenic angle.\",\n    \"Diaphragms are appropriately contoured, with the right hemidiaphragm slightly higher than the left, which is a normal variant.\",\n    \"Bilateral clavicles, scapulae, and visualized ribs are intact and demonstrate no acute bony abnormalities.\",\n    \"Soft tissues are unremarkable.\",\n    \"No evidence of pneumothorax or significant pleural effusion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette is mildly enlarged, with an estimated cardiothoracic ratio at the upper limits of normal or mildly elevated, which could suggest cardiac pathology.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Interstitial Lung Markings\",\n      \"description\": \"Increased interstitial markings are noted bilaterally, especially in the lower lung fields, which may indicate interstitial lung disease, early pulmonary edema, or fibrotic changes.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    },\n    {\n      \"name\": \"Right Costophrenic Angle Blunting\",\n      \"description\": \"Mild blunting of the right costophrenic angle is observed, which could be due to a small amount of pleural fluid, pleural thickening, or an anatomical variant.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 70\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that your heart appears mildly enlarged. This is called cardiomegaly (kar-dee-oh-MEG-ah-lee), meaning the heart is bigger than expected. There are also increased markings in both lungs, especially in the lower parts, which could suggest changes in the lung tissue itself (interstitial lung disease) or possibly early fluid accumulation (pulmonary edema). The angle where your right diaphragm meets your ribs appears slightly blunted, which might be due to a small amount of fluid or thickening of the lining of the lung. Further evaluation may be needed to determine the cause of these findings.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.330890069\",\n    \"https://radiopaedia.org/articles/cardiomegaly-1?lang=us\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6658937/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Mild cardiomegaly with a cardiothoracic ratio estimated to be at the upper limits of normal or mildly elevated.",
+    "Prominent bilateral interstitial markings, particularly in the lower lung zones, suggestive of interstitial disease or pulmonary edema.",
+    "Costophrenic angles appear clear bilaterally, though there is some blunting of the right costophrenic angle.",
+    "Diaphragms are appropriately contoured, with the right hemidiaphragm slightly higher than the left, which is a normal variant.",
+    "Bilateral clavicles, scapulae, and visualized ribs are intact and demonstrate no acute bony abnormalities.",
+    "Soft tissues are unremarkable.",
+    "No evidence of pneumothorax or significant pleural effusion."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "The cardiac silhouette is mildly enlarged, with an estimated cardiothoracic ratio at the upper limits of normal or mildly elevated, which could suggest cardiac pathology."
+    },
+    {
+      "name": "Interstitial Lung Markings",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Increased interstitial markings are noted bilaterally, especially in the lower lung fields, which may indicate interstitial lung disease, early pulmonary edema, or fibrotic changes."
+    },
+    {
+      "name": "Right Costophrenic Angle Blunting",
+      "severity": "Mild",
+      "confidence": 70,
+      "description": "Mild blunting of the right costophrenic angle is observed, which could be due to a small amount of pleural fluid, pleural thickening, or an anatomical variant."
+    }
+  ],
+  "summary": "The chest X-ray shows that your heart appears mildly enlarged. This is called cardiomegaly (kar-dee-oh-MEG-ah-lee), meaning the heart is bigger than expected. There are also increased markings in both lungs, especially in the lower parts, which could suggest changes in the lung tissue itself (interstitial lung disease) or possibly early fluid accumulation (pulmonary edema). The angle where your right diaphragm meets your ribs appears slightly blunted, which might be due to a small amount of fluid or thickening of the lining of the lung. Further evaluation may be needed to determine the cause of these findings.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.330890069",
+    "https://radiopaedia.org/articles/cardiomegaly-1?lang=us",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6658937/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 396187,
+    "bytesOut": 393609,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:32:44.651Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,67 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_3/00000092_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Scoliosis of the thoracic spine.\",\n    \"Bilateral pleural effusions, left greater than right.\",\n    \"Cardiomegaly with bilateral pulmonary vascular congestion.\",\n    \"Foreign bodies in the lower abdomen/pelvis.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Scoliosis\",\n      \"description\": \"Lateral curvature of the thoracic spine.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Bilateral blunting of the costophrenic angles, suggesting fluid accumulation. The effusion on the left appears larger than on the right.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlarged heart size relative to the thoracic cavity, often indicative of underlying cardiovascular issues.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Foreign Bodies\",\n      \"description\": \"Radio-opaque objects visible in the lower abdomen/pelvic region, likely outside the gastrointestinal tract.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a lateral curvature of the spine (scoliosis). There is evidence of fluid buildup in the space around the lungs (pleural effusions) on both sides, with more fluid on the left. The heart appears enlarged (cardiomegaly), and there are signs of increased blood flow or congestion in the lungs. Additionally, there are unidentified radio-opaque objects in the lower abdomen/pelvis area, which may warrant further investigation depending on clinical context.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/scoliosis\",\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/cardiomegaly\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Scoliosis of the thoracic spine.",
+    "Bilateral pleural effusions, left greater than right.",
+    "Cardiomegaly with bilateral pulmonary vascular congestion.",
+    "Foreign bodies in the lower abdomen/pelvis."
+  ],
+  "abnormalities": [
+    {
+      "name": "Scoliosis",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Lateral curvature of the thoracic spine."
+    },
+    {
+      "name": "Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Bilateral blunting of the costophrenic angles, suggesting fluid accumulation. The effusion on the left appears larger than on the right."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Enlarged heart size relative to the thoracic cavity, often indicative of underlying cardiovascular issues."
+    },
+    {
+      "name": "Foreign Bodies",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Radio-opaque objects visible in the lower abdomen/pelvic region, likely outside the gastrointestinal tract."
+    }
+  ],
+  "summary": "The chest X-ray shows a lateral curvature of the spine (scoliosis). There is evidence of fluid buildup in the space around the lungs (pleural effusions) on both sides, with more fluid on the left. The heart appears enlarged (cardiomegaly), and there are signs of increased blood flow or congestion in the lungs. Additionally, there are unidentified radio-opaque objects in the lower abdomen/pelvis area, which may warrant further investigation depending on clinical context.",
+  "references": [
+    "https://radiopaedia.org/articles/scoliosis",
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/cardiomegaly"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 400591,
+    "bytesOut": 397542,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:19:45.872Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

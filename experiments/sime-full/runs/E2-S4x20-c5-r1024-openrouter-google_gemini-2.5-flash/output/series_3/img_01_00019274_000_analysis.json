@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_3/img_01_00019274_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Metallic sternal wires are present, indicating prior sternotomy.\",\n    \"Lung fields are clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Bony thorax appears intact; however, detailed evaluation for subtle fractures is limited on this view.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Sternal Wires\",\n      \"description\": \"Multiple metallic sternal wires are visible in the midline, consistent with prior median sternotomy.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows that the lungs appear clear and healthy, and the heart's size and shape are normal. There are metallic wires visible in the breastbone (sternum), which is a common finding after a surgical procedure where the breastbone was opened and then closed, like open-heart surgery. This is an expected finding and does not indicate a new problem.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.274065096\",\n    \"https://radiopaedia.org/articles/sternotomy-wires\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7017260/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Metallic sternal wires are present, indicating prior sternotomy.",
+    "Lung fields are clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Bony thorax appears intact; however, detailed evaluation for subtle fractures is limited on this view."
+  ],
+  "abnormalities": [
+    {
+      "name": "Sternal Wires",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Multiple metallic sternal wires are visible in the midline, consistent with prior median sternotomy."
+    }
+  ],
+  "summary": "This X-ray of the chest shows that the lungs appear clear and healthy, and the heart's size and shape are normal. There are metallic wires visible in the breastbone (sternum), which is a common finding after a surgical procedure where the breastbone was opened and then closed, like open-heart surgery. This is an expected finding and does not indicate a new problem.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.274065096",
+    "https://radiopaedia.org/articles/sternotomy-wires",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7017260/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 430740,
+    "bytesOut": 430293,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:46:16.659Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

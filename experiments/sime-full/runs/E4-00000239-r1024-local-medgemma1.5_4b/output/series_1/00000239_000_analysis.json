@@ -1,0 +1,40 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_1/00000239_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bones: Lung fields are clear. No acute bony abnormalities are seen.\",\n    \"Heart: Heart size is normal.\",\n    \"Lungs: Lung volumes appear normal. No parenchymal consolidation is seen.\",\n    \"Other mediastinal structures: Mediastinal contours are normal.\",\n    \"Soft tissues: Soft tissues are unremarkable.\",\n    \"Abdomen: The visualized upper abdomen appears normal.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This is a chest X-ray image. The lungs appear clear, heart size is normal, and there are no visible issues in the mediastinum or surrounding structures. No significant abnormalities like pneumonia or fluid are identified.\",\n  \"references\": []\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Bones: Lung fields are clear. No acute bony abnormalities are seen.",
+    "Heart: Heart size is normal.",
+    "Lungs: Lung volumes appear normal. No parenchymal consolidation is seen.",
+    "Other mediastinal structures: Mediastinal contours are normal.",
+    "Soft tissues: Soft tissues are unremarkable.",
+    "Abdomen: The visualized upper abdomen appears normal."
+  ],
+  "abnormalities": [],
+  "summary": "This is a chest X-ray image. The lungs appear clear, heart size is normal, and there are no visible issues in the mediastinum or surrounding structures. No significant abnormalities like pneumonia or fluid are identified.",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 384310,
+    "bytesOut": 300445,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:05:56.276Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

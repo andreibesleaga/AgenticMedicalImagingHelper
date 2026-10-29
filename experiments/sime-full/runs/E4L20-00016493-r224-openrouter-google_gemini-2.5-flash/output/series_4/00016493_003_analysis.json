@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00016493/series_4/00016493_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Presence of a foreign body in the abdomen, consistent with a gastric balloon.\",\n    \"Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiac silhouette is normal in size and contour.\",\n    \"Bony thorax appears intact without acute fracture or aggressive lesion.\",\n    \"Diaphragms are intact and well-defined.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Gastric Balloon\",\n      \"description\": \"A metallic ring-like foreign body is visualized in the upper abdomen, consistent with a gastric balloon placement.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows that your lungs and heart appear normal. There is a gastric balloon visible in your upper abdomen, which is an expected finding if you have had one placed for weight loss. There are no signs of any lung disease, fluid around the lungs, or broken bones.\",\n  \"references\": [\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://pubs.rsna.org/journal/radiology\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900600/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Presence of a foreign body in the abdomen, consistent with a gastric balloon.",
+    "Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiac silhouette is normal in size and contour.",
+    "Bony thorax appears intact without acute fracture or aggressive lesion.",
+    "Diaphragms are intact and well-defined."
+  ],
+  "abnormalities": [
+    {
+      "name": "Gastric Balloon",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A metallic ring-like foreign body is visualized in the upper abdomen, consistent with a gastric balloon placement."
+    }
+  ],
+  "summary": "The X-ray of your chest shows that your lungs and heart appear normal. There is a gastric balloon visible in your upper abdomen, which is an expected finding if you have had one placed for weight loss. There are no signs of any lung disease, fluid around the lungs, or broken bones.",
+  "references": [
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiology",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900600/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21372,
+    "bytesOut": 21372,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:26:51.191Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

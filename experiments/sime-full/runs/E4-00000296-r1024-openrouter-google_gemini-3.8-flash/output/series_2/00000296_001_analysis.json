@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000296/series_2/00000296_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A radiopaque small-bore pigtail catheter is noted over the left hemithorax, with its coiled tip projecting in the left upper zone and the catheter shaft coursing inferiorly.\",\n    \"Lungs are fully expanded without evidence of acute focal consolidation, discrete pulmonary mass, or remaining pneumothorax.\",\n    \"Pleural spaces are clear with sharp bilateral costophrenic angles; no significant pleural effusion is visualized.\",\n    \"The cardiomediastinal silhouette, aortic contour, and hila are within normal limits for size and configuration.\",\n    \"Visualized osseous structures of the thorax, ribs, and clavicles show no acute fracture or suspicious osteolytic lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Thoracic pigtail catheter\",\n      \"description\": \"A pigtail drainage catheter is positioned in the left hemithorax, commonly placed for treatment of pneumothorax or pleural fluid evacuation, with fully expanded underlying lung parenchyma.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 92\n    }\n  ],\n  \"summary\": \"The chest X-ray demonstrates a small drainage tube (pigtail catheter) situated in the left side of the chest, likely placed to treat an air leak (pneumothorax) or fluid collection. The left lung is now fully expanded, and there are no signs of active pneumonia, significant residual fluid, or heart enlargement.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pigtail-catheter\",\n    \"https://pubs.rsna.org/doi/10.1148/rg.2016150165\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "A radiopaque small-bore pigtail catheter is noted over the left hemithorax, with its coiled tip projecting in the left upper zone and the catheter shaft coursing inferiorly.",
+    "Lungs are fully expanded without evidence of acute focal consolidation, discrete pulmonary mass, or remaining pneumothorax.",
+    "Pleural spaces are clear with sharp bilateral costophrenic angles; no significant pleural effusion is visualized.",
+    "The cardiomediastinal silhouette, aortic contour, and hila are within normal limits for size and configuration.",
+    "Visualized osseous structures of the thorax, ribs, and clavicles show no acute fracture or suspicious osteolytic lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Thoracic pigtail catheter",
+      "severity": "Mild",
+      "confidence": 92,
+      "description": "A pigtail drainage catheter is positioned in the left hemithorax, commonly placed for treatment of pneumothorax or pleural fluid evacuation, with fully expanded underlying lung parenchyma."
+    }
+  ],
+  "summary": "The chest X-ray demonstrates a small drainage tube (pigtail catheter) situated in the left side of the chest, likely placed to treat an air leak (pneumothorax) or fluid collection. The left lung is now fully expanded, and there are no signs of active pneumonia, significant residual fluid, or heart enlargement.",
+  "references": [
+    "https://radiopaedia.org/articles/pigtail-catheter",
+    "https://pubs.rsna.org/doi/10.1148/rg.2016150165"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 415316,
+    "bytesOut": 413672,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:27:14.564Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,48 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_3/00000148_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear. The heart size is normal. The mediastinum is unremarkable. The bony structures are intact. There is a right-sided central venous catheter.\",\n    \"Right lung: There is a nodular mass measuring approximately 2.0 x 1.9 cm.\",\n    \"Left lung: Clear.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Nodular mass\",\n      \"description\": \"A nodular mass is seen in the right lung periphery, measuring approximately 2.0 x 1.9 cm. The appearance is consistent with a neoplasm.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"Chest X-ray shows a nodular mass in the right lung. This finding needs further evaluation. The lungs are otherwise clear. The heart and mediastinum are normal.\",\n  \"references\": [\n    \"https://pubmed.ncbi.nlm.nih.gov/27544756/\",\n    \"https://radiologykey.com/chest-xray-interpretation-nodule/\",\n    \"https://radiologyinfo.org/en/case/10506312/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear. The heart size is normal. The mediastinum is unremarkable. The bony structures are intact. There is a right-sided central venous catheter.",
+    "Right lung: There is a nodular mass measuring approximately 2.0 x 1.9 cm.",
+    "Left lung: Clear."
+  ],
+  "abnormalities": [
+    {
+      "name": "Nodular mass",
+      "severity": "Moderate",
+      "confidence": 100,
+      "description": "A nodular mass is seen in the right lung periphery, measuring approximately 2.0 x 1.9 cm. The appearance is consistent with a neoplasm."
+    }
+  ],
+  "summary": "Chest X-ray shows a nodular mass in the right lung. This finding needs further evaluation. The lungs are otherwise clear. The heart and mediastinum are normal.",
+  "references": [
+    "https://pubmed.ncbi.nlm.nih.gov/27544756/",
+    "https://radiologykey.com/chest-xray-interpretation-nodule/",
+    "https://radiologyinfo.org/en/case/10506312/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 453156,
+    "bytesOut": 345726,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T09:54:16.419Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

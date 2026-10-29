@@ -1,0 +1,61 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00015863/series_3/00015863_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Multiple bilateral pulmonary nodules.\",\n    \"Right pleural effusion.\",\n    \"The lungs demonstrate diffuse opacities and consolidations.\",\n    \"Right-sided central venous catheter is present.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pulmonary nodules\",\n      \"description\": \"Multiple bilateral pulmonary nodules of varying sizes, predominantly noted in the right lung.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 0\n    },\n    {\n      \"name\": \"Pleural effusion\",\n      \"description\": \"Right pleural effusion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 0\n    },\n    {\n      \"name\": \"Pulmonary consolidation\",\n      \"description\": \"Diffuse bilateral pulmonary opacities and consolidations.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 0\n    }\n  ],\n  \"summary\": \"The chest X-ray shows multiple rounded shadow-like densities throughout both lungs, mostly on the right side. There is also a noticeable fluid collection in the right side of the chest. The lung tissue appears hazy and unclear overall. A tube is visible going into the upper right side of the chest.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pulmonary-nodules\",\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/pulmonary-consolidation\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Fair",
+  "findings": [
+    "Multiple bilateral pulmonary nodules.",
+    "Right pleural effusion.",
+    "The lungs demonstrate diffuse opacities and consolidations.",
+    "Right-sided central venous catheter is present."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pulmonary nodules",
+      "severity": "Moderate",
+      "confidence": 0,
+      "description": "Multiple bilateral pulmonary nodules of varying sizes, predominantly noted in the right lung."
+    },
+    {
+      "name": "Pleural effusion",
+      "severity": "Moderate",
+      "confidence": 0,
+      "description": "Right pleural effusion."
+    },
+    {
+      "name": "Pulmonary consolidation",
+      "severity": "Severe",
+      "confidence": 0,
+      "description": "Diffuse bilateral pulmonary opacities and consolidations."
+    }
+  ],
+  "summary": "The chest X-ray shows multiple rounded shadow-like densities throughout both lungs, mostly on the right side. There is also a noticeable fluid collection in the right side of the chest. The lung tissue appears hazy and unclear overall. A tube is visible going into the upper right side of the chest.",
+  "references": [
+    "https://radiopaedia.org/articles/pulmonary-nodules",
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/pulmonary-consolidation"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 348361,
+    "bytesOut": 271286,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T09:39:07.907Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

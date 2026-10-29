@@ -1,0 +1,39 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00003980/series_4/00003980_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lung fields are clear.\",\n    \"Heart size is normal.\",\n    \"Mediastinum is unremarkable.\",\n    \"Bones appear intact.\",\n    \"Left shoulder orthopedic hardware is present.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray shows normal lung fields, heart size, and mediastinum. The bones appear intact, and there is hardware visible in the left shoulder.\",\n  \"references\": []\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lung fields are clear.",
+    "Heart size is normal.",
+    "Mediastinum is unremarkable.",
+    "Bones appear intact.",
+    "Left shoulder orthopedic hardware is present."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray shows normal lung fields, heart size, and mediastinum. The bones appear intact, and there is hardware visible in the left shoulder.",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24312,
+    "bytesOut": 24312,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:28:47.583Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

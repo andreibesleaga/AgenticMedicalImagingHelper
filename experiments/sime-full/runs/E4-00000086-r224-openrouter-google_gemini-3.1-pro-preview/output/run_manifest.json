@@ -1,0 +1,185 @@
+{
+  "manifestVersion": "1.0",
+  "toolVersion": "1.1.0",
+  "startedAt": "2026-09-29T10:31:14.924Z",
+  "finishedAt": "2026-09-29T10:32:44.599Z",
+  "provider": "openrouter",
+  "model": "google/gemini-3.1-pro-preview",
+  "pricing": {
+    "inputUsdPerMillion": 2,
+    "outputUsdPerMillion": 12
+  },
+  "settings": {
+    "concurrency": 1,
+    "maxCostUsd": 1,
+    "retries": 3,
+    "imageQuality": "auto"
+  },
+  "inputDir": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000086",
+  "outputDir": "/home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4-00000086-r224-openrouter-google_gemini-3.1-pro-preview/output",
+  "inputs": [
+    {
+      "path": "series_1/00000086_000.png",
+      "sha256": "496ac6be08024bd802ef0b9f07e523834f4420e321ebd13b1cf03fc48c433abf",
+      "bytes": 22312
+    },
+    {
+      "path": "series_2/00000086_001.png",
+      "sha256": "696e0a6ecd5d73add8b753c6cbb7a8c378659aa53819b5f02572052e9fb8c211",
+      "bytes": 39203
+    },
+    {
+      "path": "series_3/00000086_002.png",
+      "sha256": "d82348984e1a7e3f8727348585989e5c5d4d2fd22562fe469d18269c2feac696",
+      "bytes": 23353
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "patient_context.txt",
+      "sha256": "a7aa1cfae841162e90d925029cbffef581f70823c09a3c5d09e535b50fbe5e64",
+      "bytes": 357
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:31:42.944Z",
+      "tokensIn": 1492,
+      "tokensOut": 2893,
+      "estimatedUsd": 0.037700000000000004,
+      "providerUsd": 0.0377,
+      "retries": 0
+    },
+    {
+      "index": 2,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:31:47.230Z",
+      "tokensIn": 1492,
+      "tokensOut": 154,
+      "estimatedUsd": 0.004831999999999996,
+      "providerUsd": 0.004832000000000003,
+      "retries": 0
+    },
+    {
+      "index": 3,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:31:51.216Z",
+      "tokensIn": 1492,
+      "tokensOut": 218,
+      "estimatedUsd": 0.005600000000000001,
+      "providerUsd": 0.005600000000000001,
+      "retries": 0
+    },
+    {
+      "index": 4,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:32:08.853Z",
+      "tokensIn": 882,
+      "tokensOut": 2086,
+      "estimatedUsd": 0.026795999999999993,
+      "providerUsd": 0.026795999999999993,
+      "retries": 0
+    },
+    {
+      "index": 5,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:32:16.738Z",
+      "tokensIn": 480,
+      "tokensOut": 1036,
+      "estimatedUsd": 0.013392000000000015,
+      "providerUsd": 0.013392000000000001,
+      "retries": 0
+    },
+    {
+      "index": 6,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:32:27.900Z",
+      "tokensIn": 544,
+      "tokensOut": 1104,
+      "estimatedUsd": 0.014335999999999988,
+      "providerUsd": 0.014336000000000002,
+      "retries": 0
+    },
+    {
+      "index": 7,
+      "stage": "evolution",
+      "timestamp": "2026-09-29T10:32:44.520Z",
+      "tokensIn": 946,
+      "tokensOut": 2140,
+      "estimatedUsd": 0.027572000000000013,
+      "providerUsd": 0.027572000000000013,
+      "retries": 0
+    }
+  ],
+  "outputs": [
+    {
+      "path": "series_1/00000086_000_analysis.json",
+      "sha256": "f87ac475d9115f2147b1889eb81462d99065d6580fbe82f8b47e85c709cd0ee1",
+      "bytes": 5452
+    },
+    {
+      "path": "series_2/00000086_001_analysis.json",
+      "sha256": "f2fd0bd606759e24eca231dbfbbc876c1458a74846568cf88cb0eea42298bc88",
+      "bytes": 1867
+    },
+    {
+      "path": "series_3/00000086_002_analysis.json",
+      "sha256": "2502b5be3fd268c01d17146d0da6f7932c57a17d750575252dee49832693a016",
+      "bytes": 2409
+    },
+    {
+      "path": "series_1/series_summary.md",
+      "sha256": "d0e27ff897bdf6acea24841caf15539c6f8d28d6b53f9a2c00635a3507464418",
+      "bytes": 3218
+    },
+    {
+      "path": "series_2/series_summary.md",
+      "sha256": "aec4f7aa6d851c7aa29bb9ee4c45b71301b2dada6874ab4f617bdb6405205457",
+      "bytes": 1612
+    },
+    {
+      "path": "series_3/series_summary.md",
+      "sha256": "e1bfb3795b05d534a90fc5a3d63bc8add3af91ccdbef1ab88baf55c1c9a70ce8",
+      "bytes": 1829
+    },
+    {
+      "path": "evolution_analysis.json",
+      "sha256": "df81c461eaed9c36a4b55a0ec4452746ab4166366b99afd66bee6d8183967a4a",
+      "bytes": 3336
+    },
+    {
+      "path": "combined_diagnostic_report.md",
+      "sha256": "96609dafc384a85a7547c61d449b1ec319dbdcfbe56ea0ae2db425f6c40635d7",
+      "bytes": 3791
+    }
+  ],
+  "totals": {
+    "calls": 7,
+    "tokensIn": 7328,
+    "tokensOut": 9631,
+    "estimatedUsd": 0.130228,
+    "providerUsd": 0.130228,
+    "images": 3,
+    "imagesSucceeded": 3,
+    "imagesFailed": 0,
+    "series": 3
+  },
+  "exitCode": 0,
+  "warnings": [
+    "input-integrity: 3 image(s) matched --expect-hashes.",
+    "measurement-probe: 5 absolute size claim(s) in generated text. PNG/JPEG inputs carry no pixel spacing, so these are model estimates, not measurements; verify against the image.",
+    "measurement-probe [absolute-size] image series_1/00000086_000.png: \"4 cm\" — \"cent (cystic or cavitary) lesion, measuring approximately 3-4 cm in diameter, with some overlapping curvilinear linear densities.\"",
+    "measurement-probe [absolute-size] series series_1: \"4 cm\" — \"lesion in the right mid-lung zone measuring approximately 3-4 cm in diameter, consistent with a cavity, cyst, or bulla. Additionally, there is heterogeneous opa...\"",
+    "measurement-probe [absolute-size] series series_1: \"4 cm\" — \"ucent (cystic or cavitary) lesion measuring approximately 3-4 cm in the right mid-lung zone.\"",
+    "measurement-probe [absolute-size] evolution: \"4 cm\" — \"rogression * **Right Mid-lung Cavitary/Cystic Lesion:** A 3-4 cm radiolucent lesion was noted in series 1. This completely resolved by series 2 and remained abs...\"",
+    "measurement-probe [absolute-size] evolution: \"4 cm\" — \"Right mid-lung cavitary/cystic lesion: A 3-4 cm radiolucent lesion was identified in series 1, completely resolved by series 2, and remained absent in series 3....\""
+  ],
+  "humanReview": {
+    "required": true,
+    "reviewedBy": null
+  },
+  "prevManifestHash": null,
+  "manifestHash": "58d3bc8c6b06aaecfc748bc010f6e94a431306b25b04b885f45c4f2979b628f1"
+}

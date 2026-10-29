@@ -1,0 +1,44 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_2/img_17_00015628_002.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear bilaterally.\",\n    \"The heart size is within normal limits.\",\n    \"The mediastinal contours are unremarkable.\",\n    \"The visualized osseous structures are intact.\",\n    \"There is no pleural effusion or pneumothorax.\",\n    \"There is a small right pleural effusion.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray shows no acute issues. The lungs appear clear, the heart and major vessels are normal, and there are no signs of infection or collapse. A small amount of fluid is seen in the space next to the right lung (right pleural effusion).\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/education/chest-x-ray\",\n    \"https://www.uptodate.com/topics/chest-x-ray-interpretation\",\n    \"https://radiopaedia.org/articles/chest-x-ray-technique\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear bilaterally.",
+    "The heart size is within normal limits.",
+    "The mediastinal contours are unremarkable.",
+    "The visualized osseous structures are intact.",
+    "There is no pleural effusion or pneumothorax.",
+    "There is a small right pleural effusion."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows no acute issues. The lungs appear clear, the heart and major vessels are normal, and there are no signs of infection or collapse. A small amount of fluid is seen in the space next to the right lung (right pleural effusion).",
+  "references": [
+    "https://www.radiologyinfo.org/en/education/chest-x-ray",
+    "https://www.uptodate.com/topics/chest-x-ray-interpretation",
+    "https://radiopaedia.org/articles/chest-x-ray-technique"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 450091,
+    "bytesOut": 342675,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:12:47.555Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

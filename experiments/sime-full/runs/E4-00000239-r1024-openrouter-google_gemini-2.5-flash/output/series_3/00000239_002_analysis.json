@@ -1,0 +1,65 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_3/00000239_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest and Abdomen (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiac silhouette is normal in size and contour.\",\n    \"Mediastinum is unremarkable.\",\n    \"Bony thorax appears intact.\",\n    \"Multiple surgical clips are noted in the left upper quadrant, likely consistent with a prior cholecystectomy or other abdominal surgery.\",\n    \"Several surgical clips are also seen in the lower abdomen/pelvis.\",\n    \"A left-sided port-a-cath is present with its tip projecting over the superior vena cava.\",\n    \"No acute intrathoracic abnormality.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical Clips (Left Upper Quadrant)\",\n      \"description\": \"Multiple radiopaque surgical clips are visualized in the left upper quadrant of the abdomen, likely related to a previous surgical procedure, such as a cholecystectomy.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Surgical Clips (Lower Abdomen/Pelvis)\",\n      \"description\": \"Several radiopaque surgical clips are identified in the lower abdomen and pelvis, indicating prior surgical intervention in this region.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Port-a-cath\",\n      \"description\": \"A left-sided port-a-cath device is in place, with its catheter tip appropriately positioned within the superior vena cava.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 99\n    }\n  ],\n  \"summary\": \"This X-ray of the chest and upper abdomen shows clear lungs and a normal-sized heart. There are no signs of immediate problems in the chest, such as fluid around the lungs or a collapsed lung. We can see several small metal surgical clips in the upper and lower abdomen, which are leftover from previous surgeries. There is also a port-a-cath, which is a device for giving medication or drawing blood, placed correctly in the left upper chest.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2018180023\",\n    \"https://radiopaedia.org/articles/port-a-cath\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest and Abdomen (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiac silhouette is normal in size and contour.",
+    "Mediastinum is unremarkable.",
+    "Bony thorax appears intact.",
+    "Multiple surgical clips are noted in the left upper quadrant, likely consistent with a prior cholecystectomy or other abdominal surgery.",
+    "Several surgical clips are also seen in the lower abdomen/pelvis.",
+    "A left-sided port-a-cath is present with its tip projecting over the superior vena cava.",
+    "No acute intrathoracic abnormality."
+  ],
+  "abnormalities": [
+    {
+      "name": "Surgical Clips (Left Upper Quadrant)",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Multiple radiopaque surgical clips are visualized in the left upper quadrant of the abdomen, likely related to a previous surgical procedure, such as a cholecystectomy."
+    },
+    {
+      "name": "Surgical Clips (Lower Abdomen/Pelvis)",
+      "severity": "Normal",
+      "confidence": 90,
+      "description": "Several radiopaque surgical clips are identified in the lower abdomen and pelvis, indicating prior surgical intervention in this region."
+    },
+    {
+      "name": "Port-a-cath",
+      "severity": "Normal",
+      "confidence": 99,
+      "description": "A left-sided port-a-cath device is in place, with its catheter tip appropriately positioned within the superior vena cava."
+    }
+  ],
+  "summary": "This X-ray of the chest and upper abdomen shows clear lungs and a normal-sized heart. There are no signs of immediate problems in the chest, such as fluid around the lungs or a collapsed lung. We can see several small metal surgical clips in the upper and lower abdomen, which are leftover from previous surgeries. There is also a port-a-cath, which is a device for giving medication or drawing blood, placed correctly in the left upper chest.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2018180023",
+    "https://radiopaedia.org/articles/port-a-cath",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 413987,
+    "bytesOut": 412168,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:20:00.415Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

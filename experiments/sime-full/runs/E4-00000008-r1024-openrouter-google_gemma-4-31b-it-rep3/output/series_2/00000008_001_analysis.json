@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000008/series_2/00000008_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear without focal consolidation, pleural effusion, or pneumothorax\",\n    \"Cardiomediastinal silhouette is within normal limits\",\n    \"Hilar regions are unremarkable\",\n    \"Bony structures are intact\",\n    \"Gastric bubble is present in the left upper quadrant\",\n    \"External artifacts (belt/clothing) are noted in the lower abdomen\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray is normal. The lungs are clear, the heart size and shape are typical, and there are no signs of infection, fluid buildup, or collapse. The objects seen at the bottom of the image are external items (like a belt) and are not inside the body.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-radiograph-normal-findings\",\n    \"https://www.acr.org/Clinical-Resources/Radiologic-Practice-Guidelines\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear without focal consolidation, pleural effusion, or pneumothorax",
+    "Cardiomediastinal silhouette is within normal limits",
+    "Hilar regions are unremarkable",
+    "Bony structures are intact",
+    "Gastric bubble is present in the left upper quadrant",
+    "External artifacts (belt/clothing) are noted in the lower abdomen"
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray is normal. The lungs are clear, the heart size and shape are typical, and there are no signs of infection, fluid buildup, or collapse. The objects seen at the bottom of the image are external items (like a belt) and are not inside the body.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-normal-findings",
+    "https://www.acr.org/Clinical-Resources/Radiologic-Practice-Guidelines"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 390119,
+    "bytesOut": 306073,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T09:57:51.079Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

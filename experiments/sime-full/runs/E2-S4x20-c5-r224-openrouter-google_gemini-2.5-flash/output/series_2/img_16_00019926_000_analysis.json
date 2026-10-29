@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_2/img_16_00019926_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidations or infiltrates are seen.\",\n    \"Bilateral lung volumes appear adequate.\",\n    \"Cardiac silhouette is enlarged with a cardiothoracic ratio estimated to be greater than 0.5.\",\n    \"Pulmonary vasculature appears within normal limits.\",\n    \"Diaphragms are intact and clear costophrenic angles are noted bilaterally.\",\n    \"No pneumothorax or pleural effusion is identified.\",\n    \"Osseous structures are unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlargement of the cardiac silhouette, with an estimated cardiothoracic ratio greater than 0.5, suggesting cardiomegaly.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that your heart appears larger than expected, a condition called cardiomegaly. This can be caused by various factors, such as high blood pressure or heart valve problems. The lungs look clear, with no signs of pneumonia or fluid accumulation, and the bones appear normal. Further evaluation by a doctor may be recommended to determine the cause of the heart enlargement.\",\n  \"references\": [\n    \"https://radiologykey.com/cardiomegaly/\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3291653/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidations or infiltrates are seen.",
+    "Bilateral lung volumes appear adequate.",
+    "Cardiac silhouette is enlarged with a cardiothoracic ratio estimated to be greater than 0.5.",
+    "Pulmonary vasculature appears within normal limits.",
+    "Diaphragms are intact and clear costophrenic angles are noted bilaterally.",
+    "No pneumothorax or pleural effusion is identified.",
+    "Osseous structures are unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Enlargement of the cardiac silhouette, with an estimated cardiothoracic ratio greater than 0.5, suggesting cardiomegaly."
+    }
+  ],
+  "summary": "The chest X-ray shows that your heart appears larger than expected, a condition called cardiomegaly. This can be caused by various factors, such as high blood pressure or heart valve problems. The lungs look clear, with no signs of pneumonia or fluid accumulation, and the bones appear normal. Further evaluation by a doctor may be recommended to determine the cause of the heart enlargement.",
+  "references": [
+    "https://radiologykey.com/cardiomegaly/",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3291653/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22722,
+    "bytesOut": 22722,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:02:04.826Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,284 @@
+{
+  "manifestVersion": "1.0",
+  "toolVersion": "1.1.0",
+  "startedAt": "2026-09-29T10:43:00.554Z",
+  "finishedAt": "2026-09-29T10:46:14.123Z",
+  "provider": "openrouter",
+  "model": "anthropic/claude-sonnet-5",
+  "pricing": {
+    "inputUsdPerMillion": 2,
+    "outputUsdPerMillion": 12
+  },
+  "settings": {
+    "concurrency": 1,
+    "maxCostUsd": 1,
+    "retries": 3,
+    "imageQuality": "auto"
+  },
+  "inputDir": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000239",
+  "outputDir": "/home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4-00000239-r224-openrouter-anthropic_claude-sonnet-5/output",
+  "inputs": [
+    {
+      "path": "series_1/00000239_000.png",
+      "sha256": "331c9524f5af44908e09afa51b1637a01b6f744f00bdc9ed7d69108c1f55f8ae",
+      "bytes": 23729
+    },
+    {
+      "path": "series_2/00000239_001.png",
+      "sha256": "a27f03259f9070460edbf2f29d2f912091695f61fdb1e12e0f868550ebceb131",
+      "bytes": 24554
+    },
+    {
+      "path": "series_3/00000239_002.png",
+      "sha256": "ef94c2724c493d737872d97b1050cd79e3581ae063034959da007c3212c4d3de",
+      "bytes": 23540
+    },
+    {
+      "path": "series_4/00000239_003.png",
+      "sha256": "8b67c3d6e76b762a9f714ab1b0690497832892e328da5ae989824d8452d0ca0e",
+      "bytes": 23501
+    },
+    {
+      "path": "series_5/00000239_004.png",
+      "sha256": "763238bcbff99af8a0f8d2fea986ec8da3e2c80f53a95dea8d14c3982cb4df52",
+      "bytes": 23411
+    },
+    {
+      "path": "series_6/00000239_005.png",
+      "sha256": "a140c7f8a3d2f4db2287033c3b9c98a34c1ab7e9311af92b486c469953a48d20",
+      "bytes": 22688
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "patient_context.txt",
+      "sha256": "0d8cdaf8bd8a7d3bc900e4c99700876e6a739a7632d9cf2f13b1aa2e43277c05",
+      "bytes": 359
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:43:13.708Z",
+      "tokensIn": 707,
+      "tokensOut": 879,
+      "estimatedUsd": 0.011962,
+      "providerUsd": 0.010204,
+      "retries": 0
+    },
+    {
+      "index": 2,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:43:25.852Z",
+      "tokensIn": 707,
+      "tokensOut": 1036,
+      "estimatedUsd": 0.013846,
+      "providerUsd": 0.011773999999999998,
+      "retries": 0
+    },
+    {
+      "index": 3,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:43:38.761Z",
+      "tokensIn": 707,
+      "tokensOut": 1031,
+      "estimatedUsd": 0.013785999999999996,
+      "providerUsd": 0.011723999999999998,
+      "retries": 0
+    },
+    {
+      "index": 4,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:43:54.857Z",
+      "tokensIn": 707,
+      "tokensOut": 1493,
+      "estimatedUsd": 0.019330000000000007,
+      "providerUsd": 0.016343999999999997,
+      "retries": 0
+    },
+    {
+      "index": 5,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:44:09.998Z",
+      "tokensIn": 707,
+      "tokensOut": 1154,
+      "estimatedUsd": 0.015261999999999998,
+      "providerUsd": 0.012954000000000007,
+      "retries": 0
+    },
+    {
+      "index": 6,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:44:19.414Z",
+      "tokensIn": 707,
+      "tokensOut": 716,
+      "estimatedUsd": 0.010006000000000001,
+      "providerUsd": 0.008573999999999998,
+      "retries": 0
+    },
+    {
+      "index": 7,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:44:28.796Z",
+      "tokensIn": 1235,
+      "tokensOut": 924,
+      "estimatedUsd": 0.013558,
+      "providerUsd": 0.011709999999999998,
+      "retries": 0
+    },
+    {
+      "index": 8,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:44:42.262Z",
+      "tokensIn": 1301,
+      "tokensOut": 1187,
+      "estimatedUsd": 0.016846,
+      "providerUsd": 0.014471999999999999,
+      "retries": 0
+    },
+    {
+      "index": 9,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:44:53.163Z",
+      "tokensIn": 1422,
+      "tokensOut": 1057,
+      "estimatedUsd": 0.015527999999999986,
+      "providerUsd": 0.013413999999999995,
+      "retries": 0
+    },
+    {
+      "index": 10,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:45:07.503Z",
+      "tokensIn": 1630,
+      "tokensOut": 1311,
+      "estimatedUsd": 0.018992000000000037,
+      "providerUsd": 0.016369999999999996,
+      "retries": 0
+    },
+    {
+      "index": 11,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:45:20.777Z",
+      "tokensIn": 1516,
+      "tokensOut": 1237,
+      "estimatedUsd": 0.017875999999999947,
+      "providerUsd": 0.015401999999999999,
+      "retries": 0
+    },
+    {
+      "index": 12,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:45:32.527Z",
+      "tokensIn": 1097,
+      "tokensOut": 988,
+      "estimatedUsd": 0.014050000000000035,
+      "providerUsd": 0.012074000000000001,
+      "retries": 0
+    },
+    {
+      "index": 13,
+      "stage": "evolution",
+      "timestamp": "2026-09-29T10:46:14.002Z",
+      "tokensIn": 5027,
+      "tokensOut": 4158,
+      "estimatedUsd": 0.059949999999999976,
+      "providerUsd": 0.05163400000000001,
+      "retries": 0
+    }
+  ],
+  "outputs": [
+    {
+      "path": "series_1/00000239_000_analysis.json",
+      "sha256": "5f87e55d621c1e75a58960e55a68c9ce9e5889fd083cbb9c737864a6bf4c1145",
+      "bytes": 5601
+    },
+    {
+      "path": "series_2/00000239_001_analysis.json",
+      "sha256": "dbf1b2d2c7d12b4fcb392529eeb71f4827990a448c6cc5eecb39aeaa82c2c60d",
+      "bytes": 5800
+    },
+    {
+      "path": "series_3/00000239_002_analysis.json",
+      "sha256": "61579242e13dc67fdccb3c5f6804fca5684a286ea4c0a20b5bf5e8539a401568",
+      "bytes": 6269
+    },
+    {
+      "path": "series_4/00000239_003_analysis.json",
+      "sha256": "3d5c20528f730449493fca28a9d926700651f4c6183705ac52098ba94835b0ef",
+      "bytes": 7349
+    },
+    {
+      "path": "series_5/00000239_004_analysis.json",
+      "sha256": "03403bd4201f18c32b05da537bb66c764697e74f92d5ba12b8f190494429f37d",
+      "bytes": 7101
+    },
+    {
+      "path": "series_6/00000239_005_analysis.json",
+      "sha256": "916f49c3f70a75466745dc632f0b7bd6bdd812b758e51b08f1859340e50d9894",
+      "bytes": 4756
+    },
+    {
+      "path": "series_1/series_summary.md",
+      "sha256": "a5dd6607023b28320b161b51cd42dd8624b9a10fe820e5b4792a035c323ed2c9",
+      "bytes": 3461
+    },
+    {
+      "path": "series_2/series_summary.md",
+      "sha256": "2977e2f97b26cd49eb04ee463a4d2506fb15240ca72f143e25cf879f03019e87",
+      "bytes": 4118
+    },
+    {
+      "path": "series_3/series_summary.md",
+      "sha256": "ab88591ccb9937a8ded8b21f2b985157ed0b39f8aad61d0dbd95996b7a643118",
+      "bytes": 3855
+    },
+    {
+      "path": "series_4/series_summary.md",
+      "sha256": "d41825bd3104985a4679139e57a4ef0f4401f95683ac34f3e40b246829932d43",
+      "bytes": 4366
+    },
+    {
+      "path": "series_5/series_summary.md",
+      "sha256": "3eb38f6ec8c162466af10c1f0f1724ffb97e45f5b754f9e8d53d0e1308f64035",
+      "bytes": 4265
+    },
+    {
+      "path": "series_6/series_summary.md",
+      "sha256": "043b91a361ca6a824243d3c3ca798e97096234ddd053e55b2b2b3904111bcff6",
+      "bytes": 3597
+    },
+    {
+      "path": "evolution_analysis.json",
+      "sha256": "c0c7322871fee0842f0db7e28ee13a08dc5d1beb9fe0040a8accd834e94bd621",
+      "bytes": 8452
+    },
+    {
+      "path": "combined_diagnostic_report.md",
+      "sha256": "3f869df0cb0a34feb6932e36bcd3c169972e3bf60db077a68579f7654ae3debe",
+      "bytes": 8909
+    }
+  ],
+  "totals": {
+    "calls": 13,
+    "tokensIn": 17470,
+    "tokensOut": 17171,
+    "estimatedUsd": 0.24099199999999998,
+    "providerUsd": 0.20665,
+    "images": 6,
+    "imagesSucceeded": 6,
+    "imagesFailed": 0,
+    "series": 6
+  },
+  "exitCode": 0,
+  "warnings": [
+    "input-integrity: 6 image(s) matched --expect-hashes."
+  ],
+  "humanReview": {
+    "required": true,
+    "reviewedBy": null
+  },
+  "prevManifestHash": null,
+  "manifestHash": "27d62f33a4beed1ae84fa957cc461785c1b997097799ceb63c3103fa774886ac"
+}

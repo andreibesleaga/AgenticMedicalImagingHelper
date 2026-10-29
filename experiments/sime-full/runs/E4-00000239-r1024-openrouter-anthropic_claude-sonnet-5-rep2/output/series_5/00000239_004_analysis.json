@@ -1,0 +1,65 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_5/00000239_004.png",
+  "seriesId": "series_5",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP, upright)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Markedly dilated, air-filled gastric bubble projecting over the left upper quadrant/left hemidiaphragm region, displacing structures\",\n    \"Extensive dilated, gas-filled bowel loops with a distended, 'bubbly' pattern occupying the mid and lower abdomen\",\n    \"Cardiac silhouette appears mildly enlarged but borders are partially obscured by overlying bowel gas pattern\",\n    \"Lungs are clear bilaterally with no focal consolidation, effusion, or pneumothorax\",\n    \"Osseous structures including clavicles, scapulae, and visible ribs appear intact without acute fracture\",\n    \"Surgical clips/sutures (dashed radiopaque markers) noted in the mid-abdomen, suggesting prior surgical intervention\",\n    \"No free air clearly identified under the diaphragm, though this is difficult to assess fully on this view\",\n    \"Soft tissue markers (chevron/arrow icon) present in the image overlay, likely annotation rather than anatomic finding\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Gastric distension\",\n      \"description\": \"Large, rounded, gas-filled structure in the left upper abdomen consistent with a markedly distended stomach (gastric bubble), which may indicate gastric outlet obstruction, ileus, or post-surgical change\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 65\n    },\n    {\n      \"name\": \"Diffuse bowel gas distension\",\n      \"description\": \"Multiple dilated loops of bowel with a mottled, bubbly gas pattern filling the abdomen, raising concern for ileus or bowel obstruction\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 60\n    },\n    {\n      \"name\": \"Postoperative surgical clips\",\n      \"description\": \"Linear dashed radiopaque markers in the abdomen consistent with surgical clips/staples from a prior abdominal procedure\",\n      \"severity\": \"Mild\",\n      \"confidence\": 55\n    }\n  ],\n  \"summary\": \"This chest/upper abdomen X-ray shows clear lungs with no signs of pneumonia, fluid, or collapsed lung. However, there is a very large air-filled stomach and multiple dilated loops of bowel with gas throughout the abdomen. This pattern can be seen with conditions like an ileus (temporary slowing of bowel movement, often after surgery or illness) or a bowel obstruction (blockage preventing normal passage of gas and stool). There are also small metallic clips visible in the abdomen, suggesting the patient has had prior abdominal surgery. These findings would typically prompt further evaluation, such as a CT scan of the abdomen, to determine the exact cause of the bowel distension and whether urgent treatment is needed. A qualified physician should correlate these imaging findings with the patient's symptoms and clinical history.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/bowel-obstruction\",\n    \"https://radiopaedia.org/articles/ileus-1\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP, upright)",
+  "quality": "Fair",
+  "findings": [
+    "Markedly dilated, air-filled gastric bubble projecting over the left upper quadrant/left hemidiaphragm region, displacing structures",
+    "Extensive dilated, gas-filled bowel loops with a distended, 'bubbly' pattern occupying the mid and lower abdomen",
+    "Cardiac silhouette appears mildly enlarged but borders are partially obscured by overlying bowel gas pattern",
+    "Lungs are clear bilaterally with no focal consolidation, effusion, or pneumothorax",
+    "Osseous structures including clavicles, scapulae, and visible ribs appear intact without acute fracture",
+    "Surgical clips/sutures (dashed radiopaque markers) noted in the mid-abdomen, suggesting prior surgical intervention",
+    "No free air clearly identified under the diaphragm, though this is difficult to assess fully on this view",
+    "Soft tissue markers (chevron/arrow icon) present in the image overlay, likely annotation rather than anatomic finding"
+  ],
+  "abnormalities": [
+    {
+      "name": "Gastric distension",
+      "severity": "Moderate",
+      "confidence": 65,
+      "description": "Large, rounded, gas-filled structure in the left upper abdomen consistent with a markedly distended stomach (gastric bubble), which may indicate gastric outlet obstruction, ileus, or post-surgical change"
+    },
+    {
+      "name": "Diffuse bowel gas distension",
+      "severity": "Moderate",
+      "confidence": 60,
+      "description": "Multiple dilated loops of bowel with a mottled, bubbly gas pattern filling the abdomen, raising concern for ileus or bowel obstruction"
+    },
+    {
+      "name": "Postoperative surgical clips",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Linear dashed radiopaque markers in the abdomen consistent with surgical clips/staples from a prior abdominal procedure"
+    }
+  ],
+  "summary": "This chest/upper abdomen X-ray shows clear lungs with no signs of pneumonia, fluid, or collapsed lung. However, there is a very large air-filled stomach and multiple dilated loops of bowel with gas throughout the abdomen. This pattern can be seen with conditions like an ileus (temporary slowing of bowel movement, often after surgery or illness) or a bowel obstruction (blockage preventing normal passage of gas and stool). There are also small metallic clips visible in the abdomen, suggesting the patient has had prior abdominal surgery. These findings would typically prompt further evaluation, such as a CT scan of the abdomen, to determine the exact cause of the bowel distension and whether urgent treatment is needed. A qualified physician should correlate these imaging findings with the patient's symptoms and clinical history.",
+  "references": [
+    "https://radiopaedia.org/articles/bowel-obstruction",
+    "https://radiopaedia.org/articles/ileus-1",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 427509,
+    "bytesOut": 425196,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T09:45:43.816Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

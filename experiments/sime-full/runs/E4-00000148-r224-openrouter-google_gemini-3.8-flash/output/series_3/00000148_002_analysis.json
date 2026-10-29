@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000148/series_3/00000148_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A totally implantable central venous access port (port-a-cath) is identified over the right mid-to-upper hemithorax, with the catheter tip positioned appropriately in the lower superior vena cava/cavoatrial junction.\",\n    \"Lungs are clear bilaterally with no focal consolidation, suspicious pulmonary nodules, or overt pulmonary edema.\",\n    \"No evidence of pneumothorax or significant pleural effusion.\",\n    \"Cardiomediastinal contours are within normal limits.\",\n    \"Visualized osseous structures demonstrate no acute fractures or destructive lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Implanted Venous Access Port (Port-a-Cath)\",\n      \"description\": \"Right-sided chest port with the catheter coursing into the central venous circulation, terminating near the cavoatrial junction without evidence of kink or displacement.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This chest X-ray shows an appropriately placed medical port (a central line used to deliver medications or fluids into the bloodstream) on the right side of the chest. The lungs appear clear, the heart size is normal, and there are no signs of infection, fluid buildup, or other acute lung abnormalities.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/port-a-cath\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4014761/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "A totally implantable central venous access port (port-a-cath) is identified over the right mid-to-upper hemithorax, with the catheter tip positioned appropriately in the lower superior vena cava/cavoatrial junction.",
+    "Lungs are clear bilaterally with no focal consolidation, suspicious pulmonary nodules, or overt pulmonary edema.",
+    "No evidence of pneumothorax or significant pleural effusion.",
+    "Cardiomediastinal contours are within normal limits.",
+    "Visualized osseous structures demonstrate no acute fractures or destructive lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Implanted Venous Access Port (Port-a-Cath)",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Right-sided chest port with the catheter coursing into the central venous circulation, terminating near the cavoatrial junction without evidence of kink or displacement."
+    }
+  ],
+  "summary": "This chest X-ray shows an appropriately placed medical port (a central line used to deliver medications or fluids into the bloodstream) on the right side of the chest. The lungs appear clear, the heart size is normal, and there are no signs of infection, fluid buildup, or other acute lung abnormalities.",
+  "references": [
+    "https://radiopaedia.org/articles/port-a-cath",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4014761/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24239,
+    "bytesOut": 24239,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:34:41.888Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

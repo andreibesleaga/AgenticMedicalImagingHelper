@@ -1,0 +1,96 @@
+{
+  "manifestVersion": "1.0",
+  "toolVersion": "1.1.0",
+  "startedAt": "2026-10-08T11:39:03.930Z",
+  "finishedAt": "2026-10-08T11:39:49.905Z",
+  "provider": "local",
+  "model": "medgemma1.5:4b",
+  "pricing": {
+    "inputUsdPerMillion": 0,
+    "outputUsdPerMillion": 0
+  },
+  "settings": {
+    "concurrency": 1,
+    "maxCostUsd": 1,
+    "retries": 3
+  },
+  "inputDir": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S1x1",
+  "outputDir": "/home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E2-S1x1-c1-r1024-local-medgemma1.5_4b/output",
+  "inputs": [
+    {
+      "path": "series_1/img_01_00013464_000.png",
+      "sha256": "f0a18066fc135cc853f68624a164093492b747a4e836fa4e0316ec297d5c6ced",
+      "bytes": 385399
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "patient_context.txt",
+      "sha256": "8955917daa6f3d85ab2ce7373e53649a209e6946e8fd2a106752f7edfaba1df9",
+      "bytes": 197
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "stage": "image",
+      "timestamp": "2026-10-08T11:39:24.561Z",
+      "tokensIn": 684,
+      "tokensOut": 155,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 2,
+      "stage": "series",
+      "timestamp": "2026-10-08T11:39:49.723Z",
+      "tokensIn": 491,
+      "tokensOut": 249,
+      "estimatedUsd": 0,
+      "retries": 0
+    }
+  ],
+  "outputs": [
+    {
+      "path": "series_1/img_01_00013464_000_analysis.json",
+      "sha256": "bac2cf78769ff5ffc6a9b405f705894e614fe9aa6654a77676bc02f9748d87ec",
+      "bytes": 2082
+    },
+    {
+      "path": "series_1/series_summary.md",
+      "sha256": "40ee744b4928d1b6ddb1ee9c41780a693c91b416fefe31d61d9e2eae69d6955e",
+      "bytes": 1825
+    },
+    {
+      "path": "evolution_analysis.json",
+      "sha256": "eeff4213c904480856d90d6b9473db6564e3b2ed729addb5b3dd31d9d771160f",
+      "bytes": 1197
+    },
+    {
+      "path": "combined_diagnostic_report.md",
+      "sha256": "3968f8499604567cd1b7e399e9c7a52d920fbe7e54c12cc0510e53b950626328",
+      "bytes": 1916
+    }
+  ],
+  "totals": {
+    "calls": 2,
+    "tokensIn": 1175,
+    "tokensOut": 404,
+    "estimatedUsd": 0,
+    "images": 1,
+    "imagesSucceeded": 1,
+    "imagesFailed": 0,
+    "series": 1
+  },
+  "exitCode": 0,
+  "warnings": [
+    "input-integrity: 1 image(s) matched --expect-hashes.",
+    "input-guard [image-metadata] series_1/img_01_00013464_000.png: png:tIME — stripped before upload"
+  ],
+  "humanReview": {
+    "required": true,
+    "reviewedBy": null
+  },
+  "prevManifestHash": null,
+  "manifestHash": "f1659b39a5954431a4edf1707421470332832528a73ebfb641cbf61ce33dc164"
+}

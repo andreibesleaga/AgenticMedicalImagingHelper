@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00016493/series_3/00016493_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right internal jugular central venous catheter is present, tip in the lower superior vena cava.\",\n    \"A round, radiopaque device is visible in the lower chest/upper abdomen area, suggestive of an implanted port or similar medical device, with a catheter extending cranially.\",\n    \"Bilateral opacities are present in the mid to lower lung zones, worse on the left than the right.\",\n    \"Left costophrenic angle is blunted, suggestive of a pleural effusion.\",\n    \"Right costophrenic angle is obscured by the opacities.\",\n    \"Cardiomediastinal silhouette appears unremarkable, though partly obscured by the opacities.\",\n    \"Bony thorax is intact without acute fracture.\",\n    \"Multiple EKG leads are noted over the chest.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral lung opacities\",\n      \"description\": \"Bilateral airspace opacities, most prominent in the mid to lower lung zones, likely representing consolidation or atelectasis. Less likely to be edema given the pattern.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Left pleural effusion\",\n      \"description\": \"Blunting of the left costophrenic angle, suggestive of a small to moderate pleural effusion.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The chest X-ray shows multiple medical devices, including a central venous catheter in the neck and an implanted device in the chest/abdomen area. There are areas of cloudiness in both lungs, especially in the lower parts, which could be due to infection (pneumonia), collapse of lung tissue (atelectasis), or other causes. There is also a suggestion of some fluid accumulation around the left lung (pleural effusion). These findings need to be correlated with the patient's symptoms and medical history.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/lobar-consolidation-1\",\n    \"https://radiopaedia.org/articles/pleural-effusion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right internal jugular central venous catheter is present, tip in the lower superior vena cava.",
+    "A round, radiopaque device is visible in the lower chest/upper abdomen area, suggestive of an implanted port or similar medical device, with a catheter extending cranially.",
+    "Bilateral opacities are present in the mid to lower lung zones, worse on the left than the right.",
+    "Left costophrenic angle is blunted, suggestive of a pleural effusion.",
+    "Right costophrenic angle is obscured by the opacities.",
+    "Cardiomediastinal silhouette appears unremarkable, though partly obscured by the opacities.",
+    "Bony thorax is intact without acute fracture.",
+    "Multiple EKG leads are noted over the chest."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral lung opacities",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Bilateral airspace opacities, most prominent in the mid to lower lung zones, likely representing consolidation or atelectasis. Less likely to be edema given the pattern."
+    },
+    {
+      "name": "Left pleural effusion",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Blunting of the left costophrenic angle, suggestive of a small to moderate pleural effusion."
+    }
+  ],
+  "summary": "The chest X-ray shows multiple medical devices, including a central venous catheter in the neck and an implanted device in the chest/abdomen area. There are areas of cloudiness in both lungs, especially in the lower parts, which could be due to infection (pneumonia), collapse of lung tissue (atelectasis), or other causes. There is also a suggestion of some fluid accumulation around the left lung (pleural effusion). These findings need to be correlated with the patient's symptoms and medical history.",
+  "references": [
+    "https://radiopaedia.org/articles/lobar-consolidation-1",
+    "https://radiopaedia.org/articles/pleural-effusion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 348510,
+    "bytesOut": 343794,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:51:49.011Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

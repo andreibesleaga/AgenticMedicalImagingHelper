@@ -1,0 +1,62 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_2/img_06_00024750_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are hyperinflated with flattened hemidiaphragms.\",\n    \"Bilateral peribronchial thickening and increased interstitial markings are noted.\",\n    \"Cardiac silhouette appears normal in size.\",\n    \"No focal consolidation, pleural effusion, or pneumothorax is seen.\",\n    \"Bony thorax is unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Hyperinflation\",\n      \"description\": \"The lungs demonstrate signs of hyperinflation, indicated by flattened hemidiaphragms and increased lucency.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Peribronchial Thickening\",\n      \"description\": \"There is evidence of bilateral peribronchial thickening, suggesting chronic airway inflammation.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    },\n    {\n      \"name\": \"Increased Interstitial Markings\",\n      \"description\": \"The interstitial markings are increased bilaterally, consistent with chronic lung changes.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"This chest X-ray shows signs of hyperinflated lungs, meaning the lungs hold more air than usual, which can be seen by the flattened muscle separating the chest from the abdomen (diaphragm). There is also some thickening around the airways (peribronchial thickening) and increased markings in the lung tissue, suggesting some chronic irritation or inflammation. The heart appears to be of normal size, and there are no signs of pneumonia, fluid around the lungs, or a collapsed lung. These findings are often associated with chronic lung conditions like asthma or emphysema.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pulmonary-hyperinflation\",\n    \"https://radiopaedia.org/articles/peribronchial-cuffing\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4281729/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are hyperinflated with flattened hemidiaphragms.",
+    "Bilateral peribronchial thickening and increased interstitial markings are noted.",
+    "Cardiac silhouette appears normal in size.",
+    "No focal consolidation, pleural effusion, or pneumothorax is seen.",
+    "Bony thorax is unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Hyperinflation",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "The lungs demonstrate signs of hyperinflation, indicated by flattened hemidiaphragms and increased lucency."
+    },
+    {
+      "name": "Peribronchial Thickening",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "There is evidence of bilateral peribronchial thickening, suggesting chronic airway inflammation."
+    },
+    {
+      "name": "Increased Interstitial Markings",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "The interstitial markings are increased bilaterally, consistent with chronic lung changes."
+    }
+  ],
+  "summary": "This chest X-ray shows signs of hyperinflated lungs, meaning the lungs hold more air than usual, which can be seen by the flattened muscle separating the chest from the abdomen (diaphragm). There is also some thickening around the airways (peribronchial thickening) and increased markings in the lung tissue, suggesting some chronic irritation or inflammation. The heart appears to be of normal size, and there are no signs of pneumonia, fluid around the lungs, or a collapsed lung. These findings are often associated with chronic lung conditions like asthma or emphysema.",
+  "references": [
+    "https://radiopaedia.org/articles/pulmonary-hyperinflation",
+    "https://radiopaedia.org/articles/peribronchial-cuffing",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4281729/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 407984,
+    "bytesOut": 404788,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:37:23.151Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

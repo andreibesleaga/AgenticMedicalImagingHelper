@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000148/series_3/00000148_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right-sided chest port-a-cath with the tip projecting over the lower right atrium.\",\n    \"Right lung opacity in the lateral upper lobe.\",\n    \"Mediastinal contours are unremarkable.\",\n    \"Heart size is within normal limits.\",\n    \"No pleural effusion or pneumothorax.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right lung opacity\",\n      \"description\": \"An area of increased density is present in the right upper lobe.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"This chest X-ray shows a port-a-cath in the right side of the chest. There is a noticeable area of opacity (whiteness) in the upper part of the right lung. The rest of the heart and lungs appear relatively normal. The opacity in the right lung needs further investigation.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/education/port-a-cath-chest-xray\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5346543/\",\n    \"https://www.atsjournals.org/doi/abs/10.1164/rccm.2017010060\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Right-sided chest port-a-cath with the tip projecting over the lower right atrium.",
+    "Right lung opacity in the lateral upper lobe.",
+    "Mediastinal contours are unremarkable.",
+    "Heart size is within normal limits.",
+    "No pleural effusion or pneumothorax."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lung opacity",
+      "severity": "Moderate",
+      "confidence": 75,
+      "description": "An area of increased density is present in the right upper lobe."
+    }
+  ],
+  "summary": "This chest X-ray shows a port-a-cath in the right side of the chest. There is a noticeable area of opacity (whiteness) in the upper part of the right lung. The rest of the heart and lungs appear relatively normal. The opacity in the right lung needs further investigation.",
+  "references": [
+    "https://www.radiologyinfo.org/en/education/port-a-cath-chest-xray",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5346543/",
+    "https://www.atsjournals.org/doi/abs/10.1164/rccm.2017010060"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24239,
+    "bytesOut": 24239,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:44:04.564Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

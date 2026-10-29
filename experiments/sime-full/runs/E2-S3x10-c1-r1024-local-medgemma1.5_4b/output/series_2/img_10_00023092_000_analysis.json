@@ -1,0 +1,40 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_2/img_10_00023092_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The heart size is normal.\",\n    \"The lung volumes are normal.\",\n    \"The mediastinal contours are normal.\",\n    \"The hilar contours are normal.\",\n    \"The pleural spaces are clear.\",\n    \"The bony structures are intact.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray shows normal heart, lung, and bone structures. There are no visible abnormalities.\",\n  \"references\": []\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The heart size is normal.",
+    "The lung volumes are normal.",
+    "The mediastinal contours are normal.",
+    "The hilar contours are normal.",
+    "The pleural spaces are clear.",
+    "The bony structures are intact."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray shows normal heart, lung, and bone structures. There are no visible abnormalities.",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 440634,
+    "bytesOut": 336853,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T11:54:56.743Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

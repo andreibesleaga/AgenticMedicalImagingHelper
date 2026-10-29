@@ -1,0 +1,60 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00015863/series_3/00015863_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Multiple well-circumscribed, round to oval opacities of varying sizes scattered throughout both lung fields.\",\n    \"The opacities range in size, with some measuring up to several centimeters in diameter.\",\n    \"The opacities are denser than the surrounding lung parenchyma.\",\n    \"There is a catheter visible, originating from the right neck and extending down into the superior vena cava/right atrium region.\",\n    \"The heart size is within normal limits.\",\n    \"The mediastinal contours appear unremarkable, though partially obscured by the overlying opacities.\",\n    \"The bony thorax appears intact.\",\n    \"The diaphragm is well-defined.\",\n    \"There is a small amount of gas in the stomach.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Multiple Pulmonary Nodules/Masses\",\n      \"description\": \"Numerous well-circumscribed opacities distributed bilaterally throughout the lungs, suggestive of metastatic disease. Common primary sources include breast, colon, kidney, melanoma, and sarcoma, among others.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Central Venous Catheter\",\n      \"description\": \"A central venous catheter is present, entering from the right neck, with its tip terminating in the region of the superior vena cava/right atrium.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This chest X-ray shows multiple distinct, round shadows (nodules or masses) scattered throughout both lungs. Given their appearance and widespread distribution, these are highly suspicious for cancer that has spread to the lungs from elsewhere in the body (metastatic disease). A central venous catheter, often used for administering treatments like chemotherapy or drawing blood, is also visible. Further medical evaluation, including potentially a CT scan and consultation with an oncologist, is crucial to determine the primary source of the cancer and develop a treatment plan.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pulmonary-metastases\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7151325/\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2016150170\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Multiple well-circumscribed, round to oval opacities of varying sizes scattered throughout both lung fields.",
+    "The opacities range in size, with some measuring up to several centimeters in diameter.",
+    "The opacities are denser than the surrounding lung parenchyma.",
+    "There is a catheter visible, originating from the right neck and extending down into the superior vena cava/right atrium region.",
+    "The heart size is within normal limits.",
+    "The mediastinal contours appear unremarkable, though partially obscured by the overlying opacities.",
+    "The bony thorax appears intact.",
+    "The diaphragm is well-defined.",
+    "There is a small amount of gas in the stomach."
+  ],
+  "abnormalities": [
+    {
+      "name": "Multiple Pulmonary Nodules/Masses",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Numerous well-circumscribed opacities distributed bilaterally throughout the lungs, suggestive of metastatic disease. Common primary sources include breast, colon, kidney, melanoma, and sarcoma, among others."
+    },
+    {
+      "name": "Central Venous Catheter",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A central venous catheter is present, entering from the right neck, with its tip terminating in the region of the superior vena cava/right atrium."
+    }
+  ],
+  "summary": "This chest X-ray shows multiple distinct, round shadows (nodules or masses) scattered throughout both lungs. Given their appearance and widespread distribution, these are highly suspicious for cancer that has spread to the lungs from elsewhere in the body (metastatic disease). A central venous catheter, often used for administering treatments like chemotherapy or drawing blood, is also visible. Further medical evaluation, including potentially a CT scan and consultation with an oncologist, is crucial to determine the primary source of the cancer and develop a treatment plan.",
+  "references": [
+    "https://radiopaedia.org/articles/pulmonary-metastases",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7151325/",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2016150170"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 348361,
+    "bytesOut": 338360,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:46:58.671Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

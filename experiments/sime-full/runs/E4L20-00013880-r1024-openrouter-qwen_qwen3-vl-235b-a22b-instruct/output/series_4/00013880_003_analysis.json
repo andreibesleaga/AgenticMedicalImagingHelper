@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00013880/series_4/00013880_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral lung fields show increased radiopacity in the lower zones, consistent with fluid accumulation.\",\n    \"Blunting of the left costophrenic angle is present.\",\n    \"A radiopaque circular object, likely a pacemaker or ICD generator, is visible in the left upper chest with leads extending into the cardiac silhouette.\",\n    \"The cardiac silhouette appears mildly enlarged.\",\n    \"No obvious fractures or skeletal abnormalities noted in the ribs, clavicles, or spine.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Increased radiopacity in the lower lung zones with blunting of the left costophrenic angle, suggesting fluid accumulation in the pleural space. The right side may also show early signs of effusion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Cardiac Device\",\n      \"description\": \"A radiopaque circular device consistent with a pacemaker or implantable cardioverter-defibrillator (ICD) is present in the left upper chest, with leads visible coursing into the heart.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 98\n    }\n  ],\n  \"summary\": \"This chest X-ray shows fluid buildup around the lungs (pleural effusion), especially on the left side, which may cause shortness of breath. There is also a heart device (pacemaker or defibrillator) implanted in the chest, which is expected if the patient has a known heart condition. The heart itself appears slightly enlarged. These findings should be reviewed by a doctor to determine the cause of the fluid and whether any treatment is needed.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.uptodate.com/contents/chest-radiography-in-the-evaluation-of-pleural-effusion\",\n    \"https://www.mayoclinic.org/tests-procedures/implantable-cardioverter-defibrillator/about/pac-20384618\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral lung fields show increased radiopacity in the lower zones, consistent with fluid accumulation.",
+    "Blunting of the left costophrenic angle is present.",
+    "A radiopaque circular object, likely a pacemaker or ICD generator, is visible in the left upper chest with leads extending into the cardiac silhouette.",
+    "The cardiac silhouette appears mildly enlarged.",
+    "No obvious fractures or skeletal abnormalities noted in the ribs, clavicles, or spine."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Increased radiopacity in the lower lung zones with blunting of the left costophrenic angle, suggesting fluid accumulation in the pleural space. The right side may also show early signs of effusion."
+    },
+    {
+      "name": "Cardiac Device",
+      "severity": "Normal",
+      "confidence": 98,
+      "description": "A radiopaque circular device consistent with a pacemaker or implantable cardioverter-defibrillator (ICD) is present in the left upper chest, with leads visible coursing into the heart."
+    }
+  ],
+  "summary": "This chest X-ray shows fluid buildup around the lungs (pleural effusion), especially on the left side, which may cause shortness of breath. There is also a heart device (pacemaker or defibrillator) implanted in the chest, which is expected if the patient has a known heart condition. The heart itself appears slightly enlarged. These findings should be reviewed by a doctor to determine the cause of the fluid and whether any treatment is needed.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.uptodate.com/contents/chest-radiography-in-the-evaluation-of-pleural-effusion",
+    "https://www.mayoclinic.org/tests-procedures/implantable-cardioverter-defibrillator/about/pac-20384618"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 445290,
+    "bytesOut": 402961,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:12:31.418Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,46 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_14_00006759_001.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear bilaterally.\",\n    \"There is cardiomegaly.\",\n    \"There are sternal wires present.\",\n    \"There is a small pleural effusion in the left costophrenic angle.\",\n    \"There is rightward mediastinal shift.\",\n    \"There is elevation of the right hemidiaphragm.\",\n    \"There is right hilar prominence.\",\n    \"There is right lung volume loss.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"X-ray of the chest shows a heart that is slightly enlarged (cardiomegaly). The right lung appears collapsed (right lung volume loss) with a shift of the heart and major blood vessels toward the right (rightward mediastinal shift). There is some enlargement of the blood vessels in the right lung area (right hilar prominence). There is a small amount of fluid in the space at the bottom of the left side of the chest (left pleural effusion). The bones and sternum (breastbone) appear intact.\",\n  \"references\": [\n    \"https://www.cdc.gov/mmwr/volumes/63/wr/08/rr/index.html\",\n    \"https://www.uptodate.com/contents/chest-radiography\",\n    \"https://www.radiologyinfo.org/find-an-article/chest-x-ray/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear bilaterally.",
+    "There is cardiomegaly.",
+    "There are sternal wires present.",
+    "There is a small pleural effusion in the left costophrenic angle.",
+    "There is rightward mediastinal shift.",
+    "There is elevation of the right hemidiaphragm.",
+    "There is right hilar prominence.",
+    "There is right lung volume loss."
+  ],
+  "abnormalities": [],
+  "summary": "X-ray of the chest shows a heart that is slightly enlarged (cardiomegaly). The right lung appears collapsed (right lung volume loss) with a shift of the heart and major blood vessels toward the right (rightward mediastinal shift). There is some enlargement of the blood vessels in the right lung area (right hilar prominence). There is a small amount of fluid in the space at the bottom of the left side of the chest (left pleural effusion). The bones and sternum (breastbone) appear intact.",
+  "references": [
+    "https://www.cdc.gov/mmwr/volumes/63/wr/08/rr/index.html",
+    "https://www.uptodate.com/contents/chest-radiography",
+    "https://www.radiologyinfo.org/find-an-article/chest-x-ray/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 386231,
+    "bytesOut": 301014,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:15:50.531Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_1/img_18_00012359_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear and fully expanded without evidence of focal consolidation, pneumothorax, or significant pleural effusion.\",\n    \"Cardiomediastinal silhouette appears normal in size and contour.\",\n    \"Hilar regions are unremarkable.\",\n    \"Diaphragmatic contours are smooth, with costophrenic angles clear bilaterally.\",\n    \"Visualized osseous structures (ribs, clavicles, thoracic spine) show no acute abnormalities.\",\n    \"A gastric air bubble is noted under the left hemidiaphragm, and some gas in the splenic flexure region.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This X-ray of the chest shows clear lungs and a normal-sized heart. There are no signs of pneumonia, collapsed lung (pneumothorax), or fluid around the lungs (pleural effusion). The bones in the chest also appear normal. Overall, the study is unremarkable, meaning no significant medical issues were identified in this X-ray.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1146/annurev-med-050418-020054\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6641697/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear and fully expanded without evidence of focal consolidation, pneumothorax, or significant pleural effusion.",
+    "Cardiomediastinal silhouette appears normal in size and contour.",
+    "Hilar regions are unremarkable.",
+    "Diaphragmatic contours are smooth, with costophrenic angles clear bilaterally.",
+    "Visualized osseous structures (ribs, clavicles, thoracic spine) show no acute abnormalities.",
+    "A gastric air bubble is noted under the left hemidiaphragm, and some gas in the splenic flexure region."
+  ],
+  "abnormalities": [],
+  "summary": "This X-ray of the chest shows clear lungs and a normal-sized heart. There are no signs of pneumonia, collapsed lung (pneumothorax), or fluid around the lungs (pleural effusion). The bones in the chest also appear normal. Overall, the study is unremarkable, meaning no significant medical issues were identified in this X-ray.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1146/annurev-med-050418-020054",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6641697/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24607,
+    "bytesOut": 24607,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:01:51.474Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

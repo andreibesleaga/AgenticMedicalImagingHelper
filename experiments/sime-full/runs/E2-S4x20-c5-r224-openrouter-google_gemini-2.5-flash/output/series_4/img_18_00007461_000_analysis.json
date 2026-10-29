@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_4/img_18_00007461_000.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute pleural effusion or pneumothorax.\",\n    \"Cardiomediastinal contours are within normal limits.\",\n    \"Hilar regions appear unremarkable.\",\n    \"Evidence of mild interstitial prominence in the right lower lung field, suggestive of atelectasis or early infiltrates.\",\n    \"Diaphragms are intact and clear costophrenic angles bilaterally, although the right hemidiaphragm is slightly obscured by the noted infiltrate/atelectasis.\",\n    \"Bony thorax is unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right lower lung opacity\",\n      \"description\": \"Ill-defined opacity in the right lower lung field, possibly representing atelectasis or early pneumonic infiltrate.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows a slight haziness in the lower part of your right lung. This could be due to a small area where the lung tissue has collapsed (called atelectasis) or an early infection like pneumonia. Your heart and the major blood vessels appear normal, and there's no sign of fluid around your lungs or a collapsed lung. Further evaluation or follow-up may be recommended by your doctor.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.294085023\",\n    \"https://radiopaedia.org/articles/atelectasis\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMcp1212459\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No acute pleural effusion or pneumothorax.",
+    "Cardiomediastinal contours are within normal limits.",
+    "Hilar regions appear unremarkable.",
+    "Evidence of mild interstitial prominence in the right lower lung field, suggestive of atelectasis or early infiltrates.",
+    "Diaphragms are intact and clear costophrenic angles bilaterally, although the right hemidiaphragm is slightly obscured by the noted infiltrate/atelectasis.",
+    "Bony thorax is unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lower lung opacity",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "Ill-defined opacity in the right lower lung field, possibly representing atelectasis or early pneumonic infiltrate."
+    }
+  ],
+  "summary": "The X-ray of your chest shows a slight haziness in the lower part of your right lung. This could be due to a small area where the lung tissue has collapsed (called atelectasis) or an early infection like pneumonia. Your heart and the major blood vessels appear normal, and there's no sign of fluid around your lungs or a collapsed lung. Further evaluation or follow-up may be recommended by your doctor.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.294085023",
+    "https://radiopaedia.org/articles/atelectasis",
+    "https://www.nejm.org/doi/full/10.1056/NEJMcp1212459"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22961,
+    "bytesOut": 22961,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:02:36.283Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

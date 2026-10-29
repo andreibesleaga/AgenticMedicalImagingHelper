@@ -1,0 +1,63 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000148/series_2/00000148_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right pleural effusion: A large right-sided pleural effusion is present, obscuring the right hemidiaphragm and blunting the right costophrenic angle.\",\n    \"Mediastinal shift: There is a mild to moderate leftward mediastinal shift.\",\n    \"Left lung: The left lung appears clear without significant consolidation or effusion.\",\n    \"Cardiac silhouette: The cardiac silhouette is shifted to the left, likely due to the right pleural effusion.\",\n    \"Air-fluid level in stomach: An air-fluid level is noted in the stomach.\",\n    \"Medical device: A metallic ring-like structure (likely a medical device or foreign body) is seen in the right mid-lung zone.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Pleural Effusion\",\n      \"description\": \"Large right-sided pleural effusion, obscuring the right hemidiaphragm and blunting the right costophrenic angle.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"Mild to moderate leftward shift of the mediastinum, secondary to the right pleural effusion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Intrapulmonary Device/Foreign Body\",\n      \"description\": \"A metallic ring-like structure is identified in the right mid-lung zone, possibly a stent or other medical device, or an ingested foreign body.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows a large amount of fluid in the right lung space, which is called a pleural effusion. This fluid is pushing your heart and other central chest structures slightly to the left. The left lung appears clear. There's also a metallic ring-like object visible in the middle part of your right lung. A pleural effusion means there's excess fluid surrounding the lung, which can make it harder to breathe. The metallic object might be a device that was placed there for medical reasons, or it could be something that was inhaled.\",\n  \"references\": [\n    \"https://radiologykey.com/pleural-effusion-2/\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK459206/\",\n    \"https://www.uptodate.com/contents/diagnosis-and-management-of-pleural-effusion-in-adults\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right pleural effusion: A large right-sided pleural effusion is present, obscuring the right hemidiaphragm and blunting the right costophrenic angle.",
+    "Mediastinal shift: There is a mild to moderate leftward mediastinal shift.",
+    "Left lung: The left lung appears clear without significant consolidation or effusion.",
+    "Cardiac silhouette: The cardiac silhouette is shifted to the left, likely due to the right pleural effusion.",
+    "Air-fluid level in stomach: An air-fluid level is noted in the stomach.",
+    "Medical device: A metallic ring-like structure (likely a medical device or foreign body) is seen in the right mid-lung zone."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Pleural Effusion",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Large right-sided pleural effusion, obscuring the right hemidiaphragm and blunting the right costophrenic angle."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Mild to moderate leftward shift of the mediastinum, secondary to the right pleural effusion."
+    },
+    {
+      "name": "Intrapulmonary Device/Foreign Body",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "A metallic ring-like structure is identified in the right mid-lung zone, possibly a stent or other medical device, or an ingested foreign body."
+    }
+  ],
+  "summary": "The X-ray of your chest shows a large amount of fluid in the right lung space, which is called a pleural effusion. This fluid is pushing your heart and other central chest structures slightly to the left. The left lung appears clear. There's also a metallic ring-like object visible in the middle part of your right lung. A pleural effusion means there's excess fluid surrounding the lung, which can make it harder to breathe. The metallic object might be a device that was placed there for medical reasons, or it could be something that was inhaled.",
+  "references": [
+    "https://radiologykey.com/pleural-effusion-2/",
+    "https://www.ncbi.nlm.nih.gov/books/NBK459206/",
+    "https://www.uptodate.com/contents/diagnosis-and-management-of-pleural-effusion-in-adults"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23649,
+    "bytesOut": 23649,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:23:42.571Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

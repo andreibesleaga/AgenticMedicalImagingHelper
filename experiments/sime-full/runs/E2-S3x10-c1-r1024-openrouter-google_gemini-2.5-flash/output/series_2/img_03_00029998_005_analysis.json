@@ -1,0 +1,77 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_2/img_03_00029998_005.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Evidence of prior sternotomy with sternal wires in place.\",\n    \"Bilateral hilar prominence, more pronounced on the right.\",\n    \"Increased interstitial markings, particularly in the right lower lobe, suggesting pulmonary congestion or edema.\",\n    \"Small right pleural effusion with blunting of the right costophrenic angle.\",\n    \"Left hemidiaphragm is intact and well-defined.\",\n    \"Cardiomegaly is suggested by increased cardiothoracic ratio, however, an AP projection might exaggerate heart size.\",\n    \"No obvious pneumothorax.\",\n    \"Osseous structures appear intact without acute fracture.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Sternal wires\",\n      \"description\": \"Multiple sternal wires are seen, indicating a prior sternotomy, likely for cardiac surgery.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Bilateral hilar prominence\",\n      \"description\": \"Bilateral hila appear prominent, more so on the right, which could be due to enlarged vessels or lymph nodes, suggesting underlying pathology such as pulmonary hypertension or congestive heart failure.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Increased interstitial markings\",\n      \"description\": \"Increased interstitial markings are noted, especially in the right lower lobe, consistent with pulmonary vascular congestion or early interstitial edema.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    },\n    {\n      \"name\": \"Right pleural effusion\",\n      \"description\": \"There is a small right pleural effusion indicated by blunting of the right costophrenic angle.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette appears enlarged, suggesting cardiomegaly. This finding should be interpreted cautiously on an AP projection.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"This chest X-ray shows that the patient has had previous heart surgery, as indicated by wires holding the breastbone together. There is some fluid around the right lung (pleural effusion) and signs of fluid accumulation within the lungs (pulmonary congestion), particularly in the right lower part. The blood vessels and lymph nodes in the central part of the lungs appear more prominent than usual, especially on the right. The heart also appears enlarged, though this can sometimes look more pronounced on this type of X-ray. These findings suggest the possibility of heart failure or other cardiac issues contributing to the lung findings.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.294085072\",\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4036660/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Evidence of prior sternotomy with sternal wires in place.",
+    "Bilateral hilar prominence, more pronounced on the right.",
+    "Increased interstitial markings, particularly in the right lower lobe, suggesting pulmonary congestion or edema.",
+    "Small right pleural effusion with blunting of the right costophrenic angle.",
+    "Left hemidiaphragm is intact and well-defined.",
+    "Cardiomegaly is suggested by increased cardiothoracic ratio, however, an AP projection might exaggerate heart size.",
+    "No obvious pneumothorax.",
+    "Osseous structures appear intact without acute fracture."
+  ],
+  "abnormalities": [
+    {
+      "name": "Sternal wires",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Multiple sternal wires are seen, indicating a prior sternotomy, likely for cardiac surgery."
+    },
+    {
+      "name": "Bilateral hilar prominence",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Bilateral hila appear prominent, more so on the right, which could be due to enlarged vessels or lymph nodes, suggesting underlying pathology such as pulmonary hypertension or congestive heart failure."
+    },
+    {
+      "name": "Increased interstitial markings",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Increased interstitial markings are noted, especially in the right lower lobe, consistent with pulmonary vascular congestion or early interstitial edema."
+    },
+    {
+      "name": "Right pleural effusion",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "There is a small right pleural effusion indicated by blunting of the right costophrenic angle."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 75,
+      "description": "The cardiac silhouette appears enlarged, suggesting cardiomegaly. This finding should be interpreted cautiously on an AP projection."
+    }
+  ],
+  "summary": "This chest X-ray shows that the patient has had previous heart surgery, as indicated by wires holding the breastbone together. There is some fluid around the right lung (pleural effusion) and signs of fluid accumulation within the lungs (pulmonary congestion), particularly in the right lower part. The blood vessels and lymph nodes in the central part of the lungs appear more prominent than usual, especially on the right. The heart also appears enlarged, though this can sometimes look more pronounced on this type of X-ray. These findings suggest the possibility of heart failure or other cardiac issues contributing to the lung findings.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.294085072",
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4036660/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 395339,
+    "bytesOut": 391922,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:35:15.058Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

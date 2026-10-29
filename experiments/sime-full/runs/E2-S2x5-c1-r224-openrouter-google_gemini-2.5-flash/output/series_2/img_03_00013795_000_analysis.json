@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S2x5/series_2/img_03_00013795_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Cardiomegaly, with the cardiothoracic ratio appearing increased.\",\n    \"Prominent left heart border.\",\n    \"Possible prominence of the pulmonary vasculature, especially in the upper lobes.\",\n    \"Lungs appear clear with no definite focal consolidation, pneumothorax, or significant pleural effusion.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"Bony thorax appears unremarkable for age.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette is enlarged, with an increased cardiothoracic ratio, suggesting cardiomegaly. The left heart border is particularly prominent.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pulmonary Vascular Prominence\",\n      \"description\": \"There is a suggestion of prominence in the pulmonary vasculature, particularly in the upper lobes, which could be associated with increased pulmonary blood flow or mild pulmonary venous congestion.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"The chest X-ray shows an enlarged heart, which means the heart muscle is bigger than expected. This is called cardiomegaly. There's also a slight increase in the size of the blood vessels in the lungs, which sometimes happens when the heart is working harder. The lungs themselves appear clear, with no signs of pneumonia, collapsed lung, or fluid around the lungs. Further evaluation is typically needed to understand the cause and significance of an enlarged heart.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK493202/\",\n    \"https://www.ahajournals.org/doi/full/10.1161/01.cir.0000030637.77888.aa\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Cardiomegaly, with the cardiothoracic ratio appearing increased.",
+    "Prominent left heart border.",
+    "Possible prominence of the pulmonary vasculature, especially in the upper lobes.",
+    "Lungs appear clear with no definite focal consolidation, pneumothorax, or significant pleural effusion.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "Bony thorax appears unremarkable for age."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The cardiac silhouette is enlarged, with an increased cardiothoracic ratio, suggesting cardiomegaly. The left heart border is particularly prominent."
+    },
+    {
+      "name": "Pulmonary Vascular Prominence",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "There is a suggestion of prominence in the pulmonary vasculature, particularly in the upper lobes, which could be associated with increased pulmonary blood flow or mild pulmonary venous congestion."
+    }
+  ],
+  "summary": "The chest X-ray shows an enlarged heart, which means the heart muscle is bigger than expected. This is called cardiomegaly. There's also a slight increase in the size of the blood vessels in the lungs, which sometimes happens when the heart is working harder. The lungs themselves appear clear, with no signs of pneumonia, collapsed lung, or fluid around the lungs. Further evaluation is typically needed to understand the cause and significance of an enlarged heart.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://www.ncbi.nlm.nih.gov/books/NBK493202/",
+    "https://www.ahajournals.org/doi/full/10.1161/01.cir.0000030637.77888.aa"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 18109,
+    "bytesOut": 18109,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:51:14.053Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

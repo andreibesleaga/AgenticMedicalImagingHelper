@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00026237/series_3/00026237_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pneumothorax, or large pleural effusion identified.\",\n    \"Cardiomediastinal silhouette appears within normal limits.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"Bony thorax is unremarkable.\",\n    \"Slight rotation noted, but overall image quality is diagnostic.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray shows no signs of acute lung conditions such as pneumonia (inflammation or infection of the lungs), collapsed lung (pneumothorax), or significant fluid around the lungs (pleural effusion). The heart and major blood vessels appear normal in size and shape. The bones of the chest also look normal. Overall, the study is unremarkable.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.302095724\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pneumothorax, or large pleural effusion identified.",
+    "Cardiomediastinal silhouette appears within normal limits.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "Bony thorax is unremarkable.",
+    "Slight rotation noted, but overall image quality is diagnostic."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows no signs of acute lung conditions such as pneumonia (inflammation or infection of the lungs), collapsed lung (pneumothorax), or significant fluid around the lungs (pleural effusion). The heart and major blood vessels appear normal in size and shape. The bones of the chest also look normal. Overall, the study is unremarkable.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.302095724",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24148,
+    "bytesOut": 24148,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:29:48.190Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,65 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000092/series_3/00000092_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral pleural effusions, larger on the right.\",\n    \"Air-fluid levels are visible within both pleural effusions, suggesting hydropneumothorax, particularly on the left.\",\n    \"Left lung appears partially collapsed due to the pleural effusion/hydropneumothorax.\",\n    \"Possible underlying infiltrates or atelectasis in the right lower lung field obscured by the effusion.\",\n    \"Cardiac silhouette appears within normal limits for size, though partially obscured by effusions.\",\n    \"No obvious pneumothorax without effusion on the right, but a hydropneumothorax is evident on the left.\",\n    \"Mediastinal structures appear central, without significant shift.\",\n    \"Diaphragmatic contours are obscured by the effusions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Pleural Effusions\",\n      \"description\": \"Presence of fluid accumulation in both pleural spaces, more prominent on the right side. On the left, an air-fluid level suggests a hydropneumothorax.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Left Hydropneumothorax\",\n      \"description\": \"Combination of air and fluid in the left pleural space, indicated by a clear air-fluid level and associated partial collapse of the left lung.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Partial Left Lung Collapse\",\n      \"description\": \"Evidence of reduced lung volume in the left hemithorax, likely secondary to the hydropneumothorax and pleural effusion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This chest X-ray shows fluid around both lungs, which is called a pleural effusion. The fluid is more noticeable on the right side. On the left side, there's not only fluid but also air, creating what's known as a hydropneumothorax. This combination of air and fluid is causing the left lung to be partially collapsed. These findings suggest there's a problem in the chest that needs further investigation by a doctor.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion-1\",\n    \"https://radiopaedia.org/articles/hydropneumothorax-1\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK482200/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral pleural effusions, larger on the right.",
+    "Air-fluid levels are visible within both pleural effusions, suggesting hydropneumothorax, particularly on the left.",
+    "Left lung appears partially collapsed due to the pleural effusion/hydropneumothorax.",
+    "Possible underlying infiltrates or atelectasis in the right lower lung field obscured by the effusion.",
+    "Cardiac silhouette appears within normal limits for size, though partially obscured by effusions.",
+    "No obvious pneumothorax without effusion on the right, but a hydropneumothorax is evident on the left.",
+    "Mediastinal structures appear central, without significant shift.",
+    "Diaphragmatic contours are obscured by the effusions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Presence of fluid accumulation in both pleural spaces, more prominent on the right side. On the left, an air-fluid level suggests a hydropneumothorax."
+    },
+    {
+      "name": "Left Hydropneumothorax",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Combination of air and fluid in the left pleural space, indicated by a clear air-fluid level and associated partial collapse of the left lung."
+    },
+    {
+      "name": "Partial Left Lung Collapse",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Evidence of reduced lung volume in the left hemithorax, likely secondary to the hydropneumothorax and pleural effusion."
+    }
+  ],
+  "summary": "This chest X-ray shows fluid around both lungs, which is called a pleural effusion. The fluid is more noticeable on the right side. On the left side, there's not only fluid but also air, creating what's known as a hydropneumothorax. This combination of air and fluid is causing the left lung to be partially collapsed. These findings suggest there's a problem in the chest that needs further investigation by a doctor.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion-1",
+    "https://radiopaedia.org/articles/hydropneumothorax-1",
+    "https://www.ncbi.nlm.nih.gov/books/NBK482200/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23204,
+    "bytesOut": 23204,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:23:02.964Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

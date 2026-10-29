@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_2/img_05_00023143_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"Radiography\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lung fields are clear.\",\n    \"The heart size is normal.\",\n    \"The mediastinal contours are unremarkable.\",\n    \"The visualized osseous structures are intact.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray shows normal lung fields, heart size, and mediastinum. No significant abnormalities are identified.\",\n  \"references\": [\n    \"1.https://www.radiologyinfo.org/en/imaging-techniques/chest-x-ray\",\n    \"2.https://www.bmj.com/open-study/2016/2016-000192\",\n    \"3.https://www.hindawi.com/journals/hr/2014/881487/\"\n  ]\n}",
+  "modality": "Radiography",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The lung fields are clear.",
+    "The heart size is normal.",
+    "The mediastinal contours are unremarkable.",
+    "The visualized osseous structures are intact."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows normal lung fields, heart size, and mediastinum. No significant abnormalities are identified.",
+  "references": [
+    "1.https://www.radiologyinfo.org/en/imaging-techniques/chest-x-ray",
+    "2.https://www.bmj.com/open-study/2016/2016-000192",
+    "3.https://www.hindawi.com/journals/hr/2014/881487/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 369669,
+    "bytesOut": 286486,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:11:40.307Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

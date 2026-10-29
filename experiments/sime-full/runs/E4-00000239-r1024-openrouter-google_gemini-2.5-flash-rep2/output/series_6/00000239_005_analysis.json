@@ -1,0 +1,69 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_6/00000239_005.png",
+  "seriesId": "series_6",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral reticulonodular opacities, more prominent in the lower lung zones.\",\n    \"Bilateral pleural effusions, greater on the right.\",\n    \"Cardiomegaly is present.\",\n    \"Evidence of prior sternotomy.\",\n    \"Surgically altered bowel loops are present in the abdomen with surgical clips noted.\",\n    \"Gastric distension with air-fluid level is noted in the left upper quadrant.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Reticulonodular opacities\",\n      \"description\": \"Diffuse bilateral reticulonodular opacities are observed throughout both lung fields, with increased prominence in the lower lobes, consistent with interstitial lung disease.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pleural effusions\",\n      \"description\": \"Bilateral pleural effusions are noted, which appear more significant on the right side, suggesting fluid accumulation in the pleural space.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette is enlarged, indicating cardiomegaly.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Gastric distension\",\n      \"description\": \"Significant gastric distension with an air-fluid level is present in the left upper quadrant of the abdomen, suggesting a dilated stomach.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This X-ray shows changes in the lungs including widespread fine lines and small spots, which might suggest an issue with the tissue between the air sacs. There is also fluid around both lungs, more on the right side. The heart appears enlarged. In the abdomen, the stomach is noticeably swollen with fluid and air inside, and there are surgical clips indicating previous abdominal surgery. There is also evidence of prior chest surgery, likely sternotomy. These findings may indicate underlying heart or lung conditions, and further evaluation would be recommended.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.301095034\",\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMicm1601004\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral reticulonodular opacities, more prominent in the lower lung zones.",
+    "Bilateral pleural effusions, greater on the right.",
+    "Cardiomegaly is present.",
+    "Evidence of prior sternotomy.",
+    "Surgically altered bowel loops are present in the abdomen with surgical clips noted.",
+    "Gastric distension with air-fluid level is noted in the left upper quadrant."
+  ],
+  "abnormalities": [
+    {
+      "name": "Reticulonodular opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse bilateral reticulonodular opacities are observed throughout both lung fields, with increased prominence in the lower lobes, consistent with interstitial lung disease."
+    },
+    {
+      "name": "Pleural effusions",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Bilateral pleural effusions are noted, which appear more significant on the right side, suggesting fluid accumulation in the pleural space."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "The cardiac silhouette is enlarged, indicating cardiomegaly."
+    },
+    {
+      "name": "Gastric distension",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Significant gastric distension with an air-fluid level is present in the left upper quadrant of the abdomen, suggesting a dilated stomach."
+    }
+  ],
+  "summary": "This X-ray shows changes in the lungs including widespread fine lines and small spots, which might suggest an issue with the tissue between the air sacs. There is also fluid around both lungs, more on the right side. The heart appears enlarged. In the abdomen, the stomach is noticeably swollen with fluid and air inside, and there are surgical clips indicating previous abdominal surgery. There is also evidence of prior chest surgery, likely sternotomy. These findings may indicate underlying heart or lung conditions, and further evaluation would be recommended.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.301095034",
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://www.nejm.org/doi/full/10.1056/NEJMicm1601004"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 378298,
+    "bytesOut": 374356,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:08:28.601Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

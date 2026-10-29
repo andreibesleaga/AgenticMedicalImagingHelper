@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_2/00000239_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary pathology identified.\",\n    \"Bilateral hilar and mediastinal contours are within normal limits.\",\n    \"Diaphragms are intact with clear costophrenic angles.\",\n    \"Slightly prominent heart size, though within normal limits for a PA projection.\",\n    \"Surgical clips are noted in the right axilla, consistent with prior intervention.\",\n    \"Multiple surgical clips are seen in the lower abdomen/pelvis, likely related to prior abdominal/pelvic surgery.\",\n    \"No pneumothorax or pleural effusion.\",\n    \"No acute bony abnormalities seen.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical clips (right axilla)\",\n      \"description\": \"Several surgical clips are visualized in the soft tissues of the right axillary region.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Surgical clips (lower abdomen/pelvis)\",\n      \"description\": \"Multiple surgical clips are identified in the lower abdominal and pelvic region.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray appears largely normal, with no signs of active heart or lung problems. The heart size and lung fields are within expected limits, and there's no evidence of pneumonia, collapsed lung, or fluid around the lungs. There are some small surgical clips visible in the right armpit and in the lower belly area, which are common findings from previous surgeries and are not concerning.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900890/\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2020190117\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary pathology identified.",
+    "Bilateral hilar and mediastinal contours are within normal limits.",
+    "Diaphragms are intact with clear costophrenic angles.",
+    "Slightly prominent heart size, though within normal limits for a PA projection.",
+    "Surgical clips are noted in the right axilla, consistent with prior intervention.",
+    "Multiple surgical clips are seen in the lower abdomen/pelvis, likely related to prior abdominal/pelvic surgery.",
+    "No pneumothorax or pleural effusion.",
+    "No acute bony abnormalities seen."
+  ],
+  "abnormalities": [
+    {
+      "name": "Surgical clips (right axilla)",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Several surgical clips are visualized in the soft tissues of the right axillary region."
+    },
+    {
+      "name": "Surgical clips (lower abdomen/pelvis)",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Multiple surgical clips are identified in the lower abdominal and pelvic region."
+    }
+  ],
+  "summary": "The chest X-ray appears largely normal, with no signs of active heart or lung problems. The heart size and lung fields are within expected limits, and there's no evidence of pneumonia, collapsed lung, or fluid around the lungs. There are some small surgical clips visible in the right armpit and in the lower belly area, which are common findings from previous surgeries and are not concerning.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900890/",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2020190117"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 436808,
+    "bytesOut": 435505,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:08:08.274Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

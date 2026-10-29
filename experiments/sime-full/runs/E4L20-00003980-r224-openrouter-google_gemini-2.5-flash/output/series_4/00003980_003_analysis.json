@@ -1,0 +1,63 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00003980/series_4/00003980_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Surgical hardware is noted in the left shoulder region, consistent with prior surgical intervention.\",\n    \"Bilateral lung fields show diffuse, patchy, and reticular opacities, more prominent in the lower and mid-lung zones, suggesting interstitial or alveolar infiltrates.\",\n    \"Hilar regions appear prominent.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"Osseous structures appear unremarkable given the limitations of a chest X-ray, apart from the noted surgical hardware.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Lung Opacities\",\n      \"description\": \"Diffuse, patchy, and reticular opacities are present bilaterally, primarily affecting the lower and mid-lung zones. This pattern is suggestive of interstitial or alveolar disease. The appearance could be consistent with an infectious process (e.g., atypical pneumonia, viral pneumonia), inflammatory condition, or other diffuse parenchymal lung disease.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Prominent Hila\",\n      \"description\": \"Both hilar regions appear somewhat prominent, which could be due to enlarged lymph nodes, prominent pulmonary vasculature, or peribronchial thickening. Correlation with clinical history and further imaging may be warranted.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    },\n    {\n      \"name\": \"Left Shoulder Surgical Hardware\",\n      \"description\": \"There is evidence of prior surgical fixation in the left shoulder region, likely related to a previous injury or surgery. This is an incidental finding not directly related to the pulmonary pathology.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows changes in both lungs, appearing as patchy and net-like shadows, especially in the lower and middle parts of the lungs. This suggests some kind of inflammation or fluid build-up in the lung tissue. The areas where the main airways and blood vessels enter the lungs (called the hila) also look a bit enlarged. There is also metal hardware in the left shoulder from a previous surgery or injury. These lung findings could be due to an infection like pneumonia, inflammation, or another lung condition. It would be important for a doctor to review these findings in the context of the patient's symptoms and medical history, and potentially consider further tests.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2021200257\",\n    \"https://radiopaedia.org/articles/interstitial-lung-disease\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7392659/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Surgical hardware is noted in the left shoulder region, consistent with prior surgical intervention.",
+    "Bilateral lung fields show diffuse, patchy, and reticular opacities, more prominent in the lower and mid-lung zones, suggesting interstitial or alveolar infiltrates.",
+    "Hilar regions appear prominent.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "Osseous structures appear unremarkable given the limitations of a chest X-ray, apart from the noted surgical hardware."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Lung Opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse, patchy, and reticular opacities are present bilaterally, primarily affecting the lower and mid-lung zones. This pattern is suggestive of interstitial or alveolar disease. The appearance could be consistent with an infectious process (e.g., atypical pneumonia, viral pneumonia), inflammatory condition, or other diffuse parenchymal lung disease."
+    },
+    {
+      "name": "Prominent Hila",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "Both hilar regions appear somewhat prominent, which could be due to enlarged lymph nodes, prominent pulmonary vasculature, or peribronchial thickening. Correlation with clinical history and further imaging may be warranted."
+    },
+    {
+      "name": "Left Shoulder Surgical Hardware",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "There is evidence of prior surgical fixation in the left shoulder region, likely related to a previous injury or surgery. This is an incidental finding not directly related to the pulmonary pathology."
+    }
+  ],
+  "summary": "The chest X-ray shows changes in both lungs, appearing as patchy and net-like shadows, especially in the lower and middle parts of the lungs. This suggests some kind of inflammation or fluid build-up in the lung tissue. The areas where the main airways and blood vessels enter the lungs (called the hila) also look a bit enlarged. There is also metal hardware in the left shoulder from a previous surgery or injury. These lung findings could be due to an infection like pneumonia, inflammation, or another lung condition. It would be important for a doctor to review these findings in the context of the patient's symptoms and medical history, and potentially consider further tests.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2021200257",
+    "https://radiopaedia.org/articles/interstitial-lung-disease",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7392659/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24312,
+    "bytesOut": 24312,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:18:33.426Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000219/series_4/00000219_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The cardiac silhouette is moderately enlarged with a cardiothoracic ratio greater than 0.50.\",\n    \"The thoracic aorta is mildly tortuous/unfolded, consistent with hypertensive or atherosclerotic changes.\",\n    \"Lungs are clear bilaterally without evidence of focal airspace consolidation, pneumothorax, or pulmonary edema.\",\n    \"Costophrenic and cardiophrenic sulci are sharp and clear, with no obvious pleural effusions.\",\n    \"Small radiopaque surgical clips or calcified densities are noted in the right hilar/paratracheal region.\",\n    \"Visualized osseous structures demonstrate mild degenerative changes in the thoracic spine without acute fracture.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlargement of the cardiac silhouette, which occupies more than 50% of the maximum transverse thoracic diameter.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 88\n    },\n    {\n      \"name\": \"Aortic Ectasia\",\n      \"description\": \"Mild tortuosity and unfolding of the thoracic aorta without aneurysmal dilatation.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows an enlarged heart (cardiomegaly) and mild bending or tortuosity of the main blood vessel (the aorta), which are common findings often related to longstanding high blood pressure or aging. The lungs are clear of pneumonia, fluid buildup, or collapse. A few tiny surgical clips or calcifications are visible near the middle of the chest, which are typically benign remnants of past procedures or prior minor infections. Follow-up with your primary care physician or cardiologist is recommended to evaluate heart function.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK553140/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The cardiac silhouette is moderately enlarged with a cardiothoracic ratio greater than 0.50.",
+    "The thoracic aorta is mildly tortuous/unfolded, consistent with hypertensive or atherosclerotic changes.",
+    "Lungs are clear bilaterally without evidence of focal airspace consolidation, pneumothorax, or pulmonary edema.",
+    "Costophrenic and cardiophrenic sulci are sharp and clear, with no obvious pleural effusions.",
+    "Small radiopaque surgical clips or calcified densities are noted in the right hilar/paratracheal region.",
+    "Visualized osseous structures demonstrate mild degenerative changes in the thoracic spine without acute fracture."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 88,
+      "description": "Enlargement of the cardiac silhouette, which occupies more than 50% of the maximum transverse thoracic diameter."
+    },
+    {
+      "name": "Aortic Ectasia",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Mild tortuosity and unfolding of the thoracic aorta without aneurysmal dilatation."
+    }
+  ],
+  "summary": "The chest X-ray shows an enlarged heart (cardiomegaly) and mild bending or tortuosity of the main blood vessel (the aorta), which are common findings often related to longstanding high blood pressure or aging. The lungs are clear of pneumonia, fluid buildup, or collapse. A few tiny surgical clips or calcifications are visible near the middle of the chest, which are typically benign remnants of past procedures or prior minor infections. Follow-up with your primary care physician or cardiologist is recommended to evaluate heart function.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://www.ncbi.nlm.nih.gov/books/NBK553140/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23416,
+    "bytesOut": 23416,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:36:46.332Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

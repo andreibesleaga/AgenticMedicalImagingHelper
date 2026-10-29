@@ -1,0 +1,65 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_1/00000219_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Fair\",\"findings\":[\"Cardiomegaly with increased cardiothoracic ratio\",\"Prominent, widened mediastinal silhouette, particularly along the left heart border\",\"Bilateral lung fields appear grossly clear without obvious focal consolidation\",\"No overt pleural effusion identified, though lower lung fields are partially obscured by overlying soft tissue\",\"Degenerative changes noted in the thoracic spine (visible endplate irregularities)\",\"Surgical skin staples or clips seen projecting over the lower chest/upper abdomen\",\"Patient positioning marker 'R' visible in right upper corner\",\"Soft tissue overlying the lower chest suggests large body habitus limiting fine detail evaluation\"],\"abnormalities\":[{\"name\":\"Cardiomegaly\",\"description\":\"Enlarged cardiac silhouette with cardiothoracic ratio appearing greater than 50%, consistent with cardiomegaly; could reflect chamber enlargement or pericardial process\",\"severity\":\"Moderate\",\"confidence\":72},{\"name\":\"Mediastinal widening\",\"description\":\"The mediastinal contour, especially on the left, appears prominent/widened which could be due to vascular structures (e.g., aortic unfolding/ectasia) or mediastinal mass; further cross-sectional imaging recommended for characterization\",\"severity\":\"Mild\",\"confidence\":55},{\"name\":\"Thoracic spine degenerative changes\",\"description\":\"Irregular vertebral endplates and mild disc space changes seen on the midline spine, suggestive of age-related degenerative disease\",\"severity\":\"Mild\",\"confidence\":50}],\"summary\":\"This chest X-ray shows that the heart appears larger than normal (cardiomegaly), and the central area of the chest where the heart and major blood vessels sit (the mediastinum) looks a bit wider than usual, especially on the left side. The lungs themselves look relatively clear without signs of pneumonia or fluid buildup. There are also some wear-and-tear changes in the spine bones, which is common with aging. The findings suggesting heart enlargement and mediastinal widening could be due to several causes, including blood vessel changes, heart conditions, or less commonly something in the chest cavity—further evaluation, such as a CT scan or echocardiogram, may be needed to clarify the exact cause. All findings should be confirmed and interpreted by a radiologist and your treating physician in the context of your symptoms and medical history.\",\"references\":[\"https://radiopaedia.org/articles/cardiomegaly\",\"https://pubs.rsna.org/doi/10.1148/rg.2019190081\",\"https://radiopaedia.org/articles/mediastinal-widening\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Fair",
+  "findings": [
+    "Cardiomegaly with increased cardiothoracic ratio",
+    "Prominent, widened mediastinal silhouette, particularly along the left heart border",
+    "Bilateral lung fields appear grossly clear without obvious focal consolidation",
+    "No overt pleural effusion identified, though lower lung fields are partially obscured by overlying soft tissue",
+    "Degenerative changes noted in the thoracic spine (visible endplate irregularities)",
+    "Surgical skin staples or clips seen projecting over the lower chest/upper abdomen",
+    "Patient positioning marker 'R' visible in right upper corner",
+    "Soft tissue overlying the lower chest suggests large body habitus limiting fine detail evaluation"
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 72,
+      "description": "Enlarged cardiac silhouette with cardiothoracic ratio appearing greater than 50%, consistent with cardiomegaly; could reflect chamber enlargement or pericardial process"
+    },
+    {
+      "name": "Mediastinal widening",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "The mediastinal contour, especially on the left, appears prominent/widened which could be due to vascular structures (e.g., aortic unfolding/ectasia) or mediastinal mass; further cross-sectional imaging recommended for characterization"
+    },
+    {
+      "name": "Thoracic spine degenerative changes",
+      "severity": "Mild",
+      "confidence": 50,
+      "description": "Irregular vertebral endplates and mild disc space changes seen on the midline spine, suggestive of age-related degenerative disease"
+    }
+  ],
+  "summary": "This chest X-ray shows that the heart appears larger than normal (cardiomegaly), and the central area of the chest where the heart and major blood vessels sit (the mediastinum) looks a bit wider than usual, especially on the left side. The lungs themselves look relatively clear without signs of pneumonia or fluid buildup. There are also some wear-and-tear changes in the spine bones, which is common with aging. The findings suggesting heart enlargement and mediastinal widening could be due to several causes, including blood vessel changes, heart conditions, or less commonly something in the chest cavity—further evaluation, such as a CT scan or echocardiogram, may be needed to clarify the exact cause. All findings should be confirmed and interpreted by a radiologist and your treating physician in the context of your symptoms and medical history.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://pubs.rsna.org/doi/10.1148/rg.2019190081",
+    "https://radiopaedia.org/articles/mediastinal-widening"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 383333,
+    "bytesOut": 378599,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T10:29:04.728Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

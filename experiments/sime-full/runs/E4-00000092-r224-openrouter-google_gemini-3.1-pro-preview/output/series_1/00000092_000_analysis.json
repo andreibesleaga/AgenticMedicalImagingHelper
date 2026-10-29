@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000092/series_1/00000092_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP/PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral opacities are present in the lower lung zones.\",\n    \"The right hemidiaphragm is partially obscured by the opacity.\",\n    \"The left hemidiaphragm is partially obscured by the opacity.\",\n    \"The heart size is within normal limits.\",\n    \"The mediastinum is central and unremarkable.\",\n    \"The bony thorax appears intact without acute fractures.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral lung opacities\",\n      \"description\": \"Bilateral opacities in the lower lung zones, likely representing consolidation or pleural effusions.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Obscured hemidiaphragms\",\n      \"description\": \"Partial obscuration of both hemidiaphragms, consistent with adjacent airspace disease or fluid.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows areas of cloudiness (opacities) in the lower parts of both lungs. This could be due to fluid build-up or an infection like pneumonia. The outlines of the diaphragm (the muscle that helps you breathe) are also hard to see clearly in these areas, which supports these possibilities. Your doctor will likely want to do more tests or see how you respond to treatment to figure out the exact cause. The heart size and other structures look normal.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/consolidation-pulmonary\",\n    \"https://radiopaedia.org/articles/pleural-effusion-1\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP/PA)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral opacities are present in the lower lung zones.",
+    "The right hemidiaphragm is partially obscured by the opacity.",
+    "The left hemidiaphragm is partially obscured by the opacity.",
+    "The heart size is within normal limits.",
+    "The mediastinum is central and unremarkable.",
+    "The bony thorax appears intact without acute fractures."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral lung opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Bilateral opacities in the lower lung zones, likely representing consolidation or pleural effusions."
+    },
+    {
+      "name": "Obscured hemidiaphragms",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Partial obscuration of both hemidiaphragms, consistent with adjacent airspace disease or fluid."
+    }
+  ],
+  "summary": "The chest X-ray shows areas of cloudiness (opacities) in the lower parts of both lungs. This could be due to fluid build-up or an infection like pneumonia. The outlines of the diaphragm (the muscle that helps you breathe) are also hard to see clearly in these areas, which supports these possibilities. Your doctor will likely want to do more tests or see how you respond to treatment to figure out the exact cause. The heart size and other structures look normal.",
+  "references": [
+    "https://radiopaedia.org/articles/consolidation-pulmonary",
+    "https://radiopaedia.org/articles/pleural-effusion-1"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24381,
+    "bytesOut": 24381,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:32:46.547Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_17_00025495_004.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Prominent cardiomediastinal silhouette.\",\n    \"Bilateral pleural effusions, greater on the right side.\",\n    \"Pulmonary vascular congestion.\",\n    \"Central venous catheter with its tip projecting over the superior vena cava.\",\n    \"No definite focal consolidation or pneumothorax identified.\",\n    \"Surgically altered sternum consistent with prior sternotomy.\",\n    \"Bilateral breast shadows are visible.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiomediastinal silhouette is enlarged, suggesting cardiomegaly.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"There are bilateral pleural effusions, more pronounced on the right, obscuring the right costophrenic angle.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pulmonary Vascular Congestion\",\n      \"description\": \"Increased prominence of pulmonary vascular markings consistent with vascular congestion.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The chest X-ray shows an enlarged heart and fluid around both lungs, more on the right side. There are also signs of increased blood flow in the lung vessels, which can happen with heart conditions. A tube is seen correctly placed in a large vein near the heart. The breast shadows are visible, which is normal for this type of image. The sternum (breastbone) appears to have had surgery previously. These findings suggest issues related to heart function and fluid balance.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK459196/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Prominent cardiomediastinal silhouette.",
+    "Bilateral pleural effusions, greater on the right side.",
+    "Pulmonary vascular congestion.",
+    "Central venous catheter with its tip projecting over the superior vena cava.",
+    "No definite focal consolidation or pneumothorax identified.",
+    "Surgically altered sternum consistent with prior sternotomy.",
+    "Bilateral breast shadows are visible."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The cardiomediastinal silhouette is enlarged, suggesting cardiomegaly."
+    },
+    {
+      "name": "Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "There are bilateral pleural effusions, more pronounced on the right, obscuring the right costophrenic angle."
+    },
+    {
+      "name": "Pulmonary Vascular Congestion",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Increased prominence of pulmonary vascular markings consistent with vascular congestion."
+    }
+  ],
+  "summary": "The chest X-ray shows an enlarged heart and fluid around both lungs, more on the right side. There are also signs of increased blood flow in the lung vessels, which can happen with heart conditions. A tube is seen correctly placed in a large vein near the heart. The breast shadows are visible, which is normal for this type of image. The sternum (breastbone) appears to have had surgery previously. These findings suggest issues related to heart function and fluid balance.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.ncbi.nlm.nih.gov/books/NBK459196/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 436002,
+    "bytesOut": 435761,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:46:52.705Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

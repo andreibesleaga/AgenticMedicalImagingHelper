@@ -1,0 +1,77 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S2x5/series_1/img_03_00019238_009.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Centrally inserted catheter with the tip projecting over the superior vena cava, likely a PICC or central venous catheter.\",\n    \"Multiple surgical clips are noted in the right neck/upper mediastinum.\",\n    \"Bilateral pleural effusions, greater on the left than the right, with associated blunting of the costophrenic angles.\",\n    \"Mild atelectasis or inflammatory changes at the lung bases, particularly on the left.\",\n    \"Gas bubbles are seen in the left subdiaphragmatic region, which could represent free air.\",\n    \"No definite pneumothorax.\",\n    \"Cardiac silhouette is not significantly enlarged.\",\n    \"Bony structures appear intact for the visualized portions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Central venous catheter\",\n      \"description\": \"Centrally inserted catheter with the tip projecting over the superior vena cava, indicating proper placement.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Surgical clips\",\n      \"description\": \"Multiple surgical clips are noted in the right neck/upper mediastinum, suggesting prior surgery in this region.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Bilateral pleural effusions\",\n      \"description\": \"Fluid accumulation in both pleural spaces, more prominent on the left, leading to blunting of the costophrenic angles. This indicates an abnormal collection of fluid around the lungs.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Atelectasis/Inflammatory changes\",\n      \"description\": \"Mild collapse or inflammation of lung tissue at the lung bases, more noticeable on the left, likely related to the pleural effusions.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Subdiaphragmatic gas\",\n      \"description\": \"Gas bubbles are seen in the left subdiaphragmatic region, which could represent free intraperitoneal air or gas within bowel loops. This finding requires further evaluation to rule out a perforation.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The X-ray shows fluid around both lungs, more so on the left, which is called pleural effusion. There are also some collapsed or inflamed areas at the bottom of the lungs. A tube (catheter) for medication or fluids is properly placed. Surgical clips from a previous operation are visible in the neck/chest area. Additionally, there are gas bubbles under the left side of the diaphragm which could be concerning for free air in the abdomen, needing further investigation.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2017160100\",\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8799484/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Centrally inserted catheter with the tip projecting over the superior vena cava, likely a PICC or central venous catheter.",
+    "Multiple surgical clips are noted in the right neck/upper mediastinum.",
+    "Bilateral pleural effusions, greater on the left than the right, with associated blunting of the costophrenic angles.",
+    "Mild atelectasis or inflammatory changes at the lung bases, particularly on the left.",
+    "Gas bubbles are seen in the left subdiaphragmatic region, which could represent free air.",
+    "No definite pneumothorax.",
+    "Cardiac silhouette is not significantly enlarged.",
+    "Bony structures appear intact for the visualized portions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Central venous catheter",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Centrally inserted catheter with the tip projecting over the superior vena cava, indicating proper placement."
+    },
+    {
+      "name": "Surgical clips",
+      "severity": "Normal",
+      "confidence": 90,
+      "description": "Multiple surgical clips are noted in the right neck/upper mediastinum, suggesting prior surgery in this region."
+    },
+    {
+      "name": "Bilateral pleural effusions",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Fluid accumulation in both pleural spaces, more prominent on the left, leading to blunting of the costophrenic angles. This indicates an abnormal collection of fluid around the lungs."
+    },
+    {
+      "name": "Atelectasis/Inflammatory changes",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Mild collapse or inflammation of lung tissue at the lung bases, more noticeable on the left, likely related to the pleural effusions."
+    },
+    {
+      "name": "Subdiaphragmatic gas",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Gas bubbles are seen in the left subdiaphragmatic region, which could represent free intraperitoneal air or gas within bowel loops. This finding requires further evaluation to rule out a perforation."
+    }
+  ],
+  "summary": "The X-ray shows fluid around both lungs, more so on the left, which is called pleural effusion. There are also some collapsed or inflamed areas at the bottom of the lungs. A tube (catheter) for medication or fluids is properly placed. Surgical clips from a previous operation are visible in the neck/chest area. Additionally, there are gas bubbles under the left side of the diaphragm which could be concerning for free air in the abdomen, needing further investigation.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2017160100",
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8799484/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 450035,
+    "bytesOut": 449847,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:33:36.663Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

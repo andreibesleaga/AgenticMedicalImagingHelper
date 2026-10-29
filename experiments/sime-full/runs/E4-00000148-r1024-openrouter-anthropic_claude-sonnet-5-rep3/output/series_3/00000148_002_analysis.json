@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_3/00000148_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP upright)\",\"quality\":\"Good\",\"findings\":[\"Rounded, disc-shaped radiopaque device with central metallic hub overlying the right mid-lung field, likely a vascular access port (e.g., Port-a-Cath reservoir) with associated catheter projecting cephalad and medially toward the right internal jugular/subclavian vein course.\",\"Cardiac silhouette appears mildly enlarged, though this may be partially exaggerated by AP projection.\",\"Lung fields are grossly clear bilaterally without focal consolidation, pleural effusion, or pneumothorax.\",\"Mediastinal and hilar contours appear unremarkable.\",\"Visualized osseous structures (ribs, clavicles, shoulders) show no acute fracture or destructive lesion.\",\"Soft tissue densities noted overlying the lower chest/upper abdomen bilaterally, likely breast shadows.\",\"'L' marker present indicating left side orientation.\"],\"abnormalities\":[{\"name\":\"Implanted vascular access port\",\"description\":\"Round radiopaque device with a catheter tail seen in the right upper chest, consistent with a subcutaneous chemotherapy port or similar central venous access device. Catheter tip location should be confirmed to ensure appropriate position (typically at the cavoatrial junction).\",\"severity\":\"Normal\",\"confidence\":90},{\"name\":\"Possible mild cardiomegaly\",\"description\":\"Cardiothoracic ratio appears slightly increased, though this is difficult to assess definitively on an AP portable-type film due to magnification and patient positioning.\",\"severity\":\"Mild\",\"confidence\":40}],\"summary\":\"This chest X-ray shows a small round device under the skin in the upper right chest with a thin tube (catheter) leading toward a vein near the neck. This is a common medical device called a vascular access port, which is often placed to allow long-term delivery of medications such as chemotherapy or IV fluids without repeated needle sticks. The lungs appear clear with no signs of infection, fluid buildup, or collapse. The heart size looks slightly large, but this can sometimes be due to the way the X-ray was taken rather than a true problem. No fractures or other abnormalities are seen in the visible bones. Overall, the main finding is the presence of the port device, and follow-up imaging or clinical correlation can confirm it is properly positioned.\",\"references\":[\"https://radiopaedia.org/articles/central-venous-catheter-port\",\"https://www.ajronline.org/doi/10.2214/AJR.14.13808\",\"https://pubs.rsna.org/doi/10.1148/rg.2016150195\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Good",
+  "findings": [
+    "Rounded, disc-shaped radiopaque device with central metallic hub overlying the right mid-lung field, likely a vascular access port (e.g., Port-a-Cath reservoir) with associated catheter projecting cephalad and medially toward the right internal jugular/subclavian vein course.",
+    "Cardiac silhouette appears mildly enlarged, though this may be partially exaggerated by AP projection.",
+    "Lung fields are grossly clear bilaterally without focal consolidation, pleural effusion, or pneumothorax.",
+    "Mediastinal and hilar contours appear unremarkable.",
+    "Visualized osseous structures (ribs, clavicles, shoulders) show no acute fracture or destructive lesion.",
+    "Soft tissue densities noted overlying the lower chest/upper abdomen bilaterally, likely breast shadows.",
+    "'L' marker present indicating left side orientation."
+  ],
+  "abnormalities": [
+    {
+      "name": "Implanted vascular access port",
+      "severity": "Normal",
+      "confidence": 90,
+      "description": "Round radiopaque device with a catheter tail seen in the right upper chest, consistent with a subcutaneous chemotherapy port or similar central venous access device. Catheter tip location should be confirmed to ensure appropriate position (typically at the cavoatrial junction)."
+    },
+    {
+      "name": "Possible mild cardiomegaly",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Cardiothoracic ratio appears slightly increased, though this is difficult to assess definitively on an AP portable-type film due to magnification and patient positioning."
+    }
+  ],
+  "summary": "This chest X-ray shows a small round device under the skin in the upper right chest with a thin tube (catheter) leading toward a vein near the neck. This is a common medical device called a vascular access port, which is often placed to allow long-term delivery of medications such as chemotherapy or IV fluids without repeated needle sticks. The lungs appear clear with no signs of infection, fluid buildup, or collapse. The heart size looks slightly large, but this can sometimes be due to the way the X-ray was taken rather than a true problem. No fractures or other abnormalities are seen in the visible bones. Overall, the main finding is the presence of the port device, and follow-up imaging or clinical correlation can confirm it is properly positioned.",
+  "references": [
+    "https://radiopaedia.org/articles/central-venous-catheter-port",
+    "https://www.ajronline.org/doi/10.2214/AJR.14.13808",
+    "https://pubs.rsna.org/doi/10.1148/rg.2016150195"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 453156,
+    "bytesOut": 452383,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T10:27:14.525Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

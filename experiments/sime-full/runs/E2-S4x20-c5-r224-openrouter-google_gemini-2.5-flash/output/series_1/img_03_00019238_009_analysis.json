@@ -1,0 +1,62 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_1/img_03_00019238_009.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Mild to moderate cardiomegaly, with a cardiothoracic ratio estimated to be greater than 0.5.\",\n    \"Bilateral pleural effusions, greater on the right, obscuring the right costophrenic angle and blunting the left costophrenic angle.\",\n    \"Perihilar vascular congestion, suggestive of pulmonary edema.\",\n    \"No focal consolidation or pneumothorax identified.\",\n    \"Multiple radiopaque lines overlying the chest, consistent with external monitoring leads/tubes.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Mild to moderate cardiac enlargement, with an estimated cardiothoracic ratio exceeding 0.5, indicating an enlarged heart.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Presence of fluid in both pleural spaces, more prominent on the right side, causing blunting of the costophrenic angles.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pulmonary Edema\",\n      \"description\": \"Evidence of perihilar vascular congestion, consistent with fluid accumulation in the lungs.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that your heart appears larger than normal, a condition called cardiomegaly. There is also fluid around both lungs, known as pleural effusions, which are more noticeable on the right side. Additionally, there are signs of fluid in the lungs themselves, suggesting pulmonary edema, which means there's excess fluid in the lung tissues. These findings often indicate issues with heart function or fluid balance. There are no signs of a collapsed lung (pneumothorax) or distinct areas of infection (consolidation).\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3653139/\",\n    \"https://radiologykey.com/pulmonary-edema-3/\",\n    \"https://www.thoracic.org/patients/patient-resources/breathing-in-america/resources/pleural-effusion.pdf\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Mild to moderate cardiomegaly, with a cardiothoracic ratio estimated to be greater than 0.5.",
+    "Bilateral pleural effusions, greater on the right, obscuring the right costophrenic angle and blunting the left costophrenic angle.",
+    "Perihilar vascular congestion, suggestive of pulmonary edema.",
+    "No focal consolidation or pneumothorax identified.",
+    "Multiple radiopaque lines overlying the chest, consistent with external monitoring leads/tubes."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Mild to moderate cardiac enlargement, with an estimated cardiothoracic ratio exceeding 0.5, indicating an enlarged heart."
+    },
+    {
+      "name": "Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Presence of fluid in both pleural spaces, more prominent on the right side, causing blunting of the costophrenic angles."
+    },
+    {
+      "name": "Pulmonary Edema",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Evidence of perihilar vascular congestion, consistent with fluid accumulation in the lungs."
+    }
+  ],
+  "summary": "The chest X-ray shows that your heart appears larger than normal, a condition called cardiomegaly. There is also fluid around both lungs, known as pleural effusions, which are more noticeable on the right side. Additionally, there are signs of fluid in the lungs themselves, suggesting pulmonary edema, which means there's excess fluid in the lung tissues. These findings often indicate issues with heart function or fluid balance. There are no signs of a collapsed lung (pneumothorax) or distinct areas of infection (consolidation).",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3653139/",
+    "https://radiologykey.com/pulmonary-edema-3/",
+    "https://www.thoracic.org/patients/patient-resources/breathing-in-america/resources/pleural-effusion.pdf"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23882,
+    "bytesOut": 23882,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:01:41.415Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000148/series_2/00000148_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs appear clear bilaterally.\",\n    \"There is a rounded, hyperdense nodule projecting over the right upper lobe.\",\n    \"There is a moderate right pleural effusion.\",\n    \"The heart size is normal.\",\n    \"The mediastinal structures are unremarkable.\",\n    \"The bony structures are intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Nodule\",\n      \"description\": \"A rounded, hyperdense nodule is present in the right upper lobe.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 50\n    },\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Moderate right pleural effusion is present.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"This X-ray shows a nodule in the right lung lobe and a collection of fluid (effusion) in the right side of the chest cavity. The lungs are otherwise clear.\",\n  \"references\": [\n    \"https://www.radiologyassistant.com/topic/right-upper-lobe-nodule/\",\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.ats.org/unrelated/pleural-effusion\",\n    \"https://www.cdc.gov/pulmonicarteries/pdf/chest-xray-for-pleural-effusion.pdf\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The lungs appear clear bilaterally.",
+    "There is a rounded, hyperdense nodule projecting over the right upper lobe.",
+    "There is a moderate right pleural effusion.",
+    "The heart size is normal.",
+    "The mediastinal structures are unremarkable.",
+    "The bony structures are intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Nodule",
+      "severity": "Mild",
+      "confidence": 50,
+      "description": "A rounded, hyperdense nodule is present in the right upper lobe."
+    },
+    {
+      "name": "Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Moderate right pleural effusion is present."
+    }
+  ],
+  "summary": "This X-ray shows a nodule in the right lung lobe and a collection of fluid (effusion) in the right side of the chest cavity. The lungs are otherwise clear.",
+  "references": [
+    "https://www.radiologyassistant.com/topic/right-upper-lobe-nodule/",
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.ats.org/unrelated/pleural-effusion",
+    "https://www.cdc.gov/pulmonicarteries/pdf/chest-xray-for-pleural-effusion.pdf"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23649,
+    "bytesOut": 23649,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:43:30.462Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

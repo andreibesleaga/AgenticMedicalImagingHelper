@@ -1,0 +1,62 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_14_00006759_001.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Cardiomegaly is present with an increased cardiothoracic ratio.\",\n    \"Bilateral perihilar and basilar interstitial opacities are noted, suggestive of pulmonary edema.\",\n    \"Multiple surgical clips are identified in the mediastinum, likely related to prior cardiac surgery.\",\n    \"No obvious pneumothorax or large pleural effusion is seen.\",\n    \"Osseous structures appear intact without acute fracture or dislocation.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette is significantly enlarged, with an increased cardiothoracic ratio, suggesting cardiomegaly. This could be due to various underlying cardiac conditions such as heart failure or valvular disease.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pulmonary Edema\",\n      \"description\": \"There are bilateral perihilar and basilar interstitial opacities consistent with pulmonary edema. This often indicates fluid overload or cardiac decompensation.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Mediastinal Surgical Clips\",\n      \"description\": \"Several metallic surgical clips are visible in the central mediastinum, indicating a history of cardiac or thoracic surgery. These are typically benign findings post-surgery but provide important clinical context.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows an enlarged heart and signs of fluid in the lungs, which is often called pulmonary edema. These findings suggest that the heart may not be pumping as effectively as it should be, possibly due to heart failure. There are also surgical clips visible in the chest, which means the patient has had heart or chest surgery in the past. There are no signs of a collapsed lung or significant fluid around the lungs. Further medical evaluation is recommended to understand the cause and appropriate treatment for the enlarged heart and lung fluid.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/pulmonary-oedema\",\n    \"https://www.acc.org/latest-in-cardiology/articles/2021/08/17/12/32/imaging-of-heart-failure\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Cardiomegaly is present with an increased cardiothoracic ratio.",
+    "Bilateral perihilar and basilar interstitial opacities are noted, suggestive of pulmonary edema.",
+    "Multiple surgical clips are identified in the mediastinum, likely related to prior cardiac surgery.",
+    "No obvious pneumothorax or large pleural effusion is seen.",
+    "Osseous structures appear intact without acute fracture or dislocation."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "The cardiac silhouette is significantly enlarged, with an increased cardiothoracic ratio, suggesting cardiomegaly. This could be due to various underlying cardiac conditions such as heart failure or valvular disease."
+    },
+    {
+      "name": "Pulmonary Edema",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "There are bilateral perihilar and basilar interstitial opacities consistent with pulmonary edema. This often indicates fluid overload or cardiac decompensation."
+    },
+    {
+      "name": "Mediastinal Surgical Clips",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Several metallic surgical clips are visible in the central mediastinum, indicating a history of cardiac or thoracic surgery. These are typically benign findings post-surgery but provide important clinical context."
+    }
+  ],
+  "summary": "The chest X-ray shows an enlarged heart and signs of fluid in the lungs, which is often called pulmonary edema. These findings suggest that the heart may not be pumping as effectively as it should be, possibly due to heart failure. There are also surgical clips visible in the chest, which means the patient has had heart or chest surgery in the past. There are no signs of a collapsed lung or significant fluid around the lungs. Further medical evaluation is recommended to understand the cause and appropriate treatment for the enlarged heart and lung fluid.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/pulmonary-oedema",
+    "https://www.acc.org/latest-in-cardiology/articles/2021/08/17/12/32/imaging-of-heart-failure"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 386231,
+    "bytesOut": 381616,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:46:47.975Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

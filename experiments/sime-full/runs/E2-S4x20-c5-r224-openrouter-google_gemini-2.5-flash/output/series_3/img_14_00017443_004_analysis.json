@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_3/img_14_00017443_004.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A port-a-cath device is noted in the right upper chest, with its catheter tip projecting over the superior vena cava.\",\n    \"Bilateral lung fields appear clear without evidence of focal consolidation, pneumothorax, or large pleural effusion.\",\n    \"The cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Diaphragmatic contours are well-defined.\",\n    \"Visualized osseous structures show no acute abnormalities.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Port-a-cath\",\n      \"description\": \"A port-a-cath (implantable venous access device) is present in the right upper chest, with its catheter extending into the superior vena cava, indicating its correct placement.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This chest X-ray shows a medical device called a 'port-a-cath' in the upper right side of your chest. This device is used to give medications or draw blood and appears to be in the correct position. Your lungs look clear, and there are no signs of infection, collapsed lung, or fluid around the lungs. Your heart size and shape also appear normal. No problems were seen with the bones visible in the X-ray.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/port-a-cath-1\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A port-a-cath device is noted in the right upper chest, with its catheter tip projecting over the superior vena cava.",
+    "Bilateral lung fields appear clear without evidence of focal consolidation, pneumothorax, or large pleural effusion.",
+    "The cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Diaphragmatic contours are well-defined.",
+    "Visualized osseous structures show no acute abnormalities."
+  ],
+  "abnormalities": [
+    {
+      "name": "Port-a-cath",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A port-a-cath (implantable venous access device) is present in the right upper chest, with its catheter extending into the superior vena cava, indicating its correct placement."
+    }
+  ],
+  "summary": "This chest X-ray shows a medical device called a 'port-a-cath' in the upper right side of your chest. This device is used to give medications or draw blood and appears to be in the correct position. Your lungs look clear, and there are no signs of infection, collapsed lung, or fluid around the lungs. Your heart size and shape also appear normal. No problems were seen with the bones visible in the X-ray.",
+  "references": [
+    "https://radiopaedia.org/articles/port-a-cath-1",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24229,
+    "bytesOut": 24229,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:02:16.780Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

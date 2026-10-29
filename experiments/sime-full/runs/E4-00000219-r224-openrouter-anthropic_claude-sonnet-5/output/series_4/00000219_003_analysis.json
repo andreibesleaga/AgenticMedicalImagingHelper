@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000219/series_4/00000219_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Fair\",\"findings\":[\"Bilateral lung fields visualized, mildly rotated positioning\",\"Cardiac silhouette appears mildly enlarged with cardiothoracic ratio difficult to assess precisely due to rotation\",\"Mediastinal contours within grossly normal limits\",\"No obvious focal consolidation or large pleural effusion identified\",\"Bony thorax and visualized soft tissues appear unremarkable\",\"Costophrenic angles appear grossly clear bilaterally\"],\"abnormalities\":[{\"name\":\"Suboptimal positioning/rotation\",\"description\":\"Patient appears rotated on this AP/PA projection, limiting accurate assessment of mediastinal and cardiac contours\",\"severity\":\"Mild\",\"confidence\":55},{\"name\":\"Possible cardiomegaly\",\"description\":\"Cardiac silhouette appears prominent, though this may be influenced by patient positioning and projection technique; further evaluation with a properly positioned PA film recommended\",\"severity\":\"Mild\",\"confidence\":40}],\"summary\":\"This is a chest X-ray showing the lungs, heart, and surrounding bones. The image quality is fair due to some rotation of the patient during the scan, which can make the heart and central chest area look slightly different than they actually are. The lungs appear generally clear without obvious signs of infection or fluid buildup. The heart shadow appears somewhat enlarged, but this could simply be due to the angle of the picture rather than an actual heart problem. A repeat X-ray with better positioning, along with clinical correlation by a doctor, would help confirm these findings.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Practice-Parameters\",\"https://pubs.rsna.org/doi/10.1148/radiol.2020200527\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Fair",
+  "findings": [
+    "Bilateral lung fields visualized, mildly rotated positioning",
+    "Cardiac silhouette appears mildly enlarged with cardiothoracic ratio difficult to assess precisely due to rotation",
+    "Mediastinal contours within grossly normal limits",
+    "No obvious focal consolidation or large pleural effusion identified",
+    "Bony thorax and visualized soft tissues appear unremarkable",
+    "Costophrenic angles appear grossly clear bilaterally"
+  ],
+  "abnormalities": [
+    {
+      "name": "Suboptimal positioning/rotation",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Patient appears rotated on this AP/PA projection, limiting accurate assessment of mediastinal and cardiac contours"
+    },
+    {
+      "name": "Possible cardiomegaly",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Cardiac silhouette appears prominent, though this may be influenced by patient positioning and projection technique; further evaluation with a properly positioned PA film recommended"
+    }
+  ],
+  "summary": "This is a chest X-ray showing the lungs, heart, and surrounding bones. The image quality is fair due to some rotation of the patient during the scan, which can make the heart and central chest area look slightly different than they actually are. The lungs appear generally clear without obvious signs of infection or fluid buildup. The heart shadow appears somewhat enlarged, but this could simply be due to the angle of the picture rather than an actual heart problem. A repeat X-ray with better positioning, along with clinical correlation by a doctor, would help confirm these findings.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Practice-Parameters",
+    "https://pubs.rsna.org/doi/10.1148/radiol.2020200527"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23416,
+    "bytesOut": 23416,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-29T10:41:34.797Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

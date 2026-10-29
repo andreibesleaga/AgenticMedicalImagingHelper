@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_3/img_01_00019274_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Sternal wires are noted, indicating prior sternotomy.\",\n    \"Bilateral lung fields appear clear with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Hilar regions are unremarkable.\",\n    \"Bony thorax is intact without acute fracture.\",\n    \"Diaphragms are well-defined and costophrenic angles are clear.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Sternal Wires\",\n      \"description\": \"Multiple sternal wires are visible in the midline, consistent with prior sternotomy. The wires appear intact and in appropriate position.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This chest X-ray shows that your lungs and heart appear normal. There are some wires in your breastbone, which indicates you have had surgery there in the past. These wires look to be in the correct place. There are no signs of new problems such as pneumonia, fluid around the lungs, or a collapsed lung.\",\n  \"references\": [\n    \"https://www.radiologyassistant.nl/chest/chest-x-ray/chest-x-ray-basic-interpretation\",\n    \"https://www.healthline.com/health/chest-x-ray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Sternal wires are noted, indicating prior sternotomy.",
+    "Bilateral lung fields appear clear with no focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Hilar regions are unremarkable.",
+    "Bony thorax is intact without acute fracture.",
+    "Diaphragms are well-defined and costophrenic angles are clear."
+  ],
+  "abnormalities": [
+    {
+      "name": "Sternal Wires",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Multiple sternal wires are visible in the midline, consistent with prior sternotomy. The wires appear intact and in appropriate position."
+    }
+  ],
+  "summary": "This chest X-ray shows that your lungs and heart appear normal. There are some wires in your breastbone, which indicates you have had surgery there in the past. These wires look to be in the correct place. There are no signs of new problems such as pneumonia, fluid around the lungs, or a collapsed lung.",
+  "references": [
+    "https://www.radiologyassistant.nl/chest/chest-x-ray/chest-x-ray-basic-interpretation",
+    "https://www.healthline.com/health/chest-x-ray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 430740,
+    "bytesOut": 430293,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:41:11.377Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

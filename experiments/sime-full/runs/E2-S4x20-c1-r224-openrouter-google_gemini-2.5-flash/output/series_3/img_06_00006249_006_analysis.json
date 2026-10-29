@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_3/img_06_00006249_006.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No evidence of acute cardiopulmonary pathology.\",\n    \"Bilateral lung fields are clear.\",\n    \"Hilar and mediastinal contours are unremarkable.\",\n    \"Cardiac size is within normal limits.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"Bony thorax appears intact.\",\n    \"A metallic ring-like foreign body is noted in the left mid-lung field, likely representing a nipple ring.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Nipple Ring\",\n      \"description\": \"A metallic, circular foreign body is visible projected over the left mid-lung field, consistent with a nipple piercing.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The X-ray of the chest shows no signs of any immediate problems with the heart or lungs. The lungs look clear, and the heart size appears normal. All bones visible in the chest also look healthy. There is a metallic ring, which appears to be a nipple piercing, visible in the left chest area, but this is an external object and not a concern within the body itself.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.233025178\",\n    \"https://radiopaedia.org/articles/chest-x-ray-interpretive-approach\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No evidence of acute cardiopulmonary pathology.",
+    "Bilateral lung fields are clear.",
+    "Hilar and mediastinal contours are unremarkable.",
+    "Cardiac size is within normal limits.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "Bony thorax appears intact.",
+    "A metallic ring-like foreign body is noted in the left mid-lung field, likely representing a nipple ring."
+  ],
+  "abnormalities": [
+    {
+      "name": "Nipple Ring",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A metallic, circular foreign body is visible projected over the left mid-lung field, consistent with a nipple piercing."
+    }
+  ],
+  "summary": "The X-ray of the chest shows no signs of any immediate problems with the heart or lungs. The lungs look clear, and the heart size appears normal. All bones visible in the chest also look healthy. There is a metallic ring, which appears to be a nipple piercing, visible in the left chest area, but this is an external object and not a concern within the body itself.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.233025178",
+    "https://radiopaedia.org/articles/chest-x-ray-interpretive-approach"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 25621,
+    "bytesOut": 25621,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:58:24.537Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

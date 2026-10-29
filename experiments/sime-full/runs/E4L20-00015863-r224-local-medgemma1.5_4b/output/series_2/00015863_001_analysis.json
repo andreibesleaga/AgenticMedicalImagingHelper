@@ -1,0 +1,40 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00015863/series_2/00015863_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"The image shows the chest X-ray. There are multiple rounded opacities scattered throughout both lungs.\",\n    \"There is increased opacity in the right lower lung field.\",\n    \"The heart size appears normal.\",\n    \"There is a small left pleural effusion.\",\n    \"The mediastinum is unremarkable.\",\n    \"The clavicles and ribs are intact.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This X-ray shows multiple nodules or masses in both lungs, particularly noticeable in the right lung. There's also fluid in the left side of the chest (pleural effusion). These findings are concerning and require further investigation to determine the cause.\",\n  \"references\": []\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Fair",
+  "findings": [
+    "The image shows the chest X-ray. There are multiple rounded opacities scattered throughout both lungs.",
+    "There is increased opacity in the right lower lung field.",
+    "The heart size appears normal.",
+    "There is a small left pleural effusion.",
+    "The mediastinum is unremarkable.",
+    "The clavicles and ribs are intact."
+  ],
+  "abnormalities": [],
+  "summary": "This X-ray shows multiple nodules or masses in both lungs, particularly noticeable in the right lung. There's also fluid in the left side of the chest (pleural effusion). These findings are concerning and require further investigation to determine the cause.",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 26182,
+    "bytesOut": 26182,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:56:28.025Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

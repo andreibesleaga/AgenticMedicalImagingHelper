@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_1/img_04_00007040_002.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pleural effusion, or pneumothorax is identified.\",\n    \"Bilateral lung fields are clear.\",\n    \"Cardiomediastinal silhouette is within normal limits.\",\n    \"Diaphragmatic contours are sharp.\",\n    \"Visualized osseous structures are intact without acute abnormality.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray appears normal. The lungs are clear, and there are no signs of pneumonia, fluid around the lungs (pleural effusion), or collapsed lung (pneumothorax). The heart and major blood vessels appear to be of normal size and shape. The bones visible in the image also appear healthy.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2023220138\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pleural effusion, or pneumothorax is identified.",
+    "Bilateral lung fields are clear.",
+    "Cardiomediastinal silhouette is within normal limits.",
+    "Diaphragmatic contours are sharp.",
+    "Visualized osseous structures are intact without acute abnormality."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray appears normal. The lungs are clear, and there are no signs of pneumonia, fluid around the lungs (pleural effusion), or collapsed lung (pneumothorax). The heart and major blood vessels appear to be of normal size and shape. The bones visible in the image also appear healthy.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2023220138"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23129,
+    "bytesOut": 23129,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:01:41.415Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

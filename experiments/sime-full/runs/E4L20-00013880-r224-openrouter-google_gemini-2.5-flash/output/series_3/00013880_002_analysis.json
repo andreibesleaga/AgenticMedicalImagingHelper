@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00013880/series_3/00013880_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A nasogastric tube is present, with its tip curled within the esophagus, specifically overlying the left main bronchus region.\",\n    \"A peripherally inserted central catheter (PICC line) is noted, with its tip projected over the superior aspect of the right atrium, indicating appropriate positioning.\",\n    \"Mild bibasilar opacities are observed, suggesting atelectasis or small pleural effusions.\",\n    \"The cardiac silhouette is not enlarged.\",\n    \"The pulmonary vasculature appears within normal limits.\",\n    \"No acute focal consolidation, pneumothorax, or large pleural effusion is identified.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Malpositioned Nasogastric Tube\",\n      \"description\": \"The nasogastric tube tip is curled within the esophagus, rather than advanced into the stomach, indicating malposition.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Bibasilar Opacities\",\n      \"description\": \"Mild opacities are present at both lung bases, consistent with atelectasis or small pleural effusions.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a peripherally inserted central catheter (PICC line) that is correctly placed. However, a feeding tube (nasogastric tube) is not in the correct position, as its tip is curled in the esophagus instead of reaching the stomach. There are also some minor cloudy areas at the bottom of both lungs, which could be due to small areas of collapsed lung or a small amount of fluid. The heart appears normal in size, and there are no signs of a collapsed lung or significant fluid around the lungs.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.301095066\",\n    \"https://radiopaedia.org/articles/nasogastric-tube?lang=us\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMicm1502422\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A nasogastric tube is present, with its tip curled within the esophagus, specifically overlying the left main bronchus region.",
+    "A peripherally inserted central catheter (PICC line) is noted, with its tip projected over the superior aspect of the right atrium, indicating appropriate positioning.",
+    "Mild bibasilar opacities are observed, suggesting atelectasis or small pleural effusions.",
+    "The cardiac silhouette is not enlarged.",
+    "The pulmonary vasculature appears within normal limits.",
+    "No acute focal consolidation, pneumothorax, or large pleural effusion is identified."
+  ],
+  "abnormalities": [
+    {
+      "name": "Malpositioned Nasogastric Tube",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "The nasogastric tube tip is curled within the esophagus, rather than advanced into the stomach, indicating malposition."
+    },
+    {
+      "name": "Bibasilar Opacities",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Mild opacities are present at both lung bases, consistent with atelectasis or small pleural effusions."
+    }
+  ],
+  "summary": "The chest X-ray shows a peripherally inserted central catheter (PICC line) that is correctly placed. However, a feeding tube (nasogastric tube) is not in the correct position, as its tip is curled in the esophagus instead of reaching the stomach. There are also some minor cloudy areas at the bottom of both lungs, which could be due to small areas of collapsed lung or a small amount of fluid. The heart appears normal in size, and there are no signs of a collapsed lung or significant fluid around the lungs.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.301095066",
+    "https://radiopaedia.org/articles/nasogastric-tube?lang=us",
+    "https://www.nejm.org/doi/full/10.1056/NEJMicm1502422"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24900,
+    "bytesOut": 24900,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:21:54.551Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

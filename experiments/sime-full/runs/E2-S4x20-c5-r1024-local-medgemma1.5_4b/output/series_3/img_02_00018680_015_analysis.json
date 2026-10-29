@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_3/img_02_00018680_015.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lung volumes are within normal limits.\",\n    \"The trachea is midline.\",\n    \"The heart size appears normal.\",\n    \"The mediastinal contours are normal.\",\n    \"The visualized osseous structures of the ribs and clavicles appear unremarkable.\",\n    \"There is a nodule measuring approximately 1.2 cm in the right lower lobe.\",\n    \"The left lung is clear.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Lower Lobe Nodule\",\n      \"description\": \"Nodule with a diameter of approximately 1.2 cm located in the right lower lobe. Further evaluation is recommended.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 0\n    }\n  ],\n  \"summary\": \"This chest X-ray shows a small nodule (about 1.2 cm) in the right lung, specifically in the lower lobe. The rest of the lung fields appear normal. A nodule warrants further investigation to rule out any underlying lung issues.\",\n  \"references\": [\n    \"https://pubmed.ncbi.nlm.nih.gov/26324614/\",\n    \"https://radiopaedia.org/articles/lung-nodule\",\n    \"https://www.hopkinsmedicine.org/health/conditions-and-diseases/lung-nodule\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lung volumes are within normal limits.",
+    "The trachea is midline.",
+    "The heart size appears normal.",
+    "The mediastinal contours are normal.",
+    "The visualized osseous structures of the ribs and clavicles appear unremarkable.",
+    "There is a nodule measuring approximately 1.2 cm in the right lower lobe.",
+    "The left lung is clear."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Lower Lobe Nodule",
+      "severity": "Moderate",
+      "confidence": 0,
+      "description": "Nodule with a diameter of approximately 1.2 cm located in the right lower lobe. Further evaluation is recommended."
+    }
+  ],
+  "summary": "This chest X-ray shows a small nodule (about 1.2 cm) in the right lung, specifically in the lower lobe. The rest of the lung fields appear normal. A nodule warrants further investigation to rule out any underlying lung issues.",
+  "references": [
+    "https://pubmed.ncbi.nlm.nih.gov/26324614/",
+    "https://radiopaedia.org/articles/lung-nodule",
+    "https://www.hopkinsmedicine.org/health/conditions-and-diseases/lung-nodule"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 409363,
+    "bytesOut": 313046,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:25:14.343Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

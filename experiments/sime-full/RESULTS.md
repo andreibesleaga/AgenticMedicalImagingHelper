@@ -319,7 +319,7 @@ What this shows:
 The paper's operational test: 80 images of different patients at four sizes (1 × 1 to
 4 sessions × 20 images), each at concurrency 1 and 5. The paper ran it with Gemini 2.5
 Flash at 224 px. Here: Gemini 2.5 Flash at both sizes and local MedGemma at 1024 px.
-The local 224-px pass was not run: the owner capped the local runs at one more hour on
+The local 224-px pass was not run: the maintainer capped the local runs at one more hour on
 2026-10-08, and the queue stopped after the 1024-px pass.
 
 | Size | Paper, c1 → c5 (speed-up) | Gemini 2.5 Flash, 224 px | Gemini 2.5 Flash, 1024 px | MedGemma, 1024 px (local) |

@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_2/00000092_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse interstitial pattern observed in both lungs, suggestive of infiltrative disease.\",\n    \"Bilateral pleural effusions, more prominent on the right, with blunting of costophrenic angles.\",\n    \"Air-fluid level noted within the stomach fundus, consistent with a gastric air bubble.\",\n    \"Left shoulder demonstrates evidence of surgical hardware or artifact superior to the humeral head, with associated cortical irregularity/sclerosis of the acromion.\",\n    \"Cardiac silhouette appears within normal limits for size.\",\n    \"No obvious pneumothorax identified.\",\n    \"Several small metallic densities are noted in the lower thorax/upper abdomen, potentially artifacts or clips.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Interstitial Lung Disease\",\n      \"description\": \"Diffuse reticular and nodular opacities are seen throughout both lung fields, consistent with an interstitial infiltrative process.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Bilateral Pleural Effusions\",\n      \"description\": \"Blunting of both costophrenic angles is present, with a larger fluid collection on the right side, indicating bilateral pleural effusions.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Left Shoulder Abnormality\",\n      \"description\": \"Evidence of prior intervention or anomaly in the left shoulder region, with a focus of increased density (possibly hardware or calcification) and cortical changes in the acromion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The chest X-ray shows changes in both lungs consistent with an interstitial lung disease, which means there's inflammation or scarring within the lung tissue. There's also fluid around both lungs, more on the right side, which is called pleural effusion. The left shoulder shows some changes that might be related to a previous surgery or condition. The heart size appears normal. It is important to investigate the cause of the lung changes and fluid, as these can be due to various conditions like infections, heart failure, or other inflammatory processes.\",\n  \"references\": [\n    \"https://radiologykey.com/interstitial-lung-disease/\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK441865/\",\n    \"https://emedicine.medscape.com/article/358055-overview\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse interstitial pattern observed in both lungs, suggestive of infiltrative disease.",
+    "Bilateral pleural effusions, more prominent on the right, with blunting of costophrenic angles.",
+    "Air-fluid level noted within the stomach fundus, consistent with a gastric air bubble.",
+    "Left shoulder demonstrates evidence of surgical hardware or artifact superior to the humeral head, with associated cortical irregularity/sclerosis of the acromion.",
+    "Cardiac silhouette appears within normal limits for size.",
+    "No obvious pneumothorax identified.",
+    "Several small metallic densities are noted in the lower thorax/upper abdomen, potentially artifacts or clips."
+  ],
+  "abnormalities": [
+    {
+      "name": "Interstitial Lung Disease",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse reticular and nodular opacities are seen throughout both lung fields, consistent with an interstitial infiltrative process."
+    },
+    {
+      "name": "Bilateral Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Blunting of both costophrenic angles is present, with a larger fluid collection on the right side, indicating bilateral pleural effusions."
+    },
+    {
+      "name": "Left Shoulder Abnormality",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Evidence of prior intervention or anomaly in the left shoulder region, with a focus of increased density (possibly hardware or calcification) and cortical changes in the acromion."
+    }
+  ],
+  "summary": "The chest X-ray shows changes in both lungs consistent with an interstitial lung disease, which means there's inflammation or scarring within the lung tissue. There's also fluid around both lungs, more on the right side, which is called pleural effusion. The left shoulder shows some changes that might be related to a previous surgery or condition. The heart size appears normal. It is important to investigate the cause of the lung changes and fluid, as these can be due to various conditions like infections, heart failure, or other inflammatory processes.",
+  "references": [
+    "https://radiologykey.com/interstitial-lung-disease/",
+    "https://www.ncbi.nlm.nih.gov/books/NBK441865/",
+    "https://emedicine.medscape.com/article/358055-overview"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 421309,
+    "bytesOut": 418288,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:17:22.806Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

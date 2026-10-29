@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00016493/series_2/00016493_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pneumothorax, or large pleural effusion.\",\n    \"Bilateral lung fields are clear.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Hilar and mediastinal contours are unremarkable.\",\n    \"Visualized osseous structures appear intact.\",\n    \"Central venous catheter (CVC) noted with tip projecting over the superior vena cava.\",\n    \"An esophageal stent is present in the mid-esophagus.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Esophageal Stent\",\n      \"description\": \"A metallic esophageal stent is visible in the mid-esophagus, appearing well-positioned.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Central Venous Catheter\",\n      \"description\": \"A central venous catheter is present, with its tip appropriately located in the superior vena cava, indicating proper placement.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that your lungs and heart appear normal. There is no evidence of pneumonia, collapsed lung, or fluid around the lungs. A central line (a type of IV line) is in place, and its tip is correctly positioned. Additionally, an esophageal stent, a tube used to keep the esophagus open, is visible in its expected location. These are generally expected findings if these devices are in place for medical reasons.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2017160076\",\n    \"https://radiopaedia.org/articles/central-venous-catheter-complications?lang=gb\",\n    \"https://www.esrs.org/publication/esophageal-stents/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pneumothorax, or large pleural effusion.",
+    "Bilateral lung fields are clear.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Hilar and mediastinal contours are unremarkable.",
+    "Visualized osseous structures appear intact.",
+    "Central venous catheter (CVC) noted with tip projecting over the superior vena cava.",
+    "An esophageal stent is present in the mid-esophagus."
+  ],
+  "abnormalities": [
+    {
+      "name": "Esophageal Stent",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A metallic esophageal stent is visible in the mid-esophagus, appearing well-positioned."
+    },
+    {
+      "name": "Central Venous Catheter",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A central venous catheter is present, with its tip appropriately located in the superior vena cava, indicating proper placement."
+    }
+  ],
+  "summary": "The chest X-ray shows that your lungs and heart appear normal. There is no evidence of pneumonia, collapsed lung, or fluid around the lungs. A central line (a type of IV line) is in place, and its tip is correctly positioned. Additionally, an esophageal stent, a tube used to keep the esophagus open, is visible in its expected location. These are generally expected findings if these devices are in place for medical reasons.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2017160076",
+    "https://radiopaedia.org/articles/central-venous-catheter-complications?lang=gb",
+    "https://www.esrs.org/publication/esophageal-stents/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 425194,
+    "bytesOut": 423742,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:11:28.439Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

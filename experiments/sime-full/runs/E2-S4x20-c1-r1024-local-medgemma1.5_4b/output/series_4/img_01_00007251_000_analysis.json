@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_01_00007251_000.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear.\",\n    \"The cardiac silhouette is normal.\",\n    \"The mediastinum appears unremarkable.\",\n    \"The osseous structures are normal.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray shows clear lungs, a normal heart size, and no obvious problems in the bones or other structures. It appears to be a routine chest X-ray.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-x-ray\",\n    \"https://en.wikipedia.org/wiki/Chest_X-ray\",\n    \"https://www.cdc.gov/tb/topic/general/default.htm\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear.",
+    "The cardiac silhouette is normal.",
+    "The mediastinum appears unremarkable.",
+    "The osseous structures are normal."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray shows clear lungs, a normal heart size, and no obvious problems in the bones or other structures. It appears to be a routine chest X-ray.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-x-ray",
+    "https://en.wikipedia.org/wiki/Chest_X-ray",
+    "https://www.cdc.gov/tb/topic/general/default.htm"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 377770,
+    "bytesOut": 291995,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:14:47.128Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

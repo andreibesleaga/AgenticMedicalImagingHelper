@@ -178,6 +178,17 @@ the default rather than failing the run. Bounding the batch also bounds spend,
 which is the same control read from the cost side (`--max-cost-usd`).
 See [ADR-007](decisions/ADR-007-run-manifest-audit-ledger.md).
 
+**Update 2026-10-29** — two of the original mitigation lines no longer match the
+code. The image long edge is not capped at a fixed 1024 px: the pre-flight
+chooses it per model family (Gemini 1536 px under the default `auto` policy,
+Gemma 896 px, unknown models 1024 px; `IMAGE_QUALITY` and `IMAGE_MAX_DIM`
+change it), see
+[ADR-003](decisions/ADR-003-image-preprocessing.md). Parallel model calls are
+bounded by `p-limit` with the `--concurrency <n>` flag (default 5) in
+`src/adapters/langgraph-agent.ts`; `MAX_CONCURRENCY` was never read. The
+per-run and per-file limits in the 2026-09-08 update are what bound memory and
+spend.
+
 ---
 
 ### T7 — OpenRouter Second-Provider Trust Boundary (added 2026-09-08)

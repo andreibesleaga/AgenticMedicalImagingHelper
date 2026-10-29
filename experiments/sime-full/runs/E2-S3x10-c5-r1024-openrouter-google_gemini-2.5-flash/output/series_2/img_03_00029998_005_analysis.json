@@ -1,0 +1,74 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_2/img_03_00029998_005.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Evidence of previous sternotomy with sternal wires in place.\",\n    \"Bilateral hilar congestion noted.\",\n    \"Bilateral pleural effusions, greater on the right side.\",\n    \"Cardiomegaly is present.\",\n    \"Mild to moderate interstitial prominence bilaterally.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Sternal Wires\",\n      \"description\": \"Multiple sternal wires are seen, indicating prior sternotomy.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Bilateral pleural effusions are present, with a larger volume on the right side, obscuring the right hemidiaphragm and blunting the costophrenic angles.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette is enlarged, suggestive of cardiomegaly.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Hilar Congestion\",\n      \"description\": \"Increased vascular prominence in both hilar regions, consistent with hilar congestion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Interstitial Prominence\",\n      \"description\": \"Mild to moderate interstitial prominence is noted throughout both lung fields.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"This X-ray shows that you have had previous heart surgery, as indicated by wires in your breastbone. There is an enlargement of your heart, and extra fluid has accumulated around both lungs, more so on the right side. The blood vessels in the center of your lungs appear more prominent, and there's some increased marking within the lung tissue itself. These findings are often seen in conditions affecting heart function and fluid balance in the body, such as congestive heart failure. It means your heart might not be pumping as effectively, leading to fluid buildup in your lungs and around them. These findings warrant further medical evaluation to determine the underlying cause and appropriate management.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1147/CJR.2009.07.014\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3577771/\",\n    \"https://radiopaedia.org/articles/cardiomegaly-1?lang=us\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Evidence of previous sternotomy with sternal wires in place.",
+    "Bilateral hilar congestion noted.",
+    "Bilateral pleural effusions, greater on the right side.",
+    "Cardiomegaly is present.",
+    "Mild to moderate interstitial prominence bilaterally."
+  ],
+  "abnormalities": [
+    {
+      "name": "Sternal Wires",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Multiple sternal wires are seen, indicating prior sternotomy."
+    },
+    {
+      "name": "Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Bilateral pleural effusions are present, with a larger volume on the right side, obscuring the right hemidiaphragm and blunting the costophrenic angles."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The cardiac silhouette is enlarged, suggestive of cardiomegaly."
+    },
+    {
+      "name": "Hilar Congestion",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Increased vascular prominence in both hilar regions, consistent with hilar congestion."
+    },
+    {
+      "name": "Interstitial Prominence",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Mild to moderate interstitial prominence is noted throughout both lung fields."
+    }
+  ],
+  "summary": "This X-ray shows that you have had previous heart surgery, as indicated by wires in your breastbone. There is an enlargement of your heart, and extra fluid has accumulated around both lungs, more so on the right side. The blood vessels in the center of your lungs appear more prominent, and there's some increased marking within the lung tissue itself. These findings are often seen in conditions affecting heart function and fluid balance in the body, such as congestive heart failure. It means your heart might not be pumping as effectively, leading to fluid buildup in your lungs and around them. These findings warrant further medical evaluation to determine the underlying cause and appropriate management.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1147/CJR.2009.07.014",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3577771/",
+    "https://radiopaedia.org/articles/cardiomegaly-1?lang=us"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 395339,
+    "bytesOut": 391922,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:37:19.606Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

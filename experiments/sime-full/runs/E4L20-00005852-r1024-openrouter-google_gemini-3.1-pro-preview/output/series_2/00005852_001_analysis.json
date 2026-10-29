@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00005852/series_2/00005852_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Frontal chest radiograph.\",\n    \"Cardiac silhouette is within normal limits for size.\",\n    \"Mediastinal contours are unremarkable.\",\n    \"Lungs are clear of focal consolidation, effusion, or pneumothorax.\",\n    \"No acute osseous abnormality.\",\n    \"Multiple radiopaque lines overlying the right hemithorax, consistent with external lines/wires, potentially from a Holter monitor or similar device.\",\n    \"Surgical clips are noted in the right hilum/mediastinum.\",\n    \"A small, thin radiopaque structure is seen in the right mid to lower lung zone, possibly an artifact or an indwelling catheter/device, clinical correlation is recommended.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Medical devices and clips\",\n      \"description\": \"External wires/lines overlying the right hemithorax and surgical clips in the right hilum/mediastinum.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows the lungs are clear, and the heart size is normal. There are some wires and clips visible, which are likely from previous medical procedures or external monitoring devices. No signs of infection or other acute problems were found in the lungs or bones. The radiopaque structure in the right lung zone could be related to a medical device or artifact; your doctor can provide more information based on your medical history.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/10.1148/rg.2016150242\",\n    \"https://radiopaedia.org/articles/medical-devices-on-chest-radiography\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Frontal chest radiograph.",
+    "Cardiac silhouette is within normal limits for size.",
+    "Mediastinal contours are unremarkable.",
+    "Lungs are clear of focal consolidation, effusion, or pneumothorax.",
+    "No acute osseous abnormality.",
+    "Multiple radiopaque lines overlying the right hemithorax, consistent with external lines/wires, potentially from a Holter monitor or similar device.",
+    "Surgical clips are noted in the right hilum/mediastinum.",
+    "A small, thin radiopaque structure is seen in the right mid to lower lung zone, possibly an artifact or an indwelling catheter/device, clinical correlation is recommended."
+  ],
+  "abnormalities": [
+    {
+      "name": "Medical devices and clips",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "External wires/lines overlying the right hemithorax and surgical clips in the right hilum/mediastinum."
+    }
+  ],
+  "summary": "The chest X-ray shows the lungs are clear, and the heart size is normal. There are some wires and clips visible, which are likely from previous medical procedures or external monitoring devices. No signs of infection or other acute problems were found in the lungs or bones. The radiopaque structure in the right lung zone could be related to a medical device or artifact; your doctor can provide more information based on your medical history.",
+  "references": [
+    "https://pubs.rsna.org/doi/10.1148/rg.2016150242",
+    "https://radiopaedia.org/articles/medical-devices-on-chest-radiography"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 385959,
+    "bytesOut": 380436,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:38:43.112Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

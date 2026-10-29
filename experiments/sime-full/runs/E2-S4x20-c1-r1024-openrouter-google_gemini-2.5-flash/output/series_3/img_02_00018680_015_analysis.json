@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_3/img_02_00018680_015.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary pathology identified.\",\n    \"Lungs are clear to auscultation bilaterally without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiac silhouette is normal in size and contour.\",\n    \"Mediastinum is within normal limits.\",\n    \"Hilar regions are unremarkable.\",\n    \"Diaphragms are intact and clear costophrenic angles.\",\n    \"Osseous structures of the thoracic cage appear grossly intact. Degenerative changes are noted in the glenohumeral joints, more prominent on the left.\",\n    \"Gas shadows are noted below the left hemidiaphragm, consistent with gastric air.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Glenohumeral Degenerative Changes\",\n      \"description\": \"Mild degenerative changes are observed in both glenohumeral joints, with subtle joint space narrowing and minimal osteophyte formation, more pronounced on the left.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows no signs of active lung disease, heart enlargement, or fluid in the lungs. The overall appearance of the lungs and heart is normal. There are some minor age-related changes in the shoulder joints, which are common and usually don't cause significant problems. Normal air is seen in the stomach.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.303095144\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary pathology identified.",
+    "Lungs are clear to auscultation bilaterally without focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiac silhouette is normal in size and contour.",
+    "Mediastinum is within normal limits.",
+    "Hilar regions are unremarkable.",
+    "Diaphragms are intact and clear costophrenic angles.",
+    "Osseous structures of the thoracic cage appear grossly intact. Degenerative changes are noted in the glenohumeral joints, more prominent on the left.",
+    "Gas shadows are noted below the left hemidiaphragm, consistent with gastric air."
+  ],
+  "abnormalities": [
+    {
+      "name": "Glenohumeral Degenerative Changes",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Mild degenerative changes are observed in both glenohumeral joints, with subtle joint space narrowing and minimal osteophyte formation, more pronounced on the left."
+    }
+  ],
+  "summary": "The chest X-ray shows no signs of active lung disease, heart enlargement, or fluid in the lungs. The overall appearance of the lungs and heart is normal. There are some minor age-related changes in the shoulder joints, which are common and usually don't cause significant problems. Normal air is seen in the stomach.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.303095144",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 409363,
+    "bytesOut": 406827,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:41:15.900Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

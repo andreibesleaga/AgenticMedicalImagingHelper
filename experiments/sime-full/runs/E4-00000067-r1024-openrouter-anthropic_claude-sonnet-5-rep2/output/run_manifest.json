@@ -1,0 +1,182 @@
+{
+  "manifestVersion": "1.0",
+  "toolVersion": "1.1.0",
+  "startedAt": "2026-10-08T09:35:32.941Z",
+  "finishedAt": "2026-10-08T09:36:57.245Z",
+  "provider": "openrouter",
+  "model": "anthropic/claude-sonnet-5",
+  "pricing": {
+    "inputUsdPerMillion": 2,
+    "outputUsdPerMillion": 12
+  },
+  "settings": {
+    "concurrency": 1,
+    "maxCostUsd": 1,
+    "retries": 3,
+    "imageQuality": "auto"
+  },
+  "inputDir": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000067",
+  "outputDir": "/home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4-00000067-r1024-openrouter-anthropic_claude-sonnet-5-rep2/output",
+  "inputs": [
+    {
+      "path": "series_1/00000067_000.png",
+      "sha256": "8669166285e0f1aeb6475c0e7ca63917b905ae0337865a599dcc029106f418b0",
+      "bytes": 436781
+    },
+    {
+      "path": "series_2/00000067_001.png",
+      "sha256": "f10c48727736ccc2063953ccdf5b9969b582afa9c60025a8b0ac99eb6003a1c7",
+      "bytes": 422744
+    },
+    {
+      "path": "series_3/00000067_002.png",
+      "sha256": "c2cc0cec10e1786b7a3a4ef9a8478d88dfad825ff32a7c78a7f29a83bf05ee20",
+      "bytes": 423458
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "patient_context.txt",
+      "sha256": "27c02817019e97dbb27223138e04549e3d1aed4d0e30b2b646e85bba665722ea",
+      "bytes": 328
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:35:40.532Z",
+      "tokensIn": 2012,
+      "tokensOut": 574,
+      "estimatedUsd": 0.010912,
+      "providerUsd": 0.009764,
+      "retries": 0
+    },
+    {
+      "index": 2,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:35:51.792Z",
+      "tokensIn": 2012,
+      "tokensOut": 590,
+      "estimatedUsd": 0.011104000000000001,
+      "providerUsd": 0.009924,
+      "retries": 0
+    },
+    {
+      "index": 3,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:36:03.417Z",
+      "tokensIn": 2012,
+      "tokensOut": 664,
+      "estimatedUsd": 0.011991999999999996,
+      "providerUsd": 0.010664,
+      "retries": 0
+    },
+    {
+      "index": 4,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:36:09.505Z",
+      "tokensIn": 985,
+      "tokensOut": 757,
+      "estimatedUsd": 0.011054000000000001,
+      "providerUsd": 0.009539999999999996,
+      "retries": 0
+    },
+    {
+      "index": 5,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:36:19.709Z",
+      "tokensIn": 1064,
+      "tokensOut": 879,
+      "estimatedUsd": 0.012676,
+      "providerUsd": 0.010917999999999997,
+      "retries": 0
+    },
+    {
+      "index": 6,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:36:29.443Z",
+      "tokensIn": 1075,
+      "tokensOut": 831,
+      "estimatedUsd": 0.012122000000000008,
+      "providerUsd": 0.010459999999999997,
+      "retries": 0
+    },
+    {
+      "index": 7,
+      "stage": "evolution",
+      "timestamp": "2026-10-08T09:36:57.170Z",
+      "tokensIn": 2266,
+      "tokensOut": 2789,
+      "estimatedUsd": 0.03799999999999999,
+      "providerUsd": 0.032422000000000006,
+      "retries": 0
+    }
+  ],
+  "outputs": [
+    {
+      "path": "series_1/00000067_000_analysis.json",
+      "sha256": "a17bfd6b62f288c20638ff4aa980eb80027372e93e0be5178506180f1d8e78ed",
+      "bytes": 3924
+    },
+    {
+      "path": "series_2/00000067_001_analysis.json",
+      "sha256": "ae7f9420acda83127630d410545afa94a0fd7f206fdb838323368159315e4b21",
+      "bytes": 4261
+    },
+    {
+      "path": "series_3/00000067_002_analysis.json",
+      "sha256": "2584200538d602377e83f46ec33d39442b0eaa2f6268a3584ce5d5d1c08316e3",
+      "bytes": 4428
+    },
+    {
+      "path": "series_1/series_summary.md",
+      "sha256": "b167d57362cba800e9094f739fc87e0589379dd9343241e0f45e5f58acc57ea4",
+      "bytes": 2978
+    },
+    {
+      "path": "series_2/series_summary.md",
+      "sha256": "f7eb3a2960f3b72efe317f0025873bf8c685913dde06769adccc1f6f3ddbf736",
+      "bytes": 3319
+    },
+    {
+      "path": "series_3/series_summary.md",
+      "sha256": "168ca29b13fffd1444ee45949d7602fe30d8a8dac5952da4f1a5525a97be1689",
+      "bytes": 3136
+    },
+    {
+      "path": "evolution_analysis.json",
+      "sha256": "d22163a7c58933c3970cc2cac328b8b51876e7dc4e7133a746630a6de1cb472f",
+      "bytes": 7435
+    },
+    {
+      "path": "combined_diagnostic_report.md",
+      "sha256": "89f9f6dc4189eec59732c3e761084eba1060bd4ad724db8e75bf961ea3f64fb5",
+      "bytes": 7844
+    }
+  ],
+  "totals": {
+    "calls": 7,
+    "tokensIn": 11426,
+    "tokensOut": 7084,
+    "estimatedUsd": 0.10786,
+    "providerUsd": 0.093692,
+    "images": 3,
+    "imagesSucceeded": 3,
+    "imagesFailed": 0,
+    "series": 3
+  },
+  "exitCode": 0,
+  "warnings": [
+    "input-integrity: 3 image(s) matched --expect-hashes.",
+    "input-guard [image-metadata] series_1/00000067_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/00000067_001.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/00000067_002.png: png:tIME — stripped before upload"
+  ],
+  "humanReview": {
+    "required": true,
+    "reviewedBy": null
+  },
+  "prevManifestHash": null,
+  "manifestHash": "fb0f3eaf35b43b186cad1111353aaacaa00865cb3dcb692d6b56adfdd07b6544"
+}

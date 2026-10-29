@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_4/img_14_00006759_001.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Cardiomegaly is present, with an enlarged cardiac silhouette.\",\n    \"Bilateral pleural effusions are noted, more prominent on the left side, causing blunting of the costophrenic angles.\",\n    \"Pulmonary vascular congestion is evident.\",\n    \"Interstitial edema, characterized by peribronchial cuffing and Kerley B lines, is suggested in the lung fields.\",\n    \"Multiple surgical clips are seen in the mediastinum, likely related to prior cardiac surgery.\",\n    \"The bony thorax appears unremarkable.\",\n    \"No pneumothorax or definite focal consolidation is seen.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlarged cardiac silhouette suggestive of cardiomegaly.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Bilateral pleural effusions, more pronounced on the left, causing blunting of the costophrenic angles.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pulmonary Congestion/Edema\",\n      \"description\": \"Signs of pulmonary vascular congestion and interstitial edema, including peribronchial cuffing and possible Kerley B lines.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows an enlarged heart, which means the heart muscle is bigger than normal. There is fluid around both lungs, more on the left side, which can make it harder to breathe. There are also signs of fluid buildup within the lungs themselves, indicating lung congestion. These findings are often associated with heart conditions. Several surgical clips are visible near the heart, suggesting previous heart surgery.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/pulmonary-oedema\",\n    \"https://radiopaedia.org/articles/pleural-effusion-1\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Cardiomegaly is present, with an enlarged cardiac silhouette.",
+    "Bilateral pleural effusions are noted, more prominent on the left side, causing blunting of the costophrenic angles.",
+    "Pulmonary vascular congestion is evident.",
+    "Interstitial edema, characterized by peribronchial cuffing and Kerley B lines, is suggested in the lung fields.",
+    "Multiple surgical clips are seen in the mediastinum, likely related to prior cardiac surgery.",
+    "The bony thorax appears unremarkable.",
+    "No pneumothorax or definite focal consolidation is seen."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Enlarged cardiac silhouette suggestive of cardiomegaly."
+    },
+    {
+      "name": "Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Bilateral pleural effusions, more pronounced on the left, causing blunting of the costophrenic angles."
+    },
+    {
+      "name": "Pulmonary Congestion/Edema",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Signs of pulmonary vascular congestion and interstitial edema, including peribronchial cuffing and possible Kerley B lines."
+    }
+  ],
+  "summary": "The chest X-ray shows an enlarged heart, which means the heart muscle is bigger than normal. There is fluid around both lungs, more on the left side, which can make it harder to breathe. There are also signs of fluid buildup within the lungs themselves, indicating lung congestion. These findings are often associated with heart conditions. Several surgical clips are visible near the heart, suggesting previous heart surgery.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/pulmonary-oedema",
+    "https://radiopaedia.org/articles/pleural-effusion-1"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23512,
+    "bytesOut": 23512,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:00:38.042Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

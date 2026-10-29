@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000008/series_3/00000008_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The cardiac silhouette is mildly enlarged, demonstrating a cardiothoracic ratio greater than 0.50.\",\n    \"Lungs are well-aerated and clear bilaterally without evidence of focal airspace consolidation, mass, or pneumothorax.\",\n    \"No radiopaque signs of acute pulmonary edema or vascular congestion.\",\n    \"Bilateral costophrenic and cardiophrenic angles are acute and clear, without pleural effusion.\",\n    \"The mediastinum is central, and the thoracic aorta shows mild tortuosity consistent with age-related changes.\",\n    \"The visualized bony thorax shows mild degenerative changes of the mid-to-lower thoracic spine without acute fracture or destructive lesion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Mild Cardiomegaly\",\n      \"description\": \"Mild enlargement of the cardiac silhouette with an increased cardiothoracic ratio (greater than 50%) on a standard PA projection.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that your lungs are clear with no signs of pneumonia, fluid buildup, or collapse. The heart appears slightly larger than normal (mild cardiomegaly), which can be related to common conditions like high blood pressure or natural variations. Clinical follow-up with your doctor, possibly including an echocardiogram (ultrasound of the heart) or blood pressure review, is recommended to ensure your heart is functioning well.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/cardiothoracic-ratio\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The cardiac silhouette is mildly enlarged, demonstrating a cardiothoracic ratio greater than 0.50.",
+    "Lungs are well-aerated and clear bilaterally without evidence of focal airspace consolidation, mass, or pneumothorax.",
+    "No radiopaque signs of acute pulmonary edema or vascular congestion.",
+    "Bilateral costophrenic and cardiophrenic angles are acute and clear, without pleural effusion.",
+    "The mediastinum is central, and the thoracic aorta shows mild tortuosity consistent with age-related changes.",
+    "The visualized bony thorax shows mild degenerative changes of the mid-to-lower thoracic spine without acute fracture or destructive lesion."
+  ],
+  "abnormalities": [
+    {
+      "name": "Mild Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Mild enlargement of the cardiac silhouette with an increased cardiothoracic ratio (greater than 50%) on a standard PA projection."
+    }
+  ],
+  "summary": "The chest X-ray shows that your lungs are clear with no signs of pneumonia, fluid buildup, or collapse. The heart appears slightly larger than normal (mild cardiomegaly), which can be related to common conditions like high blood pressure or natural variations. Clinical follow-up with your doctor, possibly including an echocardiogram (ultrasound of the heart) or blood pressure review, is recommended to ensure your heart is functioning well.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/cardiothoracic-ratio"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 361319,
+    "bytesOut": 359321,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:16:09.365Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

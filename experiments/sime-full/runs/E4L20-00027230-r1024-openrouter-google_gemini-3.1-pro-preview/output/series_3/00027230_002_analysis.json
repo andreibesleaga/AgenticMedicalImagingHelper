@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00027230/series_3/00027230_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A well-defined opacity is observed in the right lower lobe, superior to the diaphragm.\",\n    \"The opacity measures approximately [insert measurement if available] and has a nodular or mass-like appearance.\",\n    \"The right costophrenic angle appears slightly blunted, suggesting the possibility of a small pleural effusion or pleural thickening.\",\n    \"The left lung field appears clear without focal consolidation, pneumothorax, or pleural effusion.\",\n    \"The heart size is within normal limits.\",\n    \"The mediastinal contours appear normal.\",\n    \"The visible bony structures are intact.\",\n    \"Surgical clips are visible in the left axillary region.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right lower lobe opacity\",\n      \"description\": \"A distinct, well-circumscribed density in the lower zone of the right lung. Differential diagnosis includes a lung mass (neoplastic), a localized area of consolidation (e.g., pneumonia), or possibly a loculated effusion or other benign lesion.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Blunted right costophrenic angle\",\n      \"description\": \"The sharp angle where the diaphragm meets the rib cage on the right is obscured, which can indicate a small amount of fluid (pleural effusion) or scarring.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a distinct, solid-looking shadow in the lower part of the right lung. This is an abnormal finding that needs further investigation. It could represent a lung mass, an infection, or other conditions. There also might be a very small amount of fluid or scarring at the very bottom right edge of the lung. A follow-up CT scan of the chest is strongly recommended to get a clearer and more detailed picture of this finding. Please consult with a healthcare professional as soon as possible to discuss these results and the next steps.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2015150035\",\n    \"https://radiopaedia.org/articles/lung-nodule\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A well-defined opacity is observed in the right lower lobe, superior to the diaphragm.",
+    "The opacity measures approximately [insert measurement if available] and has a nodular or mass-like appearance.",
+    "The right costophrenic angle appears slightly blunted, suggesting the possibility of a small pleural effusion or pleural thickening.",
+    "The left lung field appears clear without focal consolidation, pneumothorax, or pleural effusion.",
+    "The heart size is within normal limits.",
+    "The mediastinal contours appear normal.",
+    "The visible bony structures are intact.",
+    "Surgical clips are visible in the left axillary region."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lower lobe opacity",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "A distinct, well-circumscribed density in the lower zone of the right lung. Differential diagnosis includes a lung mass (neoplastic), a localized area of consolidation (e.g., pneumonia), or possibly a loculated effusion or other benign lesion."
+    },
+    {
+      "name": "Blunted right costophrenic angle",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "The sharp angle where the diaphragm meets the rib cage on the right is obscured, which can indicate a small amount of fluid (pleural effusion) or scarring."
+    }
+  ],
+  "summary": "The chest X-ray shows a distinct, solid-looking shadow in the lower part of the right lung. This is an abnormal finding that needs further investigation. It could represent a lung mass, an infection, or other conditions. There also might be a very small amount of fluid or scarring at the very bottom right edge of the lung. A follow-up CT scan of the chest is strongly recommended to get a clearer and more detailed picture of this finding. Please consult with a healthcare professional as soon as possible to discuss these results and the next steps.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2015150035",
+    "https://radiopaedia.org/articles/lung-nodule"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 428188,
+    "bytesOut": 426073,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T10:00:04.677Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,65 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000008/series_1/00000008_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP, supine)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"AP supine chest radiograph with external monitoring leads overlying lower chest/abdomen\",\n    \"Right-sided marker (L/G letters) visible over right shoulder region with a radiopaque circular skin marker\",\n    \"Lungs appear hyperinflated/well-aerated bilaterally, no focal consolidation or large pleural effusion identified\",\n    \"Cardiac silhouette appears mildly enlarged; cardiothoracic ratio difficult to assess precisely due to AP/supine technique and magnification\",\n    \"A small rounded calcific/metallic density noted in the left mid-lung field, possibly a calcified granuloma or artifact\",\n    \"Mediastinal contours appear within normal limits, trachea midline\",\n    \"Visualized osseous structures (clavicles, ribs, spine) grossly intact, no acute fracture identified\",\n    \"Soft tissue markers and ECG lead wires overlie the lower chest/upper abdomen\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left lung nodular/calcific density\",\n      \"description\": \"Small rounded density in the left mid-lung zone, could represent a calcified granuloma, nipple shadow, or external artifact given overlying monitoring equipment; further characterization with dedicated PA/lateral views or CT recommended\",\n      \"severity\": \"Mild\",\n      \"confidence\": 45\n    },\n    {\n      \"name\": \"Cardiomegaly (possible)\",\n      \"description\": \"Cardiac silhouette appears relatively enlarged on this supine AP view, though this may be exaggerated by technique (AP projection, patient rotation, magnification); correlation with upright PA film recommended\",\n      \"severity\": \"Mild\",\n      \"confidence\": 35\n    },\n    {\n      \"name\": \"Suboptimal positioning/rotation\",\n      \"description\": \"Patient appears rotated with asymmetric clavicle positioning, and image includes overlying external devices (leads, markers) which limit full evaluation of underlying structures\",\n      \"severity\": \"Mild\",\n      \"confidence\": 60\n    }\n  ],\n  \"summary\": \"This chest X-ray was taken with the patient lying down (supine), which can make the heart look slightly larger and the image less sharp than a standing X-ray. The lungs appear generally clear without obvious signs of pneumonia or major fluid buildup. There is a small round density in the left lung that most likely represents an old, healed calcium deposit (common and usually not worrisome) but could also just be an overlying marker or artifact — this would need a follow-up scan to confirm. The heart size looks slightly large, but this is often due to the lying-down position and camera angle rather than a true heart problem. There are wires and sticker markers on the skin from monitoring equipment, which is normal in a hospital setting. Overall, no urgent emergency findings like a collapsed lung or large fluid collection are seen, but a repeat upright X-ray or specialist review would help confirm these impressions.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-radiograph-ap-technique\",\n    \"https://pubs.rsna.org/doi/10.1148/radiol.2019190613\",\n    \"https://www.acr.org/-/media/ACR/Files/Practice-Parameters/chest-rad.pdf\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP, supine)",
+  "quality": "Fair",
+  "findings": [
+    "AP supine chest radiograph with external monitoring leads overlying lower chest/abdomen",
+    "Right-sided marker (L/G letters) visible over right shoulder region with a radiopaque circular skin marker",
+    "Lungs appear hyperinflated/well-aerated bilaterally, no focal consolidation or large pleural effusion identified",
+    "Cardiac silhouette appears mildly enlarged; cardiothoracic ratio difficult to assess precisely due to AP/supine technique and magnification",
+    "A small rounded calcific/metallic density noted in the left mid-lung field, possibly a calcified granuloma or artifact",
+    "Mediastinal contours appear within normal limits, trachea midline",
+    "Visualized osseous structures (clavicles, ribs, spine) grossly intact, no acute fracture identified",
+    "Soft tissue markers and ECG lead wires overlie the lower chest/upper abdomen"
+  ],
+  "abnormalities": [
+    {
+      "name": "Left lung nodular/calcific density",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "Small rounded density in the left mid-lung zone, could represent a calcified granuloma, nipple shadow, or external artifact given overlying monitoring equipment; further characterization with dedicated PA/lateral views or CT recommended"
+    },
+    {
+      "name": "Cardiomegaly (possible)",
+      "severity": "Mild",
+      "confidence": 35,
+      "description": "Cardiac silhouette appears relatively enlarged on this supine AP view, though this may be exaggerated by technique (AP projection, patient rotation, magnification); correlation with upright PA film recommended"
+    },
+    {
+      "name": "Suboptimal positioning/rotation",
+      "severity": "Mild",
+      "confidence": 60,
+      "description": "Patient appears rotated with asymmetric clavicle positioning, and image includes overlying external devices (leads, markers) which limit full evaluation of underlying structures"
+    }
+  ],
+  "summary": "This chest X-ray was taken with the patient lying down (supine), which can make the heart look slightly larger and the image less sharp than a standing X-ray. The lungs appear generally clear without obvious signs of pneumonia or major fluid buildup. There is a small round density in the left lung that most likely represents an old, healed calcium deposit (common and usually not worrisome) but could also just be an overlying marker or artifact — this would need a follow-up scan to confirm. The heart size looks slightly large, but this is often due to the lying-down position and camera angle rather than a true heart problem. There are wires and sticker markers on the skin from monitoring equipment, which is normal in a hospital setting. Overall, no urgent emergency findings like a collapsed lung or large fluid collection are seen, but a repeat upright X-ray or specialist review would help confirm these impressions.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-ap-technique",
+    "https://pubs.rsna.org/doi/10.1148/radiol.2019190613",
+    "https://www.acr.org/-/media/ACR/Files/Practice-Parameters/chest-rad.pdf"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 410034,
+    "bytesOut": 406526,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T09:33:50.844Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

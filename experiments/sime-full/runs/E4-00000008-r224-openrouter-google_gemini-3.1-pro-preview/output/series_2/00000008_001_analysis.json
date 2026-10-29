@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000008/series_2/00000008_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The heart size is within normal limits.\",\n    \"The mediastinum and hila are unremarkable.\",\n    \"The lungs are clear without focal consolidation, effusion, or pneumothorax.\",\n    \"The bony thorax is intact.\",\n    \"There are metallic objects projected over the lower chest/upper abdomen, likely external to the patient (e.g., belt buckle, buttons).\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This is a normal chest X-ray. The heart, lungs, and other structures in the chest appear healthy. There are some metal objects visible at the bottom of the image, which are likely from clothing like a belt buckle.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/normal-chest-radiograph\",\n    \"https://www.hopkinsmedicine.org/health/treatment-tests-and-therapies/chest-x-ray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The heart size is within normal limits.",
+    "The mediastinum and hila are unremarkable.",
+    "The lungs are clear without focal consolidation, effusion, or pneumothorax.",
+    "The bony thorax is intact.",
+    "There are metallic objects projected over the lower chest/upper abdomen, likely external to the patient (e.g., belt buckle, buttons)."
+  ],
+  "abnormalities": [],
+  "summary": "This is a normal chest X-ray. The heart, lungs, and other structures in the chest appear healthy. There are some metal objects visible at the bottom of the image, which are likely from clothing like a belt buckle.",
+  "references": [
+    "https://radiopaedia.org/articles/normal-chest-radiograph",
+    "https://www.hopkinsmedicine.org/health/treatment-tests-and-therapies/chest-x-ray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24413,
+    "bytesOut": 24413,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:29:33.205Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

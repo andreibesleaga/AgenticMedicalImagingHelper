@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000086/series_1/00000086_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Evidence of prior right middle lobe lung biopsy, with several metallic coils remaining at the biopsy site.\",\n    \"Small right pleural effusion with blunting of the right costophrenic angle.\",\n    \"Normal cardiac silhouette size and mediastinal contours.\",\n    \"No acute infiltrates or pneumothorax identified.\",\n    \"The left lung fields are clear.\",\n    \"Osseous structures appear intact for the visualized portions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Middle Lobe Coils\",\n      \"description\": \"Multiple metallic coils are seen in the right middle lobe, consistent with a prior lung biopsy site.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Right Pleural Effusion\",\n      \"description\": \"Blunting of the right costophrenic angle indicates a small right-sided pleural effusion.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The X-ray shows small metallic devices (coils) in the right lung, which are typically left behind after a lung biopsy procedure. There's also a small amount of fluid around the right lung (called a pleural effusion), which can have various causes and might need further investigation. The rest of the lungs, heart, and surrounding bones appear normal. This means there are no signs of new pneumonia, collapsed lung, or significant heart enlargement.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.274065751\",\n    \"https://radiopaedia.org/articles/pleural-effusion-1?lang=us\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Evidence of prior right middle lobe lung biopsy, with several metallic coils remaining at the biopsy site.",
+    "Small right pleural effusion with blunting of the right costophrenic angle.",
+    "Normal cardiac silhouette size and mediastinal contours.",
+    "No acute infiltrates or pneumothorax identified.",
+    "The left lung fields are clear.",
+    "Osseous structures appear intact for the visualized portions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Middle Lobe Coils",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Multiple metallic coils are seen in the right middle lobe, consistent with a prior lung biopsy site."
+    },
+    {
+      "name": "Right Pleural Effusion",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Blunting of the right costophrenic angle indicates a small right-sided pleural effusion."
+    }
+  ],
+  "summary": "The X-ray shows small metallic devices (coils) in the right lung, which are typically left behind after a lung biopsy procedure. There's also a small amount of fluid around the right lung (called a pleural effusion), which can have various causes and might need further investigation. The rest of the lungs, heart, and surrounding bones appear normal. This means there are no signs of new pneumonia, collapsed lung, or significant heart enlargement.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.274065751",
+    "https://radiopaedia.org/articles/pleural-effusion-1?lang=us"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 412436,
+    "bytesOut": 410514,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:51:03.996Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

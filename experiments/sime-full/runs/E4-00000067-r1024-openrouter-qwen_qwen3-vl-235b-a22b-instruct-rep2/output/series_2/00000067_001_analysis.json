@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000067/series_2/00000067_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear lung fields with no focal consolidation or mass\",\n    \"Normal cardiac silhouette without cardiomegaly\",\n    \"Intact bony thorax including clavicles, ribs, and spine\",\n    \"Diaphragm domes well-defined and at normal height\",\n    \"No pleural effusion or pneumothorax detected\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray appears normal. The lungs are clear, the heart size is within normal limits, and there are no signs of fluid, infection, or structural damage. This suggests healthy lung and heart function based on this imaging. Always discuss results with your doctor for full context.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://radiopaedia.org/articles/chest-x-ray-normal-variants\",\n    \"https://www.uptodate.com/contents/chest-radiography-in-adults\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Clear lung fields with no focal consolidation or mass",
+    "Normal cardiac silhouette without cardiomegaly",
+    "Intact bony thorax including clavicles, ribs, and spine",
+    "Diaphragm domes well-defined and at normal height",
+    "No pleural effusion or pneumothorax detected"
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray appears normal. The lungs are clear, the heart size is within normal limits, and there are no signs of fluid, infection, or structural damage. This suggests healthy lung and heart function based on this imaging. Always discuss results with your doctor for full context.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://radiopaedia.org/articles/chest-x-ray-normal-variants",
+    "https://www.uptodate.com/contents/chest-radiography-in-adults"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 422744,
+    "bytesOut": 381926,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:25:15.025Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

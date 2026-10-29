@@ -1,0 +1,60 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_1/00000092_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP, supine/portable)\",\"quality\":\"Fair\",\"findings\":[\"AP portable chest radiograph in a pediatric/young patient\",\"Rounded radiopaque marker over right shoulder region (external skin marker)\",\"Bilateral lung fields visualized with mild haziness/increased interstitial markings\",\"Large, well-defined curvilinear lucency with an air-fluid level projecting over the left lower chest/upper abdomen region, consistent with gastric bubble or bowel loop\",\"Cardiomediastinal silhouette appears within normal limits for size\",\"No definite focal consolidation identified\",\"Bony thorax and visualized skeletal structures appear grossly intact\",\"Soft tissue folds and motion artifact present bilaterally, suggesting patient motion\",\"Two curvilinear radiopaque structures at the inferior margin of the image, likely external monitoring leads or positioning devices\"],\"abnormalities\":[{\"name\":\"Air-fluid level in left upper abdomen/lower chest\",\"description\":\"Large rounded lucency with air-fluid level seen inferior to the left hemidiaphragm, most consistent with a distended gastric bubble; however, differential includes bowel loop or less likely other air-containing structure. Clinical correlation recommended.\",\"severity\":\"Mild\",\"confidence\":55},{\"name\":\"Mild bilateral interstitial/perihilar haziness\",\"description\":\"Subtle increased interstitial markings bilaterally, which may reflect motion artifact, technique, or early airway disease; no definite focal consolidation.\",\"severity\":\"Mild\",\"confidence\":40}],\"summary\":\"This chest X-ray shows the lungs and heart are generally within normal limits. There is a large air-filled rounded shadow with a visible fluid level on the left side of the upper abdomen, which most likely represents the stomach containing swallowed air — this is often a normal finding, especially in children, but can sometimes indicate distension. The lungs show mild haziness that could be due to patient movement during the X-ray or a very mild lung process, but there is no obvious pneumonia or significant abnormality. A round marker is visible on the skin near the shoulder, which is a standard positioning marker used during X-ray and not a medical finding. Overall, this study appears largely unremarkable, but any concerning symptoms should be correlated clinically by the treating physician.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.ncbi.nlm.nih.gov/books/NBK546635/\",\"https://pubs.rsna.org/doi/10.1148/rg.2019190025\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP, supine/portable)",
+  "quality": "Fair",
+  "findings": [
+    "AP portable chest radiograph in a pediatric/young patient",
+    "Rounded radiopaque marker over right shoulder region (external skin marker)",
+    "Bilateral lung fields visualized with mild haziness/increased interstitial markings",
+    "Large, well-defined curvilinear lucency with an air-fluid level projecting over the left lower chest/upper abdomen region, consistent with gastric bubble or bowel loop",
+    "Cardiomediastinal silhouette appears within normal limits for size",
+    "No definite focal consolidation identified",
+    "Bony thorax and visualized skeletal structures appear grossly intact",
+    "Soft tissue folds and motion artifact present bilaterally, suggesting patient motion",
+    "Two curvilinear radiopaque structures at the inferior margin of the image, likely external monitoring leads or positioning devices"
+  ],
+  "abnormalities": [
+    {
+      "name": "Air-fluid level in left upper abdomen/lower chest",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Large rounded lucency with air-fluid level seen inferior to the left hemidiaphragm, most consistent with a distended gastric bubble; however, differential includes bowel loop or less likely other air-containing structure. Clinical correlation recommended."
+    },
+    {
+      "name": "Mild bilateral interstitial/perihilar haziness",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Subtle increased interstitial markings bilaterally, which may reflect motion artifact, technique, or early airway disease; no definite focal consolidation."
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs and heart are generally within normal limits. There is a large air-filled rounded shadow with a visible fluid level on the left side of the upper abdomen, which most likely represents the stomach containing swallowed air — this is often a normal finding, especially in children, but can sometimes indicate distension. The lungs show mild haziness that could be due to patient movement during the X-ray or a very mild lung process, but there is no obvious pneumonia or significant abnormality. A round marker is visible on the skin near the shoulder, which is a standard positioning marker used during X-ray and not a medical finding. Overall, this study appears largely unremarkable, but any concerning symptoms should be correlated clinically by the treating physician.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.ncbi.nlm.nih.gov/books/NBK546635/",
+    "https://pubs.rsna.org/doi/10.1148/rg.2019190025"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 389503,
+    "bytesOut": 383960,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T09:38:24.694Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

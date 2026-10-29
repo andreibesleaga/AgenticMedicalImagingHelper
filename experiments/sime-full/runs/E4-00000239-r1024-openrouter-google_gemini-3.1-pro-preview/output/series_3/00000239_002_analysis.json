@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_3/00000239_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear bilaterally without evidence of focal consolidation, pneumothorax, or pleural effusion.\",\n    \"Cardiac silhouette and mediastinal contours are within normal limits.\",\n    \"Absence of the left breast shadow is noted.\",\n    \"Multiple metallic surgical clips are visible in the left axilla, consistent with prior axillary lymph node dissection.\",\n    \"Multiple surgical clips are present in the right upper quadrant of the abdomen, consistent with prior cholecystectomy.\",\n    \"Additional scattered surgical clips are visualized in the mid and lower abdomen.\",\n    \"Visualized osseous structures appear intact without evidence of acute fracture.\",\n    \"Prominent bowel gas pattern in the visualized abdomen.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Post-surgical changes (Left Breast/Axilla)\",\n      \"description\": \"Absent left breast shadow and metallic clips in the left axillary region indicating prior mastectomy and lymph node dissection.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 98\n    },\n    {\n      \"name\": \"Abdominal surgical clips\",\n      \"description\": \"Metallic clips in the right upper quadrant and mid-abdomen, representing expected post-operative changes (e.g., prior cholecystectomy and other abdominal surgeries).\",\n      \"severity\": \"Mild\",\n      \"confidence\": 98\n    }\n  ],\n  \"summary\": \"The chest X-ray shows clear lungs and a normal-appearing heart, with no signs of active infection, fluid, or other acute chest issues. There are visible signs of previous surgeries, including an absent left breast shadow and small metal clips in the left armpit, which are typical after breast surgery. Additional surgical clips are seen in the upper and lower abdomen, likely from a past gallbladder removal and other abdominal procedures. These are expected, non-harmful findings if you have a history of these surgeries.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/mastectomy-1\",\n    \"https://radiopaedia.org/articles/surgical-clips-1\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear bilaterally without evidence of focal consolidation, pneumothorax, or pleural effusion.",
+    "Cardiac silhouette and mediastinal contours are within normal limits.",
+    "Absence of the left breast shadow is noted.",
+    "Multiple metallic surgical clips are visible in the left axilla, consistent with prior axillary lymph node dissection.",
+    "Multiple surgical clips are present in the right upper quadrant of the abdomen, consistent with prior cholecystectomy.",
+    "Additional scattered surgical clips are visualized in the mid and lower abdomen.",
+    "Visualized osseous structures appear intact without evidence of acute fracture.",
+    "Prominent bowel gas pattern in the visualized abdomen."
+  ],
+  "abnormalities": [
+    {
+      "name": "Post-surgical changes (Left Breast/Axilla)",
+      "severity": "Mild",
+      "confidence": 98,
+      "description": "Absent left breast shadow and metallic clips in the left axillary region indicating prior mastectomy and lymph node dissection."
+    },
+    {
+      "name": "Abdominal surgical clips",
+      "severity": "Mild",
+      "confidence": 98,
+      "description": "Metallic clips in the right upper quadrant and mid-abdomen, representing expected post-operative changes (e.g., prior cholecystectomy and other abdominal surgeries)."
+    }
+  ],
+  "summary": "The chest X-ray shows clear lungs and a normal-appearing heart, with no signs of active infection, fluid, or other acute chest issues. There are visible signs of previous surgeries, including an absent left breast shadow and small metal clips in the left armpit, which are typical after breast surgery. Additional surgical clips are seen in the upper and lower abdomen, likely from a past gallbladder removal and other abdominal procedures. These are expected, non-harmful findings if you have a history of these surgeries.",
+  "references": [
+    "https://radiopaedia.org/articles/mastectomy-1",
+    "https://radiopaedia.org/articles/surgical-clips-1"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 413987,
+    "bytesOut": 412168,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:25:28.450Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

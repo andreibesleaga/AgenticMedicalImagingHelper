@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_5/00000239_004.png",
+  "seriesId": "series_5",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear of focal consolidation, effusion, or pneumothorax.\",\n    \"Cardiac silhouette is within normal size limits.\",\n    \"Mediastinum is midline.\",\n    \"Large volume of gas and a prominent fluid level are noted in the stomach/upper abdomen, displacing the left hemidiaphragm superiorly.\",\n    \"Presence of multiple small, radiopaque surgical clips in the upper abdominal/perigastric region.\",\n    \"Bony structures are intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Gastric distension\",\n      \"description\": \"Marked distension of the stomach with a prominent air-fluid level, suggesting possible gastric outlet obstruction or significant gastric stasis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that the lungs and heart are normal. However, there is a significant amount of air and fluid in the stomach, which is causing it to look enlarged and push up against the diaphragm. This can be seen in conditions like a blockage at the exit of the stomach (gastric outlet obstruction) or after a large meal. Small metal surgical clips are also visible in the abdomen, indicating a previous surgery in that area.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/gastric-outlet-obstruction\",\n    \"https://www.radiologyassistant.nl/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear of focal consolidation, effusion, or pneumothorax.",
+    "Cardiac silhouette is within normal size limits.",
+    "Mediastinum is midline.",
+    "Large volume of gas and a prominent fluid level are noted in the stomach/upper abdomen, displacing the left hemidiaphragm superiorly.",
+    "Presence of multiple small, radiopaque surgical clips in the upper abdominal/perigastric region.",
+    "Bony structures are intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Gastric distension",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Marked distension of the stomach with a prominent air-fluid level, suggesting possible gastric outlet obstruction or significant gastric stasis."
+    }
+  ],
+  "summary": "The chest X-ray shows that the lungs and heart are normal. However, there is a significant amount of air and fluid in the stomach, which is causing it to look enlarged and push up against the diaphragm. This can be seen in conditions like a blockage at the exit of the stomach (gastric outlet obstruction) or after a large meal. Small metal surgical clips are also visible in the abdomen, indicating a previous surgery in that area.",
+  "references": [
+    "https://radiopaedia.org/articles/gastric-outlet-obstruction",
+    "https://www.radiologyassistant.nl/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 427509,
+    "bytesOut": 324606,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:06:52.150Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000239/series_6/00000239_005.png",
+  "seriesId": "series_6",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"The cardiomediastinal silhouette is within normal limits.\",\n    \"The hila are unremarkable.\",\n    \"The trachea is midline.\",\n    \"The visualized osseous structures are unremarkable.\",\n    \"There is a large stomach bubble with an air-fluid level in the left upper quadrant.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Gastric distension\",\n      \"description\": \"Large stomach bubble with an air-fluid level in the left upper quadrant.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows clear lungs and a normal heart size. There is a large amount of air and fluid in the stomach, which is abnormally distended. This finding can be seen with a variety of conditions, including recent eating, swallowed air, or a blockage in the stomach or intestines. Further evaluation may be needed depending on your symptoms.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/gastric-dilatation?lang=us\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6139783/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "The cardiomediastinal silhouette is within normal limits.",
+    "The hila are unremarkable.",
+    "The trachea is midline.",
+    "The visualized osseous structures are unremarkable.",
+    "There is a large stomach bubble with an air-fluid level in the left upper quadrant."
+  ],
+  "abnormalities": [
+    {
+      "name": "Gastric distension",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Large stomach bubble with an air-fluid level in the left upper quadrant."
+    }
+  ],
+  "summary": "The chest X-ray shows clear lungs and a normal heart size. There is a large amount of air and fluid in the stomach, which is abnormally distended. This finding can be seen with a variety of conditions, including recent eating, swallowed air, or a blockage in the stomach or intestines. Further evaluation may be needed depending on your symptoms.",
+  "references": [
+    "https://radiopaedia.org/articles/gastric-dilatation?lang=us",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6139783/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22688,
+    "bytesOut": 22688,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:37:56.547Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_1/00000148_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are hyperinflated with flattened diaphragms.\",\n    \"Bilateral increased interstitial markings are noted, more prominent in the lower lobes.\",\n    \"No focal consolidation, pneumothorax, or large pleural effusion identified.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Bony thorax is intact without acute fracture or destructive lesion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Hyperinflation\",\n      \"description\": \"The lungs appear hyperinflated, indicated by flattened diaphragms bilaterally. This suggests increased air trapping within the lungs.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Increased Interstitial Markings\",\n      \"description\": \"There is an increase in interstitial markings observed bilaterally, particularly in the lower lung fields. This finding can be associated with various interstitial lung diseases or chronic lung conditions.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that the lungs are overinflated, meaning they hold more air than usual, and the breathing muscles (diaphragms) appear flattened. There are also increased patterns in the lung tissue, especially in the lower parts, which might suggest some underlying lung condition. There's no sign of immediate problems like pneumonia, collapsed lung, or significant fluid around the lungs. The heart and major blood vessels appear normal in size and shape. The bones of the chest also look healthy.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.274065099\",\n    \"https://radiopaedia.org/articles/hyperinflation\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMra1310622\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are hyperinflated with flattened diaphragms.",
+    "Bilateral increased interstitial markings are noted, more prominent in the lower lobes.",
+    "No focal consolidation, pneumothorax, or large pleural effusion identified.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Bony thorax is intact without acute fracture or destructive lesion."
+  ],
+  "abnormalities": [
+    {
+      "name": "Hyperinflation",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The lungs appear hyperinflated, indicated by flattened diaphragms bilaterally. This suggests increased air trapping within the lungs."
+    },
+    {
+      "name": "Increased Interstitial Markings",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "There is an increase in interstitial markings observed bilaterally, particularly in the lower lung fields. This finding can be associated with various interstitial lung diseases or chronic lung conditions."
+    }
+  ],
+  "summary": "The chest X-ray shows that the lungs are overinflated, meaning they hold more air than usual, and the breathing muscles (diaphragms) appear flattened. There are also increased patterns in the lung tissue, especially in the lower parts, which might suggest some underlying lung condition. There's no sign of immediate problems like pneumonia, collapsed lung, or significant fluid around the lungs. The heart and major blood vessels appear normal in size and shape. The bones of the chest also look healthy.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.274065099",
+    "https://radiopaedia.org/articles/hyperinflation",
+    "https://www.nejm.org/doi/full/10.1056/NEJMra1310622"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 373586,
+    "bytesOut": 367631,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:18:12.075Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

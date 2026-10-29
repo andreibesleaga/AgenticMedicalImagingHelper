@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000086/series_3/00000086_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Lungs are clear without focal consolidation, pleural effusion, or pneumothorax\",\n    \"Cardiac silhouette is within normal limits for size and shape\",\n    \"Mediastinum is midline and not widened\",\n    \"Bony structures and soft tissues are unremarkable\",\n    \"Right hemidiaphragm is slightly elevated compared to the left\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray is unremarkable. The lungs are clear, the heart is a normal size, and there are no signs of pneumonia or fluid buildup. The slight elevation of the right diaphragm is a common finding and typically not clinically significant.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-radiograph-normal\",\n    \"https://www.acr.org/Clinical-Resources/Chest-X-Ray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Fair",
+  "findings": [
+    "Lungs are clear without focal consolidation, pleural effusion, or pneumothorax",
+    "Cardiac silhouette is within normal limits for size and shape",
+    "Mediastinum is midline and not widened",
+    "Bony structures and soft tissues are unremarkable",
+    "Right hemidiaphragm is slightly elevated compared to the left"
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray is unremarkable. The lungs are clear, the heart is a normal size, and there are no signs of pneumonia or fluid buildup. The slight elevation of the right diaphragm is a common finding and typically not clinically significant.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-normal",
+    "https://www.acr.org/Clinical-Resources/Chest-X-Ray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23353,
+    "bytesOut": 23353,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:04:47.242Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

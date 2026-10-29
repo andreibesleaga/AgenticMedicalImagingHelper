@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_3/00000239_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are well-expanded and clear bilaterally with no focal consolidation, pneumothorax, or pleural effusion.\",\n    \"The cardiomediastinal silhouette and cardiac size are within normal limits.\",\n    \"Multiple surgical clips are projected over the left axillary/chest wall region, consistent with prior surgical intervention (e.g., lymph node dissection or breast surgery).\",\n    \"Multiple surgical clips are present within the upper and mid-abdomen, compatible with prior abdominal surgery (e.g., cholecystectomy).\",\n    \"Visualized osseous structures demonstrate no acute fractures or destructive osseous lesions; mild degenerative changes of the thoracic spine are noted.\",\n    \"Normal subdiaphragmatic gas pattern.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Prior left axillary surgery\",\n      \"description\": \"Cluster of surgical clips projecting over the left axilla/lateral chest wall consistent with post-surgical changes.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Prior abdominal surgery\",\n      \"description\": \"Metallic surgical clips noted in the upper to mid-abdomen without acute complications.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows clear lungs with no signs of pneumonia, fluid buildup, or lung collapse. The heart size and major blood vessels appear normal. Metallic surgical clips are visible in the left armpit area and the abdomen, which are expected findings from prior surgeries. Overall, there are no acute heart or lung problems identified.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/normal-chest-radiograph-evaluation\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK537124/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are well-expanded and clear bilaterally with no focal consolidation, pneumothorax, or pleural effusion.",
+    "The cardiomediastinal silhouette and cardiac size are within normal limits.",
+    "Multiple surgical clips are projected over the left axillary/chest wall region, consistent with prior surgical intervention (e.g., lymph node dissection or breast surgery).",
+    "Multiple surgical clips are present within the upper and mid-abdomen, compatible with prior abdominal surgery (e.g., cholecystectomy).",
+    "Visualized osseous structures demonstrate no acute fractures or destructive osseous lesions; mild degenerative changes of the thoracic spine are noted.",
+    "Normal subdiaphragmatic gas pattern."
+  ],
+  "abnormalities": [
+    {
+      "name": "Prior left axillary surgery",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "Cluster of surgical clips projecting over the left axilla/lateral chest wall consistent with post-surgical changes."
+    },
+    {
+      "name": "Prior abdominal surgery",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "Metallic surgical clips noted in the upper to mid-abdomen without acute complications."
+    }
+  ],
+  "summary": "The chest X-ray shows clear lungs with no signs of pneumonia, fluid buildup, or lung collapse. The heart size and major blood vessels appear normal. Metallic surgical clips are visible in the left armpit area and the abdomen, which are expected findings from prior surgeries. Overall, there are no acute heart or lung problems identified.",
+  "references": [
+    "https://radiopaedia.org/articles/normal-chest-radiograph-evaluation",
+    "https://www.ncbi.nlm.nih.gov/books/NBK537124/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 413987,
+    "bytesOut": 412168,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:25:10.423Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

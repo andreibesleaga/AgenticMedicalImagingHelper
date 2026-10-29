@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000086/series_2/00000086_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right lower zone opacification with a meniscus sign, obscuring the right costophrenic angle and right hemidiaphragm\",\n    \"Heart size is within normal limits\",\n    \"The trachea is midline\",\n    \"Left lung is clear with no evidence of pneumothorax or consolidation\",\n    \"Bony structures are intact\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Pleural Effusion\",\n      \"description\": \"Homogeneous opacity in the right lower chest with a characteristic upward curving interface (meniscus), indicating fluid accumulation in the pleural space.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray shows a moderate amount of fluid buildup around the bottom of the right lung, known as a pleural effusion. This fluid is hiding the diaphragm on that side. The left lung and heart appear normal. This can be caused by various conditions, such as infection, heart issues, or inflammation, and requires clinical correlation by a doctor.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.msdmanuals.com/professional/pulmonary-disorders/pleural-disorders/pleural-effusion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Right lower zone opacification with a meniscus sign, obscuring the right costophrenic angle and right hemidiaphragm",
+    "Heart size is within normal limits",
+    "The trachea is midline",
+    "Left lung is clear with no evidence of pneumothorax or consolidation",
+    "Bony structures are intact"
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Homogeneous opacity in the right lower chest with a characteristic upward curving interface (meniscus), indicating fluid accumulation in the pleural space."
+    }
+  ],
+  "summary": "The X-ray shows a moderate amount of fluid buildup around the bottom of the right lung, known as a pleural effusion. This fluid is hiding the diaphragm on that side. The left lung and heart appear normal. This can be caused by various conditions, such as infection, heart issues, or inflammation, and requires clinical correlation by a doctor.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.msdmanuals.com/professional/pulmonary-disorders/pleural-disorders/pleural-effusion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 39203,
+    "bytesOut": 33722,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "reencoded",
+    "reason": "alpha channel stripped",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:04:26.879Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

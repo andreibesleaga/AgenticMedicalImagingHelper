@@ -1,0 +1,62 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_4/img_15_00016414_002.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Mild to moderate cardiomegaly with a cardiothoracic ratio estimated to be greater than 0.5.\",\n    \"Pulmonary vascular congestion is noted, particularly in the hilar regions and extending into the lung fields, suggestive of pulmonary edema.\",\n    \"Bilateral pleural effusions are present, more prominent on the right side, with blunting of the costophrenic angles.\",\n    \"No focal areas of consolidation or pneumothorax are distinctly seen.\",\n    \"The bony thorax appears intact without acute fractures.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The heart size is enlarged, with a cardiothoracic ratio appearing to be greater than 0.5, indicating mild to moderate cardiomegaly.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pulmonary Edema\",\n      \"description\": \"Evidence of pulmonary vascular congestion and interstitial edema is present, manifesting as haziness and prominence of vascular markings in the lung fields.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Bilateral blunting of the costophrenic angles is observed, consistent with the presence of pleural effusions, more significant on the right side.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 88\n    }\n  ],\n  \"summary\": \"The chest X-ray shows an enlarged heart and signs of fluid buildup in the lungs and around them. The fluid in the lungs suggests pulmonary edema, meaning there's extra fluid in the air sacs, and there's also fluid in the space around the lungs (pleural effusions), which is more noticeable on the right side. These findings are often seen in conditions like heart failure. It's important to discuss these results with your doctor for further evaluation and management.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2012115160\",\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/pulmonary-edema\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Mild to moderate cardiomegaly with a cardiothoracic ratio estimated to be greater than 0.5.",
+    "Pulmonary vascular congestion is noted, particularly in the hilar regions and extending into the lung fields, suggestive of pulmonary edema.",
+    "Bilateral pleural effusions are present, more prominent on the right side, with blunting of the costophrenic angles.",
+    "No focal areas of consolidation or pneumothorax are distinctly seen.",
+    "The bony thorax appears intact without acute fractures."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The heart size is enlarged, with a cardiothoracic ratio appearing to be greater than 0.5, indicating mild to moderate cardiomegaly."
+    },
+    {
+      "name": "Pulmonary Edema",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Evidence of pulmonary vascular congestion and interstitial edema is present, manifesting as haziness and prominence of vascular markings in the lung fields."
+    },
+    {
+      "name": "Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 88,
+      "description": "Bilateral blunting of the costophrenic angles is observed, consistent with the presence of pleural effusions, more significant on the right side."
+    }
+  ],
+  "summary": "The chest X-ray shows an enlarged heart and signs of fluid buildup in the lungs and around them. The fluid in the lungs suggests pulmonary edema, meaning there's extra fluid in the air sacs, and there's also fluid in the space around the lungs (pleural effusions), which is more noticeable on the right side. These findings are often seen in conditions like heart failure. It's important to discuss these results with your doctor for further evaluation and management.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2012115160",
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/pulmonary-edema"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24128,
+    "bytesOut": 24128,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:00:42.092Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

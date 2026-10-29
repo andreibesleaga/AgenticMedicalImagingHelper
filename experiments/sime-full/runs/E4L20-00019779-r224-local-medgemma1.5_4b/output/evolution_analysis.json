@@ -1,0 +1,44 @@
+{
+  "seriesCount": 3,
+  "seriesIds": [
+    "series_1",
+    "series_2",
+    "series_3"
+  ],
+  "progression": "Stable",
+  "trends": [
+    {
+      "finding": "Lung fields",
+      "trend": "Stable",
+      "details": "The lung fields are clear in all three sessions. No changes are noted."
+    },
+    {
+      "finding": "Heart size",
+      "trend": "Stable",
+      "details": "The heart size is normal in all three sessions. No changes are noted."
+    },
+    {
+      "finding": "Mediastinal structures",
+      "trend": "Stable",
+      "details": "The mediastinal structures are unremarkable in all three sessions. No changes are noted."
+    },
+    {
+      "finding": "Bony structures",
+      "trend": "Stable",
+      "details": "The bony structures are intact in all three sessions. No changes are noted."
+    },
+    {
+      "finding": "Visualized bowel",
+      "trend": "Stable",
+      "details": "Gas-filled bowel is noted in all three sessions. No changes are noted."
+    }
+  ],
+  "forecastedEvolution": "The observed trend indicates that with no treatment, the lung fields, heart size, mediastinal structures, bony structures, and visualized bowel will remain stable.",
+  "treatmentRecommendations": [],
+  "combinedReport": "## Chest X-ray Analysis\n\nThis chest X-ray series shows:\n\n*   **Lung fields:** Clear\n*   **Heart size:** Normal\n*   **Mediastinal structures:** Unremarkable\n*   **Bony structures:** Intact\n*   **Visualized bowel:** Gas-filled\n\n**Summary:** The radiograph is largely unremarkable, with clear lung fields and normal heart size. Some findings are noted due to patient positioning (chin obscures apices, stomach overinflated) and technical factors (slight rotation, arms/feet not included). No major abnormalities are detected.\n\n**Note:** This is AI-generated analysis based on a single image. A full clinical evaluation by a healthcare professional is required for diagnosis.\n\n--- \n\n## Chest X-ray series\n\n**Image 1: Chest (AP)**\n\n**Findings:**\n\n*   **Lungs:** Clear.\n*   **Heart size:** Normal.\n*   **Mediastinal contours:** Normal.\n*   **Bony structures:** Intact.\n\n**Overall:** The chest X-ray is normal. No significant abnormalities are noted.\n\n**Conclusion:** The findings are consistent with a normal chest X-ray.\n\n--- \n\n## Chest X-ray\n\n**Findings:**\n\n*   The heart size is within normal limits.\n*   The mediastinal width is within normal limits.\n*   The lung volumes are within normal limits.\n*   The lungs are clear.\n*   The visualized bony structures are unremarkable.\n*   No pleural effusion or pneumothorax is identified.\n*   The diaphragm is unremarkable.\n\n**Summary:**\n\nThis is a chest X-ray image. The heart, lungs, and other structures appear normal. There are no signs of infection or fluid buildup. The bones look normal.\n\n<context source=\"user-provided context\"> \nPublic, de-identified frontal chest radiographs (PA view) from the NIH ChestX-ray14 dataset, 224x224 pixels (downsampled from the NIH originals with a Lanczos filter). Patient age at first study: 8 years; sex: male. Each series folder is one imaging session, in chronological order (series_1 earliest). No clinical history is available. Research use only. \n\n</context> \n\nReturn a JSON object with exactly this shape: \n{\n  ",
+  "validation": {
+    "ok": true
+  },
+  "processedAt": "2026-10-08T11:18:39.392Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

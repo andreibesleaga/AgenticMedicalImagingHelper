@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000239/series_5/00000239_004.png",
+  "seriesId": "series_5",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP/PA)\",\"quality\":\"Fair\",\"findings\":[\"Frontal chest radiograph demonstrating bony thorax and lung fields\",\"Bilateral lung fields appear grossly aerated with visible vascular markings\",\"Cardiac silhouette is visible in the left hemithorax\",\"There is a large, well-defined round to oval lucent/gas-containing structure in the mid-to-lower right hemithorax/upper abdomen region with a distinct wall, suggestive of a large air-filled space (possible dilated stomach, large bulla, or gastric bubble)\",\"Below this lucent structure, there are multiple round to oval soft tissue/mixed density opacities in the abdomen, possibly representing bowel loops or gas-filled bowel pattern\",\"Soft tissue outline of the shoulders and upper arms bilaterally is visible, appears symmetric\",\"No obvious rib fractures identified, though full assessment limited by rotation and technique\"],\"abnormalities\":[{\"name\":\"Large gas-filled structure, right hemithorax/upper abdomen\",\"description\":\"A well-circumscribed round to oval air-density (lucent) structure with a visible wall is seen in the region correlating with a markedly dilated stomach or large bulla; this could also represent a diaphragmatic hernia containing stomach or bowel if positioned above the expected diaphragm line\",\"severity\":\"Moderate\",\"confidence\":55},{\"name\":\"Abnormal bowel gas pattern\",\"description\":\"Multiple rounded lucencies with mottled densities in the lower abdomen suggest a dilated or gas-filled bowel pattern, which could reflect ileus, obstruction, or normal bowel gas depending on clinical context\",\"severity\":\"Mild\",\"confidence\":40},{\"name\":\"Possible diaphragmatic elevation or hernia\",\"description\":\"The large air-filled structure position relative to the thoracic cavity raises the possibility of diaphragmatic hernia (e.g., large hiatal hernia) allowing stomach herniation into the chest, though this cannot be confirmed without lateral views or CT correlation\",\"severity\":\"Moderate\",\"confidence\":35}],\"summary\":\"This chest X-ray shows the lungs, heart, and ribs, along with a large air-filled round area on the right side of the chest/upper belly area, which could be a very stretched stomach or possibly part of the stomach pushed up through the diaphragm (the muscle separating the chest and belly) — this is called a hernia. Below that, there are some round, gas-filled areas that might be normal intestines or could suggest a blockage. These findings are not fully clear from a single X-ray and would need more detailed imaging, like a CT scan, and a physical exam by a doctor to know for sure what's happening. If you are having symptoms like belly pain, vomiting, or trouble breathing, it's important to see a doctor promptly.\",\"references\":[\"https://radiopaedia.org/articles/hiatus-hernia\",\"https://www.ncbi.nlm.nih.gov/books/NBK499894/\",\"https://pubs.rsna.org/doi/10.1148/rg.2019180122\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP/PA)",
+  "quality": "Fair",
+  "findings": [
+    "Frontal chest radiograph demonstrating bony thorax and lung fields",
+    "Bilateral lung fields appear grossly aerated with visible vascular markings",
+    "Cardiac silhouette is visible in the left hemithorax",
+    "There is a large, well-defined round to oval lucent/gas-containing structure in the mid-to-lower right hemithorax/upper abdomen region with a distinct wall, suggestive of a large air-filled space (possible dilated stomach, large bulla, or gastric bubble)",
+    "Below this lucent structure, there are multiple round to oval soft tissue/mixed density opacities in the abdomen, possibly representing bowel loops or gas-filled bowel pattern",
+    "Soft tissue outline of the shoulders and upper arms bilaterally is visible, appears symmetric",
+    "No obvious rib fractures identified, though full assessment limited by rotation and technique"
+  ],
+  "abnormalities": [
+    {
+      "name": "Large gas-filled structure, right hemithorax/upper abdomen",
+      "severity": "Moderate",
+      "confidence": 55,
+      "description": "A well-circumscribed round to oval air-density (lucent) structure with a visible wall is seen in the region correlating with a markedly dilated stomach or large bulla; this could also represent a diaphragmatic hernia containing stomach or bowel if positioned above the expected diaphragm line"
+    },
+    {
+      "name": "Abnormal bowel gas pattern",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Multiple rounded lucencies with mottled densities in the lower abdomen suggest a dilated or gas-filled bowel pattern, which could reflect ileus, obstruction, or normal bowel gas depending on clinical context"
+    },
+    {
+      "name": "Possible diaphragmatic elevation or hernia",
+      "severity": "Moderate",
+      "confidence": 35,
+      "description": "The large air-filled structure position relative to the thoracic cavity raises the possibility of diaphragmatic hernia (e.g., large hiatal hernia) allowing stomach herniation into the chest, though this cannot be confirmed without lateral views or CT correlation"
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs, heart, and ribs, along with a large air-filled round area on the right side of the chest/upper belly area, which could be a very stretched stomach or possibly part of the stomach pushed up through the diaphragm (the muscle separating the chest and belly) — this is called a hernia. Below that, there are some round, gas-filled areas that might be normal intestines or could suggest a blockage. These findings are not fully clear from a single X-ray and would need more detailed imaging, like a CT scan, and a physical exam by a doctor to know for sure what's happening. If you are having symptoms like belly pain, vomiting, or trouble breathing, it's important to see a doctor promptly.",
+  "references": [
+    "https://radiopaedia.org/articles/hiatus-hernia",
+    "https://www.ncbi.nlm.nih.gov/books/NBK499894/",
+    "https://pubs.rsna.org/doi/10.1148/rg.2019180122"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23411,
+    "bytesOut": 23411,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-29T10:43:54.858Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

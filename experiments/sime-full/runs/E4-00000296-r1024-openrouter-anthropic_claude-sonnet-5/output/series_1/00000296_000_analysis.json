@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000296/series_1/00000296_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP upright)\",\"quality\":\"Good\",\"findings\":[\"Central venous catheter (likely PICC or port catheter) with coiled tip overlying the left upper chest/axillary region, course tracing through the left subclavian/axillary vein\",\"Lungs are grossly clear bilaterally without focal consolidation, pleural effusion, or pneumothorax\",\"Cardiac silhouette size appears within normal limits given projection\",\"Mediastinal and hilar structures appear unremarkable\",\"Osseous structures (ribs, clavicles, spine) show no acute fracture or destructive lesion\",\"Soft tissue overlying the chest appears symmetric with no gross abnormality\"],\"abnormalities\":[{\"name\":\"Malpositioned/Coiled Catheter Tip\",\"description\":\"A catheter is seen entering from the left upper chest with its tip forming a distinct coiled loop in the left upper thoracic region, near the axillary/subclavian area rather than extending to the expected central position (e.g., cavoatrial junction). This coiling suggests possible malposition or kinking of the catheter tip.\",\"severity\":\"Moderate\",\"confidence\":65}],\"summary\":\"This chest X-ray shows a tube (catheter) that has been placed into a vein, likely for delivering medications or fluids. The tip of this catheter appears to be coiled or looped near the left shoulder/upper chest area instead of extending down to the typical target position near the heart. This could mean the catheter is not optimally positioned, which sometimes requires repositioning to ensure proper function and reduce complication risk. The lungs, heart, and bones otherwise appear normal in this image, with no signs of infection, fluid buildup, or fractures. It is important for a radiologist and the clinical team to review the exact catheter type and confirm whether repositioning is needed.\",\"references\":[\"https://radiopaedia.org/articles/central-venous-catheter-malposition\",\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5891375/\",\"https://pubs.rsna.org/doi/10.1148/rg.2016150200\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Good",
+  "findings": [
+    "Central venous catheter (likely PICC or port catheter) with coiled tip overlying the left upper chest/axillary region, course tracing through the left subclavian/axillary vein",
+    "Lungs are grossly clear bilaterally without focal consolidation, pleural effusion, or pneumothorax",
+    "Cardiac silhouette size appears within normal limits given projection",
+    "Mediastinal and hilar structures appear unremarkable",
+    "Osseous structures (ribs, clavicles, spine) show no acute fracture or destructive lesion",
+    "Soft tissue overlying the chest appears symmetric with no gross abnormality"
+  ],
+  "abnormalities": [
+    {
+      "name": "Malpositioned/Coiled Catheter Tip",
+      "severity": "Moderate",
+      "confidence": 65,
+      "description": "A catheter is seen entering from the left upper chest with its tip forming a distinct coiled loop in the left upper thoracic region, near the axillary/subclavian area rather than extending to the expected central position (e.g., cavoatrial junction). This coiling suggests possible malposition or kinking of the catheter tip."
+    }
+  ],
+  "summary": "This chest X-ray shows a tube (catheter) that has been placed into a vein, likely for delivering medications or fluids. The tip of this catheter appears to be coiled or looped near the left shoulder/upper chest area instead of extending down to the typical target position near the heart. This could mean the catheter is not optimally positioned, which sometimes requires repositioning to ensure proper function and reduce complication risk. The lungs, heart, and bones otherwise appear normal in this image, with no signs of infection, fluid buildup, or fractures. It is important for a radiologist and the clinical team to review the exact catheter type and confirm whether repositioning is needed.",
+  "references": [
+    "https://radiopaedia.org/articles/central-venous-catheter-malposition",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5891375/",
+    "https://pubs.rsna.org/doi/10.1148/rg.2016150200"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 411000,
+    "bytesOut": 408812,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:30:38.853Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

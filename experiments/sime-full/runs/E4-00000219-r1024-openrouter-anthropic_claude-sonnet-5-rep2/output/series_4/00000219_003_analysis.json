@@ -1,0 +1,72 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_4/00000219_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP upright)\",\"quality\":\"Fair\",\"findings\":[\"Cardiomegaly with cardiothoracic ratio appearing increased\",\"Prominent, tortuous and calcified thoracic aorta, particularly prominent at the aortic knob/arch\",\"Round calcified density projecting over the left lower cardiac border/diaphragm region, likely a calcified granuloma, pericardial calcification, or calcified structure\",\"Lungs appear grossly clear bilaterally without focal consolidation, though image quality limits fine detail\",\"No obvious pleural effusion or pneumothorax identified\",\"Mediastinal contours appear widened, partly due to vascular prominence\",\"Degenerative changes of the visualized shoulder/glenohumeral joints bilaterally\",\"Skin markers or surface artifacts ('HB' marker) noted in the right upper field, likely a lead marker/annotation rather than a pathological finding\",\"Faint curvilinear overlying skin folds or clothing artifacts in the mediastinal region\"],\"abnormalities\":[{\"name\":\"Cardiomegaly\",\"description\":\"The cardiac silhouette appears enlarged relative to the thoracic width, suggesting cardiomegaly; could be due to chamber enlargement or pericardial effusion.\",\"severity\":\"Moderate\",\"confidence\":60},{\"name\":\"Aortic atherosclerosis/ectasia\",\"description\":\"Prominent, tortuous, and calcified aortic contour particularly at the arch/knob area, consistent with atherosclerotic disease and aortic ectasia or mild aneurysmal change.\",\"severity\":\"Moderate\",\"confidence\":55},{\"name\":\"Calcified density, left lower chest\",\"description\":\"Round, well-defined calcified opacity overlying the left cardiophrenic region, possibly a calcified granuloma, pericardial fat pad calcification, or old calcified lymph node.\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Image quality/artifact\",\"description\":\"Overlying skin fold lines, annotation markers, and motion blur reduce fine diagnostic detail, limiting full assessment of lung parenchyma.\",\"severity\":\"Mild\",\"confidence\":50}],\"summary\":\"This chest X-ray shows that the heart appears larger than normal (cardiomegaly), and the main blood vessel leaving the heart (the aorta) looks wide and has calcium deposits, which is common with aging and high blood pressure or hardening of the arteries (atherosclerosis). There is also a small round calcified spot near the lower left side of the heart that is most likely an old, harmless calcified scar (such as a healed infection or small calcified lymph node), though correlation with prior imaging or CT may be useful for clarification. No signs of fluid, air leakage, or active lung infection are visible, though the image quality is slightly reduced by overlying artifacts and skin folds. Overall, these findings would benefit from clinical correlation and possibly follow-up imaging to assess heart size and vascular health more precisely.\",\"references\":[\"https://radiopaedia.org/articles/cardiomegaly\",\"https://radiopaedia.org/articles/aortic-calcification\",\"https://www.ncbi.nlm.nih.gov/books/NBK545193/\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Fair",
+  "findings": [
+    "Cardiomegaly with cardiothoracic ratio appearing increased",
+    "Prominent, tortuous and calcified thoracic aorta, particularly prominent at the aortic knob/arch",
+    "Round calcified density projecting over the left lower cardiac border/diaphragm region, likely a calcified granuloma, pericardial calcification, or calcified structure",
+    "Lungs appear grossly clear bilaterally without focal consolidation, though image quality limits fine detail",
+    "No obvious pleural effusion or pneumothorax identified",
+    "Mediastinal contours appear widened, partly due to vascular prominence",
+    "Degenerative changes of the visualized shoulder/glenohumeral joints bilaterally",
+    "Skin markers or surface artifacts ('HB' marker) noted in the right upper field, likely a lead marker/annotation rather than a pathological finding",
+    "Faint curvilinear overlying skin folds or clothing artifacts in the mediastinal region"
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 60,
+      "description": "The cardiac silhouette appears enlarged relative to the thoracic width, suggesting cardiomegaly; could be due to chamber enlargement or pericardial effusion."
+    },
+    {
+      "name": "Aortic atherosclerosis/ectasia",
+      "severity": "Moderate",
+      "confidence": 55,
+      "description": "Prominent, tortuous, and calcified aortic contour particularly at the arch/knob area, consistent with atherosclerotic disease and aortic ectasia or mild aneurysmal change."
+    },
+    {
+      "name": "Calcified density, left lower chest",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "Round, well-defined calcified opacity overlying the left cardiophrenic region, possibly a calcified granuloma, pericardial fat pad calcification, or old calcified lymph node."
+    },
+    {
+      "name": "Image quality/artifact",
+      "severity": "Mild",
+      "confidence": 50,
+      "description": "Overlying skin fold lines, annotation markers, and motion blur reduce fine diagnostic detail, limiting full assessment of lung parenchyma."
+    }
+  ],
+  "summary": "This chest X-ray shows that the heart appears larger than normal (cardiomegaly), and the main blood vessel leaving the heart (the aorta) looks wide and has calcium deposits, which is common with aging and high blood pressure or hardening of the arteries (atherosclerosis). There is also a small round calcified spot near the lower left side of the heart that is most likely an old, harmless calcified scar (such as a healed infection or small calcified lymph node), though correlation with prior imaging or CT may be useful for clarification. No signs of fluid, air leakage, or active lung infection are visible, though the image quality is slightly reduced by overlying artifacts and skin folds. Overall, these findings would benefit from clinical correlation and possibly follow-up imaging to assess heart size and vascular health more precisely.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/aortic-calcification",
+    "https://www.ncbi.nlm.nih.gov/books/NBK545193/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 392020,
+    "bytesOut": 388042,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T09:43:09.303Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

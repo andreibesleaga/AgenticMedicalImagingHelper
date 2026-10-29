@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_3/img_03_00018610_009.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The right hemithorax demonstrates complete opacification with a shift of the mediastinal structures (trachea, heart, and esophagus) to the left.\",\n    \"The right hemidiaphragm is obscured.\",\n    \"The left lung appears hyperinflated with compensatory changes.\",\n    \"No acute infiltrates or effusions are noted in the left hemithorax.\",\n    \"Bony thorax appears intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Hemithorax Opacification with Mediastinal Shift\",\n      \"description\": \"Complete opacification of the right hemithorax with significant mediastinal shift to the left, indicative of a large right-sided pleural effusion or mass causing collapse/displacement of the right lung.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray shows that the entire right side of the chest is cloudy, and the organs in the middle of the chest, like the windpipe and heart, are pushed over to the left side. This suggests a large amount of fluid (pleural effusion) or a significant mass on the right side of the lung, which is causing the right lung to collapse or be displaced. The left lung looks like it's working harder to compensate. This finding needs urgent medical attention to determine the cause and appropriate treatment.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/mediastinal-shift\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900600/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The right hemithorax demonstrates complete opacification with a shift of the mediastinal structures (trachea, heart, and esophagus) to the left.",
+    "The right hemidiaphragm is obscured.",
+    "The left lung appears hyperinflated with compensatory changes.",
+    "No acute infiltrates or effusions are noted in the left hemithorax.",
+    "Bony thorax appears intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Hemithorax Opacification with Mediastinal Shift",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Complete opacification of the right hemithorax with significant mediastinal shift to the left, indicative of a large right-sided pleural effusion or mass causing collapse/displacement of the right lung."
+    }
+  ],
+  "summary": "This X-ray shows that the entire right side of the chest is cloudy, and the organs in the middle of the chest, like the windpipe and heart, are pushed over to the left side. This suggests a large amount of fluid (pleural effusion) or a significant mass on the right side of the lung, which is causing the right lung to collapse or be displaced. The left lung looks like it's working harder to compensate. This finding needs urgent medical attention to determine the cause and appropriate treatment.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/mediastinal-shift",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900600/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22630,
+    "bytesOut": 22630,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:02:09.149Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

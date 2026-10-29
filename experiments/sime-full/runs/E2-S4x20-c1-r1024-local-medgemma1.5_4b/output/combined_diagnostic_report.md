@@ -1,0 +1,84 @@
+> **Requires review by a qualified clinician before any use.**
+> This report is unreviewed AI research output. No finding, diagnosis, trend, forecast or
+> treatment suggestion in it has been checked by a human clinician, and none may be acted
+> on until one has. Recorded as `humanReview` in `run_manifest.json` (EU AI Act Art. 14).
+
+# Combined Diagnostic Report
+
+> ⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made.
+
+**Generated**: 2026-10-08T12:17:34.940Z
+**Series analyzed**: 4 (series_1, series_2, series_3, series_4)
+**Overall progression**: Worsening
+**Structured output**: schema validation FAILED (6 issue(s)) — narrative fallback used
+> - trends.2.trend: Invalid option: expected one of "Improving"|"Stable"|"Worsening"
+> - trends.3.trend: Invalid option: expected one of "Improving"|"Stable"|"Worsening"
+> - trends.4.trend: Invalid option: expected one of "Improving"|"Stable"|"Worsening"
+> - trends.5.trend: Invalid option: expected one of "Improving"|"Stable"|"Worsening"
+> - trends.6.trend: Invalid option: expected one of "Improving"|"Stable"|"Worsening"
+> - progression: taken from partial JSON ("Worsening")
+
+## Temporal Evolution Analysis
+
+{
+  "progression": "Worsening",
+  "trends": [
+    {
+      "finding": "pulmonary edema",
+      "trend": "Worsening",
+      "details": "The presence of pulmonary edema, characterized by lung opacities and volume loss, is evident in series_3 (Image 3 shows significant opacity) and series_4 (Image 20 shows opacities extending to the apices, likely due to edema). While series_1 shows clear lungs without edema, series_2 is missing, and series_3 shows signs of edema, indicating a worsening pattern in the progression of this finding."
+    },
+    {
+      "finding": "right lung volume loss",
+      "trend": "Worsening",
+      "details": "The right lung volume loss is present in series_3 (Image 14) and series_4 (Image 20), indicating a worsening trend. This is consistent with the presence of pulmonary edema affecting the right lung."
+    },
+    {
+      "finding": "soft tissue density of the right cervical region",
+      "trend": "Inconclusive",
+      "details": "This finding is present in series_4 (Image 20) but not explicitly mentioned in series_1 or series_3. Analysis is limited by the available series."
+    },
+      {
+      "finding": "soft tissue density of the left cervical region",
+      "trend": "Inconclusive",
+      "details": "This finding is present in series_4 (Image 20) but not explicitly mentioned in series_1 or series_3. Analysis is limited by the available series."
+    },
+      {
+      "finding": "soft tissue density of the right cervical region",
+      "trend": "Inconclusive",
+      "details": "This finding is present in series_4 (Image 20) but not explicitly mentioned in series_1 or series_3. Analysis is limited by the available series."
+    },
+      {
+      "finding": "soft tissue density of the left cervical region",
+      "trend": "Inconclusive",
+      "details": "This finding is present in series_4 (Image 20) but not explicitly mentioned in series_1 or series_3. Analysis is limited by the available series."
+    },
+    {
+      "finding": "left thyroid nodule",
+      "trend": "Inconclusive",
+      "details": "This finding is present in series_4 (Image 20) but not explicitly mentioned in series_1 or series_3. Analysis is limited by the available series."
+    }
+  ],
+  "forecastedEvolution": "Based on the observed worsening trend of pulmonary edema and right lung volume loss, the condition is expected to deteriorate further without intervention.",
+  "treatmentRecommendations": [
+    "Further investigation into the cause of pulmonary edema is warranted, including cardiac evaluation and assessment for non-cardiogenic causes.",
+    "A CT scan of the chest and neck is recommended to better characterize the soft tissue densities.",
+    "Management may involve diuretics to reduce fluid overload and supportive care depending on the underlying cause."
+  ],
+  "combinedReport": "Review of Chest X-ray Series 4\n\nThis series consists of 20 images from a single chest X-ray examination. The analysis found multiple significant findings, primarily concerning the right lung and possible upper mediastinal masses in the neck.\n\n**Key Findings:**\n\n*   **Significant Right Lung Opacities:** There are prominent opacities (whiteness) in the right lung, extending towards the upper portions (apices).\n*   **Left Lung Clear:** The left lung appears clear.\n*   **Right Lung Volume Loss:** There is evidence of collapse (volume loss) in the right lung.\n*   **Right Hemithorax Catheter:** A central venous catheter is present on the right side.\n*   **Neck Soft Tissue Densities:** There are soft tissue densities (possibly masses) in the soft tissues of the neck on both sides.\n*   **Left Thyroid Nodule:** A nodule is noted in the left thyroid gland.\n*   **Other Findings:** The heart size is normal, mediastinal contours are normal, there is no pleural effusion evident, and the ribs/clavicles appear intact.\n\n**Interpretation:**\nThe right lung opacities are concerning. Given the right lung volume loss, this is highly suggestive of fluid accumulation in the lung, often referred to as pulmonary edema. This could be related to heart failure or other conditions causing fluid overload (cardiogenic) or potentially other causes (non-cardiogenic). The neck soft tissue densities might represent lymph nodes or other structures, and a dedicated neck CT might be considered for further evaluation.\n\nThe left lung appears clear (no opacities or volume loss).\n\n**Conclusion:**\nThe primary and most concerning finding is the right pulmonary edema leading to right lung volume loss. This requires urgent medical attention to determine the underlying cause and initiate appropriate treatment, typically aimed at reducing fluid overload and supporting heart function if necessary.\n\nThe neck soft tissue densities also warrant further investigation with a CT scan, potentially with contrast.\n\n**Note:** This is a preliminary interpretation based on a single X-ray image. A thorough clinical evaluation by a healthcare professional is essential."
+}
+
+## Per-Finding Trends
+_No per-finding trends extracted_
+
+## Forecasted Evolution
+_Not extracted_
+
+## Treatment Suggestions (experimental — not clinical recommendations)
+_AI-generated suggestions for educational use only. They are not clinical recommendations and must not be acted on._
+
+_See full report above_
+
+---
+*Generated by AgenticMedicalImagingHelper v1.1.0 | Educational use only*
+*This report is AI-generated for educational purposes only. Professional clinical review required.*

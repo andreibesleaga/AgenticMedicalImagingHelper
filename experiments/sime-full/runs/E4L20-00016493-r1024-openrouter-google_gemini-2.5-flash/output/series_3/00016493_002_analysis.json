@@ -1,0 +1,84 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00016493/series_3/00016493_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral pulmonary opacities, more prominent in the right lower and mid lung fields, consistent with alveolar infiltrates.\",\n    \"Cardiomegaly, with an enlarged cardiac silhouette.\",\n    \"Evidence of an endotracheal tube (ETT) with its tip projected at the level of the carina.\",\n    \"Presence of a central venous catheter (CVC) in the right subclavian vein, with its tip projected over the superior vena cava.\",\n    \"A nasogastric tube (NGT) is seen, coursing through the esophagus and stomach, with its tip in the fundus.\",\n    \"A right pleural effusion is suggested by blunting of the right costophrenic angle and haziness.\",\n    \"The left costophrenic angle is clear.\",\n    \"Bony structures appear intact for the visualized portions of the ribs and clavicles.\",\n    \"The diaphragm contours are partially obscured on the right due to effusion/infiltrates.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pulmonary Opacities\",\n      \"description\": \"Diffuse bilateral pulmonary opacities, particularly prominent in the right lower and mid lung fields, consistent with alveolar infiltrates. This suggests lung pathology such as pneumonia, pulmonary edema, or ARDS.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette appears enlarged, indicating cardiomegaly. This could be due to various cardiac conditions, including heart failure.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Blunting of the right costophrenic angle and haziness suggest the presence of a right pleural effusion, which is an accumulation of fluid around the lung.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    },\n    {\n      \"name\": \"Endotracheal Tube (ETT)\",\n      \"description\": \"An endotracheal tube is in place, with its tip appropriately positioned at the level of the carina, indicating proper intubation.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Central Venous Catheter (CVC)\",\n      \"description\": \"A central venous catheter is noted in the right subclavian vein, with its tip appropriately located in the superior vena cava, indicating proper placement.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Nasogastric Tube (NGT)\",\n      \"description\": \"A nasogastric tube is present, with its tip positioned in the gastric fundus, indicating correct placement for gastric access.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray shows several findings. The lungs have widespread hazy areas, especially on the right side, which could be from an infection like pneumonia, fluid buildup (pulmonary edema), or a serious lung injury (ARDS). The heart appears enlarged, a condition called cardiomegaly, which often indicates an underlying heart problem. There's also some fluid around the right lung (a right pleural effusion). Additionally, the image confirms the correct placement of several medical tubes: a breathing tube in the windpipe, a central line for medications in a large vein, and a feeding tube in the stomach.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900696/\",\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.106.180472\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral pulmonary opacities, more prominent in the right lower and mid lung fields, consistent with alveolar infiltrates.",
+    "Cardiomegaly, with an enlarged cardiac silhouette.",
+    "Evidence of an endotracheal tube (ETT) with its tip projected at the level of the carina.",
+    "Presence of a central venous catheter (CVC) in the right subclavian vein, with its tip projected over the superior vena cava.",
+    "A nasogastric tube (NGT) is seen, coursing through the esophagus and stomach, with its tip in the fundus.",
+    "A right pleural effusion is suggested by blunting of the right costophrenic angle and haziness.",
+    "The left costophrenic angle is clear.",
+    "Bony structures appear intact for the visualized portions of the ribs and clavicles.",
+    "The diaphragm contours are partially obscured on the right due to effusion/infiltrates."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pulmonary Opacities",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Diffuse bilateral pulmonary opacities, particularly prominent in the right lower and mid lung fields, consistent with alveolar infiltrates. This suggests lung pathology such as pneumonia, pulmonary edema, or ARDS."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "The cardiac silhouette appears enlarged, indicating cardiomegaly. This could be due to various cardiac conditions, including heart failure."
+    },
+    {
+      "name": "Pleural Effusion",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Blunting of the right costophrenic angle and haziness suggest the presence of a right pleural effusion, which is an accumulation of fluid around the lung."
+    },
+    {
+      "name": "Endotracheal Tube (ETT)",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "An endotracheal tube is in place, with its tip appropriately positioned at the level of the carina, indicating proper intubation."
+    },
+    {
+      "name": "Central Venous Catheter (CVC)",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A central venous catheter is noted in the right subclavian vein, with its tip appropriately located in the superior vena cava, indicating proper placement."
+    },
+    {
+      "name": "Nasogastric Tube (NGT)",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A nasogastric tube is present, with its tip positioned in the gastric fundus, indicating correct placement for gastric access."
+    }
+  ],
+  "summary": "This X-ray shows several findings. The lungs have widespread hazy areas, especially on the right side, which could be from an infection like pneumonia, fluid buildup (pulmonary edema), or a serious lung injury (ARDS). The heart appears enlarged, a condition called cardiomegaly, which often indicates an underlying heart problem. There's also some fluid around the right lung (a right pleural effusion). Additionally, the image confirms the correct placement of several medical tubes: a breathing tube in the windpipe, a central line for medications in a large vein, and a feeding tube in the stomach.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900696/",
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.106.180472"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 348510,
+    "bytesOut": 343794,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:11:33.508Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,44 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00016493/series_4/00016493_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are well-expanded with no evidence of consolidation, effusion, or pneumothorax.\",\n    \"Cardiac silhouette appears within normal limits for size and contour.\",\n    \"Diaphragm is smooth and sharply defined bilaterally.\",\n    \"Mediastinal structures are midline without widening.\",\n    \"Bony thorax including ribs, clavicles, and spine shows no acute fracture or deformity.\",\n    \"A circular radiopaque object, likely a medical device (e.g., pacemaker generator or button battery), is visible in the midline upper abdomen, possibly overlying the gastric region.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray appears normal. The lungs are clear, the heart size is appropriate, and there are no signs of fluid, infection, or collapse in the lungs. A small round object is seen in the upper abdomen — this may be a medical device or foreign body and should be correlated clinically. No urgent abnormalities were detected.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://radiopaedia.org/articles/chest-x-ray-normal-variants\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK538217/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are well-expanded with no evidence of consolidation, effusion, or pneumothorax.",
+    "Cardiac silhouette appears within normal limits for size and contour.",
+    "Diaphragm is smooth and sharply defined bilaterally.",
+    "Mediastinal structures are midline without widening.",
+    "Bony thorax including ribs, clavicles, and spine shows no acute fracture or deformity.",
+    "A circular radiopaque object, likely a medical device (e.g., pacemaker generator or button battery), is visible in the midline upper abdomen, possibly overlying the gastric region."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray appears normal. The lungs are clear, the heart size is appropriate, and there are no signs of fluid, infection, or collapse in the lungs. A small round object is seen in the upper abdomen — this may be a medical device or foreign body and should be correlated clinically. No urgent abnormalities were detected.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://radiopaedia.org/articles/chest-x-ray-normal-variants",
+    "https://www.ncbi.nlm.nih.gov/books/NBK538217/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 404230,
+    "bytesOut": 363962,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:23:22.680Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,48 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_2/img_04_00002275_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse reticulonodular opacities are present bilaterally, more prominent in the lower lung zones.\",\n    \"No focal consolidation, pleural effusion, or pneumothorax is evident.\",\n    \"Cardiomediastinal silhouette appears unremarkable.\",\n    \"Bony thorax is intact without acute fracture or destructive lesion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Reticulonodular Opacities\",\n      \"description\": \"Diffuse reticulonodular opacities are seen throughout both lung fields, with a particular prominence in the lower lobes. This pattern suggests interstitial lung disease.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows widespread changes in both lungs, appearing as a network of fine lines and small dots, especially in the lower parts. This pattern, called reticulonodular opacities, is often seen in conditions affecting the lung's supporting tissues (interstitial lung disease). There are no signs of pneumonia, fluid around the lungs, or a collapsed lung. The heart and major blood vessels appear normal, and the bones of the chest are intact.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/interstitial-lung-disease-1?lang=us\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3310061/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse reticulonodular opacities are present bilaterally, more prominent in the lower lung zones.",
+    "No focal consolidation, pleural effusion, or pneumothorax is evident.",
+    "Cardiomediastinal silhouette appears unremarkable.",
+    "Bony thorax is intact without acute fracture or destructive lesion."
+  ],
+  "abnormalities": [
+    {
+      "name": "Reticulonodular Opacities",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Diffuse reticulonodular opacities are seen throughout both lung fields, with a particular prominence in the lower lobes. This pattern suggests interstitial lung disease."
+    }
+  ],
+  "summary": "The chest X-ray shows widespread changes in both lungs, appearing as a network of fine lines and small dots, especially in the lower parts. This pattern, called reticulonodular opacities, is often seen in conditions affecting the lung's supporting tissues (interstitial lung disease). There are no signs of pneumonia, fluid around the lungs, or a collapsed lung. The heart and major blood vessels appear normal, and the bones of the chest are intact.",
+  "references": [
+    "https://radiopaedia.org/articles/interstitial-lung-disease-1?lang=us",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3310061/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 396643,
+    "bytesOut": 392615,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:45:58.419Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

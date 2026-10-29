@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S1x1/series_1/img_01_00013464_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No obvious focal opacities or consolidations are seen within the lung fields.\",\n    \"Bilateral lung fields appear clear.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Hilar regions are unremarkable.\",\n    \"Diaphragms are intact and clear costophrenic angles are noted bilaterally.\",\n    \"Osseous structures (ribs, clavicles, thoracic spine) appear intact without acute fracture or destructive lesions.\",\n    \"Surgical clips are noted in the right breast region, suggestive of prior breast surgery.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical Clips, Right Breast\",\n      \"description\": \"Multiple small metallic surgical clips are identified in the soft tissues of the right breast, consistent with a history of prior breast surgery, such as lumpectomy or biopsy.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This chest X-ray appears largely normal. The lungs look clear without any signs of pneumonia, fluid, or masses. The heart and major blood vessels are of normal size and shape. The bones of the chest and shoulders are also normal. There are some small surgical clips visible in the right breast, which likely relate to a previous surgery or biopsy in that area. These findings are common and typically do not indicate any acute problem on a chest X-ray.\",\n  \"references\": [\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.294085734\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No obvious focal opacities or consolidations are seen within the lung fields.",
+    "Bilateral lung fields appear clear.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Hilar regions are unremarkable.",
+    "Diaphragms are intact and clear costophrenic angles are noted bilaterally.",
+    "Osseous structures (ribs, clavicles, thoracic spine) appear intact without acute fracture or destructive lesions.",
+    "Surgical clips are noted in the right breast region, suggestive of prior breast surgery."
+  ],
+  "abnormalities": [
+    {
+      "name": "Surgical Clips, Right Breast",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Multiple small metallic surgical clips are identified in the soft tissues of the right breast, consistent with a history of prior breast surgery, such as lumpectomy or biopsy."
+    }
+  ],
+  "summary": "This chest X-ray appears largely normal. The lungs look clear without any signs of pneumonia, fluid, or masses. The heart and major blood vessels are of normal size and shape. The bones of the chest and shoulders are also normal. There are some small surgical clips visible in the right breast, which likely relate to a previous surgery or biopsy in that area. These findings are common and typically do not indicate any acute problem on a chest X-ray.",
+  "references": [
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.294085734"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 385399,
+    "bytesOut": 382879,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:31:58.686Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_3/00000148_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right-sided implanted venous access port (Port-a-Cath) is present with the reservoir in the right chest wall and the catheter tip terminating in the superior vena cava.\",\n    \"Lungs are clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiac silhouette is normal in size and configuration.\",\n    \"Mediastinum is midline and not widened.\",\n    \"Bony structures are intact.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray shows a Port-a-Cath (an implanted device used for long-term medicine delivery or blood draws) on the right side of the chest. The device is correctly positioned. No other abnormalities were found; the heart, lungs, and bones appear normal.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/implanted-venous-access-ports\",\n    \"https://www.acr.org/Clinical-Resources/Reporting-and-Data-Systems\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Right-sided implanted venous access port (Port-a-Cath) is present with the reservoir in the right chest wall and the catheter tip terminating in the superior vena cava.",
+    "Lungs are clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiac silhouette is normal in size and configuration.",
+    "Mediastinum is midline and not widened.",
+    "Bony structures are intact."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows a Port-a-Cath (an implanted device used for long-term medicine delivery or blood draws) on the right side of the chest. The device is correctly positioned. No other abnormalities were found; the heart, lungs, and bones appear normal.",
+  "references": [
+    "https://radiopaedia.org/articles/implanted-venous-access-ports",
+    "https://www.acr.org/Clinical-Resources/Reporting-and-Data-Systems"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 453156,
+    "bytesOut": 345726,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T09:49:07.588Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

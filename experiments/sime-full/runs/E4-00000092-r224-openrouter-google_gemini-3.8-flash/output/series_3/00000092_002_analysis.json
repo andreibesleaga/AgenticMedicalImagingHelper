@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000092/series_3/00000092_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA/AP erect)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lung fields demonstrate hyperinflation with flattening of both hemidiaphragms, consistent with chronic obstructive pulmonary disease (COPD) or emphysema.\",\n    \"Increased lucency observed throughout the lung parenchyma with attenuation of peripheral vascular markings.\",\n    \"Bibasilar atelectatic streaking or chronic fibrocalcific/scarring changes, slightly more prominent in the left lung base.\",\n    \"Blunting of the left costophrenic angle, suspicious for mild pleural thickening or a trace pleural effusion.\",\n    \"Cardiac silhouette is vertical/elongated ('teardrop heart') secondary to hyperinflation, without overt cardiomegaly.\",\n    \"Surgical clips are identified in the mid-mediastinum and lower mid-abdomen.\",\n    \"Marked subdiaphragmatic gastric air bubble with an air-fluid level under the left hemidiaphragm.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pulmonary Emphysema / Chronic Obstructive Pulmonary Disease\",\n      \"description\": \"Marked pulmonary hyperinflation characterized by flattened diaphragmatic contours, enlarged lung volumes, and generalized parenchymal hyperlucency with attenuated vascular markings.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 92\n    },\n    {\n      \"name\": \"Bibasilar Atelectasis / Scarring\",\n      \"description\": \"Linear and patchy opacities in the lower lung zones bilaterally, consistent with subsegmental atelectasis, dependent atelectasis, or chronic scarring.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Left Costophrenic Blunting\",\n      \"description\": \"Blunting of the left costophrenic sulcus, which may represent chronic pleural thickening or a trace pleural effusion.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"The chest X-ray shows classic features of emphysema (a type of Chronic Obstructive Pulmonary Disease, or COPD), where the lungs appear overly expanded and the breathing muscles (diaphragms) are flattened. There are also small areas of minor lung collapse or scarring at the very bottom of both lungs (atelectasis), along with slight thickening or minimal fluid at the left lung base. Surgical clips from past procedures are visible in the chest and upper abdomen. These findings are typical for individuals with chronic lung disease.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/emphysema\",\n    \"https://radiopaedia.org/articles/chronic-obstructive-pulmonary-disease-1\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK559281/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP erect)",
+  "quality": "Good",
+  "findings": [
+    "Lung fields demonstrate hyperinflation with flattening of both hemidiaphragms, consistent with chronic obstructive pulmonary disease (COPD) or emphysema.",
+    "Increased lucency observed throughout the lung parenchyma with attenuation of peripheral vascular markings.",
+    "Bibasilar atelectatic streaking or chronic fibrocalcific/scarring changes, slightly more prominent in the left lung base.",
+    "Blunting of the left costophrenic angle, suspicious for mild pleural thickening or a trace pleural effusion.",
+    "Cardiac silhouette is vertical/elongated ('teardrop heart') secondary to hyperinflation, without overt cardiomegaly.",
+    "Surgical clips are identified in the mid-mediastinum and lower mid-abdomen.",
+    "Marked subdiaphragmatic gastric air bubble with an air-fluid level under the left hemidiaphragm."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pulmonary Emphysema / Chronic Obstructive Pulmonary Disease",
+      "severity": "Moderate",
+      "confidence": 92,
+      "description": "Marked pulmonary hyperinflation characterized by flattened diaphragmatic contours, enlarged lung volumes, and generalized parenchymal hyperlucency with attenuated vascular markings."
+    },
+    {
+      "name": "Bibasilar Atelectasis / Scarring",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Linear and patchy opacities in the lower lung zones bilaterally, consistent with subsegmental atelectasis, dependent atelectasis, or chronic scarring."
+    },
+    {
+      "name": "Left Costophrenic Blunting",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "Blunting of the left costophrenic sulcus, which may represent chronic pleural thickening or a trace pleural effusion."
+    }
+  ],
+  "summary": "The chest X-ray shows classic features of emphysema (a type of Chronic Obstructive Pulmonary Disease, or COPD), where the lungs appear overly expanded and the breathing muscles (diaphragms) are flattened. There are also small areas of minor lung collapse or scarring at the very bottom of both lungs (atelectasis), along with slight thickening or minimal fluid at the left lung base. Surgical clips from past procedures are visible in the chest and upper abdomen. These findings are typical for individuals with chronic lung disease.",
+  "references": [
+    "https://radiopaedia.org/articles/emphysema",
+    "https://radiopaedia.org/articles/chronic-obstructive-pulmonary-disease-1",
+    "https://www.ncbi.nlm.nih.gov/books/NBK559281/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23204,
+    "bytesOut": 23204,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:32:33.401Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

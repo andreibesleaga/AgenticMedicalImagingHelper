@@ -1,0 +1,40 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000092/series_2/00000092_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right pleural effusion\",\n    \"Left lung is clear\",\n    \"Heart size is normal\",\n    \"Mediastinum is unremarkable\",\n    \"Ribs are intact\",\n    \"Scapulae are intact\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This X-ray of the chest shows fluid in the right space around the lung (pleural effusion). The left lung appears clear. The heart and major structures look normal. There are no broken bones visible.\",\n  \"references\": []\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Right pleural effusion",
+    "Left lung is clear",
+    "Heart size is normal",
+    "Mediastinum is unremarkable",
+    "Ribs are intact",
+    "Scapulae are intact"
+  ],
+  "abnormalities": [],
+  "summary": "This X-ray of the chest shows fluid in the right space around the lung (pleural effusion). The left lung appears clear. The heart and major structures look normal. There are no broken bones visible.",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23905,
+    "bytesOut": 23905,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:34:54.794Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

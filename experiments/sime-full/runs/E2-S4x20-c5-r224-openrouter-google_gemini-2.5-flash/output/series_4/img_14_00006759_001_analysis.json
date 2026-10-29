@@ -1,0 +1,70 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_4/img_14_00006759_001.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Cardiomegaly is observed with an increased cardiothoracic ratio.\",\n    \"Pulmonary vascular congestion is present.\",\n    \"Bilateral pleural effusions are noted, with blunting of the costophrenic angles, particularly on the right.\",\n    \"An indwelling cardiac device (pacemaker or ICD) is visible in the superior mediastinum/left upper chest, with leads extending into the right ventricle.\",\n    \"The lung fields show interstitial prominence, suggestive of pulmonary edema.\",\n    \"No acute focal consolidation or pneumothorax is seen.\",\n    \"Bony structures appear intact for the visualized portions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlargement of the cardiac silhouette, indicating an increased cardiothoracic ratio, suggestive of cardiac chamber enlargement.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pulmonary Congestion\",\n      \"description\": \"Increased prominence of pulmonary vascular markings and interstitial changes, consistent with pulmonary venous hypertension and early pulmonary edema.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Bilateral blunting of the costophrenic angles, more pronounced on the right, consistent with fluid accumulation in the pleural space.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Cardiac Device\",\n      \"description\": \"Presence of an implanted cardiac device (e.g., pacemaker or ICD) with leads appropriately positioned within the heart.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The X-ray of the chest shows an enlarged heart, which means the heart is bigger than it should be. There's also evidence of fluid buildup in the lungs, suggesting that the heart might not be pumping blood as effectively as it should. Additionally, there are small amounts of fluid around both lungs, more so on the right side. A cardiac device, likely a pacemaker or defibrillator, is visible and appears to be in its correct position. These findings together suggest signs of heart failure.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/pulmonary-oedema\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMcp1912627\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Cardiomegaly is observed with an increased cardiothoracic ratio.",
+    "Pulmonary vascular congestion is present.",
+    "Bilateral pleural effusions are noted, with blunting of the costophrenic angles, particularly on the right.",
+    "An indwelling cardiac device (pacemaker or ICD) is visible in the superior mediastinum/left upper chest, with leads extending into the right ventricle.",
+    "The lung fields show interstitial prominence, suggestive of pulmonary edema.",
+    "No acute focal consolidation or pneumothorax is seen.",
+    "Bony structures appear intact for the visualized portions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Enlargement of the cardiac silhouette, indicating an increased cardiothoracic ratio, suggestive of cardiac chamber enlargement."
+    },
+    {
+      "name": "Pulmonary Congestion",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Increased prominence of pulmonary vascular markings and interstitial changes, consistent with pulmonary venous hypertension and early pulmonary edema."
+    },
+    {
+      "name": "Pleural Effusions",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Bilateral blunting of the costophrenic angles, more pronounced on the right, consistent with fluid accumulation in the pleural space."
+    },
+    {
+      "name": "Cardiac Device",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Presence of an implanted cardiac device (e.g., pacemaker or ICD) with leads appropriately positioned within the heart."
+    }
+  ],
+  "summary": "The X-ray of the chest shows an enlarged heart, which means the heart is bigger than it should be. There's also evidence of fluid buildup in the lungs, suggesting that the heart might not be pumping blood as effectively as it should. Additionally, there are small amounts of fluid around both lungs, more so on the right side. A cardiac device, likely a pacemaker or defibrillator, is visible and appears to be in its correct position. These findings together suggest signs of heart failure.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/pulmonary-oedema",
+    "https://www.nejm.org/doi/full/10.1056/NEJMcp1912627"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23512,
+    "bytesOut": 23512,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:02:31.097Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

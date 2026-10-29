@@ -1,0 +1,53 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00004946/series_2/00004946_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Normal heart size\",\n    \"Clear lung fields\",\n    \"Normal mediastinal contours\",\n    \"No pleural effusion\",\n    \"No pneumothorax\",\n    \"Normal bony structures\",\n    \"Prominent pulmonary vasculature\",\n    \"Mild cardiomegaly\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The heart appears enlarged, although the degree of enlargement is mild.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 0\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a mildly enlarged heart and prominent blood vessels in the lungs. The lungs themselves appear clear, and there are no signs of fluid or air leakage around the lungs or heart. The bones look normal.\",\n  \"references\": [\n    \"https://www.google.com/search?q=prominent+pulmonary+vasculature+x-ray&hl=en&gl=us&tbm=isch\",\n    \"https://www.google.com/search?q=mild+cardiomegaly+chest+x-ray&hl=en&gl=us&tbm=isch\",\n    \"https://www.google.com/search?q=prominent+pulmonary+vasculature+x-ray&hl=en&gl=us&tbm=isch\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Normal heart size",
+    "Clear lung fields",
+    "Normal mediastinal contours",
+    "No pleural effusion",
+    "No pneumothorax",
+    "Normal bony structures",
+    "Prominent pulmonary vasculature",
+    "Mild cardiomegaly"
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 0,
+      "description": "The heart appears enlarged, although the degree of enlargement is mild."
+    }
+  ],
+  "summary": "The chest X-ray shows a mildly enlarged heart and prominent blood vessels in the lungs. The lungs themselves appear clear, and there are no signs of fluid or air leakage around the lungs or heart. The bones look normal.",
+  "references": [
+    "https://www.google.com/search?q=prominent+pulmonary+vasculature+x-ray&hl=en&gl=us&tbm=isch",
+    "https://www.google.com/search?q=mild+cardiomegaly+chest+x-ray&hl=en&gl=us&tbm=isch",
+    "https://www.google.com/search?q=prominent+pulmonary+vasculature+x-ray&hl=en&gl=us&tbm=isch"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24416,
+    "bytesOut": 24416,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:32:34.281Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,70 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_1/00000092_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP erect)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The cardiac silhouette is moderately to severely enlarged, with a cardiothoracic ratio exceeding 0.55.\",\n    \"Bilateral basilar opacities are present with blunting of both the right and left costophrenic sulci, consistent with bilateral pleural effusions.\",\n    \"Associated compressive atelectasis or underlying consolidation is noted at the lung bases, greater on the right than the left.\",\n    \"Mild pulmonary vascular prominence and cephalization, suggestive of elevated pulmonary venous pressures/fluid overload.\",\n    \"No visible pneumothorax is identified.\",\n    \"Prominent gastric bubble with air-fluid level seen in the left upper quadrant beneath the diaphragm.\",\n    \"Surgical clips are faintly visible in the mid-abdomen/lower chest midline; soft tissue and osseous structures show no acute fractures.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlargement of the cardiac silhouette suggesting ventricular enlargement or pericardial effusion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Bilateral Pleural Effusions\",\n      \"description\": \"Blunting of both costophrenic angles with dependent fluid density, consistent with small-to-moderate fluid accumulation around both lungs.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 88\n    },\n    {\n      \"name\": \"Pulmonary Congestion\",\n      \"description\": \"Engorgement of upper lobe pulmonary vessels consistent with pulmonary venous congestion or early fluid overload.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Basilar Atelectasis\",\n      \"description\": \"Patchy opacification at the bilateral lung bases secondary to volume loss from adjacent pleural fluid.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The chest X-ray shows an enlarged heart (cardiomegaly) alongside fluid collection around the lower parts of both lungs (bilateral pleural effusions). The blood vessels in the lungs also show signs of fluid congestion. These findings are commonly seen in conditions like congestive heart failure, where the heart struggles to pump effectively, leading to fluid backing up into the chest and lungs. Further clinical evaluation and correlation with symptoms (such as shortness of breath or swelling) are recommended.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/pulmonary-oedema\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP erect)",
+  "quality": "Good",
+  "findings": [
+    "The cardiac silhouette is moderately to severely enlarged, with a cardiothoracic ratio exceeding 0.55.",
+    "Bilateral basilar opacities are present with blunting of both the right and left costophrenic sulci, consistent with bilateral pleural effusions.",
+    "Associated compressive atelectasis or underlying consolidation is noted at the lung bases, greater on the right than the left.",
+    "Mild pulmonary vascular prominence and cephalization, suggestive of elevated pulmonary venous pressures/fluid overload.",
+    "No visible pneumothorax is identified.",
+    "Prominent gastric bubble with air-fluid level seen in the left upper quadrant beneath the diaphragm.",
+    "Surgical clips are faintly visible in the mid-abdomen/lower chest midline; soft tissue and osseous structures show no acute fractures."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Enlargement of the cardiac silhouette suggesting ventricular enlargement or pericardial effusion."
+    },
+    {
+      "name": "Bilateral Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 88,
+      "description": "Blunting of both costophrenic angles with dependent fluid density, consistent with small-to-moderate fluid accumulation around both lungs."
+    },
+    {
+      "name": "Pulmonary Congestion",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Engorgement of upper lobe pulmonary vessels consistent with pulmonary venous congestion or early fluid overload."
+    },
+    {
+      "name": "Basilar Atelectasis",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Patchy opacification at the bilateral lung bases secondary to volume loss from adjacent pleural fluid."
+    }
+  ],
+  "summary": "The chest X-ray shows an enlarged heart (cardiomegaly) alongside fluid collection around the lower parts of both lungs (bilateral pleural effusions). The blood vessels in the lungs also show signs of fluid congestion. These findings are commonly seen in conditions like congestive heart failure, where the heart struggles to pump effectively, leading to fluid backing up into the chest and lungs. Further clinical evaluation and correlation with symptoms (such as shortness of breath or swelling) are recommended.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/pulmonary-oedema"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 389503,
+    "bytesOut": 383960,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:19:28.534Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_12_00013917_025.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"Chest X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right lung is clear.\",\n    \"There is a large opacity in the left lung base.\",\n    \"The right mediastinum is unremarkable.\",\n    \"There is a right central venous catheter terminating in the superior vena cava.\",\n    \"The visualized osseous structures appear intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pleural effusion\",\n      \"description\": \"Large opacity in the left lung base likely representing a pleural effusion.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 0.9\n    },\n    {\n      \"name\": \"Right Central Venous Catheter\",\n      \"description\": \"Right central venous catheter is in place.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 0.9\n    }\n  ],\n  \"summary\": \"This chest X-ray shows a significant amount of fluid in the left lower portion of the lung (pleural effusion). The right lung and heart appear normal. A central catheter is present on the right side. This finding requires further investigation to determine the underlying cause.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.uptodate.com/sections/thoracic-imaging/pleural-effusion\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK531355/table/NBK531355.T1/\"\n  ]\n}",
+  "modality": "Chest X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right lung is clear.",
+    "There is a large opacity in the left lung base.",
+    "The right mediastinum is unremarkable.",
+    "There is a right central venous catheter terminating in the superior vena cava.",
+    "The visualized osseous structures appear intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pleural effusion",
+      "severity": "Severe",
+      "confidence": 0.9,
+      "description": "Large opacity in the left lung base likely representing a pleural effusion."
+    },
+    {
+      "name": "Right Central Venous Catheter",
+      "severity": "Normal",
+      "confidence": 0.9,
+      "description": "Right central venous catheter is in place."
+    }
+  ],
+  "summary": "This chest X-ray shows a significant amount of fluid in the left lower portion of the lung (pleural effusion). The right lung and heart appear normal. A central catheter is present on the right side. This finding requires further investigation to determine the underlying cause.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.uptodate.com/sections/thoracic-imaging/pleural-effusion",
+    "https://www.ncbi.nlm.nih.gov/books/NBK531355/table/NBK531355.T1/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 419469,
+    "bytesOut": 319141,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:31:58.729Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

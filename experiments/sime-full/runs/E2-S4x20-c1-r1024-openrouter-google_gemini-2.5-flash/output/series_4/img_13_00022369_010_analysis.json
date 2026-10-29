@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_13_00022369_010.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral pulmonary infiltrates, more pronounced in the lower lobes.\",\n    \"Bilateral pleural effusions.\",\n    \"Cardiomegaly.\",\n    \"Endotracheal tube in situ, tip approximately 2 cm above the carina.\",\n    \"Nasogastric tube in situ, tip projecting below the left hemidiaphragm.\",\n    \"Multiple surgical clips noted in the upper lumbar spine region, consistent with prior spinal surgery.\",\n    \"Central venous catheter tip projects to the superior vena cava.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pulmonary Infiltrates\",\n      \"description\": \"Diffuse bilateral pulmonary infiltrates, more prominent in the lower lobes, suggesting pulmonary edema or acute respiratory distress syndrome.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Bilateral blunting of the costophrenic angles consistent with moderate to large bilateral pleural effusions.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlarged cardiac silhouette, indicating cardiomegaly, which could contribute to pulmonary edema.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This X-ray shows significant issues in the lungs, including widespread cloudiness that suggests fluid or inflammation, especially in the lower parts of both lungs. There is also a substantial amount of fluid around the lungs, known as pleural effusions. The heart appears enlarged. These findings are often seen in conditions like heart failure or severe lung injury. There are several medical tubes properly placed, including a breathing tube, a feeding tube, and a central line. Surgical clips are also visible in the lower back from a previous spine operation.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pulmonary-oedema-1?lang=us\",\n    \"https://radiopaedia.org/articles/pleural-effusion?lang=us\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900451/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral pulmonary infiltrates, more pronounced in the lower lobes.",
+    "Bilateral pleural effusions.",
+    "Cardiomegaly.",
+    "Endotracheal tube in situ, tip approximately 2 cm above the carina.",
+    "Nasogastric tube in situ, tip projecting below the left hemidiaphragm.",
+    "Multiple surgical clips noted in the upper lumbar spine region, consistent with prior spinal surgery.",
+    "Central venous catheter tip projects to the superior vena cava."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pulmonary Infiltrates",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Diffuse bilateral pulmonary infiltrates, more prominent in the lower lobes, suggesting pulmonary edema or acute respiratory distress syndrome."
+    },
+    {
+      "name": "Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Bilateral blunting of the costophrenic angles consistent with moderate to large bilateral pleural effusions."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Enlarged cardiac silhouette, indicating cardiomegaly, which could contribute to pulmonary edema."
+    }
+  ],
+  "summary": "This X-ray shows significant issues in the lungs, including widespread cloudiness that suggests fluid or inflammation, especially in the lower parts of both lungs. There is also a substantial amount of fluid around the lungs, known as pleural effusions. The heart appears enlarged. These findings are often seen in conditions like heart failure or severe lung injury. There are several medical tubes properly placed, including a breathing tube, a feeding tube, and a central line. Surgical clips are also visible in the lower back from a previous spine operation.",
+  "references": [
+    "https://radiopaedia.org/articles/pulmonary-oedema-1?lang=us",
+    "https://radiopaedia.org/articles/pleural-effusion?lang=us",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900451/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 445092,
+    "bytesOut": 443518,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:43:57.279Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

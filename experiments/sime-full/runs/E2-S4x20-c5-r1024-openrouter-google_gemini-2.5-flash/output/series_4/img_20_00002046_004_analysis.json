@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_20_00002046_004.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral patchy opacities are noted, more prominent on the right side.\",\n    \"Consolidation is present in the right lower and mid lung zones.\",\n    \"Possible pleural effusion on the right, obscuring the right hemidiaphragm.\",\n    \"A central venous catheter (CVC) is noted with its tip projected over the superior vena cava.\",\n    \"Left lung demonstrates patchy perihilar and basal opacities, less extensive than the right.\",\n    \"Cardiomediastinal silhouette appears unremarkable given the technical factors.\",\n    \"Bony thorax is intact without acute fracture.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Patchy Opacities\",\n      \"description\": \"Diffuse patchy opacities are present bilaterally, more pronounced in the right lung, particularly in the lower and mid zones. These findings are suggestive of extensive infiltrates, possibly due to pneumonia, ARDS, or pulmonary edema.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Right-sided Consolidation/Effusion\",\n      \"description\": \"There is significant consolidation in the right lower and mid lung fields, obscuring the right hemidiaphragm, which may be partly due to an associated pleural effusion. This indicates substantial airspace disease.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Central Venous Catheter (CVC)\",\n      \"description\": \"A central venous catheter is visualized, with its tip appropriately positioned in the superior vena cava, indicating proper placement.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows widespread cloudiness in both lungs, more so on the right side. This suggests significant lung disease, which could be due to infections like pneumonia, a serious lung injury called ARDS, or fluid in the lungs (pulmonary edema). On the right side, there's a large area of consolidation (where the air sacs are filled with fluid or cells) and possibly fluid around the lung (pleural effusion). A tube used for medication delivery (central venous catheter) is correctly placed. These findings indicate a significant medical condition affecting the patient's lungs, requiring further medical evaluation.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/consolidation-lung\",\n    \"https://radiopaedia.org/articles/pulmonary-oedema\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMicm2020288\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral patchy opacities are noted, more prominent on the right side.",
+    "Consolidation is present in the right lower and mid lung zones.",
+    "Possible pleural effusion on the right, obscuring the right hemidiaphragm.",
+    "A central venous catheter (CVC) is noted with its tip projected over the superior vena cava.",
+    "Left lung demonstrates patchy perihilar and basal opacities, less extensive than the right.",
+    "Cardiomediastinal silhouette appears unremarkable given the technical factors.",
+    "Bony thorax is intact without acute fracture."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Patchy Opacities",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Diffuse patchy opacities are present bilaterally, more pronounced in the right lung, particularly in the lower and mid zones. These findings are suggestive of extensive infiltrates, possibly due to pneumonia, ARDS, or pulmonary edema."
+    },
+    {
+      "name": "Right-sided Consolidation/Effusion",
+      "severity": "Severe",
+      "confidence": 90,
+      "description": "There is significant consolidation in the right lower and mid lung fields, obscuring the right hemidiaphragm, which may be partly due to an associated pleural effusion. This indicates substantial airspace disease."
+    },
+    {
+      "name": "Central Venous Catheter (CVC)",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A central venous catheter is visualized, with its tip appropriately positioned in the superior vena cava, indicating proper placement."
+    }
+  ],
+  "summary": "This X-ray of the chest shows widespread cloudiness in both lungs, more so on the right side. This suggests significant lung disease, which could be due to infections like pneumonia, a serious lung injury called ARDS, or fluid in the lungs (pulmonary edema). On the right side, there's a large area of consolidation (where the air sacs are filled with fluid or cells) and possibly fluid around the lung (pleural effusion). A tube used for medication delivery (central venous catheter) is correctly placed. These findings indicate a significant medical condition affecting the patient's lungs, requiring further medical evaluation.",
+  "references": [
+    "https://radiopaedia.org/articles/consolidation-lung",
+    "https://radiopaedia.org/articles/pulmonary-oedema",
+    "https://www.nejm.org/doi/full/10.1056/NEJMicm2020288"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 386234,
+    "bytesOut": 381143,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:46:55.873Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

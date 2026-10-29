@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_2/00000092_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral lung fields show increased interstitial markings, more prominent in the lower zones.\",\n    \"No acute focal consolidation or mass lesions identified.\",\n    \"Cardiac silhouette is within normal limits for size and contour.\",\n    \"Diaphragms are well-defined; no evidence of free subdiaphragmatic air.\",\n    \"Bony thorax including ribs, clavicles, and spine show no acute fracture or lytic lesion.\",\n    \"Mild blunting of the left costophrenic angle is noted, suggesting possible minimal pleural effusion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Increased interstitial markings\",\n      \"description\": \"Diffuse reticular pattern predominantly in the lower lung zones, suggestive of interstitial lung disease or chronic inflammatory process. No honeycombing or nodules seen.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    },\n    {\n      \"name\": \"Minimal left pleural effusion\",\n      \"description\": \"Subtle blunting of the left costophrenic angle without significant meniscus or layering, likely representing small volume fluid.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 65\n    }\n  ],\n  \"summary\": \"The chest X-ray shows mild changes in the lung tissue, especially at the bottom of the lungs, which may indicate early signs of inflammation or scarring. There is also a very small amount of fluid near the left lung. These findings are not specific and could be due to several causes, including past infections, environmental exposures, or early lung disease. Further evaluation with clinical correlation and possibly a CT scan may be needed to determine the cause.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/interstitial-lung-disease\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK559188/\",\n    \"https://www.radiologyinfo.org/en/info/chestxray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral lung fields show increased interstitial markings, more prominent in the lower zones.",
+    "No acute focal consolidation or mass lesions identified.",
+    "Cardiac silhouette is within normal limits for size and contour.",
+    "Diaphragms are well-defined; no evidence of free subdiaphragmatic air.",
+    "Bony thorax including ribs, clavicles, and spine show no acute fracture or lytic lesion.",
+    "Mild blunting of the left costophrenic angle is noted, suggesting possible minimal pleural effusion."
+  ],
+  "abnormalities": [
+    {
+      "name": "Increased interstitial markings",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "Diffuse reticular pattern predominantly in the lower lung zones, suggestive of interstitial lung disease or chronic inflammatory process. No honeycombing or nodules seen."
+    },
+    {
+      "name": "Minimal left pleural effusion",
+      "severity": "Mild",
+      "confidence": 65,
+      "description": "Subtle blunting of the left costophrenic angle without significant meniscus or layering, likely representing small volume fluid."
+    }
+  ],
+  "summary": "The chest X-ray shows mild changes in the lung tissue, especially at the bottom of the lungs, which may indicate early signs of inflammation or scarring. There is also a very small amount of fluid near the left lung. These findings are not specific and could be due to several causes, including past infections, environmental exposures, or early lung disease. Further evaluation with clinical correlation and possibly a CT scan may be needed to determine the cause.",
+  "references": [
+    "https://radiopaedia.org/articles/interstitial-lung-disease",
+    "https://www.ncbi.nlm.nih.gov/books/NBK559188/",
+    "https://www.radiologyinfo.org/en/info/chestxray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 421309,
+    "bytesOut": 379602,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:27:09.548Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000086/series_1/00000086_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A focal area of increased density, potentially representing fluid accumulation or consolidation, is observed in the lower zone of the right lung.\",\n    \"The heart shadow is unremarkable.\",\n    \"The left lung field appears clear with no distinct abnormalities noted.\",\n    \"The bony structures of the thorax, including ribs and clavicles, are intact.\",\n    \"A metallic marker 'L' is visible on the upper right side of the image, corresponding to the patient's left side.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right lower lung consolidation/effusion\",\n      \"description\": \"An opacity is observed in the right lower lung zone. This finding could be indicative of a pleural effusion (fluid accumulation in the pleural space) or pulmonary consolidation (filling of the alveoli with fluid, pus, blood, cells, etc., often due to infection like pneumonia). Further clinical correlation and possibly additional imaging (e.g., lateral decubitus view or CT scan) may be necessary to differentiate and determine the exact nature and extent.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This chest X-ray shows an area of haziness in the lower part of the right lung. This could be due to a few different reasons, such as fluid building up around the lung (pleural effusion) or an infection within the lung tissue itself (like pneumonia). The rest of the lungs and the heart appear normal. It's important to discuss these findings with a doctor, who will consider them along with your symptoms and medical history. They might recommend further tests, such as another type of X-ray or a CT scan, to get a clearer picture of what's happening.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/pulmonary-consolidation\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A focal area of increased density, potentially representing fluid accumulation or consolidation, is observed in the lower zone of the right lung.",
+    "The heart shadow is unremarkable.",
+    "The left lung field appears clear with no distinct abnormalities noted.",
+    "The bony structures of the thorax, including ribs and clavicles, are intact.",
+    "A metallic marker 'L' is visible on the upper right side of the image, corresponding to the patient's left side."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lower lung consolidation/effusion",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "An opacity is observed in the right lower lung zone. This finding could be indicative of a pleural effusion (fluid accumulation in the pleural space) or pulmonary consolidation (filling of the alveoli with fluid, pus, blood, cells, etc., often due to infection like pneumonia). Further clinical correlation and possibly additional imaging (e.g., lateral decubitus view or CT scan) may be necessary to differentiate and determine the exact nature and extent."
+    }
+  ],
+  "summary": "This chest X-ray shows an area of haziness in the lower part of the right lung. This could be due to a few different reasons, such as fluid building up around the lung (pleural effusion) or an infection within the lung tissue itself (like pneumonia). The rest of the lungs and the heart appear normal. It's important to discuss these findings with a doctor, who will consider them along with your symptoms and medical history. They might recommend further tests, such as another type of X-ray or a CT scan, to get a clearer picture of what's happening.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/pulmonary-consolidation"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 412436,
+    "bytesOut": 410514,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:18:12.429Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000219/series_3/00000219_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The cardiac silhouette is moderately enlarged, with a cardiothoracic ratio greater than 0.50, consistent with cardiomegaly.\",\n    \"The thoracic aorta is unfolded, elongated, and tortuous, likely secondary to hypertensive change or atherosclerosis.\",\n    \"Lung fields are well-expanded and clear bilaterally, without focal consolidation, pneumothorax, or evidence of overt pulmonary vascular congestion.\",\n    \"Bilateral costophrenic angles are sharp, ruling out significant pleural effusion.\",\n    \"Visualized osseous structures demonstrate mild degenerative changes along the thoracic spine.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlargement of the cardiac silhouette with a cardiothoracic ratio exceeding 50% on a frontal projection.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 88\n    },\n    {\n      \"name\": \"Aortic Tortuosity\",\n      \"description\": \"Ectasia and elongation of the thoracic aorta with prominent aortic contouring.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 92\n    }\n  ],\n  \"summary\": \"The chest X-ray shows an enlarged heart shadow (cardiomegaly) and a curved, lengthened main blood vessel (aorta). The lungs themselves are clear, with no signs of pneumonia, fluid buildup, or collapse. An enlarged heart appearance can be caused by long-standing high blood pressure, valve conditions, or heart muscle weakness, though it can sometimes look bigger depending on how deep a breath was taken. Correlation with your medical history and consideration of an echocardiogram (ultrasound of the heart) may be recommended by your physician.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/aortic-elongation-and-tortuosity\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The cardiac silhouette is moderately enlarged, with a cardiothoracic ratio greater than 0.50, consistent with cardiomegaly.",
+    "The thoracic aorta is unfolded, elongated, and tortuous, likely secondary to hypertensive change or atherosclerosis.",
+    "Lung fields are well-expanded and clear bilaterally, without focal consolidation, pneumothorax, or evidence of overt pulmonary vascular congestion.",
+    "Bilateral costophrenic angles are sharp, ruling out significant pleural effusion.",
+    "Visualized osseous structures demonstrate mild degenerative changes along the thoracic spine."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 88,
+      "description": "Enlargement of the cardiac silhouette with a cardiothoracic ratio exceeding 50% on a frontal projection."
+    },
+    {
+      "name": "Aortic Tortuosity",
+      "severity": "Mild",
+      "confidence": 92,
+      "description": "Ectasia and elongation of the thoracic aorta with prominent aortic contouring."
+    }
+  ],
+  "summary": "The chest X-ray shows an enlarged heart shadow (cardiomegaly) and a curved, lengthened main blood vessel (aorta). The lungs themselves are clear, with no signs of pneumonia, fluid buildup, or collapse. An enlarged heart appearance can be caused by long-standing high blood pressure, valve conditions, or heart muscle weakness, though it can sometimes look bigger depending on how deep a breath was taken. Correlation with your medical history and consideration of an echocardiogram (ultrasound of the heart) may be recommended by your physician.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/aortic-elongation-and-tortuosity"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23371,
+    "bytesOut": 23371,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:36:35.672Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

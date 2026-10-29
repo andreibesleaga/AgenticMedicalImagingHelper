@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_2/00000239_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest and upper abdomen (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary pathology identified.\",\n    \"Bilateral breasts are present.\",\n    \"Normal cardiac silhouette size.\",\n    \"Lungs are clear to the periphery with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Normal bony thorax, including clavicles, ribs, and visualized spine.\",\n    \"Surgical clips are noted in the left axilla.\",\n    \"Multiple surgical clips are present in the right upper quadrant and lower abdomen, likely related to cholecystectomy and possibly other abdominal surgery.\",\n    \"Large amount of gas in the colon, particularly in the transverse and descending colon.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical Clips in Left Axilla\",\n      \"description\": \"Multiple radiopaque surgical clips are seen in the soft tissues of the left axilla, consistent with prior axillary lymph node dissection or similar surgical intervention.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Surgical Clips in Abdomen\",\n      \"description\": \"Multiple radiopaque surgical clips are visualized in the right upper quadrant (consistent with prior cholecystectomy) and lower abdomen, suggesting previous abdominal surgical procedures.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Colonic Gas\",\n      \"description\": \"Significant amount of colonic gas is noted, particularly in the transverse and descending colon, which can be a normal variant or related to diet.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"This X-ray of the chest and upper abdomen shows no immediate issues with the heart or lungs. The lungs are clear, and the heart appears to be of normal size. Several surgical clips are visible in the left armpit and in the abdomen, likely from previous surgeries such as gallbladder removal or lymph node procedures. There's also a fair amount of gas in the large intestine, which is a common finding and usually not a concern.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.233025178\",\n    \"https://radiologykey.com/postoperative-changes-in-the-chest-and-abdomen/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest and upper abdomen (PA)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary pathology identified.",
+    "Bilateral breasts are present.",
+    "Normal cardiac silhouette size.",
+    "Lungs are clear to the periphery with no focal consolidation, pleural effusion, or pneumothorax.",
+    "Normal bony thorax, including clavicles, ribs, and visualized spine.",
+    "Surgical clips are noted in the left axilla.",
+    "Multiple surgical clips are present in the right upper quadrant and lower abdomen, likely related to cholecystectomy and possibly other abdominal surgery.",
+    "Large amount of gas in the colon, particularly in the transverse and descending colon."
+  ],
+  "abnormalities": [
+    {
+      "name": "Surgical Clips in Left Axilla",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Multiple radiopaque surgical clips are seen in the soft tissues of the left axilla, consistent with prior axillary lymph node dissection or similar surgical intervention."
+    },
+    {
+      "name": "Surgical Clips in Abdomen",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Multiple radiopaque surgical clips are visualized in the right upper quadrant (consistent with prior cholecystectomy) and lower abdomen, suggesting previous abdominal surgical procedures."
+    },
+    {
+      "name": "Colonic Gas",
+      "severity": "Normal",
+      "confidence": 80,
+      "description": "Significant amount of colonic gas is noted, particularly in the transverse and descending colon, which can be a normal variant or related to diet."
+    }
+  ],
+  "summary": "This X-ray of the chest and upper abdomen shows no immediate issues with the heart or lungs. The lungs are clear, and the heart appears to be of normal size. Several surgical clips are visible in the left armpit and in the abdomen, likely from previous surgeries such as gallbladder removal or lymph node procedures. There's also a fair amount of gas in the large intestine, which is a common finding and usually not a concern.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.233025178",
+    "https://radiologykey.com/postoperative-changes-in-the-chest-and-abdomen/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 436808,
+    "bytesOut": 435505,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:56:14.160Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

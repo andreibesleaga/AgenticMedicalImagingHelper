@@ -1,0 +1,48 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_3/img_01_00019274_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right apical nodule.\",\n    \"Calcified mediastinal lymph nodes.\",\n    \"Post-surgical changes are present.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right apical nodule\",\n      \"description\": \"A radiopaque nodule is visible at the right lung apex.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a radiopaque nodule at the right lung apex, along with calcified lymph nodes likely related to prior infection or inflammation. Post-surgical changes from prior cardiac surgery are also noted.\",\n  \"references\": [\n    \"https://www.radiologyassistant.com/case/nodular-lung-lesions-differential-a-b-c\",\n    \"https://radiopaedia.org/articles/nodular-lung-lesions\",\n    \"https://www.atsjournals.org/doi/abs/10.1164/rccm.2019-10850\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right apical nodule.",
+    "Calcified mediastinal lymph nodes.",
+    "Post-surgical changes are present."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right apical nodule",
+      "severity": "Mild",
+      "confidence": 100,
+      "description": "A radiopaque nodule is visible at the right lung apex."
+    }
+  ],
+  "summary": "The chest X-ray shows a radiopaque nodule at the right lung apex, along with calcified lymph nodes likely related to prior infection or inflammation. Post-surgical changes from prior cardiac surgery are also noted.",
+  "references": [
+    "https://www.radiologyassistant.com/case/nodular-lung-lesions-differential-a-b-c",
+    "https://radiopaedia.org/articles/nodular-lung-lesions",
+    "https://www.atsjournals.org/doi/abs/10.1164/rccm.2019-10850"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 430740,
+    "bytesOut": 328606,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:25:09.495Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

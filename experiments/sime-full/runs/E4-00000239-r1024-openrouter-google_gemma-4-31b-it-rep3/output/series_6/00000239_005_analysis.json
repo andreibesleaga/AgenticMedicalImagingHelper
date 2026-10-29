@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_6/00000239_005.png",
+  "seriesId": "series_6",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear without focal consolidation or pleural effusion\",\n    \"Heart size is within normal limits\",\n    \"Large air-fluid level is seen in the left upper quadrant of the abdomen, extending superiorly toward the diaphragm\",\n    \"Presence of several surgical clips in the upper abdomen/perigastric area\",\n    \"Bony structures appear intact\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Gastric Dilatation\",\n      \"description\": \"Markedly dilated stomach with a prominent air-fluid level, suggesting potential gastric outlet obstruction or severe gastroparesis\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows clear lungs and a normal heart. However, there is a very large, air-filled stomach with fluid at the bottom (an air-fluid level) pushing up against the diaphragm. This is often seen when the stomach cannot empty properly into the intestines (gastric outlet obstruction) or if the stomach muscles are not working (gastroparesis). The presence of surgical clips suggests a history of abdominal surgery, which may be related to this finding.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/gastric-outlet-obstruction\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK470431/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear without focal consolidation or pleural effusion",
+    "Heart size is within normal limits",
+    "Large air-fluid level is seen in the left upper quadrant of the abdomen, extending superiorly toward the diaphragm",
+    "Presence of several surgical clips in the upper abdomen/perigastric area",
+    "Bony structures appear intact"
+  ],
+  "abnormalities": [
+    {
+      "name": "Gastric Dilatation",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Markedly dilated stomach with a prominent air-fluid level, suggesting potential gastric outlet obstruction or severe gastroparesis"
+    }
+  ],
+  "summary": "The chest X-ray shows clear lungs and a normal heart. However, there is a very large, air-filled stomach with fluid at the bottom (an air-fluid level) pushing up against the diaphragm. This is often seen when the stomach cannot empty properly into the intestines (gastric outlet obstruction) or if the stomach muscles are not working (gastroparesis). The presence of surgical clips suggests a history of abdominal surgery, which may be related to this finding.",
+  "references": [
+    "https://radiopaedia.org/articles/gastric-outlet-obstruction",
+    "https://www.ncbi.nlm.nih.gov/books/NBK470431/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 378298,
+    "bytesOut": 293969,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:06:59.759Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}
