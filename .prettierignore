@@ -46,5 +46,16 @@ experiments/sime2026/probe-results.md
 experiments/sime2026/probe-results.json
 experiments/sime2026/nih-selection.json
 
+# Follow-up experiment (sime-full): the run archive is sealed by each run's
+# run_manifest.json exactly like sime2026's, and the rest is written by its
+# scripts (analyze.ts writes ANALYSIS.md and analysis.json; prepare-nih-full.py
+# writes the selection hashes). README.md, RESULTS.md and REPLICATE.md are
+# hand-written and stay formatted.
+experiments/sime-full/runs/
+experiments/sime-full/*.jsonl
+experiments/sime-full/ANALYSIS.md
+experiments/sime-full/analysis.json
+experiments/sime-full/selection-hashes*.json
+
 # Hand-written static website (GitHub Pages), not run through Prettier
 site/
