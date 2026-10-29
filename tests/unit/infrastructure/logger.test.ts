@@ -116,7 +116,7 @@ describe("createLogger", () => {
   });
 });
 
-describe("createLogger — OpenRouter key redaction (AI_PROVIDER=openrouter)", () => {
+describe("createLogger — provider key redaction (AI_PROVIDER=openrouter or local)", () => {
   /** Run `fn` with the given env values, restoring whatever was there before. */
   function withEnv(vars: Record<string, string | undefined>, fn: () => void): void {
     const saved: Record<string, string | undefined> = {};
@@ -161,6 +161,32 @@ describe("createLogger — OpenRouter key redaction (AI_PROVIDER=openrouter)", (
     });
   });
 
+  it("redacts the LOCAL_LLM_API_KEY value wherever it appears in a string", () => {
+    withEnv({ LOCAL_LLM_API_KEY: "local-SECRETVALUE4455" }, () => {
+      const { lines, write } = capture();
+      const log = createLogger("info", write);
+      log.info("call", {
+        message: "Authorization: Bearer local-SECRETVALUE4455",
+        nested: { detail: ["prefix local-SECRETVALUE4455 suffix"] },
+      });
+      const rec = JSON.parse(lines[0]);
+      expect(rec.message).not.toContain("local-SECRETVALUE4455");
+      expect(rec.message).toContain("[REDACTED]");
+      expect(rec.nested.detail[0]).not.toContain("local-SECRETVALUE4455");
+    });
+  });
+
+  it("redacts a local_llm_api_key field by name", () => {
+    withEnv({ LOCAL_LLM_API_KEY: undefined }, () => {
+      const { lines, write } = capture();
+      const log = createLogger("info", write);
+      log.info("cfg", { local_llm_api_key: "local-anything", localLlmApiKey: "local-other" });
+      const rec = JSON.parse(lines[0]);
+      expect(rec.local_llm_api_key).toBe("[REDACTED]");
+      expect(rec.localLlmApiKey).toBe("[REDACTED]");
+    });
+  });
+
   it("leaves a string untouched when a configured key does not appear in it", () => {
     withEnv({ OPENROUTER_API_KEY: "sk-or-v1-NOTINTHISLINE" }, () => {
       const { lines, write } = capture();
@@ -191,14 +217,15 @@ describe("createLogger — OpenRouter key redaction (AI_PROVIDER=openrouter)", (
         GOOGLE_API_KEY: "AIzaGOOGLEKEY111111",
         GEMINI_API_KEY: "AIzaGEMINIKEY222222",
         OPENROUTER_API_KEY: "sk-or-KEY333333",
+        LOCAL_LLM_API_KEY: "local-KEY444444",
       },
       () => {
         const { lines, write } = capture();
         createLogger("info", write).info("call", {
-          message: "AIzaGOOGLEKEY111111 / AIzaGEMINIKEY222222 / sk-or-KEY333333",
+          message: "AIzaGOOGLEKEY111111 / AIzaGEMINIKEY222222 / sk-or-KEY333333 / local-KEY444444",
         });
         const message = JSON.parse(lines[0]).message as string;
-        expect(message).toBe("[REDACTED] / [REDACTED] / [REDACTED]");
+        expect(message).toBe("[REDACTED] / [REDACTED] / [REDACTED] / [REDACTED]");
       }
     );
   });
