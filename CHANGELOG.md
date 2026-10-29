@@ -12,6 +12,17 @@ All changes in this section are **backward-compatible** (`additive` or
 renamed.
 
 - Docs: documentation audit of 2026-10-29 — provider-neutral data-handling text, exit-code lists completed, current architecture diagrams, AGENTS.md, CI and release notes in CONTRIBUTING, scope notes on the pre-implementation PRD and business case.
+- Security: the logger now also redacts `LOCAL_LLM_API_KEY`, by value and by
+  field name (`local_llm_api_key`).
+- Runtime: Node 20 reached end of life on 2026-04-30. `engines` is now
+  `>=22.0.0`, CI runs on Node 22 and 24, and the Docker image is built on
+  `node:22-alpine`.
+- Evidence: the sime-full per-run outputs and sealed manifests
+  (`experiments/sime-full/runs/*/output/`) are committed, as `RESULTS.md`
+  already said; Prettier ignores the generated sime-full files.
+- Docs: `.env.example` leaves `GEMINI_MODEL` commented out (default
+  `gemini-3.8-flash`); SECURITY.md lists 1.1.x as supported; dated superseded
+  notes in `docs/SPEC.md` §2.1, §2.2, §5 and §6 and under THREAT_MODEL T6.
 
 ### Added (2026-10-08)
 
