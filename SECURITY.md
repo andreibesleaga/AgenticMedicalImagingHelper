@@ -4,8 +4,8 @@
 
 | Version | Supported |
 | ------- | --------- |
-| 1.0.x   | ✅        |
-| < 1.0   | ❌        |
+| 1.1.x   | ✅        |
+| < 1.1   | ❌        |
 
 This is a local, single-user CLI tool. There is no hosted service and no network
 surface beyond outbound calls to the configured model provider — Google Gemini
