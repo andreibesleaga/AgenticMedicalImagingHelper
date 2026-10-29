@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_3/00000239_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear.\",\n    \"Heart size is normal.\",\n    \"Mediastinal structures are unremarkable.\",\n    \"Bony structures are intact.\",\n    \"There is elevation of the left hemidiaphragm.\",\n    \"There are surgical clips seen in the left axilla and abdomen.\",\n    \"The thoracic spine is intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Elevated Left Hemidiaphragm\",\n      \"description\": \"The left hemidiaphragm is elevated relative to the right.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"Chest X-ray shows clear lungs with a normal heart. The left diaphragm is higher than usual. Surgical clips are visible suggesting previous surgery in the left armpit and abdomen. The bones appear normal.\",\n  \"references\": [\n    \"https://www.rsna.org/imaging/chest-x-ray\",\n    \"https://radiopaedia.org/articles/left-diaphragmatic-hernia\",\n    \"https://www.nih.gov/health-information/urn/chest-x-ray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear.",
+    "Heart size is normal.",
+    "Mediastinal structures are unremarkable.",
+    "Bony structures are intact.",
+    "There is elevation of the left hemidiaphragm.",
+    "There are surgical clips seen in the left axilla and abdomen.",
+    "The thoracic spine is intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Elevated Left Hemidiaphragm",
+      "severity": "Mild",
+      "confidence": 100,
+      "description": "The left hemidiaphragm is elevated relative to the right."
+    }
+  ],
+  "summary": "Chest X-ray shows clear lungs with a normal heart. The left diaphragm is higher than usual. Surgical clips are visible suggesting previous surgery in the left armpit and abdomen. The bones appear normal.",
+  "references": [
+    "https://www.rsna.org/imaging/chest-x-ray",
+    "https://radiopaedia.org/articles/left-diaphragmatic-hernia",
+    "https://www.nih.gov/health-information/urn/chest-x-ray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 413987,
+    "bytesOut": 315471,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:06:39.527Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

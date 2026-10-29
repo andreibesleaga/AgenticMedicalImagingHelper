@@ -1,0 +1,30 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_1/img_13_00029998_005.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"There is a right-sided chest tube.\",\n    \"There is opacification in the right lower lung field.\",\n    \"There is increased density in the right mid lung field.\",\n    \"There is increased density in the right upper lung field.\",\n    \"There is increased density in the left lower lung field.\",\n    \"The heart size appears borderline enlarged.\",\n    \"There is calcification of the aortic arch.\",\n    \"There are sternotomy wires.\",\n    \"The right diaphragm contour is somewhat obscured by the opacity.\",\n    \"The left diaphragm contour is unremarkable.\",\n    \"The visualized bony structures are intact.\",\n    \"The mediastinum appears normal.\",\n  \"abnormalities\",\n  \"summary\",\n  \"references\"\n  ]\n}",
+  "findings": [],
+  "validation": {
+    "ok": false,
+    "issues": [
+      "summary: Invalid input: expected string, received undefined"
+    ]
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 395339,
+    "bytesOut": 301711,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:10:33.027Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000008/series_1/00000008_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear without focal consolidation, effusion, or pneumothorax\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour\",\n    \"Bony structures are intact\",\n    \"Hilar regions are unremarkable\",\n    \"Diaphragms are well-defined and costophrenic angles are sharp\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray is normal. The lungs are clear, and the heart size and shape are typical, with no signs of infection, fluid, or other abnormalities detected.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-radiograph-interpretation\",\n    \"https://www.acr.org/Clinical-Guidelines\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear without focal consolidation, effusion, or pneumothorax",
+    "Cardiomediastinal silhouette is within normal limits for size and contour",
+    "Bony structures are intact",
+    "Hilar regions are unremarkable",
+    "Diaphragms are well-defined and costophrenic angles are sharp"
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray is normal. The lungs are clear, and the heart size and shape are typical, with no signs of infection, fluid, or other abnormalities detected.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-interpretation",
+    "https://www.acr.org/Clinical-Guidelines"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 410034,
+    "bytesOut": 319821,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T09:57:47.219Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

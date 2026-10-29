@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000148/series_3/00000148_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A radiopaque circular object with a central hole is projected over the right mid to upper lung zone, with a thin wire extending superiorly. This is consistent with a piece of jewelry or clothing artifact.\",\n    \"The lungs are otherwise clear without focal consolidation, pneumothorax, or large pleural effusion.\",\n    \"The cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"The bony thorax is unremarkable.\",\n    \"The visualized upper abdomen is unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Artifact\",\n      \"description\": \"A radiopaque circular object with a central hole is projected over the right mid to upper lung zone, with a thin wire extending superiorly. This is consistent with an external artifact, likely clothing or jewelry.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This chest X-ray shows an object over the right side of the chest that looks like a button or a piece of jewelry on the outside of the body. Otherwise, the lungs, heart, and bones look normal. There are no signs of infection, fluid, or other serious problems.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/radiographic-artifacts\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4195836/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "A radiopaque circular object with a central hole is projected over the right mid to upper lung zone, with a thin wire extending superiorly. This is consistent with a piece of jewelry or clothing artifact.",
+    "The lungs are otherwise clear without focal consolidation, pneumothorax, or large pleural effusion.",
+    "The cardiomediastinal silhouette is within normal limits for size and contour.",
+    "The bony thorax is unremarkable.",
+    "The visualized upper abdomen is unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Artifact",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A radiopaque circular object with a central hole is projected over the right mid to upper lung zone, with a thin wire extending superiorly. This is consistent with an external artifact, likely clothing or jewelry."
+    }
+  ],
+  "summary": "This chest X-ray shows an object over the right side of the chest that looks like a button or a piece of jewelry on the outside of the body. Otherwise, the lungs, heart, and bones look normal. There are no signs of infection, fluid, or other serious problems.",
+  "references": [
+    "https://radiopaedia.org/articles/radiographic-artifacts",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4195836/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24239,
+    "bytesOut": 24239,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:34:50.009Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

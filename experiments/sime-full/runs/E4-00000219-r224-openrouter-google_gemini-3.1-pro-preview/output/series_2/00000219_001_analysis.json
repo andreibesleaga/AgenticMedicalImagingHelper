@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000219/series_2/00000219_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The image is a frontal chest radiograph (AP projection).\",\n    \"Both lungs are well-expanded and appear clear, without focal consolidations, large pleural effusions, or pneumothorax.\",\n    \"The cardiac silhouette is within normal limits in size and contour.\",\n    \"The mediastinal contours and pulmonary vasculature appear unremarkable.\",\n    \"The bilateral hemidiaphragms are smooth and regular, with sharp costophrenic angles.\",\n    \"The bony thorax, including ribs, clavicles, and visible portions of the spine, shows no acute abnormalities.\",\n    \"There is a prominent aortic knob and unfolding of the descending aorta, which is a common age-related finding.\",\n    \"A small area of calcification is noted in the left upper lobe, which may represent a healed granuloma.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Aortic Unfolding\",\n      \"description\": \"Prominent aortic knob and tortuosity of the descending thoracic aorta, a typical finding associated with aging and hypertension.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Calcified Granuloma\",\n      \"description\": \"Small, dense, well-circumscribed nodule in the left upper lung zone, consistent with prior granulomatous infection (e.g., Histoplasmosis, Tuberculosis) that has healed and calcified.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This chest X-ray shows the lungs are clear of active disease like pneumonia. There are a few findings common in older adults. First, the main artery leaving the heart (the aorta) is slightly wider and more curved than usual, a very common age-related change. Second, there is a tiny speck of calcium in the left lung, which is a 'scar' from a past, healed infection and is not a cause for concern. Otherwise, the heart size is normal, and there are no signs of fluid in the lungs or other major issues.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/unfolded-aorta\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK537243/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The image is a frontal chest radiograph (AP projection).",
+    "Both lungs are well-expanded and appear clear, without focal consolidations, large pleural effusions, or pneumothorax.",
+    "The cardiac silhouette is within normal limits in size and contour.",
+    "The mediastinal contours and pulmonary vasculature appear unremarkable.",
+    "The bilateral hemidiaphragms are smooth and regular, with sharp costophrenic angles.",
+    "The bony thorax, including ribs, clavicles, and visible portions of the spine, shows no acute abnormalities.",
+    "There is a prominent aortic knob and unfolding of the descending aorta, which is a common age-related finding.",
+    "A small area of calcification is noted in the left upper lobe, which may represent a healed granuloma."
+  ],
+  "abnormalities": [
+    {
+      "name": "Aortic Unfolding",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "Prominent aortic knob and tortuosity of the descending thoracic aorta, a typical finding associated with aging and hypertension."
+    },
+    {
+      "name": "Calcified Granuloma",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Small, dense, well-circumscribed nodule in the left upper lung zone, consistent with prior granulomatous infection (e.g., Histoplasmosis, Tuberculosis) that has healed and calcified."
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs are clear of active disease like pneumonia. There are a few findings common in older adults. First, the main artery leaving the heart (the aorta) is slightly wider and more curved than usual, a very common age-related change. Second, there is a tiny speck of calcium in the left lung, which is a 'scar' from a past, healed infection and is not a cause for concern. Otherwise, the heart size is normal, and there are no signs of fluid in the lungs or other major issues.",
+  "references": [
+    "https://radiopaedia.org/articles/unfolded-aorta",
+    "https://www.ncbi.nlm.nih.gov/books/NBK537243/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23237,
+    "bytesOut": 23237,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:36:12.251Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

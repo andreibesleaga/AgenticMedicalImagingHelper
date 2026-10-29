@@ -1,0 +1,71 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_3/00000219_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP upright)\",\"quality\":\"Fair\",\"findings\":[\"Lungs are hyperinflated with increased lung volumes and flattened diaphragms, suggestive of chronic obstructive changes.\",\"Mild bibasilar increased interstitial/reticular markings, more pronounced at the left base and right infrahilar region.\",\"Cardiac silhouette appears borderline enlarged with cardiothoracic ratio difficult to assess precisely due to projection, but suggests mild cardiomegaly.\",\"Prominent mediastinal/aortic contour with tortuosity of the thoracic aorta, consistent with vascular ectasia versus atherosclerotic change.\",\"No definite focal consolidation, pleural effusion, or pneumothorax identified.\",\"Degenerative changes noted in the thoracic spine with osteophyte formation.\",\"Soft tissue/bony structures of the shoulders and ribs appear unremarkable; no acute fracture seen.\",\"Surgical clips or sternal wires are not clearly visualized; faint radiopaque markers overlying the spine may represent ECG lead artifacts or skin markers.\"],\"abnormalities\":[{\"name\":\"Pulmonary hyperinflation\",\"description\":\"Flattened diaphragms and increased retrosternal air space suggest chronic obstructive pulmonary disease (COPD) or emphysematous change.\",\"severity\":\"Mild\",\"confidence\":55},{\"name\":\"Cardiomegaly\",\"description\":\"Cardiac silhouette appears mildly enlarged, though this may be exaggerated due to AP projection and patient positioning.\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Aortic tortuosity/ectasia\",\"description\":\"The aortic knob and descending aorta show a tortuous, somewhat widened contour, often associated with age-related atherosclerotic change.\",\"severity\":\"Mild\",\"confidence\":50},{\"name\":\"Interstitial markings\",\"description\":\"Increased reticular/interstitial opacities at the lung bases could reflect mild fibrosis, chronic bronchitis, or early interstitial lung disease; clinical correlation recommended.\",\"severity\":\"Mild\",\"confidence\":40}],\"summary\":\"This chest X-ray shows lungs that appear slightly over-inflated, which can be seen in conditions like COPD (a chronic lung disease often related to smoking). The heart shadow looks a little larger than average, and the main blood vessel (aorta) appears slightly widened and curvy, which is common with aging or high blood pressure. There are some faint line-like markings at the base of the lungs that could represent mild scarring or chronic changes, but there's no sign of pneumonia, significant fluid buildup, or a collapsed lung. These findings are not acutely dangerous but should be correlated with the patient's symptoms and history, and a doctor should confirm the significance of the heart size and lung changes.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph-assessment\",\"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Practice-Parameters\",\"https://pubs.rsna.org/doi/10.1148/rg.2019190045\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Fair",
+  "findings": [
+    "Lungs are hyperinflated with increased lung volumes and flattened diaphragms, suggestive of chronic obstructive changes.",
+    "Mild bibasilar increased interstitial/reticular markings, more pronounced at the left base and right infrahilar region.",
+    "Cardiac silhouette appears borderline enlarged with cardiothoracic ratio difficult to assess precisely due to projection, but suggests mild cardiomegaly.",
+    "Prominent mediastinal/aortic contour with tortuosity of the thoracic aorta, consistent with vascular ectasia versus atherosclerotic change.",
+    "No definite focal consolidation, pleural effusion, or pneumothorax identified.",
+    "Degenerative changes noted in the thoracic spine with osteophyte formation.",
+    "Soft tissue/bony structures of the shoulders and ribs appear unremarkable; no acute fracture seen.",
+    "Surgical clips or sternal wires are not clearly visualized; faint radiopaque markers overlying the spine may represent ECG lead artifacts or skin markers."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pulmonary hyperinflation",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Flattened diaphragms and increased retrosternal air space suggest chronic obstructive pulmonary disease (COPD) or emphysematous change."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "Cardiac silhouette appears mildly enlarged, though this may be exaggerated due to AP projection and patient positioning."
+    },
+    {
+      "name": "Aortic tortuosity/ectasia",
+      "severity": "Mild",
+      "confidence": 50,
+      "description": "The aortic knob and descending aorta show a tortuous, somewhat widened contour, often associated with age-related atherosclerotic change."
+    },
+    {
+      "name": "Interstitial markings",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Increased reticular/interstitial opacities at the lung bases could reflect mild fibrosis, chronic bronchitis, or early interstitial lung disease; clinical correlation recommended."
+    }
+  ],
+  "summary": "This chest X-ray shows lungs that appear slightly over-inflated, which can be seen in conditions like COPD (a chronic lung disease often related to smoking). The heart shadow looks a little larger than average, and the main blood vessel (aorta) appears slightly widened and curvy, which is common with aging or high blood pressure. There are some faint line-like markings at the base of the lungs that could represent mild scarring or chronic changes, but there's no sign of pneumonia, significant fluid buildup, or a collapsed lung. These findings are not acutely dangerous but should be correlated with the patient's symptoms and history, and a doctor should confirm the significance of the heart size and lung changes.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-assessment",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Practice-Parameters",
+    "https://pubs.rsna.org/doi/10.1148/rg.2019190045"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 380748,
+    "bytesOut": 376448,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T10:29:31.670Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,37 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_1/img_03_00019238_009.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right apical and upper lobe opacity\",\n    \"Right pleural effusion\",\n    \"Right-sided chest tubes present\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray shows a significant opacity in the right lung's top part (apex) and towards the upper lobe. There's also fluid in the space around the right lung (pleural effusion). Two tubes are inserted into the right side of the chest, likely for drainage.\",\n  \"references\": []\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right apical and upper lobe opacity",
+    "Right pleural effusion",
+    "Right-sided chest tubes present"
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows a significant opacity in the right lung's top part (apex) and towards the upper lobe. There's also fluid in the space around the right lung (pleural effusion). Two tubes are inserted into the right side of the chest, likely for drainage.",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 450035,
+    "bytesOut": 341639,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T11:59:33.448Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

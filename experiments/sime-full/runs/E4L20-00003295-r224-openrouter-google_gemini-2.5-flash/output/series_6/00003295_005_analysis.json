@@ -1,0 +1,32 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00003295/series_6/00003295_005.png",
+  "seriesId": "series_6",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"H\":{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA)\",\"quality\":\"Good\",\"findings\":[\"No focal opacities, consolidations, or effusions are identified within the lung fields.\",\"The cardiomediastinal silhouette is within normal limits for size and contour.\",\"Hilar regions appear unremarkable.\",\"Diaphragms are intact and show normal configuration.\",\"Costophrenic angles are clear bilaterally.\",\"Bony thorax, including ribs, clavicles, and visualized spine, shows no acute abnormalities.\"],\"abnormalities\":[],\"summary\":\"This chest X-ray appears normal. The lungs look clear with no signs of infection, fluid buildup, or other masses. The heart and major blood vessels in the chest are of normal size and shape. The bones of the chest also look healthy. In simple terms, everything appears as expected for a healthy chest X-ray.\",\"references\":[\"https://www.radiologyinfo.org/en/info/chestxray\",\"https://pubs.rsna.org/doi/full/10.1148/rg.301095034\",\"https://www.ncbi.nlm.nih.gov/books/NBK544256/\"]}}",
+  "findings": [],
+  "validation": {
+    "ok": false,
+    "issues": [
+      "anatomyRegion: Invalid input: expected string, received undefined",
+      "quality: Invalid option: expected one of \"Poor\"|\"Fair\"|\"Good\"|\"Excellent\"",
+      "summary: Invalid input: expected string, received undefined"
+    ]
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 25389,
+    "bytesOut": 25389,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:17:32.577Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

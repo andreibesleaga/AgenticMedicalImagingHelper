@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000148/series_3/00000148_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Presence of a subcutaneous implanted venous access port (port-a-cath) in the right upper chest\",\n    \"Catheter tip terminates in the distal superior vena cava\",\n    \"Faint opacity in the right mid-lung zone, possibly representing a pulmonary nodule or focal consolidation\",\n    \"Cardiomediastinal silhouette is within normal limits for size and shape\",\n    \"Lung volumes are well-maintained\",\n    \"Costophrenic angles are sharp\",\n    \"No evidence of pneumothorax or pleural effusion\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Implanted Port\",\n      \"description\": \"Right-sided subcutaneous port-a-cath with catheter extending into the superior vena cava.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Right Lung Opacity\",\n      \"description\": \"A small, ill-defined opacity is noted in the right mid-lung field, which may indicate a nodule or early consolidation.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 70\n    }\n  ],\n  \"summary\": \"The X-ray shows a port-a-cath (a device used for long-term medication or blood draws) correctly placed in the right chest. There is a small, faint spot in the right lung that requires further evaluation to determine if it is a nodule, an infection, or a normal variation. The heart size and the rest of the lungs appear normal.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/port-a-cath\",\n    \"https://www.acr.org/Clinical-Resources/Chest-X-Ray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Presence of a subcutaneous implanted venous access port (port-a-cath) in the right upper chest",
+    "Catheter tip terminates in the distal superior vena cava",
+    "Faint opacity in the right mid-lung zone, possibly representing a pulmonary nodule or focal consolidation",
+    "Cardiomediastinal silhouette is within normal limits for size and shape",
+    "Lung volumes are well-maintained",
+    "Costophrenic angles are sharp",
+    "No evidence of pneumothorax or pleural effusion"
+  ],
+  "abnormalities": [
+    {
+      "name": "Implanted Port",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Right-sided subcutaneous port-a-cath with catheter extending into the superior vena cava."
+    },
+    {
+      "name": "Right Lung Opacity",
+      "severity": "Mild",
+      "confidence": 70,
+      "description": "A small, ill-defined opacity is noted in the right mid-lung field, which may indicate a nodule or early consolidation."
+    }
+  ],
+  "summary": "The X-ray shows a port-a-cath (a device used for long-term medication or blood draws) correctly placed in the right chest. There is a small, faint spot in the right lung that requires further evaluation to determine if it is a nodule, an infection, or a normal variation. The heart size and the rest of the lungs appear normal.",
+  "references": [
+    "https://radiopaedia.org/articles/port-a-cath",
+    "https://www.acr.org/Clinical-Resources/Chest-X-Ray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24239,
+    "bytesOut": 24239,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:08:59.125Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

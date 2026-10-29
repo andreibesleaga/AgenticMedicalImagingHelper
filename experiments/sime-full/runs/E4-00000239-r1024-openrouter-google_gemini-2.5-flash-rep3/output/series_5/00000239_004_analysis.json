@@ -1,0 +1,30 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_5/00000239_004.png",
+  "seriesId": "series_5",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest and Abdomen (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary pathology identified.\",\n    \"Bilateral lung fields appear clear without evidence of focal consolidation, pneumothorax, or significant pleural effusion.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Hilar and mediastinal structures are unremarkable.\",\n    \"Visualized osseous structures of the thorax, including ribs, clavicles, and scapulae, are intact.\",\n    \"Multiple surgical clips are noted in the right axilla/lateral chest wall, likely related to prior surgery (e.g., breast or lymph node biopsy/dissection).\",\n    \"Multiple surgical clips are also identified in the lower abdomen, consistent with prior abdominal surgery.\",\n    \"A nasogastric tube is present, with its tip projected within the stomach.\",\n    \"No free air under the diaphragm.\",\n    \"Bowel gas pattern is within normal limits; no signs of obstruction.\"\n  },\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical Clips\",\n      \"description\": \"Multiple radiopaque surgical clips are visualized in the right axilla/lateral chest wall and in the lower abdomen. These findings are consistent with prior surgical interventions in these regions.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Nasogastric Tube\",\n      \"description\": \"A nasogastric tube is present, with its distal tip appropriately positioned within the stomach.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray image of the chest and upper abdomen appears generally normal. There are no signs of immediate problems in the lungs, like pneumonia or collapsed lung, and the heart size looks okay. However, there are several small metal clips visible. Some are located near the right armpit and outer chest area, suggesting a past surgery there, possibly related to the breast or lymph nodes. Other clips are seen in the lower belly area, indicating a previous abdominal surgery. Additionally, a tube (nasogastric tube) is seen going into the stomach, which is used for feeding or suction. These metal clips and the tube are common findings after certain medical procedures and are typically not a cause for concern on their own. There are no signs of any air leakage in the abdomen, and the bowel looks normal.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.301095034\",\n    \"https://radiologykey.com/nasogastric-and-enteral-feeding-tubes/\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "findings": [],
+  "validation": {
+    "ok": false,
+    "issues": [
+      "(root): response is not a JSON object"
+    ]
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 427509,
+    "bytesOut": 425196,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:56:29.432Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

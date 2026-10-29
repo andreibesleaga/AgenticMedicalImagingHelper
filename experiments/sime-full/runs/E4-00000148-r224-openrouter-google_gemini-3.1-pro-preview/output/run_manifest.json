@@ -1,0 +1,214 @@
+{
+  "manifestVersion": "1.0",
+  "toolVersion": "1.1.0",
+  "startedAt": "2026-09-29T10:34:19.752Z",
+  "finishedAt": "2026-09-29T10:36:05.907Z",
+  "provider": "openrouter",
+  "model": "google/gemini-3.1-pro-preview",
+  "pricing": {
+    "inputUsdPerMillion": 2,
+    "outputUsdPerMillion": 12
+  },
+  "settings": {
+    "concurrency": 1,
+    "maxCostUsd": 1,
+    "retries": 3,
+    "imageQuality": "auto"
+  },
+  "inputDir": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000148",
+  "outputDir": "/home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4-00000148-r224-openrouter-google_gemini-3.1-pro-preview/output",
+  "inputs": [
+    {
+      "path": "series_1/00000148_000.png",
+      "sha256": "b3314086114f828fc1ab5c1e98be5e14505118ae651dc8188cb6ba465e2022cd",
+      "bytes": 22900
+    },
+    {
+      "path": "series_2/00000148_001.png",
+      "sha256": "ba030673101306ad5d910ae2577512480b7a310c143739351ff2c51ff7153966",
+      "bytes": 23649
+    },
+    {
+      "path": "series_3/00000148_002.png",
+      "sha256": "5fcc5fc1c89f61c6419783afffbabfb8e241c82b5a3a0c291b418fde68da518c",
+      "bytes": 24239
+    },
+    {
+      "path": "series_4/00000148_003.png",
+      "sha256": "088bafec034e9601fa145486242a20b7a1266feea4c2830a1bc65e5ad2834979",
+      "bytes": 24147
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "patient_context.txt",
+      "sha256": "18fdee4a920f689a670ec9299d4473cb4878f26e68332483e78c1a423bc3bfa5",
+      "bytes": 357
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:34:43.147Z",
+      "tokensIn": 1492,
+      "tokensOut": 2516,
+      "estimatedUsd": 0.033176,
+      "providerUsd": 0.033176,
+      "retries": 0
+    },
+    {
+      "index": 2,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:34:50.009Z",
+      "tokensIn": 1492,
+      "tokensOut": 470,
+      "estimatedUsd": 0.008624000000000007,
+      "providerUsd": 0.008624,
+      "retries": 0
+    },
+    {
+      "index": 3,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:34:54.528Z",
+      "tokensIn": 1492,
+      "tokensOut": 351,
+      "estimatedUsd": 0.007196000000000001,
+      "providerUsd": 0.007196000000000001,
+      "retries": 0
+    },
+    {
+      "index": 4,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:35:00.489Z",
+      "tokensIn": 1492,
+      "tokensOut": 506,
+      "estimatedUsd": 0.009056000000000002,
+      "providerUsd": 0.009056000000000002,
+      "retries": 0
+    },
+    {
+      "index": 5,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:35:12.120Z",
+      "tokensIn": 795,
+      "tokensOut": 1639,
+      "estimatedUsd": 0.021257999999999985,
+      "providerUsd": 0.021257999999999992,
+      "retries": 0
+    },
+    {
+      "index": 6,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:35:24.596Z",
+      "tokensIn": 796,
+      "tokensOut": 1454,
+      "estimatedUsd": 0.01904,
+      "providerUsd": 0.01904,
+      "retries": 0
+    },
+    {
+      "index": 7,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:35:35.483Z",
+      "tokensIn": 677,
+      "tokensOut": 1176,
+      "estimatedUsd": 0.015465999999999994,
+      "providerUsd": 0.015466000000000008,
+      "retries": 0
+    },
+    {
+      "index": 8,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:35:48.548Z",
+      "tokensIn": 832,
+      "tokensOut": 1851,
+      "estimatedUsd": 0.023875999999999994,
+      "providerUsd": 0.02387600000000001,
+      "retries": 0
+    },
+    {
+      "index": 9,
+      "stage": "evolution",
+      "timestamp": "2026-09-29T10:36:05.836Z",
+      "tokensIn": 1338,
+      "tokensOut": 1912,
+      "estimatedUsd": 0.02562000000000003,
+      "providerUsd": 0.025620000000000004,
+      "retries": 0
+    }
+  ],
+  "outputs": [
+    {
+      "path": "series_1/00000148_000_analysis.json",
+      "sha256": "1acfaffd03001ac4fad3966df54a655198b25c98e7f6b810a62e9a3ff563011d",
+      "bytes": 4995
+    },
+    {
+      "path": "series_2/00000148_001_analysis.json",
+      "sha256": "b7e5565f96d43c2b1bc42442e2f11e4b3e59ec78f6395e1865b67396d5e644eb",
+      "bytes": 4516
+    },
+    {
+      "path": "series_3/00000148_002_analysis.json",
+      "sha256": "7d2bbf3a4edf0daaf5632b9c870929596e63ba066be672e8270b5729acb780f9",
+      "bytes": 3802
+    },
+    {
+      "path": "series_4/00000148_003_analysis.json",
+      "sha256": "3b1b3f97570cdd3a856f8d3d6bf321125475614a49173e8507795a30cf1c3338",
+      "bytes": 5187
+    },
+    {
+      "path": "series_1/series_summary.md",
+      "sha256": "fcc9f4cbd6237ec9c1b63ce9e05cec1104acb9fc0daf17b98dfbed5d23a02421",
+      "bytes": 3201
+    },
+    {
+      "path": "series_2/series_summary.md",
+      "sha256": "ff91278be68af40aabfa72db7fb8e6212e493cb90d2fea460035ddbe799261bc",
+      "bytes": 2552
+    },
+    {
+      "path": "series_3/series_summary.md",
+      "sha256": "a1f163157dc99a91e44bd635ac3fb82841e971331ccc54c61ea855cc81a330f2",
+      "bytes": 2227
+    },
+    {
+      "path": "series_4/series_summary.md",
+      "sha256": "419978fbf946f1de559ed707f4e3e4c44172f3599bf597d786c3acc0ea381872",
+      "bytes": 2660
+    },
+    {
+      "path": "evolution_analysis.json",
+      "sha256": "f6ec1d07dae048329f8aa2cc47810d8d147bd0d40b930682846c8a57e2634f8d",
+      "bytes": 3845
+    },
+    {
+      "path": "combined_diagnostic_report.md",
+      "sha256": "c5b8a1bd0320ff602f17fcb4ef187e5068c1e1643a503e18e73af078313af9fc",
+      "bytes": 4408
+    }
+  ],
+  "totals": {
+    "calls": 9,
+    "tokensIn": 10406,
+    "tokensOut": 11875,
+    "estimatedUsd": 0.163312,
+    "providerUsd": 0.163312,
+    "images": 4,
+    "imagesSucceeded": 4,
+    "imagesFailed": 0,
+    "series": 4
+  },
+  "exitCode": 0,
+  "warnings": [
+    "input-integrity: 4 image(s) matched --expect-hashes."
+  ],
+  "humanReview": {
+    "required": true,
+    "reviewedBy": null
+  },
+  "prevManifestHash": null,
+  "manifestHash": "436096eeb283c473f6b6c3494f1f5a0b31a948cd10703f932481102a8247e5a8"
+}

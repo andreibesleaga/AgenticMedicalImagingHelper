@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_1/img_13_00029998_005.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral pleural effusions, larger on the right.\",\n    \"Bilateral opacities in the lower lung zones, consistent with atelectasis or infiltrates.\",\n    \"No definite pneumothorax.\",\n    \"Cardiac silhouette appears within normal limits for this projection.\",\n    \"Mediastinum is midline.\",\n    \"Surgical clips noted in the midline sternal region.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Pleural Effusion\",\n      \"description\": \"Significant fluid collection in both pleural spaces, more prominent on the right side, obscuring the right costophrenic angle and creating a meniscus sign.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Basal Lung Opacities\",\n      \"description\": \"Opacification in the lower lung fields bilaterally, potentially indicative of atelectasis (collapsed lung tissue) secondary to the effusions or underlying parenchymal infiltrates.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows fluid around both lungs, more on the right side. This is called a pleural effusion. There are also some hazy areas at the bottom of both lungs, which could be due to the lung tissue collapsing a bit because of the fluid, or possibly some inflammation or infection. There are surgical clips in the middle of the chest, which suggests prior surgery. The heart looks normal, and there's no sign of a collapsed lung (pneumothorax). These findings often require further investigation to determine the cause of the fluid accumulation.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK459203/\",\n    \"https://www.thoracic.org/patients/patient-resources/topic-specific-resources/pleural-effusion.pdf\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral pleural effusions, larger on the right.",
+    "Bilateral opacities in the lower lung zones, consistent with atelectasis or infiltrates.",
+    "No definite pneumothorax.",
+    "Cardiac silhouette appears within normal limits for this projection.",
+    "Mediastinum is midline.",
+    "Surgical clips noted in the midline sternal region."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Significant fluid collection in both pleural spaces, more prominent on the right side, obscuring the right costophrenic angle and creating a meniscus sign."
+    },
+    {
+      "name": "Basal Lung Opacities",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Opacification in the lower lung fields bilaterally, potentially indicative of atelectasis (collapsed lung tissue) secondary to the effusions or underlying parenchymal infiltrates."
+    }
+  ],
+  "summary": "The chest X-ray shows fluid around both lungs, more on the right side. This is called a pleural effusion. There are also some hazy areas at the bottom of both lungs, which could be due to the lung tissue collapsing a bit because of the fluid, or possibly some inflammation or infection. There are surgical clips in the middle of the chest, which suggests prior surgery. The heart looks normal, and there's no sign of a collapsed lung (pneumothorax). These findings often require further investigation to determine the cause of the fluid accumulation.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.ncbi.nlm.nih.gov/books/NBK459203/",
+    "https://www.thoracic.org/patients/patient-resources/topic-specific-resources/pleural-effusion.pdf"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21214,
+    "bytesOut": 21214,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:56:25.700Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

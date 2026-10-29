@@ -1,0 +1,70 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_1/img_03_00019238_009.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right chest tube is present.\",\n    \"Right hemothorax and right pleural effusion.\",\n    \"Right lung atelectasis.\",\n    \"Left lung is clear.\",\n    \"Small left pleural effusion.\",\n    \"Mediastinal structures are normal.\",\n    \"Heart size is normal.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right hemothorax\",\n      \"description\": \"Accumulation of blood in the pleural space on the right side.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Right pleural effusion\",\n      \"description\": \"Accumulation of fluid in the pleural space on the right side.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Right lung atelectasis\",\n      \"description\": \"Collapse of the right lung, likely due to pleural effusion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Left pleural effusion\",\n      \"description\": \"Accumulation of fluid in the pleural space on the left side.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a right chest tube in place. There is a significant collection of blood (hemothorax) and fluid (pleural effusion) in the right chest cavity. This has caused the right lung to collapse partially (atelectasis). The left lung appears clear, although there might be a small amount of fluid there too. The heart and other mediastinal structures look normal.\",\n  \"references\": [\n    \"https://www.radiologyassistant.com/obstructive-lung-disease/pleural-effusion\",\n    \"https://radiopaedia.org/articles/hemothorax\",\n    \"https://radiopaedia.org/articles/pleural-effusion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right chest tube is present.",
+    "Right hemothorax and right pleural effusion.",
+    "Right lung atelectasis.",
+    "Left lung is clear.",
+    "Small left pleural effusion.",
+    "Mediastinal structures are normal.",
+    "Heart size is normal."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right hemothorax",
+      "severity": "Severe",
+      "confidence": 100,
+      "description": "Accumulation of blood in the pleural space on the right side."
+    },
+    {
+      "name": "Right pleural effusion",
+      "severity": "Moderate",
+      "confidence": 100,
+      "description": "Accumulation of fluid in the pleural space on the right side."
+    },
+    {
+      "name": "Right lung atelectasis",
+      "severity": "Moderate",
+      "confidence": 100,
+      "description": "Collapse of the right lung, likely due to pleural effusion."
+    },
+    {
+      "name": "Left pleural effusion",
+      "severity": "Mild",
+      "confidence": 100,
+      "description": "Accumulation of fluid in the pleural space on the left side."
+    }
+  ],
+  "summary": "The chest X-ray shows a right chest tube in place. There is a significant collection of blood (hemothorax) and fluid (pleural effusion) in the right chest cavity. This has caused the right lung to collapse partially (atelectasis). The left lung appears clear, although there might be a small amount of fluid there too. The heart and other mediastinal structures look normal.",
+  "references": [
+    "https://www.radiologyassistant.com/obstructive-lung-disease/pleural-effusion",
+    "https://radiopaedia.org/articles/hemothorax",
+    "https://radiopaedia.org/articles/pleural-effusion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 450035,
+    "bytesOut": 341639,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:17:56.815Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

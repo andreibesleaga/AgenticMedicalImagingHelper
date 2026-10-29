@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00015863/series_1/00015863_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral lung fields with increased interstitial markings, more prominent in the lower zones.\",\n    \"No obvious consolidation or mass lesion detected.\",\n    \"Cardiac silhouette appears within normal limits for size and contour.\",\n    \"Diaphragms are well-defined; costophrenic angles are blunted bilaterally, suggesting possible small pleural effusions.\",\n    \"Trachea is midline; no mediastinal widening observed.\",\n    \"Ribs and spine show no acute bony abnormalities.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral interstitial thickening\",\n      \"description\": \"Increased linear and reticular opacities predominantly in the lower lung zones suggest interstitial involvement. May represent early fibrosis, edema, or inflammatory process. No honeycombing or cystic changes noted.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    },\n    {\n      \"name\": \"Blunted costophrenic angles\",\n      \"description\": \"Bilateral blunting of the costophrenic angles suggests minimal pleural fluid accumulation. Not associated with significant volume loss or loculation.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 65\n    }\n  ],\n  \"summary\": \"The chest X-ray shows mild changes in the lungs’ interstitial tissue — the network of tissue around the air sacs — which can occur due to inflammation, fluid buildup, or early scarring. There may also be a very small amount of fluid around the lungs (pleural effusion), visible as blunted corners at the bottom of the lungs. These findings are not specific and could be caused by various conditions such as infection, heart issues, or autoimmune diseases. Further evaluation with clinical history, labs, or advanced imaging like CT may be needed. This is not an emergency but should be discussed with your doctor.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/interstitial-lung-disease\",\n    \"https://www.mayoclinic.org/diseases-conditions/pleural-effusion/diagnosis-treatment/drc-20376748\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK539715/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral lung fields with increased interstitial markings, more prominent in the lower zones.",
+    "No obvious consolidation or mass lesion detected.",
+    "Cardiac silhouette appears within normal limits for size and contour.",
+    "Diaphragms are well-defined; costophrenic angles are blunted bilaterally, suggesting possible small pleural effusions.",
+    "Trachea is midline; no mediastinal widening observed.",
+    "Ribs and spine show no acute bony abnormalities."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral interstitial thickening",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "Increased linear and reticular opacities predominantly in the lower lung zones suggest interstitial involvement. May represent early fibrosis, edema, or inflammatory process. No honeycombing or cystic changes noted."
+    },
+    {
+      "name": "Blunted costophrenic angles",
+      "severity": "Mild",
+      "confidence": 65,
+      "description": "Bilateral blunting of the costophrenic angles suggests minimal pleural fluid accumulation. Not associated with significant volume loss or loculation."
+    }
+  ],
+  "summary": "The chest X-ray shows mild changes in the lungs’ interstitial tissue — the network of tissue around the air sacs — which can occur due to inflammation, fluid buildup, or early scarring. There may also be a very small amount of fluid around the lungs (pleural effusion), visible as blunted corners at the bottom of the lungs. These findings are not specific and could be caused by various conditions such as infection, heart issues, or autoimmune diseases. Further evaluation with clinical history, labs, or advanced imaging like CT may be needed. This is not an emergency but should be discussed with your doctor.",
+  "references": [
+    "https://radiopaedia.org/articles/interstitial-lung-disease",
+    "https://www.mayoclinic.org/diseases-conditions/pleural-effusion/diagnosis-treatment/drc-20376748",
+    "https://www.ncbi.nlm.nih.gov/books/NBK539715/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 310079,
+    "bytesOut": 283704,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:16:37.541Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

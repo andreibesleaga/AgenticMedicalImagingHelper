@@ -1,0 +1,59 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000067/series_3/00000067_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Fair\",\"findings\":[\"Frontal chest radiograph showing symmetric lung fields\",\"Cardiac silhouette appears within normal limits for size\",\"Bilateral hilar and perihilar markings noted, somewhat prominent\",\"No obvious focal consolidation identified\",\"Visible bony thorax including clavicles and ribs, no gross fracture seen\",\"Soft tissue overlying shoulders symmetric\",\"Small metallic or radiopaque marker artifact seen in right upper chest region\",\"Image slightly underexposed/high contrast limiting fine detail evaluation\"],\"abnormalities\":[{\"name\":\"Prominent perihilar/bronchovascular markings\",\"description\":\"Increased density and markings in the central/perihilar lung regions bilaterally, which could reflect vascular congestion, bronchial wall thickening, or overlapping structures; further clinical correlation needed\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Possible marker/artifact\",\"description\":\"Small hyperdense focus in the right upper chest area near the shoulder, likely an external marker, jewelry, or artifact rather than a true pathologic finding\",\"severity\":\"Mild\",\"confidence\":30}],\"summary\":\"This is a front-view chest X-ray. Overall, the lungs appear fairly symmetric and the heart size looks normal. There are some slightly prominent markings near the center of the lungs (close to where the airways and blood vessels branch), which can be a normal variant or could suggest mild vascular engorgement or airway wall thickening - this would need to be correlated with symptoms and possibly follow-up imaging. There's also a tiny bright spot near the right shoulder area that is most likely just an external object (like on clothing or skin) rather than something inside the body. No clear signs of pneumonia, large masses, or fractures are seen. As with any X-ray, a qualified radiologist should review this image directly alongside the patient's clinical history for an accurate diagnosis.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.rsna.org/en/patient-resources/imaging-procedures/chest-x-ray\",\"https://pubs.rsna.org/journal/radiology\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Fair",
+  "findings": [
+    "Frontal chest radiograph showing symmetric lung fields",
+    "Cardiac silhouette appears within normal limits for size",
+    "Bilateral hilar and perihilar markings noted, somewhat prominent",
+    "No obvious focal consolidation identified",
+    "Visible bony thorax including clavicles and ribs, no gross fracture seen",
+    "Soft tissue overlying shoulders symmetric",
+    "Small metallic or radiopaque marker artifact seen in right upper chest region",
+    "Image slightly underexposed/high contrast limiting fine detail evaluation"
+  ],
+  "abnormalities": [
+    {
+      "name": "Prominent perihilar/bronchovascular markings",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "Increased density and markings in the central/perihilar lung regions bilaterally, which could reflect vascular congestion, bronchial wall thickening, or overlapping structures; further clinical correlation needed"
+    },
+    {
+      "name": "Possible marker/artifact",
+      "severity": "Mild",
+      "confidence": 30,
+      "description": "Small hyperdense focus in the right upper chest area near the shoulder, likely an external marker, jewelry, or artifact rather than a true pathologic finding"
+    }
+  ],
+  "summary": "This is a front-view chest X-ray. Overall, the lungs appear fairly symmetric and the heart size looks normal. There are some slightly prominent markings near the center of the lungs (close to where the airways and blood vessels branch), which can be a normal variant or could suggest mild vascular engorgement or airway wall thickening - this would need to be correlated with symptoms and possibly follow-up imaging. There's also a tiny bright spot near the right shoulder area that is most likely just an external object (like on clothing or skin) rather than something inside the body. No clear signs of pneumonia, large masses, or fractures are seen. As with any X-ray, a qualified radiologist should review this image directly alongside the patient's clinical history for an accurate diagnosis.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.rsna.org/en/patient-resources/imaging-procedures/chest-x-ray",
+    "https://pubs.rsna.org/journal/radiology"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22470,
+    "bytesOut": 22470,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-29T10:34:36.100Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

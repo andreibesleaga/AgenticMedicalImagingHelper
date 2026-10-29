@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_3/img_13_00026971_015.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest and Abdomen (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs appear well-aerated with no overt consolidation, effusions, or pneumothorax.\",\n    \"Cardiomediastinal contours are within normal limits for this projection.\",\n    \"Diaphragms are intact.\",\n    \"Bony thorax shows no acute fractures or destructive lesions.\",\n    \"The abdomen shows gaseous distention of bowel loops, particularly in the left upper and mid-abdomen, suggesting a possible ileus or obstruction. No free air is visible under the diaphragm.\",\n    \"A metallic foreign body is noted projected over the left shoulder region, likely outside the patient or within superficial soft tissues, not related to the internal thoracic or abdominal structures.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bowel Distention\",\n      \"description\": \"Prominent gaseous distention of multiple bowel loops, predominantly in the left upper and mid-abdomen, suggesting an obstructive process or ileus.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The X-ray of the chest and abdomen shows that the lungs, heart, and bones of the chest appear normal. However, there is noticeable swelling and gas buildup in the intestines, particularly in the left side of the abdomen. This could indicate a condition where the intestines are not moving contents along properly, such as a blockage (obstruction) or a temporary paralysis of the bowel (ileus). There is no evidence of a hole in the bowel wall (no free air). A small metallic object is seen near the left shoulder, which is likely outside the body or in the skin and not related to the internal organs. Further evaluation may be needed to determine the cause of the bowel distention.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/bowel-obstruction\",\n    \"https://radiopaedia.org/articles/ileus\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest and Abdomen (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs appear well-aerated with no overt consolidation, effusions, or pneumothorax.",
+    "Cardiomediastinal contours are within normal limits for this projection.",
+    "Diaphragms are intact.",
+    "Bony thorax shows no acute fractures or destructive lesions.",
+    "The abdomen shows gaseous distention of bowel loops, particularly in the left upper and mid-abdomen, suggesting a possible ileus or obstruction. No free air is visible under the diaphragm.",
+    "A metallic foreign body is noted projected over the left shoulder region, likely outside the patient or within superficial soft tissues, not related to the internal thoracic or abdominal structures."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bowel Distention",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Prominent gaseous distention of multiple bowel loops, predominantly in the left upper and mid-abdomen, suggesting an obstructive process or ileus."
+    }
+  ],
+  "summary": "The X-ray of the chest and abdomen shows that the lungs, heart, and bones of the chest appear normal. However, there is noticeable swelling and gas buildup in the intestines, particularly in the left side of the abdomen. This could indicate a condition where the intestines are not moving contents along properly, such as a blockage (obstruction) or a temporary paralysis of the bowel (ileus). There is no evidence of a hole in the bowel wall (no free air). A small metallic object is seen near the left shoulder, which is likely outside the body or in the skin and not related to the internal organs. Further evaluation may be needed to determine the cause of the bowel distention.",
+  "references": [
+    "https://radiopaedia.org/articles/bowel-obstruction",
+    "https://radiopaedia.org/articles/ileus"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23597,
+    "bytesOut": 23597,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:02:16.305Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

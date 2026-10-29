@@ -1,0 +1,39 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00004946/series_1/00004946_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear.\",\n    \"The heart size is normal.\",\n    \"Mediastinal contours are normal.\",\n    \"There is no pleural effusion.\",\n    \"Bones appear intact.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray shows normal lungs, heart size, and mediastinum. There's no sign of fluid around the lungs or in the chest cavity. Bones look normal too. Overall, the image appears clear and diagnostic.\",\n  \"references\": []\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear.",
+    "The heart size is normal.",
+    "Mediastinal contours are normal.",
+    "There is no pleural effusion.",
+    "Bones appear intact."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows normal lungs, heart size, and mediastinum. There's no sign of fluid around the lungs or in the chest cavity. Bones look normal too. Overall, the image appears clear and diagnostic.",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 25621,
+    "bytesOut": 25621,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:32:16.487Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

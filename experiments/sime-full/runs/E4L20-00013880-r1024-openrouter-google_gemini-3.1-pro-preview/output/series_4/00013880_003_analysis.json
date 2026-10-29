@@ -1,0 +1,62 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00013880/series_4/00013880_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Large right-sided pleural effusion with meniscus sign.\",\n    \"Small left-sided pleural effusion with blunting of the costophrenic angle.\",\n    \"Left-sided chest port with catheter tip projecting over the superior vena cava/right atrium junction.\",\n    \"Cardiomediastinal silhouette is partially obscured by the right pleural effusion.\",\n    \"Osseous structures are intact without acute fracture or aggressive lytic lesions.\",\n    \"Lungs are otherwise clear of focal consolidation or pneumothorax.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Pleural Effusion\",\n      \"description\": \"Large right pleural effusion causing near-complete opacification of the right lower and mid lung zones with a meniscus sign.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 99\n    },\n    {\n      \"name\": \"Left Pleural Effusion\",\n      \"description\": \"Small left pleural effusion causing blunting of the left costophrenic angle.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Medical Device\",\n      \"description\": \"Left-sided chest port with catheter tip in expected position.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 99\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a large amount of fluid around the right lung (pleural effusion) and a small amount around the left lung. A medical port (chest port) is visible on the left side and appears to be correctly placed. The lungs do not show any signs of pneumonia or a collapsed lung. The fluid should be evaluated further to determine the cause.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK448189/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Large right-sided pleural effusion with meniscus sign.",
+    "Small left-sided pleural effusion with blunting of the costophrenic angle.",
+    "Left-sided chest port with catheter tip projecting over the superior vena cava/right atrium junction.",
+    "Cardiomediastinal silhouette is partially obscured by the right pleural effusion.",
+    "Osseous structures are intact without acute fracture or aggressive lytic lesions.",
+    "Lungs are otherwise clear of focal consolidation or pneumothorax."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Pleural Effusion",
+      "severity": "Severe",
+      "confidence": 99,
+      "description": "Large right pleural effusion causing near-complete opacification of the right lower and mid lung zones with a meniscus sign."
+    },
+    {
+      "name": "Left Pleural Effusion",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "Small left pleural effusion causing blunting of the left costophrenic angle."
+    },
+    {
+      "name": "Medical Device",
+      "severity": "Normal",
+      "confidence": 99,
+      "description": "Left-sided chest port with catheter tip in expected position."
+    }
+  ],
+  "summary": "The chest X-ray shows a large amount of fluid around the right lung (pleural effusion) and a small amount around the left lung. A medical port (chest port) is visible on the left side and appears to be correctly placed. The lungs do not show any signs of pneumonia or a collapsed lung. The fluid should be evaluated further to determine the cause.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.ncbi.nlm.nih.gov/books/NBK448189/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 445290,
+    "bytesOut": 444773,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:42:03.909Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

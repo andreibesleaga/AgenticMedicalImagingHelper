@@ -1,0 +1,75 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S3x10/series_2/img_03_00029998_005.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral pleural effusions, larger on the right side.\",\n    \"Bilateral airspace opacities, more prominent in the right lower lung field, consistent with atelectasis or consolidation.\",\n    \"Cardiac silhouette is difficult to fully assess due to surrounding pathology, but appears enlarged.\",\n    \"Vascular congestion noted.\",\n    \"Multiple surgical clips are seen in the mediastinum, likely post-cardiac surgery.\",\n    \"Endotracheal tube and nasogastric tube are present and appear to be in appropriate positions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Large right-sided pleural effusion with associated blunting of the right costophrenic angle and obscuring of the right hemidiaphragm. A smaller left-sided pleural effusion is also present.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Airspace Opacities\",\n      \"description\": \"Bilateral patchy airspace opacities, more pronounced in the right lower lobe, likely representing atelectasis or early consolidation.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette appears enlarged, although difficult to fully evaluate due to overlying pathology.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    },\n    {\n      \"name\": \"Vascular Congestion\",\n      \"description\": \"Evidence of pulmonary vascular congestion, suggesting fluid overload or congestive heart failure.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Surgical Clips\",\n      \"description\": \"Presence of multiple surgical clips in the mediastinum, indicating prior cardiac surgery.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray shows fluid around both lungs, which is more noticeable on the right side. There are also some hazy areas in both lungs, especially in the lower right, which could be collapsed lung tissue or early pneumonia. The heart appears to be enlarged, and there are signs of fluid buildup in the lung's blood vessels. We can also see clips from a previous heart surgery. All these findings suggest potential fluid overload, heart issues, and/or lung collapse or infection.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/atelectasis\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900698/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral pleural effusions, larger on the right side.",
+    "Bilateral airspace opacities, more prominent in the right lower lung field, consistent with atelectasis or consolidation.",
+    "Cardiac silhouette is difficult to fully assess due to surrounding pathology, but appears enlarged.",
+    "Vascular congestion noted.",
+    "Multiple surgical clips are seen in the mediastinum, likely post-cardiac surgery.",
+    "Endotracheal tube and nasogastric tube are present and appear to be in appropriate positions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Large right-sided pleural effusion with associated blunting of the right costophrenic angle and obscuring of the right hemidiaphragm. A smaller left-sided pleural effusion is also present."
+    },
+    {
+      "name": "Airspace Opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Bilateral patchy airspace opacities, more pronounced in the right lower lobe, likely representing atelectasis or early consolidation."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "The cardiac silhouette appears enlarged, although difficult to fully evaluate due to overlying pathology."
+    },
+    {
+      "name": "Vascular Congestion",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Evidence of pulmonary vascular congestion, suggesting fluid overload or congestive heart failure."
+    },
+    {
+      "name": "Surgical Clips",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Presence of multiple surgical clips in the mediastinum, indicating prior cardiac surgery."
+    }
+  ],
+  "summary": "This X-ray shows fluid around both lungs, which is more noticeable on the right side. There are also some hazy areas in both lungs, especially in the lower right, which could be collapsed lung tissue or early pneumonia. The heart appears to be enlarged, and there are signs of fluid buildup in the lung's blood vessels. We can also see clips from a previous heart surgery. All these findings suggest potential fluid overload, heart issues, and/or lung collapse or infection.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/atelectasis",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900698/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21214,
+    "bytesOut": 21214,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:54:45.807Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

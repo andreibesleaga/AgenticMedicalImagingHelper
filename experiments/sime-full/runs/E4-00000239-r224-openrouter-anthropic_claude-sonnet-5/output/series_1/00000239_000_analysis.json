@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000239/series_1/00000239_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP view)\",\"quality\":\"Fair\",\"findings\":[\"Frontal chest radiograph showing bilateral lung fields\",\"Cardiac silhouette appears within upper limits of normal to mildly enlarged, occupying a significant portion of the thoracic width\",\"Mediastinal contours are visible, trachea appears midline\",\"Bony thorax including ribs and clavicles are visualized symmetrically\",\"Costophrenic angles are visualized\",\"Soft tissue overlying the chest wall is unremarkable\",\"No obvious focal consolidation, pneumothorax, or large pleural effusion clearly identified, though image resolution limits detailed assessment\"],\"abnormalities\":[{\"name\":\"Possible mild cardiomegaly\",\"description\":\"The cardiac silhouette appears to occupy a relatively large proportion of the thoracic diameter, which could suggest mild cardiac enlargement, though precise cardiothoracic ratio cannot be reliably calculated from this image quality\",\"severity\":\"Mild\",\"confidence\":35},{\"name\":\"Suboptimal image quality/positioning\",\"description\":\"The image has limited contrast resolution and some rotation/positioning artifact, making detailed evaluation of lung parenchyma and mediastinal structures challenging\",\"severity\":\"Mild\",\"confidence\":50}],\"summary\":\"This is a chest X-ray, a common imaging test that uses radiation to create pictures of the lungs, heart, and bones in the chest. The image shows the heart and lungs, and the heart shadow appears somewhat prominent, which could simply be due to the way the picture was taken (positioning) or could reflect mild enlargement of the heart - this would need to be confirmed with better quality imaging and clinical correlation. The lungs appear grossly clear without obvious signs of significant fluid, collapse, or major masses, but the image quality is not optimal, so subtle findings could be missed. It's important that a radiologist or your doctor review the actual film and correlate it with your symptoms and history for an accurate assessment.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\"https://pubs.rsna.org/journal/radiology\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP view)",
+  "quality": "Fair",
+  "findings": [
+    "Frontal chest radiograph showing bilateral lung fields",
+    "Cardiac silhouette appears within upper limits of normal to mildly enlarged, occupying a significant portion of the thoracic width",
+    "Mediastinal contours are visible, trachea appears midline",
+    "Bony thorax including ribs and clavicles are visualized symmetrically",
+    "Costophrenic angles are visualized",
+    "Soft tissue overlying the chest wall is unremarkable",
+    "No obvious focal consolidation, pneumothorax, or large pleural effusion clearly identified, though image resolution limits detailed assessment"
+  ],
+  "abnormalities": [
+    {
+      "name": "Possible mild cardiomegaly",
+      "severity": "Mild",
+      "confidence": 35,
+      "description": "The cardiac silhouette appears to occupy a relatively large proportion of the thoracic diameter, which could suggest mild cardiac enlargement, though precise cardiothoracic ratio cannot be reliably calculated from this image quality"
+    },
+    {
+      "name": "Suboptimal image quality/positioning",
+      "severity": "Mild",
+      "confidence": 50,
+      "description": "The image has limited contrast resolution and some rotation/positioning artifact, making detailed evaluation of lung parenchyma and mediastinal structures challenging"
+    }
+  ],
+  "summary": "This is a chest X-ray, a common imaging test that uses radiation to create pictures of the lungs, heart, and bones in the chest. The image shows the heart and lungs, and the heart shadow appears somewhat prominent, which could simply be due to the way the picture was taken (positioning) or could reflect mild enlargement of the heart - this would need to be confirmed with better quality imaging and clinical correlation. The lungs appear grossly clear without obvious signs of significant fluid, collapse, or major masses, but the image quality is not optimal, so subtle findings could be missed. It's important that a radiologist or your doctor review the actual film and correlate it with your symptoms and history for an accurate assessment.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiology"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23729,
+    "bytesOut": 23729,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-29T10:43:00.617Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

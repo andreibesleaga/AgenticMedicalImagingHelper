@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_3/00000148_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"There is a circular, metallic-density foreign body, consistent with an endobronchial valve, located in the right upper lung zone.\",\n    \"The lung fields are otherwise clear without focal consolidation, pneumothorax, or large pleural effusion.\",\n    \"The cardiac silhouette is within normal limits for size and contour.\",\n    \"The diaphragmatic hemidiaphragms are intact and show normal configuration, with costophrenic angles being clear.\",\n    \"The bony thorax appears unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Endobronchial Valve\",\n      \"description\": \"A circular, metallic-density foreign body, consistent with an endobronchial valve, is noted in the right upper lobe bronchus region. This device is typically used for lung volume reduction in patients with severe emphysema.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows an endobronchial valve in the right upper part of the lung. This device is intentionally placed to help manage certain lung conditions, such as severe emphysema, by redirecting air within the lung. The rest of the lungs, heart, and surrounding bones appear normal. This finding is expected given the purpose of such a device.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/endobronchial-valve\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900652/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "There is a circular, metallic-density foreign body, consistent with an endobronchial valve, located in the right upper lung zone.",
+    "The lung fields are otherwise clear without focal consolidation, pneumothorax, or large pleural effusion.",
+    "The cardiac silhouette is within normal limits for size and contour.",
+    "The diaphragmatic hemidiaphragms are intact and show normal configuration, with costophrenic angles being clear.",
+    "The bony thorax appears unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Endobronchial Valve",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A circular, metallic-density foreign body, consistent with an endobronchial valve, is noted in the right upper lobe bronchus region. This device is typically used for lung volume reduction in patients with severe emphysema."
+    }
+  ],
+  "summary": "This X-ray of the chest shows an endobronchial valve in the right upper part of the lung. This device is intentionally placed to help manage certain lung conditions, such as severe emphysema, by redirecting air within the lung. The rest of the lungs, heart, and surrounding bones appear normal. This finding is expected given the purpose of such a device.",
+  "references": [
+    "https://radiopaedia.org/articles/endobronchial-valve",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900652/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 453156,
+    "bytesOut": 452383,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:06:49.337Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

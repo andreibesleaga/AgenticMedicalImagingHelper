@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_3/img_01_00019274_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary pathology is identified.\",\n    \"Lungs are clear bilaterally with no evidence of focal consolidation, effusion, or pneumothorax.\",\n    \"Cardiac silhouette is within normal limits for size and contour.\",\n    \"Mediastinal contours are unremarkable.\",\n    \"Bony thorax appears intact without acute fractures or destructive lesions.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This X-ray of the chest shows healthy lungs and heart. There are no signs of pneumonia, fluid around the lungs, or a collapsed lung. The heart size and shape are normal, and the bones of the chest appear intact. Overall, no concerning issues were found on this image.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.231025068\",\n    \"https://www.radiologyinfo.org/en/info/chestrad\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary pathology is identified.",
+    "Lungs are clear bilaterally with no evidence of focal consolidation, effusion, or pneumothorax.",
+    "Cardiac silhouette is within normal limits for size and contour.",
+    "Mediastinal contours are unremarkable.",
+    "Bony thorax appears intact without acute fractures or destructive lesions."
+  ],
+  "abnormalities": [],
+  "summary": "This X-ray of the chest shows healthy lungs and heart. There are no signs of pneumonia, fluid around the lungs, or a collapsed lung. The heart size and shape are normal, and the bones of the chest appear intact. Overall, no concerning issues were found on this image.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.231025068",
+    "https://www.radiologyinfo.org/en/info/chestrad"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24056,
+    "bytesOut": 24056,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:02:08.284Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

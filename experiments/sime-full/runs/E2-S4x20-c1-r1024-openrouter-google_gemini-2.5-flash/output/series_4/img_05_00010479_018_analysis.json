@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_05_00010479_018.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Centrally placed endotracheal tube with the tip projected at the level of the clavicles, likely in the trachea.\",\n    \"A right-sided central venous catheter is noted with its tip projected over the superior vena cava.\",\n    \"Bilateral lung fields appear clear with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is within normal limits.\",\n    \"Bony thorax and visualized soft tissues are unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Endotracheal Tube Placement\",\n      \"description\": \"Endotracheal tube appears to be centrally placed with its tip located high, at the level of the clavicles. The tip should ideally be 2-4 cm above the carina.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that a breathing tube (endotracheal tube) is in place, but its tip appears a bit high. There's also a central line (a type of IV) in the right side of the chest, which looks correctly positioned. The lungs, heart, and surrounding bones appear normal, with no signs of pneumonia, fluid around the lungs, or collapsed lung.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/endotracheal-tube-1\",\n    \"https://radiopaedia.org/articles/central-venous-catheter?lang=us\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7063231/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Centrally placed endotracheal tube with the tip projected at the level of the clavicles, likely in the trachea.",
+    "A right-sided central venous catheter is noted with its tip projected over the superior vena cava.",
+    "Bilateral lung fields appear clear with no focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal silhouette is within normal limits.",
+    "Bony thorax and visualized soft tissues are unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Endotracheal Tube Placement",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Endotracheal tube appears to be centrally placed with its tip located high, at the level of the clavicles. The tip should ideally be 2-4 cm above the carina."
+    }
+  ],
+  "summary": "The chest X-ray shows that a breathing tube (endotracheal tube) is in place, but its tip appears a bit high. There's also a central line (a type of IV) in the right side of the chest, which looks correctly positioned. The lungs, heart, and surrounding bones appear normal, with no signs of pneumonia, fluid around the lungs, or collapsed lung.",
+  "references": [
+    "https://radiopaedia.org/articles/endotracheal-tube-1",
+    "https://radiopaedia.org/articles/central-venous-catheter?lang=us",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7063231/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 455534,
+    "bytesOut": 454789,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:43:10.504Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

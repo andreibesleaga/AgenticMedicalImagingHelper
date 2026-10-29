@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_1/00000148_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A well-circumscribed, rounded opacity is present in the peripheral right mid-to-upper lung zone, measuring approximately 2.5 cm in diameter.\",\n    \"The left lung is clear and free of focal consolidation, masses, or nodules.\",\n    \"The cardiomediastinal silhouette is normal in size and contour.\",\n    \"No pleural effusions or pneumothorax are identified.\",\n    \"The bony thorax appears intact without acute displaced fractures.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right pulmonary nodule\",\n      \"description\": \"A distinct, roughly 2.5 cm rounded radiopacity in the peripheral right mid-to-upper lung zone, abutting the lateral chest wall.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray reveals a rounded spot (nodule) measuring about 1 inch in the outer area of the right lung. The heart, left lung, and surrounding structures appear normal. A finding like this is not normal and typically requires further evaluation with a dedicated chest CT scan to better characterize the spot and determine if it is due to an infection, benign growth, or other causes.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/solitary-pulmonary-nodule\",\n    \"https://www.acr.org/Clinical-Resources/Lung-Cancer-Screening-Resources\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "A well-circumscribed, rounded opacity is present in the peripheral right mid-to-upper lung zone, measuring approximately 2.5 cm in diameter.",
+    "The left lung is clear and free of focal consolidation, masses, or nodules.",
+    "The cardiomediastinal silhouette is normal in size and contour.",
+    "No pleural effusions or pneumothorax are identified.",
+    "The bony thorax appears intact without acute displaced fractures."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right pulmonary nodule",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "A distinct, roughly 2.5 cm rounded radiopacity in the peripheral right mid-to-upper lung zone, abutting the lateral chest wall."
+    }
+  ],
+  "summary": "The chest X-ray reveals a rounded spot (nodule) measuring about 1 inch in the outer area of the right lung. The heart, left lung, and surrounding structures appear normal. A finding like this is not normal and typically requires further evaluation with a dedicated chest CT scan to better characterize the spot and determine if it is due to an infection, benign growth, or other causes.",
+  "references": [
+    "https://radiopaedia.org/articles/solitary-pulmonary-nodule",
+    "https://www.acr.org/Clinical-Resources/Lung-Cancer-Screening-Resources"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 373586,
+    "bytesOut": 367631,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:21:15.501Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

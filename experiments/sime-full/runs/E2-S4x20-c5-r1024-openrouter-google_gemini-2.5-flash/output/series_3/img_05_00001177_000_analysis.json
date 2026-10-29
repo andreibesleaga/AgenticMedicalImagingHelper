@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_3/img_05_00001177_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pleural effusion, or pneumothorax identified.\",\n    \"Cardiomediastinal contours are within normal limits for age.\",\n    \"Hilar regions are unremarkable.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"Osseous structures of the visualized thoracic cage and shoulders are unremarkable.\",\n    \"Surgical hardware is noted in the left shoulder region, consistent with a left shoulder prosthesis.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Shoulder Prosthesis\",\n      \"description\": \"Presence of surgical hardware in the left shoulder, consistent with a left shoulder arthroplasty.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This chest X-ray shows healthy lungs with no signs of pneumonia, fluid around the lungs (pleural effusion), or a collapsed lung (pneumothorax). The heart and major blood vessels appear normal. The bones of the chest and shoulders also look good, with the exception of surgical hardware in the left shoulder, which is likely a shoulder replacement. This is considered a normal finding if the patient has had such surgery.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125026\",\n    \"https://www.acr.org/-/media/ACR/Files/Practice-Parameters/Xray-Chest.pdf\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pleural effusion, or pneumothorax identified.",
+    "Cardiomediastinal contours are within normal limits for age.",
+    "Hilar regions are unremarkable.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "Osseous structures of the visualized thoracic cage and shoulders are unremarkable.",
+    "Surgical hardware is noted in the left shoulder region, consistent with a left shoulder prosthesis."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Shoulder Prosthesis",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Presence of surgical hardware in the left shoulder, consistent with a left shoulder arthroplasty."
+    }
+  ],
+  "summary": "This chest X-ray shows healthy lungs with no signs of pneumonia, fluid around the lungs (pleural effusion), or a collapsed lung (pneumothorax). The heart and major blood vessels appear normal. The bones of the chest and shoulders also look good, with the exception of surgical hardware in the left shoulder, which is likely a shoulder replacement. This is considered a normal finding if the patient has had such surgery.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125026",
+    "https://www.acr.org/-/media/ACR/Files/Practice-Parameters/Xray-Chest.pdf"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 459794,
+    "bytesOut": 459746,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:46:20.844Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

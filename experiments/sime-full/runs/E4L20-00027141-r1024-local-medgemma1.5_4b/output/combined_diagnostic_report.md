@@ -1,0 +1,75 @@
+> **Requires review by a qualified clinician before any use.**
+> This report is unreviewed AI research output. No finding, diagnosis, trend, forecast or
+> treatment suggestion in it has been checked by a human clinician, and none may be acted
+> on until one has. Recorded as `humanReview` in `run_manifest.json` (EU AI Act Art. 14).
+
+# Combined Diagnostic Report
+
+> ⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made.
+
+**Generated**: 2026-10-08T10:11:23.605Z
+**Series analyzed**: 4 (series_1, series_2, series_3, series_4)
+**Overall progression**: Improving
+**Structured output**: schema validation FAILED (2 issue(s)) — narrative fallback used
+> - progression: Invalid option: expected one of "Improving"|"Stable"|"Worsening"|"Inconclusive"
+> - progression: keyword fallback ("Improving")
+
+## Temporal Evolution Analysis
+
+{
+  "progression": "Stable | Improving",
+  "trends": [
+    {
+      "finding": "Lungs",
+      "trend": "Stable",
+      "details": "The lungs appear clear in all sessions. No findings were noted in Series 1, confirmed in Series 2, consistent across Series 3, and reiterated in Series 4. No changes or worsening occurred."
+    },
+    {
+      "finding": "Heart",
+      "trend": "Stable",
+      "details": "The heart size appears within normal limits across all sessions. Findings in Series 1, Series 2, Series 3, and Series 4 are consistent. No significant changes occurred."
+    },
+    {
+      "finding": "Mediastinum",
+      "trend": "Stable",
+      "details": "The mediastinal contours appear normal in all sessions. Findings are consistent across Series 1 (no findings), Series 2 (unremarkable), Series 3 (normal), and Series 4 (normal). No changes occurred."
+    },
+    {
+      "finding": "Pleura",
+      "trend": "Stable",
+      "details": "No pleural effusion or pneumothorax is evident in all sessions. Findings are consistent across Series 1 (no findings), Series 2 (no effusion), Series 3 (no effusion), and Series 4 (no effusion). No changes occurred."
+    },
+    {
+      "finding": "Heart Size",
+      "trend": "Stable",
+      "details": "The heart size appears within normal limits across all sessions. Findings are consistent across Series 1 (within normal limits), Series 2 (normal), Series 3 (normal), and Series 4 (within normal limits). No changes occurred."
+    },
+    {
+      "finding": "Lung Clarity",
+      "trend": "Stable",
+      "details": "The lungs appear clear with no evidence of consolidation or infiltrates in all sessions. Findings are consistent across Series 1 (clear), Series 2 (clear), Series 3 (clear), and Series 4 (clear). No changes occurred."
+    }
+  ],
+  "forecastedEvolution": "The observed trend indicates continued stability in lung clarity, heart size, mediastinal appearance, and absence of pleural effusion or pneumothorax across subsequent imaging sessions.",
+  "treatmentRecommendations": [
+    "If clinical concern persists despite multiple clear imaging sessions, further investigation with alternative imaging modalities (e.g., CT scan) or clinical reassessment may be warranted.",
+    "Regular follow-up imaging is recommended based on clinical guidelines for the patient's condition.",
+    "Maintain adherence to prescribed medical treatments."
+  ],
+  "combinedReport": "## Chest X-ray Series Analysis\n\n**Series 1: series_1**\n\n*   **Lungs:** Both lungs appear clear with no evidence of consolidation, nodules, or infiltrates.\n*   **Heart:** The heart size appears within normal limits based on the cardiothoracic ratio.\n*   **Mediastinum:** The mediastinal contours appear normal.\n*   **Pleura:** No pleural effusion or pneumothorax is evident.\n*   **Bones:** No acute bony abnormality is suggested.\n*   **Soft Tissues:** No significant soft tissue abnormality is noted.\n*   **Abnormalities:** None identified in this single view.\n*   **Impression:** No acute cardiopulmonary process observed. The chest X-ray is reported as clear.\n\n**Series 2: series_2**\n\n*   **Cardiopulmonary:** The heart size is normal. The mediastinal contours are unremarkable. The lungs are clear. There is no pleural effusion.\n*   **Osseous:** The visualized osseous structures are unremarkable.\n*   **Summary:** This chest X-ray shows a normal heart size, no signs of infection or fluid buildup in the lungs, and no visible bone problems. No acute cardiopulmonary findings are suggested by the image.\n\n**Series 3: series_3**\n\n*   A series of chest radiographs was analyzed. The findings are consistent across all images in the series.\n*   The lungs are clear, the heart size is normal, the mediastinal structures appear normal, and there are no signs of pleural effusion or pneumothorax.\n*   Based on these findings, the primary diagnosis is a normal chest radiograph.\n*   No significant discrepancies were noted between the images.\n*   The confidence level for this diagnosis is high.\n\n**Series 4: series_4**\n\n*   **Findings:**\n*   *   The heart appears within normal limits.\n*   *   Lung volumes are normal.\n*   *   The lungs are clear bilaterally, without evidence of consolidation or edema.\n*   *   The mediastinal contours are normal.\n*   *   No pleural effusion is identified.\n*   *   The ribs and clavicles are intact.\n*   *   The glenohumeral joints appear normal.\n*   **Summary:** This is a routine chest X-ray with no acute abnormalities identified. No fractures or joint abnormalities are seen.\n*   **Disclaimer:** This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}
+
+## Per-Finding Trends
+_No per-finding trends extracted_
+
+## Forecasted Evolution
+_Not extracted_
+
+## Treatment Suggestions (experimental — not clinical recommendations)
+_AI-generated suggestions for educational use only. They are not clinical recommendations and must not be acted on._
+
+_See full report above_
+
+---
+*Generated by AgenticMedicalImagingHelper v1.1.0 | Educational use only*
+*This report is AI-generated for educational purposes only. Professional clinical review required.*

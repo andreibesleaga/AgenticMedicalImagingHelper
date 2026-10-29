@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00016493/series_1/00016493_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear lung fields with no focal consolidation or infiltrates\",\n    \"Normal cardiac silhouette size and contour\",\n    \"Diaphragms well-positioned and sharp, no blunting of costophrenic angles\",\n    \"Mediastinal structures midline without widening\",\n    \"Bony thorax intact; no fractures or lytic lesions\",\n    \"A small radiopaque circular object (likely a button battery or foreign body) projected over the midline at the level of the lower thoracic spine\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Intrathoracic Foreign Body\",\n      \"description\": \"A round, radiopaque object approximately 1–2 cm in diameter is visible overlying the lower thoracic spine, likely within the esophagus or adjacent mediastinum. This is atypical for normal anatomical structures and suggests a foreign body, possibly a swallowed battery or metallic object.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows clear lungs and a normal heart size, which is reassuring. However, there is a small, round, dense object visible in the middle of the chest, near the spine. This is not a normal part of the body and may be something swallowed — such as a button battery — that needs prompt medical attention. Swallowed batteries can cause serious damage if not removed quickly. Please contact a doctor or go to the emergency room immediately for evaluation.\",\n  \"references\": [\n    \"https://www.mayoclinic.org/diseases-conditions/foreign-body-ingestion/diagnosis-treatment/drc-20372577\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4452754/\",\n    \"https://www.uptodate.com/contents/ingestion-of-foreign-bodies-and-caustic-substances-in-children\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Clear lung fields with no focal consolidation or infiltrates",
+    "Normal cardiac silhouette size and contour",
+    "Diaphragms well-positioned and sharp, no blunting of costophrenic angles",
+    "Mediastinal structures midline without widening",
+    "Bony thorax intact; no fractures or lytic lesions",
+    "A small radiopaque circular object (likely a button battery or foreign body) projected over the midline at the level of the lower thoracic spine"
+  ],
+  "abnormalities": [
+    {
+      "name": "Intrathoracic Foreign Body",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "A round, radiopaque object approximately 1–2 cm in diameter is visible overlying the lower thoracic spine, likely within the esophagus or adjacent mediastinum. This is atypical for normal anatomical structures and suggests a foreign body, possibly a swallowed battery or metallic object."
+    }
+  ],
+  "summary": "The chest X-ray shows clear lungs and a normal heart size, which is reassuring. However, there is a small, round, dense object visible in the middle of the chest, near the spine. This is not a normal part of the body and may be something swallowed — such as a button battery — that needs prompt medical attention. Swallowed batteries can cause serious damage if not removed quickly. Please contact a doctor or go to the emergency room immediately for evaluation.",
+  "references": [
+    "https://www.mayoclinic.org/diseases-conditions/foreign-body-ingestion/diagnosis-treatment/drc-20372577",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4452754/",
+    "https://www.uptodate.com/contents/ingestion-of-foreign-bodies-and-caustic-substances-in-children"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 380377,
+    "bytesOut": 343014,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:22:30.549Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

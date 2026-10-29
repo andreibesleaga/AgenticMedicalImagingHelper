@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00003980/series_2/00003980_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A right-sided central venous catheter is noted, with its tip projecting over the right superior vena cava.\",\n    \"Bilateral lung fields show diffuse interstitial opacities, more prominent in the right lower lobe, consistent with inflammatory or infiltrative processes.\",\n    \"The cardiomediastinal silhouette appears within normal limits.\",\n    \"Bilateral costophrenic angles are clear.\",\n    \"Osseous structures appear unremarkable for the imaged portions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Central Venous Catheter (CVC) in SVC\",\n      \"description\": \"A right-sided central venous catheter is appropriately positioned, with its tip projecting over the superior vena cava.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Interstitial Opacities\",\n      \"description\": \"Diffuse interstitial opacities are present bilaterally, more pronounced in the right lower lobe, suggestive of inflammation or infiltration within the lung parenchyma.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows a tube (central venous catheter) correctly placed in a large vein on the right side of the chest. There are widespread hazy areas in both lungs, especially in the bottom part of the right lung. These hazy areas suggest some kind of inflammation or fluid accumulation in the lung tissue. The heart and the main blood vessels appear normal in size and shape. The spaces around the lungs (costophrenic angles) are clear, meaning there's no significant fluid buildup there. The bones visible in the image also appear normal. Further evaluation may be needed to determine the exact cause of the lung changes.\",\n  \"references\": [\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://radiologyassistant.nl/chest/chest-x-ray-basic-interpretation\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A right-sided central venous catheter is noted, with its tip projecting over the right superior vena cava.",
+    "Bilateral lung fields show diffuse interstitial opacities, more prominent in the right lower lobe, consistent with inflammatory or infiltrative processes.",
+    "The cardiomediastinal silhouette appears within normal limits.",
+    "Bilateral costophrenic angles are clear.",
+    "Osseous structures appear unremarkable for the imaged portions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Central Venous Catheter (CVC) in SVC",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A right-sided central venous catheter is appropriately positioned, with its tip projecting over the superior vena cava."
+    },
+    {
+      "name": "Interstitial Opacities",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Diffuse interstitial opacities are present bilaterally, more pronounced in the right lower lobe, suggestive of inflammation or infiltration within the lung parenchyma."
+    }
+  ],
+  "summary": "This X-ray of the chest shows a tube (central venous catheter) correctly placed in a large vein on the right side of the chest. There are widespread hazy areas in both lungs, especially in the bottom part of the right lung. These hazy areas suggest some kind of inflammation or fluid accumulation in the lung tissue. The heart and the main blood vessels appear normal in size and shape. The spaces around the lungs (costophrenic angles) are clear, meaning there's no significant fluid buildup there. The bones visible in the image also appear normal. Further evaluation may be needed to determine the exact cause of the lung changes.",
+  "references": [
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://radiologyassistant.nl/chest/chest-x-ray-basic-interpretation"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 25251,
+    "bytesOut": 25251,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:18:21.426Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

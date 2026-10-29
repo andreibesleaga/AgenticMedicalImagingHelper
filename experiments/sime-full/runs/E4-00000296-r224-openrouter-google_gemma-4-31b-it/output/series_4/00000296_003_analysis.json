@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000296/series_4/00000296_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear and well-expanded.\",\n    \"The cardiomediastinal silhouette is within normal limits for size and shape.\",\n    \"The costophrenic angles are sharp and clear.\",\n    \"The bony thorax and soft tissues are unremarkable.\",\n    \"The trachea is midline.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray is normal. The lungs are clear, the heart is a normal size, and there are no signs of infection, fluid, or other abnormalities.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-radiograph-normal\",\n    \"https://www.acr.org/Clinical-Guidelines\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear and well-expanded.",
+    "The cardiomediastinal silhouette is within normal limits for size and shape.",
+    "The costophrenic angles are sharp and clear.",
+    "The bony thorax and soft tissues are unremarkable.",
+    "The trachea is midline."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray is normal. The lungs are clear, the heart is a normal size, and there are no signs of infection, fluid, or other abnormalities.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-normal",
+    "https://www.acr.org/Clinical-Guidelines"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24725,
+    "bytesOut": 24725,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:20:06.644Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_3/00000219_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Normal lung volumes without pneumothorax or pleural effusion.\",\n    \"Bilateral hilar and mediastinal lymphadenopathy noted.\",\n    \"Several metallic surgical clips and wires are seen in the mediastinum, consistent with prior cardiac surgery, likely coronary artery bypass grafting (CABG).\",\n    \"Cardiomediastinal silhouette is within normal limits for size.\",\n    \"No focal consolidation or interstitial abnormalities in the lung fields.\",\n    \"Bony thorax appears intact without acute fracture or destructive lesion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical Clips/Wires\",\n      \"description\": \"Multiple metallic surgical clips and sternal wires are present in the mediastinum, indicating prior cardiothoracic surgery.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Hilar/Mediastinal Lymphadenopathy\",\n      \"description\": \"Enlarged lymph nodes are observed in both hilar regions and within the mediastinum.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This X-ray shows that your lungs are of normal size and there is no air or fluid collected around them. We can see some metallic clips and wires in your chest, which are typically placed during heart surgery to help the breastbone heal and to close off blood vessels. This is a common finding after heart surgery. However, there are also enlarged lymph nodes in the central part of your chest and near the main airways of your lungs. This finding is not expected and may require further investigation by your doctor.\",\n  \"references\": [\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://radiopaedia.org/articles/sternal-sutures?lang=gb\",\n    \"https://www.uptodate.com/contents/approach-to-the-adult-with-mediastinal-lymphadenopathy\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Normal lung volumes without pneumothorax or pleural effusion.",
+    "Bilateral hilar and mediastinal lymphadenopathy noted.",
+    "Several metallic surgical clips and wires are seen in the mediastinum, consistent with prior cardiac surgery, likely coronary artery bypass grafting (CABG).",
+    "Cardiomediastinal silhouette is within normal limits for size.",
+    "No focal consolidation or interstitial abnormalities in the lung fields.",
+    "Bony thorax appears intact without acute fracture or destructive lesion."
+  ],
+  "abnormalities": [
+    {
+      "name": "Surgical Clips/Wires",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Multiple metallic surgical clips and sternal wires are present in the mediastinum, indicating prior cardiothoracic surgery."
+    },
+    {
+      "name": "Hilar/Mediastinal Lymphadenopathy",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Enlarged lymph nodes are observed in both hilar regions and within the mediastinum."
+    }
+  ],
+  "summary": "This X-ray shows that your lungs are of normal size and there is no air or fluid collected around them. We can see some metallic clips and wires in your chest, which are typically placed during heart surgery to help the breastbone heal and to close off blood vessels. This is a common finding after heart surgery. However, there are also enlarged lymph nodes in the central part of your chest and near the main airways of your lungs. This finding is not expected and may require further investigation by your doctor.",
+  "references": [
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://radiopaedia.org/articles/sternal-sutures?lang=gb",
+    "https://www.uptodate.com/contents/approach-to-the-adult-with-mediastinal-lymphadenopathy"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 380748,
+    "bytesOut": 376448,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:55:26.925Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

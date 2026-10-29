@@ -1,0 +1,72 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_4/00000219_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP upright)\",\"quality\":\"Fair\",\"findings\":[\"Bilateral lung fields visualized with mild increased interstitial markings, more pronounced in the lower zones.\",\"Cardiac silhouette appears enlarged with a cardiothoracic ratio that seems increased (cardiomegaly).\",\"Prominent rounded density projecting over the left lower cardiac border/left hemidiaphragm region, possibly representing an epicardial fat pad, hiatal hernia, or pericardial structure - correlation with prior imaging recommended.\",\"Mediastinal contours appear widened, partly due to cardiac enlargement.\",\"No obvious focal consolidation, pleural effusion, or pneumothorax identified.\",\"Degenerative changes may be present in visualized thoracic spine.\",\"Surgical clips or sutures noted in the right paratracheal/mediastinal region (vertical radiopaque markings), suggesting prior surgical intervention.\",\"Both humeral heads and shoulder girdles are within normal limits.\",\"Soft tissue and bony structures of the chest wall appear unremarkable aside from noted findings.\"],\"abnormalities\":[{\"name\":\"Cardiomegaly\",\"description\":\"The cardiac silhouette appears enlarged with increased cardiothoracic ratio, suggesting possible cardiomegaly which could be due to various causes including hypertensive heart disease, valvular disease, or cardiomyopathy.\",\"severity\":\"Moderate\",\"confidence\":65},{\"name\":\"Left lower cardiac border round density\",\"description\":\"A well-defined rounded opacity is seen overlying the left lower heart border/left hemidiaphragm, which could represent a pericardial fat pad, hiatal hernia, or less likely a mass. Further correlation with lateral view or CT is recommended for characterization.\",\"severity\":\"Mild\",\"confidence\":50},{\"name\":\"Increased interstitial markings\",\"description\":\"Mild increased bronchovascular/interstitial markings noted bilaterally, which may reflect mild pulmonary vascular congestion, early interstitial lung disease, or chronic bronchitis changes.\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Post-surgical changes\",\"description\":\"Linear radiopaque markings in the central mediastinal/paratracheal region suggest prior surgical clips or sutures, indicating possible previous cardiothoracic surgery.\",\"severity\":\"Mild\",\"confidence\":55}],\"summary\":\"This chest X-ray shows that the heart appears larger than normal, a condition called cardiomegaly, which can happen due to high blood pressure, heart valve problems, or weakened heart muscle. There is also a rounded shadow near the lower left side of the heart that could be a fatty deposit around the heart, part of the stomach pushing up through the diaphragm (a hiatal hernia), or something else that would need more testing (like a CT scan) to identify clearly. The lungs show some mildly increased markings, which can be seen with mild fluid buildup or chronic lung changes, but there's no sign of pneumonia, collapsed lung, or large fluid collections around the lungs. There also appear to be surgical clips, suggesting the patient may have had heart or chest surgery before. These findings should be discussed with a doctor, who may recommend further imaging or tests to get a clearer picture of what's causing these changes.\",\"references\":[\"https://radiopaedia.org/articles/cardiomegaly\",\"https://pubs.rsna.org/doi/10.1148/radiol.2019182716\",\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Fair",
+  "findings": [
+    "Bilateral lung fields visualized with mild increased interstitial markings, more pronounced in the lower zones.",
+    "Cardiac silhouette appears enlarged with a cardiothoracic ratio that seems increased (cardiomegaly).",
+    "Prominent rounded density projecting over the left lower cardiac border/left hemidiaphragm region, possibly representing an epicardial fat pad, hiatal hernia, or pericardial structure - correlation with prior imaging recommended.",
+    "Mediastinal contours appear widened, partly due to cardiac enlargement.",
+    "No obvious focal consolidation, pleural effusion, or pneumothorax identified.",
+    "Degenerative changes may be present in visualized thoracic spine.",
+    "Surgical clips or sutures noted in the right paratracheal/mediastinal region (vertical radiopaque markings), suggesting prior surgical intervention.",
+    "Both humeral heads and shoulder girdles are within normal limits.",
+    "Soft tissue and bony structures of the chest wall appear unremarkable aside from noted findings."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 65,
+      "description": "The cardiac silhouette appears enlarged with increased cardiothoracic ratio, suggesting possible cardiomegaly which could be due to various causes including hypertensive heart disease, valvular disease, or cardiomyopathy."
+    },
+    {
+      "name": "Left lower cardiac border round density",
+      "severity": "Mild",
+      "confidence": 50,
+      "description": "A well-defined rounded opacity is seen overlying the left lower heart border/left hemidiaphragm, which could represent a pericardial fat pad, hiatal hernia, or less likely a mass. Further correlation with lateral view or CT is recommended for characterization."
+    },
+    {
+      "name": "Increased interstitial markings",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "Mild increased bronchovascular/interstitial markings noted bilaterally, which may reflect mild pulmonary vascular congestion, early interstitial lung disease, or chronic bronchitis changes."
+    },
+    {
+      "name": "Post-surgical changes",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Linear radiopaque markings in the central mediastinal/paratracheal region suggest prior surgical clips or sutures, indicating possible previous cardiothoracic surgery."
+    }
+  ],
+  "summary": "This chest X-ray shows that the heart appears larger than normal, a condition called cardiomegaly, which can happen due to high blood pressure, heart valve problems, or weakened heart muscle. There is also a rounded shadow near the lower left side of the heart that could be a fatty deposit around the heart, part of the stomach pushing up through the diaphragm (a hiatal hernia), or something else that would need more testing (like a CT scan) to identify clearly. The lungs show some mildly increased markings, which can be seen with mild fluid buildup or chronic lung changes, but there's no sign of pneumonia, collapsed lung, or large fluid collections around the lungs. There also appear to be surgical clips, suggesting the patient may have had heart or chest surgery before. These findings should be discussed with a doctor, who may recommend further imaging or tests to get a clearer picture of what's causing these changes.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://pubs.rsna.org/doi/10.1148/radiol.2019182716",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 392020,
+    "bytesOut": 388042,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T10:29:45.799Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

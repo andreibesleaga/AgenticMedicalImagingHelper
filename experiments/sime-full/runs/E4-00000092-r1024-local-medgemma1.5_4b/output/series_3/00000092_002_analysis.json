@@ -1,0 +1,63 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_3/00000092_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"Posteroanterior (PA) Chest X-ray\",\n  \"anatomyRegion\": \"Chest\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral pleural effusions with associated lung base atelectasis.\",\n    \"Cardiomegaly.\",\n    \"Mild pulmonary vascular congestion.\",\n    \"Calcified granuloma in the right upper lobe.\",\n    \"No pneumothorax.\",\n    \"No acute bony abnormality.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Bilateral pleural effusions. The right effusion is larger than the left. There is also evidence of right lower lobe atelectasis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The heart appears enlarged.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Pulmonary Vascular Congestion\",\n      \"description\": \"There is mild increase in interstitial markings suggestive of mild pulmonary vascular congestion.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows fluid buildup around the lungs (pleural effusion), particularly on the right, and associated lung collapse at the bottom (atelectasis). The heart is slightly larger than normal (cardiomegaly). There is also some mild thickening of the blood vessels in the lungs, which can be seen with fluid overload. A small, old scar (granuloma) is present in the upper right lung. No collapsed lung (pneumothorax) is seen.\",\n  \"references\": [\n    \"1. https://radiologyinfo.org/en/info.codes.3275\",\n    \"2. https://radiologyinfo.org/en/info.codes.7110\",\n    \"3. https://radiologyinfo.org/en/info.codes.7100\"\n  ]\n}",
+  "modality": "Posteroanterior (PA) Chest X-ray",
+  "anatomyRegion": "Chest",
+  "quality": "Good",
+  "findings": [
+    "Bilateral pleural effusions with associated lung base atelectasis.",
+    "Cardiomegaly.",
+    "Mild pulmonary vascular congestion.",
+    "Calcified granuloma in the right upper lobe.",
+    "No pneumothorax.",
+    "No acute bony abnormality."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 100,
+      "description": "Bilateral pleural effusions. The right effusion is larger than the left. There is also evidence of right lower lobe atelectasis."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 100,
+      "description": "The heart appears enlarged."
+    },
+    {
+      "name": "Pulmonary Vascular Congestion",
+      "severity": "Mild",
+      "confidence": 100,
+      "description": "There is mild increase in interstitial markings suggestive of mild pulmonary vascular congestion."
+    }
+  ],
+  "summary": "The chest X-ray shows fluid buildup around the lungs (pleural effusion), particularly on the right, and associated lung collapse at the bottom (atelectasis). The heart is slightly larger than normal (cardiomegaly). There is also some mild thickening of the blood vessels in the lungs, which can be seen with fluid overload. A small, old scar (granuloma) is present in the upper right lung. No collapsed lung (pneumothorax) is seen.",
+  "references": [
+    "1. https://radiologyinfo.org/en/info.codes.3275",
+    "2. https://radiologyinfo.org/en/info.codes.7110",
+    "3. https://radiologyinfo.org/en/info.codes.7100"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 400591,
+    "bytesOut": 305467,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T09:50:10.747Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

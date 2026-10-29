@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000067/series_2/00000067_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear.\",\n    \"There is a linear opacity in the left lower lobe, likely representing atelectasis.\",\n    \"The heart size is normal.\",\n    \"The mediastinal contours are unremarkable.\",\n    \"No pleural effusion is seen.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This is a chest X-ray image. The lungs appear clear except for a small linear density in the left lower lung, which is common and often due to minor lung collapse. The heart and major blood vessels look normal, and there's no sign of fluid around the lungs. This is a routine chest X-ray.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/find-an-article/chest-x-ray/\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5557486/\",\n    \"https://www.atsjournals.org/doi/full/10.1164/ajr.288.1.1025\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear.",
+    "There is a linear opacity in the left lower lobe, likely representing atelectasis.",
+    "The heart size is normal.",
+    "The mediastinal contours are unremarkable.",
+    "No pleural effusion is seen."
+  ],
+  "abnormalities": [],
+  "summary": "This is a chest X-ray image. The lungs appear clear except for a small linear density in the left lower lung, which is common and often due to minor lung collapse. The heart and major blood vessels look normal, and there's no sign of fluid around the lungs. This is a routine chest X-ray.",
+  "references": [
+    "https://www.radiologyinfo.org/find-an-article/chest-x-ray/",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5557486/",
+    "https://www.atsjournals.org/doi/full/10.1164/ajr.288.1.1025"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 422744,
+    "bytesOut": 321005,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T09:42:37.334Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

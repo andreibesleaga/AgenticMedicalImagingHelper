@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000239/series_2/00000239_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear lungs bilaterally without focal consolidation, interstitial edema, or pleural effusion.\",\n    \"Normal cardiomediastinal silhouette, cardiac size, and hilar contours.\",\n    \"Prominent crescent-shaped radiolucency beneath the right hemidiaphragm outlining the superior surface of the liver, indicative of free intraperitoneal gas.\",\n    \"Normal gastric bubble with an air-fluid level identified beneath the left hemidiaphragm.\",\n    \"Visualized osseous structures of the thorax, including ribs, clavicles, and spine, appear intact without acute abnormality.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pneumoperitoneum\",\n      \"description\": \"Well-defined crescentic collection of free air visualized under the right hemidiaphragm, highly suspicious for gastrointestinal tract perforation in the appropriate clinical setting.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray demonstrates free air trapped beneath the right diaphragm (the muscle separating the chest from the abdomen), a condition known as pneumoperitoneum. This finding typically indicates a leak or perforation in the stomach or intestines and represents a potential medical emergency that requires prompt evaluation by a surgical team.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pneumoperitoneum\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK544342/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Clear lungs bilaterally without focal consolidation, interstitial edema, or pleural effusion.",
+    "Normal cardiomediastinal silhouette, cardiac size, and hilar contours.",
+    "Prominent crescent-shaped radiolucency beneath the right hemidiaphragm outlining the superior surface of the liver, indicative of free intraperitoneal gas.",
+    "Normal gastric bubble with an air-fluid level identified beneath the left hemidiaphragm.",
+    "Visualized osseous structures of the thorax, including ribs, clavicles, and spine, appear intact without acute abnormality."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pneumoperitoneum",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Well-defined crescentic collection of free air visualized under the right hemidiaphragm, highly suspicious for gastrointestinal tract perforation in the appropriate clinical setting."
+    }
+  ],
+  "summary": "The chest X-ray demonstrates free air trapped beneath the right diaphragm (the muscle separating the chest from the abdomen), a condition known as pneumoperitoneum. This finding typically indicates a leak or perforation in the stomach or intestines and represents a potential medical emergency that requires prompt evaluation by a surgical team.",
+  "references": [
+    "https://radiopaedia.org/articles/pneumoperitoneum",
+    "https://www.ncbi.nlm.nih.gov/books/NBK544342/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24554,
+    "bytesOut": 24554,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:38:12.012Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

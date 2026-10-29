@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_1/img_16_00024750_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are well-inflated and clear with no focal consolidation, pleural effusion, or pneumothorax identified.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Hilar regions appear unremarkable.\",\n    \"Diaphragms are intact and clear costophrenic angles are noted bilaterally.\",\n    \"Osseous structures (ribs, clavicles, thoracic spine) appear intact with no acute abnormalities.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray shows healthy-looking lungs without any signs of infection, fluid, or collapsed lung. The heart and surrounding structures appear to be of normal size and shape. The bones in the chest also look normal.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestrad\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2018170131\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are well-inflated and clear with no focal consolidation, pleural effusion, or pneumothorax identified.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Hilar regions appear unremarkable.",
+    "Diaphragms are intact and clear costophrenic angles are noted bilaterally.",
+    "Osseous structures (ribs, clavicles, thoracic spine) appear intact with no acute abnormalities."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray shows healthy-looking lungs without any signs of infection, fluid, or collapsed lung. The heart and surrounding structures appear to be of normal size and shape. The bones in the chest also look normal.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestrad",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2018170131"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23874,
+    "bytesOut": 23874,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:56:36.256Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

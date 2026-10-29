@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_1/img_03_00019238_009.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Centrally inserted catheter with the tip projecting over the superior vena cava, likely a PICC line.\",\n    \"Nasogastric tube is coiled in the distal esophagus/proximal stomach.\",\n    \"Peripheral venous catheters are noted in both shoulders/arms.\",\n    \"Lung fields appear clear bilaterally without evidence of pneumothorax or significant pleural effusion.\",\n    \"Heart size appears within normal limits.\",\n    \"Diaphragms are intact and clear costophrenic angles are seen.\",\n    \"Bony thorax and soft tissues appear unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Nasogastric tube malposition\",\n      \"description\": \"The nasogastric tube is coiled in the distal esophagus/proximal stomach, indicating malposition. It does not appear to be advanced into the duodenum.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a catheter (likely a PICC line) properly positioned with its tip in a large vein near the heart. There are also IV lines in both arms. However, a feeding tube (nasogastric tube) is coiled in the lower part of the food pipe or upper stomach, meaning it is not in the correct position for feeding. The lungs, heart, and surrounding bones appear normal. The coiled feeding tube should be repositioned to ensure proper function and prevent complications.\",\n  \"references\": [\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.294085734\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3216447/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Centrally inserted catheter with the tip projecting over the superior vena cava, likely a PICC line.",
+    "Nasogastric tube is coiled in the distal esophagus/proximal stomach.",
+    "Peripheral venous catheters are noted in both shoulders/arms.",
+    "Lung fields appear clear bilaterally without evidence of pneumothorax or significant pleural effusion.",
+    "Heart size appears within normal limits.",
+    "Diaphragms are intact and clear costophrenic angles are seen.",
+    "Bony thorax and soft tissues appear unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Nasogastric tube malposition",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "The nasogastric tube is coiled in the distal esophagus/proximal stomach, indicating malposition. It does not appear to be advanced into the duodenum."
+    }
+  ],
+  "summary": "The chest X-ray shows a catheter (likely a PICC line) properly positioned with its tip in a large vein near the heart. There are also IV lines in both arms. However, a feeding tube (nasogastric tube) is coiled in the lower part of the food pipe or upper stomach, meaning it is not in the correct position for feeding. The lungs, heart, and surrounding bones appear normal. The coiled feeding tube should be repositioned to ensure proper function and prevent complications.",
+  "references": [
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.294085734",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3216447/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 450035,
+    "bytesOut": 449847,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:34:15.950Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

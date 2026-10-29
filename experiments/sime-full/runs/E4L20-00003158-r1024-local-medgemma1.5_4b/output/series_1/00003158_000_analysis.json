@@ -1,0 +1,39 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00003158/series_1/00003158_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear bilaterally.\",\n    \"The heart size is normal.\",\n    \"The mediastinum is unremarkable.\",\n    \"The bones appear intact.\",\n    \"No pleural effusion is seen.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray appears normal. The lungs are clear, the heart size is normal, and there are no visible fractures or fluid collections.\",\n  \"references\": []\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear bilaterally.",
+    "The heart size is normal.",
+    "The mediastinum is unremarkable.",
+    "The bones appear intact.",
+    "No pleural effusion is seen."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray appears normal. The lungs are clear, the heart size is normal, and there are no visible fractures or fluid collections.",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 337838,
+    "bytesOut": 266679,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T09:03:44.791Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

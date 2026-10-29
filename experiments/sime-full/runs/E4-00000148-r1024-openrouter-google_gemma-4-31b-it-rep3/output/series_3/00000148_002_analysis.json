@@ -1,0 +1,41 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_3/00000148_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Excellent\",\n  \"findings\": [\n    \"Lungs are clear without evidence of consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Bony structures of the thorax are intact.\",\n    \"Presence of a right-sided implanted venous access device (port-a-cath) with the reservoir located in the right chest wall and the catheter tip terminating in the superior vena cava.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray is overall normal. The lungs are clear, and the heart size is normal. A medical device called a 'port' (a small implanted access point for medications or blood draws) is visible on the right side of the chest and is positioned correctly.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-x-ray\",\n    \"https://radiopaedia.org/articles/port-a-cath\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Excellent",
+  "findings": [
+    "Lungs are clear without evidence of consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Bony structures of the thorax are intact.",
+    "Presence of a right-sided implanted venous access device (port-a-cath) with the reservoir located in the right chest wall and the catheter tip terminating in the superior vena cava."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray is overall normal. The lungs are clear, and the heart size is normal. A medical device called a 'port' (a small implanted access point for medications or blood draws) is visible on the right side of the chest and is positioned correctly.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-x-ray",
+    "https://radiopaedia.org/articles/port-a-cath"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 453156,
+    "bytesOut": 345726,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:03:09.109Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

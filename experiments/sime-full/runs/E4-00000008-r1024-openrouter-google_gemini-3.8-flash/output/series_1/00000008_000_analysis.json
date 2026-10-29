@@ -1,0 +1,63 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000008/series_1/00000008_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA view)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear bilaterally without evidence of focal consolidation, mass, or pneumothorax.\",\n    \"Costophrenic angles and hemidiaphragms are sharp and well-defined.\",\n    \"Cardiomediastinal silhouette demonstrates mild cardiac enlargement (cardiothoracic ratio approximately 0.52).\",\n    \"Thoracic aorta is mildly tortuous and elongated, consistent with age-related or hypertensive changes.\",\n    \"Well-circumscribed, dense calcification noted in the left perihilar region, consistent with a benign calcified granuloma or calcified lymph node.\",\n    \"Osseous structures show mild degenerative changes in the thoracic spine without acute fracture.\",\n    \"Radio-opaque belt buckle and strap artifact projected over the lower abdomen.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Mild Cardiomegaly\",\n      \"description\": \"Cardiothoracic ratio is mildly increased, suggesting mild enlargement of the cardiac silhouette.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Aortic Tortuosity\",\n      \"description\": \"Prominent and slightly elongated thoracic aorta, typically associated with aging or chronic hypertension.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Calcified Granuloma\",\n      \"description\": \"Dense, small, well-defined calcified focus in the left hilar region, characteristic of prior healed infection (such as histoplasmosis or tuberculosis).\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows lungs that are clear of acute infection or fluid. The heart appears mildly enlarged (cardiomegaly), and the main artery leading from the heart (the aorta) is slightly curvy or unfolded, which is common with normal aging or high blood pressure. A small, benign calcified spot (granuloma) is seen near the center of the left lung, which is a harmless scar from an old, resolved infection. A belt buckle is also visible across the lower portion of the image.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/pulmonary-granuloma\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA view)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear bilaterally without evidence of focal consolidation, mass, or pneumothorax.",
+    "Costophrenic angles and hemidiaphragms are sharp and well-defined.",
+    "Cardiomediastinal silhouette demonstrates mild cardiac enlargement (cardiothoracic ratio approximately 0.52).",
+    "Thoracic aorta is mildly tortuous and elongated, consistent with age-related or hypertensive changes.",
+    "Well-circumscribed, dense calcification noted in the left perihilar region, consistent with a benign calcified granuloma or calcified lymph node.",
+    "Osseous structures show mild degenerative changes in the thoracic spine without acute fracture.",
+    "Radio-opaque belt buckle and strap artifact projected over the lower abdomen."
+  ],
+  "abnormalities": [
+    {
+      "name": "Mild Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Cardiothoracic ratio is mildly increased, suggesting mild enlargement of the cardiac silhouette."
+    },
+    {
+      "name": "Aortic Tortuosity",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Prominent and slightly elongated thoracic aorta, typically associated with aging or chronic hypertension."
+    },
+    {
+      "name": "Calcified Granuloma",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "Dense, small, well-defined calcified focus in the left hilar region, characteristic of prior healed infection (such as histoplasmosis or tuberculosis)."
+    }
+  ],
+  "summary": "The chest X-ray shows lungs that are clear of acute infection or fluid. The heart appears mildly enlarged (cardiomegaly), and the main artery leading from the heart (the aorta) is slightly curvy or unfolded, which is common with normal aging or high blood pressure. A small, benign calcified spot (granuloma) is seen near the center of the left lung, which is a harmless scar from an old, resolved infection. A belt buckle is also visible across the lower portion of the image.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/pulmonary-granuloma"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 410034,
+    "bytesOut": 406526,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:15:38.035Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

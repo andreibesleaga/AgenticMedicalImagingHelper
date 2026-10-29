@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00027230/series_4/00027230_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear with no pleural effusion or pneumothorax.\",\n    \"The heart size is normal.\",\n    \"The mediastinal contours are unremarkable.\",\n    \"There is a focal opacity in the right lower lobe, likely representing pneumonia.\",\n    \"No bony abnormalities are seen.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right lower lobe opacity\",\n      \"description\": \"A focal area of increased density is noted in the right lower lobe, consistent with consolidation, suggestive of pneumonia.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This chest X-ray shows a potential infection in the right lung. There is a cloudy area in the bottom part of the right lung, which could be pneumonia. The rest of the findings appear normal.\",\n  \"references\": [\n    \"https://www.google.com/search?q=chest+x-ray+pneumonia\",\n    \"https://radiology.rsna.org/view/chest-x-ray-101\",\n    \"https://www.google.com/search?q=interpretation+of+chest+x-ray+opacity\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear with no pleural effusion or pneumothorax.",
+    "The heart size is normal.",
+    "The mediastinal contours are unremarkable.",
+    "There is a focal opacity in the right lower lobe, likely representing pneumonia.",
+    "No bony abnormalities are seen."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lower lobe opacity",
+      "severity": "Moderate",
+      "confidence": 100,
+      "description": "A focal area of increased density is noted in the right lower lobe, consistent with consolidation, suggestive of pneumonia."
+    }
+  ],
+  "summary": "This chest X-ray shows a potential infection in the right lung. There is a cloudy area in the bottom part of the right lung, which could be pneumonia. The rest of the findings appear normal.",
+  "references": [
+    "https://www.google.com/search?q=chest+x-ray+pneumonia",
+    "https://radiology.rsna.org/view/chest-x-ray-101",
+    "https://www.google.com/search?q=interpretation+of+chest+x-ray+opacity"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 362289,
+    "bytesOut": 276181,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:13:57.933Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

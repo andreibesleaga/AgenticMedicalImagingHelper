@@ -1,0 +1,59 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00003980/series_3/00003980_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right lung shows diffuse reticulonodular opacities, particularly prominent in the lower and mid zones.\",\n    \"Left lung appears clear with normal vascular markings.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Central venous catheter (CVC) is noted with its tip projected over the superior vena cava, appropriately positioned.\",\n    \"A nasogastric tube (NGT) is seen extending into the stomach.\",\n    \"Surgical fixation hardware is noted in the superior aspect of the right humerus, consistent with a previous fracture repair.\",\n    \"No pleural effusion or pneumothorax identified.\",\n    \"Diaphragms are clear and costophrenic angles are sharp.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Lung Opacities\",\n      \"description\": \"Diffuse reticulonodular opacities are present throughout the right lung, more pronounced in the lower and mid lung fields. This pattern suggests interstitial or alveolar infiltrates, possibly related to infection, inflammation, or aspiration.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Right Humeral Hardware\",\n      \"description\": \"Surgical fixation hardware is visible in the right superior humerus, indicating a prior orthopedic intervention.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This chest X-ray shows changes in the right lung that look like a widespread hazy or lacy pattern, especially in the middle and lower parts. This could be due to several things, such as an infection, inflammation, or irritation from inhaling something. The left lung, heart, and surrounding structures appear normal. There's a tube for medication delivery (central venous catheter) correctly placed, and a feeding tube (nasogastric tube) is also visible in the stomach. Metal hardware is present in the upper part of the right arm, which is typically from a past bone repair. These findings suggest that the right lung is not entirely healthy, and further evaluation might be needed to understand the cause of the changes.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.274065099\",\n    \"https://radiopaedia.org/articles/reticulonodular-pattern\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMra1502693\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right lung shows diffuse reticulonodular opacities, particularly prominent in the lower and mid zones.",
+    "Left lung appears clear with normal vascular markings.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Central venous catheter (CVC) is noted with its tip projected over the superior vena cava, appropriately positioned.",
+    "A nasogastric tube (NGT) is seen extending into the stomach.",
+    "Surgical fixation hardware is noted in the superior aspect of the right humerus, consistent with a previous fracture repair.",
+    "No pleural effusion or pneumothorax identified.",
+    "Diaphragms are clear and costophrenic angles are sharp."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Lung Opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse reticulonodular opacities are present throughout the right lung, more pronounced in the lower and mid lung fields. This pattern suggests interstitial or alveolar infiltrates, possibly related to infection, inflammation, or aspiration."
+    },
+    {
+      "name": "Right Humeral Hardware",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Surgical fixation hardware is visible in the right superior humerus, indicating a prior orthopedic intervention."
+    }
+  ],
+  "summary": "This chest X-ray shows changes in the right lung that look like a widespread hazy or lacy pattern, especially in the middle and lower parts. This could be due to several things, such as an infection, inflammation, or irritation from inhaling something. The left lung, heart, and surrounding structures appear normal. There's a tube for medication delivery (central venous catheter) correctly placed, and a feeding tube (nasogastric tube) is also visible in the stomach. Metal hardware is present in the upper part of the right arm, which is typically from a past bone repair. These findings suggest that the right lung is not entirely healthy, and further evaluation might be needed to understand the cause of the changes.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.274065099",
+    "https://radiopaedia.org/articles/reticulonodular-pattern",
+    "https://www.nejm.org/doi/full/10.1056/NEJMra1502693"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 388373,
+    "bytesOut": 383318,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:05:09.948Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

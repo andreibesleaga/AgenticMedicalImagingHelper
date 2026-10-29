@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00003980/series_1/00003980_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A Port-A-Cath is seen overlying the right upper chest with its catheter tip projecting over the right lower lobe, not following a typical central venous course.\",\n    \"The heart size is within normal limits.\",\n    \"There are bilateral diffuse interstitial and patchy airspace opacities, right greater than left.\",\n    \"No pleural effusion or pneumothorax is identified.\",\n    \"Osseous structures are unremarkable for acute abnormality.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Malpositioned Port-A-Cath\",\n      \"description\": \"The catheter of the port courses inferiorly from the right upper chest, with its tip projecting over the right lower lobe, outside of the normal central venous system.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Bilateral lung opacities\",\n      \"description\": \"Diffuse interstitial and patchy airspace opacities are present bilaterally, which could represent infection, edema, or hemorrhage.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a Port-A-Cath in the right chest. However, the tube (catheter) attached to it is not in the correct position within a large vein; instead, it appears to be misdirected downwards into the right lung area. Additionally, there are hazy areas in both lungs, which could be due to infection, fluid accumulation, or other causes. No collapsed lung or fluid around the lungs is seen. The heart size appears normal. The misplaced port needs immediate medical evaluation, and the lung findings should be correlated with the patient's symptoms.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/totally-implantable-venous-access-devices-1\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2015150092\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A Port-A-Cath is seen overlying the right upper chest with its catheter tip projecting over the right lower lobe, not following a typical central venous course.",
+    "The heart size is within normal limits.",
+    "There are bilateral diffuse interstitial and patchy airspace opacities, right greater than left.",
+    "No pleural effusion or pneumothorax is identified.",
+    "Osseous structures are unremarkable for acute abnormality."
+  ],
+  "abnormalities": [
+    {
+      "name": "Malpositioned Port-A-Cath",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "The catheter of the port courses inferiorly from the right upper chest, with its tip projecting over the right lower lobe, outside of the normal central venous system."
+    },
+    {
+      "name": "Bilateral lung opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse interstitial and patchy airspace opacities are present bilaterally, which could represent infection, edema, or hemorrhage."
+    }
+  ],
+  "summary": "The chest X-ray shows a Port-A-Cath in the right chest. However, the tube (catheter) attached to it is not in the correct position within a large vein; instead, it appears to be misdirected downwards into the right lung area. Additionally, there are hazy areas in both lungs, which could be due to infection, fluid accumulation, or other causes. No collapsed lung or fluid around the lungs is seen. The heart size appears normal. The misplaced port needs immediate medical evaluation, and the lung findings should be correlated with the patient's symptoms.",
+  "references": [
+    "https://radiopaedia.org/articles/totally-implantable-venous-access-devices-1",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2015150092"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 395727,
+    "bytesOut": 391354,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:34:59.127Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

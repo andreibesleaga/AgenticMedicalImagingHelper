@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00003980/series_2/00003980_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Centrally placed endotracheal tube with the tip projected at the level of the clavicles, likely in the right main bronchus.\",\n    \"Bilateral diffuse patchy opacities, more prominent in the right lung.\",\n    \"Cardiomediastinal contours are unremarkable.\",\n    \"Diaphragms are intact and clear costophrenic angles.\",\n    \"Osseous structures appear unremarkable.\",\n    \"No evidence of pneumothorax or pleural effusion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Endotracheal tube malposition\",\n      \"description\": \"The endotracheal tube appears to be positioned too deep, with its tip projected towards the right main bronchus, which can lead to selective intubation of the right lung.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Bilateral patchy opacities\",\n      \"description\": \"Diffuse patchy opacities are noted in both lung fields, more pronounced in the right lung, suggestive of infiltrates, possibly due to atelectasis, pneumonia, or pulmonary edema.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This X-ray shows that the breathing tube (endotracheal tube) is placed too deeply and appears to be in the right lung's main airway. This can cause the left lung not to get enough air. There are also patchy cloudy areas in both lungs, especially on the right, which might be due to inflammation, fluid, or collapsed lung tissue. These findings need further medical evaluation. \\\"Opacities\\\" refer to areas that appear white or cloudy on an X-ray, indicating something is blocking the X-rays more than usual, like fluid or dense tissue.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/endotracheal-tube-1\",\n    \"https://radiopaedia.org/articles/pulmonary-infiltrate\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4960309/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Centrally placed endotracheal tube with the tip projected at the level of the clavicles, likely in the right main bronchus.",
+    "Bilateral diffuse patchy opacities, more prominent in the right lung.",
+    "Cardiomediastinal contours are unremarkable.",
+    "Diaphragms are intact and clear costophrenic angles.",
+    "Osseous structures appear unremarkable.",
+    "No evidence of pneumothorax or pleural effusion."
+  ],
+  "abnormalities": [
+    {
+      "name": "Endotracheal tube malposition",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The endotracheal tube appears to be positioned too deep, with its tip projected towards the right main bronchus, which can lead to selective intubation of the right lung."
+    },
+    {
+      "name": "Bilateral patchy opacities",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Diffuse patchy opacities are noted in both lung fields, more pronounced in the right lung, suggestive of infiltrates, possibly due to atelectasis, pneumonia, or pulmonary edema."
+    }
+  ],
+  "summary": "This X-ray shows that the breathing tube (endotracheal tube) is placed too deeply and appears to be in the right lung's main airway. This can cause the left lung not to get enough air. There are also patchy cloudy areas in both lungs, especially on the right, which might be due to inflammation, fluid, or collapsed lung tissue. These findings need further medical evaluation. \"Opacities\" refer to areas that appear white or cloudy on an X-ray, indicating something is blocking the X-rays more than usual, like fluid or dense tissue.",
+  "references": [
+    "https://radiopaedia.org/articles/endotracheal-tube-1",
+    "https://radiopaedia.org/articles/pulmonary-infiltrate",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4960309/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 402595,
+    "bytesOut": 398703,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:05:04.507Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

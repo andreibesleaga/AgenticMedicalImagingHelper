@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_4/00000148_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right internal jugular central venous catheter is present with its tip terminating in the mid superior vena cava.\",\n    \"A small right pleural effusion is present, with blunting of the right costophrenic angle and a meniscus sign.\",\n    \"Lungs are otherwise clear. No focal consolidation, pneumothorax, or large pleural effusion on the left.\",\n    \"Cardiomediastinal silhouette is normal in size and contour.\",\n    \"Osseous structures are intact. No acute displaced rib fractures identified.\",\n    \"The left costophrenic angle is sharp.\",\n    \"A right-sided implanted port or similar medical device is noted overlying the right upper lung zone.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Pleural Effusion\",\n      \"description\": \"Blunting of the right costophrenic angle with a meniscus sign, consistent with a small amount of fluid in the right pleural space.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Medical Device\",\n      \"description\": \"Right internal jugular central venous catheter with tip in the mid SVC. Right-sided implanted port or similar device.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a small amount of fluid in the lower right part of the chest cavity, known as a small right pleural effusion. The lungs are otherwise clear of infection or other major problems. There are medical devices visible, including a central venous line entering from the right neck and an implanted port on the right side of the chest, both of which appear to be in appropriate positions. The heart and bones look normal.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/central-venous-catheter\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Right internal jugular central venous catheter is present with its tip terminating in the mid superior vena cava.",
+    "A small right pleural effusion is present, with blunting of the right costophrenic angle and a meniscus sign.",
+    "Lungs are otherwise clear. No focal consolidation, pneumothorax, or large pleural effusion on the left.",
+    "Cardiomediastinal silhouette is normal in size and contour.",
+    "Osseous structures are intact. No acute displaced rib fractures identified.",
+    "The left costophrenic angle is sharp.",
+    "A right-sided implanted port or similar medical device is noted overlying the right upper lung zone."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Pleural Effusion",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Blunting of the right costophrenic angle with a meniscus sign, consistent with a small amount of fluid in the right pleural space."
+    },
+    {
+      "name": "Medical Device",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Right internal jugular central venous catheter with tip in the mid SVC. Right-sided implanted port or similar device."
+    }
+  ],
+  "summary": "The chest X-ray shows a small amount of fluid in the lower right part of the chest cavity, known as a small right pleural effusion. The lungs are otherwise clear of infection or other major problems. There are medical devices visible, including a central venous line entering from the right neck and an implanted port on the right side of the chest, both of which appear to be in appropriate positions. The heart and bones look normal.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/central-venous-catheter"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 457930,
+    "bytesOut": 457674,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:21:53.519Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

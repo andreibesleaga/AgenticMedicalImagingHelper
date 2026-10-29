@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_4/00000148_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Well-defined, round, radiopaque object located in the left upper lung field, consistent with a foreign body or medical device.\",\n    \"Lung fields are otherwise clear without evidence of consolidation, mass, or effusion.\",\n    \"Cardiac silhouette and mediastinal contours appear within normal limits.\",\n    \"Diaphragm and costophrenic angles are sharp and unobscured.\",\n    \"Bony thorax including ribs, clavicles, and spine show no acute fractures or lytic lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Foreign Body in Left Lung\",\n      \"description\": \"A circular, dense object is visible in the left upper lobe, likely an implanted device (e.g., coil, marker) or retained foreign material. It measures approximately 1.5–2 cm in diameter and is suspended by a thin wire or suture, suggesting intentional placement rather than accidental ingestion.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a small, round, metallic-looking object in the left lung, which appears to be intentionally placed — possibly a medical device like a coil or marker used for prior procedures. The rest of the lungs, heart, and bones look normal. This finding is not typically dangerous unless it causes symptoms or complications, but should be reviewed by your doctor to confirm its nature and purpose.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/foreign-body-aspiration\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK560678/\",\n    \"https://www.mayoclinic.org/tests-procedures/chest-x-ray/about/pac-20393467\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Well-defined, round, radiopaque object located in the left upper lung field, consistent with a foreign body or medical device.",
+    "Lung fields are otherwise clear without evidence of consolidation, mass, or effusion.",
+    "Cardiac silhouette and mediastinal contours appear within normal limits.",
+    "Diaphragm and costophrenic angles are sharp and unobscured.",
+    "Bony thorax including ribs, clavicles, and spine show no acute fractures or lytic lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Foreign Body in Left Lung",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "A circular, dense object is visible in the left upper lobe, likely an implanted device (e.g., coil, marker) or retained foreign material. It measures approximately 1.5–2 cm in diameter and is suspended by a thin wire or suture, suggesting intentional placement rather than accidental ingestion."
+    }
+  ],
+  "summary": "The chest X-ray shows a small, round, metallic-looking object in the left lung, which appears to be intentionally placed — possibly a medical device like a coil or marker used for prior procedures. The rest of the lungs, heart, and bones look normal. This finding is not typically dangerous unless it causes symptoms or complications, but should be reviewed by your doctor to confirm its nature and purpose.",
+  "references": [
+    "https://radiopaedia.org/articles/foreign-body-aspiration",
+    "https://www.ncbi.nlm.nih.gov/books/NBK560678/",
+    "https://www.mayoclinic.org/tests-procedures/chest-x-ray/about/pac-20393467"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 457930,
+    "bytesOut": 413878,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:28:38.106Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

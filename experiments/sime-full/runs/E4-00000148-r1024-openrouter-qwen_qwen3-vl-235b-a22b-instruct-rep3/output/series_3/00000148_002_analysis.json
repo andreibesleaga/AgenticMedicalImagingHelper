@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_3/00000148_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Well-defined, round, radiopaque object located in the left mid-lung field, likely a foreign body or medical device.\",\n    \"No evidence of acute consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiac silhouette and mediastinal contours appear within normal limits.\",\n    \"Diaphragm and costophrenic angles are sharp and clear.\",\n    \"Bony thorax including ribs, clavicles, and spine show no acute fractures or deformities.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Intrathoracic Foreign Body\",\n      \"description\": \"A circular, radiopaque object is visible in the left lung field, likely an ingested or implanted foreign body such as a button battery or medical marker. Its density and shape suggest it is not physiological. No surrounding inflammation or mass effect is evident on this view.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 92\n    }\n  ],\n  \"summary\": \"This chest X-ray shows a small, round, dense object in the left lung area. It may be a swallowed item like a battery or a medical device marker. There’s no sign of infection, fluid, or damage around it right now. However, any foreign object in the chest needs prompt evaluation by a doctor to ensure it’s not harmful or causing internal issues.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7856103/\",\n    \"https://radiopaedia.org/articles/foreign-body-aspiration\",\n    \"https://www.radiologyinfo.org/en/info/chestxray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Well-defined, round, radiopaque object located in the left mid-lung field, likely a foreign body or medical device.",
+    "No evidence of acute consolidation, pleural effusion, or pneumothorax.",
+    "Cardiac silhouette and mediastinal contours appear within normal limits.",
+    "Diaphragm and costophrenic angles are sharp and clear.",
+    "Bony thorax including ribs, clavicles, and spine show no acute fractures or deformities."
+  ],
+  "abnormalities": [
+    {
+      "name": "Intrathoracic Foreign Body",
+      "severity": "Mild",
+      "confidence": 92,
+      "description": "A circular, radiopaque object is visible in the left lung field, likely an ingested or implanted foreign body such as a button battery or medical marker. Its density and shape suggest it is not physiological. No surrounding inflammation or mass effect is evident on this view."
+    }
+  ],
+  "summary": "This chest X-ray shows a small, round, dense object in the left lung area. It may be a swallowed item like a battery or a medical device marker. There’s no sign of infection, fluid, or damage around it right now. However, any foreign object in the chest needs prompt evaluation by a doctor to ensure it’s not harmful or causing internal issues.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7856103/",
+    "https://radiopaedia.org/articles/foreign-body-aspiration",
+    "https://www.radiologyinfo.org/en/info/chestxray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 453156,
+    "bytesOut": 410780,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T10:14:15.164Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

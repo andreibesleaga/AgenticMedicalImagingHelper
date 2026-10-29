@@ -1,0 +1,75 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_3/00000219_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Mild to moderate cardiomegaly.\",\n    \"Prominent pulmonary vasculature, consistent with pulmonary venous hypertension.\",\n    \"Left pleural effusion, moderate in size, blunting the left costophrenic angle.\",\n    \"Sternal wires are visible, indicating prior sternotomy.\",\n    \"Several ring-like densities are seen projected over the mediastinum, likely related to cardiac devices or surgical clips.\",\n    \"No acute focal airspace consolidation, pneumothorax, or significant bony abnormalities are identified.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette is enlarged, suggesting cardiomegaly.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pulmonary venous hypertension\",\n      \"description\": \"The pulmonary vasculature appears prominent, indicative of pulmonary venous hypertension.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Left pleural effusion\",\n      \"description\": \"There is blunting of the left costophrenic angle and obscuration of the left hemidiaphragm, consistent with a moderate left pleural effusion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Sternal wires\",\n      \"description\": \"Multiple metallic sternal wires are present, signifying a previous sternotomy (e.g., for cardiac surgery).\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Mediastinal rings\",\n      \"description\": \"Several circular metallic densities are noted in the mediastinum, consistent with surgical clips or components of an implanted cardiac device.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows an enlarged heart and signs of fluid congestion in the lungs, which means the heart is struggling to pump blood effectively. There is also a significant amount of fluid around the left lung (a 'pleural effusion'). Surgical wires are visible in the breastbone, indicating a previous chest surgery, likely on the heart. Additionally, some small ring-shaped objects are seen near the heart, which are likely surgical clips or part of a medical device. These findings collectively suggest a history of heart issues, possibly heart failure, requiring further medical evaluation.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/books/NBK459275/\",\n    \"https://www.radiologyinfo.org/en/info/heartfailure\",\n    \"https://www.ahajournals.org/doi/full/10.1161/circulationaha.107.728876\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Mild to moderate cardiomegaly.",
+    "Prominent pulmonary vasculature, consistent with pulmonary venous hypertension.",
+    "Left pleural effusion, moderate in size, blunting the left costophrenic angle.",
+    "Sternal wires are visible, indicating prior sternotomy.",
+    "Several ring-like densities are seen projected over the mediastinum, likely related to cardiac devices or surgical clips.",
+    "No acute focal airspace consolidation, pneumothorax, or significant bony abnormalities are identified."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "The cardiac silhouette is enlarged, suggesting cardiomegaly."
+    },
+    {
+      "name": "Pulmonary venous hypertension",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The pulmonary vasculature appears prominent, indicative of pulmonary venous hypertension."
+    },
+    {
+      "name": "Left pleural effusion",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "There is blunting of the left costophrenic angle and obscuration of the left hemidiaphragm, consistent with a moderate left pleural effusion."
+    },
+    {
+      "name": "Sternal wires",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Multiple metallic sternal wires are present, signifying a previous sternotomy (e.g., for cardiac surgery)."
+    },
+    {
+      "name": "Mediastinal rings",
+      "severity": "Normal",
+      "confidence": 90,
+      "description": "Several circular metallic densities are noted in the mediastinum, consistent with surgical clips or components of an implanted cardiac device."
+    }
+  ],
+  "summary": "This X-ray of the chest shows an enlarged heart and signs of fluid congestion in the lungs, which means the heart is struggling to pump blood effectively. There is also a significant amount of fluid around the left lung (a 'pleural effusion'). Surgical wires are visible in the breastbone, indicating a previous chest surgery, likely on the heart. Additionally, some small ring-shaped objects are seen near the heart, which are likely surgical clips or part of a medical device. These findings collectively suggest a history of heart issues, possibly heart failure, requiring further medical evaluation.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK459275/",
+    "https://www.radiologyinfo.org/en/info/heartfailure",
+    "https://www.ahajournals.org/doi/full/10.1161/circulationaha.107.728876"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 380748,
+    "bytesOut": 376448,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:19:15.789Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

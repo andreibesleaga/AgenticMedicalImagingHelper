@@ -1,0 +1,225 @@
+{
+  "manifestVersion": "1.0",
+  "toolVersion": "1.1.0",
+  "startedAt": "2026-09-29T10:28:53.100Z",
+  "finishedAt": "2026-09-29T10:30:08.621Z",
+  "provider": "openrouter",
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "pricing": {
+    "inputUsdPerMillion": 2,
+    "outputUsdPerMillion": 12
+  },
+  "settings": {
+    "concurrency": 1,
+    "maxCostUsd": 1,
+    "retries": 3,
+    "imageQuality": "auto"
+  },
+  "inputDir": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000148",
+  "outputDir": "/home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4-00000148-r224-openrouter-qwen_qwen3-vl-235b-a22b-instruct/output",
+  "inputs": [
+    {
+      "path": "series_1/00000148_000.png",
+      "sha256": "b3314086114f828fc1ab5c1e98be5e14505118ae651dc8188cb6ba465e2022cd",
+      "bytes": 22900
+    },
+    {
+      "path": "series_2/00000148_001.png",
+      "sha256": "ba030673101306ad5d910ae2577512480b7a310c143739351ff2c51ff7153966",
+      "bytes": 23649
+    },
+    {
+      "path": "series_3/00000148_002.png",
+      "sha256": "5fcc5fc1c89f61c6419783afffbabfb8e241c82b5a3a0c291b418fde68da518c",
+      "bytes": 24239
+    },
+    {
+      "path": "series_4/00000148_003.png",
+      "sha256": "088bafec034e9601fa145486242a20b7a1266feea4c2830a1bc65e5ad2834979",
+      "bytes": 24147
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "patient_context.txt",
+      "sha256": "18fdee4a920f689a670ec9299d4473cb4878f26e68332483e78c1a423bc3bfa5",
+      "bytes": 357
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:28:56.450Z",
+      "tokensIn": 466,
+      "tokensOut": 91,
+      "estimatedUsd": 0.002024,
+      "providerUsd": 0.0002158,
+      "retries": 0
+    },
+    {
+      "index": 2,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:29:05.147Z",
+      "tokensIn": 466,
+      "tokensOut": 356,
+      "estimatedUsd": 0.005204,
+      "providerUsd": 0.0006738,
+      "retries": 0
+    },
+    {
+      "index": 3,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:29:11.107Z",
+      "tokensIn": 466,
+      "tokensOut": 369,
+      "estimatedUsd": 0.005359999999999999,
+      "providerUsd": 0.0006933,
+      "retries": 0
+    },
+    {
+      "index": 4,
+      "stage": "image",
+      "timestamp": "2026-09-29T10:29:19.397Z",
+      "tokensIn": 466,
+      "tokensOut": 348,
+      "estimatedUsd": 0.005108,
+      "providerUsd": 0.0006618000000000001,
+      "retries": 0
+    },
+    {
+      "index": 5,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:29:28.250Z",
+      "tokensIn": 403,
+      "tokensOut": 125,
+      "estimatedUsd": 0.002305999999999999,
+      "providerUsd": 0.0003221299999999999,
+      "retries": 0
+    },
+    {
+      "index": 6,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:29:38.057Z",
+      "tokensIn": 671,
+      "tokensOut": 413,
+      "estimatedUsd": 0.006297999999999998,
+      "providerUsd": 0.0008208,
+      "retries": 0
+    },
+    {
+      "index": 7,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:29:42.764Z",
+      "tokensIn": 684,
+      "tokensOut": 290,
+      "estimatedUsd": 0.004848000000000002,
+      "providerUsd": 0.0006401999999999996,
+      "retries": 0
+    },
+    {
+      "index": 8,
+      "stage": "series",
+      "timestamp": "2026-09-29T10:29:48.508Z",
+      "tokensIn": 660,
+      "tokensOut": 351,
+      "estimatedUsd": 0.005532000000000006,
+      "providerUsd": 0.0008002199999999999,
+      "retries": 0
+    },
+    {
+      "index": 9,
+      "stage": "evolution",
+      "timestamp": "2026-09-29T10:30:08.547Z",
+      "tokensIn": 1257,
+      "tokensOut": 663,
+      "estimatedUsd": 0.010469999999999993,
+      "providerUsd": 0.0013715999999999997,
+      "retries": 0
+    }
+  ],
+  "outputs": [
+    {
+      "path": "series_1/00000148_000_analysis.json",
+      "sha256": "9b1fd30fe205f01f12f5c07815190a7ced5b8961cd62cb6c5efc38b40b7a24ae",
+      "bytes": 1699
+    },
+    {
+      "path": "series_2/00000148_001_analysis.json",
+      "sha256": "d42e2babde36530bdbe7140ba7504fc9429ade701596692567b123a459729ded",
+      "bytes": 3897
+    },
+    {
+      "path": "series_3/00000148_002_analysis.json",
+      "sha256": "a7dd5f5ec9538225e5543b8bd6fdad8ff5ead5f4be94b1c1ba905eaeb76a16d0",
+      "bytes": 3939
+    },
+    {
+      "path": "series_4/00000148_003_analysis.json",
+      "sha256": "2136eb3e2656abfba3cd48b6e7533a791e02a294496fdf9fd713f73db317bc19",
+      "bytes": 3851
+    },
+    {
+      "path": "series_1/series_summary.md",
+      "sha256": "18098886ae6dc551f857a852a61538e1f4cc04a964506b28de1b04eac71188dd",
+      "bytes": 1465
+    },
+    {
+      "path": "series_2/series_summary.md",
+      "sha256": "46ae63dd05b0b507070c94bc06ebf8c8b0143ca92e3230bcb59799a568a2291c",
+      "bytes": 2573
+    },
+    {
+      "path": "series_3/series_summary.md",
+      "sha256": "0d072622cfe107b4c30dfa151674f741ca2e8cabc894dfa7fe5f2900731b094c",
+      "bytes": 2244
+    },
+    {
+      "path": "series_4/series_summary.md",
+      "sha256": "907d3378677d36c6ace10c27083ec8fe277f9a1aa5958911a8b3aa6716deb78c",
+      "bytes": 2544
+    },
+    {
+      "path": "evolution_analysis.json",
+      "sha256": "a4b4c15ebcec594c6cd930dcaed24453c5645143dd4b400d39c22cae275de142",
+      "bytes": 3675
+    },
+    {
+      "path": "combined_diagnostic_report.md",
+      "sha256": "6bf0e0e4aadff5cd30800a52dbab869146dd6e710ef853c56a94ca9c93fdbe25",
+      "bytes": 4346
+    }
+  ],
+  "totals": {
+    "calls": 9,
+    "tokensIn": 5539,
+    "tokensOut": 3006,
+    "estimatedUsd": 0.04715,
+    "providerUsd": 0.006199649999999999,
+    "images": 4,
+    "imagesSucceeded": 4,
+    "imagesFailed": 0,
+    "series": 4
+  },
+  "exitCode": 0,
+  "warnings": [
+    "input-integrity: 4 image(s) matched --expect-hashes.",
+    "measurement-probe: 10 absolute size claim(s) in generated text. PNG/JPEG inputs carry no pixel spacing, so these are model estimates, not measurements; verify against the image.",
+    "measurement-probe [absolute-size] image series_2/00000148_001.png: \"1.5 cm\" — \"nd, calcified nodule in the right upper lobe, approximately 1.5 cm in diameter.\"",
+    "measurement-probe [absolute-size] image series_3/00000148_002.png: \"1.5 cm\" — \"iopaque object in the right upper lung field, approximately 1.5 cm in diameter, with central lucency suggesting a metallic or calcified core.\"",
+    "measurement-probe [absolute-size] image series_4/00000148_003.png: \"2 cm\" — \"object located in the right upper lung field, approximately 2 cm in diameter.\"",
+    "measurement-probe [absolute-size] series series_2: \"1.5 cm\" — \"- **Nodule Characteristics**: Solitary, round, radiopaque, ~1.5 cm, with internal calcification. - **Location**: Right upper lobe. - **Surrounding Structures**:...\"",
+    "measurement-probe [absolute-size] series series_3: \"1.5 cm\" — \"# Key Findings - A well-defined, round, radiopaque object (~1.5 cm) is present in the right upper lung field. - The object exhibits central lucency, suggesting\"",
+    "measurement-probe [absolute-size] series series_4: \"2 cm\" — \"iopaque object in the right upper lung field, approximately 2 cm in diameter. No surrounding inflammatory changes, consolidation, or pleural effusion are presen...\"",
+    "measurement-probe [absolute-size] evolution: \"1.5 cm\" — \"be - **Series_1**: No abnormality detected. - **Series_2**: 1.5 cm calcified pulmonary nodule — interpreted as benign granuloma. - **Series_3**: Same location,\"",
+    "measurement-probe [absolute-size] evolution: \"2 cm\" — \"s_1) followed by detection of a radiopaque lesion in Series_2. - Subsequent reinterpretation and slight enlargement of the lesion across Series_3 and Series_4.\"",
+    "measurement-probe [absolute-size] evolution: \"1.5 cm\" — \"lesion in right upper lobe: Series_1: no lesion. Series_2: 1.5 cm calcified nodule (benign granuloma). Series_3: same location, now described as foreign body w\"",
+    "measurement-probe [absolute-size] evolution: \"2 cm\" — \"que lesion in right upper lobe: Series_1: no lesion. Series_2: 1.5 cm calcified nodule (benign granuloma). Series_3: same location, now described as foreign bod...\""
+  ],
+  "humanReview": {
+    "required": true,
+    "reviewedBy": null
+  },
+  "prevManifestHash": null,
+  "manifestHash": "65551b8131106d05e6d819f2c19274a88af30ce9da79f024b961606bd2653380"
+}

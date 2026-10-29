@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00016493/series_4/00016493_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\"A right internal jugular central venous catheter with tubing is present extending towards the superior vena cava. The catheter tip is located in the right brachiocephalic vein superior vena cava junction.\",\n    \"The heart size is mildly enlarged.\",\n    \"The lung volumes are low.\",\n    \"There is no significant pleural effusion or pneumothorax.\",\n    \"The mediastinal contours appear unremarkable.\",\n    \"There is no focal consolidation.\",\n    \"The bony structures are grossly intact.\"],\n  \"abnormalities\": [\n    {\n      \"name\": \"Central Venous Catheter\",\n      \"description\": \"Right internal jugular central venous catheter with tubing is present extending towards the superior vena cava. The catheter tip is located in the right brachiocephalic vein superior vena cava junction.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a central venous catheter inserted into the superior vena cava, likely for medical support. The heart appears slightly larger than normal. The lungs look somewhat less inflated than usual. There are no obvious signs of fluid or infection in the lungs or around the lungs. The bones look normal.\",\n  \"references\": [\"https://radiopaedia.org/articles/central-venous-catheter-placement/37663\", \"https://www.rcplondon.org/projects/clinical-guidelines/guidance-central-line-insertion\"]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "A right internal jugular central venous catheter with tubing is present extending towards the superior vena cava. The catheter tip is located in the right brachiocephalic vein superior vena cava junction.",
+    "The heart size is mildly enlarged.",
+    "The lung volumes are low.",
+    "There is no significant pleural effusion or pneumothorax.",
+    "The mediastinal contours appear unremarkable.",
+    "There is no focal consolidation.",
+    "The bony structures are grossly intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Central Venous Catheter",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Right internal jugular central venous catheter with tubing is present extending towards the superior vena cava. The catheter tip is located in the right brachiocephalic vein superior vena cava junction."
+    }
+  ],
+  "summary": "The chest X-ray shows a central venous catheter inserted into the superior vena cava, likely for medical support. The heart appears slightly larger than normal. The lungs look somewhat less inflated than usual. There are no obvious signs of fluid or infection in the lungs or around the lungs. The bones look normal.",
+  "references": [
+    "https://radiopaedia.org/articles/central-venous-catheter-placement/37663",
+    "https://www.rcplondon.org/projects/clinical-guidelines/guidance-central-line-insertion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 404230,
+    "bytesOut": 306067,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T09:47:58.712Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

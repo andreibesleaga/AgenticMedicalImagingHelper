@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000067/series_1/00000067_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Lungs are clear without focal consolidation, pleural effusion, or pneumothorax\",\n    \"Cardiac silhouette is within normal limits for size and contour\",\n    \"Hilar regions are unremarkable\",\n    \"Bony structures are intact\",\n    \"Diaphragmatic contours are smooth\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray is unremarkable. No signs of pneumonia, heart failure, or lung collapse were seen. The heart and lungs appear normal.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-radiograph-for-medical-students\",\n    \"https://www.acr.org/Clinical-Resources/Chest-X-Ray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Fair",
+  "findings": [
+    "Lungs are clear without focal consolidation, pleural effusion, or pneumothorax",
+    "Cardiac silhouette is within normal limits for size and contour",
+    "Hilar regions are unremarkable",
+    "Bony structures are intact",
+    "Diaphragmatic contours are smooth"
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray is unremarkable. No signs of pneumonia, heart failure, or lung collapse were seen. The heart and lungs appear normal.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-for-medical-students",
+    "https://www.acr.org/Clinical-Resources/Chest-X-Ray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23597,
+    "bytesOut": 23597,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T09:58:43.109Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

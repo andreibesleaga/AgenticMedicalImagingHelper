@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_4/00000219_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Presence of multiple sternal wires along the midline\",\n    \"Presence of surgical clips in the mediastinum\",\n    \"Cardiac silhouette is mildly enlarged\",\n    \"Lungs are clear without focal consolidation or pleural effusion\",\n    \"Costophrenic angles are sharp\",\n    \"Bony structures of the thorax are intact\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Status post sternotomy\",\n      \"description\": \"Sternal cerclage wires are present in the midline, indicating a previous surgical procedure requiring a sternotomy (e.g., coronary artery bypass graft or valve replacement).\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Mild Cardiomegaly\",\n      \"description\": \"The transverse diameter of the heart is slightly increased relative to the thoracic diameter.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The X-ray shows evidence of previous heart or chest surgery, indicated by the metal wires (sternal wires) used to close the breastbone (sternum). The heart is slightly larger than normal, which can be common after certain heart conditions or surgeries. The lungs appear healthy and clear, with no signs of pneumonia or fluid buildup.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/sternotomy\",\n    \"https://www.acr.org/Clinical-Resources/Radiologic-Practice-Guidelines\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Presence of multiple sternal wires along the midline",
+    "Presence of surgical clips in the mediastinum",
+    "Cardiac silhouette is mildly enlarged",
+    "Lungs are clear without focal consolidation or pleural effusion",
+    "Costophrenic angles are sharp",
+    "Bony structures of the thorax are intact"
+  ],
+  "abnormalities": [
+    {
+      "name": "Status post sternotomy",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Sternal cerclage wires are present in the midline, indicating a previous surgical procedure requiring a sternotomy (e.g., coronary artery bypass graft or valve replacement)."
+    },
+    {
+      "name": "Mild Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "The transverse diameter of the heart is slightly increased relative to the thoracic diameter."
+    }
+  ],
+  "summary": "The X-ray shows evidence of previous heart or chest surgery, indicated by the metal wires (sternal wires) used to close the breastbone (sternum). The heart is slightly larger than normal, which can be common after certain heart conditions or surgeries. The lungs appear healthy and clear, with no signs of pneumonia or fluid buildup.",
+  "references": [
+    "https://radiopaedia.org/articles/sternotomy",
+    "https://www.acr.org/Clinical-Resources/Radiologic-Practice-Guidelines"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 392020,
+    "bytesOut": 305486,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:04:36.257Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

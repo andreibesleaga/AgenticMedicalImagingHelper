@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000239/series_3/00000239_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA/AP)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Frontal chest radiograph showing bilateral lung fields with visible bronchovascular markings\",\n    \"Cardiac silhouette appears within normal limits in size\",\n    \"Large, well-defined lucent (air-filled) structure occupying the lower left hemithorax/upper abdomen region with mottled/bubbly lucencies suggestive of a gas-distended viscus (stomach or bowel)\",\n    \"Elevation of the left hemidiaphragm noted\",\n    \"Mediastinal structures appear midline\",\n    \"Soft tissue and osseous structures of the thoracic cage grossly unremarkable\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Large gastric air bubble / possible diaphragmatic hernia\",\n      \"description\": \"A prominent lucent, mottled gas-filled structure is seen in the region of the lower left chest/upper abdomen, with associated elevation of the left hemidiaphragm. This appearance raises concern for a large hiatal hernia, gastric volvulus, or diaphragmatic hernia with herniated bowel/stomach into the thoracic cavity.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 60\n    },\n    {\n      \"name\": \"Left hemidiaphragm elevation\",\n      \"description\": \"The left hemidiaphragm appears elevated compared to expected position, possibly related to the underlying abdominal viscus displacement or hernia.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 55\n    }\n  ],\n  \"summary\": \"This chest X-ray shows the lungs and heart, but there is a notable large air-filled, bubbly-looking area in the lower left part of the chest that shouldn't normally be there. This could represent a portion of the stomach or intestine that has pushed up into the chest cavity, a condition called a hernia (specifically possibly a hiatal or diaphragmatic hernia), or it could reflect a very distended stomach with gas. The diaphragm (the muscle that separates the chest from the abdomen) on the left side also appears higher than expected, which can happen when there's pressure from below or displacement of organs. This finding would need further evaluation with a CT scan or additional imaging to determine the exact cause and to see if any organs are trapped or twisted, which could require treatment. It's important that a radiologist and your treating physician review this image directly to confirm these findings and decide on next steps.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/hiatus-hernia\",\n    \"https://pubs.rsna.org/doi/10.1148/rg.2018170112\",\n    \"https://www.uptodate.com/contents/diaphragmatic-hernia-in-adults\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Fair",
+  "findings": [
+    "Frontal chest radiograph showing bilateral lung fields with visible bronchovascular markings",
+    "Cardiac silhouette appears within normal limits in size",
+    "Large, well-defined lucent (air-filled) structure occupying the lower left hemithorax/upper abdomen region with mottled/bubbly lucencies suggestive of a gas-distended viscus (stomach or bowel)",
+    "Elevation of the left hemidiaphragm noted",
+    "Mediastinal structures appear midline",
+    "Soft tissue and osseous structures of the thoracic cage grossly unremarkable"
+  ],
+  "abnormalities": [
+    {
+      "name": "Large gastric air bubble / possible diaphragmatic hernia",
+      "severity": "Moderate",
+      "confidence": 60,
+      "description": "A prominent lucent, mottled gas-filled structure is seen in the region of the lower left chest/upper abdomen, with associated elevation of the left hemidiaphragm. This appearance raises concern for a large hiatal hernia, gastric volvulus, or diaphragmatic hernia with herniated bowel/stomach into the thoracic cavity."
+    },
+    {
+      "name": "Left hemidiaphragm elevation",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "The left hemidiaphragm appears elevated compared to expected position, possibly related to the underlying abdominal viscus displacement or hernia."
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs and heart, but there is a notable large air-filled, bubbly-looking area in the lower left part of the chest that shouldn't normally be there. This could represent a portion of the stomach or intestine that has pushed up into the chest cavity, a condition called a hernia (specifically possibly a hiatal or diaphragmatic hernia), or it could reflect a very distended stomach with gas. The diaphragm (the muscle that separates the chest from the abdomen) on the left side also appears higher than expected, which can happen when there's pressure from below or displacement of organs. This finding would need further evaluation with a CT scan or additional imaging to determine the exact cause and to see if any organs are trapped or twisted, which could require treatment. It's important that a radiologist and your treating physician review this image directly to confirm these findings and decide on next steps.",
+  "references": [
+    "https://radiopaedia.org/articles/hiatus-hernia",
+    "https://pubs.rsna.org/doi/10.1148/rg.2018170112",
+    "https://www.uptodate.com/contents/diaphragmatic-hernia-in-adults"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23540,
+    "bytesOut": 23540,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-29T10:43:25.853Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

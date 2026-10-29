@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_3/img_03_00018610_009.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Complete opacification of the right hemithorax with associated mediastinal shift to the left.\",\n    \"Left lung field appears clear.\",\n    \"Bilateral clavicles and ribs are intact.\",\n    \"Cardiac silhouette is displaced to the left.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Hemithorax Opacification\",\n      \"description\": \"The entire right hemithorax is opacified, indicating a significant pathological process filling the pleural space or involving the entire lung. This can be due to a massive pleural effusion, extensive consolidation, or atelectasis of the entire lung.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"There is a marked shift of the mediastinal structures, including the trachea (though not clearly visualized due to rotation), heart, and great vessels, towards the left hemithorax. This suggests a space-occupying lesion or condition in the right hemithorax causing significant pressure and displacement.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows that the entire right side of the chest is filled with something, making it look completely white or opaque. This could be due to a large amount of fluid (pleural effusion), a complete collapse of the right lung (atelectasis), or extensive infection/inflammation (consolidation). This has caused the heart and other central chest structures to shift significantly to the left side of the chest. The left lung appears clear. These findings are severe and indicate a serious condition requiring immediate medical attention.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/massive-pleural-effusion\",\n    \"https://radiopaedia.org/articles/mediastinal-shift\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3218567/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Complete opacification of the right hemithorax with associated mediastinal shift to the left.",
+    "Left lung field appears clear.",
+    "Bilateral clavicles and ribs are intact.",
+    "Cardiac silhouette is displaced to the left."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Hemithorax Opacification",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "The entire right hemithorax is opacified, indicating a significant pathological process filling the pleural space or involving the entire lung. This can be due to a massive pleural effusion, extensive consolidation, or atelectasis of the entire lung."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "There is a marked shift of the mediastinal structures, including the trachea (though not clearly visualized due to rotation), heart, and great vessels, towards the left hemithorax. This suggests a space-occupying lesion or condition in the right hemithorax causing significant pressure and displacement."
+    }
+  ],
+  "summary": "This X-ray of the chest shows that the entire right side of the chest is filled with something, making it look completely white or opaque. This could be due to a large amount of fluid (pleural effusion), a complete collapse of the right lung (atelectasis), or extensive infection/inflammation (consolidation). This has caused the heart and other central chest structures to shift significantly to the left side of the chest. The left lung appears clear. These findings are severe and indicate a serious condition requiring immediate medical attention.",
+  "references": [
+    "https://radiopaedia.org/articles/massive-pleural-effusion",
+    "https://radiopaedia.org/articles/mediastinal-shift",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3218567/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 421552,
+    "bytesOut": 420863,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:46:17.441Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

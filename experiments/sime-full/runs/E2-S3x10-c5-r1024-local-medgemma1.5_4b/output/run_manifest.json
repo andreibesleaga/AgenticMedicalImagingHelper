@@ -1,0 +1,713 @@
+{
+  "manifestVersion": "1.0",
+  "toolVersion": "1.1.0",
+  "startedAt": "2026-10-08T11:59:33.380Z",
+  "finishedAt": "2026-10-08T12:09:37.375Z",
+  "provider": "local",
+  "model": "medgemma1.5:4b",
+  "pricing": {
+    "inputUsdPerMillion": 0,
+    "outputUsdPerMillion": 0
+  },
+  "settings": {
+    "concurrency": 5,
+    "maxCostUsd": 1,
+    "retries": 3
+  },
+  "inputDir": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10",
+  "outputDir": "/home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E2-S3x10-c5-r1024-local-medgemma1.5_4b/output",
+  "inputs": [
+    {
+      "path": "series_1/img_01_00013464_000.png",
+      "sha256": "f0a18066fc135cc853f68624a164093492b747a4e836fa4e0316ec297d5c6ced",
+      "bytes": 385399
+    },
+    {
+      "path": "series_1/img_02_00010727_000.png",
+      "sha256": "55f0e6d4387db358bd0900b81a31ade5a430602b527157104f8799e8bde60d66",
+      "bytes": 438682
+    },
+    {
+      "path": "series_1/img_03_00019238_009.png",
+      "sha256": "1c0c8c5324292b6c5b3dcfad2a9d891389b3a9fcf03068a92a1b23e8fa9326da",
+      "bytes": 450035
+    },
+    {
+      "path": "series_1/img_04_00007040_002.png",
+      "sha256": "c2725cfc823d725a5d13ec9dd4ef2280e30e95ab023a37504b76a5e468b7644c",
+      "bytes": 384040
+    },
+    {
+      "path": "series_1/img_05_00010693_004.png",
+      "sha256": "30b10b07545a2746960f67583f6ba5e9cb6fa24631a60aa336acc46cfbe10553",
+      "bytes": 424246
+    },
+    {
+      "path": "series_1/img_06_00027163_000.png",
+      "sha256": "105af4a25ad9240635a5a313f7b3bc6260aef2154747d49a32867fe8765cdcee",
+      "bytes": 396187
+    },
+    {
+      "path": "series_1/img_07_00019169_019.png",
+      "sha256": "f5ead004a4cc7097a5b87f8fa07981cef40dd821eb3c481108ef4ced4e78c6f7",
+      "bytes": 409656
+    },
+    {
+      "path": "series_1/img_08_00013795_000.png",
+      "sha256": "527669c274d81073c0b1cee56340273b75024a29ee6827671bd8167a9319ea45",
+      "bytes": 288090
+    },
+    {
+      "path": "series_1/img_09_00000623_005.png",
+      "sha256": "92e1b39c19a504832bdfc3739bb60eed47f5b06cfa007db4d37d2061081d1fa2",
+      "bytes": 394827
+    },
+    {
+      "path": "series_1/img_10_00010531_038.png",
+      "sha256": "4ab715effcb1c59c14c7b6c8469684e528d663a5132b6b74ee4c0afabaa6dedf",
+      "bytes": 412585
+    },
+    {
+      "path": "series_2/img_01_00028504_001.png",
+      "sha256": "962478a9df45741949e05dc61a19f2ae8c88055dd2711662bd167c1c94103629",
+      "bytes": 385786
+    },
+    {
+      "path": "series_2/img_02_00006186_005.png",
+      "sha256": "d0482eab66752a178e6e28b3ec3b11faeb9d52cdf43325eecf80989ab5e89b3b",
+      "bytes": 399840
+    },
+    {
+      "path": "series_2/img_03_00029998_005.png",
+      "sha256": "947586ece0cb4d38608ed41241344cbafadd324675b789ca600e0c613aec4446",
+      "bytes": 395339
+    },
+    {
+      "path": "series_2/img_04_00011823_001.png",
+      "sha256": "9e8331ad34e68c135183d0559b6ea6c33c5a68a8c6561be67bd8682ea97ae01e",
+      "bytes": 405605
+    },
+    {
+      "path": "series_2/img_05_00022764_006.png",
+      "sha256": "aca27eafd3be9701ec6f5715a0d1197264c4456d3faed2404568bc02aca9fdcb",
+      "bytes": 444722
+    },
+    {
+      "path": "series_2/img_06_00024750_000.png",
+      "sha256": "1aab4fe80d70788ac51bf339ed644fb64d01f9f7617389c00382e865b4f7f8b2",
+      "bytes": 407984
+    },
+    {
+      "path": "series_2/img_07_00010980_004.png",
+      "sha256": "6db4f1ae9b78584b8794583367789b751904cf288e97be7631fce0c34acac4a4",
+      "bytes": 459063
+    },
+    {
+      "path": "series_2/img_08_00012359_000.png",
+      "sha256": "83da3235f74bb3258de84aa66d13144f6920a84e73e24e172f4f1302754ccc1b",
+      "bytes": 445074
+    },
+    {
+      "path": "series_2/img_09_00022519_004.png",
+      "sha256": "6b468ef7139169f72972f02bb607b5ac3153e64e4bd7705305e322705ff245d3",
+      "bytes": 406550
+    },
+    {
+      "path": "series_2/img_10_00023092_000.png",
+      "sha256": "f40ad24eb64507285581c8597d118c4bd54f4cf3f99060e0f591f99ccbaf2b9b",
+      "bytes": 440634
+    },
+    {
+      "path": "series_3/img_01_00014666_000.png",
+      "sha256": "3af8a43fe1cc3a6a41baf0d95f0b641587cdfe6eb06ddaa65f549168486c6dc9",
+      "bytes": 468627
+    },
+    {
+      "path": "series_3/img_02_00021748_002.png",
+      "sha256": "d969f6a33154d0b069e464e5fde65285074f2ea83a85c172fde142708e04a1fa",
+      "bytes": 467292
+    },
+    {
+      "path": "series_3/img_03_00004349_000.png",
+      "sha256": "cf14e49f0c04958abad070ef73e049747d09e638ec20d934c662866f4ccd062e",
+      "bytes": 382516
+    },
+    {
+      "path": "series_3/img_04_00002275_000.png",
+      "sha256": "5bafefd42eb68d86c10753883905c89064c6f831875e1c4149f53c1290620795",
+      "bytes": 396643
+    },
+    {
+      "path": "series_3/img_05_00023143_000.png",
+      "sha256": "6472a5c3a2c3602b1dd3889337dfefd6d487a5257e5671f103ad786e8f5c5af6",
+      "bytes": 369669
+    },
+    {
+      "path": "series_3/img_06_00003940_000.png",
+      "sha256": "e56d7424c80a501a1bcb74e830f96dc6228ceed4745fa00ee2de4cdc4d7ca58b",
+      "bytes": 388526
+    },
+    {
+      "path": "series_3/img_07_00015068_007.png",
+      "sha256": "8997082a60e56560c73a94af91e152ce1b4987744e437bb95834be820395e600",
+      "bytes": 396270
+    },
+    {
+      "path": "series_3/img_08_00029278_002.png",
+      "sha256": "873763b6bc9808e6bbcfb5797efba20e113b893d07941f29131bfe426effc5a0",
+      "bytes": 418408
+    },
+    {
+      "path": "series_3/img_09_00009918_001.png",
+      "sha256": "fcde443cc6eaad7eb1753fe570740b0adf9e18f2d72268ed9b44346cb3545486",
+      "bytes": 388899
+    },
+    {
+      "path": "series_3/img_10_00029872_000.png",
+      "sha256": "63647b09aced597df40f6f734d810dd9fd2e0098c6577bd715ef6f8261a8180b",
+      "bytes": 414992
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "patient_context.txt",
+      "sha256": "8955917daa6f3d85ab2ce7373e53649a209e6946e8fd2a106752f7edfaba1df9",
+      "bytes": 197
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "stage": "image",
+      "timestamp": "2026-10-08T11:59:54.506Z",
+      "tokensIn": 684,
+      "tokensOut": 240,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 2,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:00:03.633Z",
+      "tokensIn": 684,
+      "tokensOut": 149,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 3,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:00:16.596Z",
+      "tokensIn": 684,
+      "tokensOut": 168,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 4,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:00:17.737Z",
+      "tokensIn": 684,
+      "tokensOut": 2,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 5,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:00:36.331Z",
+      "tokensIn": 684,
+      "tokensOut": 279,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 6,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:00:37.850Z",
+      "tokensIn": 684,
+      "tokensOut": 2,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 7,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:00:53.680Z",
+      "tokensIn": 684,
+      "tokensOut": 203,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 8,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:01:08.170Z",
+      "tokensIn": 684,
+      "tokensOut": 219,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 9,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:01:22.149Z",
+      "tokensIn": 684,
+      "tokensOut": 178,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 10,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:01:53.108Z",
+      "tokensIn": 684,
+      "tokensOut": 151,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 11,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:02:15.811Z",
+      "tokensIn": 684,
+      "tokensOut": 177,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 12,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:02:29.265Z",
+      "tokensIn": 684,
+      "tokensOut": 2,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 13,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:03:05.781Z",
+      "tokensIn": 684,
+      "tokensOut": 282,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 14,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:03:33.299Z",
+      "tokensIn": 684,
+      "tokensOut": 213,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 15,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:03:47.517Z",
+      "tokensIn": 684,
+      "tokensOut": 375,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 16,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:03:51.072Z",
+      "tokensIn": 684,
+      "tokensOut": 2,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 17,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:03:59.752Z",
+      "tokensIn": 684,
+      "tokensOut": 145,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 18,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:04:19.258Z",
+      "tokensIn": 684,
+      "tokensOut": 258,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 19,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:04:26.420Z",
+      "tokensIn": 684,
+      "tokensOut": 2,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 20,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:04:52.713Z",
+      "tokensIn": 684,
+      "tokensOut": 147,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 21,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:05:22.315Z",
+      "tokensIn": 684,
+      "tokensOut": 142,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 22,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:05:40.988Z",
+      "tokensIn": 684,
+      "tokensOut": 155,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 23,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:05:50.009Z",
+      "tokensIn": 684,
+      "tokensOut": 213,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 24,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:06:01.167Z",
+      "tokensIn": 684,
+      "tokensOut": 275,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 25,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:06:17.383Z",
+      "tokensIn": 684,
+      "tokensOut": 231,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 26,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:06:29.439Z",
+      "tokensIn": 684,
+      "tokensOut": 165,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 27,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:06:41.548Z",
+      "tokensIn": 684,
+      "tokensOut": 117,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 28,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:06:57.961Z",
+      "tokensIn": 684,
+      "tokensOut": 215,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 29,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:07:05.990Z",
+      "tokensIn": 684,
+      "tokensOut": 2,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 30,
+      "stage": "image",
+      "timestamp": "2026-10-08T12:07:33.399Z",
+      "tokensIn": 684,
+      "tokensOut": 356,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 31,
+      "stage": "series",
+      "timestamp": "2026-10-08T12:08:50.554Z",
+      "tokensIn": 2541,
+      "tokensOut": 1356,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 32,
+      "stage": "series",
+      "timestamp": "2026-10-08T12:09:05.916Z",
+      "tokensIn": 2554,
+      "tokensOut": 673,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 33,
+      "stage": "series",
+      "timestamp": "2026-10-08T12:09:20.604Z",
+      "tokensIn": 2821,
+      "tokensOut": 639,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 34,
+      "stage": "evolution",
+      "timestamp": "2026-10-08T12:09:37.268Z",
+      "tokensIn": 3062,
+      "tokensOut": 649,
+      "estimatedUsd": 0,
+      "retries": 0
+    }
+  ],
+  "outputs": [
+    {
+      "path": "series_1/img_01_00013464_000_analysis.json",
+      "sha256": "8db3d3e378a81a67464e1c21c0d5c66347aece22635850878c93dd0a3c97cbe4",
+      "bytes": 2242
+    },
+    {
+      "path": "series_1/img_02_00010727_000_analysis.json",
+      "sha256": "e7606fa1bafd09e5ebc3a6e7bf6db0bc6d866dce92cbec2617e2422fe8f30072",
+      "bytes": 3028
+    },
+    {
+      "path": "series_1/img_03_00019238_009_analysis.json",
+      "sha256": "4e216419d69ba7b94e5b9ea9e532e5832cebd57384d23e74cb8dde5f88bdd5b3",
+      "bytes": 2026
+    },
+    {
+      "path": "series_1/img_04_00007040_002_analysis.json",
+      "sha256": "9cbc776d2fccfcada0ee311356470eadc3c89147282fe4d129f8171a6618dc00",
+      "bytes": 1276
+    },
+    {
+      "path": "series_1/img_05_00010693_004_analysis.json",
+      "sha256": "670929f63d14e3f807b609df79f9540f8d2c16324bf777f47a709fe4bfc4f4fb",
+      "bytes": 3090
+    },
+    {
+      "path": "series_1/img_06_00027163_000_analysis.json",
+      "sha256": "3e6c5157da0307963336669d2aeb8f28e4caecea3396560ff17840e97f039993",
+      "bytes": 1276
+    },
+    {
+      "path": "series_1/img_07_00019169_019_analysis.json",
+      "sha256": "a865ede3eca216c262a616928f2d54070539c27bae1add01798410eaf823df54",
+      "bytes": 2574
+    },
+    {
+      "path": "series_1/img_08_00013795_000_analysis.json",
+      "sha256": "f7c2b6a3510cce1943f8370ea99e3c3e0626aade3dbf4940727cbc7a11e87565",
+      "bytes": 2420
+    },
+    {
+      "path": "series_1/img_09_00000623_005_analysis.json",
+      "sha256": "08c7e75a28ceaeb360d359e9ee7466f448a01464265b54a4748a0577bfb2502e",
+      "bytes": 2202
+    },
+    {
+      "path": "series_1/img_10_00010531_038_analysis.json",
+      "sha256": "eff9ebf223818b44445b2720c0522c9018295217c18770cb8bc1dd1f74b3733f",
+      "bytes": 2026
+    },
+    {
+      "path": "series_2/img_01_00028504_001_analysis.json",
+      "sha256": "dfe2d72049e765475c6fa3015e369ce121d84aceb4aeaf152094bb8c3580d81a",
+      "bytes": 2360
+    },
+    {
+      "path": "series_2/img_02_00006186_005_analysis.json",
+      "sha256": "436a4a1d824055c7fa0ada43d89c9aec6bf98656e58791eedd86d9310f2f4b0e",
+      "bytes": 1276
+    },
+    {
+      "path": "series_2/img_03_00029998_005_analysis.json",
+      "sha256": "2c61d66fac02f0c6c3f631461c0e7f278709b042ae7d6c3f3d926122924dc9cd",
+      "bytes": 3292
+    },
+    {
+      "path": "series_2/img_04_00011823_001_analysis.json",
+      "sha256": "28f8fdb0c0552077cf9d53b881471417c86180f66aabf69db2c83b140a5c8ba4",
+      "bytes": 2500
+    },
+    {
+      "path": "series_2/img_05_00022764_006_analysis.json",
+      "sha256": "85647b33b4c3345183db5d931ac1eb3340064632474417b0ecad70bd8f0fbfc0",
+      "bytes": 3656
+    },
+    {
+      "path": "series_2/img_06_00024750_000_analysis.json",
+      "sha256": "294913461edc0f1dd4bed72d16db260b654f6a5a28dd3a539f9ece21f5625225",
+      "bytes": 1276
+    },
+    {
+      "path": "series_2/img_07_00010980_004_analysis.json",
+      "sha256": "ccf7f51194978f88e248c6e388402156ff4dd3ebff38439f949f56ecec4efdb7",
+      "bytes": 2110
+    },
+    {
+      "path": "series_2/img_08_00012359_000_analysis.json",
+      "sha256": "0d0a2a4d976f2ded584de9e95ffd6b82368cbbf012861919bda1f404f3793657",
+      "bytes": 2781
+    },
+    {
+      "path": "series_2/img_09_00022519_004_analysis.json",
+      "sha256": "85f187765093ed4cf0aefda46b728893eceae3b1beb7ed48ff9b72ff752e527f",
+      "bytes": 1276
+    },
+    {
+      "path": "series_2/img_10_00023092_000_analysis.json",
+      "sha256": "cde95af2bf502ae029e421bca97949f048c50342394aa36ed9f9df05c7f626ea",
+      "bytes": 2020
+    },
+    {
+      "path": "series_3/img_01_00014666_000_analysis.json",
+      "sha256": "68e936a358e40d75fa62fc07dad2b6340ed0fa652aa300730ade6df1d6fa593f",
+      "bytes": 1964
+    },
+    {
+      "path": "series_3/img_02_00021748_002_analysis.json",
+      "sha256": "eadf50f8858801f300e9f94876d3e10590015b326250c4baf951979627940a59",
+      "bytes": 2082
+    },
+    {
+      "path": "series_3/img_03_00004349_000_analysis.json",
+      "sha256": "ecedd694727611e6b55f83b46b31ed8fa239c493e4924196d2c7ea412c800a10",
+      "bytes": 2377
+    },
+    {
+      "path": "series_3/img_04_00002275_000_analysis.json",
+      "sha256": "5a989a53bfaad0ad1ef7d5985a3cd7b25ad4cf259c97c99627ee5def6d0a735d",
+      "bytes": 3054
+    },
+    {
+      "path": "series_3/img_05_00023143_000_analysis.json",
+      "sha256": "44f31ce1bb56f806a51978cda134892c2676e8c549444e72f35904f306ef6409",
+      "bytes": 2484
+    },
+    {
+      "path": "series_3/img_06_00003940_000_analysis.json",
+      "sha256": "f74169ad83c3590dde5e049273a21f0406ddd7c3baa0f1c03c8f18820eab74e7",
+      "bytes": 2189
+    },
+    {
+      "path": "series_3/img_07_00015068_007_analysis.json",
+      "sha256": "720bb97dbdff5ed3542fbc78f124cc6856c59d934c9a5451bde28332ece9d54c",
+      "bytes": 1739
+    },
+    {
+      "path": "series_3/img_08_00029278_002_analysis.json",
+      "sha256": "bb0218f44c065a406d30a1b390edee6e560e4da03f4f68bfeedc775c43bb0af1",
+      "bytes": 2372
+    },
+    {
+      "path": "series_3/img_09_00009918_001_analysis.json",
+      "sha256": "062cb88be3487515e5cbadf30e2efe16ca5a97b68f94b81799b80b4be12a4fd2",
+      "bytes": 1276
+    },
+    {
+      "path": "series_3/img_10_00029872_000_analysis.json",
+      "sha256": "dba0218d0bfd0ccedb5c09038e63a464f1be3cb92f7696b7832d00e3f1f478be",
+      "bytes": 3572
+    },
+    {
+      "path": "series_1/series_summary.md",
+      "sha256": "4c6d633c8dca517b27e892e4cc1ce23ee017123e37c22ed9477127685acab585",
+      "bytes": 7771
+    },
+    {
+      "path": "series_2/series_summary.md",
+      "sha256": "88eba22896f8dde0ba84c9f0dae9c1627bcc4596fa37d9aa9271ba709dfb6650",
+      "bytes": 4576
+    },
+    {
+      "path": "series_3/series_summary.md",
+      "sha256": "e141f7b541a1869d34e97796338307ab66ab19491f27a70d9f0e2f22cb94f1e6",
+      "bytes": 4561
+    },
+    {
+      "path": "evolution_analysis.json",
+      "sha256": "33b8d1efd84651df4c6cbd1392131ac75736b2027b7fed602cdd62c19f17f84f",
+      "bytes": 3479
+    },
+    {
+      "path": "combined_diagnostic_report.md",
+      "sha256": "719595f55d787f6ddaf29d87be3e40be3ddb21fdd7359f9f45dced64e14e5d27",
+      "bytes": 4059
+    }
+  ],
+  "totals": {
+    "calls": 34,
+    "tokensIn": 31498,
+    "tokensOut": 8382,
+    "estimatedUsd": 0,
+    "images": 30,
+    "imagesSucceeded": 30,
+    "imagesFailed": 0,
+    "series": 3
+  },
+  "exitCode": 0,
+  "warnings": [
+    "input-integrity: 30 image(s) matched --expect-hashes.",
+    "input-guard [image-metadata] series_1/img_01_00013464_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_1/img_02_00010727_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_1/img_03_00019238_009.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_1/img_04_00007040_002.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_1/img_05_00010693_004.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_1/img_06_00027163_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_1/img_07_00019169_019.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_1/img_08_00013795_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_1/img_09_00000623_005.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_1/img_10_00010531_038.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_01_00028504_001.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_02_00006186_005.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_03_00029998_005.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_04_00011823_001.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_05_00022764_006.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_06_00024750_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_07_00010980_004.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_08_00012359_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_09_00022519_004.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/img_10_00023092_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_01_00014666_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_02_00021748_002.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_03_00004349_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_04_00002275_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_05_00023143_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_06_00003940_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_07_00015068_007.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_08_00029278_002.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_09_00009918_001.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/img_10_00029872_000.png: png:tIME — stripped before upload"
+  ],
+  "humanReview": {
+    "required": true,
+    "reviewedBy": null
+  },
+  "prevManifestHash": null,
+  "manifestHash": "b3a5ee01eeacc153e7a85a439ecad005c75f803a6a57481709aa746aa0b5ccf3"
+}

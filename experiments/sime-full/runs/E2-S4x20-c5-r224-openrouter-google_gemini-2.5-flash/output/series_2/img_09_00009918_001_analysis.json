@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_2/img_09_00009918_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right lower lobe opacity with associated volume loss and elevation of the right hemidiaphragm.\",\n    \"Small calcific density noted within the right lower lobe opacity.\",\n    \"Left lung appears clear with no focal consolidation or pleural effusion.\",\n    \"Cardiomediastinal contours are within normal limits.\",\n    \"Bony thorax appears intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right lower lobe opacity\",\n      \"description\": \"There is a dense opacity in the right lower lobe, which appears to be causing some volume loss in that region, suggested by the elevated right hemidiaphragm. A small calcification is seen within this opacity. This finding could represent atelectasis, pneumonia, or scarring/fibrosis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The X-ray of the chest shows an area of increased whiteness in the lower part of the right lung. This area also appears to have caused some shrinking of that part of the lung, and the diaphragm on the right side is slightly elevated. There is a small speck of calcium within this area. The rest of the lungs and the heart appear normal. This finding could be due to a collapsed lung segment (atelectasis), an infection like pneumonia, or old scarring in the lung. Further evaluation might be needed to determine the exact cause.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.294095066\",\n    \"https://radiopaedia.org/articles/atelectasis\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Right lower lobe opacity with associated volume loss and elevation of the right hemidiaphragm.",
+    "Small calcific density noted within the right lower lobe opacity.",
+    "Left lung appears clear with no focal consolidation or pleural effusion.",
+    "Cardiomediastinal contours are within normal limits.",
+    "Bony thorax appears intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lower lobe opacity",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "There is a dense opacity in the right lower lobe, which appears to be causing some volume loss in that region, suggested by the elevated right hemidiaphragm. A small calcification is seen within this opacity. This finding could represent atelectasis, pneumonia, or scarring/fibrosis."
+    }
+  ],
+  "summary": "The X-ray of the chest shows an area of increased whiteness in the lower part of the right lung. This area also appears to have caused some shrinking of that part of the lung, and the diaphragm on the right side is slightly elevated. There is a small speck of calcium within this area. The rest of the lungs and the heart appear normal. This finding could be due to a collapsed lung segment (atelectasis), an infection like pneumonia, or old scarring in the lung. Further evaluation might be needed to determine the exact cause.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.294095066",
+    "https://radiopaedia.org/articles/atelectasis"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23597,
+    "bytesOut": 23597,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:01:59.789Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

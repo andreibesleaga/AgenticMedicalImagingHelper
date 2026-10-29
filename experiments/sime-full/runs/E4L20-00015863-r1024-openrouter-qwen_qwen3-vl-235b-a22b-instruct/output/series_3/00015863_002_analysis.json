@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00015863/series_3/00015863_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral pulmonary opacities with patchy, ill-defined consolidation predominantly in the lower lobes.\",\n    \"No visible pleural effusion or pneumothorax.\",\n    \"Cardiac silhouette appears within normal limits for patient age.\",\n    \"Diaphragm contours are smooth; no evidence of subdiaphragmatic free air.\",\n    \"Bony thorax including ribs, clavicles, and spine show no acute fracture or lytic lesion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pulmonary Consolidation\",\n      \"description\": \"Bilateral patchy opacities with air bronchograms suggest alveolar filling, likely due to infectious or inflammatory process. Most prominent in lower lobes, consistent with pneumonia or atypical infection.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows areas of lung inflammation or infection, especially in the lower parts of both lungs. This is commonly seen with pneumonia. The heart and bones look normal. While this suggests an infection, further clinical correlation and possibly additional tests (like blood work or CT) are needed to confirm the cause and guide treatment.\",\n  \"references\": [\n    \"https://www.uptodate.com/contents/chest-radiography-in-the-diagnosis-of-pneumonia\",\n    \"https://radiopaedia.org/articles/pneumonia\",\n    \"https://www.cdc.gov/pneumonia/diagnosis-treatment.html\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral pulmonary opacities with patchy, ill-defined consolidation predominantly in the lower lobes.",
+    "No visible pleural effusion or pneumothorax.",
+    "Cardiac silhouette appears within normal limits for patient age.",
+    "Diaphragm contours are smooth; no evidence of subdiaphragmatic free air.",
+    "Bony thorax including ribs, clavicles, and spine show no acute fracture or lytic lesion."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pulmonary Consolidation",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Bilateral patchy opacities with air bronchograms suggest alveolar filling, likely due to infectious or inflammatory process. Most prominent in lower lobes, consistent with pneumonia or atypical infection."
+    }
+  ],
+  "summary": "The chest X-ray shows areas of lung inflammation or infection, especially in the lower parts of both lungs. This is commonly seen with pneumonia. The heart and bones look normal. While this suggests an infection, further clinical correlation and possibly additional tests (like blood work or CT) are needed to confirm the cause and guide treatment.",
+  "references": [
+    "https://www.uptodate.com/contents/chest-radiography-in-the-diagnosis-of-pneumonia",
+    "https://radiopaedia.org/articles/pneumonia",
+    "https://www.cdc.gov/pneumonia/diagnosis-treatment.html"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 348361,
+    "bytesOut": 315497,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:17:23.681Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00015553/series_2/00015553_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary abnormality is identified.\",\n    \"Bilateral lung fields are clear.\",\n    \"Heart size is within normal limits.\",\n    \"Mediastinum and hila are unremarkable.\",\n    \"Diaphragms and costophrenic angles are clear.\",\n    \"Osseous structures of the thoracic cage are intact, including visualized clavicles and ribs. There is a scoliosis of the thoracic spine.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Thoracic Scoliosis\",\n      \"description\": \"There is a mild scoliosis of the thoracic spine, evidenced by a slight lateral curvature.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows that your lungs and heart appear normal, and there are no signs of any immediate lung or heart problems. The bones of your chest are also intact. There is a slight curve in your upper spine, which is called scoliosis, but it is mild.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/scoliosis?lang=gb\",\n    \"https://www.mayoclinic.org/diseases-conditions/scoliosis/symptoms-causes/syc-20350716\",\n    \"https://www.nhs.uk/conditions/scoliosis/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary abnormality is identified.",
+    "Bilateral lung fields are clear.",
+    "Heart size is within normal limits.",
+    "Mediastinum and hila are unremarkable.",
+    "Diaphragms and costophrenic angles are clear.",
+    "Osseous structures of the thoracic cage are intact, including visualized clavicles and ribs. There is a scoliosis of the thoracic spine."
+  ],
+  "abnormalities": [
+    {
+      "name": "Thoracic Scoliosis",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "There is a mild scoliosis of the thoracic spine, evidenced by a slight lateral curvature."
+    }
+  ],
+  "summary": "The X-ray of your chest shows that your lungs and heart appear normal, and there are no signs of any immediate lung or heart problems. The bones of your chest are also intact. There is a slight curve in your upper spine, which is called scoliosis, but it is mild.",
+  "references": [
+    "https://radiopaedia.org/articles/scoliosis?lang=gb",
+    "https://www.mayoclinic.org/diseases-conditions/scoliosis/symptoms-causes/syc-20350716",
+    "https://www.nhs.uk/conditions/scoliosis/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 248936,
+    "bytesOut": 246573,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:09:16.156Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

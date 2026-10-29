@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_4/00000219_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Metallic sternal sutures are noted, indicating a prior sternotomy.\",\n    \"Multiple surgical clips are present within the mediastinum, likely related to cardiac surgery.\",\n    \"Cardiac silhouette is enlarged, suggestive of cardiomegaly.\",\n    \"Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"The trachea is midline.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"Bony structures appear unremarkable for age, aside from the sternal changes.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Post-sternotomy changes\",\n      \"description\": \"Presence of metallic sternal wires and multiple surgical clips in the mediastinum, consistent with prior sternotomy and cardiac surgery.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette appears enlarged.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The X-ray shows that you have had previous heart surgery, indicated by the metal wires in your breastbone and clips near your heart. Your heart appears somewhat enlarged. Your lungs look clear, with no signs of pneumonia, fluid around the lungs, or a collapsed lung. The bones in your chest look normal for your age, apart from the changes from your surgery. Cardiomegaly means an enlarged heart, which can be due to various reasons and often requires further medical evaluation.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.294085141\",\n    \"https://radiopaedia.org/articles/cardiomegaly-1?lang=gb\",\n    \"https://www.ahajournals.org/doi/full/10.1161/circulationaha.115.016335\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Metallic sternal sutures are noted, indicating a prior sternotomy.",
+    "Multiple surgical clips are present within the mediastinum, likely related to cardiac surgery.",
+    "Cardiac silhouette is enlarged, suggestive of cardiomegaly.",
+    "Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.",
+    "The trachea is midline.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "Bony structures appear unremarkable for age, aside from the sternal changes."
+  ],
+  "abnormalities": [
+    {
+      "name": "Post-sternotomy changes",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Presence of metallic sternal wires and multiple surgical clips in the mediastinum, consistent with prior sternotomy and cardiac surgery."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "The cardiac silhouette appears enlarged."
+    }
+  ],
+  "summary": "The X-ray shows that you have had previous heart surgery, indicated by the metal wires in your breastbone and clips near your heart. Your heart appears somewhat enlarged. Your lungs look clear, with no signs of pneumonia, fluid around the lungs, or a collapsed lung. The bones in your chest look normal for your age, apart from the changes from your surgery. Cardiomegaly means an enlarged heart, which can be due to various reasons and often requires further medical evaluation.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.294085141",
+    "https://radiopaedia.org/articles/cardiomegaly-1?lang=gb",
+    "https://www.ahajournals.org/doi/full/10.1161/circulationaha.115.016335"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 392020,
+    "bytesOut": 388042,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:07:35.063Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

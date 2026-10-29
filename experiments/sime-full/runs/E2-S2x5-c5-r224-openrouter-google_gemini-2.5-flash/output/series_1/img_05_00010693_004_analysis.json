@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S2x5/series_1/img_05_00010693_004.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary abnormalities are identified.\",\n    \"Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Heart size is within normal limits.\",\n    \"Bony thorax is intact.\",\n    \"An inferior vena cava (IVC) filter is noted in the infra-diaphragmatic region, overlying the L1-L2 vertebral bodies.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"IVC Filter\",\n      \"description\": \"An inferior vena cava (IVC) filter is seen in situ, located in the infra-diaphragmatic region, projecting over the L1-L2 vertebral bodies. The filter appears intact and appropriately positioned.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows healthy lungs and a normal-sized heart. There are no signs of pneumonia, fluid around the lungs, or a collapsed lung. An IVC filter, which is a small device placed in a large vein in the abdomen to prevent blood clots from traveling to the lungs, is visible and appears to be in the correct position. This finding is expected if the patient has a history requiring such a device. Overall, no acute problems were seen in the chest.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125021\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8366967/\",\n    \"https://radiopaedia.org/articles/inferior-vena-cava-filter\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary abnormalities are identified.",
+    "Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.",
+    "Heart size is within normal limits.",
+    "Bony thorax is intact.",
+    "An inferior vena cava (IVC) filter is noted in the infra-diaphragmatic region, overlying the L1-L2 vertebral bodies."
+  ],
+  "abnormalities": [
+    {
+      "name": "IVC Filter",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "An inferior vena cava (IVC) filter is seen in situ, located in the infra-diaphragmatic region, projecting over the L1-L2 vertebral bodies. The filter appears intact and appropriately positioned."
+    }
+  ],
+  "summary": "This X-ray of the chest shows healthy lungs and a normal-sized heart. There are no signs of pneumonia, fluid around the lungs, or a collapsed lung. An IVC filter, which is a small device placed in a large vein in the abdomen to prevent blood clots from traveling to the lungs, is visible and appears to be in the correct position. This finding is expected if the patient has a history requiring such a device. Overall, no acute problems were seen in the chest.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125021",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8366967/",
+    "https://radiopaedia.org/articles/inferior-vena-cava-filter"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23983,
+    "bytesOut": 23983,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:51:43.063Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

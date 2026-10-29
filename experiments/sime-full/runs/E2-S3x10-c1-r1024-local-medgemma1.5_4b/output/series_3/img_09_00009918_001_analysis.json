@@ -1,0 +1,39 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_3/img_09_00009918_001.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear except for patchy opacities in the right lower lobe.\",\n    \"The heart size is normal.\",\n    \"The mediastinum is normal.\",\n    \"The osseous structures are unremarkable.\",\n    \"The pleural spaces are clear.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"Chest X-ray shows patchy opacities in the right lower lung. This could indicate pneumonia or other lung infection.\",\n  \"references\": []\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear except for patchy opacities in the right lower lobe.",
+    "The heart size is normal.",
+    "The mediastinum is normal.",
+    "The osseous structures are unremarkable.",
+    "The pleural spaces are clear."
+  ],
+  "abnormalities": [],
+  "summary": "Chest X-ray shows patchy opacities in the right lower lung. This could indicate pneumonia or other lung infection.",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 388899,
+    "bytesOut": 303414,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T11:55:54.740Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,60 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000086/series_2/00000086_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP upright)\",\"quality\":\"Fair\",\"findings\":[\"Lungs are symmetrically inflated bilaterally\",\"Cardiac silhouette appears mildly enlarged with cardiothoracic ratio slightly increased\",\"Mediastinal contours are grossly within normal limits, trachea midline\",\"Bony thorax: clavicles, scapulae, and visible ribs appear intact without acute fracture\",\"Costophrenic angles appear sharp bilaterally\",\"No obvious focal consolidation, pleural effusion, or pneumothorax identified\",\"Soft tissue markers (L marker and skin marker) noted in upper right of image\",\"Slight rotation of patient noted, limiting full assessment of mediastinal structures\",\"Increased bronchovascular markings noted, particularly perihilar regions bilaterally\"],\"abnormalities\":[{\"name\":\"Mild cardiomegaly\",\"description\":\"The cardiac silhouette appears mildly enlarged relative to thoracic width, though this may be partly influenced by patient positioning/rotation and AP technique magnification\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Increased bronchovascular markings\",\"description\":\"Perihilar and lower lung field vascular/interstitial markings appear slightly prominent bilaterally, which could reflect mild vascular congestion, technique factors, or be within normal variation\",\"severity\":\"Mild\",\"confidence\":35}],\"summary\":\"This chest X-ray shows the lungs are generally well-expanded without obvious signs of pneumonia, significant fluid buildup, or collapsed lung. The heart shadow appears slightly larger than typical, which could suggest mild enlargement, but this finding can also be affected by how the picture was taken (patient positioning and distance from the X-ray source) and should be correlated with the patient's clinical history and possibly an echocardiogram if there's clinical concern. There are some slightly increased markings in the lung areas near the central chest, which are nonspecific and could be due to normal blood vessels, mild congestion, or technical imaging factors. No fractures or acute abnormalities are seen in the visible bones. Overall, this appears to be a relatively unremarkable chest X-ray with only subtle findings that would benefit from clinical correlation and professional radiologist review.\",\"references\":[\"https://radiopaedia.org/articles/cardiothoracic-ratio\",\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\"https://pubs.rsna.org/doi/10.1148/radiol.2019182439\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Fair",
+  "findings": [
+    "Lungs are symmetrically inflated bilaterally",
+    "Cardiac silhouette appears mildly enlarged with cardiothoracic ratio slightly increased",
+    "Mediastinal contours are grossly within normal limits, trachea midline",
+    "Bony thorax: clavicles, scapulae, and visible ribs appear intact without acute fracture",
+    "Costophrenic angles appear sharp bilaterally",
+    "No obvious focal consolidation, pleural effusion, or pneumothorax identified",
+    "Soft tissue markers (L marker and skin marker) noted in upper right of image",
+    "Slight rotation of patient noted, limiting full assessment of mediastinal structures",
+    "Increased bronchovascular markings noted, particularly perihilar regions bilaterally"
+  ],
+  "abnormalities": [
+    {
+      "name": "Mild cardiomegaly",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "The cardiac silhouette appears mildly enlarged relative to thoracic width, though this may be partly influenced by patient positioning/rotation and AP technique magnification"
+    },
+    {
+      "name": "Increased bronchovascular markings",
+      "severity": "Mild",
+      "confidence": 35,
+      "description": "Perihilar and lower lung field vascular/interstitial markings appear slightly prominent bilaterally, which could reflect mild vascular congestion, technique factors, or be within normal variation"
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs are generally well-expanded without obvious signs of pneumonia, significant fluid buildup, or collapsed lung. The heart shadow appears slightly larger than typical, which could suggest mild enlargement, but this finding can also be affected by how the picture was taken (patient positioning and distance from the X-ray source) and should be correlated with the patient's clinical history and possibly an echocardiogram if there's clinical concern. There are some slightly increased markings in the lung areas near the central chest, which are nonspecific and could be due to normal blood vessels, mild congestion, or technical imaging factors. No fractures or acute abnormalities are seen in the visible bones. Overall, this appears to be a relatively unremarkable chest X-ray with only subtle findings that would benefit from clinical correlation and professional radiologist review.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiothoracic-ratio",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/doi/10.1148/radiol.2019182439"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 639281,
+    "bytesOut": 489372,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "alpha channel stripped",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T09:37:08.442Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_3/img_03_00018610_009.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"There is complete opacification of the right hemithorax with a mediastinal shift to the left.\",\n    \"The left lung appears hyperinflated but otherwise clear.\",\n    \"There is no evidence of pneumothorax on the left side.\",\n    \"A gastric bubble is visible in the left upper quadrant.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Hemithorax Opacification with Mediastinal Shift\",\n      \"description\": \"The entire right hemithorax is opacified, indicating a significant amount of fluid or mass replacing the lung tissue. The mediastinum, including the trachea and heart silhouette, is displaced towards the left, suggesting a large pleural effusion or a collapsed lung with associated fluid.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows that the entire right side of the chest is cloudy or white, which means there's a lot of fluid or something filling that space. This has pushed the heart and the windpipe over to the left side of the chest. The left lung looks clear but might be working harder. This is a significant finding that usually points to a large amount of fluid around the lung (called a pleural effusion) or a collapsed lung. Further medical evaluation is needed to understand the cause and best treatment.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/massive-pleural-effusion?lang=gb\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7482310/\",\n    \"https://www.thoracic.org/patients/patient-resources/breathing-in-america/chapters/chapter-3-the-pleura-and-pleural-disease/index.php\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "There is complete opacification of the right hemithorax with a mediastinal shift to the left.",
+    "The left lung appears hyperinflated but otherwise clear.",
+    "There is no evidence of pneumothorax on the left side.",
+    "A gastric bubble is visible in the left upper quadrant."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Hemithorax Opacification with Mediastinal Shift",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "The entire right hemithorax is opacified, indicating a significant amount of fluid or mass replacing the lung tissue. The mediastinum, including the trachea and heart silhouette, is displaced towards the left, suggesting a large pleural effusion or a collapsed lung with associated fluid."
+    }
+  ],
+  "summary": "This X-ray of the chest shows that the entire right side of the chest is cloudy or white, which means there's a lot of fluid or something filling that space. This has pushed the heart and the windpipe over to the left side of the chest. The left lung looks clear but might be working harder. This is a significant finding that usually points to a large amount of fluid around the lung (called a pleural effusion) or a collapsed lung. Further medical evaluation is needed to understand the cause and best treatment.",
+  "references": [
+    "https://radiopaedia.org/articles/massive-pleural-effusion?lang=gb",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7482310/",
+    "https://www.thoracic.org/patients/patient-resources/breathing-in-america/chapters/chapter-3-the-pleura-and-pleural-disease/index.php"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 421552,
+    "bytesOut": 420863,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:41:22.425Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

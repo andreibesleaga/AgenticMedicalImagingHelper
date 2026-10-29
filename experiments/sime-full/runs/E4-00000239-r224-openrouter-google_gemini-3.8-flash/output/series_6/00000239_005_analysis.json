@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000239/series_6/00000239_005.png",
+  "seriesId": "series_6",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear bilaterally with no focal consolidation, suspicious pulmonary nodules, or active infiltrates.\",\n    \"No visible pneumothorax or pleural effusion.\",\n    \"Cardiomediastinal silhouette is normal in size and contour.\",\n    \"A prominent, large air-fluid level is visible in the left upper quadrant and epigastrium, beneath the left hemidiaphragm, consistent with marked gastric distension containing substantial fluid and air.\",\n    \"Bony thorax and surrounding soft tissues are unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Gastric Distension with Air-Fluid Level\",\n      \"description\": \"Marked dilatation of the stomach with a wide horizontal air-fluid level beneath the elevated left hemidiaphragm, suggestive of delayed gastric emptying, gastric outlet obstruction, or significant aerophagia.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 92\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that your lungs and heart appear normal and healthy. However, there is a noticeably enlarged stomach bubble containing both gas and fluid (an air-fluid level) in the upper-left abdomen. This indicates that the stomach is stretched or swollen with retained contents, which can occur with slow stomach emptying, blockage near the stomach exit, or swallowing excess air. Clinical correlation with any symptoms like nausea, vomiting, or abdominal pain is recommended.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/gastric-distension\",\n    \"https://radiopaedia.org/articles/gastric-outlet-obstruction\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear bilaterally with no focal consolidation, suspicious pulmonary nodules, or active infiltrates.",
+    "No visible pneumothorax or pleural effusion.",
+    "Cardiomediastinal silhouette is normal in size and contour.",
+    "A prominent, large air-fluid level is visible in the left upper quadrant and epigastrium, beneath the left hemidiaphragm, consistent with marked gastric distension containing substantial fluid and air.",
+    "Bony thorax and surrounding soft tissues are unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Gastric Distension with Air-Fluid Level",
+      "severity": "Moderate",
+      "confidence": 92,
+      "description": "Marked dilatation of the stomach with a wide horizontal air-fluid level beneath the elevated left hemidiaphragm, suggestive of delayed gastric emptying, gastric outlet obstruction, or significant aerophagia."
+    }
+  ],
+  "summary": "The chest X-ray shows that your lungs and heart appear normal and healthy. However, there is a noticeably enlarged stomach bubble containing both gas and fluid (an air-fluid level) in the upper-left abdomen. This indicates that the stomach is stretched or swollen with retained contents, which can occur with slow stomach emptying, blockage near the stomach exit, or swallowing excess air. Clinical correlation with any symptoms like nausea, vomiting, or abdominal pain is recommended.",
+  "references": [
+    "https://radiopaedia.org/articles/gastric-distension",
+    "https://radiopaedia.org/articles/gastric-outlet-obstruction"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22688,
+    "bytesOut": 22688,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:38:51.748Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

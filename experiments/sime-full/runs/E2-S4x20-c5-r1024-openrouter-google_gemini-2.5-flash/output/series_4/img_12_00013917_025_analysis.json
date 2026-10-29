@@ -1,0 +1,68 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_12_00013917_025.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Left pleural effusion, moderate to large.\",\n    \"Mild cardiomegaly.\",\n    \"Pulmonary vascular congestion.\",\n    \"Scattered small metallic artifacts noted in the soft tissues of the left shoulder region, consistent with surgical clips or foreign bodies.\",\n    \"Degenerative changes in the visualized thoracic spine.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Pleural Effusion\",\n      \"description\": \"A moderate to large effusion is noted in the left hemithorax, obscuring the left hemidiaphragm and blunting the left costophrenic angle. It extends up along the lateral chest wall.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette is mildly enlarged, suggesting mild cardiomegaly.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    },\n    {\n      \"name\": \"Pulmonary Congestion\",\n      \"description\": \"Evidence of pulmonary vascular congestion is present, particularly in the upper lobes, which may be related to cardiac issues or fluid overload.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    },\n    {\n      \"name\": \"Metallic Artifacts\",\n      \"description\": \"Multiple small, linear metallic densities are present in the soft tissues around the left shoulder, consistent with prior surgical clips or foreign bodies.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The X-ray shows a significant amount of fluid in the left lung space, known as a pleural effusion. The heart appears mildly enlarged, and there are signs of fluid buildup in the lungs, which could be related to heart issues. Additionally, some metallic objects are visible in the soft tissues of the left shoulder, likely from a previous surgery or injury. A pleural effusion (pronounced PLOOR-al eh-FYOO-zhun) is when there is too much fluid in the space between the lung and the chest wall.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion-1\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMcp1009181\",\n    \"https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.118.037048\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Left pleural effusion, moderate to large.",
+    "Mild cardiomegaly.",
+    "Pulmonary vascular congestion.",
+    "Scattered small metallic artifacts noted in the soft tissues of the left shoulder region, consistent with surgical clips or foreign bodies.",
+    "Degenerative changes in the visualized thoracic spine."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "A moderate to large effusion is noted in the left hemithorax, obscuring the left hemidiaphragm and blunting the left costophrenic angle. It extends up along the lateral chest wall."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "The cardiac silhouette is mildly enlarged, suggesting mild cardiomegaly."
+    },
+    {
+      "name": "Pulmonary Congestion",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "Evidence of pulmonary vascular congestion is present, particularly in the upper lobes, which may be related to cardiac issues or fluid overload."
+    },
+    {
+      "name": "Metallic Artifacts",
+      "severity": "Normal",
+      "confidence": 90,
+      "description": "Multiple small, linear metallic densities are present in the soft tissues around the left shoulder, consistent with prior surgical clips or foreign bodies."
+    }
+  ],
+  "summary": "The X-ray shows a significant amount of fluid in the left lung space, known as a pleural effusion. The heart appears mildly enlarged, and there are signs of fluid buildup in the lungs, which could be related to heart issues. Additionally, some metallic objects are visible in the soft tissues of the left shoulder, likely from a previous surgery or injury. A pleural effusion (pronounced PLOOR-al eh-FYOO-zhun) is when there is too much fluid in the space between the lung and the chest wall.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion-1",
+    "https://www.nejm.org/doi/full/10.1056/NEJMcp1009181",
+    "https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.118.037048"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 419469,
+    "bytesOut": 419285,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:46:46.787Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

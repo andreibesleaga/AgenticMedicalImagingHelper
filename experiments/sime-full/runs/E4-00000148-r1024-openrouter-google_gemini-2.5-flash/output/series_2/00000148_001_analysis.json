@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_2/00000148_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right pleural effusion with blunting of the right costophrenic angle and obscuration of the right hemidiaphragm.\",\n    \"Left hemidiaphragm is clear.\",\n    \"Cardiac silhouette appears unremarkable.\",\n    \"Lungs show clear vascular markings bilaterally, with no overt infiltrates or consolidation.\",\n    \"A metallic ring-like foreign body, consistent with an Embolization Coil or similar device, is noted in the right mid lung field, likely within a pulmonary vessel.\",\n    \"No evidence of pneumothorax.\",\n    \"Bony thorax and soft tissues appear unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Pleural Effusion\",\n      \"description\": \"Blunting of the right costophrenic angle and obscuration of the right hemidiaphragm are consistent with a right-sided pleural effusion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Intrapulmonary Foreign Body\",\n      \"description\": \"A metallic ring-like foreign body is visualized in the right mid lung field, consistent with an Embolization Coil or a similar vascular device. Its position suggests it is within the pulmonary vasculature.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows fluid around the right lung, which is called a pleural effusion. There is also a metallic, ring-shaped device in the middle part of the right lung, likely an embolization coil which is used to block blood flow in a vessel, suggesting a prior medical procedure. The rest of the lungs, heart, and bones appear normal. The presence of the pleural effusion means there is fluid buildup that needs to be further investigated.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7480746/\",\n    \"https://www.ahajournals.org/doi/full/10.1161/CIRCINTERVENTIONS.109.897217\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right pleural effusion with blunting of the right costophrenic angle and obscuration of the right hemidiaphragm.",
+    "Left hemidiaphragm is clear.",
+    "Cardiac silhouette appears unremarkable.",
+    "Lungs show clear vascular markings bilaterally, with no overt infiltrates or consolidation.",
+    "A metallic ring-like foreign body, consistent with an Embolization Coil or similar device, is noted in the right mid lung field, likely within a pulmonary vessel.",
+    "No evidence of pneumothorax.",
+    "Bony thorax and soft tissues appear unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Blunting of the right costophrenic angle and obscuration of the right hemidiaphragm are consistent with a right-sided pleural effusion."
+    },
+    {
+      "name": "Intrapulmonary Foreign Body",
+      "severity": "Mild",
+      "confidence": 100,
+      "description": "A metallic ring-like foreign body is visualized in the right mid lung field, consistent with an Embolization Coil or a similar vascular device. Its position suggests it is within the pulmonary vasculature."
+    }
+  ],
+  "summary": "This X-ray of the chest shows fluid around the right lung, which is called a pleural effusion. There is also a metallic, ring-shaped device in the middle part of the right lung, likely an embolization coil which is used to block blood flow in a vessel, suggesting a prior medical procedure. The rest of the lungs, heart, and bones appear normal. The presence of the pleural effusion means there is fluid buildup that needs to be further investigated.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7480746/",
+    "https://www.ahajournals.org/doi/full/10.1161/CIRCINTERVENTIONS.109.897217"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 440372,
+    "bytesOut": 439172,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:18:20.132Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

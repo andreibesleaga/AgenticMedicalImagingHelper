@@ -1,0 +1,68 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_1/img_17_00010980_004.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Cardiomegaly with a cardiothoracic ratio estimated to be greater than 0.5, suggestive of an enlarged heart.\",\n    \"Bilateral pleural effusions, with blunting of the costophrenic angles.\",\n    \"Pulmonary vascular congestion, characterized by prominent pulmonary vasculature.\",\n    \"Patchy opacities in both lung fields, particularly in the lower zones, likely representing atelectasis or early pulmonary edema.\",\n    \"Small caliber tubular structure noted over the left supraclavicular region, likely representing a surgical clip.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlargement of the cardiac silhouette with a cardiothoracic ratio estimated to be greater than 0.5.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Bilateral blunting of the costophrenic angles, consistent with pleural fluid accumulation.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Pulmonary Vascular Congestion\",\n      \"description\": \"Prominent pulmonary vasculature, indicating increased blood flow or fluid in the lungs.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    },\n    {\n      \"name\": \"Pulmonary Opacities\",\n      \"description\": \"Patchy opacities noted in both lung fields, especially in the lower zones, consistent with atelectasis or early pulmonary edema.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"The X-ray of the chest shows that the patient's heart appears enlarged. There is also some fluid around both lungs, which is called pleural effusion, and signs of increased fluid in the lung blood vessels (pulmonary congestion). Additionally, there are some cloudy areas in both lungs, which could be collapsed lung tissue (atelectasis) or early fluid buildup in the lungs (pulmonary edema). These findings often suggest a heart condition that might be causing fluid to back up into the lungs and around the heart.\",\n  \"references\": [\n    \"https://radiologykey.com/cardiomegaly/\",\n    \"https://radiologyassistant.nl/chest/pleural-effusion\",\n    \"https://emedicine.medscape.com/article/358893-overview\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Cardiomegaly with a cardiothoracic ratio estimated to be greater than 0.5, suggestive of an enlarged heart.",
+    "Bilateral pleural effusions, with blunting of the costophrenic angles.",
+    "Pulmonary vascular congestion, characterized by prominent pulmonary vasculature.",
+    "Patchy opacities in both lung fields, particularly in the lower zones, likely representing atelectasis or early pulmonary edema.",
+    "Small caliber tubular structure noted over the left supraclavicular region, likely representing a surgical clip."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Enlargement of the cardiac silhouette with a cardiothoracic ratio estimated to be greater than 0.5."
+    },
+    {
+      "name": "Pleural Effusions",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Bilateral blunting of the costophrenic angles, consistent with pleural fluid accumulation."
+    },
+    {
+      "name": "Pulmonary Vascular Congestion",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Prominent pulmonary vasculature, indicating increased blood flow or fluid in the lungs."
+    },
+    {
+      "name": "Pulmonary Opacities",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "Patchy opacities noted in both lung fields, especially in the lower zones, consistent with atelectasis or early pulmonary edema."
+    }
+  ],
+  "summary": "The X-ray of the chest shows that the patient's heart appears enlarged. There is also some fluid around both lungs, which is called pleural effusion, and signs of increased fluid in the lung blood vessels (pulmonary congestion). Additionally, there are some cloudy areas in both lungs, which could be collapsed lung tissue (atelectasis) or early fluid buildup in the lungs (pulmonary edema). These findings often suggest a heart condition that might be causing fluid to back up into the lungs and around the heart.",
+  "references": [
+    "https://radiologykey.com/cardiomegaly/",
+    "https://radiologyassistant.nl/chest/pleural-effusion",
+    "https://emedicine.medscape.com/article/358893-overview"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 25177,
+    "bytesOut": 25177,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:01:50.209Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

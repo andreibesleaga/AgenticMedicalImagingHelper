@@ -1,0 +1,65 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000239/series_4/00000239_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest and upper abdomen (PA/AP erect)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Frontal chest radiograph with visualized upper abdomen\",\n    \"Cardiac silhouette appears mildly to moderately enlarged with cardiothoracic ratio increased\",\n    \"Lung fields grossly clear bilaterally, no focal consolidation or pleural effusion clearly identified\",\n    \"Large well-defined round radiolucent (gas-filled) structure in the left upper abdomen, consistent with a distended gastric bubble\",\n    \"Mottled, coarse gas pattern with multiple lucencies in the mid/lower abdomen, suggestive of dilated bowel loops with air-fluid levels\",\n    \"Diaphragmatic contours partially obscured by overlying bowel gas pattern\",\n    \"Skeletal structures (ribs, spine, clavicles) appear grossly intact without obvious fracture\",\n    \"Soft tissue overlying right chest wall shows no significant abnormality\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly (possible)\",\n      \"description\": \"Cardiac silhouette appears enlarged relative to thoracic width; cardiothoracic ratio appears increased, though this may be affected by projection/rotation\",\n      \"severity\": \"Mild\",\n      \"confidence\": 45\n    },\n    {\n      \"name\": \"Distended gastric bubble\",\n      \"description\": \"Large rounded gas collection in the left upper abdomen beneath the diaphragm, likely representing a dilated, air-filled stomach\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 60\n    },\n    {\n      \"name\": \"Abnormal bowel gas pattern\",\n      \"description\": \"Mottled, irregular gas pattern with multiple lucent areas in the mid-abdomen, raising concern for dilated bowel loops possibly with air-fluid levels; correlation with an abdominal series or CT is recommended to exclude obstruction or ileus\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 55\n    }\n  ],\n  \"summary\": \"This chest X-ray shows the lungs and heart, along with part of the upper belly (abdomen) at the bottom of the image. The lungs themselves look mostly clear, without obvious signs of infection or fluid buildup. The heart shadow looks slightly larger than expected, which can sometimes be seen with heart conditions but can also be affected by how the picture was taken. There is a large, rounded air pocket on the left side of the upper abdomen, which likely represents a distended stomach filled with air. Below that, there is an irregular, patchy pattern of gas that may represent swollen or dilated loops of intestine — this can be a normal finding, but it can also be seen with conditions like bowel obstruction or ileus (when the intestines aren't moving normally). These findings would need to be correlated with the patient's symptoms and possibly followed up with additional imaging, such as an abdominal X-ray series or CT scan, to get a clearer picture of what's happening in the abdomen.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/bowel-obstruction\",\n    \"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria\",\n    \"https://pubs.rsna.org/journal/radiographics\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest and upper abdomen (PA/AP erect)",
+  "quality": "Fair",
+  "findings": [
+    "Frontal chest radiograph with visualized upper abdomen",
+    "Cardiac silhouette appears mildly to moderately enlarged with cardiothoracic ratio increased",
+    "Lung fields grossly clear bilaterally, no focal consolidation or pleural effusion clearly identified",
+    "Large well-defined round radiolucent (gas-filled) structure in the left upper abdomen, consistent with a distended gastric bubble",
+    "Mottled, coarse gas pattern with multiple lucencies in the mid/lower abdomen, suggestive of dilated bowel loops with air-fluid levels",
+    "Diaphragmatic contours partially obscured by overlying bowel gas pattern",
+    "Skeletal structures (ribs, spine, clavicles) appear grossly intact without obvious fracture",
+    "Soft tissue overlying right chest wall shows no significant abnormality"
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly (possible)",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "Cardiac silhouette appears enlarged relative to thoracic width; cardiothoracic ratio appears increased, though this may be affected by projection/rotation"
+    },
+    {
+      "name": "Distended gastric bubble",
+      "severity": "Moderate",
+      "confidence": 60,
+      "description": "Large rounded gas collection in the left upper abdomen beneath the diaphragm, likely representing a dilated, air-filled stomach"
+    },
+    {
+      "name": "Abnormal bowel gas pattern",
+      "severity": "Moderate",
+      "confidence": 55,
+      "description": "Mottled, irregular gas pattern with multiple lucent areas in the mid-abdomen, raising concern for dilated bowel loops possibly with air-fluid levels; correlation with an abdominal series or CT is recommended to exclude obstruction or ileus"
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs and heart, along with part of the upper belly (abdomen) at the bottom of the image. The lungs themselves look mostly clear, without obvious signs of infection or fluid buildup. The heart shadow looks slightly larger than expected, which can sometimes be seen with heart conditions but can also be affected by how the picture was taken. There is a large, rounded air pocket on the left side of the upper abdomen, which likely represents a distended stomach filled with air. Below that, there is an irregular, patchy pattern of gas that may represent swollen or dilated loops of intestine — this can be a normal finding, but it can also be seen with conditions like bowel obstruction or ileus (when the intestines aren't moving normally). These findings would need to be correlated with the patient's symptoms and possibly followed up with additional imaging, such as an abdominal X-ray series or CT scan, to get a clearer picture of what's happening in the abdomen.",
+  "references": [
+    "https://radiopaedia.org/articles/bowel-obstruction",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiographics"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23501,
+    "bytesOut": 23501,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-29T10:43:38.761Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

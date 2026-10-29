@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_3/img_04_00002275_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pleural effusion, or pneumothorax is identified.\",\n    \"Bilateral lung fields show increased interstitial markings, particularly at the bases, suggesting interstitial prominence or fibrosis.\",\n    \"The cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"The diaphragms are well-defined, and costophrenic angles are clear.\",\n    \"Osseous structures appear unremarkable within the imaged field.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Increased interstitial markings\",\n      \"description\": \"Bilateral increased interstitial markings are noted, more prominent in the lower lung zones. This could represent interstitial prominence or early fibrotic changes.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows increased lacy patterns in both lungs, especially at the bottom parts. This might suggest some thickening or scarring of the lung tissue. The heart size and major blood vessels appear normal, and there are no signs of pneumonia, fluid around the lungs, or a collapsed lung. Further investigation might be recommended to understand the cause and significance of these lung findings.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7326442/\",\n    \"https://radiopaedia.org/articles/interstitial-lung-disease\",\n    \"https://www.atsjournals.org/doi/full/10.1164/rccm.200908-1250ST\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pleural effusion, or pneumothorax is identified.",
+    "Bilateral lung fields show increased interstitial markings, particularly at the bases, suggesting interstitial prominence or fibrosis.",
+    "The cardiomediastinal silhouette is within normal limits for size and contour.",
+    "The diaphragms are well-defined, and costophrenic angles are clear.",
+    "Osseous structures appear unremarkable within the imaged field."
+  ],
+  "abnormalities": [
+    {
+      "name": "Increased interstitial markings",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Bilateral increased interstitial markings are noted, more prominent in the lower lung zones. This could represent interstitial prominence or early fibrotic changes."
+    }
+  ],
+  "summary": "The chest X-ray shows increased lacy patterns in both lungs, especially at the bottom parts. This might suggest some thickening or scarring of the lung tissue. The heart size and major blood vessels appear normal, and there are no signs of pneumonia, fluid around the lungs, or a collapsed lung. Further investigation might be recommended to understand the cause and significance of these lung findings.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7326442/",
+    "https://radiopaedia.org/articles/interstitial-lung-disease",
+    "https://www.atsjournals.org/doi/full/10.1164/rccm.200908-1250ST"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 396643,
+    "bytesOut": 392615,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:36:09.888Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

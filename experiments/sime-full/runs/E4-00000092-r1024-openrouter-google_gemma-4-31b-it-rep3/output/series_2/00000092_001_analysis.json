@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_2/00000092_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral lung fields show diffuse, patchy interstitial opacities\",\n    \"Presence of a small right-sided pleural effusion with blunting of the costophrenic angle\",\n    \"Heart size appears within normal limits\",\n    \"Bony structures show degenerative changes in the shoulders\",\n    \"Gastric bubble is visible below the left diaphragm\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Interstitial opacities\",\n      \"description\": \"Diffuse, patchy opacities throughout both lungs, suggesting interstitial lung disease or pulmonary edema\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Right pleural effusion\",\n      \"description\": \"Blunting of the right costophrenic angle indicative of a small amount of fluid in the pleural space\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows signs of fluid or inflammation in the lungs (interstitial opacities) and a small amount of fluid around the right lung (pleural effusion). These findings can be seen in several conditions, such as heart failure, certain infections, or chronic lung disease. Further clinical correlation and possibly a CT scan are recommended for a definitive diagnosis.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/interstitial-lung-disease\",\n    \"https://radiopaedia.org/articles/pleural-effusion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral lung fields show diffuse, patchy interstitial opacities",
+    "Presence of a small right-sided pleural effusion with blunting of the costophrenic angle",
+    "Heart size appears within normal limits",
+    "Bony structures show degenerative changes in the shoulders",
+    "Gastric bubble is visible below the left diaphragm"
+  ],
+  "abnormalities": [
+    {
+      "name": "Interstitial opacities",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Diffuse, patchy opacities throughout both lungs, suggesting interstitial lung disease or pulmonary edema"
+    },
+    {
+      "name": "Right pleural effusion",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Blunting of the right costophrenic angle indicative of a small amount of fluid in the pleural space"
+    }
+  ],
+  "summary": "The chest X-ray shows signs of fluid or inflammation in the lungs (interstitial opacities) and a small amount of fluid around the right lung (pleural effusion). These findings can be seen in several conditions, such as heart failure, certain infections, or chronic lung disease. Further clinical correlation and possibly a CT scan are recommended for a definitive diagnosis.",
+  "references": [
+    "https://radiopaedia.org/articles/interstitial-lung-disease",
+    "https://radiopaedia.org/articles/pleural-effusion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 421309,
+    "bytesOut": 319961,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:01:12.749Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,65 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_6/00000239_005.png",
+  "seriesId": "series_6",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP upright)\",\"quality\":\"Fair\",\"findings\":[\"Large well-defined round-to-oval gas-filled lucency projecting over the left lower/mid chest, below the diaphragm contour, with a visible rim - consistent with a markedly dilated, air-filled gastric fundus (large hiatal hernia) or massively distended stomach/bowel loop herniating into the lower thorax\",\"Cardiac silhouette appears partially obscured and possibly displaced due to the adjacent large air-filled structure\",\"Lung fields are grossly clear bilaterally without focal consolidation, though left lower lung base is partially obscured by the large air-filled structure\",\"No obvious pneumothorax identified\",\"Mild rotation of the patient noted (asymmetric clavicle positions)\",\"Degenerative changes of thoracic spine not well assessed on this view\",\"Soft tissue overlying right shoulder/chest wall noted, possibly patient positioning artifact\",\"Radiopaque marker (L) present in right upper corner indicating left-side marker placement, denoting laterality\"],\"abnormalities\":[{\"name\":\"Large gas-filled retrocardiac/left lower thoracic structure\",\"description\":\"Well-circumscribed, large round lucency with an air-fluid interface-like margin seen over the left lower chest, inferior and medial to the left hemidiaphragm, highly suggestive of a large hiatal hernia with intrathoracic stomach or markedly dilated gastric bubble\",\"severity\":\"Moderate\",\"confidence\":72},{\"name\":\"Possible mediastinal/cardiac displacement\",\"description\":\"The cardiac silhouette border on the left appears altered in contour, which may reflect mass effect from the adjacent large air-filled structure\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Rotational positioning artifact\",\"description\":\"Asymmetry of the clavicles and chest wall soft tissue suggests slight patient rotation during image acquisition, which can affect assessment of mediastinal structures\",\"severity\":\"Mild\",\"confidence\":55}],\"summary\":\"This chest X-ray shows a large, round air-filled pocket in the lower left part of the chest, just above where the diaphragm (the muscle that separates the chest from the abdomen) would normally be. This pattern is commonly seen when part of the stomach pushes up into the chest through an opening in the diaphragm, a condition called a hiatal hernia, or when the stomach becomes very distended with trapped air. The lungs themselves look relatively clear, without signs of infection or collapse. However, this finding should be correlated with the patient's symptoms (such as reflux, chest discomfort, or difficulty swallowing) and may need follow-up imaging, such as a CT scan or a barium swallow study, to confirm the exact cause and extent of the finding. The image was taken with a slight rotation of the patient, which can sometimes make it harder to fully evaluate the heart and surrounding structures.\",\"references\":[\"https://radiopaedia.org/articles/hiatus-hernia\",\"https://pubs.rsna.org/doi/10.1148/rg.2017160174\",\"https://www.ajronline.org/doi/10.2214/AJR.14.12592\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Fair",
+  "findings": [
+    "Large well-defined round-to-oval gas-filled lucency projecting over the left lower/mid chest, below the diaphragm contour, with a visible rim - consistent with a markedly dilated, air-filled gastric fundus (large hiatal hernia) or massively distended stomach/bowel loop herniating into the lower thorax",
+    "Cardiac silhouette appears partially obscured and possibly displaced due to the adjacent large air-filled structure",
+    "Lung fields are grossly clear bilaterally without focal consolidation, though left lower lung base is partially obscured by the large air-filled structure",
+    "No obvious pneumothorax identified",
+    "Mild rotation of the patient noted (asymmetric clavicle positions)",
+    "Degenerative changes of thoracic spine not well assessed on this view",
+    "Soft tissue overlying right shoulder/chest wall noted, possibly patient positioning artifact",
+    "Radiopaque marker (L) present in right upper corner indicating left-side marker placement, denoting laterality"
+  ],
+  "abnormalities": [
+    {
+      "name": "Large gas-filled retrocardiac/left lower thoracic structure",
+      "severity": "Moderate",
+      "confidence": 72,
+      "description": "Well-circumscribed, large round lucency with an air-fluid interface-like margin seen over the left lower chest, inferior and medial to the left hemidiaphragm, highly suggestive of a large hiatal hernia with intrathoracic stomach or markedly dilated gastric bubble"
+    },
+    {
+      "name": "Possible mediastinal/cardiac displacement",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "The cardiac silhouette border on the left appears altered in contour, which may reflect mass effect from the adjacent large air-filled structure"
+    },
+    {
+      "name": "Rotational positioning artifact",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Asymmetry of the clavicles and chest wall soft tissue suggests slight patient rotation during image acquisition, which can affect assessment of mediastinal structures"
+    }
+  ],
+  "summary": "This chest X-ray shows a large, round air-filled pocket in the lower left part of the chest, just above where the diaphragm (the muscle that separates the chest from the abdomen) would normally be. This pattern is commonly seen when part of the stomach pushes up into the chest through an opening in the diaphragm, a condition called a hiatal hernia, or when the stomach becomes very distended with trapped air. The lungs themselves look relatively clear, without signs of infection or collapse. However, this finding should be correlated with the patient's symptoms (such as reflux, chest discomfort, or difficulty swallowing) and may need follow-up imaging, such as a CT scan or a barium swallow study, to confirm the exact cause and extent of the finding. The image was taken with a slight rotation of the patient, which can sometimes make it harder to fully evaluate the heart and surrounding structures.",
+  "references": [
+    "https://radiopaedia.org/articles/hiatus-hernia",
+    "https://pubs.rsna.org/doi/10.1148/rg.2017160174",
+    "https://www.ajronline.org/doi/10.2214/AJR.14.12592"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 378298,
+    "bytesOut": 374356,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T10:32:50.859Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

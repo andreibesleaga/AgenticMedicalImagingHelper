@@ -1,0 +1,210 @@
+{
+  "manifestVersion": "1.0",
+  "toolVersion": "1.1.0",
+  "startedAt": "2026-09-29T11:03:23.147Z",
+  "finishedAt": "2026-09-29T11:06:49.990Z",
+  "provider": "local",
+  "model": "medgemma1.5:4b",
+  "pricing": {
+    "inputUsdPerMillion": 0,
+    "outputUsdPerMillion": 0
+  },
+  "settings": {
+    "concurrency": 1,
+    "maxCostUsd": 1,
+    "retries": 3
+  },
+  "inputDir": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000296",
+  "outputDir": "/home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4-00000296-r224-local-medgemma1.5_4b/output",
+  "inputs": [
+    {
+      "path": "series_1/00000296_000.png",
+      "sha256": "4b4baf3ab76b9f81b6740980620368ccac2367861dc08c8ccdd226840fe8d554",
+      "bytes": 22549
+    },
+    {
+      "path": "series_2/00000296_001.png",
+      "sha256": "39c1268e438a06f5d6a5586d66b7d60b612f7e1af9d3017260cc77a5ffc857c0",
+      "bytes": 22750
+    },
+    {
+      "path": "series_3/00000296_002.png",
+      "sha256": "bd1c7f789d33fb7d710602fe645860043ec3cef045a6351a39d62c8ffd497057",
+      "bytes": 22944
+    },
+    {
+      "path": "series_4/00000296_003.png",
+      "sha256": "9d68eb1c95938e429443ea6511bc3fdcdefd52809808f7c751bd25003100ee72",
+      "bytes": 24725
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "patient_context.txt",
+      "sha256": "316dac43c15fc45903eb48da210c699838e4f844337b72c7ae4738281ceb6cfb",
+      "bytes": 357
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "stage": "image",
+      "timestamp": "2026-09-29T11:03:38.036Z",
+      "tokensIn": 684,
+      "tokensOut": 121,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 2,
+      "stage": "image",
+      "timestamp": "2026-09-29T11:04:03.726Z",
+      "tokensIn": 684,
+      "tokensOut": 261,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 3,
+      "stage": "image",
+      "timestamp": "2026-09-29T11:04:24.683Z",
+      "tokensIn": 684,
+      "tokensOut": 178,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 4,
+      "stage": "image",
+      "timestamp": "2026-09-29T11:04:41.802Z",
+      "tokensIn": 684,
+      "tokensOut": 152,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 5,
+      "stage": "series",
+      "timestamp": "2026-09-29T11:04:57.302Z",
+      "tokensIn": 455,
+      "tokensOut": 178,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 6,
+      "stage": "series",
+      "timestamp": "2026-09-29T11:05:16.310Z",
+      "tokensIn": 595,
+      "tokensOut": 241,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 7,
+      "stage": "series",
+      "timestamp": "2026-09-29T11:05:35.259Z",
+      "tokensIn": 512,
+      "tokensOut": 242,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 8,
+      "stage": "series",
+      "timestamp": "2026-09-29T11:05:51.232Z",
+      "tokensIn": 486,
+      "tokensOut": 182,
+      "estimatedUsd": 0,
+      "retries": 0
+    },
+    {
+      "index": 9,
+      "stage": "evolution",
+      "timestamp": "2026-09-29T11:06:49.903Z",
+      "tokensIn": 788,
+      "tokensOut": 753,
+      "estimatedUsd": 0,
+      "retries": 0
+    }
+  ],
+  "outputs": [
+    {
+      "path": "series_1/00000296_000_analysis.json",
+      "sha256": "027640e3fd7f22cb84128f38ac8ca96091a0a89cabdfe3b029be4bede0c3944e",
+      "bytes": 1825
+    },
+    {
+      "path": "series_2/00000296_001_analysis.json",
+      "sha256": "1436d386acd44d7fe30944f3ad8594a5873b3d481e17e182a9fc046ca0e99514",
+      "bytes": 2699
+    },
+    {
+      "path": "series_3/00000296_002_analysis.json",
+      "sha256": "8aa2b5f0a7cb15966569eb204db76ca82d941ef8814f7b3374bbb89a78f290be",
+      "bytes": 2283
+    },
+    {
+      "path": "series_4/00000296_003_analysis.json",
+      "sha256": "5b5050220c003e6e2a031a514f5c523f861ca220f31cd0fb6fa1a6c702b67c7b",
+      "bytes": 2236
+    },
+    {
+      "path": "series_1/series_summary.md",
+      "sha256": "7bea9cb507a636ce3dba8d2cd5693da16ad6ebbbd1a7f01d9224266034a4934d",
+      "bytes": 1473
+    },
+    {
+      "path": "series_2/series_summary.md",
+      "sha256": "1115f5052e557979d78361c638ee192456ee0dfaa9d1ec1a01d851d7a7b4f066",
+      "bytes": 1754
+    },
+    {
+      "path": "series_3/series_summary.md",
+      "sha256": "882fb947190762deb9264550e1349f14f959220a84f6faf7b0fd10cc5abaa0b1",
+      "bytes": 1736
+    },
+    {
+      "path": "series_4/series_summary.md",
+      "sha256": "60167c5a970a2a00618ee5a6b5c53adea3ca1ec18f3ce88870653300709fc379",
+      "bytes": 1678
+    },
+    {
+      "path": "evolution_analysis.json",
+      "sha256": "f7f411f0eb43278e9f4ae4b46bad1beb8ec44d09fe0abdffada7c3bc4ee3248b",
+      "bytes": 3933
+    },
+    {
+      "path": "combined_diagnostic_report.md",
+      "sha256": "6f4190f92527a192d3f640ddda7ec41ff852353c33f6d3536440b6b9cfb8245d",
+      "bytes": 4494
+    }
+  ],
+  "totals": {
+    "calls": 9,
+    "tokensIn": 5572,
+    "tokensOut": 2308,
+    "estimatedUsd": 0,
+    "images": 4,
+    "imagesSucceeded": 4,
+    "imagesFailed": 0,
+    "series": 4
+  },
+  "exitCode": 0,
+  "warnings": [
+    "input-integrity: 4 image(s) matched --expect-hashes.",
+    "measurement-probe: 6 absolute size claim(s) in generated text. PNG/JPEG inputs carry no pixel spacing, so these are model estimates, not measurements; verify against the image.",
+    "measurement-probe [absolute-size] image series_2/00000296_001.png: \"1.6 cm\" — \"The AP diameter of the trachea is 1.6 cm\"",
+    "measurement-probe [absolute-size] image series_2/00000296_001.png: \"1.4 cm\" — \"The AP diameter of the lower trachea is 1.4 cm\"",
+    "measurement-probe [absolute-size] image series_2/00000296_001.png: \"1.4 cm\" — \"The AP diameter of the upper trachea is 1.4 cm\"",
+    "measurement-probe [absolute-size] series series_2: \"1.6 cm\" — \"The AP diameter of the trachea is 1.6 cm\"",
+    "measurement-probe [absolute-size] series series_2: \"1.4 cm\" — \"The AP diameter of the lower trachea is 1.4 cm\"",
+    "measurement-probe [absolute-size] series series_2: \"1.4 cm\" — \"The AP diameter of the upper trachea is 1.4 cm\""
+  ],
+  "humanReview": {
+    "required": true,
+    "reviewedBy": null
+  },
+  "prevManifestHash": null,
+  "manifestHash": "fdf1fcf262b7e5c0f552997569ed6c864eaa9f29034e0d2b87c3f5197273c25b"
+}

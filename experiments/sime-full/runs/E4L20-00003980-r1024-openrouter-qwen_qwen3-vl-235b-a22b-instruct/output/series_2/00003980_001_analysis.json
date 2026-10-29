@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00003980/series_2/00003980_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Left-sided chest tube in place, tip located in the left pleural space near the costophrenic angle.\",\n    \"Right lung appears clear with normal vascular markings.\",\n    \"Left lung shows mild to moderate opacification in the lower and middle zones, consistent with post-procedure changes or residual effusion.\",\n    \"Cardiac silhouette is within normal limits for size and contour.\",\n    \"No evidence of pneumothorax on either side.\",\n    \"Diaphragm and costophrenic angles are partially obscured on the left due to the chest tube and underlying opacity.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left pleural effusion / post-procedural change\",\n      \"description\": \"Opacity in the left lower and middle lung zones adjacent to the chest tube suggests residual fluid or inflammatory changes following drainage. No air-fluid level is clearly visible, and the lung appears re-expanded.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This chest X-ray shows a chest tube placed on the left side, likely to drain fluid or air from the pleural space. The right lung looks healthy, while the left lung has some cloudiness, which may be leftover fluid or inflammation after the procedure. The heart and diaphragm look normal. This is commonly seen after procedures like thoracentesis or chest tube placement and usually improves over time.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-tube-placement\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK537104/\",\n    \"https://www.mayoclinic.org/tests-procedures/chest-tube-placement/about/pac-20394963\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Left-sided chest tube in place, tip located in the left pleural space near the costophrenic angle.",
+    "Right lung appears clear with normal vascular markings.",
+    "Left lung shows mild to moderate opacification in the lower and middle zones, consistent with post-procedure changes or residual effusion.",
+    "Cardiac silhouette is within normal limits for size and contour.",
+    "No evidence of pneumothorax on either side.",
+    "Diaphragm and costophrenic angles are partially obscured on the left due to the chest tube and underlying opacity."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left pleural effusion / post-procedural change",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Opacity in the left lower and middle lung zones adjacent to the chest tube suggests residual fluid or inflammatory changes following drainage. No air-fluid level is clearly visible, and the lung appears re-expanded."
+    }
+  ],
+  "summary": "This chest X-ray shows a chest tube placed on the left side, likely to drain fluid or air from the pleural space. The right lung looks healthy, while the left lung has some cloudiness, which may be leftover fluid or inflammation after the procedure. The heart and diaphragm look normal. This is commonly seen after procedures like thoracentesis or chest tube placement and usually improves over time.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-tube-placement",
+    "https://www.ncbi.nlm.nih.gov/books/NBK537104/",
+    "https://www.mayoclinic.org/tests-procedures/chest-tube-placement/about/pac-20394963"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 402595,
+    "bytesOut": 369382,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:06:19.511Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,66 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_4/00000239_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP/PA), including upper abdomen\",\"quality\":\"Fair\",\"findings\":[\"Large, well-circumscribed gas-filled structure in the left upper abdomen/left lower thoracic region, appearing as a rounded lucency with air-fluid level, suggestive of a massively dilated stomach (gastric bubble) or possible intrathoracic/diaphragmatic herniation of stomach.\",\"Lung fields are clear bilaterally without focal consolidation, effusion, or pneumothorax.\",\"Cardiac silhouette appears mildly enlarged, though partially obscured by overlying gastric distension.\",\"Mediastinal contours are within normal limits; trachea is midline.\",\"Surgical clips/sutures noted in the right upper chest wall/axillary region, suggesting prior thoracic or breast surgery.\",\"Multiple small metallic markers or clips seen in the epigastric region, possibly surgical clips from prior abdominal surgery.\",\"Skeletal structures (ribs, clavicles, shoulders) appear grossly intact without acute fracture.\",\"Soft tissue overlying the right chest wall shows asymmetry, possibly due to prior mastectomy or surgical intervention.\",\"An external marker ('L' with additional annotation) is visible in the right upper corner indicating laterality.\"],\"abnormalities\":[{\"name\":\"Massively dilated gastric bubble\",\"description\":\"Large well-defined rounded lucency with air-fluid level in the left upper quadrant/lower thoracic region, consistent with severe gastric distension, possible gastric volvulus, or paraesophageal/hiatal hernia with intrathoracic stomach.\",\"severity\":\"Severe\",\"confidence\":75},{\"name\":\"Post-surgical changes right chest wall\",\"description\":\"Surgical clips and soft tissue asymmetry in the right axillary/chest wall region, suggestive of prior mastectomy or thoracic surgery.\",\"severity\":\"Mild\",\"confidence\":60},{\"name\":\"Possible cardiomegaly\",\"description\":\"Cardiac silhouette appears enlarged relative to thoracic width, though assessment is limited due to overlying bowel gas pattern.\",\"severity\":\"Mild\",\"confidence\":40}],\"summary\":\"This chest X-ray shows a large air-filled, balloon-like structure in the upper left abdomen/lower chest area, which most likely represents a very distended stomach. This could be due to a blockage, a twisted stomach (volvulus), or part of the stomach pushing up into the chest through the diaphragm (a hiatal hernia). The lungs themselves look clear, without signs of pneumonia or fluid buildup. There are also some metal clips visible on the right side of the chest, which suggest the patient has had prior surgery in that area, possibly breast or chest surgery. The heart may appear slightly enlarged, but this is hard to assess clearly due to the gas-filled stomach overlapping it. These findings should be correlated with the patient's symptoms and confirmed with follow-up imaging such as a CT scan, and reviewed by a physician for further management.\",\"references\":[\"https://radiopaedia.org/articles/gastric-volvulus\",\"https://radiopaedia.org/articles/hiatus-hernia\",\"https://pubs.rsna.org/doi/10.1148/rg.2020190145\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP/PA), including upper abdomen",
+  "quality": "Fair",
+  "findings": [
+    "Large, well-circumscribed gas-filled structure in the left upper abdomen/left lower thoracic region, appearing as a rounded lucency with air-fluid level, suggestive of a massively dilated stomach (gastric bubble) or possible intrathoracic/diaphragmatic herniation of stomach.",
+    "Lung fields are clear bilaterally without focal consolidation, effusion, or pneumothorax.",
+    "Cardiac silhouette appears mildly enlarged, though partially obscured by overlying gastric distension.",
+    "Mediastinal contours are within normal limits; trachea is midline.",
+    "Surgical clips/sutures noted in the right upper chest wall/axillary region, suggesting prior thoracic or breast surgery.",
+    "Multiple small metallic markers or clips seen in the epigastric region, possibly surgical clips from prior abdominal surgery.",
+    "Skeletal structures (ribs, clavicles, shoulders) appear grossly intact without acute fracture.",
+    "Soft tissue overlying the right chest wall shows asymmetry, possibly due to prior mastectomy or surgical intervention.",
+    "An external marker ('L' with additional annotation) is visible in the right upper corner indicating laterality."
+  ],
+  "abnormalities": [
+    {
+      "name": "Massively dilated gastric bubble",
+      "severity": "Severe",
+      "confidence": 75,
+      "description": "Large well-defined rounded lucency with air-fluid level in the left upper quadrant/lower thoracic region, consistent with severe gastric distension, possible gastric volvulus, or paraesophageal/hiatal hernia with intrathoracic stomach."
+    },
+    {
+      "name": "Post-surgical changes right chest wall",
+      "severity": "Mild",
+      "confidence": 60,
+      "description": "Surgical clips and soft tissue asymmetry in the right axillary/chest wall region, suggestive of prior mastectomy or thoracic surgery."
+    },
+    {
+      "name": "Possible cardiomegaly",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Cardiac silhouette appears enlarged relative to thoracic width, though assessment is limited due to overlying bowel gas pattern."
+    }
+  ],
+  "summary": "This chest X-ray shows a large air-filled, balloon-like structure in the upper left abdomen/lower chest area, which most likely represents a very distended stomach. This could be due to a blockage, a twisted stomach (volvulus), or part of the stomach pushing up into the chest through the diaphragm (a hiatal hernia). The lungs themselves look clear, without signs of pneumonia or fluid buildup. There are also some metal clips visible on the right side of the chest, which suggest the patient has had prior surgery in that area, possibly breast or chest surgery. The heart may appear slightly enlarged, but this is hard to assess clearly due to the gas-filled stomach overlapping it. These findings should be correlated with the patient's symptoms and confirmed with follow-up imaging such as a CT scan, and reviewed by a physician for further management.",
+  "references": [
+    "https://radiopaedia.org/articles/gastric-volvulus",
+    "https://radiopaedia.org/articles/hiatus-hernia",
+    "https://pubs.rsna.org/doi/10.1148/rg.2020190145"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 431092,
+    "bytesOut": 428915,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:27:55.823Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

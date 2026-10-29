@@ -1,0 +1,54 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000008/series_2/00000008_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary process identified.\",\n    \"Normal cardiac silhouette size and contour.\",\n    \"Pulmonary vasculature appears within normal limits.\",\n    \"Hilar regions are unremarkable.\",\n    \"No evidence of focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"No acute bony abnormalities noted in the visible osseous structures.\",\n    \"A gastric bubble is seen below the left hemidiaphragm.\",\n    \"Scoliosis of the thoracic spine is noted.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Thoracic Scoliosis\",\n      \"description\": \"Mild dextroconvex curvature of the thoracic spine is observed.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows no immediate serious issues with the heart or lungs. The size and shape of the heart are normal, and the blood vessels in the lungs appear healthy. There are no signs of infection, fluid around the lungs (pleural effusion), or a collapsed lung (pneumothorax). The breathing muscles (diaphragms) are intact, and the angles where they meet the ribs are clear. No urgent problems with the bones in the chest are seen. There is a slight curvature of the spine (scoliosis) in the upper back, which is a common finding and typically not a cause for concern unless it's severe or progressing rapidly. Overall, the study is unremarkable for acute cardiopulmonary disease.\",\n  \"references\": [\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://pubs.rsna.org/journal/radiology\",\n    \"https://www.uptodate.com/contents/image-based-diagnosis-of-scoliosis\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary process identified.",
+    "Normal cardiac silhouette size and contour.",
+    "Pulmonary vasculature appears within normal limits.",
+    "Hilar regions are unremarkable.",
+    "No evidence of focal consolidation, pleural effusion, or pneumothorax.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "No acute bony abnormalities noted in the visible osseous structures.",
+    "A gastric bubble is seen below the left hemidiaphragm.",
+    "Scoliosis of the thoracic spine is noted."
+  ],
+  "abnormalities": [
+    {
+      "name": "Thoracic Scoliosis",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Mild dextroconvex curvature of the thoracic spine is observed."
+    }
+  ],
+  "summary": "The chest X-ray shows no immediate serious issues with the heart or lungs. The size and shape of the heart are normal, and the blood vessels in the lungs appear healthy. There are no signs of infection, fluid around the lungs (pleural effusion), or a collapsed lung (pneumothorax). The breathing muscles (diaphragms) are intact, and the angles where they meet the ribs are clear. No urgent problems with the bones in the chest are seen. There is a slight curvature of the spine (scoliosis) in the upper back, which is a common finding and typically not a cause for concern unless it's severe or progressing rapidly. Overall, the study is unremarkable for acute cardiopulmonary disease.",
+  "references": [
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiology",
+    "https://www.uptodate.com/contents/image-based-diagnosis-of-scoliosis"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 390119,
+    "bytesOut": 384796,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:03:50.576Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

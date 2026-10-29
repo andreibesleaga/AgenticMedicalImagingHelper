@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_2/img_09_00009918_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary pathology identified.\",\n    \"The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"The cardiac silhouette is normal in size and contour.\",\n    \"The mediastinal and hilar contours are unremarkable.\",\n    \"No acute bony abnormalities are seen.\",\n    \"A metallic foreign body is noted in the right lower lung field, consistent with a projectile fragment.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Metallic Foreign Body\",\n      \"description\": \"A metallic foreign body, consistent with a projectile fragment, is visualized in the right lower lung field.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows that your lungs and heart appear normal, and there are no signs of immediate problems like pneumonia, fluid around the lungs, or a collapsed lung. However, there is a small metallic object, possibly a bullet fragment or shrapnel, visible in the lower part of your right lung. This is an important finding that may need further evaluation by a doctor, even if it is not causing immediate symptoms.\",\n  \"references\": [\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://pubs.rsna.org/journal/radiology\",\n    \"https://www.thoracic.org/patients/patient-resources/chest-imaging/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary pathology identified.",
+    "The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "The cardiac silhouette is normal in size and contour.",
+    "The mediastinal and hilar contours are unremarkable.",
+    "No acute bony abnormalities are seen.",
+    "A metallic foreign body is noted in the right lower lung field, consistent with a projectile fragment."
+  ],
+  "abnormalities": [
+    {
+      "name": "Metallic Foreign Body",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "A metallic foreign body, consistent with a projectile fragment, is visualized in the right lower lung field."
+    }
+  ],
+  "summary": "The X-ray of your chest shows that your lungs and heart appear normal, and there are no signs of immediate problems like pneumonia, fluid around the lungs, or a collapsed lung. However, there is a small metallic object, possibly a bullet fragment or shrapnel, visible in the lower part of your right lung. This is an important finding that may need further evaluation by a doctor, even if it is not causing immediate symptoms.",
+  "references": [
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiology",
+    "https://www.thoracic.org/patients/patient-resources/chest-imaging/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 388899,
+    "bytesOut": 384327,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:46:00.487Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

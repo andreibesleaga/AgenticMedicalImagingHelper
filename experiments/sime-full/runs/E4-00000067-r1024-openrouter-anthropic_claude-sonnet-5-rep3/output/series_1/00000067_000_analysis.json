@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000067/series_1/00000067_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Fair\",\"findings\":[\"Lungs are clear bilaterally without focal consolidation, effusion, or pneumothorax\",\"Cardiac silhouette appears mildly enlarged, though partially obscured by overlying soft tissue\",\"Mediastinal contours are grossly unremarkable\",\"Bony thorax including ribs, clavicles, and visible spine show no acute fracture\",\"Overlying breast soft tissue shadows are noted bilaterally, with a rounded soft tissue density projecting over the lower right hemithorax\",\"Degenerative changes are not clearly assessed given image quality and rotation\",\"Image shows slight rotation and soft tissue overlap limiting full assessment of lung bases and costophrenic angles\"],\"abnormalities\":[{\"name\":\"Overlying soft tissue density (breast shadow)\",\"description\":\"Rounded soft tissue opacity projecting over the lower right lung field, consistent with overlying breast tissue rather than a true pulmonary nodule or mass; correlation with patient anatomy recommended\",\"severity\":\"Normal\",\"confidence\":55},{\"name\":\"Technical limitation - rotation/positioning\",\"description\":\"Mild rotation and soft tissue overlap reduce diagnostic clarity of the lower lung fields and costophrenic angles\",\"severity\":\"Mild\",\"confidence\":60}],\"summary\":\"This chest X-ray shows the lungs to be clear without signs of pneumonia, fluid buildup, or collapsed lung. The heart size appears slightly enlarged but this is difficult to fully assess due to overlying breast tissue, which is a normal structure often seen on chest X-rays in female patients and can sometimes look like a shadow on the image. No broken bones or serious abnormalities were identified. The image quality is only fair due to some rotation of the body during the X-ray, which can make some areas harder to evaluate. Overall, this appears to be a relatively unremarkable study, but as always, a radiologist's direct review of the original image is recommended for a definitive assessment.\",\"references\":[\"https://www.radiologyassistant.nl/chest/chest-x-ray\",\"https://pubs.rsna.org/doi/10.1148/rg.2019190079\",\"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Fair",
+  "findings": [
+    "Lungs are clear bilaterally without focal consolidation, effusion, or pneumothorax",
+    "Cardiac silhouette appears mildly enlarged, though partially obscured by overlying soft tissue",
+    "Mediastinal contours are grossly unremarkable",
+    "Bony thorax including ribs, clavicles, and visible spine show no acute fracture",
+    "Overlying breast soft tissue shadows are noted bilaterally, with a rounded soft tissue density projecting over the lower right hemithorax",
+    "Degenerative changes are not clearly assessed given image quality and rotation",
+    "Image shows slight rotation and soft tissue overlap limiting full assessment of lung bases and costophrenic angles"
+  ],
+  "abnormalities": [
+    {
+      "name": "Overlying soft tissue density (breast shadow)",
+      "severity": "Normal",
+      "confidence": 55,
+      "description": "Rounded soft tissue opacity projecting over the lower right lung field, consistent with overlying breast tissue rather than a true pulmonary nodule or mass; correlation with patient anatomy recommended"
+    },
+    {
+      "name": "Technical limitation - rotation/positioning",
+      "severity": "Mild",
+      "confidence": 60,
+      "description": "Mild rotation and soft tissue overlap reduce diagnostic clarity of the lower lung fields and costophrenic angles"
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs to be clear without signs of pneumonia, fluid buildup, or collapsed lung. The heart size appears slightly enlarged but this is difficult to fully assess due to overlying breast tissue, which is a normal structure often seen on chest X-rays in female patients and can sometimes look like a shadow on the image. No broken bones or serious abnormalities were identified. The image quality is only fair due to some rotation of the body during the X-ray, which can make some areas harder to evaluate. Overall, this appears to be a relatively unremarkable study, but as always, a radiologist's direct review of the original image is recommended for a definitive assessment.",
+  "references": [
+    "https://www.radiologyassistant.nl/chest/chest-x-ray",
+    "https://pubs.rsna.org/doi/10.1148/rg.2019190079",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 436781,
+    "bytesOut": 435687,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T10:21:41.726Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

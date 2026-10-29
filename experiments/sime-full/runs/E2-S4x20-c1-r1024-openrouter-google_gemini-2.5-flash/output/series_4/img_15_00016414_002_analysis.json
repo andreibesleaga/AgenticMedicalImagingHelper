@@ -1,0 +1,68 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_15_00016414_002.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Cardiomegaly is present, with enlargement of both the right and left cardiac borders.\",\n    \"Bilateral pulmonary opacities are noted, consistent with pulmonary edema.\",\n    \"Pleural effusions are visible bilaterally, more prominent on the right side.\",\n    \"A cardiac pacemaker with leads is identified, with one lead projecting into the right ventricle and another into the right atrium. The pulse generator is located in the left infraclavicular region.\",\n    \"The bony thorax appears unremarkable for acute fracture or destructive lesion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Significant enlargement of the cardiac silhouette, involving both the right and left heart borders, suggesting global cardiac chamber enlargement.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pulmonary Edema\",\n      \"description\": \"Bilateral diffuse perihilar and basal opacities, consistent with interstitial and alveolar edema, indicative of fluid overload within the lungs.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Blunting of the costophrenic angles bilaterally, with a larger fluid collection noted on the right side, consistent with bilateral pleural effusions.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Cardiac Pacemaker\",\n      \"description\": \"Presence of a dual-chamber cardiac pacemaker with appropriately positioned leads in the right atrium and right ventricle. This is a known medical device and not an abnormality itself but a relevant finding.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 99\n    }\n  ],\n  \"summary\": \"This chest X-ray shows an enlarged heart (cardiomegaly), which means the heart is bigger than normal. There is also fluid in both lungs (pulmonary edema) and fluid around the lungs (pleural effusions), which could be a sign of heart failure or fluid retention. A cardiac pacemaker is visible, which is a device that helps regulate the heart's rhythm. These findings suggest problems with heart function and fluid balance.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.107.728952\",\n    \"https://www.mayoclinic.org/diseases-conditions/cardiomyopathy/symptoms-causes/syc-20354685\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Cardiomegaly is present, with enlargement of both the right and left cardiac borders.",
+    "Bilateral pulmonary opacities are noted, consistent with pulmonary edema.",
+    "Pleural effusions are visible bilaterally, more prominent on the right side.",
+    "A cardiac pacemaker with leads is identified, with one lead projecting into the right ventricle and another into the right atrium. The pulse generator is located in the left infraclavicular region.",
+    "The bony thorax appears unremarkable for acute fracture or destructive lesion."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Significant enlargement of the cardiac silhouette, involving both the right and left heart borders, suggesting global cardiac chamber enlargement."
+    },
+    {
+      "name": "Pulmonary Edema",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Bilateral diffuse perihilar and basal opacities, consistent with interstitial and alveolar edema, indicative of fluid overload within the lungs."
+    },
+    {
+      "name": "Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Blunting of the costophrenic angles bilaterally, with a larger fluid collection noted on the right side, consistent with bilateral pleural effusions."
+    },
+    {
+      "name": "Cardiac Pacemaker",
+      "severity": "Normal",
+      "confidence": 99,
+      "description": "Presence of a dual-chamber cardiac pacemaker with appropriately positioned leads in the right atrium and right ventricle. This is a known medical device and not an abnormality itself but a relevant finding."
+    }
+  ],
+  "summary": "This chest X-ray shows an enlarged heart (cardiomegaly), which means the heart is bigger than normal. There is also fluid in both lungs (pulmonary edema) and fluid around the lungs (pleural effusions), which could be a sign of heart failure or fluid retention. A cardiac pacemaker is visible, which is a device that helps regulate the heart's rhythm. These findings suggest problems with heart function and fluid balance.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.107.728952",
+    "https://www.mayoclinic.org/diseases-conditions/cardiomyopathy/symptoms-causes/syc-20354685"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 456292,
+    "bytesOut": 455996,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:44:05.847Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

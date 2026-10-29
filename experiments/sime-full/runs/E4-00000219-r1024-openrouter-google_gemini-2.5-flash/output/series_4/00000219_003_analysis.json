@@ -1,0 +1,77 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_4/00000219_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Sternal wire sutures are present, indicating prior sternotomy.\",\n    \"Multiple surgical clips are seen in the mediastinum, likely related to prior cardiac or thoracic surgery.\",\n    \"Cardiomegaly is present with an increased cardiothoracic ratio.\",\n    \"There is prominence of the pulmonary vasculature, suggestive of pulmonary venous hypertension.\",\n    \"Mild interstitial opacities are noted, particularly in the lower lung fields.\",\n    \"The costophrenic angles are clear.\",\n    \"No definite focal consolidation or pleural effusion is seen.\",\n    \"The osseous structures appear intact, although some artifact from the sternal wires is present.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Prior Sternotomy\",\n      \"description\": \"Presence of sternal wire sutures indicates previous sternotomy, commonly performed for cardiac surgery.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Surgical Clips\",\n      \"description\": \"Multiple surgical clips are observed in the mediastinum, consistent with prior surgical intervention.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The heart size is enlarged with an increased cardiothoracic ratio, suggesting cardiomegaly.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pulmonary Vascular Prominence\",\n      \"description\": \"Prominent pulmonary vasculature is noted, which can be a sign of increased pulmonary venous pressure.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Interstitial Opacities\",\n      \"description\": \"Mild interstitial opacities are visible, more pronounced in the lower lobes, potentially indicating interstitial edema or fibrosis.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"This X-ray shows signs of previous heart surgery, including wires in the breastbone and surgical clips. The heart appears enlarged, and there are changes in the blood vessels of the lungs and some subtle haziness in the lung tissue. These findings might suggest that the heart is working harder or that there's some fluid buildup in the lungs. It's important for a doctor to review these findings in the context of your medical history to understand what they mean for your health.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/pulmonary-venous-hypertension\",\n    \"https://radiopaedia.org/articles/interstitial-lung-disease\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Sternal wire sutures are present, indicating prior sternotomy.",
+    "Multiple surgical clips are seen in the mediastinum, likely related to prior cardiac or thoracic surgery.",
+    "Cardiomegaly is present with an increased cardiothoracic ratio.",
+    "There is prominence of the pulmonary vasculature, suggestive of pulmonary venous hypertension.",
+    "Mild interstitial opacities are noted, particularly in the lower lung fields.",
+    "The costophrenic angles are clear.",
+    "No definite focal consolidation or pleural effusion is seen.",
+    "The osseous structures appear intact, although some artifact from the sternal wires is present."
+  ],
+  "abnormalities": [
+    {
+      "name": "Prior Sternotomy",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Presence of sternal wire sutures indicates previous sternotomy, commonly performed for cardiac surgery."
+    },
+    {
+      "name": "Surgical Clips",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Multiple surgical clips are observed in the mediastinum, consistent with prior surgical intervention."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "The heart size is enlarged with an increased cardiothoracic ratio, suggesting cardiomegaly."
+    },
+    {
+      "name": "Pulmonary Vascular Prominence",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Prominent pulmonary vasculature is noted, which can be a sign of increased pulmonary venous pressure."
+    },
+    {
+      "name": "Interstitial Opacities",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Mild interstitial opacities are visible, more pronounced in the lower lobes, potentially indicating interstitial edema or fibrosis."
+    }
+  ],
+  "summary": "This X-ray shows signs of previous heart surgery, including wires in the breastbone and surgical clips. The heart appears enlarged, and there are changes in the blood vessels of the lungs and some subtle haziness in the lung tissue. These findings might suggest that the heart is working harder or that there's some fluid buildup in the lungs. It's important for a doctor to review these findings in the context of your medical history to understand what they mean for your health.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/pulmonary-venous-hypertension",
+    "https://radiopaedia.org/articles/interstitial-lung-disease"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 392020,
+    "bytesOut": 388042,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:19:23.774Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

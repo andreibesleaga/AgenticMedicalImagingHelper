@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_1/img_17_00010980_004.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute pulmonary infiltrates or effusions are identified.\",\n    \"Cardiomediastinal contours are within normal limits.\",\n    \"A dual-chamber pacemaker is noted in the left subclavian region with leads projecting over the cardiac silhouette.\",\n    \"A subcutaneous port is identified in the right chest wall.\",\n    \"Bilateral costo-diaphragmatic angles are clear.\",\n    \"Osseous structures appear intact, considering the limitations of this projection.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pacemaker\",\n      \"description\": \"Dual-chamber pacemaker implanted in the left subclavian region with leads extending to the heart. Appears stable in position.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Subcutaneous port\",\n      \"description\": \"A subcutaneous port is identified in the right chest wall, likely for vascular access.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows no immediate concerns in the lungs, heart, or surrounding areas. There is a pacemaker on the left side of the chest and a port on the right side, both of which appear to be in their expected positions. This means there are no signs of infection, fluid buildup, or other acute problems in the chest.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2013135041\",\n    \"https://www.acc.org/latest-in-cardiology/articles/2021/04/13/11/49/pacemaker-implantation-and-follow-up-a-practical-guide\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute pulmonary infiltrates or effusions are identified.",
+    "Cardiomediastinal contours are within normal limits.",
+    "A dual-chamber pacemaker is noted in the left subclavian region with leads projecting over the cardiac silhouette.",
+    "A subcutaneous port is identified in the right chest wall.",
+    "Bilateral costo-diaphragmatic angles are clear.",
+    "Osseous structures appear intact, considering the limitations of this projection."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pacemaker",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Dual-chamber pacemaker implanted in the left subclavian region with leads extending to the heart. Appears stable in position."
+    },
+    {
+      "name": "Subcutaneous port",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A subcutaneous port is identified in the right chest wall, likely for vascular access."
+    }
+  ],
+  "summary": "The chest X-ray shows no immediate concerns in the lungs, heart, or surrounding areas. There is a pacemaker on the left side of the chest and a port on the right side, both of which appear to be in their expected positions. This means there are no signs of infection, fluid buildup, or other acute problems in the chest.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2013135041",
+    "https://www.acc.org/latest-in-cardiology/articles/2021/04/13/11/49/pacemaker-implantation-and-follow-up-a-practical-guide"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 459063,
+    "bytesOut": 458390,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:39:21.651Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

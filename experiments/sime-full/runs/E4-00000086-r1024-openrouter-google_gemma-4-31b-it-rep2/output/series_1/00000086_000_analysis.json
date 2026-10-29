@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000086/series_1/00000086_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are generally clear with no focal consolidation or large pleural effusions\",\n    \"Heart size is within normal limits\",\n    \"The right hemidiaphragm is elevated\",\n    \"There is a small, linear, radiopaque (metallic-appearing) foreign body in the right lower lung zone\",\n    \"Bony structures are intact\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Foreign body\",\n      \"description\": \"A small, linear radiopaque density is visible in the right lower lung field, suggestive of an ingested or inhaled foreign object, such as a small piece of wire or medical clip.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Elevated right hemidiaphragm\",\n      \"description\": \"The right side of the diaphragm is positioned higher than typical, which can be caused by various factors including phrenic nerve issues or abdominal processes.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray is mostly normal, but shows two findings: a small, metal-like object in the lower part of the right lung and a right diaphragm that is sitting higher than usual. The object may be an old surgical clip or a foreign body. These findings should be correlated with your medical history by your doctor.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/foreign-body-aspiration\",\n    \"https://radiopaedia.org/articles/elevated-hemidiaphragm\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are generally clear with no focal consolidation or large pleural effusions",
+    "Heart size is within normal limits",
+    "The right hemidiaphragm is elevated",
+    "There is a small, linear, radiopaque (metallic-appearing) foreign body in the right lower lung zone",
+    "Bony structures are intact"
+  ],
+  "abnormalities": [
+    {
+      "name": "Foreign body",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "A small, linear radiopaque density is visible in the right lower lung field, suggestive of an ingested or inhaled foreign object, such as a small piece of wire or medical clip."
+    },
+    {
+      "name": "Elevated right hemidiaphragm",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "The right side of the diaphragm is positioned higher than typical, which can be caused by various factors including phrenic nerve issues or abdominal processes."
+    }
+  ],
+  "summary": "The chest X-ray is mostly normal, but shows two findings: a small, metal-like object in the lower part of the right lung and a right diaphragm that is sitting higher than usual. The object may be an old surgical clip or a foreign body. These findings should be correlated with your medical history by your doctor.",
+  "references": [
+    "https://radiopaedia.org/articles/foreign-body-aspiration",
+    "https://radiopaedia.org/articles/elevated-hemidiaphragm"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 412436,
+    "bytesOut": 317617,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T09:11:57.869Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

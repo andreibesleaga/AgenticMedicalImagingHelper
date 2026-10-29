@@ -1,0 +1,184 @@
+{
+  "manifestVersion": "1.0",
+  "toolVersion": "1.1.0",
+  "startedAt": "2026-10-08T09:33:50.803Z",
+  "finishedAt": "2026-10-08T09:35:31.682Z",
+  "provider": "openrouter",
+  "model": "anthropic/claude-sonnet-5",
+  "pricing": {
+    "inputUsdPerMillion": 2,
+    "outputUsdPerMillion": 12
+  },
+  "settings": {
+    "concurrency": 1,
+    "maxCostUsd": 1,
+    "retries": 3,
+    "imageQuality": "auto"
+  },
+  "inputDir": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000008",
+  "outputDir": "/home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4-00000008-r1024-openrouter-anthropic_claude-sonnet-5-rep2/output",
+  "inputs": [
+    {
+      "path": "series_1/00000008_000.png",
+      "sha256": "c61f7d421528466a26d05780feea470273c699d947f5c977ff0e5e84e449e64c",
+      "bytes": 410034
+    },
+    {
+      "path": "series_2/00000008_001.png",
+      "sha256": "54c5174ef10e9f5db0f3be4553998dfd8a0feb15699683d10d9fa159b10408ba",
+      "bytes": 390119
+    },
+    {
+      "path": "series_3/00000008_002.png",
+      "sha256": "d33f173e1ee90e487e84af413622302a9212cd145287e949adf1fd058ffc6b38",
+      "bytes": 361319
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "patient_context.txt",
+      "sha256": "dbec03a5fce42f1e60d203950bc627956dff901a2f3165a1605351db67801787",
+      "bytes": 328
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:34:05.826Z",
+      "tokensIn": 2012,
+      "tokensOut": 1149,
+      "estimatedUsd": 0.017812,
+      "providerUsd": 0.015514,
+      "retries": 0
+    },
+    {
+      "index": 2,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:34:22.213Z",
+      "tokensIn": 2012,
+      "tokensOut": 1105,
+      "estimatedUsd": 0.017284,
+      "providerUsd": 0.015074,
+      "retries": 0
+    },
+    {
+      "index": 3,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:34:35.397Z",
+      "tokensIn": 2012,
+      "tokensOut": 772,
+      "estimatedUsd": 0.013287999999999994,
+      "providerUsd": 0.011744000000000001,
+      "retries": 0
+    },
+    {
+      "index": 4,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:34:47.575Z",
+      "tokensIn": 1623,
+      "tokensOut": 1259,
+      "estimatedUsd": 0.018353999999999995,
+      "providerUsd": 0.015835999999999996,
+      "retries": 0
+    },
+    {
+      "index": 5,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:34:59.166Z",
+      "tokensIn": 1462,
+      "tokensOut": 1016,
+      "estimatedUsd": 0.015116000000000018,
+      "providerUsd": 0.013083999999999998,
+      "retries": 0
+    },
+    {
+      "index": 6,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:35:07.048Z",
+      "tokensIn": 1167,
+      "tokensOut": 896,
+      "estimatedUsd": 0.013085999999999987,
+      "providerUsd": 0.011293999999999998,
+      "retries": 0
+    },
+    {
+      "index": 7,
+      "stage": "evolution",
+      "timestamp": "2026-10-08T09:35:31.604Z",
+      "tokensIn": 2684,
+      "tokensOut": 2153,
+      "estimatedUsd": 0.03120400000000001,
+      "providerUsd": 0.02689799999999999,
+      "retries": 0
+    }
+  ],
+  "outputs": [
+    {
+      "path": "series_1/00000008_000_analysis.json",
+      "sha256": "e8fad37a19ec14234ce45bbb36abf60df456547a77c77ebafc2894e2f8d6fc49",
+      "bytes": 7458
+    },
+    {
+      "path": "series_2/00000008_001_analysis.json",
+      "sha256": "51123204467d17c2a3e2fc197ec0163dfbbff511dfd41dec5d6316a9bf5be9ec",
+      "bytes": 6900
+    },
+    {
+      "path": "series_3/00000008_002_analysis.json",
+      "sha256": "e63cb02418f2617a493b5da7ed842cce83193456c5b970f275c5fb9bbe6a6f8e",
+      "bytes": 4934
+    },
+    {
+      "path": "series_1/series_summary.md",
+      "sha256": "89af96e191faf595023baa9cdd8e492c8bb515460fade0196675ef1ca01f6b7e",
+      "bytes": 4306
+    },
+    {
+      "path": "series_2/series_summary.md",
+      "sha256": "0b28751121572fd19d0dfebdf1bb54fc65468239074405d6cf057dba956e4d5c",
+      "bytes": 3681
+    },
+    {
+      "path": "series_3/series_summary.md",
+      "sha256": "21b66ab37beb672b62d2cb67d1f27ad3fef20fa90896eda3776085c6d6472a49",
+      "bytes": 3364
+    },
+    {
+      "path": "evolution_analysis.json",
+      "sha256": "89582be3eff24f7a2b04095e0c8f15d35f2c54e4f80e477f56dcbf0f7f81c087",
+      "bytes": 6518
+    },
+    {
+      "path": "combined_diagnostic_report.md",
+      "sha256": "200a0a22e716424f679a9a949b420e099a1ecd427700906ba5991c63bb60ca27",
+      "bytes": 6945
+    }
+  ],
+  "totals": {
+    "calls": 7,
+    "tokensIn": 12972,
+    "tokensOut": 8350,
+    "estimatedUsd": 0.126144,
+    "providerUsd": 0.10944399999999999,
+    "images": 3,
+    "imagesSucceeded": 3,
+    "imagesFailed": 0,
+    "series": 3
+  },
+  "exitCode": 0,
+  "warnings": [
+    "input-integrity: 3 image(s) matched --expect-hashes.",
+    "input-guard [image-metadata] series_1/00000008_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/00000008_001.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/00000008_002.png: png:tIME — stripped before upload",
+    "bias-probe v2: 1 sentence(s) use a demographic attribute as diagnostic justification [race-ethnicity]. Heuristic, non-blocking unless --fail-on-probe; requires clinician review.",
+    "bias-probe [race-ethnicity] \"white\" + \"usually\": \"There are two small round white spots seen over the left side of the chest, which most commonly represent either a skin marker, a nipple shadow, or small old calcified scars from prior minor lung infections (such as past histoplasmosis o...\""
+  ],
+  "humanReview": {
+    "required": true,
+    "reviewedBy": null
+  },
+  "prevManifestHash": null,
+  "manifestHash": "a8147a42ff58ec2bc78dd3f7c0a4a8c17bfec6dd481dafcf4d832e72abc784b6"
+}

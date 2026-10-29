@@ -1,0 +1,69 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S3x10/series_2/img_07_00010980_004.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Cardiomegaly is noted with a cardiothoracic ratio estimated to be greater than 0.5. The left cardiac border is particularly prominent.\",\n    \"Pulmonary vascular congestion is present, evidenced by indistinct hilar vessels and possibly mild interstitial edema.\",\n    \"Bilateral pleural effusions are observed, with blunting of both costophrenic angles. The left effusion appears larger than the right.\",\n    \"Evidence of prior left-sided surgical intervention or trauma is suggested by metallic clips or staples projected over the left upper chest/shoulder region.\",\n    \"The lung parenchyma shows no definite focal consolidation or pneumothorax.\",\n    \"Bony structures appear intact for the visualized portions, without acute fractures or significant lytic/blastic lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlargement of the cardiac silhouette, with a cardiothoracic ratio estimated to be above 0.5. The left ventricle appears particularly enlarged.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pulmonary Congestion\",\n      \"description\": \"Findings consistent with increased fluid in the lungs, including indistinct hilar vessels, suggesting pulmonary vascular congestion.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    },\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Fluid accumulation in the pleural spaces, noted by blunting of both costophrenic angles. The left pleural effusion appears more significant.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Surgical Clips/Staples\",\n      \"description\": \"Metallic clips or staples are visible in the left upper chest/shoulder region, indicating a history of prior surgery or trauma in that area.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows an enlarged heart, which means the heart muscle is bigger than normal. There are signs of extra fluid in the lungs and around the lungs (called pleural effusions), more noticeable on the left side. These findings can be associated with conditions like heart failure. There are also surgical clips or staples visible near the left shoulder, suggesting a previous procedure in that area. No obvious lung infections or collapsed lung are seen.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly-1\",\n    \"https://radiopaedia.org/articles/pleural-effusion-1\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8802951/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Cardiomegaly is noted with a cardiothoracic ratio estimated to be greater than 0.5. The left cardiac border is particularly prominent.",
+    "Pulmonary vascular congestion is present, evidenced by indistinct hilar vessels and possibly mild interstitial edema.",
+    "Bilateral pleural effusions are observed, with blunting of both costophrenic angles. The left effusion appears larger than the right.",
+    "Evidence of prior left-sided surgical intervention or trauma is suggested by metallic clips or staples projected over the left upper chest/shoulder region.",
+    "The lung parenchyma shows no definite focal consolidation or pneumothorax.",
+    "Bony structures appear intact for the visualized portions, without acute fractures or significant lytic/blastic lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Enlargement of the cardiac silhouette, with a cardiothoracic ratio estimated to be above 0.5. The left ventricle appears particularly enlarged."
+    },
+    {
+      "name": "Pulmonary Congestion",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Findings consistent with increased fluid in the lungs, including indistinct hilar vessels, suggesting pulmonary vascular congestion."
+    },
+    {
+      "name": "Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Fluid accumulation in the pleural spaces, noted by blunting of both costophrenic angles. The left pleural effusion appears more significant."
+    },
+    {
+      "name": "Surgical Clips/Staples",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Metallic clips or staples are visible in the left upper chest/shoulder region, indicating a history of prior surgery or trauma in that area."
+    }
+  ],
+  "summary": "The chest X-ray shows an enlarged heart, which means the heart muscle is bigger than normal. There are signs of extra fluid in the lungs and around the lungs (called pleural effusions), more noticeable on the left side. These findings can be associated with conditions like heart failure. There are also surgical clips or staples visible near the left shoulder, suggesting a previous procedure in that area. No obvious lung infections or collapsed lung are seen.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly-1",
+    "https://radiopaedia.org/articles/pleural-effusion-1",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8802951/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 25177,
+    "bytesOut": 25177,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:54:48.649Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

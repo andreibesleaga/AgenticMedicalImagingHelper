@@ -1,0 +1,40 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000239/series_2/00000239_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear.\",\n    \"The heart size is normal.\",\n    \"The mediastinal contours are normal.\",\n    \"The visualized osseous structures are unremarkable.\",\n    \"There is no pleural effusion.\",\n    \"The diaphragms are well visualized.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This is a chest X-ray image. The lungs appear clear, the heart size is normal, and the bones look unremarkable. There are no visible masses, fluid collections, or other significant abnormalities.\",\n  \"references\": []\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear.",
+    "The heart size is normal.",
+    "The mediastinal contours are normal.",
+    "The visualized osseous structures are unremarkable.",
+    "There is no pleural effusion.",
+    "The diaphragms are well visualized."
+  ],
+  "abnormalities": [],
+  "summary": "This is a chest X-ray image. The lungs appear clear, the heart size is normal, and the bones look unremarkable. There are no visible masses, fluid collections, or other significant abnormalities.",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24554,
+    "bytesOut": 24554,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:58:40.040Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

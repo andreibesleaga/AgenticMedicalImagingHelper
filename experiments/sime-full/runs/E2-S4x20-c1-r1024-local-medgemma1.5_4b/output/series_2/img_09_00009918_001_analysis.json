@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_2/img_09_00009918_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right lower lobe opacity with volume loss.\",\n    \"No cardiomegaly.\",\n    \"No pleural effusion.\",\n    \"Lungs are otherwise clear.\",\n    \"Heart size is normal.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right lower lobe opacity with volume loss\",\n      \"description\": \"There is an area of increased opacity, appearing denser than the surrounding lung tissue, located in the right lower lobe, with associated volume loss (collapse).\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a noticeable area of increased density (opacity) in the lower part of the right lung. There also appears to be some collapse or loss of air in that area. Other parts of the lungs and heart look normal.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/right-lower-lobe-collapse\",\n    \"https://radiopaedia.org/articles/right-lower-lobe-opacity\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right lower lobe opacity with volume loss.",
+    "No cardiomegaly.",
+    "No pleural effusion.",
+    "Lungs are otherwise clear.",
+    "Heart size is normal."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lower lobe opacity with volume loss",
+      "severity": "Moderate",
+      "confidence": 100,
+      "description": "There is an area of increased opacity, appearing denser than the surrounding lung tissue, located in the right lower lobe, with associated volume loss (collapse)."
+    }
+  ],
+  "summary": "The chest X-ray shows a noticeable area of increased density (opacity) in the lower part of the right lung. There also appears to be some collapse or loss of air in that area. Other parts of the lungs and heart look normal.",
+  "references": [
+    "https://radiopaedia.org/articles/right-lower-lobe-collapse",
+    "https://radiopaedia.org/articles/right-lower-lobe-opacity"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 388899,
+    "bytesOut": 303414,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:11:58.486Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

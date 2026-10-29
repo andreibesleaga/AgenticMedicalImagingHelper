@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S3x10/series_1/img_01_00013464_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pleural effusion, or pneumothorax is evident.\",\n    \"The cardiac silhouette is within normal limits for size and contour.\",\n    \"Bilateral hilar and mediastinal contours appear unremarkable.\",\n    \"Bilateral hemidiaphragms are intact and show normal costophrenic angles.\",\n    \"Osseous structures (ribs, clavicles, scapulae, humeri) appear unremarkable.\",\n    \"Soft tissues are within normal limits.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray appears normal. There are no signs of pneumonia, fluid around the lungs (pleural effusion), or a collapsed lung (pneumothorax). The heart size and shape are normal, and the major blood vessels and lymph nodes in the center of the chest (mediastinum and hila) look unremarkable. The breathing muscles (diaphragms) and the angles of the lungs look clear. The bones and soft tissues seen in the image are also normal.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1146/annurev-med-050918-064402\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pleural effusion, or pneumothorax is evident.",
+    "The cardiac silhouette is within normal limits for size and contour.",
+    "Bilateral hilar and mediastinal contours appear unremarkable.",
+    "Bilateral hemidiaphragms are intact and show normal costophrenic angles.",
+    "Osseous structures (ribs, clavicles, scapulae, humeri) appear unremarkable.",
+    "Soft tissues are within normal limits."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray appears normal. There are no signs of pneumonia, fluid around the lungs (pleural effusion), or a collapsed lung (pneumothorax). The heart size and shape are normal, and the major blood vessels and lymph nodes in the center of the chest (mediastinum and hila) look unremarkable. The breathing muscles (diaphragms) and the angles of the lungs look clear. The bones and soft tissues seen in the image are also normal.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1146/annurev-med-050918-064402",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 20486,
+    "bytesOut": 20486,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:54:39.907Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

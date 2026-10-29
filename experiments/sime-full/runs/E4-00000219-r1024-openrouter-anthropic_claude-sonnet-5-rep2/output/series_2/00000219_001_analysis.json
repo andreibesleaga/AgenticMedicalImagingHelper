@@ -1,0 +1,65 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_2/00000219_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA/AP upright)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Lungs appear hyperlucent bilaterally, suggestive of hyperinflation\",\n    \"Flattened diaphragms, more pronounced on the left where a gastric air bubble is visible below the hemidiaphragm\",\n    \"Cardiac silhouette appears mildly enlarged with increased cardiothoracic ratio, though this may be partly exaggerated by AP technique and lung hyperinflation\",\n    \"Mediastinal contours are midline without obvious widening\",\n    \"Bony thorax: clavicles, ribs, and visualized shoulder girdles appear grossly intact without acute fracture\",\n    \"No obvious focal consolidation, pleural effusion, or pneumothorax identified\",\n    \"Soft tissue densities overlying the mid chest likely represent skin fold artifact or external markers\",\n    \"Rotational positioning noted given asymmetry of clavicle projection relative to midline spinous processes\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pulmonary hyperinflation\",\n      \"description\": \"Increased lung lucency with flattened hemidiaphragms, consistent with chronic obstructive changes such as COPD/emphysema; clinical correlation recommended\",\n      \"severity\": \"Mild\",\n      \"confidence\": 55\n    },\n    {\n      \"name\": \"Cardiomegaly (possible)\",\n      \"description\": \"Cardiac silhouette appears enlarged; however, AP projection and hyperinflated lungs can create a falsely enlarged cardiac silhouette appearance. Further evaluation with a PA upright film or echocardiogram recommended\",\n      \"severity\": \"Mild\",\n      \"confidence\": 40\n    },\n    {\n      \"name\": \"Suboptimal positioning/technique\",\n      \"description\": \"Mild rotation and AP projection limit full assessment of mediastinal and cardiac structures; repeat PA film in full inspiration may improve diagnostic accuracy\",\n      \"severity\": \"Mild\",\n      \"confidence\": 50\n    }\n  ],\n  \"summary\": \"This chest X-ray shows the lungs appear slightly over-inflated with flattened diaphragms, a pattern sometimes seen in chronic lung conditions like COPD. The heart shadow looks mildly enlarged, but this can sometimes be due to the way the picture was taken (from the front while lying/standing) rather than a true heart problem. No signs of pneumonia, fluid buildup, or collapsed lung are seen. The bones of the chest and shoulders look normal without fractures. Overall, these findings would benefit from clinical correlation and possibly a repeat, higher-quality X-ray or additional tests (like a CT scan or echocardiogram) to clarify the heart size and lung findings.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chronic-obstructive-pulmonary-disease-copd\",\n    \"https://pubs.rsna.org/doi/10.1148/rg.2019190081\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Fair",
+  "findings": [
+    "Lungs appear hyperlucent bilaterally, suggestive of hyperinflation",
+    "Flattened diaphragms, more pronounced on the left where a gastric air bubble is visible below the hemidiaphragm",
+    "Cardiac silhouette appears mildly enlarged with increased cardiothoracic ratio, though this may be partly exaggerated by AP technique and lung hyperinflation",
+    "Mediastinal contours are midline without obvious widening",
+    "Bony thorax: clavicles, ribs, and visualized shoulder girdles appear grossly intact without acute fracture",
+    "No obvious focal consolidation, pleural effusion, or pneumothorax identified",
+    "Soft tissue densities overlying the mid chest likely represent skin fold artifact or external markers",
+    "Rotational positioning noted given asymmetry of clavicle projection relative to midline spinous processes"
+  ],
+  "abnormalities": [
+    {
+      "name": "Pulmonary hyperinflation",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Increased lung lucency with flattened hemidiaphragms, consistent with chronic obstructive changes such as COPD/emphysema; clinical correlation recommended"
+    },
+    {
+      "name": "Cardiomegaly (possible)",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Cardiac silhouette appears enlarged; however, AP projection and hyperinflated lungs can create a falsely enlarged cardiac silhouette appearance. Further evaluation with a PA upright film or echocardiogram recommended"
+    },
+    {
+      "name": "Suboptimal positioning/technique",
+      "severity": "Mild",
+      "confidence": 50,
+      "description": "Mild rotation and AP projection limit full assessment of mediastinal and cardiac structures; repeat PA film in full inspiration may improve diagnostic accuracy"
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs appear slightly over-inflated with flattened diaphragms, a pattern sometimes seen in chronic lung conditions like COPD. The heart shadow looks mildly enlarged, but this can sometimes be due to the way the picture was taken (from the front while lying/standing) rather than a true heart problem. No signs of pneumonia, fluid buildup, or collapsed lung are seen. The bones of the chest and shoulders look normal without fractures. Overall, these findings would benefit from clinical correlation and possibly a repeat, higher-quality X-ray or additional tests (like a CT scan or echocardiogram) to clarify the heart size and lung findings.",
+  "references": [
+    "https://radiopaedia.org/articles/chronic-obstructive-pulmonary-disease-copd",
+    "https://pubs.rsna.org/doi/10.1148/rg.2019190081",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 385977,
+    "bytesOut": 381054,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T09:42:43.464Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

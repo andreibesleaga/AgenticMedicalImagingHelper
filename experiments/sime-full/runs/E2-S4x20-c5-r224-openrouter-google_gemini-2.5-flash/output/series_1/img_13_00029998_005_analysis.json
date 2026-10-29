@@ -1,0 +1,68 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_1/img_13_00029998_005.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral pleural effusions, larger on the right side.\",\n    \"Bilateral opacities in the lower lung fields, consistent with atelectasis or consolidation.\",\n    \"Cardiomegaly is suggested by increased cardiac silhouette size.\",\n    \"Multiple surgical clips are visible in the midline, likely post-sternotomy.\",\n    \"Endotracheal tube and nasogastric tube are present and appear appropriately positioned.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Pleural Effusion\",\n      \"description\": \"Large right-sided pleural effusion with blunting of the right costophrenic angle and obscuring of the right hemidiaphragm. This suggests accumulation of fluid in the pleural space.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Left Pleural Effusion\",\n      \"description\": \"Small to moderate left-sided pleural effusion with blunting of the left costophrenic angle.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Bilateral Basilar Opacities\",\n      \"description\": \"Opacities noted in both lower lung fields, consistent with atelectasis (collapsed lung tissue) or possibly consolidation (inflammation/fluid in the alveoli).\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlarged cardiac silhouette, suggesting cardiomegaly (enlarged heart).\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The chest X-ray shows fluid around both lungs, which is more noticeable on the right side. This fluid is called a 'pleural effusion'. There are also areas in the lower parts of both lungs that look hazy, which could mean some lung tissue has collapsed (atelectasis) or there's inflammation/fluid in those areas (consolidation). The heart appears larger than normal. Several surgical clips are visible in the middle of the chest, which are typically seen after heart surgery (sternotomy). An endotracheal tube (breathing tube) and a nasogastric tube (feeding tube) are in place and seem to be correctly positioned.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion-1\",\n    \"https://radiopaedia.org/articles/cardiomegaly-1\",\n    \"https://radiopaedia.org/articles/atelectasis-1\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral pleural effusions, larger on the right side.",
+    "Bilateral opacities in the lower lung fields, consistent with atelectasis or consolidation.",
+    "Cardiomegaly is suggested by increased cardiac silhouette size.",
+    "Multiple surgical clips are visible in the midline, likely post-sternotomy.",
+    "Endotracheal tube and nasogastric tube are present and appear appropriately positioned."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Large right-sided pleural effusion with blunting of the right costophrenic angle and obscuring of the right hemidiaphragm. This suggests accumulation of fluid in the pleural space."
+    },
+    {
+      "name": "Left Pleural Effusion",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Small to moderate left-sided pleural effusion with blunting of the left costophrenic angle."
+    },
+    {
+      "name": "Bilateral Basilar Opacities",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Opacities noted in both lower lung fields, consistent with atelectasis (collapsed lung tissue) or possibly consolidation (inflammation/fluid in the alveoli)."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Enlarged cardiac silhouette, suggesting cardiomegaly (enlarged heart)."
+    }
+  ],
+  "summary": "The chest X-ray shows fluid around both lungs, which is more noticeable on the right side. This fluid is called a 'pleural effusion'. There are also areas in the lower parts of both lungs that look hazy, which could mean some lung tissue has collapsed (atelectasis) or there's inflammation/fluid in those areas (consolidation). The heart appears larger than normal. Several surgical clips are visible in the middle of the chest, which are typically seen after heart surgery (sternotomy). An endotracheal tube (breathing tube) and a nasogastric tube (feeding tube) are in place and seem to be correctly positioned.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion-1",
+    "https://radiopaedia.org/articles/cardiomegaly-1",
+    "https://radiopaedia.org/articles/atelectasis-1"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21214,
+    "bytesOut": 21214,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:01:49.785Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

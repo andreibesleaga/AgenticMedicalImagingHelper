@@ -1,0 +1,59 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00004946/series_3/00004946_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The heart size is within normal limits.\",\n    \"The mediastinal contours are unremarkable.\",\n    \"The lungs are hyperexpanded.\",\n    \"There are increased interstitial markings, particularly in the mid and lower lung zones.\",\n    \"There are focal areas of parenchymal scarring or atelectasis, most notably in the right upper lobe.\",\n    \"There are thick-walled cystic spaces or bronchiectasis, particularly in the upper lobes.\",\n    \"The costophrenic angles are sharp.\",\n    \"No pleural effusion or pneumothorax is identified.\",\n    \"The bony thorax is intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Hyperinflation\",\n      \"description\": \"The lungs are hyperexpanded, evidenced by flattening of the hemidiaphragms and increased radiolucency of the lung fields. This suggests air trapping.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Bronchiectasis and Scarring\",\n      \"description\": \"Thick-walled cystic spaces and increased interstitial markings with focal areas of scarring, particularly in the upper lobes, are suggestive of chronic inflammatory airways disease, such as cystic fibrosis.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This chest X-ray shows lungs that are larger than normal, a condition called hyperinflation, which often happens when air has trouble getting out of the lungs. There are also signs of scarring and thickened airways (bronchiectasis), especially in the upper parts of the lungs. These findings are typical for a chronic lung condition like cystic fibrosis. The heart size is normal, and there is no fluid around the lungs.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cystic-fibrosis-pulmonary-manifestations\",\n    \"https://radiopaedia.org/articles/bronchiectasis\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The heart size is within normal limits.",
+    "The mediastinal contours are unremarkable.",
+    "The lungs are hyperexpanded.",
+    "There are increased interstitial markings, particularly in the mid and lower lung zones.",
+    "There are focal areas of parenchymal scarring or atelectasis, most notably in the right upper lobe.",
+    "There are thick-walled cystic spaces or bronchiectasis, particularly in the upper lobes.",
+    "The costophrenic angles are sharp.",
+    "No pleural effusion or pneumothorax is identified.",
+    "The bony thorax is intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Hyperinflation",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The lungs are hyperexpanded, evidenced by flattening of the hemidiaphragms and increased radiolucency of the lung fields. This suggests air trapping."
+    },
+    {
+      "name": "Bronchiectasis and Scarring",
+      "severity": "Severe",
+      "confidence": 85,
+      "description": "Thick-walled cystic spaces and increased interstitial markings with focal areas of scarring, particularly in the upper lobes, are suggestive of chronic inflammatory airways disease, such as cystic fibrosis."
+    }
+  ],
+  "summary": "This chest X-ray shows lungs that are larger than normal, a condition called hyperinflation, which often happens when air has trouble getting out of the lungs. There are also signs of scarring and thickened airways (bronchiectasis), especially in the upper parts of the lungs. These findings are typical for a chronic lung condition like cystic fibrosis. The heart size is normal, and there is no fluid around the lungs.",
+  "references": [
+    "https://radiopaedia.org/articles/cystic-fibrosis-pulmonary-manifestations",
+    "https://radiopaedia.org/articles/bronchiectasis"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 370323,
+    "bytesOut": 361650,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:37:25.304Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

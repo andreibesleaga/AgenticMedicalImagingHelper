@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00003295/series_2/00003295_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pneumothorax, or large pleural effusion.\",\n    \"Bilateral hilar regions appear unremarkable.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Bony thorax shows no acute fractures or destructive lesions.\",\n    \"There is an opaque line projected over the right upper lung field, consistent with a vascular catheter.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Central Venous Catheter\",\n      \"description\": \"A central venous catheter is noted with its tip projected over the right upper lung field, likely in the superior vena cava. Its course appears appropriate.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray of your chest shows your lungs, heart, and bones. There are no signs of pneumonia, collapsed lung, or significant fluid around the lungs. Your heart size and shape appear normal. There are no broken bones visible in your chest. A line seen in your right upper chest is a medical tube called a central venous catheter, which appears to be in a good position. Overall, the image does not show any new or concerning findings in the lungs or heart.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMicm1513253\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.294085734\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pneumothorax, or large pleural effusion.",
+    "Bilateral hilar regions appear unremarkable.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Bony thorax shows no acute fractures or destructive lesions.",
+    "There is an opaque line projected over the right upper lung field, consistent with a vascular catheter."
+  ],
+  "abnormalities": [
+    {
+      "name": "Central Venous Catheter",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A central venous catheter is noted with its tip projected over the right upper lung field, likely in the superior vena cava. Its course appears appropriate."
+    }
+  ],
+  "summary": "This X-ray of your chest shows your lungs, heart, and bones. There are no signs of pneumonia, collapsed lung, or significant fluid around the lungs. Your heart size and shape appear normal. There are no broken bones visible in your chest. A line seen in your right upper chest is a medical tube called a central venous catheter, which appears to be in a good position. Overall, the image does not show any new or concerning findings in the lungs or heart.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://www.nejm.org/doi/full/10.1056/NEJMicm1513253",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.294085734"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24274,
+    "bytesOut": 24274,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:17:10.344Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

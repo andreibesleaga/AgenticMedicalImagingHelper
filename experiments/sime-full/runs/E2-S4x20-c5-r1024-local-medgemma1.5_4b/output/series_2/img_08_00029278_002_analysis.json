@@ -1,0 +1,45 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_2/img_08_00029278_002.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear bilaterally.\",\n    \"The heart size is normal.\",\n    \"The mediastinum is unremarkable.\",\n    \"The osseous structures are intact.\",\n    \"The diaphragms are visualized.\",\n    \"A central venous catheter is present extending into the superior vena cava.\",\n    \"The visualized upper abdomen is unremarkable.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This is a chest X-ray image. The lungs appear clear, which typically indicates no pneumonia or fluid. The heart and major blood vessels look normal. The bones of the chest wall appear intact. A central venous catheter is visible, which is a type of IV line.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/education/chest-x-ray-pa-and-lateral\",\n    \"https://www.radiologyinfo.org/en/education/lung-anatomy\",\n    \"https://www.radiologyinfo.org/en/education/cardiac-anatomy-on-chest-x-ray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear bilaterally.",
+    "The heart size is normal.",
+    "The mediastinum is unremarkable.",
+    "The osseous structures are intact.",
+    "The diaphragms are visualized.",
+    "A central venous catheter is present extending into the superior vena cava.",
+    "The visualized upper abdomen is unremarkable."
+  ],
+  "abnormalities": [],
+  "summary": "This is a chest X-ray image. The lungs appear clear, which typically indicates no pneumonia or fluid. The heart and major blood vessels look normal. The bones of the chest wall appear intact. A central venous catheter is visible, which is a type of IV line.",
+  "references": [
+    "https://www.radiologyinfo.org/en/education/chest-x-ray-pa-and-lateral",
+    "https://www.radiologyinfo.org/en/education/lung-anatomy",
+    "https://www.radiologyinfo.org/en/education/cardiac-anatomy-on-chest-x-ray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 418408,
+    "bytesOut": 320682,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:24:10.521Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

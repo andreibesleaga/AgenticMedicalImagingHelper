@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000296/series_1/00000296_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear without focal consolidation or pneumothorax\",\n    \"Cardiac silhouette is normal in size\",\n    \"Mediastinum is unremarkable\",\n    \"A medical device is present in the left hemithorax, consisting of a thin catheter extending superiorly and curling in the mid-lung field\",\n    \"Bony structures are intact\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Indwelling catheter\",\n      \"description\": \"Presence of a pigtail-style catheter in the left pleural space/hemithorax, likely a chest tube or pleural drainage catheter\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray shows that your lungs and heart appear normal. There is a medical tube (a chest drain) in the left side of your chest, which is used to drain fluid or air from the space around the lung. No new areas of pneumonia or lung collapse were seen.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-drain\",\n    \"https://www.acr.org/Clinical-Resources/Chest-Radiography\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear without focal consolidation or pneumothorax",
+    "Cardiac silhouette is normal in size",
+    "Mediastinum is unremarkable",
+    "A medical device is present in the left hemithorax, consisting of a thin catheter extending superiorly and curling in the mid-lung field",
+    "Bony structures are intact"
+  ],
+  "abnormalities": [
+    {
+      "name": "Indwelling catheter",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "Presence of a pigtail-style catheter in the left pleural space/hemithorax, likely a chest tube or pleural drainage catheter"
+    }
+  ],
+  "summary": "The X-ray shows that your lungs and heart appear normal. There is a medical tube (a chest drain) in the left side of your chest, which is used to drain fluid or air from the space around the lung. No new areas of pneumonia or lung collapse were seen.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-drain",
+    "https://www.acr.org/Clinical-Resources/Chest-Radiography"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 411000,
+    "bytesOut": 317801,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T09:55:29.855Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

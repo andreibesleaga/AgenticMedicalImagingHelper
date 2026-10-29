@@ -1,0 +1,59 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000086/series_2/00000086_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA)\",\"quality\":\"Fair\",\"findings\":[\"Both lungs are visualized with clear costophrenic angles bilaterally\",\"Cardiac silhouette appears within normal limits, mediastinum midline\",\"Increased bronchovascular markings noted, particularly at right hilum with mild perihilar prominence\",\"Mild reticular/interstitial density noted at left lower zone\",\"No obvious focal consolidation, mass, or pleural effusion identified\",\"Osseous structures including ribs, clavicles, and visualized spine appear intact without acute fracture\",\"Soft tissue and skeletal structures of the shoulders are symmetric\",\"ECG lead marker and patient orientation marker visible in upper right of image\"],\"abnormalities\":[{\"name\":\"Perihilar/bronchovascular prominence\",\"description\":\"Mild increased markings in the right perihilar region, possibly reflecting mild bronchovascular crowding, early infectious/inflammatory change, or positional/technical artifact; no discrete consolidation seen\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Left lower zone interstitial marking\",\"description\":\"Subtle increased interstitial-appearing density at the left lower lung zone; nonspecific and could reflect atelectasis, mild interstitial change, or overlapping soft tissue/breast shadow\",\"severity\":\"Mild\",\"confidence\":35}],\"summary\":\"This is a chest X-ray showing the lungs, heart, and bones of the chest. Overall the lungs appear reasonably clear, and the heart size and shape look normal. There are some very mild and nonspecific increased markings near the right side of the central chest (where the airways branch) and a subtle area of density in the lower left lung, but there is no clear evidence of pneumonia, fluid buildup, or a mass. These minor findings are common and can result from prior minor lung irritation, breathing position during the X-ray, or normal anatomical structures overlapping. No fractures or other bone abnormalities are seen. As with any imaging study, correlation with the patient's symptoms and, if needed, follow-up imaging or clinical evaluation by a physician is recommended to determine if any further workup is needed.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria\",\"https://pubs.rsna.org/journal/radiology\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Fair",
+  "findings": [
+    "Both lungs are visualized with clear costophrenic angles bilaterally",
+    "Cardiac silhouette appears within normal limits, mediastinum midline",
+    "Increased bronchovascular markings noted, particularly at right hilum with mild perihilar prominence",
+    "Mild reticular/interstitial density noted at left lower zone",
+    "No obvious focal consolidation, mass, or pleural effusion identified",
+    "Osseous structures including ribs, clavicles, and visualized spine appear intact without acute fracture",
+    "Soft tissue and skeletal structures of the shoulders are symmetric",
+    "ECG lead marker and patient orientation marker visible in upper right of image"
+  ],
+  "abnormalities": [
+    {
+      "name": "Perihilar/bronchovascular prominence",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "Mild increased markings in the right perihilar region, possibly reflecting mild bronchovascular crowding, early infectious/inflammatory change, or positional/technical artifact; no discrete consolidation seen"
+    },
+    {
+      "name": "Left lower zone interstitial marking",
+      "severity": "Mild",
+      "confidence": 35,
+      "description": "Subtle increased interstitial-appearing density at the left lower lung zone; nonspecific and could reflect atelectasis, mild interstitial change, or overlapping soft tissue/breast shadow"
+    }
+  ],
+  "summary": "This is a chest X-ray showing the lungs, heart, and bones of the chest. Overall the lungs appear reasonably clear, and the heart size and shape look normal. There are some very mild and nonspecific increased markings near the right side of the central chest (where the airways branch) and a subtle area of density in the lower left lung, but there is no clear evidence of pneumonia, fluid buildup, or a mass. These minor findings are common and can result from prior minor lung irritation, breathing position during the X-ray, or normal anatomical structures overlapping. No fractures or other bone abnormalities are seen. As with any imaging study, correlation with the patient's symptoms and, if needed, follow-up imaging or clinical evaluation by a physician is recommended to determine if any further workup is needed.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiology"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 639281,
+    "bytesOut": 489372,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "alpha channel stripped",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:18:59.712Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

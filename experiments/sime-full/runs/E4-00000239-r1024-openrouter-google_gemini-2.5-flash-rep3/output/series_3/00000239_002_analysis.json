@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_3/00000239_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs and pleura: Clear lung fields with no obvious focal opacities, effusions, or pneumothorax.\",\n    \"Cardiac silhouette: Normal size and contour.\",\n    \"Mediastinum: Unremarkable.\",\n    \"Diaphragms: Right hemidiaphragm is elevated compared to the left, which is a normal variant (liver pushed up).\",\n    \"Bones: No acute osseous abnormalities noted in the visible ribs, clavicles, scapulae, or thoracic spine.\",\n    \"Soft tissues: Presence of surgical clips in the left axilla/lateral chest wall, consistent with prior intervention.\",\n    \"Foreign objects: Surgical clips are also noted in the lower abdomen/pelvis, likely related to previous abdominal/pelvic surgery or procedures.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical Clips (Left Axilla/Lateral Chest Wall)\",\n      \"description\": \"Multiple small metallic surgical clips are visualized in the left axillary region and lateral chest wall, suggesting prior surgical intervention in this area (e.g., lymph node dissection, breast surgery).\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Surgical Clips (Lower Abdomen/Pelvis)\",\n      \"description\": \"Numerous small metallic surgical clips are present in the lower abdomen and pelvic region, indicative of prior abdominal or pelvic surgery.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This chest X-ray shows clear lungs and a normal heart. There are no signs of pneumonia, fluid around the lungs, or a collapsed lung. We can see some small metal clips in the left armpit area and in the lower belly. These clips are commonly left behind after surgery and are not usually a cause for concern on their own. The right side of the diaphragm (the muscle separating the chest from the abdomen) is a little higher than the left, which is a normal variation.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125026\",\n    \"https://radiopaedia.org/articles/surgical-clips\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs and pleura: Clear lung fields with no obvious focal opacities, effusions, or pneumothorax.",
+    "Cardiac silhouette: Normal size and contour.",
+    "Mediastinum: Unremarkable.",
+    "Diaphragms: Right hemidiaphragm is elevated compared to the left, which is a normal variant (liver pushed up).",
+    "Bones: No acute osseous abnormalities noted in the visible ribs, clavicles, scapulae, or thoracic spine.",
+    "Soft tissues: Presence of surgical clips in the left axilla/lateral chest wall, consistent with prior intervention.",
+    "Foreign objects: Surgical clips are also noted in the lower abdomen/pelvis, likely related to previous abdominal/pelvic surgery or procedures."
+  ],
+  "abnormalities": [
+    {
+      "name": "Surgical Clips (Left Axilla/Lateral Chest Wall)",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Multiple small metallic surgical clips are visualized in the left axillary region and lateral chest wall, suggesting prior surgical intervention in this area (e.g., lymph node dissection, breast surgery)."
+    },
+    {
+      "name": "Surgical Clips (Lower Abdomen/Pelvis)",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Numerous small metallic surgical clips are present in the lower abdomen and pelvic region, indicative of prior abdominal or pelvic surgery."
+    }
+  ],
+  "summary": "This chest X-ray shows clear lungs and a normal heart. There are no signs of pneumonia, fluid around the lungs, or a collapsed lung. We can see some small metal clips in the left armpit area and in the lower belly. These clips are commonly left behind after surgery and are not usually a cause for concern on their own. The right side of the diaphragm (the muscle separating the chest from the abdomen) is a little higher than the left, which is a normal variation.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125026",
+    "https://radiopaedia.org/articles/surgical-clips",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 413987,
+    "bytesOut": 412168,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:56:19.843Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

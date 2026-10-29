@@ -1,0 +1,44 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_3/img_03_00018610_009.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right hemithorax complete opacification\",\n    \"Left lung appears clear\",\n    \"Mediastinum is midline\",\n    \"Bone structures are intact\",\n    \"No obvious pleural effusion\",\n    \"No obvious pneumothorax\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The X-ray shows a complete white-out of the right lung, indicating something is obstructing the right airway and preventing air from entering. The left lung appears normal. This could be due to a collapsed lung (pneumonia), a tumor, or a blockage.\",\n  \"references\": [\n    \"https://www.radiologyassistant.com/pathology/pulmonary/types-of-pneumonia\",\n    \"https://www.radiologyinfo.org/en/topic/pneumothorax\",\n    \"https://www.radiologyinfo.org/en/topic/collapsed-lung\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right hemithorax complete opacification",
+    "Left lung appears clear",
+    "Mediastinum is midline",
+    "Bone structures are intact",
+    "No obvious pleural effusion",
+    "No obvious pneumothorax"
+  ],
+  "abnormalities": [],
+  "summary": "The X-ray shows a complete white-out of the right lung, indicating something is obstructing the right airway and preventing air from entering. The left lung appears normal. This could be due to a collapsed lung (pneumonia), a tumor, or a blockage.",
+  "references": [
+    "https://www.radiologyassistant.com/pathology/pulmonary/types-of-pneumonia",
+    "https://www.radiologyinfo.org/en/topic/pneumothorax",
+    "https://www.radiologyinfo.org/en/topic/collapsed-lung"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 421552,
+    "bytesOut": 319893,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:25:19.257Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

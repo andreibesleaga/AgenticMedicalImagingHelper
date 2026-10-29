@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_1/img_11_00028504_001.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diaphragmatic elevation: The right hemidiaphragm is elevated compared to the left.\",\n    \"Costophrenic angles: The right costophrenic angle is blunted, suggesting a small pleural effusion or pleural thickening. The left costophrenic angle is clear.\",\n    \"Lung fields: The lung fields appear clear without focal consolidation, pneumothorax, or significant interstitial abnormalities.\",\n    \"Cardiac silhouette: The cardiac silhouette is not enlarged.\",\n    \"Bony thorax: The visualized bony structures appear intact without acute fracture.\",\n    \"Soft tissues: The soft tissues are unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Elevated right hemidiaphragm\",\n      \"description\": \"The right hemidiaphragm is noted to be elevated relative to the left hemidiaphragm, which can be a normal variant, due to subpulmonic effusion, atelectasis, phrenic nerve palsy, or abdominal pathology.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Blunted right costophrenic angle\",\n      \"description\": \"Blunting of the right costophrenic angle is present, which is often indicative of a small pleural effusion or pleural thickening.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that the right side of your diaphragm, the muscle that helps you breathe, is slightly higher than the left. There's also some blurring in the corner of your right lung, which might suggest a small amount of fluid or thickening of the lining around the lung. These findings are usually minor and can have various causes, some of which are not serious. Your lungs themselves appear clear, and your heart size is normal. Further evaluation may be needed to determine the cause of these observations if clinically indicated.\",\n  \"references\": [\n    \"https://radiologykey.com/diaphragm-and-diaphragmatic-hernias/\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8168233/\",\n    \"https://www.ajronline.org/doi/full/10.2214/AJR.13.7077\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diaphragmatic elevation: The right hemidiaphragm is elevated compared to the left.",
+    "Costophrenic angles: The right costophrenic angle is blunted, suggesting a small pleural effusion or pleural thickening. The left costophrenic angle is clear.",
+    "Lung fields: The lung fields appear clear without focal consolidation, pneumothorax, or significant interstitial abnormalities.",
+    "Cardiac silhouette: The cardiac silhouette is not enlarged.",
+    "Bony thorax: The visualized bony structures appear intact without acute fracture.",
+    "Soft tissues: The soft tissues are unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Elevated right hemidiaphragm",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "The right hemidiaphragm is noted to be elevated relative to the left hemidiaphragm, which can be a normal variant, due to subpulmonic effusion, atelectasis, phrenic nerve palsy, or abdominal pathology."
+    },
+    {
+      "name": "Blunted right costophrenic angle",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "Blunting of the right costophrenic angle is present, which is often indicative of a small pleural effusion or pleural thickening."
+    }
+  ],
+  "summary": "The chest X-ray shows that the right side of your diaphragm, the muscle that helps you breathe, is slightly higher than the left. There's also some blurring in the corner of your right lung, which might suggest a small amount of fluid or thickening of the lining around the lung. These findings are usually minor and can have various causes, some of which are not serious. Your lungs themselves appear clear, and your heart size is normal. Further evaluation may be needed to determine the cause of these observations if clinically indicated.",
+  "references": [
+    "https://radiologykey.com/diaphragm-and-diaphragmatic-hernias/",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8168233/",
+    "https://www.ajronline.org/doi/full/10.2214/AJR.13.7077"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21421,
+    "bytesOut": 21421,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:56:18.246Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

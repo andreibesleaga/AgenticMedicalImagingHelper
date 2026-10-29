@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S3x10/series_2/img_05_00022764_006.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Elevated left hemidiaphragm with a large gas-fluid level beneath it, consistent with a gastric bubble.\",\n    \"The diaphragm on the right appears to be at a normal level.\",\n    \"Pulmonary vasculature and lung fields appear within normal limits without evidence of active infiltrates, effusion, or pneumothorax.\",\n    \"The cardiac silhouette is within normal limits for size and contour.\",\n    \"Skeletal structures appear intact.\",\n    \"A nasogastric tube is visualized, with its tip likely in the stomach, below the diaphragm and contributing to the gas-fluid level.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Elevated Left Hemidiaphragm\",\n      \"description\": \"The left hemidiaphragm is significantly elevated, superior to its normal position, suggesting possible phrenic nerve palsy, eventration, or subdiaphragmatic pathology.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Large Gastric Bubble\",\n      \"description\": \"A prominent gas-fluid level is observed beneath the elevated left hemidiaphragm, consistent with a distended stomach (gastric bubble). This finding often accompanies diaphragmatic elevation and may indicate gastric distention or abnormal positioning.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray shows that the left side of your diaphragm, the muscle that helps you breathe, is higher than it should be. Below this elevated diaphragm, there's a large amount of gas and fluid, which is likely from your stomach. This suggests that your stomach might be pushed up or unusually full of air and liquid. There's also a tube (likely a nasogastric tube) visible, with its tip in your stomach. The rest of your lungs and heart appear normal.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2018170067\",\n    \"https://radiologykey.com/diaphragmatic-eventration/\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900600/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Elevated left hemidiaphragm with a large gas-fluid level beneath it, consistent with a gastric bubble.",
+    "The diaphragm on the right appears to be at a normal level.",
+    "Pulmonary vasculature and lung fields appear within normal limits without evidence of active infiltrates, effusion, or pneumothorax.",
+    "The cardiac silhouette is within normal limits for size and contour.",
+    "Skeletal structures appear intact.",
+    "A nasogastric tube is visualized, with its tip likely in the stomach, below the diaphragm and contributing to the gas-fluid level."
+  ],
+  "abnormalities": [
+    {
+      "name": "Elevated Left Hemidiaphragm",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "The left hemidiaphragm is significantly elevated, superior to its normal position, suggesting possible phrenic nerve palsy, eventration, or subdiaphragmatic pathology."
+    },
+    {
+      "name": "Large Gastric Bubble",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "A prominent gas-fluid level is observed beneath the elevated left hemidiaphragm, consistent with a distended stomach (gastric bubble). This finding often accompanies diaphragmatic elevation and may indicate gastric distention or abnormal positioning."
+    }
+  ],
+  "summary": "The X-ray shows that the left side of your diaphragm, the muscle that helps you breathe, is higher than it should be. Below this elevated diaphragm, there's a large amount of gas and fluid, which is likely from your stomach. This suggests that your stomach might be pushed up or unusually full of air and liquid. There's also a tube (likely a nasogastric tube) visible, with its tip in your stomach. The rest of your lungs and heart appear normal.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2018170067",
+    "https://radiologykey.com/diaphragmatic-eventration/",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900600/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23803,
+    "bytesOut": 23803,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:54:46.754Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,218 @@
+{
+  "manifestVersion": "1.0",
+  "toolVersion": "1.1.0",
+  "startedAt": "2026-10-08T09:32:45.762Z",
+  "finishedAt": "2026-10-08T09:33:49.528Z",
+  "provider": "openrouter",
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "pricing": {
+    "inputUsdPerMillion": 2,
+    "outputUsdPerMillion": 12
+  },
+  "settings": {
+    "concurrency": 1,
+    "maxCostUsd": 1,
+    "retries": 3,
+    "imageQuality": "auto"
+  },
+  "inputDir": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000296",
+  "outputDir": "/home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4-00000296-r1024-openrouter-qwen_qwen3-vl-235b-a22b-instruct-rep2/output",
+  "inputs": [
+    {
+      "path": "series_1/00000296_000.png",
+      "sha256": "710806a16411a7aea6ed03a17e301dd9f95bafa98a064ae220560ab3303ec908",
+      "bytes": 411000
+    },
+    {
+      "path": "series_2/00000296_001.png",
+      "sha256": "25d1dc3e37be355b822715d567ecf4590d5583c41f87eab91c119e2b88540554",
+      "bytes": 415316
+    },
+    {
+      "path": "series_3/00000296_002.png",
+      "sha256": "8f4f6d5cf14ad78f723546d599fb2e1adb6e25902894ec1578747cc4848291fa",
+      "bytes": 417130
+    },
+    {
+      "path": "series_4/00000296_003.png",
+      "sha256": "530bce33256058b224077e0e2afb51dab99a543c5d363a478645c2e2b28e6571",
+      "bytes": 394556
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "patient_context.txt",
+      "sha256": "e8b73af11ce3ade8c11f4286480519413bb4a22d3cd05c80b362c1449969b1d1",
+      "bytes": 326
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:32:57.555Z",
+      "tokensIn": 1363,
+      "tokensOut": 284,
+      "estimatedUsd": 0.0061340000000000006,
+      "providerUsd": 0.00064974,
+      "retries": 0
+    },
+    {
+      "index": 2,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:33:06.093Z",
+      "tokensIn": 1363,
+      "tokensOut": 369,
+      "estimatedUsd": 0.007154000000000001,
+      "providerUsd": 0.0009624,
+      "retries": 0
+    },
+    {
+      "index": 3,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:33:13.886Z",
+      "tokensIn": 1363,
+      "tokensOut": 259,
+      "estimatedUsd": 0.005833999999999999,
+      "providerUsd": 0.00062374,
+      "retries": 0
+    },
+    {
+      "index": 4,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:33:20.663Z",
+      "tokensIn": 1363,
+      "tokensOut": 259,
+      "estimatedUsd": 0.005833999999999999,
+      "providerUsd": 0.0006237400000000002,
+      "retries": 0
+    },
+    {
+      "index": 5,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:33:25.176Z",
+      "tokensIn": 600,
+      "tokensOut": 184,
+      "estimatedUsd": 0.0034080000000000013,
+      "providerUsd": 0.0003473600000000001,
+      "retries": 0
+    },
+    {
+      "index": 6,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:33:32.790Z",
+      "tokensIn": 685,
+      "tokensOut": 284,
+      "estimatedUsd": 0.0047780000000000045,
+      "providerUsd": 0.00047345999999999977,
+      "retries": 0
+    },
+    {
+      "index": 7,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:33:34.952Z",
+      "tokensIn": 575,
+      "tokensOut": 233,
+      "estimatedUsd": 0.003945999999999991,
+      "providerUsd": 0.0005219999999999999,
+      "retries": 0
+    },
+    {
+      "index": 8,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:33:39.742Z",
+      "tokensIn": 575,
+      "tokensOut": 203,
+      "estimatedUsd": 0.003586000000000006,
+      "providerUsd": 0.00036061999999999986,
+      "retries": 0
+    },
+    {
+      "index": 9,
+      "stage": "evolution",
+      "timestamp": "2026-10-08T09:33:49.462Z",
+      "tokensIn": 1152,
+      "tokensOut": 512,
+      "estimatedUsd": 0.008447999999999997,
+      "providerUsd": 0.0011136000000000002,
+      "retries": 0
+    }
+  ],
+  "outputs": [
+    {
+      "path": "series_1/00000296_000_analysis.json",
+      "sha256": "0b6f4fca40d02e35e3b9359264f9685d9ec8d58c47a7768d879b0e9327930f26",
+      "bytes": 3244
+    },
+    {
+      "path": "series_2/00000296_001_analysis.json",
+      "sha256": "5bdc40cd07b206a69c2d4c4c287f6f8b73da46a384e0a4f58faecf6226aec979",
+      "bytes": 3895
+    },
+    {
+      "path": "series_3/00000296_002_analysis.json",
+      "sha256": "b9c606b25fc3b4ed1d20825fdab1330d29e369946e15fd698964a3e3952bf306",
+      "bytes": 3061
+    },
+    {
+      "path": "series_4/00000296_003_analysis.json",
+      "sha256": "8f9533a09ba2a43bde93dd830644d93220aea02880b04b48da8451ef291eeca8",
+      "bytes": 2919
+    },
+    {
+      "path": "series_1/series_summary.md",
+      "sha256": "fab064a633782b070d7d95cf1faabaed9ee7a2b50ec4017a6475b8251b63ed63",
+      "bytes": 2025
+    },
+    {
+      "path": "series_2/series_summary.md",
+      "sha256": "cbb2f5417b94de8f91abe6ee40e4d47ae8230fde38e44c8149f73d804fa1c3b7",
+      "bytes": 2242
+    },
+    {
+      "path": "series_3/series_summary.md",
+      "sha256": "cf93318b7d051a43586f196fc9a7743a4ddcdc45b62f1c3836a16044fa0e020a",
+      "bytes": 1973
+    },
+    {
+      "path": "series_4/series_summary.md",
+      "sha256": "31781df20d7a3b7da6812d04a066f078381d9ec357729c01c64012c1e951856d",
+      "bytes": 1809
+    },
+    {
+      "path": "evolution_analysis.json",
+      "sha256": "e37917857cf01a50d2cdc15c79b01f9c9ae10aa0fe2b5c84f6da959a8f63cdfc",
+      "bytes": 3040
+    },
+    {
+      "path": "combined_diagnostic_report.md",
+      "sha256": "9ed6bae6971b776685c9d54504e7e25bcc14091c94714e64705672874bc2078c",
+      "bytes": 3750
+    }
+  ],
+  "totals": {
+    "calls": 9,
+    "tokensIn": 9039,
+    "tokensOut": 2587,
+    "estimatedUsd": 0.049122,
+    "providerUsd": 0.00567666,
+    "images": 4,
+    "imagesSucceeded": 4,
+    "imagesFailed": 0,
+    "series": 4
+  },
+  "exitCode": 0,
+  "warnings": [
+    "input-integrity: 4 image(s) matched --expect-hashes.",
+    "input-guard [image-metadata] series_1/00000296_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/00000296_001.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/00000296_002.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_4/00000296_003.png: png:tIME — stripped before upload"
+  ],
+  "humanReview": {
+    "required": true,
+    "reviewedBy": null
+  },
+  "prevManifestHash": null,
+  "manifestHash": "bbffde2048eab85bb86cae4081de7d0bd5d4181e5b440444b2338dbf624954d9"
+}

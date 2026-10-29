@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_1/img_04_00007040_002.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lung fields are clear.\",\n    \"Heart size is normal.\",\n    \"Mediastinum is normal.\",\n    \"Bones are intact.\",\n    \"Diaphragm is flat.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This is a chest X-ray image. The lung fields appear clear, heart size is normal, and the mediastinum looks unremarkable. No fractures related to the bones are visible. The diaphragm appears to be flattened.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-x-ray\",\n    \"https://www.radiologyinfo.org/en/imaging-in-the-chest\",\n    \"https://pubmed.ncbi.nlm.nih.gov/36634238/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lung fields are clear.",
+    "Heart size is normal.",
+    "Mediastinum is normal.",
+    "Bones are intact.",
+    "Diaphragm is flat."
+  ],
+  "abnormalities": [],
+  "summary": "This is a chest X-ray image. The lung fields appear clear, heart size is normal, and the mediastinum looks unremarkable. No fractures related to the bones are visible. The diaphragm appears to be flattened.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-x-ray",
+    "https://www.radiologyinfo.org/en/imaging-in-the-chest",
+    "https://pubmed.ncbi.nlm.nih.gov/36634238/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 384040,
+    "bytesOut": 297442,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T11:51:06.901Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

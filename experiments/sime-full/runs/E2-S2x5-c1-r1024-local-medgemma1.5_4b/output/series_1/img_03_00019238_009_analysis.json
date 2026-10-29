@@ -1,0 +1,46 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S2x5/series_1/img_03_00019238_009.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right-sided chest tubes are present.\",\n    \"Right pleural effusion.\",\n    \"Right lung opacities.\",\n    \"Left lung is clear.\",\n    \"Heart size is normal.\",\n    \"Mediastinum is normal.\",\n    \"No pneumothorax.\",\n    \"Left picc line is present.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"Chest X-ray shows tubes and fluid in the right chest, with some opacities in the right lung. The left lung looks clear. The heart and mediastinum are normal. The left-sided IV line is visible. This likely represents a post-operative or post-procedural state related to chest tube placement for a right-sided effusion, possibly due to infection or inflammation. Clinical correlation is required.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/right-pleural-effusion\",\n    \"https://radiopaedia.org/articles/pneumothorax\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4803029/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Right-sided chest tubes are present.",
+    "Right pleural effusion.",
+    "Right lung opacities.",
+    "Left lung is clear.",
+    "Heart size is normal.",
+    "Mediastinum is normal.",
+    "No pneumothorax.",
+    "Left picc line is present."
+  ],
+  "abnormalities": [],
+  "summary": "Chest X-ray shows tubes and fluid in the right chest, with some opacities in the right lung. The left lung looks clear. The heart and mediastinum are normal. The left-sided IV line is visible. This likely represents a post-operative or post-procedural state related to chest tube placement for a right-sided effusion, possibly due to infection or inflammation. Clinical correlation is required.",
+  "references": [
+    "https://radiopaedia.org/articles/right-pleural-effusion",
+    "https://radiopaedia.org/articles/pneumothorax",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4803029/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 450035,
+    "bytesOut": 341639,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T11:41:17.563Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

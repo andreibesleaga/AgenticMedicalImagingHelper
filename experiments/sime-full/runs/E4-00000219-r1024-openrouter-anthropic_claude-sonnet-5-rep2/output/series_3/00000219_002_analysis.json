@@ -1,0 +1,59 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_3/00000219_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA/AP upright)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Cardiac silhouette is enlarged with cardiothoracic ratio appearing mildly increased\",\n    \"Mediastinal contour shows a prominent bulge along the left upper heart border/aortopulmonary window region\",\n    \"Lung fields are grossly clear bilaterally without focal consolidation\",\n    \"No overt pleural effusion identified on this view\",\n    \"Bony thorax and both shoulder girdles appear symmetric without acute fracture\",\n    \"Degenerative changes are not definitively assessed due to projection\",\n    \"Trachea appears midline\",\n    \"Costophrenic angles are sharp bilaterally\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Mediastinal/aortic contour prominence\",\n      \"description\": \"There is a rounded convexity along the left mediastinal border near the aortic knob/pulmonary artery region, which could represent a prominent/ectatic aorta, pulmonary artery enlargement, or a mediastinal mass. Further characterization with CT would be helpful.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 55\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette appears enlarged relative to thoracic width, suggesting possible cardiomegaly; this could be due to left ventricular enlargement or pericardial effusion among other causes.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 50\n    }\n  ],\n  \"summary\": \"This chest X-ray shows the heart appears somewhat larger than usual, and there's a rounded bulge near where the heart meets the major blood vessels (the aorta/pulmonary artery area) on the left side. This could be due to several things, like a naturally widened or stretched blood vessel (common with aging or high blood pressure), heart enlargement, or in some cases, a growth in that area. The lungs themselves look clear, meaning there's no obvious pneumonia or fluid buildup. Because X-rays show overlapping structures, a CT scan would give a clearer picture of exactly what's causing the bulge and confirm whether the heart size is truly abnormal. This should be discussed with your doctor, who may order additional tests.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/mediastinal-mass-1\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Good",
+  "findings": [
+    "Cardiac silhouette is enlarged with cardiothoracic ratio appearing mildly increased",
+    "Mediastinal contour shows a prominent bulge along the left upper heart border/aortopulmonary window region",
+    "Lung fields are grossly clear bilaterally without focal consolidation",
+    "No overt pleural effusion identified on this view",
+    "Bony thorax and both shoulder girdles appear symmetric without acute fracture",
+    "Degenerative changes are not definitively assessed due to projection",
+    "Trachea appears midline",
+    "Costophrenic angles are sharp bilaterally"
+  ],
+  "abnormalities": [
+    {
+      "name": "Mediastinal/aortic contour prominence",
+      "severity": "Moderate",
+      "confidence": 55,
+      "description": "There is a rounded convexity along the left mediastinal border near the aortic knob/pulmonary artery region, which could represent a prominent/ectatic aorta, pulmonary artery enlargement, or a mediastinal mass. Further characterization with CT would be helpful."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 50,
+      "description": "The cardiac silhouette appears enlarged relative to thoracic width, suggesting possible cardiomegaly; this could be due to left ventricular enlargement or pericardial effusion among other causes."
+    }
+  ],
+  "summary": "This chest X-ray shows the heart appears somewhat larger than usual, and there's a rounded bulge near where the heart meets the major blood vessels (the aorta/pulmonary artery area) on the left side. This could be due to several things, like a naturally widened or stretched blood vessel (common with aging or high blood pressure), heart enlargement, or in some cases, a growth in that area. The lungs themselves look clear, meaning there's no obvious pneumonia or fluid buildup. Because X-rays show overlapping structures, a CT scan would give a clearer picture of exactly what's causing the bulge and confirm whether the heart size is truly abnormal. This should be discussed with your doctor, who may order additional tests.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/mediastinal-mass-1",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 380748,
+    "bytesOut": 376448,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T09:42:58.854Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

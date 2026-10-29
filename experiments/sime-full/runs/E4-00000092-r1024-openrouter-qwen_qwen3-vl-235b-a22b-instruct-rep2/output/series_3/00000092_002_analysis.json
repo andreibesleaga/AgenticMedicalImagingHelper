@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_3/00000092_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral lung fields show increased interstitial markings and areas of consolidation, particularly in the lower lobes.\",\n    \"Cardiac silhouette appears within normal limits.\",\n    \"No obvious pleural effusion or pneumothorax.\",\n    \"Diaphragm is well-defined; no subdiaphragmatic free air noted.\",\n    \"Bony thorax including ribs, clavicles, and spine appear intact without fracture or lytic lesion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pulmonary Infiltrates\",\n      \"description\": \" patchy opacities with reticular and nodular patterns predominantly in the lower lung zones, suggestive of interstitial or alveolar disease process. No cavitation or mass effect observed.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows signs of lung inflammation or infection, such as pneumonia or interstitial lung disease, mainly affecting the lower parts of the lungs. These findings may cause symptoms like cough, shortness of breath, or fever. Further clinical correlation and possibly additional tests (like CT or lab work) are needed to determine the exact cause and appropriate treatment.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pneumonia-radiographic-features\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK537026/\",\n    \"https://www.radiologyinfo.org/en/info/chestxray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral lung fields show increased interstitial markings and areas of consolidation, particularly in the lower lobes.",
+    "Cardiac silhouette appears within normal limits.",
+    "No obvious pleural effusion or pneumothorax.",
+    "Diaphragm is well-defined; no subdiaphragmatic free air noted.",
+    "Bony thorax including ribs, clavicles, and spine appear intact without fracture or lytic lesion."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pulmonary Infiltrates",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": " patchy opacities with reticular and nodular patterns predominantly in the lower lung zones, suggestive of interstitial or alveolar disease process. No cavitation or mass effect observed."
+    }
+  ],
+  "summary": "The chest X-ray shows signs of lung inflammation or infection, such as pneumonia or interstitial lung disease, mainly affecting the lower parts of the lungs. These findings may cause symptoms like cough, shortness of breath, or fever. Further clinical correlation and possibly additional tests (like CT or lab work) are needed to determine the exact cause and appropriate treatment.",
+  "references": [
+    "https://radiopaedia.org/articles/pneumonia-radiographic-features",
+    "https://www.ncbi.nlm.nih.gov/books/NBK537026/",
+    "https://www.radiologyinfo.org/en/info/chestxray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 400591,
+    "bytesOut": 361351,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:27:25.721Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

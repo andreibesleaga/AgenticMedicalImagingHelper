@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_3/00000219_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Median sternotomy wires are intact.\",\n    \"Aortic valve prosthesis is present.\",\n    \"Cardiomediastinal silhouette is enlarged.\",\n    \"Thoracic aorta is calcified and tortuous.\",\n    \"Lungs are clear of focal consolidation, effusion, or pneumothorax.\",\n    \"Bony thorax is intact.\",\n    \"The diaphragm is well-defined.\",\n    \"Costophrenic angles are sharp.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiomediastinal silhouette is enlarged, suggesting cardiomegaly.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Aortic Atherosclerosis\",\n      \"description\": \"Calcifications are visible along the thoracic aorta, consistent with atherosclerosis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This chest X-ray shows evidence of previous heart surgery, indicated by wires in the breastbone (median sternotomy wires) and an artificial aortic valve. The heart appears slightly enlarged. There is also hardening and calcification of the main blood vessel from the heart (thoracic aorta), which is a common finding as people age. The lungs are clear with no signs of pneumonia or fluid build-up.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly-1\",\n    \"https://radiopaedia.org/articles/aortic-atherosclerosis\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Median sternotomy wires are intact.",
+    "Aortic valve prosthesis is present.",
+    "Cardiomediastinal silhouette is enlarged.",
+    "Thoracic aorta is calcified and tortuous.",
+    "Lungs are clear of focal consolidation, effusion, or pneumothorax.",
+    "Bony thorax is intact.",
+    "The diaphragm is well-defined.",
+    "Costophrenic angles are sharp."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "The cardiomediastinal silhouette is enlarged, suggesting cardiomegaly."
+    },
+    {
+      "name": "Aortic Atherosclerosis",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Calcifications are visible along the thoracic aorta, consistent with atherosclerosis."
+    }
+  ],
+  "summary": "This chest X-ray shows evidence of previous heart surgery, indicated by wires in the breastbone (median sternotomy wires) and an artificial aortic valve. The heart appears slightly enlarged. There is also hardening and calcification of the main blood vessel from the heart (thoracic aorta), which is a common finding as people age. The lungs are clear with no signs of pneumonia or fluid build-up.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly-1",
+    "https://radiopaedia.org/articles/aortic-atherosclerosis"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 380748,
+    "bytesOut": 376448,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:23:53.104Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

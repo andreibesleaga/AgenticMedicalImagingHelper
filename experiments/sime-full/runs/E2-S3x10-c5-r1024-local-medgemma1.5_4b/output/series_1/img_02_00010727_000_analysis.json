@@ -1,0 +1,46 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_1/img_02_00010727_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\": \"X-ray\", \"anatomyRegion\": \"Chest (AP)\", \"quality\": \"Good\", \"findings\": [\"Antero-posterior (AP) chest X-ray.\", \"The lungs demonstrate normal lung volumes.\", \"The heart size is within normal limits.\", \"There is no pleural effusion or pneumothorax.\", \"The mediastinal contours are unremarkable.\", \"There is a linear opacity in the left lower lobe, likely representing linear atelectasis or scar.\", \"There is a small right pleural effusion.\", \"The visualized bones are unremarkable.\"], \"abnormalities\": [], \"summary\": \"An X-ray of the chest shows a small amount of fluid in the right pleural space. The lungs appear clear except for a possible band of tissue in the left lung base which might be normal scarring or a small area of collapsed lung. No other significant findings are noted.\", \"references\": [\"https://radiopaedia.org/articles/ankylosing-spondylitis-chest-x-ray-findings\", \"https://radiopaedia.org/articles/pleural-effusion\", \"https://radiopaedia.org/articles/atelectasis\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Antero-posterior (AP) chest X-ray.",
+    "The lungs demonstrate normal lung volumes.",
+    "The heart size is within normal limits.",
+    "There is no pleural effusion or pneumothorax.",
+    "The mediastinal contours are unremarkable.",
+    "There is a linear opacity in the left lower lobe, likely representing linear atelectasis or scar.",
+    "There is a small right pleural effusion.",
+    "The visualized bones are unremarkable."
+  ],
+  "abnormalities": [],
+  "summary": "An X-ray of the chest shows a small amount of fluid in the right pleural space. The lungs appear clear except for a possible band of tissue in the left lung base which might be normal scarring or a small area of collapsed lung. No other significant findings are noted.",
+  "references": [
+    "https://radiopaedia.org/articles/ankylosing-spondylitis-chest-x-ray-findings",
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/atelectasis"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 438682,
+    "bytesOut": 334304,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T11:59:33.447Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

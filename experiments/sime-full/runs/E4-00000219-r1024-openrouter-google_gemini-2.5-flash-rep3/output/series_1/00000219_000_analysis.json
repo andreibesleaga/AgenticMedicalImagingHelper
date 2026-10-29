@@ -1,0 +1,70 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_1/00000219_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Cardiomediastinal silhouette is enlarged, consistent with cardiomegaly.\",\n    \"Bilateral hilar regions show prominent vascular markings.\",\n    \"Pulmonary vasculature appears congested.\",\n    \"Presence of sternal wires indicating prior sternotomy.\",\n    \"Multiple surgical clips are seen in the left shoulder region, suggesting prior surgery.\",\n    \"Mild blunting of the bilateral costophrenic angles, suggestive of small pleural effusions or scarring.\",\n    \"Clear lungs fields without definite focal consolidation or pneumothorax.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlargement of the cardiac silhouette, which is consistent with cardiomegaly. The cardiothoracic ratio appears increased.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pulmonary Congestion\",\n      \"description\": \"Prominent and possibly engorged pulmonary vascular markings are observed, consistent with pulmonary venous congestion.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Mild blunting of the bilateral costophrenic angles suggests small pleural effusions, which could be related to cardiac function or other causes.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    },\n    {\n      \"name\": \"Surgical Changes\",\n      \"description\": \"Sternal wires are noted, indicating a history of sternotomy, likely for cardiac surgery. Surgical clips are also present in the left shoulder region.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray shows that the heart is larger than normal, a condition called cardiomegaly, which often means the heart is working harder. There are signs of fluid backup in the lungs, called pulmonary congestion, and possibly a small amount of fluid around the base of both lungs (pleural effusions). These findings are commonly associated with heart conditions. The image also reveals evidence of past surgeries on the chest (sternal wires) and left shoulder (surgical clips). No immediate signs of lung collapse or severe pneumonia are seen.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly-1\",\n    \"https://radiopaedia.org/articles/pulmonary-venous-congestion\",\n    \"https://radiopaedia.org/articles/pleural-effusion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Cardiomediastinal silhouette is enlarged, consistent with cardiomegaly.",
+    "Bilateral hilar regions show prominent vascular markings.",
+    "Pulmonary vasculature appears congested.",
+    "Presence of sternal wires indicating prior sternotomy.",
+    "Multiple surgical clips are seen in the left shoulder region, suggesting prior surgery.",
+    "Mild blunting of the bilateral costophrenic angles, suggestive of small pleural effusions or scarring.",
+    "Clear lungs fields without definite focal consolidation or pneumothorax."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Enlargement of the cardiac silhouette, which is consistent with cardiomegaly. The cardiothoracic ratio appears increased."
+    },
+    {
+      "name": "Pulmonary Congestion",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Prominent and possibly engorged pulmonary vascular markings are observed, consistent with pulmonary venous congestion."
+    },
+    {
+      "name": "Pleural Effusions",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "Mild blunting of the bilateral costophrenic angles suggests small pleural effusions, which could be related to cardiac function or other causes."
+    },
+    {
+      "name": "Surgical Changes",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Sternal wires are noted, indicating a history of sternotomy, likely for cardiac surgery. Surgical clips are also present in the left shoulder region."
+    }
+  ],
+  "summary": "This X-ray shows that the heart is larger than normal, a condition called cardiomegaly, which often means the heart is working harder. There are signs of fluid backup in the lungs, called pulmonary congestion, and possibly a small amount of fluid around the base of both lungs (pleural effusions). These findings are commonly associated with heart conditions. The image also reveals evidence of past surgeries on the chest (sternal wires) and left shoulder (surgical clips). No immediate signs of lung collapse or severe pneumonia are seen.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly-1",
+    "https://radiopaedia.org/articles/pulmonary-venous-congestion",
+    "https://radiopaedia.org/articles/pleural-effusion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 383333,
+    "bytesOut": 378599,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:55:12.807Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

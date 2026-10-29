@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_10_00019610_007.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Mild pulmonary vascular congestion is noted.\",\n    \"Bilateral linear atelectasis is present, more prominent at the bases.\",\n    \"A nasogastric tube is visualized, extending into the stomach.\",\n    \"The heart size appears within normal limits for this projection.\",\n    \"No definite pneumothorax or pleural effusion is seen.\",\n    \"The bony structures appear intact, without acute fracture or dislocation.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pulmonary Congestion\",\n      \"description\": \"Mild pulmonary vascular congestion is observed, suggesting increased fluid in the lungs.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Linear Atelectasis\",\n      \"description\": \"Bilateral linear opacities are present at the lung bases, consistent with atelectasis (collapsed lung tissue).\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows some mild fluid in the blood vessels of the lungs, and small areas of collapsed lung tissue at the bottom of both lungs. These findings can sometimes be seen in conditions like heart failure or after surgery. A feeding tube is visible and properly placed in the stomach. The heart size appears normal, and there are no signs of a collapsed lung (pneumothorax) or fluid around the lungs (pleural effusion). The bones of the chest look healthy.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.303095034\",\n    \"https://radiopaedia.org/articles/atelectasis\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Mild pulmonary vascular congestion is noted.",
+    "Bilateral linear atelectasis is present, more prominent at the bases.",
+    "A nasogastric tube is visualized, extending into the stomach.",
+    "The heart size appears within normal limits for this projection.",
+    "No definite pneumothorax or pleural effusion is seen.",
+    "The bony structures appear intact, without acute fracture or dislocation."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pulmonary Congestion",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Mild pulmonary vascular congestion is observed, suggesting increased fluid in the lungs."
+    },
+    {
+      "name": "Linear Atelectasis",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Bilateral linear opacities are present at the lung bases, consistent with atelectasis (collapsed lung tissue)."
+    }
+  ],
+  "summary": "This X-ray of the chest shows some mild fluid in the blood vessels of the lungs, and small areas of collapsed lung tissue at the bottom of both lungs. These findings can sometimes be seen in conditions like heart failure or after surgery. A feeding tube is visible and properly placed in the stomach. The heart size appears normal, and there are no signs of a collapsed lung (pneumothorax) or fluid around the lungs (pleural effusion). The bones of the chest look healthy.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.303095034",
+    "https://radiopaedia.org/articles/atelectasis"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 465388,
+    "bytesOut": 465273,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:43:37.319Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

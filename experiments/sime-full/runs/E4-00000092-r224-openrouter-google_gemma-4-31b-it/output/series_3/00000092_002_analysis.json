@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000092/series_3/00000092_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Presence of free air beneath the left hemidiaphragm (pneumoperitoneum)\",\n    \"Bilateral basal opacities, more pronounced on the left\",\n    \"Blunting of the costophrenic angles\",\n    \"Central venous catheter tip position noted in the superior vena cava area\",\n    \"Cardiac silhouette is partially obscured by lower lobe opacities\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pneumoperitoneum\",\n      \"description\": \"Crescent-shaped lucency (air) visible under the left diaphragm, indicating free air in the peritoneal cavity.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pleural Effusions / Basal Opacities\",\n      \"description\": \"Increased density at the lung bases with loss of the sharp costophrenic angles, suggestive of fluid accumulation or collapse.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The most critical finding is 'pneumoperitoneum,' which is the presence of air inside the abdominal cavity, often caused by a perforation (hole) in the stomach or intestines. This is a medical emergency. Additionally, there are signs of fluid or inflammation at the bottom of both lungs. These findings require immediate clinical evaluation and surgical consultation.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pneumoperitoneum\",\n    \"https://www.acep.org/patient-resources/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Fair",
+  "findings": [
+    "Presence of free air beneath the left hemidiaphragm (pneumoperitoneum)",
+    "Bilateral basal opacities, more pronounced on the left",
+    "Blunting of the costophrenic angles",
+    "Central venous catheter tip position noted in the superior vena cava area",
+    "Cardiac silhouette is partially obscured by lower lobe opacities"
+  ],
+  "abnormalities": [
+    {
+      "name": "Pneumoperitoneum",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Crescent-shaped lucency (air) visible under the left diaphragm, indicating free air in the peritoneal cavity."
+    },
+    {
+      "name": "Pleural Effusions / Basal Opacities",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Increased density at the lung bases with loss of the sharp costophrenic angles, suggestive of fluid accumulation or collapse."
+    }
+  ],
+  "summary": "The most critical finding is 'pneumoperitoneum,' which is the presence of air inside the abdominal cavity, often caused by a perforation (hole) in the stomach or intestines. This is a medical emergency. Additionally, there are signs of fluid or inflammation at the bottom of both lungs. These findings require immediate clinical evaluation and surgical consultation.",
+  "references": [
+    "https://radiopaedia.org/articles/pneumoperitoneum",
+    "https://www.acep.org/patient-resources/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23204,
+    "bytesOut": 23204,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:06:23.748Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

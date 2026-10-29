@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00005852/series_5/00005852_004.png",
+  "seriesId": "series_5",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are hyperinflated with flattened hemidiaphragms, more pronounced on the left.\",\n    \"Bilateral vascular markings appear within normal limits.\",\n    \"The cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"There is no evidence of pneumothorax or significant pleural effusion.\",\n    \"The osseous structures of the thoracic cage appear intact, although some degenerative changes may be present in the spine (difficult to assess fully).\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Hyperinflation of Lungs\",\n      \"description\": \"The diaphragms are flattened bilaterally, with the left hemidiaphragm appearing lower than normal, indicating lung hyperinflation. This is a common finding in obstructive lung diseases such as emphysema or asthma.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows that the lungs appear over-expanded, which is a condition called hyperinflation. This is suggested by the flattened appearance of the breathing muscles (diaphragms) under the lungs, especially on the left side. Hyperinflation is often seen in conditions where air gets trapped in the lungs, like chronic obstructive pulmonary disease (COPD) or asthma. The heart and major blood vessels appear normal in size and shape. There is no sign of collapsed lung (pneumothorax) or significant fluid around the lungs (pleural effusion).\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2017160172\",\n    \"https://radiopaedia.org/articles/hyperinflated-lungs\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7364654/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are hyperinflated with flattened hemidiaphragms, more pronounced on the left.",
+    "Bilateral vascular markings appear within normal limits.",
+    "The cardiomediastinal silhouette is within normal limits for size and contour.",
+    "There is no evidence of pneumothorax or significant pleural effusion.",
+    "The osseous structures of the thoracic cage appear intact, although some degenerative changes may be present in the spine (difficult to assess fully)."
+  ],
+  "abnormalities": [
+    {
+      "name": "Hyperinflation of Lungs",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The diaphragms are flattened bilaterally, with the left hemidiaphragm appearing lower than normal, indicating lung hyperinflation. This is a common finding in obstructive lung diseases such as emphysema or asthma."
+    }
+  ],
+  "summary": "This X-ray of the chest shows that the lungs appear over-expanded, which is a condition called hyperinflation. This is suggested by the flattened appearance of the breathing muscles (diaphragms) under the lungs, especially on the left side. Hyperinflation is often seen in conditions where air gets trapped in the lungs, like chronic obstructive pulmonary disease (COPD) or asthma. The heart and major blood vessels appear normal in size and shape. There is no sign of collapsed lung (pneumothorax) or significant fluid around the lungs (pleural effusion).",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2017160172",
+    "https://radiopaedia.org/articles/hyperinflated-lungs",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7364654/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 447994,
+    "bytesOut": 447349,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:06:45.968Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

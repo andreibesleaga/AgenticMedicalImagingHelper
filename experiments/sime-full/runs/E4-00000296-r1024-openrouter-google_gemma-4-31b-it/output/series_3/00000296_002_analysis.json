@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000296/series_3/00000296_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Presence of a pigtail drainage catheter in the left hemithorax.\",\n    \"The catheter tip is located in the superior aspect of the left pleural space, with the tube extending inferiorly towards the diaphragm.\",\n    \"Lungs are generally clear without obvious consolidation or large pleural effusion.\",\n    \"Cardiac silhouette is within normal limits for size and shape.\",\n    \"Hilar regions appear unremarkable.\",\n    \"Bony structures and soft tissues are intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Indwelling Chest Tube\",\n      \"description\": \"A pigtail catheter is visible in the left pleural space, typically placed for the drainage of pleural effusion or pneumothorax.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a pigtail catheter (a thin, flexible tube with a curled end) placed in the left side of the chest. This device is commonly used to drain fluid (pleural effusion) or air (pneumothorax) from the space around the lung. The lungs themselves appear clear, and the heart size is normal.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-drain\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK557541/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Presence of a pigtail drainage catheter in the left hemithorax.",
+    "The catheter tip is located in the superior aspect of the left pleural space, with the tube extending inferiorly towards the diaphragm.",
+    "Lungs are generally clear without obvious consolidation or large pleural effusion.",
+    "Cardiac silhouette is within normal limits for size and shape.",
+    "Hilar regions appear unremarkable.",
+    "Bony structures and soft tissues are intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Indwelling Chest Tube",
+      "severity": "Mild",
+      "confidence": 100,
+      "description": "A pigtail catheter is visible in the left pleural space, typically placed for the drainage of pleural effusion or pneumothorax."
+    }
+  ],
+  "summary": "The chest X-ray shows a pigtail catheter (a thin, flexible tube with a curled end) placed in the left side of the chest. This device is commonly used to drain fluid (pleural effusion) or air (pneumothorax) from the space around the lung. The lungs themselves appear clear, and the heart size is normal.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-drain",
+    "https://www.ncbi.nlm.nih.gov/books/NBK557541/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 417130,
+    "bytesOut": 322659,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T09:55:40.604Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,59 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000092/series_1/00000092_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP/PA)\",\"quality\":\"Fair\",\"findings\":[\"Frontal chest radiograph showing bilateral lung fields\",\"Cardiac silhouette appears within normal limits in size\",\"Mediastinal structures midline\",\"Visible endotracheal or feeding tube-like radiopaque markers overlying lower neck/upper chest bilaterally, possibly patient positioning devices or ECG leads\",\"Small round radiopaque marker overlying right upper chest, likely an external marker or lead\",\"Increased opacity/density in the left lower lung zone, triangular/wedge shaped, possibly representing atelectasis, effusion, or consolidation\",\"Rib and bony thorax appear grossly intact\",\"Diaphragmatic contours partially obscured on the left side\"],\"abnormalities\":[{\"name\":\"Left lower lobe opacity\",\"description\":\"Increased density in the left lower lung field with a somewhat triangular or wedge-shaped appearance, potentially representing consolidation, atelectasis, or pleural effusion. Silhouetting of the left diaphragm/costophrenic angle is suggested.\",\"severity\":\"Moderate\",\"confidence\":55},{\"name\":\"External markers/leads\",\"description\":\"Radiopaque objects at the lower neck bilaterally and right upper chest, likely ECG lead placements or patient monitoring equipment rather than a pathological finding.\",\"severity\":\"Normal\",\"confidence\":60}],\"summary\":\"This is a front-view chest X-ray. The heart size and overall lung structure appear largely normal, but there is a region of increased whiteness (density) in the lower part of the left lung that could indicate fluid, a collapsed portion of lung tissue, or an infection such as pneumonia. Small metallic-looking objects near the neck and chest are most likely monitoring equipment (like ECG leads) rather than a health concern themselves. Further clinical correlation and possibly follow-up imaging (like a CT scan) would help clarify the cause of the left lung finding. It's important that a radiologist or physician review this image directly for an accurate diagnosis.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\"https://pubs.rsna.org/journal/radiology\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP/PA)",
+  "quality": "Fair",
+  "findings": [
+    "Frontal chest radiograph showing bilateral lung fields",
+    "Cardiac silhouette appears within normal limits in size",
+    "Mediastinal structures midline",
+    "Visible endotracheal or feeding tube-like radiopaque markers overlying lower neck/upper chest bilaterally, possibly patient positioning devices or ECG leads",
+    "Small round radiopaque marker overlying right upper chest, likely an external marker or lead",
+    "Increased opacity/density in the left lower lung zone, triangular/wedge shaped, possibly representing atelectasis, effusion, or consolidation",
+    "Rib and bony thorax appear grossly intact",
+    "Diaphragmatic contours partially obscured on the left side"
+  ],
+  "abnormalities": [
+    {
+      "name": "Left lower lobe opacity",
+      "severity": "Moderate",
+      "confidence": 55,
+      "description": "Increased density in the left lower lung field with a somewhat triangular or wedge-shaped appearance, potentially representing consolidation, atelectasis, or pleural effusion. Silhouetting of the left diaphragm/costophrenic angle is suggested."
+    },
+    {
+      "name": "External markers/leads",
+      "severity": "Normal",
+      "confidence": 60,
+      "description": "Radiopaque objects at the lower neck bilaterally and right upper chest, likely ECG lead placements or patient monitoring equipment rather than a pathological finding."
+    }
+  ],
+  "summary": "This is a front-view chest X-ray. The heart size and overall lung structure appear largely normal, but there is a region of increased whiteness (density) in the lower part of the left lung that could indicate fluid, a collapsed portion of lung tissue, or an infection such as pneumonia. Small metallic-looking objects near the neck and chest are most likely monitoring equipment (like ECG leads) rather than a health concern themselves. Further clinical correlation and possibly follow-up imaging (like a CT scan) would help clarify the cause of the left lung finding. It's important that a radiologist or physician review this image directly for an accurate diagnosis.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiology"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24381,
+    "bytesOut": 24381,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-29T10:37:09.024Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

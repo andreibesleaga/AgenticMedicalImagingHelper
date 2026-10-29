@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000086/series_1/00000086_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Evidence of prior right middle lobe lung surgery or intervention, likely a coil embolization for a vascular malformation, indicated by multiple metallic coils seen in the right mid lung zone.\",\n    \"Bilateral lung fields otherwise appear clear without focal consolidation, pneumothorax, or large pleural effusions.\",\n    \"Cardiac silhouette is not enlarged.\",\n    \"Hila and mediastinum are within normal limits.\",\n    \"Diaphragms are intact.\",\n    \"Bony thorax shows no acute fractures or destructive lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Middle Lobe Surgical Coils\",\n      \"description\": \"Multiple metallic coils are visualized in the right middle lobe, consistent with a prior intervention, likely embolization of a vascular malformation. These appear stable in position.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows that you previously had a procedure in the right middle part of your lung where some metal coils were placed, likely to treat a blood vessel problem. These coils are still in place. Otherwise, your lungs, heart, and surrounding bones appear healthy and normal, with no signs of new problems like infection, collapsed lung, or fluid buildup.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2020190123\",\n    \"https://radiopaedia.org/articles/pulmonary-arteriovenous-malformation-3\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Evidence of prior right middle lobe lung surgery or intervention, likely a coil embolization for a vascular malformation, indicated by multiple metallic coils seen in the right mid lung zone.",
+    "Bilateral lung fields otherwise appear clear without focal consolidation, pneumothorax, or large pleural effusions.",
+    "Cardiac silhouette is not enlarged.",
+    "Hila and mediastinum are within normal limits.",
+    "Diaphragms are intact.",
+    "Bony thorax shows no acute fractures or destructive lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Middle Lobe Surgical Coils",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "Multiple metallic coils are visualized in the right middle lobe, consistent with a prior intervention, likely embolization of a vascular malformation. These appear stable in position."
+    }
+  ],
+  "summary": "This X-ray of the chest shows that you previously had a procedure in the right middle part of your lung where some metal coils were placed, likely to treat a blood vessel problem. These coils are still in place. Otherwise, your lungs, heart, and surrounding bones appear healthy and normal, with no signs of new problems like infection, collapsed lung, or fluid buildup.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2020190123",
+    "https://radiopaedia.org/articles/pulmonary-arteriovenous-malformation-3"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 412436,
+    "bytesOut": 410514,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:16:39.312Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

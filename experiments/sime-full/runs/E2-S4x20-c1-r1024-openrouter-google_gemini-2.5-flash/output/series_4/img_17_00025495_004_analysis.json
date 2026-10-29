@@ -1,0 +1,71 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_17_00025495_004.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral pleural effusions, larger on the right side.\",\n    \"Bilateral opacities in the lower lung fields, consistent with atelectasis or infiltrates.\",\n    \"Mediastinum appears midline.\",\n    \"Cardiac silhouette appears within normal limits for size.\",\n    \"Bony thorax is intact.\",\n    \"A right internal jugular central venous catheter is noted, with its tip projecting over the superior vena cava.\",\n    \"A nasogastric tube is present, with its tip projecting over the stomach.\",\n    \"Diaphragmatic contours are obscured by pleural effusions, especially on the right.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Bilateral pleural effusions are noted, more prominent on the right side, blunting the costophrenic angles and obscuring the hemidiaphragms.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Lung Opacities\",\n      \"description\": \"Bilateral lower lobe opacities are present, suggestive of atelectasis or consolidations, potentially related to the effusions.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Central Venous Catheter Misplacement\",\n      \"description\": \"The tip of the right internal jugular central venous catheter projects over the superior vena cava, which is an acceptable position.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 99\n    },\n    {\n      \"name\": \"Nasogastric Tube Placement\",\n      \"description\": \"The nasogastric tube is appropriately positioned within the stomach.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 99\n    }\n  ],\n  \"summary\": \"The chest X-ray shows fluid accumulation around both lungs, more noticeable on the right side. This fluid is called pleural effusion. There are also some hazy areas in the lower parts of both lungs, which could be collapsed lung tissue (atelectasis) or inflammation/infection (infiltrates). The heart appears to be of normal size, and the main airway structures are in the center of the chest. A tube for medication delivery (central line) is seen in a good position in a large vein, and a feeding tube (nasogastric tube) is correctly placed in the stomach.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion-1\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7156942/\",\n    \"https://www.uptodate.com/contents/chest-x-ray-interpretation-in-adults\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral pleural effusions, larger on the right side.",
+    "Bilateral opacities in the lower lung fields, consistent with atelectasis or infiltrates.",
+    "Mediastinum appears midline.",
+    "Cardiac silhouette appears within normal limits for size.",
+    "Bony thorax is intact.",
+    "A right internal jugular central venous catheter is noted, with its tip projecting over the superior vena cava.",
+    "A nasogastric tube is present, with its tip projecting over the stomach.",
+    "Diaphragmatic contours are obscured by pleural effusions, especially on the right."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Bilateral pleural effusions are noted, more prominent on the right side, blunting the costophrenic angles and obscuring the hemidiaphragms."
+    },
+    {
+      "name": "Lung Opacities",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Bilateral lower lobe opacities are present, suggestive of atelectasis or consolidations, potentially related to the effusions."
+    },
+    {
+      "name": "Central Venous Catheter Misplacement",
+      "severity": "Normal",
+      "confidence": 99,
+      "description": "The tip of the right internal jugular central venous catheter projects over the superior vena cava, which is an acceptable position."
+    },
+    {
+      "name": "Nasogastric Tube Placement",
+      "severity": "Normal",
+      "confidence": 99,
+      "description": "The nasogastric tube is appropriately positioned within the stomach."
+    }
+  ],
+  "summary": "The chest X-ray shows fluid accumulation around both lungs, more noticeable on the right side. This fluid is called pleural effusion. There are also some hazy areas in the lower parts of both lungs, which could be collapsed lung tissue (atelectasis) or inflammation/infection (infiltrates). The heart appears to be of normal size, and the main airway structures are in the center of the chest. A tube for medication delivery (central line) is seen in a good position in a large vein, and a feeding tube (nasogastric tube) is correctly placed in the stomach.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion-1",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7156942/",
+    "https://www.uptodate.com/contents/chest-x-ray-interpretation-in-adults"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 436002,
+    "bytesOut": 435761,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:44:15.800Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

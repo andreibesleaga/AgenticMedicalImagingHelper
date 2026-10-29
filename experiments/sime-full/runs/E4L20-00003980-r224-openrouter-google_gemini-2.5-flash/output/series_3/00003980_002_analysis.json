@@ -1,0 +1,62 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00003980/series_3/00003980_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right mid to lower lung zone demonstrates multifocal patchy airspace opacities, consistent with consolidative changes.\",\n    \"A right-sided central venous catheter (CVC) is noted, with its tip projecting over the right lower pulmonary artery region.\",\n    \"Bilateral surgical clips are visible in the upper thorax/shoulder regions, likely related to previous surgical intervention, particularly on the left side where external fixation hardware is seen.\",\n    \"Cardiomediastinal silhouette is unremarkable in size and contour.\",\n    \"No obvious pleural effusion or pneumothorax is identified.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Lung Opacities\",\n      \"description\": \"Multifocal patchy airspace opacities are present in the right mid to lower lung zones, suggesting consolidative processes such as pneumonia or atelectasis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Central Venous Catheter (CVC) Tip Position\",\n      \"description\": \"The central venous catheter tip appears to be positioned within the right lower pulmonary artery region, which might be slightly distal for optimal placement or could be interpreted as within the SVC/RA junction if the vessel course is tortuous, however, it warrants review of the exact trajectory.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    },\n    {\n      \"name\": \"Surgical Hardware\",\n      \"description\": \"Surgical clips are noted bilaterally in the upper thorax/shoulder region, and external fixation hardware is visible on the left side, indicating prior surgical procedures.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows some cloudy areas in the right lung, which might be a sign of an infection (like pneumonia) or lung collapse. There's a tube in a large vein on the right side of the chest (a central venous catheter), and its tip looks like it's positioned in the main blood vessel going into the right lung. There are also surgical clips and hardware near both shoulders, suggesting past surgeries in those areas. The heart and the main breathing tubes appear normal, and there's no fluid around the lungs or collapsed lung tissue outside of what's described in the right lung.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pneumonia-1\",\n    \"https://radiopaedia.org/articles/central-venous-catheter-complications\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK482312/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right mid to lower lung zone demonstrates multifocal patchy airspace opacities, consistent with consolidative changes.",
+    "A right-sided central venous catheter (CVC) is noted, with its tip projecting over the right lower pulmonary artery region.",
+    "Bilateral surgical clips are visible in the upper thorax/shoulder regions, likely related to previous surgical intervention, particularly on the left side where external fixation hardware is seen.",
+    "Cardiomediastinal silhouette is unremarkable in size and contour.",
+    "No obvious pleural effusion or pneumothorax is identified."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Lung Opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Multifocal patchy airspace opacities are present in the right mid to lower lung zones, suggesting consolidative processes such as pneumonia or atelectasis."
+    },
+    {
+      "name": "Central Venous Catheter (CVC) Tip Position",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "The central venous catheter tip appears to be positioned within the right lower pulmonary artery region, which might be slightly distal for optimal placement or could be interpreted as within the SVC/RA junction if the vessel course is tortuous, however, it warrants review of the exact trajectory."
+    },
+    {
+      "name": "Surgical Hardware",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Surgical clips are noted bilaterally in the upper thorax/shoulder region, and external fixation hardware is visible on the left side, indicating prior surgical procedures."
+    }
+  ],
+  "summary": "This X-ray of the chest shows some cloudy areas in the right lung, which might be a sign of an infection (like pneumonia) or lung collapse. There's a tube in a large vein on the right side of the chest (a central venous catheter), and its tip looks like it's positioned in the main blood vessel going into the right lung. There are also surgical clips and hardware near both shoulders, suggesting past surgeries in those areas. The heart and the main breathing tubes appear normal, and there's no fluid around the lungs or collapsed lung tissue outside of what's described in the right lung.",
+  "references": [
+    "https://radiopaedia.org/articles/pneumonia-1",
+    "https://radiopaedia.org/articles/central-venous-catheter-complications",
+    "https://www.ncbi.nlm.nih.gov/books/NBK482312/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24021,
+    "bytesOut": 24021,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:18:27.026Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

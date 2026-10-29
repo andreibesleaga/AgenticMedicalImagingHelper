@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000008/series_1/00000008_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear lung fields with no focal consolidation or mass\",\n    \"Normal cardiac silhouette without cardiomegaly\",\n    \"Diaphragms well-defined and at normal level\",\n    \"No pleural effusion or pneumothorax identified\",\n    \"Bony thorax including ribs, clavicles, and spine appear intact without fracture or lytic lesion\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray appears normal. The lungs are clear, the heart size is within normal limits, and there are no signs of fluid, air, or structural damage in the chest. This suggests no acute lung infection, heart enlargement, or trauma. 'Lung fields' refer to the areas of the lungs visible on the X-ray; 'cardiac silhouette' is the outline of the heart; 'diaphragms' are the muscle sheets that separate the chest from the abdomen.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://radiopaedia.org/articles/chest-x-ray-interpretation\",\n    \"https://www.mayoclinic.org/tests-procedures/chest-x-ray/about/pac-20393465\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Clear lung fields with no focal consolidation or mass",
+    "Normal cardiac silhouette without cardiomegaly",
+    "Diaphragms well-defined and at normal level",
+    "No pleural effusion or pneumothorax identified",
+    "Bony thorax including ribs, clavicles, and spine appear intact without fracture or lytic lesion"
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray appears normal. The lungs are clear, the heart size is within normal limits, and there are no signs of fluid, air, or structural damage in the chest. This suggests no acute lung infection, heart enlargement, or trauma. 'Lung fields' refer to the areas of the lungs visible on the X-ray; 'cardiac silhouette' is the outline of the heart; 'diaphragms' are the muscle sheets that separate the chest from the abdomen.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://radiopaedia.org/articles/chest-x-ray-interpretation",
+    "https://www.mayoclinic.org/tests-procedures/chest-x-ray/about/pac-20393465"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 410034,
+    "bytesOut": 374578,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T10:09:55.547Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,65 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_2/00000239_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP/PA), including upper abdomen\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Large gastric air bubble visible below the left hemidiaphragm with an air-fluid level, projecting into the lower thoracic region\",\n    \"Both lungs are grossly clear without focal consolidation, effusion, or pneumothorax\",\n    \"Cardiac silhouette size appears within normal limits, though partially obscured\",\n    \"Mediastinal contours are midline; trachea appears central\",\n    \"Surgical clips/sutures noted in the left shoulder/proximal humerus region, suggesting prior orthopedic surgery\",\n    \"Degenerative changes and sclerotic densities seen in the upper abdomen/pelvis region, possibly bowel gas pattern or skeletal structures\",\n    \"Patient positioning is suboptimal with rotation, and the image extends inferiorly into the abdomen rather than a standard chest radiograph framing\",\n    \"Bony thorax and shoulder girdles appear symmetric without obvious acute fracture\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Prominent gastric air bubble\",\n      \"description\": \"Large air-filled structure with air-fluid level seen beneath the left hemidiaphragm, likely represents a distended stomach (gastric bubble), which can be a normal variant or indicate gastric distension\",\n      \"severity\": \"Mild\",\n      \"confidence\": 60\n    },\n    {\n      \"name\": \"Post-surgical hardware, left shoulder\",\n      \"description\": \"Metallic clips or staples visible overlying the left shoulder/proximal humeral region, consistent with prior surgical intervention\",\n      \"severity\": \"Mild\",\n      \"confidence\": 55\n    },\n    {\n      \"name\": \"Suboptimal image quality/positioning\",\n      \"description\": \"The film shows rotation and extends into the abdomen, limiting full assessment of lung fields, cardiac borders, and costophrenic angles\",\n      \"severity\": \"Mild\",\n      \"confidence\": 65\n    }\n  ],\n  \"summary\": \"This chest X-ray shows the lungs to be clear without signs of pneumonia, fluid buildup, or collapsed lung. There is a large air-filled area seen beneath the left side of the diaphragm with a fluid level — this is most likely just air within the stomach (a normal gastric bubble), though it appears prominent. There are also small metal clips near the left shoulder, which suggest the patient has had prior surgery in that area — this is an incidental finding and not an emergency. The image is not perfectly centered, and it includes part of the abdomen, which makes it harder to fully evaluate the heart size and lower lung areas. Overall, no acute abnormality is clearly identified in the lungs, but a repeat image with proper positioning and clinical correlation would help confirm these observations.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-radiograph-an-approach\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK538301/\",\n    \"https://pubs.rsna.org/doi/10.1148/rg.2019180136\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP/PA), including upper abdomen",
+  "quality": "Fair",
+  "findings": [
+    "Large gastric air bubble visible below the left hemidiaphragm with an air-fluid level, projecting into the lower thoracic region",
+    "Both lungs are grossly clear without focal consolidation, effusion, or pneumothorax",
+    "Cardiac silhouette size appears within normal limits, though partially obscured",
+    "Mediastinal contours are midline; trachea appears central",
+    "Surgical clips/sutures noted in the left shoulder/proximal humerus region, suggesting prior orthopedic surgery",
+    "Degenerative changes and sclerotic densities seen in the upper abdomen/pelvis region, possibly bowel gas pattern or skeletal structures",
+    "Patient positioning is suboptimal with rotation, and the image extends inferiorly into the abdomen rather than a standard chest radiograph framing",
+    "Bony thorax and shoulder girdles appear symmetric without obvious acute fracture"
+  ],
+  "abnormalities": [
+    {
+      "name": "Prominent gastric air bubble",
+      "severity": "Mild",
+      "confidence": 60,
+      "description": "Large air-filled structure with air-fluid level seen beneath the left hemidiaphragm, likely represents a distended stomach (gastric bubble), which can be a normal variant or indicate gastric distension"
+    },
+    {
+      "name": "Post-surgical hardware, left shoulder",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Metallic clips or staples visible overlying the left shoulder/proximal humeral region, consistent with prior surgical intervention"
+    },
+    {
+      "name": "Suboptimal image quality/positioning",
+      "severity": "Mild",
+      "confidence": 65,
+      "description": "The film shows rotation and extends into the abdomen, limiting full assessment of lung fields, cardiac borders, and costophrenic angles"
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs to be clear without signs of pneumonia, fluid buildup, or collapsed lung. There is a large air-filled area seen beneath the left side of the diaphragm with a fluid level — this is most likely just air within the stomach (a normal gastric bubble), though it appears prominent. There are also small metal clips near the left shoulder, which suggest the patient has had prior surgery in that area — this is an incidental finding and not an emergency. The image is not perfectly centered, and it includes part of the abdomen, which makes it harder to fully evaluate the heart size and lower lung areas. Overall, no acute abnormality is clearly identified in the lungs, but a repeat image with proper positioning and clinical correlation would help confirm these observations.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-an-approach",
+    "https://www.ncbi.nlm.nih.gov/books/NBK538301/",
+    "https://pubs.rsna.org/doi/10.1148/rg.2019180136"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 436808,
+    "bytesOut": 435505,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:27:27.938Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

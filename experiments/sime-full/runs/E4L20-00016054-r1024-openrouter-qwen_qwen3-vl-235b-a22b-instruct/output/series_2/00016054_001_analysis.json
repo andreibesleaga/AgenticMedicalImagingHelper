@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00016054/series_2/00016054_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear lung fields with no focal consolidation or mass\",\n    \"Normal cardiac silhouette without cardiomegaly\",\n    \"Intact bony thorax including ribs, clavicles, and spine\",\n    \"Diaphragms well-defined and at normal level\",\n    \"No pleural effusion or pneumothorax identified\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray appears normal. Both lungs are clear, the heart size is within normal limits, and there are no signs of fluid, infection, or structural abnormalities. This is a reassuring result and typically indicates healthy lungs and heart.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-x-ray-normal-variants\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK537062/\",\n    \"https://www.radiologyinfo.org/en/info/chestxray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Clear lung fields with no focal consolidation or mass",
+    "Normal cardiac silhouette without cardiomegaly",
+    "Intact bony thorax including ribs, clavicles, and spine",
+    "Diaphragms well-defined and at normal level",
+    "No pleural effusion or pneumothorax identified"
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray appears normal. Both lungs are clear, the heart size is within normal limits, and there are no signs of fluid, infection, or structural abnormalities. This is a reassuring result and typically indicates healthy lungs and heart.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-x-ray-normal-variants",
+    "https://www.ncbi.nlm.nih.gov/books/NBK537062/",
+    "https://www.radiologyinfo.org/en/info/chestxray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 398764,
+    "bytesOut": 359971,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:21:02.351Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,62 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_2/img_07_00010980_004.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute pulmonary infiltrates or effusions are identified.\",\n    \"Cardiomediastinal contours are within normal limits for the technique.\",\n    \"Multiple subcutaneous and intravascular medical devices are present including a left-sided dual-chamber pacemaker/ICD system with leads terminating in the right atrium and right ventricle.\",\n    \"A subcutaneous wire is noted in the right hemithorax, possibly related to a prior surgical drain or similar device.\",\n    \"A filter is noted within the inferior vena cava, located in the abdomen, below the diaphragm.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiovascular implant\",\n      \"description\": \"Left-sided dual-chamber pacemaker/ICD system with leads projecting to the right atrium and right ventricle.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Subcutaneous wire\",\n      \"description\": \"A subcutaneous wire is noted in the right hemithorax, likely a remnant from a prior medical procedure (e.g., drain).\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"IVC filter\",\n      \"description\": \"An inferior vena cava filter is present, located below the level of the diaphragm.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows no signs of acute problems in the lungs, like pneumonia or fluid buildup. The heart and major blood vessels appear normal in size and shape. There are several medical devices visible: a pacemaker/defibrillator on the left side of the chest with wires going into the heart, a small wire under the skin on the right side of the chest (likely from an old procedure), and a filter in a large vein in the abdomen, called the inferior vena cava. These devices are in expected positions.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125026\",\n    \"https://radiopaedia.org/articles/inferior-vena-cava-filter?lang=gb\",\n    \"https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.113.003923\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute pulmonary infiltrates or effusions are identified.",
+    "Cardiomediastinal contours are within normal limits for the technique.",
+    "Multiple subcutaneous and intravascular medical devices are present including a left-sided dual-chamber pacemaker/ICD system with leads terminating in the right atrium and right ventricle.",
+    "A subcutaneous wire is noted in the right hemithorax, possibly related to a prior surgical drain or similar device.",
+    "A filter is noted within the inferior vena cava, located in the abdomen, below the diaphragm."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiovascular implant",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Left-sided dual-chamber pacemaker/ICD system with leads projecting to the right atrium and right ventricle."
+    },
+    {
+      "name": "Subcutaneous wire",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "A subcutaneous wire is noted in the right hemithorax, likely a remnant from a prior medical procedure (e.g., drain)."
+    },
+    {
+      "name": "IVC filter",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "An inferior vena cava filter is present, located below the level of the diaphragm."
+    }
+  ],
+  "summary": "This X-ray of the chest shows no signs of acute problems in the lungs, like pneumonia or fluid buildup. The heart and major blood vessels appear normal in size and shape. There are several medical devices visible: a pacemaker/defibrillator on the left side of the chest with wires going into the heart, a small wire under the skin on the right side of the chest (likely from an old procedure), and a filter in a large vein in the abdomen, called the inferior vena cava. These devices are in expected positions.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125026",
+    "https://radiopaedia.org/articles/inferior-vena-cava-filter?lang=gb",
+    "https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.113.003923"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 459063,
+    "bytesOut": 458390,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:35:37.809Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

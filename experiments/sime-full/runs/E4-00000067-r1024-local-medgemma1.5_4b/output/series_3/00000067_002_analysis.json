@@ -1,0 +1,46 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000067/series_3/00000067_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear visualization of the lung fields, heart border, and mediastinum.\",\n    \"The heart size appears within normal limits.\",\n    \"The lung fields are clear bilaterally, with no obvious consolidation, effusions, or pneumothorax.\",\n    \"The ribs and clavicles are well visualized.\",\n    \"There is a linear opacity in the left lower lung field, likely representing atelectasis or scarring.\",\n    \"The bony structures are intact.\",\n    \"No significant mediastinal widening.\",\n    \"The diaphragms are well-defined.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"A chest X-ray shows clear lung fields with a linear density in the left lower lung, possibly from previous inflammation or scar tissue. The heart size looks normal. The bones appear healthy.\",\n  \"references\": [\"https://www.radiologyinfo.org/find-an-expert/find-a-radiologist/chest-radiology\", \"https://radiology.rsna.org/view-journal/Radiology/Free-Full-Text/Chest-Radiography-Guidelines\", \"https://www.uptodate.com/sections/cardiac-imaging/chest-radiographics\"]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Clear visualization of the lung fields, heart border, and mediastinum.",
+    "The heart size appears within normal limits.",
+    "The lung fields are clear bilaterally, with no obvious consolidation, effusions, or pneumothorax.",
+    "The ribs and clavicles are well visualized.",
+    "There is a linear opacity in the left lower lung field, likely representing atelectasis or scarring.",
+    "The bony structures are intact.",
+    "No significant mediastinal widening.",
+    "The diaphragms are well-defined."
+  ],
+  "abnormalities": [],
+  "summary": "A chest X-ray shows clear lung fields with a linear density in the left lower lung, possibly from previous inflammation or scar tissue. The heart size looks normal. The bones appear healthy.",
+  "references": [
+    "https://www.radiologyinfo.org/find-an-expert/find-a-radiologist/chest-radiology",
+    "https://radiology.rsna.org/view-journal/Radiology/Free-Full-Text/Chest-Radiography-Guidelines",
+    "https://www.uptodate.com/sections/cardiac-imaging/chest-radiographics"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 423458,
+    "bytesOut": 320868,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T09:43:03.221Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

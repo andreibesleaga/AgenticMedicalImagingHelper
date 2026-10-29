@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000086/series_1/00000086_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"There is an area of increased opacity in the right lower zone, blurring the right hemidiaphragm.\",\n    \"The heart size is within normal limits.\",\n    \"The mediastinal contours are unremarkable.\",\n    \"Lungs are otherwise clear without evidence of pneumothorax or large pleural effusions.\",\n    \"Bony structures are intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Lower Lobe Opacity\",\n      \"description\": \"Increased density in the right lower lung zone causing obscuration of the right hemidiaphragm, suggestive of consolidation or a pleural effusion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The X-ray shows a cloudy area (opacity) in the bottom part of the right lung. This often indicates a condition such as pneumonia (infection) or a small amount of fluid around the lung (pleural effusion). The heart and other parts of the lungs appear normal. Further clinical correlation or imaging, such as a lateral X-ray or CT scan, may be needed for a definitive diagnosis.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/lobar-pneumonia\",\n    \"https://radiopaedia.org/articles/pleural-effusion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "There is an area of increased opacity in the right lower zone, blurring the right hemidiaphragm.",
+    "The heart size is within normal limits.",
+    "The mediastinal contours are unremarkable.",
+    "Lungs are otherwise clear without evidence of pneumothorax or large pleural effusions.",
+    "Bony structures are intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Lower Lobe Opacity",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Increased density in the right lower lung zone causing obscuration of the right hemidiaphragm, suggestive of consolidation or a pleural effusion."
+    }
+  ],
+  "summary": "The X-ray shows a cloudy area (opacity) in the bottom part of the right lung. This often indicates a condition such as pneumonia (infection) or a small amount of fluid around the lung (pleural effusion). The heart and other parts of the lungs appear normal. Further clinical correlation or imaging, such as a lateral X-ray or CT scan, may be needed for a definitive diagnosis.",
+  "references": [
+    "https://radiopaedia.org/articles/lobar-pneumonia",
+    "https://radiopaedia.org/articles/pleural-effusion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22312,
+    "bytesOut": 22312,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:03:54.380Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

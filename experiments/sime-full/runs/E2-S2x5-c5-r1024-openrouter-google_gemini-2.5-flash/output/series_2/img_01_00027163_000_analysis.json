@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S2x5/series_2/img_01_00027163_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are hyperinflated with flattened hemidiaphragms, more prominent on the left.\",\n    \"Bilateral peribronchial thickening and interstitial markings, consistent with 'dirty lungs' appearance.\",\n    \"Cardiomediastinal silhouette is within normal limits.\",\n    \"Pulmonary vasculature appears unremarkable.\",\n    \"No focal consolidation, pleural effusion, or pneumothorax is evident.\",\n    \"Bony thorax appears intact without acute fracture or dislocation.\",\n    \"Visualized upper abdomen shows gas in the stomach and bowel loops.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Hyperinflation\",\n      \"description\": \"Lungs appear hyperinflated with flattened hemidiaphragms, a finding often associated with obstructive lung disease.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Peribronchial thickening and interstitial markings\",\n      \"description\": \"Bilateral peribronchial thickening and increased interstitial markings suggest chronic inflammatory or irritative changes in the airways and lung parenchyma, sometimes referred to as 'dirty lungs'.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This chest X-ray shows signs of hyperinflated lungs, meaning the lungs hold more air than usual, and flattened breathing muscles (diaphragms). There are also indications of thickening around the air passages and increased markings within the lung tissue, often described as 'dirty lungs'. These findings can be associated with conditions like chronic bronchitis or asthma. The heart and major blood vessels appear normal, and there's no evidence of fluid around the lungs (pleural effusion), collapsed lung (pneumothorax), or pneumonia. The bones of the chest look healthy.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/hyperinflation?lang=us\",\n    \"https://radiopaedia.org/articles/peribronchial-cuffing?lang=us\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4960309/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are hyperinflated with flattened hemidiaphragms, more prominent on the left.",
+    "Bilateral peribronchial thickening and interstitial markings, consistent with 'dirty lungs' appearance.",
+    "Cardiomediastinal silhouette is within normal limits.",
+    "Pulmonary vasculature appears unremarkable.",
+    "No focal consolidation, pleural effusion, or pneumothorax is evident.",
+    "Bony thorax appears intact without acute fracture or dislocation.",
+    "Visualized upper abdomen shows gas in the stomach and bowel loops."
+  ],
+  "abnormalities": [
+    {
+      "name": "Hyperinflation",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Lungs appear hyperinflated with flattened hemidiaphragms, a finding often associated with obstructive lung disease."
+    },
+    {
+      "name": "Peribronchial thickening and interstitial markings",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Bilateral peribronchial thickening and increased interstitial markings suggest chronic inflammatory or irritative changes in the airways and lung parenchyma, sometimes referred to as 'dirty lungs'."
+    }
+  ],
+  "summary": "This chest X-ray shows signs of hyperinflated lungs, meaning the lungs hold more air than usual, and flattened breathing muscles (diaphragms). There are also indications of thickening around the air passages and increased markings within the lung tissue, often described as 'dirty lungs'. These findings can be associated with conditions like chronic bronchitis or asthma. The heart and major blood vessels appear normal, and there's no evidence of fluid around the lungs (pleural effusion), collapsed lung (pneumothorax), or pneumonia. The bones of the chest look healthy.",
+  "references": [
+    "https://radiopaedia.org/articles/hyperinflation?lang=us",
+    "https://radiopaedia.org/articles/peribronchial-cuffing?lang=us",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4960309/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 396187,
+    "bytesOut": 393609,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:33:41.623Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

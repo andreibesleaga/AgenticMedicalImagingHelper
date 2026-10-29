@@ -1,0 +1,46 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00022202/series_3/00022202_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal opacities, consolidations, or effusions are noted in the lung fields.\",\n    \"The cardiac silhouette is normal in size and contour.\",\n    \"Mediastinal contours are unremarkable.\",\n    \"Hilar regions appear normal.\",\n    \"Diaphragms are intact and clear.\",\n    \"Costophrenic angles are sharp.\",\n    \"Visualized osseous structures (ribs, clavicles, thoracic spine) show no acute abnormalities.\",\n    \"A small, dense radio-opaque marker (likely an external object) is visible over the left supraclavicular region, projecting over soft tissue and not within the lung parenchyma.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This X-ray of the chest appears normal. The lungs look clear with no signs of infection, fluid, or other issues. The heart size and shape are within normal limits. All other visible structures, including the bones and the area between the lungs, also look healthy. There is a small, dense object seen outside the body near the left collarbone, which is likely a piece of clothing or an external marker and not a medical concern.\",\n  \"references\": [\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://pubs.rsna.org/journal/radiology\",\n    \"https://radiopaedia.org/articles/chest-x-ray-1\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal opacities, consolidations, or effusions are noted in the lung fields.",
+    "The cardiac silhouette is normal in size and contour.",
+    "Mediastinal contours are unremarkable.",
+    "Hilar regions appear normal.",
+    "Diaphragms are intact and clear.",
+    "Costophrenic angles are sharp.",
+    "Visualized osseous structures (ribs, clavicles, thoracic spine) show no acute abnormalities.",
+    "A small, dense radio-opaque marker (likely an external object) is visible over the left supraclavicular region, projecting over soft tissue and not within the lung parenchyma."
+  ],
+  "abnormalities": [],
+  "summary": "This X-ray of the chest appears normal. The lungs look clear with no signs of infection, fluid, or other issues. The heart size and shape are within normal limits. All other visible structures, including the bones and the area between the lungs, also look healthy. There is a small, dense object seen outside the body near the left collarbone, which is likely a piece of clothing or an external marker and not a medical concern.",
+  "references": [
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiology",
+    "https://radiopaedia.org/articles/chest-x-ray-1"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24434,
+    "bytesOut": 24434,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:29:25.586Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

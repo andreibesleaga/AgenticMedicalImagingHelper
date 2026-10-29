@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_2/00000239_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"There are multiple surgical clips noted in the right axilla and right upper abdomen.\",\n    \"The lungs appear clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"The cardiac silhouette is within normal limits for size and contour.\",\n    \"The bony thorax is intact without acute fracture.\",\n    \"The diaphragm is intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical clips\",\n      \"description\": \"Multiple radiopaque surgical clips are visualized in the right axillary region, consistent with prior surgical intervention (e.g., lymph node dissection). Additional surgical clips are noted in the right upper abdomen, likely related to a prior abdominal procedure.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This chest X-ray shows that your lungs, heart, and bones in the chest appear normal. There are several small metal clips visible in the right armpit area and in the upper right part of your belly. These are typically left behind after surgery and are not usually a cause for concern.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125131\",\n    \"https://radiologykey.com/chest-radiography-3/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "There are multiple surgical clips noted in the right axilla and right upper abdomen.",
+    "The lungs appear clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "The cardiac silhouette is within normal limits for size and contour.",
+    "The bony thorax is intact without acute fracture.",
+    "The diaphragm is intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Surgical clips",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Multiple radiopaque surgical clips are visualized in the right axillary region, consistent with prior surgical intervention (e.g., lymph node dissection). Additional surgical clips are noted in the right upper abdomen, likely related to a prior abdominal procedure."
+    }
+  ],
+  "summary": "This chest X-ray shows that your lungs, heart, and bones in the chest appear normal. There are several small metal clips visible in the right armpit area and in the upper right part of your belly. These are typically left behind after surgery and are not usually a cause for concern.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125131",
+    "https://radiologykey.com/chest-radiography-3/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 436808,
+    "bytesOut": 435505,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:19:58.088Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00027230/series_2/00027230_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A well-defined radiopacity is present in the right lower lung zone, adjacent to the right heart border.\",\n    \"The right heart border remains visible, suggesting the lesion is not located in the middle lobe (silhouette sign negative), likely placing it in the lower lobe.\",\n    \"The left lung is clear.\",\n    \"The cardiac silhouette is within normal limits for size.\",\n    \"The mediastinum is central and unremarkable.\",\n    \"The diaphragms are intact and costophrenic angles are clear.\",\n    \"Bony structures appear unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right lower lung mass\",\n      \"description\": \"A well-circumscribed, rounded opacity in the right lower lung zone, which does not obscure the right heart border.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a clear, rounded spot or 'mass' in the lower part of the right lung. It does not blur the border of the heart, which helps doctors figure out exactly where it sits in the lung. The left lung and heart look normal. Because of this spot, further testing, like a CT scan, is needed to understand what it is.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/lung-mass\",\n    \"https://radiopaedia.org/articles/silhouette-sign\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "A well-defined radiopacity is present in the right lower lung zone, adjacent to the right heart border.",
+    "The right heart border remains visible, suggesting the lesion is not located in the middle lobe (silhouette sign negative), likely placing it in the lower lobe.",
+    "The left lung is clear.",
+    "The cardiac silhouette is within normal limits for size.",
+    "The mediastinum is central and unremarkable.",
+    "The diaphragms are intact and costophrenic angles are clear.",
+    "Bony structures appear unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lower lung mass",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "A well-circumscribed, rounded opacity in the right lower lung zone, which does not obscure the right heart border."
+    }
+  ],
+  "summary": "The chest X-ray shows a clear, rounded spot or 'mass' in the lower part of the right lung. It does not blur the border of the heart, which helps doctors figure out exactly where it sits in the lung. The left lung and heart look normal. Because of this spot, further testing, like a CT scan, is needed to understand what it is.",
+  "references": [
+    "https://radiopaedia.org/articles/lung-mass",
+    "https://radiopaedia.org/articles/silhouette-sign"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 431941,
+    "bytesOut": 430076,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:59:58.490Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

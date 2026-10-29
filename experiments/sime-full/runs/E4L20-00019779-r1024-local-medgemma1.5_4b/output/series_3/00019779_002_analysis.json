@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00019779/series_3/00019779_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (Anterior-Posterior)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear\",\n    \"The heart size is normal\",\n    \"The mediastinum is unremarkable\",\n    \"There are no pleural effusions\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"Chest X-ray shows clear lungs, normal heart size, and no fluid around the lungs or heart. This is a normal chest X-ray.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-x-ray\",\n    \"https://www.radiologyinfo.org/en/services/chest-x-ray\",\n    \"https://www.cdc.gov/tb/tb101/index.htm\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (Anterior-Posterior)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear",
+    "The heart size is normal",
+    "The mediastinum is unremarkable",
+    "There are no pleural effusions"
+  ],
+  "abnormalities": [],
+  "summary": "Chest X-ray shows clear lungs, normal heart size, and no fluid around the lungs or heart. This is a normal chest X-ray.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-x-ray",
+    "https://www.radiologyinfo.org/en/services/chest-x-ray",
+    "https://www.cdc.gov/tb/tb101/index.htm"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 390304,
+    "bytesOut": 297676,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T09:51:29.550Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

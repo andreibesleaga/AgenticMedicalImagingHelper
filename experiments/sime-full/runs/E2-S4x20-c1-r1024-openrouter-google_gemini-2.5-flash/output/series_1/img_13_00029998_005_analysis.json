@@ -1,0 +1,75 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_1/img_13_00029998_005.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Evidence of prior sternotomy with sternal wires noted.\",\n    \"Bilateral pulmonary infiltrates are present, more prominent on the right, suggesting pulmonary edema or infection.\",\n    \"Bilateral pleural effusions are visible, larger on the right, obscuring the right hemidiaphragm and costophrenic angle.\",\n    \"The left hemidiaphragm is visible and appears intact.\",\n    \"The cardiac silhouette is enlarged.\",\n    \"Vascular congestion is noted.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Sternal wires\",\n      \"description\": \"Multiple sternal wires are seen, indicating a prior sternotomy, likely for cardiac surgery.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Pulmonary infiltrates\",\n      \"description\": \"Bilateral pulmonary infiltrates are observed, more pronounced in the right lung field, consistent with parenchymal opacities, possibly due to pulmonary edema or pneumonia.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pleural effusions\",\n      \"description\": \"Bilateral pleural effusions are present, with a larger effusion on the right, blunting the costophrenic angles and obscuring the right hemidiaphragm. This suggests fluid accumulation in the pleural space.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette is enlarged, indicating cardiomegaly, which could be due to various underlying cardiac conditions.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Vascular congestion\",\n      \"description\": \"Evidence of vascular congestion in the pulmonary vasculature is noted, often associated with heart failure or fluid overload.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This chest X-ray shows that you have had previous heart surgery, indicated by wires in your breastbone. There is fluid around both lungs, more on the right, and changes within your lungs that might be due to fluid buildup (pulmonary edema) or possibly an infection. Your heart appears larger than expected, and there are signs of increased blood flow in the lung vessels, both of which can be related to heart issues. These findings suggest potential heart failure or an ongoing inflammatory process in the lungs.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK482163/\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125134\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Evidence of prior sternotomy with sternal wires noted.",
+    "Bilateral pulmonary infiltrates are present, more prominent on the right, suggesting pulmonary edema or infection.",
+    "Bilateral pleural effusions are visible, larger on the right, obscuring the right hemidiaphragm and costophrenic angle.",
+    "The left hemidiaphragm is visible and appears intact.",
+    "The cardiac silhouette is enlarged.",
+    "Vascular congestion is noted."
+  ],
+  "abnormalities": [
+    {
+      "name": "Sternal wires",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Multiple sternal wires are seen, indicating a prior sternotomy, likely for cardiac surgery."
+    },
+    {
+      "name": "Pulmonary infiltrates",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Bilateral pulmonary infiltrates are observed, more pronounced in the right lung field, consistent with parenchymal opacities, possibly due to pulmonary edema or pneumonia."
+    },
+    {
+      "name": "Pleural effusions",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Bilateral pleural effusions are present, with a larger effusion on the right, blunting the costophrenic angles and obscuring the right hemidiaphragm. This suggests fluid accumulation in the pleural space."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The cardiac silhouette is enlarged, indicating cardiomegaly, which could be due to various underlying cardiac conditions."
+    },
+    {
+      "name": "Vascular congestion",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Evidence of vascular congestion in the pulmonary vasculature is noted, often associated with heart failure or fluid overload."
+    }
+  ],
+  "summary": "This chest X-ray shows that you have had previous heart surgery, indicated by wires in your breastbone. There is fluid around both lungs, more on the right, and changes within your lungs that might be due to fluid buildup (pulmonary edema) or possibly an infection. Your heart appears larger than expected, and there are signs of increased blood flow in the lung vessels, both of which can be related to heart issues. These findings suggest potential heart failure or an ongoing inflammatory process in the lungs.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://www.ncbi.nlm.nih.gov/books/NBK482163/",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125134"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 395339,
+    "bytesOut": 391922,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:39:01.566Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

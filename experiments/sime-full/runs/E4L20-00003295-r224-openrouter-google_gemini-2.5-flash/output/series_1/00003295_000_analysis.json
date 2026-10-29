@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00003295/series_1/00003295_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Evidence of an implanted cardiac device (pacemaker or ICD) in the left infraclavicular region with leads projecting into the cardiac silhouette.\",\n    \"The cardiac silhouette is not enlarged.\",\n    \"The pulmonary vasculature appears within normal limits for caliber and distribution.\",\n    \"No focal consolidations, effusions, or pneumothorax are identified.\",\n    \"Bony structures, including ribs, clavicles, and scapulae, are intact with no acute fractures or significant abnormalities.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Implanted Cardiac Device\",\n      \"description\": \"An implanted cardiac device (pacemaker or ICD) is present in the left infraclavicular region. Leads are appropriately positioned, projecting into the cardiac silhouette, which is a normal finding for such a device.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This chest X-ray shows that your heart and lungs look normal. There is an implanted heart device (like a pacemaker) on the left side of your chest, which is visible as expected and appears to be in the correct position. There are no signs of pneumonia, fluid around the lungs, or a collapsed lung. Your bones also appear healthy.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-x-ray-basic-interpretation?lang=us\",\n    \"https://www.acc.org/latest-in-cardiology/articles/2021/08/17/13/46/pacing-and-icd-radiographic-lead-assessment\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Evidence of an implanted cardiac device (pacemaker or ICD) in the left infraclavicular region with leads projecting into the cardiac silhouette.",
+    "The cardiac silhouette is not enlarged.",
+    "The pulmonary vasculature appears within normal limits for caliber and distribution.",
+    "No focal consolidations, effusions, or pneumothorax are identified.",
+    "Bony structures, including ribs, clavicles, and scapulae, are intact with no acute fractures or significant abnormalities."
+  ],
+  "abnormalities": [
+    {
+      "name": "Implanted Cardiac Device",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "An implanted cardiac device (pacemaker or ICD) is present in the left infraclavicular region. Leads are appropriately positioned, projecting into the cardiac silhouette, which is a normal finding for such a device."
+    }
+  ],
+  "summary": "This chest X-ray shows that your heart and lungs look normal. There is an implanted heart device (like a pacemaker) on the left side of your chest, which is visible as expected and appears to be in the correct position. There are no signs of pneumonia, fluid around the lungs, or a collapsed lung. Your bones also appear healthy.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-x-ray-basic-interpretation?lang=us",
+    "https://www.acc.org/latest-in-cardiology/articles/2021/08/17/13/46/pacing-and-icd-radiographic-lead-assessment"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24274,
+    "bytesOut": 24274,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:17:04.420Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

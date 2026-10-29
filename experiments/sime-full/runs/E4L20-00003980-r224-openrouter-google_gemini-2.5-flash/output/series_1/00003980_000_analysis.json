@@ -1,0 +1,61 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00003980/series_1/00003980_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right upper lobe airspace opacities consistent with consolidation.\",\n    \"Bilateral diffuse interstitial and alveolar opacities, more prominent in the lower lobes.\",\n    \"Indwelling right internal jugular central venous catheter with its tip projecting over the superior vena cava.\",\n    \"No definite pleural effusion or pneumothorax.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right upper lobe consolidation\",\n      \"description\": \"Dense airspace opacification noted in the right upper lobe, suggesting consolidation, possibly representing pneumonia.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Bilateral interstitial/alveolar opacities\",\n      \"description\": \"Diffuse opacities in both lungs, particularly accentuated in the lower lobes, which could be indicative of pulmonary edema, inflammation, or diffuse infiltrative disease processes.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Central venous catheter malposition\",\n      \"description\": \"The tip of the right internal jugular central venous catheter appears to be positioned in the superior vena cava, which is an acceptable position. However, without knowledge of the intended target, it is not possible to fully assess for malposition.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The X-ray of the chest shows areas of increased whiteness in both lungs. Specifically, there's a denser patch in the upper part of the right lung, which looks like an infection or inflammation (pneumonia). There are also more widespread cloudy areas throughout both lungs, especially in the lower parts, which could be due to fluid buildup or other inflammatory conditions. A tube (central venous catheter) is seen in a large vein in the chest, and its tip appears to be in a good position. No fluid around the lungs or collapsed lung is seen.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2020200057\",\n    \"https://radiopaedia.org/articles/pulmonary-consolidation-1?lang=us\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMra1513684\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right upper lobe airspace opacities consistent with consolidation.",
+    "Bilateral diffuse interstitial and alveolar opacities, more prominent in the lower lobes.",
+    "Indwelling right internal jugular central venous catheter with its tip projecting over the superior vena cava.",
+    "No definite pleural effusion or pneumothorax."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right upper lobe consolidation",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Dense airspace opacification noted in the right upper lobe, suggesting consolidation, possibly representing pneumonia."
+    },
+    {
+      "name": "Bilateral interstitial/alveolar opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse opacities in both lungs, particularly accentuated in the lower lobes, which could be indicative of pulmonary edema, inflammation, or diffuse infiltrative disease processes."
+    },
+    {
+      "name": "Central venous catheter malposition",
+      "severity": "Normal",
+      "confidence": 85,
+      "description": "The tip of the right internal jugular central venous catheter appears to be positioned in the superior vena cava, which is an acceptable position. However, without knowledge of the intended target, it is not possible to fully assess for malposition."
+    }
+  ],
+  "summary": "The X-ray of the chest shows areas of increased whiteness in both lungs. Specifically, there's a denser patch in the upper part of the right lung, which looks like an infection or inflammation (pneumonia). There are also more widespread cloudy areas throughout both lungs, especially in the lower parts, which could be due to fluid buildup or other inflammatory conditions. A tube (central venous catheter) is seen in a large vein in the chest, and its tip appears to be in a good position. No fluid around the lungs or collapsed lung is seen.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2020200057",
+    "https://radiopaedia.org/articles/pulmonary-consolidation-1?lang=us",
+    "https://www.nejm.org/doi/full/10.1056/NEJMra1513684"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24362,
+    "bytesOut": 24362,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:18:12.036Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

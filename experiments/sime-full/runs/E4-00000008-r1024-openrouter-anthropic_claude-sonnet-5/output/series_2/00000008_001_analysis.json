@@ -1,0 +1,60 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000008/series_2/00000008_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP, portable/supine)\",\"quality\":\"Fair\",\"findings\":[\"Lungs are grossly clear bilaterally without focal consolidation, effusion, or pneumothorax\",\"Cardiac silhouette appears mildly enlarged, though this may be exaggerated by AP portable technique and magnification\",\"Mediastinal contours appear within normal limits\",\"Bony thorax intact; no acute fracture identified\",\"Soft tissue densities overlying bilateral lower chest/upper abdomen likely represent breast tissue\",\"EKG leads and monitoring wires overlie the lower chest/abdomen\",\"A radiopaque marker 'L' is present in the right lateral upper field indicating left side marker placement (or right shoulder marker depending on convention)\",\"Small rounded calcific/metallic density projecting over the left hilar region, possibly a granuloma or artifact\",\"Patient positioning is slightly rotated with soft tissue overlap limiting full assessment\"],\"abnormalities\":[{\"name\":\"Cardiomegaly (possible)\",\"description\":\"Cardiac silhouette appears enlarged relative to thoracic width; however, this may be due to AP supine technique magnification rather than true cardiomegaly\",\"severity\":\"Mild\",\"confidence\":40},{\"name\":\"Left hilar density\",\"description\":\"Small rounded density noted near the left hilum, could represent a calcified granuloma, vascular structure, or artifact; further correlation with prior imaging or CT recommended if new\",\"severity\":\"Mild\",\"confidence\":35}],\"summary\":\"This chest X-ray shows the lungs to be clear without signs of pneumonia, fluid buildup, or collapsed lung. The heart shape looks slightly large, but this can happen normally when x-rays are taken with the patient lying down using a portable machine, so it may not reflect a true problem. There's a small round spot near the left central lung area that could just be a old healed scar tissue (granuloma) or an overlapping shadow, but it would be good to confirm this is stable over time. Monitoring leads and wires are seen on the chest/abdomen, which are just from medical equipment, not part of the lungs. Overall, this looks like a fairly normal chest X-ray, but a doctor should review these findings alongside your clinical history.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria\",\"https://pubs.rsna.org/journal/radiology\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP, portable/supine)",
+  "quality": "Fair",
+  "findings": [
+    "Lungs are grossly clear bilaterally without focal consolidation, effusion, or pneumothorax",
+    "Cardiac silhouette appears mildly enlarged, though this may be exaggerated by AP portable technique and magnification",
+    "Mediastinal contours appear within normal limits",
+    "Bony thorax intact; no acute fracture identified",
+    "Soft tissue densities overlying bilateral lower chest/upper abdomen likely represent breast tissue",
+    "EKG leads and monitoring wires overlie the lower chest/abdomen",
+    "A radiopaque marker 'L' is present in the right lateral upper field indicating left side marker placement (or right shoulder marker depending on convention)",
+    "Small rounded calcific/metallic density projecting over the left hilar region, possibly a granuloma or artifact",
+    "Patient positioning is slightly rotated with soft tissue overlap limiting full assessment"
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly (possible)",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Cardiac silhouette appears enlarged relative to thoracic width; however, this may be due to AP supine technique magnification rather than true cardiomegaly"
+    },
+    {
+      "name": "Left hilar density",
+      "severity": "Mild",
+      "confidence": 35,
+      "description": "Small rounded density noted near the left hilum, could represent a calcified granuloma, vascular structure, or artifact; further correlation with prior imaging or CT recommended if new"
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs to be clear without signs of pneumonia, fluid buildup, or collapsed lung. The heart shape looks slightly large, but this can happen normally when x-rays are taken with the patient lying down using a portable machine, so it may not reflect a true problem. There's a small round spot near the left central lung area that could just be a old healed scar tissue (granuloma) or an overlapping shadow, but it would be good to confirm this is stable over time. Monitoring leads and wires are seen on the chest/abdomen, which are just from medical equipment, not part of the lungs. Overall, this looks like a fairly normal chest X-ray, but a doctor should review these findings alongside your clinical history.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiology"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 390119,
+    "bytesOut": 384796,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:15:55.001Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

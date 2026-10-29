@@ -1,0 +1,66 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000086/series_3/00000086_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Evidence of an old right-sided thoracotomy or chest tube insertion.\",\n    \"Bilateral apical pleural thickening, more pronounced on the right.\",\n    \"Extensive irregular linear opacities with associated volume loss in the right upper and mid lung zones.\",\n    \"Presence of multiple cavitary lesions within the irregular opacities in the right mid lung zone.\",\n    \"Adjacent pleural thickening and blunting of the right costophrenic angle.\",\n    \"Left lung appears clear with no focal consolidation or pleural effusion.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"No acute bony abnormalities are noted.\",\n    \"A medical device (likely a pacemaker or ICD component) is noted in the left supraclavicular region.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Lung Cavitary Lesions and Fibrosis\",\n      \"description\": \"Extensive irregular linear opacities with associated volume loss and multiple cavitary lesions are noted in the right upper and mid lung zones. These findings are suggestive of chronic fibrocavitary disease.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Right Pleural Thickening and Blunting\",\n      \"description\": \"Thickening of the pleura is present at the right apex and along the right hemithorax with blunting of the right costophrenic angle, suggestive of chronic pleural disease or sequelae of previous inflammation/effusion.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Left Supraclavicular Device\",\n      \"description\": \"A radiopaque medical device, consistent with a component of a pacemaker or implantable cardioverter-defibrillator (ICD), is seen in the left supraclavicular region.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 99\n    }\n  ],\n  \"summary\": \"This chest X-ray shows significant chronic changes in the right lung. There are areas of scarring and multiple hollow spaces, called cavities, which suggest a long-standing lung condition. The lining of the lung on the right side also appears thickened, and there's evidence of past intervention like a chest tube. The left lung appears clear. A medical device, likely a pacemaker component, is visible near the left collarbone. These findings are concerning for chronic lung disease, such as old tuberculosis or fungal infection, but correlation with patient history and further tests would be needed to confirm the exact cause.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.233025175\",\n    \"https://www.thoracic.org/patients/patient-resources/disease-info/bronchiectasis/bronchiectasis-facts.pdf\",\n    \"https://radiopaedia.org/articles/cavitary-lung-lesion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Evidence of an old right-sided thoracotomy or chest tube insertion.",
+    "Bilateral apical pleural thickening, more pronounced on the right.",
+    "Extensive irregular linear opacities with associated volume loss in the right upper and mid lung zones.",
+    "Presence of multiple cavitary lesions within the irregular opacities in the right mid lung zone.",
+    "Adjacent pleural thickening and blunting of the right costophrenic angle.",
+    "Left lung appears clear with no focal consolidation or pleural effusion.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "No acute bony abnormalities are noted.",
+    "A medical device (likely a pacemaker or ICD component) is noted in the left supraclavicular region."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Lung Cavitary Lesions and Fibrosis",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Extensive irregular linear opacities with associated volume loss and multiple cavitary lesions are noted in the right upper and mid lung zones. These findings are suggestive of chronic fibrocavitary disease."
+    },
+    {
+      "name": "Right Pleural Thickening and Blunting",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Thickening of the pleura is present at the right apex and along the right hemithorax with blunting of the right costophrenic angle, suggestive of chronic pleural disease or sequelae of previous inflammation/effusion."
+    },
+    {
+      "name": "Left Supraclavicular Device",
+      "severity": "Normal",
+      "confidence": 99,
+      "description": "A radiopaque medical device, consistent with a component of a pacemaker or implantable cardioverter-defibrillator (ICD), is seen in the left supraclavicular region."
+    }
+  ],
+  "summary": "This chest X-ray shows significant chronic changes in the right lung. There are areas of scarring and multiple hollow spaces, called cavities, which suggest a long-standing lung condition. The lining of the lung on the right side also appears thickened, and there's evidence of past intervention like a chest tube. The left lung appears clear. A medical device, likely a pacemaker component, is visible near the left collarbone. These findings are concerning for chronic lung disease, such as old tuberculosis or fungal infection, but correlation with patient history and further tests would be needed to confirm the exact cause.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.233025175",
+    "https://www.thoracic.org/patients/patient-resources/disease-info/bronchiectasis/bronchiectasis-facts.pdf",
+    "https://radiopaedia.org/articles/cavitary-lung-lesion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 371103,
+    "bytesOut": 363567,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:51:15.286Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

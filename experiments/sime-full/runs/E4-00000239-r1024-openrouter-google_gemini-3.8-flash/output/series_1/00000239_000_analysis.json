@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_1/00000239_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are fully expanded and clear bilaterally with no evidence of focal consolidation, infiltration, or pneumothorax.\",\n    \"Costophrenic and cardiophrenic angles are sharp, with no visible pleural effusion.\",\n    \"The cardiac silhouette is within normal limits for size (cardiothoracic ratio < 0.50).\",\n    \"Mediastinal and hilar contours are within normal limits; trachea is midline.\",\n    \"Multiple small surgical radiopaque clips are noted in the right upper quadrant/epigastric region, consistent with prior surgical intervention (likely cholecystectomy).\",\n    \"Thoracic skeletal structures demonstrate mild degenerative changes without acute fracture or destructive osseous lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical Clips in Upper Abdomen\",\n      \"description\": \"Cluster of metallic surgical clips visualized in the upper abdomen/right upper quadrant, characteristic of prior surgical procedure such as cholecystectomy.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Mild Thoracic Spondylosis\",\n      \"description\": \"Mild degenerative osteophytes along the mid-to-lower thoracic spine without evidence of acute bone injury.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This chest X-ray is essentially normal. The lungs are clear of pneumonia, fluid, or collapse, and the heart is normal in size and appearance. Surgical clips from a prior abdominal surgery (most commonly gallbladder removal) are visible under the diaphragm, which is an expected and harmless finding. Minor wear-and-tear changes (mild arthritis) are present in the middle spine.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/normal-chest-radiograph\",\n    \"https://radiopaedia.org/articles/cholecystectomy-clips\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are fully expanded and clear bilaterally with no evidence of focal consolidation, infiltration, or pneumothorax.",
+    "Costophrenic and cardiophrenic angles are sharp, with no visible pleural effusion.",
+    "The cardiac silhouette is within normal limits for size (cardiothoracic ratio < 0.50).",
+    "Mediastinal and hilar contours are within normal limits; trachea is midline.",
+    "Multiple small surgical radiopaque clips are noted in the right upper quadrant/epigastric region, consistent with prior surgical intervention (likely cholecystectomy).",
+    "Thoracic skeletal structures demonstrate mild degenerative changes without acute fracture or destructive osseous lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Surgical Clips in Upper Abdomen",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "Cluster of metallic surgical clips visualized in the upper abdomen/right upper quadrant, characteristic of prior surgical procedure such as cholecystectomy."
+    },
+    {
+      "name": "Mild Thoracic Spondylosis",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Mild degenerative osteophytes along the mid-to-lower thoracic spine without evidence of acute bone injury."
+    }
+  ],
+  "summary": "This chest X-ray is essentially normal. The lungs are clear of pneumonia, fluid, or collapse, and the heart is normal in size and appearance. Surgical clips from a prior abdominal surgery (most commonly gallbladder removal) are visible under the diaphragm, which is an expected and harmless finding. Minor wear-and-tear changes (mild arthritis) are present in the middle spine.",
+  "references": [
+    "https://radiopaedia.org/articles/normal-chest-radiograph",
+    "https://radiopaedia.org/articles/cholecystectomy-clips"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 384310,
+    "bytesOut": 378425,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:24:33.537Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

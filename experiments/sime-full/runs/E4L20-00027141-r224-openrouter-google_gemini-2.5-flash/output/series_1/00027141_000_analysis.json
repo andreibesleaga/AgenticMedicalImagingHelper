@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00027141/series_1/00027141_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No evidence of acute cardiopulmonary pathology.\",\n    \"Bilateral lung fields are clear.\",\n    \"Cardiomediastinal silhouette is within normal limits.\",\n    \"Diaphragms are intact and costophrenic angles are sharp.\",\n    \"Bony thorax is unremarkable.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"Your chest X-ray appears normal. This means that the images of your lungs, heart, and surrounding structures show no immediate concerns or signs of disease. The doctor will review these findings in the context of your overall health.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestrad\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2017160124\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK545163/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No evidence of acute cardiopulmonary pathology.",
+    "Bilateral lung fields are clear.",
+    "Cardiomediastinal silhouette is within normal limits.",
+    "Diaphragms are intact and costophrenic angles are sharp.",
+    "Bony thorax is unremarkable."
+  ],
+  "abnormalities": [],
+  "summary": "Your chest X-ray appears normal. This means that the images of your lungs, heart, and surrounding structures show no immediate concerns or signs of disease. The doctor will review these findings in the context of your overall health.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestrad",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2017160124",
+    "https://www.ncbi.nlm.nih.gov/books/NBK545163/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23547,
+    "bytesOut": 23547,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:30:02.900Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

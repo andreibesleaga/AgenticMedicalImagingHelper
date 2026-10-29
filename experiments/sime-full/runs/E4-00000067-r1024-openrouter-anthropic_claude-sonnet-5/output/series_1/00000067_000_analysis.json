@@ -1,0 +1,60 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000067/series_1/00000067_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Fair\",\"findings\":[\"Lungs are grossly clear bilaterally without focal consolidation or pleural effusion visualized\",\"Cardiac silhouette appears within normal limits for size\",\"Mediastinal contours grossly unremarkable\",\"Bony thorax including clavicles, scapulae, and visualized ribs without obvious acute fracture\",\"Soft tissue overlying breasts noted bilaterally, consistent with patient body habitus\",\"Rounded soft tissue/lucent structures overlying the lower right lung field, possibly artifact or overlying soft tissue structure\",\"Faint calcified or dense focus in the left lower chest/upper abdominal region, could represent overlying artifact, calcification, or normal structure\",\"Slight rotation of patient positioning noted based on asymmetric clavicle projection\",\"Degenerative-appearing changes cannot be fully assessed due to positioning\"],\"abnormalities\":[{\"name\":\"Possible calcified density, left lower chest\",\"description\":\"There is a cluster of small rounded densities projecting over the left lower chest/upper abdomen, which could represent calcifications, artifact, or overlying structure such as costal cartilage calcification; correlation with prior imaging or CT recommended for further characterization\",\"severity\":\"Mild\",\"confidence\":40},{\"name\":\"Patient rotation/positioning artifact\",\"description\":\"Asymmetry in clavicle and scapular projection suggests slight rotation during acquisition, which can limit full assessment of mediastinal and cardiac structures\",\"severity\":\"Mild\",\"confidence\":55}],\"summary\":\"This chest X-ray shows the lungs to be generally clear, without obvious signs of pneumonia, fluid buildup, or collapsed lung. The heart size appears normal. There are some soft tissue shadows from breast tissue that are normal findings on a chest X-ray of a female patient. There is a small area of increased density in the lower left side of the chest that could be a calcification (a small hardened deposit, often harmless) or just overlying tissue - this would benefit from correlation with additional imaging if not previously characterized. The image quality shows the patient was rotated slightly during the X-ray, which can make some findings harder to fully assess. Overall, this appears to be a relatively unremarkable chest X-ray, but a qualified radiologist should confirm this interpretation and correlate with clinical history.\",\"references\":[\"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria\",\"https://radiopaedia.org/articles/chest-radiograph-normal-variants\",\"https://pubs.rsna.org/journal/radiology\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Fair",
+  "findings": [
+    "Lungs are grossly clear bilaterally without focal consolidation or pleural effusion visualized",
+    "Cardiac silhouette appears within normal limits for size",
+    "Mediastinal contours grossly unremarkable",
+    "Bony thorax including clavicles, scapulae, and visualized ribs without obvious acute fracture",
+    "Soft tissue overlying breasts noted bilaterally, consistent with patient body habitus",
+    "Rounded soft tissue/lucent structures overlying the lower right lung field, possibly artifact or overlying soft tissue structure",
+    "Faint calcified or dense focus in the left lower chest/upper abdominal region, could represent overlying artifact, calcification, or normal structure",
+    "Slight rotation of patient positioning noted based on asymmetric clavicle projection",
+    "Degenerative-appearing changes cannot be fully assessed due to positioning"
+  ],
+  "abnormalities": [
+    {
+      "name": "Possible calcified density, left lower chest",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "There is a cluster of small rounded densities projecting over the left lower chest/upper abdomen, which could represent calcifications, artifact, or overlying structure such as costal cartilage calcification; correlation with prior imaging or CT recommended for further characterization"
+    },
+    {
+      "name": "Patient rotation/positioning artifact",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Asymmetry in clavicle and scapular projection suggests slight rotation during acquisition, which can limit full assessment of mediastinal and cardiac structures"
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs to be generally clear, without obvious signs of pneumonia, fluid buildup, or collapsed lung. The heart size appears normal. There are some soft tissue shadows from breast tissue that are normal findings on a chest X-ray of a female patient. There is a small area of increased density in the lower left side of the chest that could be a calcification (a small hardened deposit, often harmless) or just overlying tissue - this would benefit from correlation with additional imaging if not previously characterized. The image quality shows the patient was rotated slightly during the X-ray, which can make some findings harder to fully assess. Overall, this appears to be a relatively unremarkable chest X-ray, but a qualified radiologist should confirm this interpretation and correlate with clinical history.",
+  "references": [
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria",
+    "https://radiopaedia.org/articles/chest-radiograph-normal-variants",
+    "https://pubs.rsna.org/journal/radiology"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 436781,
+    "bytesOut": 435687,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:17:20.311Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

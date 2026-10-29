@@ -1,0 +1,61 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_3/00000092_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP, portable/upright)\",\"quality\":\"Fair\",\"findings\":[\"Air-fluid level in left upper quadrant/left hemithorax base region, appears to be gastric bubble with air-fluid level, possibly related to hiatal hernia or distended stomach\",\"Lungs are grossly clear bilaterally with no focal consolidation\",\"No obvious pneumothorax identified\",\"Cardiac silhouette appears within normal limits given AP technique\",\"Mediastinal contours grossly unremarkable\",\"Visible surgical/skin marker (radiopaque 'L' marker with 'DG' label) on left side, likely for lead localization or radiotherapy planning\",\"Necklace artifact overlying lower neck\",\"Small metallic/radiopaque density projecting over the lower thoracic/upper lumbar spine region, possibly external artifact or surgical clip\",\"Degenerative changes not clearly assessed due to technique\",\"Soft tissues of chest wall and shoulders appear symmetric\"],\"abnormalities\":[{\"name\":\"Air-fluid level, left upper abdomen\",\"description\":\"A distinct air-fluid level is seen in the left upper quadrant, likely representing a distended stomach or possible hiatal hernia with air-fluid level; correlation with clinical history and possibly CT would help clarify etiology.\",\"severity\":\"Mild\",\"confidence\":55},{\"name\":\"External radiopaque marker\",\"description\":\"An 'L' shaped marker with 'DG' label is present over the left shoulder, likely a positioning or lead marker rather than a pathological finding.\",\"severity\":\"Normal\",\"confidence\":90}],\"summary\":\"This chest X-ray shows the lungs to be clear without signs of pneumonia, fluid buildup, or collapsed lung. There is a rounded air-and-fluid pocket seen in the upper left part of the abdomen just below the diaphragm - this is most likely just air and fluid in the stomach, which can be a completely normal finding depending on when the patient last ate or drank, though it could also relate to a hiatal hernia (a condition where part of the stomach moves up through the diaphragm). The metal letter marker on the image is just a technical label placed by the radiology technologist to indicate the left side of the body and is not part of the patient's anatomy. Overall, no serious abnormality is clearly identified on this single image, but any incidental findings should be correlated with the patient's symptoms and history by a physician, and further imaging (such as an abdominal X-ray or CT) may be considered if the air-fluid level is unexpected or the patient has related symptoms like reflux or abdominal pain.\",\"references\":[\"https://radiopaedia.org/articles/hiatus-hernia\",\"https://www.ncbi.nlm.nih.gov/books/NBK538148/\",\"https://pubs.rsna.org/journal/radiographics\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP, portable/upright)",
+  "quality": "Fair",
+  "findings": [
+    "Air-fluid level in left upper quadrant/left hemithorax base region, appears to be gastric bubble with air-fluid level, possibly related to hiatal hernia or distended stomach",
+    "Lungs are grossly clear bilaterally with no focal consolidation",
+    "No obvious pneumothorax identified",
+    "Cardiac silhouette appears within normal limits given AP technique",
+    "Mediastinal contours grossly unremarkable",
+    "Visible surgical/skin marker (radiopaque 'L' marker with 'DG' label) on left side, likely for lead localization or radiotherapy planning",
+    "Necklace artifact overlying lower neck",
+    "Small metallic/radiopaque density projecting over the lower thoracic/upper lumbar spine region, possibly external artifact or surgical clip",
+    "Degenerative changes not clearly assessed due to technique",
+    "Soft tissues of chest wall and shoulders appear symmetric"
+  ],
+  "abnormalities": [
+    {
+      "name": "Air-fluid level, left upper abdomen",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "A distinct air-fluid level is seen in the left upper quadrant, likely representing a distended stomach or possible hiatal hernia with air-fluid level; correlation with clinical history and possibly CT would help clarify etiology."
+    },
+    {
+      "name": "External radiopaque marker",
+      "severity": "Normal",
+      "confidence": 90,
+      "description": "An 'L' shaped marker with 'DG' label is present over the left shoulder, likely a positioning or lead marker rather than a pathological finding."
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs to be clear without signs of pneumonia, fluid buildup, or collapsed lung. There is a rounded air-and-fluid pocket seen in the upper left part of the abdomen just below the diaphragm - this is most likely just air and fluid in the stomach, which can be a completely normal finding depending on when the patient last ate or drank, though it could also relate to a hiatal hernia (a condition where part of the stomach moves up through the diaphragm). The metal letter marker on the image is just a technical label placed by the radiology technologist to indicate the left side of the body and is not part of the patient's anatomy. Overall, no serious abnormality is clearly identified on this single image, but any incidental findings should be correlated with the patient's symptoms and history by a physician, and further imaging (such as an abdominal X-ray or CT) may be considered if the air-fluid level is unexpected or the patient has related symptoms like reflux or abdominal pain.",
+  "references": [
+    "https://radiopaedia.org/articles/hiatus-hernia",
+    "https://www.ncbi.nlm.nih.gov/books/NBK538148/",
+    "https://pubs.rsna.org/journal/radiographics"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 400591,
+    "bytesOut": 397542,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:20:42.943Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

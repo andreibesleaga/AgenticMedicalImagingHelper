@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000296/series_2/00000296_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear without focal consolidation, effusion, or pneumothorax\",\n    \"Cardiac silhouette is within normal limits for size and shape\",\n    \"Hilar regions appear unremarkable\",\n    \"Presence of a pigtail catheter in the left pleural space with its tip located in the upper lobe region\",\n    \"Bony structures are intact\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left-sided chest tube\",\n      \"description\": \"A pigtail catheter is seen in the left hemithorax, likely placed for drainage of fluid or air from the pleural space.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The X-ray shows that your lungs and heart look normal. The main finding is a 'pigtail catheter' (a small, flexible drainage tube) in the left side of your chest, which is used to drain excess fluid or air from around the lung.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-drain\",\n    \"https://www.acr.org/Clinical-Resources/Reporting-and-Data-Systems\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear without focal consolidation, effusion, or pneumothorax",
+    "Cardiac silhouette is within normal limits for size and shape",
+    "Hilar regions appear unremarkable",
+    "Presence of a pigtail catheter in the left pleural space with its tip located in the upper lobe region",
+    "Bony structures are intact"
+  ],
+  "abnormalities": [
+    {
+      "name": "Left-sided chest tube",
+      "severity": "Moderate",
+      "confidence": 100,
+      "description": "A pigtail catheter is seen in the left hemithorax, likely placed for drainage of fluid or air from the pleural space."
+    }
+  ],
+  "summary": "The X-ray shows that your lungs and heart look normal. The main finding is a 'pigtail catheter' (a small, flexible drainage tube) in the left side of your chest, which is used to drain excess fluid or air from around the lung.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-drain",
+    "https://www.acr.org/Clinical-Resources/Reporting-and-Data-Systems"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 415316,
+    "bytesOut": 321380,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T09:55:34.405Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

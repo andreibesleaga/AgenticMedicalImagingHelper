@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_3/img_10_00029872_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The right lung field shows significant opacification extending from the hilum towards the right apex\",\n    \"The left lung field appears clear\",\n    \"The heart size is within normal limits\",\n    \"The mediastinum is not displaced\",\n    \"No pleural effusion is identified\",\n    \"The bony structures, including the ribs and clavicles, appear intact\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right lung opacity\",\n      \"description\": \"Significant opacification in the right lung field, likely representing consolidation or mass\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray demonstrates a significant opacity in the right lung. This appears to be an area of consolidation or a mass. The left lung looks normal, and the heart and bones are unremarkable. This finding requires further investigation like a CT scan to determine the exact nature.\",\n  \"references\": [\"https://radiopaedia.org/articles/consolidation-chest-xray\", \"https://radiopaedia.org/articles/mass-chest-xray\"]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The right lung field shows significant opacification extending from the hilum towards the right apex",
+    "The left lung field appears clear",
+    "The heart size is within normal limits",
+    "The mediastinum is not displaced",
+    "No pleural effusion is identified",
+    "The bony structures, including the ribs and clavicles, appear intact"
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lung opacity",
+      "severity": "Moderate",
+      "confidence": 100,
+      "description": "Significant opacification in the right lung field, likely representing consolidation or mass"
+    }
+  ],
+  "summary": "The chest X-ray demonstrates a significant opacity in the right lung. This appears to be an area of consolidation or a mass. The left lung looks normal, and the heart and bones are unremarkable. This finding requires further investigation like a CT scan to determine the exact nature.",
+  "references": [
+    "https://radiopaedia.org/articles/consolidation-chest-xray",
+    "https://radiopaedia.org/articles/mass-chest-xray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 414992,
+    "bytesOut": 320828,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T11:56:00.315Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

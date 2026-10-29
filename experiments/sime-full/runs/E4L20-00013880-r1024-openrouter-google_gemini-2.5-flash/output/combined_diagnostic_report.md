@@ -1,0 +1,69 @@
+> **Requires review by a qualified clinician before any use.**
+> This report is unreviewed AI research output. No finding, diagnosis, trend, forecast or
+> treatment suggestion in it has been checked by a human clinician, and none may be acted
+> on until one has. Recorded as `humanReview` in `run_manifest.json` (EU AI Act Art. 14).
+
+# Combined Diagnostic Report
+
+> ⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made.
+
+**Generated**: 2026-10-08T09:08:36.507Z
+**Series analyzed**: 4 (series_1, series_2, series_3, series_4)
+**Overall progression**: Worsening
+**Structured output**: schema-validated
+
+## Temporal Evolution Analysis
+
+# Temporal Analysis of Chest X-rays (Series_1 to Series_4)
+
+## Overall Progression: Worsening
+
+The patient's condition has worsened over the course of the four imaging sessions, primarily due to the development of bilateral pleural effusions and the malpositioning of a new vascular access device in the latest series.
+
+## Trend Analysis:
+
+### 1. Pleural Effusion
+*   **Trend:** Worsening
+*   **Details:** Series_1, Series_2, and Series_3 consistently reported clear lung fields with no evidence of pleural effusion. However, Series_4 shows a significant change, with the development of a moderate left pleural effusion and a small right pleural effusion. This indicates a new and concerning pathology.
+
+### 2. Vascular Access Device Placement
+*   **Trend:** Worsening
+*   **Details:** In Series_1, Series_2, and Series_3, a port-a-cath device was consistently noted to be present and appropriately positioned within the superior vena cava. In Series_4, the port-a-cath is no longer mentioned, and a peripherally inserted central catheter (PICC) line is visualized. This PICC line is reported as malpositioned, with its tip projecting over the left atrium, which is sub-optimal and potentially problematic.
+
+### 3. Lung Fields (excluding effusion)
+*   **Trend:** Stable
+*   **Details:** The lung parenchyma, apart from the development of pleural effusions in Series_4, has consistently been reported as clear without focal consolidation or pneumothorax across all four series.
+
+### 4. Cardiomediastinal Silhouette
+*   **Trend:** Stable
+*   **Details:** The cardiomediastinal silhouette remained within normal limits for size and contour in Series_1, Series_2, and Series_3. In Series_4, the cardiac silhouette was reported as not enlarged, maintaining a stable appearance.
+
+### 5. Bony Structures
+*   **Trend:** Stable
+*   **Details:** The visualized bony structures were consistently reported as unremarkable or intact across all four series.
+
+## Forecasted Evolution:
+
+Based on the observed trends, without clinical intervention, the pleural effusions are likely to persist or potentially increase, which could lead to respiratory compromise. The malpositioned PICC line poses a risk of complications (e.g., cardiac arrhythmias, thrombus formation, erosion) and requires urgent attention to ensure patient safety and optimal device function.
+
+#### Treatment Recommendations: (model text — experimental, not clinical recommendations)
+
+*   Immediate clinical correlation and further evaluation are recommended to determine the etiology of the newly developed bilateral pleural effusions.
+*   Prompt assessment and consideration for repositioning of the PICC line are advised to ensure optimal placement and mitigate potential complications. Further imaging may be warranted to confirm its exact location.
+
+## Per-Finding Trends
+- **Pleural Effusion** — Worsening: Pleural effusions were absent in series_1, series_2, and series_3. In series_4, a moderate left pleural effusion and a small right pleural effusion developed, indicating a significant worsening.
+- **Vascular Access Device Placement** — Worsening: A port-a-cath was present and appropriately positioned in series_1, series_2, and series_3. In series_4, this device was replaced by a PICC line which was noted to be malpositioned with its tip projecting over the left atrium, which is an atypical and potentially problematic location.
+
+## Forecasted Evolution
+Without intervention, the pleural effusions may persist or increase, potentially leading to respiratory compromise. The malpositioned PICC line carries a risk of complications, and its continued use without repositioning may lead to adverse events.
+
+## Treatment Suggestions (experimental — not clinical recommendations)
+_AI-generated suggestions for educational use only. They are not clinical recommendations and must not be acted on._
+
+- Clinical correlation and further evaluation for the etiology of the bilateral pleural effusions.
+- Consideration for repositioning of the PICC line or further imaging to confirm its exact location and exclude potential complications.
+
+---
+*Generated by AgenticMedicalImagingHelper v1.1.0 | Educational use only*
+*This report is AI-generated for educational purposes only. Professional clinical review required.*

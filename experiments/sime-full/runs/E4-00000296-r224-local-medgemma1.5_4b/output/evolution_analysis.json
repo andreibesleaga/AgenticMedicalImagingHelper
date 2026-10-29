@@ -1,0 +1,24 @@
+{
+  "seriesCount": 4,
+  "seriesIds": [
+    "series_1",
+    "series_2",
+    "series_3",
+    "series_4"
+  ],
+  "progression": "Inconclusive",
+  "trends": [],
+  "forecastedEvolution": "",
+  "treatmentRecommendations": [],
+  "combinedReport": "{\n  \"progression\": \"Stable | Worsening\",\n  \"trends\": [\n    {\n      \"finding\": \"Lungs\",\n      \"trend\": \"Stable\",\n      \"details\": \"Clear lungs noted in all series, consistent across series_1, series_2, series_3, and series_4.\"\n    },\n    {\n      \"finding\": \"Heart\",\n      \"trend\": \"Stable | Worsening\",\n      \"details\": \"Normal heart size noted in series_1 and series_2. Mild cardiomegaly noted in series_3, potentially due to chest tube placement. Still considered stable relative to series_1, but worsening compared to series_2. Inconclusive based on series_4 due to lack of full cardiac view.\"\n    },\n    {\n      \"finding\": \"Pleura\",\n      \"trend\": \"Stable\",\n      \"details\": \"Clear pleural spaces noted in series_1, series_2, series_3, and series_4. No pleural effusion observed in series_3.\"\n    },\n    {\n      \"finding\": \"Mediastinum\",\n      \"trend\": \"Stable\",\n      \"details\": \"Normal mediastinum noted in series_1 and series_2. Unremarkable mediastinum noted in series_3 and series_4. Chest tube noted in series_3, but mediastinum still described as unremarkable.\"\n    },\n    {\n      \"finding\": \"Bones\",\n      \"trend\": \"Stable\",\n      \"details\": \"Unremarkable bony structures noted in series_1 and series_2. Intact bony structures noted in series_3 and series_4.\"\n    },\n    {\n      \"finding\": \"Trachea\",\n      \"trend\": \"Stable\",\n      \"details\": \"Normal tracheal caliber noted in series_1 and series_2. No pneumothorax observed in series_3.\"\n    },\n    {\n      \"finding\": \"Chest Tube\",\n      \"trend\": \"Stable\",\n      \"details\": \"Chest tube present in series_3 and series_4. Not explicitly mentioned in series_1 or series_2.\"\n    }\n  ],\n  \"forecastedEvolution\": \"Stable until series_4, where the presence of a chest tube might slightly contribute to mediastinal dilation compared to series_2, though overall findings remain largely stable.\",\n  \"treatmentRecommendations\": [\n    \"Further investigation into the cause of mild cardiomegaly in series_3 should be considered.\",\n    \"If chest tube is part of the treatment, monitor for complications like pneumothorax or subcutaneous emphysema\",\n    \"Continued observation recommended.\"\n  ],\n  \"combinedReport\": \"## Temporal Chest X-ray Analysis\\n\\n### Series 1: series_1\\n*   **Findings:** Clear lungs, Normal heart size, Clear pleural spaces, Normal mediastinum, Unremarkable bony structures.\\n*   **Summary:** No obvious abnormalities.\\n\\n### Series 2: series_2\\n*   **Findings:** Clear lungs, Normal heart size, Clear pleural spaces, Normal mediastinum, Unremarkable bony structures.\\n*   **Summary:** Unremarkable.\\n\\n### Series 3: series_3\\n*   **Findings:** Clear lungs, Normal heart size, No pleural effusion, Unremarkable mediastinum, Intact bony structures. Chest tube present. No pneumothorax observed.\\n*   **Summary:** Unremarkable, particularly considering the presence of the chest tube.\"\n    }",
+  "validation": {
+    "ok": false,
+    "issues": [
+      "progression: Invalid option: expected one of \"Improving\"|\"Stable\"|\"Worsening\"|\"Inconclusive\"",
+      "trends.1.trend: Invalid option: expected one of \"Improving\"|\"Stable\"|\"Worsening\"",
+      "progression: keyword fallback (\"Inconclusive\")"
+    ]
+  },
+  "processedAt": "2026-09-29T11:05:51.237Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

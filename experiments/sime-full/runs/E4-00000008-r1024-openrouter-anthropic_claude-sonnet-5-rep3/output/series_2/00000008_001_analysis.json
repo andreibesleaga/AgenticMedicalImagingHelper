@@ -1,0 +1,67 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000008/series_2/00000008_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP, portable/supine)\",\"quality\":\"Fair\",\"findings\":[\"Portable AP chest radiograph with patient rotation, limiting full evaluation\",\"Lungs appear relatively clear bilaterally without focal consolidation\",\"Cardiac silhouette appears mildly enlarged, though partly limited by AP technique\",\"Mediastinal contours grossly unremarkable; trachea midline\",\"Soft tissue densities overlying bilateral lower chest consistent with breast shadows\",\"External monitoring leads/cables and a strap/band visible overlying the lower chest and abdomen\",\"Small radiopaque focus projecting over the left hilar/perihilar region, possibly a calcified granuloma or external artifact\",\"Visible osseous structures (clavicles, ribs, shoulders) without obvious acute fracture\",\"No obvious pneumothorax or large pleural effusion identified\",\"No overt focal airspace opacity to suggest pneumonia in this view\"],\"abnormalities\":[{\"name\":\"Possible cardiomegaly\",\"description\":\"Cardiac silhouette appears enlarged relative to thoracic width, though this may be exaggerated by AP supine positioning and patient rotation\",\"severity\":\"Mild\",\"confidence\":40},{\"name\":\"Calcified granuloma vs. artifact\",\"description\":\"Small rounded radiodense focus near the left hilum, could represent a calcified granuloma, vascular calcification, or external object (e.g., snap/button)\",\"severity\":\"Mild\",\"confidence\":35},{\"name\":\"Technical limitation - rotation and overlying devices\",\"description\":\"Patient positioning is rotated, and external monitoring leads/straps overlie the chest and upper abdomen, reducing diagnostic clarity\",\"severity\":\"Mild\",\"confidence\":60}],\"summary\":\"This chest X-ray was taken with the patient lying down using a portable machine, and there is some rotation of the body which makes it harder to fully assess the heart and lungs. The lungs themselves look generally clear without obvious signs of pneumonia or fluid buildup. The heart shadow looks like it might be slightly enlarged, but this can be a false impression due to the positioning technique, so it would need a standing, non-rotated X-ray for confirmation. There is also a tiny dense spot near the left side of the chest that could just be an old healed scar tissue (calcified granuloma) or possibly something outside the body like a snap on clothing—this is not urgent but could be followed up if there are symptoms. The straps and wires seen in the image are monitoring equipment, not part of the body. Overall, no large or dangerous findings are seen in this image, but due to the image quality, a repeat or follow-up X-ray and clinical correlation are recommended.\",\"references\":[\"https://www.radiologyinfo.org/en/info/chestrad\",\"https://pubs.rsna.org/doi/10.1148/rg.2018170102\",\"https://www.ncbi.nlm.nih.gov/books/NBK546600/\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP, portable/supine)",
+  "quality": "Fair",
+  "findings": [
+    "Portable AP chest radiograph with patient rotation, limiting full evaluation",
+    "Lungs appear relatively clear bilaterally without focal consolidation",
+    "Cardiac silhouette appears mildly enlarged, though partly limited by AP technique",
+    "Mediastinal contours grossly unremarkable; trachea midline",
+    "Soft tissue densities overlying bilateral lower chest consistent with breast shadows",
+    "External monitoring leads/cables and a strap/band visible overlying the lower chest and abdomen",
+    "Small radiopaque focus projecting over the left hilar/perihilar region, possibly a calcified granuloma or external artifact",
+    "Visible osseous structures (clavicles, ribs, shoulders) without obvious acute fracture",
+    "No obvious pneumothorax or large pleural effusion identified",
+    "No overt focal airspace opacity to suggest pneumonia in this view"
+  ],
+  "abnormalities": [
+    {
+      "name": "Possible cardiomegaly",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Cardiac silhouette appears enlarged relative to thoracic width, though this may be exaggerated by AP supine positioning and patient rotation"
+    },
+    {
+      "name": "Calcified granuloma vs. artifact",
+      "severity": "Mild",
+      "confidence": 35,
+      "description": "Small rounded radiodense focus near the left hilum, could represent a calcified granuloma, vascular calcification, or external object (e.g., snap/button)"
+    },
+    {
+      "name": "Technical limitation - rotation and overlying devices",
+      "severity": "Mild",
+      "confidence": 60,
+      "description": "Patient positioning is rotated, and external monitoring leads/straps overlie the chest and upper abdomen, reducing diagnostic clarity"
+    }
+  ],
+  "summary": "This chest X-ray was taken with the patient lying down using a portable machine, and there is some rotation of the body which makes it harder to fully assess the heart and lungs. The lungs themselves look generally clear without obvious signs of pneumonia or fluid buildup. The heart shadow looks like it might be slightly enlarged, but this can be a false impression due to the positioning technique, so it would need a standing, non-rotated X-ray for confirmation. There is also a tiny dense spot near the left side of the chest that could just be an old healed scar tissue (calcified granuloma) or possibly something outside the body like a snap on clothing—this is not urgent but could be followed up if there are symptoms. The straps and wires seen in the image are monitoring equipment, not part of the body. Overall, no large or dangerous findings are seen in this image, but due to the image quality, a repeat or follow-up X-ray and clinical correlation are recommended.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestrad",
+    "https://pubs.rsna.org/doi/10.1148/rg.2018170102",
+    "https://www.ncbi.nlm.nih.gov/books/NBK546600/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 390119,
+    "bytesOut": 384796,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T10:20:07.931Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

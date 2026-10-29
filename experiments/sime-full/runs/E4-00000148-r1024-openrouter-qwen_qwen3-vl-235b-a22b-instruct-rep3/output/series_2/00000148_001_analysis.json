@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_2/00000148_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right-sided pleural effusion with blunting of the right costophrenic angle and meniscus sign\",\n    \"Left lung appears clear with no obvious consolidation or mass\",\n    \"Cardiac silhouette is within normal limits\",\n    \"Diaphragm elevated on the right side consistent with underlying effusion\",\n    \"Foreign object (likely a button battery) visible in the left upper lung field, projecting over the mediastinum\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Moderate right-sided pleural effusion evidenced by blunted costophrenic angle and fluid meniscus. No signs of loculation or thickening. Left hemithorax is clear.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 92\n    },\n    {\n      \"name\": \"Foreign Body\",\n      \"description\": \"Round, radiopaque object with central lucency consistent with a button battery located in the left upper thorax, likely lodged in the esophagus or trachea. Requires urgent clinical correlation.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 88\n    }\n  ],\n  \"summary\": \"The chest X-ray shows fluid buildup around the right lung (pleural effusion), which may cause shortness of breath or chest discomfort. There is also a small, round, metallic object — most likely a swallowed button battery — visible near the center of the chest. Button batteries can cause serious internal damage if not removed quickly. Both findings require immediate medical attention to prevent complications.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7056364/\",\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.aap.org/en/patient-care/child-injury-prevention/ingested-foreign-bodies/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Right-sided pleural effusion with blunting of the right costophrenic angle and meniscus sign",
+    "Left lung appears clear with no obvious consolidation or mass",
+    "Cardiac silhouette is within normal limits",
+    "Diaphragm elevated on the right side consistent with underlying effusion",
+    "Foreign object (likely a button battery) visible in the left upper lung field, projecting over the mediastinum"
+  ],
+  "abnormalities": [
+    {
+      "name": "Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 92,
+      "description": "Moderate right-sided pleural effusion evidenced by blunted costophrenic angle and fluid meniscus. No signs of loculation or thickening. Left hemithorax is clear."
+    },
+    {
+      "name": "Foreign Body",
+      "severity": "Severe",
+      "confidence": 88,
+      "description": "Round, radiopaque object with central lucency consistent with a button battery located in the left upper thorax, likely lodged in the esophagus or trachea. Requires urgent clinical correlation."
+    }
+  ],
+  "summary": "The chest X-ray shows fluid buildup around the right lung (pleural effusion), which may cause shortness of breath or chest discomfort. There is also a small, round, metallic object — most likely a swallowed button battery — visible near the center of the chest. Button batteries can cause serious internal damage if not removed quickly. Both findings require immediate medical attention to prevent complications.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7056364/",
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.aap.org/en/patient-care/child-injury-prevention/ingested-foreign-bodies/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 440372,
+    "bytesOut": 398705,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T10:14:07.657Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

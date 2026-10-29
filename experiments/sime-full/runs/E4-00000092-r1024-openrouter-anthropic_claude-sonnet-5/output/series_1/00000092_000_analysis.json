@@ -1,0 +1,66 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_1/00000092_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP, supine)\",\"quality\":\"Fair\",\"findings\":[\"AP supine chest radiograph with marker 'L HS' in right upper corner and side marker indicator\",\"Rounded radiopaque object overlying right upper chest, likely an external marker or artifact\",\"Large, well-defined round to oval gas-fluid density in the left lower hemithorax, projecting over the lower ribs, with an air-fluid level configuration\",\"Bilateral lung fields show diffuse increased interstitial/reticular markings, more prominent centrally\",\"Cardiac silhouette appears mildly enlarged, though partially obscured by rotation/positioning\",\"Bilateral shoulder/humeral head positioning suggests abducted arms, consistent with supine trauma or ICU positioning\",\"Two curvilinear radiopaque structures at the inferior margin of the image, likely external monitoring leads or positioning devices\",\"No obvious pneumothorax identified on visible lung fields\",\"Costophrenic angles are difficult to assess due to overlying density on the left\"],\"abnormalities\":[{\"name\":\"Left lower thorax air-fluid collection\",\"description\":\"Large, well-circumscribed round/oval lucent structure with air-fluid level in the left lower chest, could represent a large diaphragmatic hernia with bowel loop, hydropneumothorax, loculated pleural collection, or gastric bubble herniation. Needs correlation with CT for definitive characterization.\",\"severity\":\"Moderate\",\"confidence\":55},{\"name\":\"Bilateral interstitial lung markings\",\"description\":\"Diffuse reticular/interstitial pattern bilaterally, which may reflect pulmonary edema, atelectasis, or underlying interstitial lung disease; nonspecific in this projection.\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Possible cardiomegaly\",\"description\":\"Cardiac silhouette appears enlarged relative to thoracic width, though this may be exaggerated by AP supine technique and magnification.\",\"severity\":\"Mild\",\"confidence\":35}],\"summary\":\"This chest X-ray was taken with the patient lying on their back, which can sometimes make organs look slightly larger or blurred compared to a standing image. The main finding is an unusual round shape with what looks like an air-fluid level in the lower left side of the chest — this could be due to a hernia (where part of the stomach or bowel pushes up through the diaphragm), a collection of fluid and air in the space around the lung, or in some cases, gas from the stomach. This finding needs a follow-up scan, like a CT, to determine the exact cause. There are also some faint web-like patterns throughout both lungs, which can be due to fluid, scarring, or the way the lungs are inflated during the image, and the heart appears mildly enlarged, though this can be affected by the patient's position. None of these findings are being diagnosed definitively from this image alone — a radiologist and your treating physician should review this together with your symptoms and possibly additional imaging.\",\"references\":[\"https://radiopaedia.org/articles/diaphragmatic-hernia\",\"https://pubs.rsna.org/doi/10.1148/rg.2019180204\",\"https://radiopaedia.org/articles/air-fluid-level\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP, supine)",
+  "quality": "Fair",
+  "findings": [
+    "AP supine chest radiograph with marker 'L HS' in right upper corner and side marker indicator",
+    "Rounded radiopaque object overlying right upper chest, likely an external marker or artifact",
+    "Large, well-defined round to oval gas-fluid density in the left lower hemithorax, projecting over the lower ribs, with an air-fluid level configuration",
+    "Bilateral lung fields show diffuse increased interstitial/reticular markings, more prominent centrally",
+    "Cardiac silhouette appears mildly enlarged, though partially obscured by rotation/positioning",
+    "Bilateral shoulder/humeral head positioning suggests abducted arms, consistent with supine trauma or ICU positioning",
+    "Two curvilinear radiopaque structures at the inferior margin of the image, likely external monitoring leads or positioning devices",
+    "No obvious pneumothorax identified on visible lung fields",
+    "Costophrenic angles are difficult to assess due to overlying density on the left"
+  ],
+  "abnormalities": [
+    {
+      "name": "Left lower thorax air-fluid collection",
+      "severity": "Moderate",
+      "confidence": 55,
+      "description": "Large, well-circumscribed round/oval lucent structure with air-fluid level in the left lower chest, could represent a large diaphragmatic hernia with bowel loop, hydropneumothorax, loculated pleural collection, or gastric bubble herniation. Needs correlation with CT for definitive characterization."
+    },
+    {
+      "name": "Bilateral interstitial lung markings",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "Diffuse reticular/interstitial pattern bilaterally, which may reflect pulmonary edema, atelectasis, or underlying interstitial lung disease; nonspecific in this projection."
+    },
+    {
+      "name": "Possible cardiomegaly",
+      "severity": "Mild",
+      "confidence": 35,
+      "description": "Cardiac silhouette appears enlarged relative to thoracic width, though this may be exaggerated by AP supine technique and magnification."
+    }
+  ],
+  "summary": "This chest X-ray was taken with the patient lying on their back, which can sometimes make organs look slightly larger or blurred compared to a standing image. The main finding is an unusual round shape with what looks like an air-fluid level in the lower left side of the chest — this could be due to a hernia (where part of the stomach or bowel pushes up through the diaphragm), a collection of fluid and air in the space around the lung, or in some cases, gas from the stomach. This finding needs a follow-up scan, like a CT, to determine the exact cause. There are also some faint web-like patterns throughout both lungs, which can be due to fluid, scarring, or the way the lungs are inflated during the image, and the heart appears mildly enlarged, though this can be affected by the patient's position. None of these findings are being diagnosed definitively from this image alone — a radiologist and your treating physician should review this together with your symptoms and possibly additional imaging.",
+  "references": [
+    "https://radiopaedia.org/articles/diaphragmatic-hernia",
+    "https://pubs.rsna.org/doi/10.1148/rg.2019180204",
+    "https://radiopaedia.org/articles/air-fluid-level"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 389503,
+    "bytesOut": 383960,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:20:15.520Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_2/img_17_00015628_002.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"Radiography\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear.\",\n    \"The heart size is normal.\",\n    \"The mediastinal contours are unremarkable.\",\n    \"The visualized bony structures are intact.\",\n    \"There is a small left pleural effusion and a small right pleural effusion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"pleural effusion\",\n      \"description\": \"Small left pleural effusion and small right pleural effusion.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This chest X-ray shows small amounts of fluid in the space around both lungs (pleural effusion). The lungs appear clear, and the heart size is normal. The bones look intact.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.uptodate.com/sections/thoracic-imaging/pleural-effusion\",\n    \"https://www.bmj.com/content/350/7071/2109\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4889104/\"\n  ]\n}",
+  "modality": "Radiography",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear.",
+    "The heart size is normal.",
+    "The mediastinal contours are unremarkable.",
+    "The visualized bony structures are intact.",
+    "There is a small left pleural effusion and a small right pleural effusion."
+  ],
+  "abnormalities": [
+    {
+      "name": "pleural effusion",
+      "severity": "Mild",
+      "confidence": 100,
+      "description": "Small left pleural effusion and small right pleural effusion."
+    }
+  ],
+  "summary": "This chest X-ray shows small amounts of fluid in the space around both lungs (pleural effusion). The lungs appear clear, and the heart size is normal. The bones look intact.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.uptodate.com/sections/thoracic-imaging/pleural-effusion",
+    "https://www.bmj.com/content/350/7071/2109",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4889104/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 450091,
+    "bytesOut": 342675,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:24:48.239Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

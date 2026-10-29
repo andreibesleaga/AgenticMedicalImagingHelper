@@ -1,0 +1,63 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_12_00013917_025.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Left pleural effusion, moderate to large, obscuring the left hemidiaphragm and blunting the left costophrenic angle.\",\n    \"A small amount of subcutaneous metallic foreign bodies (possibly shrapnel or surgical clips) are noted in the soft tissues of the left upper arm.\",\n    \"Surgical fixation devices (possibly anchors) are seen in the left shoulder region, consistent with a prior shoulder surgery.\",\n    \"The right lung field appears clear without evidence of consolidation or effusion.\",\n    \"Cardiomediastinal silhouette is unremarkable, given the technical limitations of an AP film.\",\n    \"Osseous structures of the visualized thoracic cage and shoulder girdles show no acute fracture or destructive lesion, aside from the surgical hardware in the left shoulder.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Pleural Effusion\",\n      \"description\": \"Moderate to large left-sided pleural effusion, indicated by blunting of the left costophrenic angle and opacification of the lower left lung field with a meniscus sign.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Left Shoulder Surgical Hardware\",\n      \"description\": \"Metallic surgical fixation devices are present in the left shoulder, consistent with prior surgical intervention.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 99\n    },\n    {\n      \"name\": \"Left Upper Arm Subcutaneous Metallic Foreign Bodies\",\n      \"description\": \"Multiple small metallic densities are scattered within the soft tissues of the left upper arm, likely representing foreign bodies such as shrapnel or surgical clips.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows a significant amount of fluid in the space around the left lung, called a pleural effusion. This fluid is obscuring the lower part of the left lung. There are also metallic objects in the soft tissues of the left upper arm and surgical hardware in the left shoulder, suggesting previous surgery in that area. The right lung appears clear, and the heart size seems normal. Pleural effusion means there is fluid outside the lung, which can be caused by various medical conditions and might lead to shortness of breath or discomfort.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK459207/\",\n    \"https://www.ajronline.org/doi/full/10.2214/AJR.13.7029\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Left pleural effusion, moderate to large, obscuring the left hemidiaphragm and blunting the left costophrenic angle.",
+    "A small amount of subcutaneous metallic foreign bodies (possibly shrapnel or surgical clips) are noted in the soft tissues of the left upper arm.",
+    "Surgical fixation devices (possibly anchors) are seen in the left shoulder region, consistent with a prior shoulder surgery.",
+    "The right lung field appears clear without evidence of consolidation or effusion.",
+    "Cardiomediastinal silhouette is unremarkable, given the technical limitations of an AP film.",
+    "Osseous structures of the visualized thoracic cage and shoulder girdles show no acute fracture or destructive lesion, aside from the surgical hardware in the left shoulder."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Moderate to large left-sided pleural effusion, indicated by blunting of the left costophrenic angle and opacification of the lower left lung field with a meniscus sign."
+    },
+    {
+      "name": "Left Shoulder Surgical Hardware",
+      "severity": "Normal",
+      "confidence": 99,
+      "description": "Metallic surgical fixation devices are present in the left shoulder, consistent with prior surgical intervention."
+    },
+    {
+      "name": "Left Upper Arm Subcutaneous Metallic Foreign Bodies",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Multiple small metallic densities are scattered within the soft tissues of the left upper arm, likely representing foreign bodies such as shrapnel or surgical clips."
+    }
+  ],
+  "summary": "This X-ray of the chest shows a significant amount of fluid in the space around the left lung, called a pleural effusion. This fluid is obscuring the lower part of the left lung. There are also metallic objects in the soft tissues of the left upper arm and surgical hardware in the left shoulder, suggesting previous surgery in that area. The right lung appears clear, and the heart size seems normal. Pleural effusion means there is fluid outside the lung, which can be caused by various medical conditions and might lead to shortness of breath or discomfort.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.ncbi.nlm.nih.gov/books/NBK459207/",
+    "https://www.ajronline.org/doi/full/10.2214/AJR.13.7029"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 419469,
+    "bytesOut": 419285,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:43:52.622Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

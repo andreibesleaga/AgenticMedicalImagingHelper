@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00013880/series_1/00013880_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No evidence of pneumothorax or pleural effusion.\",\n    \"Bilateral lung fields appear clear.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"No acute bony abnormalities are identified.\",\n    \"A left-sided port-a-cath device is present with its tip projected over the superior vena cava.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray appears normal. The lungs are clear, and the heart size and shape are within expected limits. There's a medical device (port-a-cath) on the left side, which is in a good position. No signs of immediate problems like collapsed lung or fluid around the lungs were seen.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.294085732\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No evidence of pneumothorax or pleural effusion.",
+    "Bilateral lung fields appear clear.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "No acute bony abnormalities are identified.",
+    "A left-sided port-a-cath device is present with its tip projected over the superior vena cava."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray appears normal. The lungs are clear, and the heart size and shape are within expected limits. There's a medical device (port-a-cath) on the left side, which is in a good position. No signs of immediate problems like collapsed lung or fluid around the lungs were seen.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.294085732",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 25414,
+    "bytesOut": 25414,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:21:33.789Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

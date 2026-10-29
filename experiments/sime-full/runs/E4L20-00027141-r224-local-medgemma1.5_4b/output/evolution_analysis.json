@@ -1,0 +1,23 @@
+{
+  "seriesCount": 4,
+  "seriesIds": [
+    "series_1",
+    "series_2",
+    "series_3",
+    "series_4"
+  ],
+  "progression": "Inconclusive",
+  "trends": [],
+  "forecastedEvolution": "",
+  "treatmentRecommendations": [],
+  "combinedReport": "{\n  \"progression\": \"Improving | Stable | Worsening | Inconclusive (overall trend across the sessions)\",\n  \"trends\": [\n    {\n      \"finding\": \"Lung Fields\",\n      \"trend\": \"Improving\",\n      \"details\": \"series_1: normal, series_2: clear, series_3: clear, series_4: clear\"\n    },\n    {\n      \"finding\": \"Heart Size\",\n      \"trend\": \"Stable\",\n      \"details\": \"series_1: normal, series_2: normal, series_3: normal, series_4: normal\"\n    },\n    {\n      \"finding\": \"Mediastinum\",\n      \"trend\": \"Stable\",\n      \"details\": \"series_1: unremarkable, series_2: unremarkable, series_3: unremarkable, series_4: unremarkable\"\n    },\n    {\n      \"finding\": \"Pleural Spaces\",\n      \"trend\": \"Stable\",\n      \"details\": \"series_1: clear, series_2: clear, series_3: clear, series_4: clear\"\n    },\n    {\n      \"finding\": \"Bones\",\n      \"trend\": \"Stable\",\n      \"details\": \"series_1: intact, series_2: intact, series_3: intact, series_4: intact\"\n    }\n  ],\n  \"forecastedEvolution\": \"Based on the observed improvement in lung fields, heart size, mediastinum, pleural spaces, and bones across the sessions, the expected evolution is towards continued improvement in imaging appearance.\",\n  \"treatmentRecommendations\": [\n    \"This analysis is purely educational and based on observed trends in imaging data. It does not constitute medical advice. Clinical decisions should be made by qualified healthcare professionals based on the complete patient evaluation.\",\n    \"Further monitoring of imaging might be indicated depending on clinical context.\",\n    \"No specific treatment recommendations are implied, as this is an observational analysis of imaging trends.\"\n  ],\n  \"combinedReport\": \"| Chest X-ray (AP)\\n\\n*   **Bones:** Appear intact.\\n*   **Mediastinum:** Normal contours.\\n*   **Lungs:** Clear.\\n*   **Heart:** Normal size.\\n*   **Pleura:** No effusion or pneumothorax identified.\\n\\n**Overall Impression:** The chest X-ray appears normal throughout the series.\"\n}",
+  "validation": {
+    "ok": false,
+    "issues": [
+      "progression: Invalid option: expected one of \"Improving\"|\"Stable\"|\"Worsening\"|\"Inconclusive\"",
+      "progression: keyword fallback (\"Inconclusive\")"
+    ]
+  },
+  "processedAt": "2026-10-08T11:33:28.201Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

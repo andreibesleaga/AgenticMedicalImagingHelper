@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000086/series_3/00000086_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are well-expanded.\",\n    \"No focal consolidation is evident.\",\n    \"Right mid to lower lung field opacity is present, likely representing scarring. Pleural thickening is not appreciable.\",\n    \"The cardiac silhouette is normal in size.\",\n    \"The mediastinal contours are unremarkable.\",\n    \"No pleural effusion is seen.\",\n    \"The visualized osseous structures are unremarkable.\",\n    \"A metallic foreign body is noted in the right mid to lower lung field.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Scarring\",\n      \"description\": \"Patchy opacity in the right mid to lower lung field, likely representing parenchymal scarring.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 0\n    },\n    {\n      \"name\": \"Foreign body\",\n      \"description\": \"Metallic radiopaque structure seen projecting within the right lower lung field.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This chest X-ray shows some scarring in the right lung. There is also a visible metallic object in the right lung. The heart and lungs appear otherwise normal.\",\n  \"references\": []\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are well-expanded.",
+    "No focal consolidation is evident.",
+    "Right mid to lower lung field opacity is present, likely representing scarring. Pleural thickening is not appreciable.",
+    "The cardiac silhouette is normal in size.",
+    "The mediastinal contours are unremarkable.",
+    "No pleural effusion is seen.",
+    "The visualized osseous structures are unremarkable.",
+    "A metallic foreign body is noted in the right mid to lower lung field."
+  ],
+  "abnormalities": [
+    {
+      "name": "Scarring",
+      "severity": "Severe",
+      "confidence": 0,
+      "description": "Patchy opacity in the right mid to lower lung field, likely representing parenchymal scarring."
+    },
+    {
+      "name": "Foreign body",
+      "severity": "Mild",
+      "confidence": 100,
+      "description": "Metallic radiopaque structure seen projecting within the right lower lung field."
+    }
+  ],
+  "summary": "This chest X-ray shows some scarring in the right lung. There is also a visible metallic object in the right lung. The heart and lungs appear otherwise normal.",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 371103,
+    "bytesOut": 291685,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T09:46:33.371Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

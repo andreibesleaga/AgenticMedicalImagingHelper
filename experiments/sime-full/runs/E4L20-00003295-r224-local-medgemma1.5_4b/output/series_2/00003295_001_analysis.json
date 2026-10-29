@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00003295/series_2/00003295_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Excellent\",\n  \"findings\": [\n    \"Visualized lung fields are clear.\",\n    \"Heart size and mediastinal contours are within normal limits.\",\n    \"No pleural effusion or pneumothorax is evident.\",\n    \"The left subclavian central venous catheter is present.\",\n    \"Bony structures are intact.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray shows clear lungs, a normal heart size, and no signs of fluid or air leakage. The central line is present. The bones appear normal.\",\n  \"references\": [\n    \"1. Standard Chest X-ray protocols.\",\n    \"2. American College of Radiology Appropriateness Criteria for Chest Radiography.\",\n    \"3. Radiopaedia: Chest X-ray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Excellent",
+  "findings": [
+    "Visualized lung fields are clear.",
+    "Heart size and mediastinal contours are within normal limits.",
+    "No pleural effusion or pneumothorax is evident.",
+    "The left subclavian central venous catheter is present.",
+    "Bony structures are intact."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows clear lungs, a normal heart size, and no signs of fluid or air leakage. The central line is present. The bones appear normal.",
+  "references": [
+    "1. Standard Chest X-ray protocols.",
+    "2. American College of Radiology Appropriateness Criteria for Chest Radiography.",
+    "3. Radiopaedia: Chest X-ray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24274,
+    "bytesOut": 24274,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:19:31.576Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

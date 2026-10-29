@@ -1,0 +1,62 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_6/00000239_005.png",
+  "seriesId": "series_6",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral reticulonodular opacities, more prominent in the lower lung zones.\",\n    \"Bilateral pleural effusions, greater on the right, obscuring the right hemidiaphragm.\",\n    \"Cardiomegaly is noted.\",\n    \"Prominent gastric air bubble and bowel gas pattern are seen in the upper abdomen.\",\n    \"Multiple surgical clips are present in the lower abdomen/pelvis.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pulmonary infiltrates\",\n      \"description\": \"Diffuse bilateral reticulonodular opacities are seen throughout both lung fields, particularly pronounced in the lower lobes.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pleural effusions\",\n      \"description\": \"Evidence of bilateral pleural effusions, which are larger on the right side and result in blunting of the costophrenic angles and obscuring of the right hemidiaphragm.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette appears enlarged.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows changes in both lungs with a pattern suggesting inflammation or fluid. There is also fluid around your lungs, more on the right side, which is known as a pleural effusion. Your heart appears slightly enlarged. In your belly area, common stomach and bowel gas is visible, along with several surgical clips that were placed during a previous operation.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125178\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8309164/\",\n    \"https://radiopaedia.org/articles/cardiomegaly\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral reticulonodular opacities, more prominent in the lower lung zones.",
+    "Bilateral pleural effusions, greater on the right, obscuring the right hemidiaphragm.",
+    "Cardiomegaly is noted.",
+    "Prominent gastric air bubble and bowel gas pattern are seen in the upper abdomen.",
+    "Multiple surgical clips are present in the lower abdomen/pelvis."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pulmonary infiltrates",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse bilateral reticulonodular opacities are seen throughout both lung fields, particularly pronounced in the lower lobes."
+    },
+    {
+      "name": "Pleural effusions",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Evidence of bilateral pleural effusions, which are larger on the right side and result in blunting of the costophrenic angles and obscuring of the right hemidiaphragm."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "The cardiac silhouette appears enlarged."
+    }
+  ],
+  "summary": "The X-ray of your chest shows changes in both lungs with a pattern suggesting inflammation or fluid. There is also fluid around your lungs, more on the right side, which is known as a pleural effusion. Your heart appears slightly enlarged. In your belly area, common stomach and bowel gas is visible, along with several surgical clips that were placed during a previous operation.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125178",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8309164/",
+    "https://radiopaedia.org/articles/cardiomegaly"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 378298,
+    "bytesOut": 374356,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:56:35.743Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

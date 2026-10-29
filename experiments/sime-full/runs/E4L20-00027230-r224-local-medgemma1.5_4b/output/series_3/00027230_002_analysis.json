@@ -1,0 +1,83 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00027230/series_3/00027230_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral lower lobe atelectasis.\",\n    \"Right lower lobe consolidation.\",\n    \"Right lower lobe opacity.\",\n    \"Right lower lobe rounded density.\",\n    \"Left upper lobe nodule.\",\n    \"Left upper lobe nodule.\",\n    \"Left axillary radiodensities.\",\n    \"Right axillary radiodensities.\",\n    \"Heart size is normal.\",\n    \"Mediastinum is normal.\",\n    \"Diaphragm is unremarkable.\",\n    \"Bones are unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right lower lobe consolidation\",\n      \"description\": \"Consolidation visualized in the right lower lobe.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 0\n    },\n    {\n      \"name\": \"Right lower lobe rounded density\",\n      \"description\": \"A rounded density is noted in the right lower lobe.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 0\n    },\n    {\n       \"name\": \"Right lower lobe atelectasis\",\n       \"description\": \"Atelectasis visualized in the right lower lobe.\",\n        \"severity\": \"Mild\",\n        \"confidence\": 0\n    },\n    {\n      \"name\": \"Left upper lobe nodule\",\n      \"description\": \"A nodule is noted in the left upper lobe.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 0\n    },\n    {\n      \"name\": \"Left axillary radiodensities\",\n      \"description\": \"Radiodensities noted in the left axilla.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 0\n    },\n    {\n      \"name\": \"Right axillary radiodensities\",\n      \"description\": \"Radiodensities noted in the right axilla.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 0\n    }\n  ],\n  \"summary\": \"This chest X-ray shows significant findings. There is consolidation and opacity in the right lower lobe, suggesting pneumonia or fluid. There is also a rounded density in the right lower lobe. Additionally, there is atelectasis (lung collapse) in the right lower lobe and a nodule (spot) in the left upper lobe. Radiodensities are also seen in both axilla.\",\n  \"references\": []\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral lower lobe atelectasis.",
+    "Right lower lobe consolidation.",
+    "Right lower lobe opacity.",
+    "Right lower lobe rounded density.",
+    "Left upper lobe nodule.",
+    "Left upper lobe nodule.",
+    "Left axillary radiodensities.",
+    "Right axillary radiodensities.",
+    "Heart size is normal.",
+    "Mediastinum is normal.",
+    "Diaphragm is unremarkable.",
+    "Bones are unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lower lobe consolidation",
+      "severity": "Moderate",
+      "confidence": 0,
+      "description": "Consolidation visualized in the right lower lobe."
+    },
+    {
+      "name": "Right lower lobe rounded density",
+      "severity": "Mild",
+      "confidence": 0,
+      "description": "A rounded density is noted in the right lower lobe."
+    },
+    {
+      "name": "Right lower lobe atelectasis",
+      "severity": "Mild",
+      "confidence": 0,
+      "description": "Atelectasis visualized in the right lower lobe."
+    },
+    {
+      "name": "Left upper lobe nodule",
+      "severity": "Mild",
+      "confidence": 0,
+      "description": "A nodule is noted in the left upper lobe."
+    },
+    {
+      "name": "Left axillary radiodensities",
+      "severity": "Mild",
+      "confidence": 0,
+      "description": "Radiodensities noted in the left axilla."
+    },
+    {
+      "name": "Right axillary radiodensities",
+      "severity": "Mild",
+      "confidence": 0,
+      "description": "Radiodensities noted in the right axilla."
+    }
+  ],
+  "summary": "This chest X-ray shows significant findings. There is consolidation and opacity in the right lower lobe, suggesting pneumonia or fluid. There is also a rounded density in the right lower lobe. Additionally, there is atelectasis (lung collapse) in the right lower lobe and a nodule (spot) in the left upper lobe. Radiodensities are also seen in both axilla.",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24485,
+    "bytesOut": 24485,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T11:33:59.554Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

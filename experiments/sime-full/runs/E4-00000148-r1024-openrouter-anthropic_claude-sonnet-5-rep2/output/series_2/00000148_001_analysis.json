@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_2/00000148_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP upright)\",\"quality\":\"Good\",\"findings\":[\"Round metallic/radiopaque foreign body with a lucent center, approximately 1 cm in diameter, overlying the right mid-lung field (right 4th-5th intercostal space), with a thin linear density extending superiorly - consistent with a surgically placed device (e.g., vascular access port or similar hardware), not a foreign body aspiration given its fixed, encapsulated appearance\",\"Lungs are well-expanded bilaterally with clear lung fields, no focal consolidation, effusion, or pneumothorax identified\",\"Cardiac silhouette is normal in size and contour\",\"Mediastinal contours are within normal limits\",\"Visualized osseous structures (ribs, clavicles, shoulders) appear intact without acute fracture\",\"Gastric bubble noted in the left upper quadrant below the diaphragm, within normal limits\",\"Soft tissues are unremarkable\"],\"abnormalities\":[{\"name\":\"Implanted device/port overlying right lung field\",\"description\":\"A well-defined, circular radiopaque structure with a central lucency and an attached thin catheter-like line is seen in the right upper-to-mid lung zone. This appearance is most consistent with an implanted vascular access port (e.g., chemotherapy port) or similar medical device rather than a pulmonary nodule or foreign body aspiration, given its regular geometric shape and tethered line.\",\"severity\":\"Mild\",\"confidence\":72}],\"summary\":\"This chest X-ray shows the lungs are clear and well-expanded with no signs of pneumonia, fluid, or collapsed lung. The heart size and shape look normal. There is a small, round metal-like object with a line attached to it on the right side of the chest - this most likely represents a surgically implanted medical device, such as a port used for giving medications or chemotherapy through a vein, rather than an abnormal growth or foreign object in the lung. No fractures or other acute issues are seen in the bones. Overall, the image appears largely normal aside from the device, but this should be confirmed with your medical history and reviewed by your physician.\",\"references\":[\"https://radiopaedia.org/articles/implantable-venous-access-port\",\"https://www.ajronline.org/doi/10.2214/AJR.09.3519\",\"https://pubs.rsna.org/doi/10.1148/rg.2016150249\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Good",
+  "findings": [
+    "Round metallic/radiopaque foreign body with a lucent center, approximately 1 cm in diameter, overlying the right mid-lung field (right 4th-5th intercostal space), with a thin linear density extending superiorly - consistent with a surgically placed device (e.g., vascular access port or similar hardware), not a foreign body aspiration given its fixed, encapsulated appearance",
+    "Lungs are well-expanded bilaterally with clear lung fields, no focal consolidation, effusion, or pneumothorax identified",
+    "Cardiac silhouette is normal in size and contour",
+    "Mediastinal contours are within normal limits",
+    "Visualized osseous structures (ribs, clavicles, shoulders) appear intact without acute fracture",
+    "Gastric bubble noted in the left upper quadrant below the diaphragm, within normal limits",
+    "Soft tissues are unremarkable"
+  ],
+  "abnormalities": [
+    {
+      "name": "Implanted device/port overlying right lung field",
+      "severity": "Mild",
+      "confidence": 72,
+      "description": "A well-defined, circular radiopaque structure with a central lucency and an attached thin catheter-like line is seen in the right upper-to-mid lung zone. This appearance is most consistent with an implanted vascular access port (e.g., chemotherapy port) or similar medical device rather than a pulmonary nodule or foreign body aspiration, given its regular geometric shape and tethered line."
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs are clear and well-expanded with no signs of pneumonia, fluid, or collapsed lung. The heart size and shape look normal. There is a small, round metal-like object with a line attached to it on the right side of the chest - this most likely represents a surgically implanted medical device, such as a port used for giving medications or chemotherapy through a vein, rather than an abnormal growth or foreign object in the lung. No fractures or other acute issues are seen in the bones. Overall, the image appears largely normal aside from the device, but this should be confirmed with your medical history and reviewed by your physician.",
+  "references": [
+    "https://radiopaedia.org/articles/implantable-venous-access-port",
+    "https://www.ajronline.org/doi/10.2214/AJR.09.3519",
+    "https://pubs.rsna.org/doi/10.1148/rg.2016150249"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 440372,
+    "bytesOut": 439172,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T09:40:44.642Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

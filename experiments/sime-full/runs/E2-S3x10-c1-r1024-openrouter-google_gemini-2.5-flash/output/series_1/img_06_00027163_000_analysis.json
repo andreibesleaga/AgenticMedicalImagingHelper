@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_1/img_06_00027163_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lung fields show diffuse reticulonodular opacities bilaterally, more prominent in the lower lung zones.\",\n    \"The cardiac silhouette is within normal limits for size and contour.\",\n    \"The mediastinum is not widened.\",\n    \"The hila appear unremarkable.\",\n    \"The diaphragmatic contours are well-defined, with no evidence of pleural effusion or pneumothorax.\",\n    \"The osseous structures, including the ribs, clavicles, and visualized thoracic spine, appear intact with no acute abnormalities.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Diffuse Reticulonodular Opacities\",\n      \"description\": \"Bilateral, diffuse reticulonodular opacities are observed throughout both lung fields, with a slight predilection for the lower lobes. This pattern suggests interstitial lung disease or a diffuse infiltrative process.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows changes in both lungs, appearing as a network of fine lines and small dots spread throughout, especially in the lower parts of the lungs. This pattern suggests a condition affecting the tissue and air sacs of the lungs, known as interstitial lung disease. The heart size, major blood vessels, and diaphragm appear normal. There are no signs of fluid around the lungs or a collapsed lung. Further investigation may be needed to determine the exact cause of these lung changes.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900695/\",\n    \"https://radiopaedia.org/articles/interstitial-lung-disease?lang=us\",\n    \"https://www.thoracic.org/patients/patient-resources/lung-disease-topics/interstitial-lung-disease.php\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lung fields show diffuse reticulonodular opacities bilaterally, more prominent in the lower lung zones.",
+    "The cardiac silhouette is within normal limits for size and contour.",
+    "The mediastinum is not widened.",
+    "The hila appear unremarkable.",
+    "The diaphragmatic contours are well-defined, with no evidence of pleural effusion or pneumothorax.",
+    "The osseous structures, including the ribs, clavicles, and visualized thoracic spine, appear intact with no acute abnormalities."
+  ],
+  "abnormalities": [
+    {
+      "name": "Diffuse Reticulonodular Opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Bilateral, diffuse reticulonodular opacities are observed throughout both lung fields, with a slight predilection for the lower lobes. This pattern suggests interstitial lung disease or a diffuse infiltrative process."
+    }
+  ],
+  "summary": "The chest X-ray shows changes in both lungs, appearing as a network of fine lines and small dots spread throughout, especially in the lower parts of the lungs. This pattern suggests a condition affecting the tissue and air sacs of the lungs, known as interstitial lung disease. The heart size, major blood vessels, and diaphragm appear normal. There are no signs of fluid around the lungs or a collapsed lung. Further investigation may be needed to determine the exact cause of these lung changes.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900695/",
+    "https://radiopaedia.org/articles/interstitial-lung-disease?lang=us",
+    "https://www.thoracic.org/patients/patient-resources/lung-disease-topics/interstitial-lung-disease.php"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 396187,
+    "bytesOut": 393609,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:34:32.367Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

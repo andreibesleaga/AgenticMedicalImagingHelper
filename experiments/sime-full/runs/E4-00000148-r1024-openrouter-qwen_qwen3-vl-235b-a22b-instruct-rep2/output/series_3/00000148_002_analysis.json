@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_3/00000148_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Well-defined, round, radiopaque object located in the left mid-lung field, likely a foreign body or medical device.\",\n    \"No evidence of acute consolidation, pneumothorax, or pleural effusion.\",\n    \"Cardiac silhouette and mediastinal contours appear within normal limits.\",\n    \"Diaphragm and costophrenic angles are sharp and clear.\",\n    \"Bony thorax including ribs, clavicles, and spine show no acute fractures or deformities.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Intrathoracic Foreign Body\",\n      \"description\": \"A circular, radiopaque object with central lucency is visible in the left mid-lung zone. Its appearance suggests it may be an ingested or implanted device such as a button battery or a medical marker. No surrounding infiltrate or mass effect is apparent.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 92\n    }\n  ],\n  \"summary\": \"This chest X-ray shows a small, round, dense object in the left lung area. It’s likely not part of the body — possibly something swallowed or placed there for medical reasons. There are no signs of infection, fluid, or lung collapse. The heart and bones look normal. A doctor should evaluate this object to determine its origin and whether it needs removal or monitoring.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-x-ray-foreign-body\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7081357/\",\n    \"https://www.mayoclinic.org/tests-procedures/chest-x-ray/about/pac-20393466\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Well-defined, round, radiopaque object located in the left mid-lung field, likely a foreign body or medical device.",
+    "No evidence of acute consolidation, pneumothorax, or pleural effusion.",
+    "Cardiac silhouette and mediastinal contours appear within normal limits.",
+    "Diaphragm and costophrenic angles are sharp and clear.",
+    "Bony thorax including ribs, clavicles, and spine show no acute fractures or deformities."
+  ],
+  "abnormalities": [
+    {
+      "name": "Intrathoracic Foreign Body",
+      "severity": "Mild",
+      "confidence": 92,
+      "description": "A circular, radiopaque object with central lucency is visible in the left mid-lung zone. Its appearance suggests it may be an ingested or implanted device such as a button battery or a medical marker. No surrounding infiltrate or mass effect is apparent."
+    }
+  ],
+  "summary": "This chest X-ray shows a small, round, dense object in the left lung area. It’s likely not part of the body — possibly something swallowed or placed there for medical reasons. There are no signs of infection, fluid, or lung collapse. The heart and bones look normal. A doctor should evaluate this object to determine its origin and whether it needs removal or monitoring.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-x-ray-foreign-body",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7081357/",
+    "https://www.mayoclinic.org/tests-procedures/chest-x-ray/about/pac-20393466"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 453156,
+    "bytesOut": 410780,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:28:28.624Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,60 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_2/00000219_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP upright)\",\"quality\":\"Fair\",\"findings\":[\"Lungs are relatively well-aerated bilaterally with no focal consolidation identified.\",\"Cardiac silhouette appears mildly enlarged with cardiothoracic ratio approaching the upper limits of normal.\",\"Mediastinal contours are within expected limits; trachea appears midline.\",\"Visualized osseous structures including clavicles, scapulae, and proximal humeri appear grossly intact without acute fracture.\",\"Costophrenic angles are visualized; no definite large pleural effusion identified.\",\"Patient rotation and suboptimal positioning noted, limiting full assessment of symmetry.\",\"Superimposed skin folds, soft tissue, and breast shadows noted bilaterally, particularly at the lower lung zones.\",\"Degenerative changes may be present in the thoracic spine, though detailed evaluation limited by AP projection.\",\"No obvious pneumothorax identified within the limits of this view.\"],\"abnormalities\":[{\"name\":\"Mild cardiomegaly\",\"description\":\"The cardiac silhouette appears mildly enlarged relative to thoracic width, which could reflect cardiomegaly versus magnification artifact from AP technique and patient positioning.\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Suboptimal positioning/rotation\",\"description\":\"Asymmetry of the clavicles and soft tissue structures suggests patient rotation, which can affect accurate assessment of mediastinal and cardiac structures.\",\"severity\":\"Mild\",\"confidence\":55}],\"summary\":\"This is a chest X-ray showing the lungs, heart, and bones of the chest. The lungs appear generally clear without obvious signs of pneumonia or significant fluid buildup. The heart shadow looks slightly larger than typical, but this could be due to the way the X-ray was taken (patient positioning) rather than a true heart problem. The image quality is somewhat limited due to rotation of the patient during the scan, which can make some structures harder to evaluate precisely. The bones visible (shoulders, collarbones) appear intact without fractures. Overall, no urgent or severe abnormality is clearly identified, but given the technical limitations, a follow-up with better positioning or correlation with clinical symptoms is recommended for a more definitive evaluation.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.ncbi.nlm.nih.gov/books/NBK546638/\",\"https://pubs.rsna.org/doi/10.1148/rg.2020190105\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Fair",
+  "findings": [
+    "Lungs are relatively well-aerated bilaterally with no focal consolidation identified.",
+    "Cardiac silhouette appears mildly enlarged with cardiothoracic ratio approaching the upper limits of normal.",
+    "Mediastinal contours are within expected limits; trachea appears midline.",
+    "Visualized osseous structures including clavicles, scapulae, and proximal humeri appear grossly intact without acute fracture.",
+    "Costophrenic angles are visualized; no definite large pleural effusion identified.",
+    "Patient rotation and suboptimal positioning noted, limiting full assessment of symmetry.",
+    "Superimposed skin folds, soft tissue, and breast shadows noted bilaterally, particularly at the lower lung zones.",
+    "Degenerative changes may be present in the thoracic spine, though detailed evaluation limited by AP projection.",
+    "No obvious pneumothorax identified within the limits of this view."
+  ],
+  "abnormalities": [
+    {
+      "name": "Mild cardiomegaly",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "The cardiac silhouette appears mildly enlarged relative to thoracic width, which could reflect cardiomegaly versus magnification artifact from AP technique and patient positioning."
+    },
+    {
+      "name": "Suboptimal positioning/rotation",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Asymmetry of the clavicles and soft tissue structures suggests patient rotation, which can affect accurate assessment of mediastinal and cardiac structures."
+    }
+  ],
+  "summary": "This is a chest X-ray showing the lungs, heart, and bones of the chest. The lungs appear generally clear without obvious signs of pneumonia or significant fluid buildup. The heart shadow looks slightly larger than typical, but this could be due to the way the X-ray was taken (patient positioning) rather than a true heart problem. The image quality is somewhat limited due to rotation of the patient during the scan, which can make some structures harder to evaluate precisely. The bones visible (shoulders, collarbones) appear intact without fractures. Overall, no urgent or severe abnormality is clearly identified, but given the technical limitations, a follow-up with better positioning or correlation with clinical symptoms is recommended for a more definitive evaluation.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.ncbi.nlm.nih.gov/books/NBK546638/",
+    "https://pubs.rsna.org/doi/10.1148/rg.2020190105"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 385977,
+    "bytesOut": 381054,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T10:29:17.639Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

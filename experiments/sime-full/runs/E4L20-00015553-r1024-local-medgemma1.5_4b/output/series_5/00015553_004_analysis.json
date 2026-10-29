@@ -1,0 +1,41 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00015553/series_5/00015553_004.png",
+  "seriesId": "series_5",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear.\",\n    \"The heart size is mildly enlarged.\",\n    \"There is no pleural effusion or pneumothorax.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This is a chest X-ray showing clear lungs. The heart appears slightly larger than normal. There are no fluid or air leaks seen around the lungs or heart.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-x-ray\",\n    \"https://www.radiologyinfo.org/en/services/chest-x-ray\",\n    \"https://www.medscape.com/slideshow/chest-x-ray-interpretation-5131554\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear.",
+    "The heart size is mildly enlarged.",
+    "There is no pleural effusion or pneumothorax."
+  ],
+  "abnormalities": [],
+  "summary": "This is a chest X-ray showing clear lungs. The heart appears slightly larger than normal. There are no fluid or air leaks seen around the lungs or heart.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-x-ray",
+    "https://www.radiologyinfo.org/en/services/chest-x-ray",
+    "https://www.medscape.com/slideshow/chest-x-ray-interpretation-5131554"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 431261,
+    "bytesOut": 330910,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T09:36:33.334Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

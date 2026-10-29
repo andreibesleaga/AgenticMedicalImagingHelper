@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S3x10/series_3/img_09_00009918_001.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right lower lobe opacity with associated volume loss and elevation of the right hemidiaphragm.\",\n    \"Small calcified granuloma noted in the right lower lobe.\",\n    \"Tracheal deviation to the right.\",\n    \"Crowding of the right lower lobe bronchi.\",\n    \"Left lung appears clear without focal consolidation or pleural effusion.\",\n    \"Cardiomediastinal silhouette is unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Lower Lobe Atelectasis/Consolidation\",\n      \"description\": \"There is a significant opacity in the right lower lobe, accompanied by signs of volume loss including elevation of the right hemidiaphragm, crowding of the right lower lobe bronchi, and rightward tracheal deviation. This is consistent with atelectasis or consolidation.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Right Lower Lobe Granuloma\",\n      \"description\": \"A small, well-defined calcified lesion is present in the right lower lobe, suggestive of a granuloma.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows an area of increased density in the lower part of the right lung, which appears to be shrunken. This is likely due to either atelectasis (a collapsed lung segment) or consolidation (fluid or tissue filling the air sacs), causing the diaphragm on that side to be slightly elevated and the windpipe (trachea) to shift towards the right. There is also a small, old calcified scar in the same area of the right lung. The left lung appears clear, and the heart and major blood vessels look normal. These findings suggest a condition affecting the right lower lung, which would require further evaluation by a doctor to determine the exact cause and best course of action.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/atelectasis\",\n    \"https://radiopaedia.org/articles/pulmonary-consolidation\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4960309/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Right lower lobe opacity with associated volume loss and elevation of the right hemidiaphragm.",
+    "Small calcified granuloma noted in the right lower lobe.",
+    "Tracheal deviation to the right.",
+    "Crowding of the right lower lobe bronchi.",
+    "Left lung appears clear without focal consolidation or pleural effusion.",
+    "Cardiomediastinal silhouette is unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Lower Lobe Atelectasis/Consolidation",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "There is a significant opacity in the right lower lobe, accompanied by signs of volume loss including elevation of the right hemidiaphragm, crowding of the right lower lobe bronchi, and rightward tracheal deviation. This is consistent with atelectasis or consolidation."
+    },
+    {
+      "name": "Right Lower Lobe Granuloma",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "A small, well-defined calcified lesion is present in the right lower lobe, suggestive of a granuloma."
+    }
+  ],
+  "summary": "The chest X-ray shows an area of increased density in the lower part of the right lung, which appears to be shrunken. This is likely due to either atelectasis (a collapsed lung segment) or consolidation (fluid or tissue filling the air sacs), causing the diaphragm on that side to be slightly elevated and the windpipe (trachea) to shift towards the right. There is also a small, old calcified scar in the same area of the right lung. The left lung appears clear, and the heart and major blood vessels look normal. These findings suggest a condition affecting the right lower lung, which would require further evaluation by a doctor to determine the exact cause and best course of action.",
+  "references": [
+    "https://radiopaedia.org/articles/atelectasis",
+    "https://radiopaedia.org/articles/pulmonary-consolidation",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4960309/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23597,
+    "bytesOut": 23597,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:54:02.778Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

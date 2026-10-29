@@ -1,0 +1,66 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_3/00000092_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP/PA upright)\",\"quality\":\"Fair\",\"findings\":[\"Air-fluid level in left upper quadrant/left hemithorax base region consistent with gastric bubble or possible hydropneumothorax\",\"Lungs are hyperinflated bilaterally with increased radiolucency, suggesting possible hyperinflation or emphysematous change\",\"Cardiac silhouette appears within normal limits given AP technique\",\"No obvious focal consolidation identified in the visualized lung fields\",\"Bony thorax grossly intact; no acute displaced fracture identified\",\"Patient rotation present, limiting full assessment of mediastinal structures\",\"Surgical/skin marker visible overlying right upper chest ('DG' marker denoting side/position)\",\"Soft tissue densities overlying neck consistent with necklace/chain artifact\",\"Small linear metallic density projecting over lower thoracic/upper lumbar spine, could be external marker or artifact\"],\"abnormalities\":[{\"name\":\"Air-fluid level, left hemithorax base\",\"description\":\"A well-defined horizontal air-fluid level is seen in the left lower chest/upper abdominal region, which could represent a dilated gastric bubble, hiatal hernia with air-fluid level, or less likely a loculated hydropneumothorax. Further correlation with lateral view or CT recommended.\",\"severity\":\"Moderate\",\"confidence\":62},{\"name\":\"Bilateral lung hyperinflation\",\"description\":\"Both lungs appear hyperexpanded with flattened diaphragms and increased lucency, which may indicate chronic obstructive pulmonary disease or a technical factor related to deep inspiration during the exposure.\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Rotational positioning artifact\",\"description\":\"Asymmetry of the clavicles and medial ends relative to the spinous processes suggests the patient was rotated during image acquisition, which can affect assessment of mediastinal and cardiac contours.\",\"severity\":\"Mild\",\"confidence\":55}],\"summary\":\"This chest X-ray shows the lungs to be generally well-expanded without obvious signs of pneumonia or large fluid collections in the typical lung tissue. However, there is a notable air-fluid level — a horizontal line where air sits above fluid — near the lower left part of the chest, which most commonly represents a stomach bubble (normal) or could be from a hernia of the stomach through the diaphragm (hiatal hernia). Occasionally, this pattern can be seen with fluid or air in the space around the lung, so a follow-up view or CT scan may be needed for clarification. The lungs look slightly over-inflated, which can be a normal variant or related to conditions like COPD, but this should be correlated with the patient's symptoms and history. The patient was positioned slightly rotated during the X-ray, which can make some structures look asymmetric even when they are not actually abnormal. Overall, these findings warrant review by a radiologist and correlation with the patient's clinical history to determine if further imaging or treatment is needed.\",\"references\":[\"https://radiopaedia.org/articles/air-fluid-level\",\"https://pubs.rsna.org/doi/10.1148/rg.2020190108\",\"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP/PA upright)",
+  "quality": "Fair",
+  "findings": [
+    "Air-fluid level in left upper quadrant/left hemithorax base region consistent with gastric bubble or possible hydropneumothorax",
+    "Lungs are hyperinflated bilaterally with increased radiolucency, suggesting possible hyperinflation or emphysematous change",
+    "Cardiac silhouette appears within normal limits given AP technique",
+    "No obvious focal consolidation identified in the visualized lung fields",
+    "Bony thorax grossly intact; no acute displaced fracture identified",
+    "Patient rotation present, limiting full assessment of mediastinal structures",
+    "Surgical/skin marker visible overlying right upper chest ('DG' marker denoting side/position)",
+    "Soft tissue densities overlying neck consistent with necklace/chain artifact",
+    "Small linear metallic density projecting over lower thoracic/upper lumbar spine, could be external marker or artifact"
+  ],
+  "abnormalities": [
+    {
+      "name": "Air-fluid level, left hemithorax base",
+      "severity": "Moderate",
+      "confidence": 62,
+      "description": "A well-defined horizontal air-fluid level is seen in the left lower chest/upper abdominal region, which could represent a dilated gastric bubble, hiatal hernia with air-fluid level, or less likely a loculated hydropneumothorax. Further correlation with lateral view or CT recommended."
+    },
+    {
+      "name": "Bilateral lung hyperinflation",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "Both lungs appear hyperexpanded with flattened diaphragms and increased lucency, which may indicate chronic obstructive pulmonary disease or a technical factor related to deep inspiration during the exposure."
+    },
+    {
+      "name": "Rotational positioning artifact",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Asymmetry of the clavicles and medial ends relative to the spinous processes suggests the patient was rotated during image acquisition, which can affect assessment of mediastinal and cardiac contours."
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs to be generally well-expanded without obvious signs of pneumonia or large fluid collections in the typical lung tissue. However, there is a notable air-fluid level — a horizontal line where air sits above fluid — near the lower left part of the chest, which most commonly represents a stomach bubble (normal) or could be from a hernia of the stomach through the diaphragm (hiatal hernia). Occasionally, this pattern can be seen with fluid or air in the space around the lung, so a follow-up view or CT scan may be needed for clarification. The lungs look slightly over-inflated, which can be a normal variant or related to conditions like COPD, but this should be correlated with the patient's symptoms and history. The patient was positioned slightly rotated during the X-ray, which can make some structures look asymmetric even when they are not actually abnormal. Overall, these findings warrant review by a radiologist and correlation with the patient's clinical history to determine if further imaging or treatment is needed.",
+  "references": [
+    "https://radiopaedia.org/articles/air-fluid-level",
+    "https://pubs.rsna.org/doi/10.1148/rg.2020190108",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 400591,
+    "bytesOut": 397542,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T09:38:53.561Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

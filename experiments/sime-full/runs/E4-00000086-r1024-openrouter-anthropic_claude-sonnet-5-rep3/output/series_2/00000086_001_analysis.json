@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000086/series_2/00000086_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA upright)\",\"quality\":\"Fair\",\"findings\":[\"Lungs are grossly clear bilaterally with no focal consolidation, mass, or large effusion\",\"Cardiac silhouette appears mildly enlarged with cardiothoracic ratio difficult to assess precisely due to AP projection magnification\",\"Mediastinal contours grossly unremarkable, trachea midline\",\"Bony thorax and both shoulder girdles appear intact without acute fracture\",\"Mild blunting/haziness at the left costophrenic angle, possibly rotational or soft tissue overlap\",\"ECG lead marker and skin marker (likely nipple marker) overlying right upper chest region\",\"Patient rotation suggested by asymmetric clavicle positioning and soft tissue overlap, limiting full assessment\"],\"abnormalities\":[{\"name\":\"Possible cardiomegaly\",\"description\":\"Cardiac silhouette appears enlarged relative to thoracic width, though this may be exaggerated by patient positioning/rotation and AP technique\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Left costophrenic angle haziness\",\"description\":\"Subtle increased density at the left lower lung/costophrenic region, could represent minor pleural thickening, overlying soft tissue, or early effusion; low specificity given image quality\",\"severity\":\"Mild\",\"confidence\":30}],\"summary\":\"This chest X-ray shows the lungs look generally clear without obvious signs of pneumonia, significant fluid buildup, or masses. The heart shadow appears slightly large, but this can be affected by how the picture was taken (rotation, positioning) rather than true heart enlargement. There is a subtle area of haziness near the bottom of the left lung that could be due to overlapping soft tissue or a minor finding — this would need correlation with a repeat, well-positioned film or clinical context. Overall, no acute emergency findings are seen, but a radiologist's in-person review and possibly a repeat image are recommended for a definitive assessment.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph-technique\",\"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria\",\"https://pubs.rsna.org/doi/10.1148/rg.2019190005\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA upright)",
+  "quality": "Fair",
+  "findings": [
+    "Lungs are grossly clear bilaterally with no focal consolidation, mass, or large effusion",
+    "Cardiac silhouette appears mildly enlarged with cardiothoracic ratio difficult to assess precisely due to AP projection magnification",
+    "Mediastinal contours grossly unremarkable, trachea midline",
+    "Bony thorax and both shoulder girdles appear intact without acute fracture",
+    "Mild blunting/haziness at the left costophrenic angle, possibly rotational or soft tissue overlap",
+    "ECG lead marker and skin marker (likely nipple marker) overlying right upper chest region",
+    "Patient rotation suggested by asymmetric clavicle positioning and soft tissue overlap, limiting full assessment"
+  ],
+  "abnormalities": [
+    {
+      "name": "Possible cardiomegaly",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "Cardiac silhouette appears enlarged relative to thoracic width, though this may be exaggerated by patient positioning/rotation and AP technique"
+    },
+    {
+      "name": "Left costophrenic angle haziness",
+      "severity": "Mild",
+      "confidence": 30,
+      "description": "Subtle increased density at the left lower lung/costophrenic region, could represent minor pleural thickening, overlying soft tissue, or early effusion; low specificity given image quality"
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs look generally clear without obvious signs of pneumonia, significant fluid buildup, or masses. The heart shadow appears slightly large, but this can be affected by how the picture was taken (rotation, positioning) rather than true heart enlargement. There is a subtle area of haziness near the bottom of the left lung that could be due to overlapping soft tissue or a minor finding — this would need correlation with a repeat, well-positioned film or clinical context. Overall, no acute emergency findings are seen, but a radiologist's in-person review and possibly a repeat image are recommended for a definitive assessment.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-technique",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria",
+    "https://pubs.rsna.org/doi/10.1148/rg.2019190005"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 639281,
+    "bytesOut": 489372,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "alpha channel stripped",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T10:23:14.922Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

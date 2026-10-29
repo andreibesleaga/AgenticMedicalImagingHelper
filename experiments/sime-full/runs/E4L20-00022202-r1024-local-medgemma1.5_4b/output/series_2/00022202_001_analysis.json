@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00022202/series_2/00022202_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear, without consolidation or pleural effusion.\",\n    \"The heart size appears within normal limits.\",\n    \"The mediastinal contours are unremarkable.\",\n    \"No pneumothorax is identified.\",\n    \"There is a small rounded opacity in the right lung, likely representing a granuloma.\",\n    \"There is a small opacity in the left lower lung, likely representing atelectasis.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray shows clear lungs, a normal-sized heart, and unremarkable major structures. Tiny spots are visible in both lungs, which might be old infections or small cysts. There is no sign of infection (like pneumonia) or fluid buildup.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/granuloma#findings\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6177616/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear, without consolidation or pleural effusion.",
+    "The heart size appears within normal limits.",
+    "The mediastinal contours are unremarkable.",
+    "No pneumothorax is identified.",
+    "There is a small rounded opacity in the right lung, likely representing a granuloma.",
+    "There is a small opacity in the left lower lung, likely representing atelectasis."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray shows clear lungs, a normal-sized heart, and unremarkable major structures. Tiny spots are visible in both lungs, which might be old infections or small cysts. There is no sign of infection (like pneumonia) or fluid buildup.",
+  "references": [
+    "https://radiopaedia.org/articles/granuloma#findings",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6177616/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 448054,
+    "bytesOut": 341471,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:03:21.587Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

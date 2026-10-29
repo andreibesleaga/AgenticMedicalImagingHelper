@@ -1,0 +1,58 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000239/series_2/00000239_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA/AP)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Frontal chest radiograph demonstrating bilateral lung fields with visible vascular markings\",\n    \"Cardiac silhouette is visualized in the left hemithorax\",\n    \"Large rounded lucent (air-filled) structure noted in the lower central/left portion of the image, consistent with a distended gastric air bubble\",\n    \"Mediastinal structures appear midline, though exact alignment is difficult to confirm due to image quality\",\n    \"Ribs and bony thorax are partially visualized bilaterally\",\n    \"Soft tissue shadows overlying the lower thorax/upper abdomen region\",\n    \"Small radiopaque marker visible in the upper right corner of the image (likely a positioning or laterality marker)\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Prominent gastric air bubble / possible gastric distension\",\n      \"description\": \"A large, well-defined round lucency is seen in the lower part of the image, likely representing air within a distended stomach. This can be a normal finding (aerophagia) or may suggest gastric distension if excessively large.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 45\n    },\n    {\n      \"name\": \"Suboptimal image quality/positioning\",\n      \"description\": \"The image shows some blurring and lacks clear delineation of costophrenic angles and lower lung fields, limiting full assessment of pulmonary parenchyma and diaphragmatic contours.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 55\n    }\n  ],\n  \"summary\": \"This chest X-ray shows the lungs, heart, and surrounding structures. There is a large round air-filled area in the lower part of the image that most likely represents a normal amount of air in the stomach, a common and usually harmless finding. However, the overall image quality makes it difficult to fully evaluate the lungs and lower chest, so some details may be missed. It's important that a radiologist or your treating physician review the actual film directly, as this AI analysis has significant limitations due to image clarity and lack of clinical context (such as symptoms, patient history, or additional views).\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-radiograph\",\n    \"https://www.rsna.org/practice-tools/radiology-guidelines\",\n    \"https://pubs.rsna.org/journal/radiology\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Fair",
+  "findings": [
+    "Frontal chest radiograph demonstrating bilateral lung fields with visible vascular markings",
+    "Cardiac silhouette is visualized in the left hemithorax",
+    "Large rounded lucent (air-filled) structure noted in the lower central/left portion of the image, consistent with a distended gastric air bubble",
+    "Mediastinal structures appear midline, though exact alignment is difficult to confirm due to image quality",
+    "Ribs and bony thorax are partially visualized bilaterally",
+    "Soft tissue shadows overlying the lower thorax/upper abdomen region",
+    "Small radiopaque marker visible in the upper right corner of the image (likely a positioning or laterality marker)"
+  ],
+  "abnormalities": [
+    {
+      "name": "Prominent gastric air bubble / possible gastric distension",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "A large, well-defined round lucency is seen in the lower part of the image, likely representing air within a distended stomach. This can be a normal finding (aerophagia) or may suggest gastric distension if excessively large."
+    },
+    {
+      "name": "Suboptimal image quality/positioning",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "The image shows some blurring and lacks clear delineation of costophrenic angles and lower lung fields, limiting full assessment of pulmonary parenchyma and diaphragmatic contours."
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs, heart, and surrounding structures. There is a large round air-filled area in the lower part of the image that most likely represents a normal amount of air in the stomach, a common and usually harmless finding. However, the overall image quality makes it difficult to fully evaluate the lungs and lower chest, so some details may be missed. It's important that a radiologist or your treating physician review the actual film directly, as this AI analysis has significant limitations due to image clarity and lack of clinical context (such as symptoms, patient history, or additional views).",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.rsna.org/practice-tools/radiology-guidelines",
+    "https://pubs.rsna.org/journal/radiology"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24554,
+    "bytesOut": 24554,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-29T10:43:13.713Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

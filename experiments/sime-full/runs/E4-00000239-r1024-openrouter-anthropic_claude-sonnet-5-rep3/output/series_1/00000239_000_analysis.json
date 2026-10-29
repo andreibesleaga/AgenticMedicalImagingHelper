@@ -1,0 +1,66 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_1/00000239_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP, supine/portable)\",\"quality\":\"Fair\",\"findings\":[\"AP portable chest radiograph with patient rotation; soft tissue overlying right upper quadrant/left chest (possible panniculus or soft tissue fold overlying lower left hemithorax)\",\"Lungs appear grossly clear bilaterally with no focal consolidation, effusion, or pneumothorax identified\",\"Cardiac silhouette appears within normal limits for size, though partially obscured by rotation and positioning\",\"Mediastinal contours grossly unremarkable; trachea appears midline\",\"Visualized osseous structures (clavicles, ribs, cervical/thoracic spine) show no acute fracture\",\"Surgical clips/staples noted in the right lower chest/upper abdominal region, suggesting prior surgery\",\"Large soft tissue density overlying left lower chest/upper abdomen, possibly external (clothing, device, or patient positioning artifact) rather than intrathoracic pathology\",\"'L' marker and circular device marker present in right upper image field, consistent with lead marker/monitoring lead placement\",\"Costophrenic angles not fully visualized due to image cropping\"],\"abnormalities\":[{\"name\":\"Rotational positioning artifact\",\"description\":\"Patient appears rotated based on asymmetric clavicle positioning and soft tissue distribution, limiting full assessment of mediastinal and cardiac structures\",\"severity\":\"Mild\",\"confidence\":60},{\"name\":\"Soft tissue density, left lower chest/upper abdomen\",\"description\":\"Large rounded soft tissue opacity overlying the left lower hemithorax/upper abdomen region; could represent external device, clothing fold, or patient body habitus rather than true intrathoracic pathology given its well-defined superficial appearance\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Post-surgical clips\",\"description\":\"Small metallic clip-like densities seen in the right lower chest/upper abdominal region, suggesting prior surgical intervention (e.g., cholecystectomy or other abdominal surgery)\",\"severity\":\"Normal\",\"confidence\":55}],\"summary\":\"This chest X-ray was taken with the patient lying down and shows the lungs to be clear without signs of pneumonia, fluid buildup, or collapsed lung. The heart size appears normal, though the image is slightly rotated, which can make some structures harder to evaluate precisely. There are small metal clips visible in the lower right chest/upper belly area, which likely indicate a previous surgery. There is also a rounded soft tissue shadow on the lower left side of the chest that is probably from positioning, clothing, or body tissue rather than a lung problem, but this would need direct correlation with the patient's position during the scan. Overall, no urgent abnormalities are seen in the lungs or heart on this image. As always, a radiologist's direct review and clinical correlation are needed for definitive interpretation.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph-normal-appearances\",\"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria\",\"https://pubs.rsna.org/journal/radiology\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP, supine/portable)",
+  "quality": "Fair",
+  "findings": [
+    "AP portable chest radiograph with patient rotation; soft tissue overlying right upper quadrant/left chest (possible panniculus or soft tissue fold overlying lower left hemithorax)",
+    "Lungs appear grossly clear bilaterally with no focal consolidation, effusion, or pneumothorax identified",
+    "Cardiac silhouette appears within normal limits for size, though partially obscured by rotation and positioning",
+    "Mediastinal contours grossly unremarkable; trachea appears midline",
+    "Visualized osseous structures (clavicles, ribs, cervical/thoracic spine) show no acute fracture",
+    "Surgical clips/staples noted in the right lower chest/upper abdominal region, suggesting prior surgery",
+    "Large soft tissue density overlying left lower chest/upper abdomen, possibly external (clothing, device, or patient positioning artifact) rather than intrathoracic pathology",
+    "'L' marker and circular device marker present in right upper image field, consistent with lead marker/monitoring lead placement",
+    "Costophrenic angles not fully visualized due to image cropping"
+  ],
+  "abnormalities": [
+    {
+      "name": "Rotational positioning artifact",
+      "severity": "Mild",
+      "confidence": 60,
+      "description": "Patient appears rotated based on asymmetric clavicle positioning and soft tissue distribution, limiting full assessment of mediastinal and cardiac structures"
+    },
+    {
+      "name": "Soft tissue density, left lower chest/upper abdomen",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "Large rounded soft tissue opacity overlying the left lower hemithorax/upper abdomen region; could represent external device, clothing fold, or patient body habitus rather than true intrathoracic pathology given its well-defined superficial appearance"
+    },
+    {
+      "name": "Post-surgical clips",
+      "severity": "Normal",
+      "confidence": 55,
+      "description": "Small metallic clip-like densities seen in the right lower chest/upper abdominal region, suggesting prior surgical intervention (e.g., cholecystectomy or other abdominal surgery)"
+    }
+  ],
+  "summary": "This chest X-ray was taken with the patient lying down and shows the lungs to be clear without signs of pneumonia, fluid buildup, or collapsed lung. The heart size appears normal, though the image is slightly rotated, which can make some structures harder to evaluate precisely. There are small metal clips visible in the lower right chest/upper belly area, which likely indicate a previous surgery. There is also a rounded soft tissue shadow on the lower left side of the chest that is probably from positioning, clothing, or body tissue rather than a lung problem, but this would need direct correlation with the patient's position during the scan. Overall, no urgent abnormalities are seen in the lungs or heart on this image. As always, a radiologist's direct review and clinical correlation are needed for definitive interpretation.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-normal-appearances",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiology"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 384310,
+    "bytesOut": 378425,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T10:31:36.306Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

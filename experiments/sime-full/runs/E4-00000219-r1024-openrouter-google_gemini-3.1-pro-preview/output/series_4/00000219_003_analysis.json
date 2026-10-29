@@ -1,0 +1,78 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_4/00000219_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Sternal wires are present, indicating prior median sternotomy.\",\n    \"Prosthetic aortic and mitral valves are visible.\",\n    \"The heart is enlarged.\",\n    \"The thoracic aorta is unfolded/tortuous.\",\n    \"The lungs are clear of focal consolidation or significant pleural effusion.\",\n    \"There are small, rounded radiopacities in the lower lung zones, which may represent resolving infection or granulomas.\",\n    \"The diaphragms are distinct and well-defined.\",\n    \"The bony thorax, including ribs and clavicles, appears unremarkable.\",\n    \"Surgical clips are present in the central chest.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Prior Median Sternotomy\",\n      \"description\": \"Multiple sternal wires are present, indicating a history of open-heart surgery.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Prosthetic Heart Valves\",\n      \"description\": \"Two distinct radiopaque rings are seen in the expected locations of the aortic and mitral valves.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette is enlarged, occupying more than 50% of the cardiothoracic ratio.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Aortic Unfolding\",\n      \"description\": \"The descending thoracic aorta is tortuous and prominent.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Small Radiopacities\",\n      \"description\": \"Small, scattered opacities in the lower lung fields.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 60\n    }\n  ],\n  \"summary\": \"The chest X-ray shows evidence of previous heart surgery, as indicated by wires in the breastbone (sternum) and two artificial heart valves (aortic and mitral). The heart itself is enlarged, which is a common finding after valve surgery or in patients with a history of heart disease. The main blood vessel in the chest, the aorta, appears slightly wider and more curved than usual, often a normal sign of aging or high blood pressure. The lungs are mostly clear, but there are some small, faint spots in the lower parts, which could be small scars from past infections. Overall, the findings are consistent with someone who has had major heart surgery.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/sternotomy-wires\",\n    \"https://radiopaedia.org/articles/prosthetic-heart-valves-radiography\",\n    \"https://radiopaedia.org/articles/cardiomegaly\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Sternal wires are present, indicating prior median sternotomy.",
+    "Prosthetic aortic and mitral valves are visible.",
+    "The heart is enlarged.",
+    "The thoracic aorta is unfolded/tortuous.",
+    "The lungs are clear of focal consolidation or significant pleural effusion.",
+    "There are small, rounded radiopacities in the lower lung zones, which may represent resolving infection or granulomas.",
+    "The diaphragms are distinct and well-defined.",
+    "The bony thorax, including ribs and clavicles, appears unremarkable.",
+    "Surgical clips are present in the central chest."
+  ],
+  "abnormalities": [
+    {
+      "name": "Prior Median Sternotomy",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Multiple sternal wires are present, indicating a history of open-heart surgery."
+    },
+    {
+      "name": "Prosthetic Heart Valves",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Two distinct radiopaque rings are seen in the expected locations of the aortic and mitral valves."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The cardiac silhouette is enlarged, occupying more than 50% of the cardiothoracic ratio."
+    },
+    {
+      "name": "Aortic Unfolding",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "The descending thoracic aorta is tortuous and prominent."
+    },
+    {
+      "name": "Small Radiopacities",
+      "severity": "Mild",
+      "confidence": 60,
+      "description": "Small, scattered opacities in the lower lung fields."
+    }
+  ],
+  "summary": "The chest X-ray shows evidence of previous heart surgery, as indicated by wires in the breastbone (sternum) and two artificial heart valves (aortic and mitral). The heart itself is enlarged, which is a common finding after valve surgery or in patients with a history of heart disease. The main blood vessel in the chest, the aorta, appears slightly wider and more curved than usual, often a normal sign of aging or high blood pressure. The lungs are mostly clear, but there are some small, faint spots in the lower parts, which could be small scars from past infections. Overall, the findings are consistent with someone who has had major heart surgery.",
+  "references": [
+    "https://radiopaedia.org/articles/sternotomy-wires",
+    "https://radiopaedia.org/articles/prosthetic-heart-valves-radiography",
+    "https://radiopaedia.org/articles/cardiomegaly"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 392020,
+    "bytesOut": 388042,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:24:01.493Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

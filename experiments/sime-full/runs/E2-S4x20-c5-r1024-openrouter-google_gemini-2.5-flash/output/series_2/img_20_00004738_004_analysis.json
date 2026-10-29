@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_2/img_20_00004738_004.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral patchy airspace opacities are noted, more prominent in the left lung.\",\n    \"A left-sided port-a-cath with its catheter extending into the superior vena cava is present.\",\n    \"No definite pneumothorax or large pleural effusion is identified.\",\n    \"The heart is enlarged.\",\n    \"Bilateral costophrenic angles are clear.\",\n    \"Bony structures appear intact for the visualized portions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Airspace Opacities\",\n      \"description\": \"Diffuse bilateral patchy airspace opacities are observed, more pronounced in the left lung. This pattern suggests infiltrative processes such as pneumonia, pulmonary edema, or acute respiratory distress syndrome.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette appears enlarged, indicating cardiomegaly.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows cloudy areas in both lungs, which are more noticeable on the left side. These findings can be seen with conditions like pneumonia, fluid in the lungs (pulmonary edema), or inflammation of the lungs. The heart also appears somewhat enlarged. There are no signs of a collapsed lung or a large amount of fluid around the lungs. A medical device called a port-a-cath, used for giving medications, is visible on the left side.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2020190149\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMicm1514782\",\n    \"https://radiopaedia.org/articles/cardiomegaly\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral patchy airspace opacities are noted, more prominent in the left lung.",
+    "A left-sided port-a-cath with its catheter extending into the superior vena cava is present.",
+    "No definite pneumothorax or large pleural effusion is identified.",
+    "The heart is enlarged.",
+    "Bilateral costophrenic angles are clear.",
+    "Bony structures appear intact for the visualized portions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Airspace Opacities",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Diffuse bilateral patchy airspace opacities are observed, more pronounced in the left lung. This pattern suggests infiltrative processes such as pneumonia, pulmonary edema, or acute respiratory distress syndrome."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "The cardiac silhouette appears enlarged, indicating cardiomegaly."
+    }
+  ],
+  "summary": "The X-ray of your chest shows cloudy areas in both lungs, which are more noticeable on the left side. These findings can be seen with conditions like pneumonia, fluid in the lungs (pulmonary edema), or inflammation of the lungs. The heart also appears somewhat enlarged. There are no signs of a collapsed lung or a large amount of fluid around the lungs. A medical device called a port-a-cath, used for giving medications, is visible on the left side.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2020190149",
+    "https://www.nejm.org/doi/full/10.1056/NEJMicm1514782",
+    "https://radiopaedia.org/articles/cardiomegaly"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 398119,
+    "bytesOut": 393822,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:46:13.953Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

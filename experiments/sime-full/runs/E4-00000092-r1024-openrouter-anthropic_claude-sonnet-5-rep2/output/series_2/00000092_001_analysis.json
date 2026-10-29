@@ -1,0 +1,61 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_2/00000092_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP/PA)\",\"quality\":\"Fair\",\"findings\":[\"Frontal chest radiograph demonstrating bony thorax, lungs, mediastinum, and upper abdomen.\",\"Lungs are well-aerated bilaterally with no focal consolidation identified.\",\"Prominent gastric air-fluid bubble noted in the left upper quadrant beneath the left hemidiaphragm, with mottled lucencies suggestive of air mixed with gastric contents.\",\"Cardiac silhouette appears within normal limits for size and contour given AP technique.\",\"Mediastinal and tracheal structures appear midline without obvious deviation.\",\"Osseous structures of the ribs, clavicles, and upper spine appear grossly intact without acute fracture.\",\"Soft tissue of the shoulders and chest wall is symmetric.\",\"Laterality marker 'L' and 'HS' annotation visible in right upper corner of image (image is mirrored/labeled).\",\"No definite pleural effusion or pneumothorax identified.\",\"Patient positioning appears slightly rotated; some soft tissue overlap limits full assessment of lung apices and bases.\"],\"abnormalities\":[{\"name\":\"Prominent gastric bubble\",\"description\":\"Large air-filled structure with mottled lucent pattern seen in the left upper quadrant/subdiaphragmatic region, likely representing a distended stomach with air and fluid/food content. This can be a normal variant, especially in a crying or gas-swallowing infant/child, but should be correlated clinically.\",\"severity\":\"Mild\",\"confidence\":55},{\"name\":\"Suboptimal positioning/rotation\",\"description\":\"Mild rotation of the patient is suggested by asymmetry in clavicle and rib projection, which can affect accurate assessment of mediastinal contours and lung fields.\",\"severity\":\"Mild\",\"confidence\":50}],\"summary\":\"This chest X-ray shows the lungs are clear and well-expanded, without signs of pneumonia, fluid buildup, or collapsed lung. The heart size appears normal. There is a prominent gas/air pattern seen in the stomach area on the left side, under the diaphragm — this is often just swallowed air and is commonly seen in children, especially if they were crying or gulping air during the scan. The ribs and collarbones look intact with no fractures. The image is taken from the front and labeled on the right side, and there is a slight rotation in positioning, which is common and usually doesn't affect the important findings. Overall, this chest X-ray does not show any serious acute abnormality, though all images should be reviewed by a radiologist or your treating physician for a complete clinical correlation.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph-assessment\",\"https://www.ncbi.nlm.nih.gov/books/NBK546635/\",\"https://pubs.rsna.org/doi/10.1148/rg.2019190081\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP/PA)",
+  "quality": "Fair",
+  "findings": [
+    "Frontal chest radiograph demonstrating bony thorax, lungs, mediastinum, and upper abdomen.",
+    "Lungs are well-aerated bilaterally with no focal consolidation identified.",
+    "Prominent gastric air-fluid bubble noted in the left upper quadrant beneath the left hemidiaphragm, with mottled lucencies suggestive of air mixed with gastric contents.",
+    "Cardiac silhouette appears within normal limits for size and contour given AP technique.",
+    "Mediastinal and tracheal structures appear midline without obvious deviation.",
+    "Osseous structures of the ribs, clavicles, and upper spine appear grossly intact without acute fracture.",
+    "Soft tissue of the shoulders and chest wall is symmetric.",
+    "Laterality marker 'L' and 'HS' annotation visible in right upper corner of image (image is mirrored/labeled).",
+    "No definite pleural effusion or pneumothorax identified.",
+    "Patient positioning appears slightly rotated; some soft tissue overlap limits full assessment of lung apices and bases."
+  ],
+  "abnormalities": [
+    {
+      "name": "Prominent gastric bubble",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Large air-filled structure with mottled lucent pattern seen in the left upper quadrant/subdiaphragmatic region, likely representing a distended stomach with air and fluid/food content. This can be a normal variant, especially in a crying or gas-swallowing infant/child, but should be correlated clinically."
+    },
+    {
+      "name": "Suboptimal positioning/rotation",
+      "severity": "Mild",
+      "confidence": 50,
+      "description": "Mild rotation of the patient is suggested by asymmetry in clavicle and rib projection, which can affect accurate assessment of mediastinal contours and lung fields."
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs are clear and well-expanded, without signs of pneumonia, fluid buildup, or collapsed lung. The heart size appears normal. There is a prominent gas/air pattern seen in the stomach area on the left side, under the diaphragm — this is often just swallowed air and is commonly seen in children, especially if they were crying or gulping air during the scan. The ribs and collarbones look intact with no fractures. The image is taken from the front and labeled on the right side, and there is a slight rotation in positioning, which is common and usually doesn't affect the important findings. Overall, this chest X-ray does not show any serious acute abnormality, though all images should be reviewed by a radiologist or your treating physician for a complete clinical correlation.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-assessment",
+    "https://www.ncbi.nlm.nih.gov/books/NBK546635/",
+    "https://pubs.rsna.org/doi/10.1148/rg.2019190081"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 421309,
+    "bytesOut": 418288,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T09:38:37.758Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_2/img_05_00022764_006.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Large left-sided pleural effusion with an air-fluid level, likely representing a hydropneumothorax.\",\n    \"Mediastinal shift to the right.\",\n    \"Right lung appears clear.\",\n    \"Left lung field is largely obscured by the effusion and pneumothorax.\",\n    \"Nasogastric tube is visible, with its tip in the stomach.\",\n    \"Left shoulder shows a metallic marker, suggesting a potential skin lesion or foreign body in that area.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Hydropneumothorax\",\n      \"description\": \"A significant collection of both fluid and air in the left pleural space, evidenced by a large air-fluid level and obscuration of the left lung. This is causing a mediastinal shift to the right.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"The mediastinum, including the trachea and heart silhouette, is displaced to the right due to the mass effect from the left hydropneumothorax.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The X-ray shows a significant accumulation of both fluid and air in the left side of the chest, a condition known as a hydropneumothorax. This is causing the central chest structures, including the heart and windpipe, to be pushed towards the right side. The right lung appears clear. A feeding tube is visible, correctly positioned in the stomach. There is also a small metallic marker on the left shoulder, which might indicate a skin tag or a small object on the patient's skin.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/hydropneumothorax\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK441865/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Large left-sided pleural effusion with an air-fluid level, likely representing a hydropneumothorax.",
+    "Mediastinal shift to the right.",
+    "Right lung appears clear.",
+    "Left lung field is largely obscured by the effusion and pneumothorax.",
+    "Nasogastric tube is visible, with its tip in the stomach.",
+    "Left shoulder shows a metallic marker, suggesting a potential skin lesion or foreign body in that area."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Hydropneumothorax",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "A significant collection of both fluid and air in the left pleural space, evidenced by a large air-fluid level and obscuration of the left lung. This is causing a mediastinal shift to the right."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The mediastinum, including the trachea and heart silhouette, is displaced to the right due to the mass effect from the left hydropneumothorax."
+    }
+  ],
+  "summary": "The X-ray shows a significant accumulation of both fluid and air in the left side of the chest, a condition known as a hydropneumothorax. This is causing the central chest structures, including the heart and windpipe, to be pushed towards the right side. The right lung appears clear. A feeding tube is visible, correctly positioned in the stomach. There is also a small metallic marker on the left shoulder, which might indicate a skin tag or a small object on the patient's skin.",
+  "references": [
+    "https://radiopaedia.org/articles/hydropneumothorax",
+    "https://www.ncbi.nlm.nih.gov/books/NBK441865/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 444722,
+    "bytesOut": 443869,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:35:29.744Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

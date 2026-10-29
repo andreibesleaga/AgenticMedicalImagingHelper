@@ -1,0 +1,53 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000296/series_4/00000296_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Good\",\"findings\":[\"Lungs appear well-aerated bilaterally with no focal consolidation\",\"Cardiac silhouette appears within normal size limits, though partially obscured by soft tissue overlying the lower chest\",\"Mediastinal contours are midline without significant widening\",\"Visualized osseous structures (ribs, clavicles, spine) appear intact without acute fracture\",\"Costophrenic angles are not fully visualized at the inferior margin of the image\",\"Soft tissue densities are seen overlying the lower chest/upper abdomen bilaterally, possibly representing breast tissue or patient positioning artifact\",\"No obvious pneumothorax or large pleural effusion identified in the visualized lung fields\",\"Trachea appears midline\"],\"abnormalities\":[{\"name\":\"Incomplete inferior field of view\",\"description\":\"The image is cropped/incomplete at the lower chest and costophrenic angles, limiting full assessment of the lung bases and heart borders\",\"severity\":\"Mild\",\"confidence\":60}],\"summary\":\"This is a chest X-ray showing the lungs, heart, and surrounding bones. The lungs appear to be filled with air normally and there is no obvious sign of fluid, collapse, or significant abnormal shadowing in the visible portions. The heart size looks generally normal, though the bottom part of the image is cut off, making it hard to fully evaluate the lower lungs and heart borders. There's some soft tissue overlying the lower chest area that could just be normal anatomy (such as breast tissue) given the image quality. Overall, no major red-flag findings are seen in the visible areas, but a complete, properly positioned image reviewed by a radiologist would be needed to be fully certain there are no subtle issues, especially at the lung bases.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria\",\"https://pubs.rsna.org/doi/10.1148/radiol.2019182904\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs appear well-aerated bilaterally with no focal consolidation",
+    "Cardiac silhouette appears within normal size limits, though partially obscured by soft tissue overlying the lower chest",
+    "Mediastinal contours are midline without significant widening",
+    "Visualized osseous structures (ribs, clavicles, spine) appear intact without acute fracture",
+    "Costophrenic angles are not fully visualized at the inferior margin of the image",
+    "Soft tissue densities are seen overlying the lower chest/upper abdomen bilaterally, possibly representing breast tissue or patient positioning artifact",
+    "No obvious pneumothorax or large pleural effusion identified in the visualized lung fields",
+    "Trachea appears midline"
+  ],
+  "abnormalities": [
+    {
+      "name": "Incomplete inferior field of view",
+      "severity": "Mild",
+      "confidence": 60,
+      "description": "The image is cropped/incomplete at the lower chest and costophrenic angles, limiting full assessment of the lung bases and heart borders"
+    }
+  ],
+  "summary": "This is a chest X-ray showing the lungs, heart, and surrounding bones. The lungs appear to be filled with air normally and there is no obvious sign of fluid, collapse, or significant abnormal shadowing in the visible portions. The heart size looks generally normal, though the bottom part of the image is cut off, making it hard to fully evaluate the lower lungs and heart borders. There's some soft tissue overlying the lower chest area that could just be normal anatomy (such as breast tissue) given the image quality. Overall, no major red-flag findings are seen in the visible areas, but a complete, properly positioned image reviewed by a radiologist would be needed to be fully certain there are no subtle issues, especially at the lung bases.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Appropriateness-Criteria",
+    "https://pubs.rsna.org/doi/10.1148/radiol.2019182904"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 394556,
+    "bytesOut": 390346,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T10:35:42.570Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

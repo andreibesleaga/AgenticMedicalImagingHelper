@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00016012/series_3/00016012_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pneumothorax, or large pleural effusion identified.\",\n    \"Cardiomediastinal silhouette within normal limits for size and contour.\",\n    \"Hilar regions appear unremarkable.\",\n    \"Bony thorax is intact without acute fracture or destructive lesion.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray appears normal. The lungs look clear, and there are no signs of pneumonia, collapsed lung (pneumothorax), or fluid around the lungs (pleural effusion). The heart and major blood vessels in the chest are of normal size and shape. The bones of the chest also look healthy. In simple terms, everything appears to be within normal limits.\",\n  \"references\": [\n    \"https://www.acr.org/-/media/ACR/Files/Practice-Parameters/Xray-Chest.pdf\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.303095144\",\n    \"https://radiopaedia.org/articles/chest-x-ray-basic-interpretation\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pneumothorax, or large pleural effusion identified.",
+    "Cardiomediastinal silhouette within normal limits for size and contour.",
+    "Hilar regions appear unremarkable.",
+    "Bony thorax is intact without acute fracture or destructive lesion.",
+    "Diaphragms are intact and costophrenic angles are clear."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray appears normal. The lungs look clear, and there are no signs of pneumonia, collapsed lung (pneumothorax), or fluid around the lungs (pleural effusion). The heart and major blood vessels in the chest are of normal size and shape. The bones of the chest also look healthy. In simple terms, everything appears to be within normal limits.",
+  "references": [
+    "https://www.acr.org/-/media/ACR/Files/Practice-Parameters/Xray-Chest.pdf",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.303095144",
+    "https://radiopaedia.org/articles/chest-x-ray-basic-interpretation"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22770,
+    "bytesOut": 22770,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:25:15.509Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

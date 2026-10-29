@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000086/series_1/00000086_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear without focal consolidation or masses\",\n    \"Heart size is within normal limits\",\n    \"Mediastinum is midline and not widened\",\n    \"Right hemidiaphragm is elevated compared to the left\",\n    \"Blunting of the right costophrenic angle\",\n    \"Opacification of the right lower lung zone\",\n    \"Bony structures are intact\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Pleural Effusion\",\n      \"description\": \"Opacification and blunting of the right costophrenic angle, consistent with fluid accumulation in the pleural space.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Right Hemidiaphragm Elevation\",\n      \"description\": \"The right hemidiaphragm is positioned higher than normal, which may be associated with the adjacent effusion or an underlying abdominal process.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a small amount of fluid around the base of the right lung (pleural effusion) and an elevated right diaphragm. The heart and the rest of the lungs appear healthy. A pleural effusion can be caused by various factors including infection, heart failure, or inflammation, and requires clinical correlation by a doctor.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.acr.org/Clinical-Resources/Radiologic-Practice-Guidelines\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear without focal consolidation or masses",
+    "Heart size is within normal limits",
+    "Mediastinum is midline and not widened",
+    "Right hemidiaphragm is elevated compared to the left",
+    "Blunting of the right costophrenic angle",
+    "Opacification of the right lower lung zone",
+    "Bony structures are intact"
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Pleural Effusion",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Opacification and blunting of the right costophrenic angle, consistent with fluid accumulation in the pleural space."
+    },
+    {
+      "name": "Right Hemidiaphragm Elevation",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "The right hemidiaphragm is positioned higher than normal, which may be associated with the adjacent effusion or an underlying abdominal process."
+    }
+  ],
+  "summary": "The chest X-ray shows a small amount of fluid around the base of the right lung (pleural effusion) and an elevated right diaphragm. The heart and the rest of the lungs appear healthy. A pleural effusion can be caused by various factors including infection, heart failure, or inflammation, and requires clinical correlation by a doctor.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.acr.org/Clinical-Resources/Radiologic-Practice-Guidelines"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 412436,
+    "bytesOut": 317617,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T09:44:24.722Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

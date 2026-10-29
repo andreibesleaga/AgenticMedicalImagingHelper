@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_4/00000239_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary pathology identified.\",\n    \"Lung fields are clear without evidence of focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Heart size is within normal limits.\",\n    \"Bilateral hilar and mediastinal contours are unremarkable.\",\n    \"Osseous structures of the thoracic cage are intact.\",\n    \"Multiple surgical clips are noted in the right upper quadrant, likely representing prior cholecystectomy.\",\n    \"Additional surgical clips are visualized in the right supraclavicular region, consistent with prior surgical intervention.\",\n    \"Gas patterns in the abdomen appear within normal limits; no evidence of free intraperitoneal air or bowel obstruction.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical Clips\",\n      \"description\": \"Multiple radiopaque surgical clips are noted in the right upper quadrant of the abdomen, consistent with a prior cholecystectomy. Additional surgical clips are present in the right supraclavicular region, indicative of previous surgery in that area.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray of your chest and upper abdomen shows no signs of acute problems in your lungs or heart, such as pneumonia, fluid around the lungs, or a collapsed lung. Your heart size appears normal. There are surgical clips visible in your upper right abdomen, which is typically seen after gallbladder removal surgery. There are also surgical clips above your right collarbone, indicating a past surgery in that area. The abdominal gas patterns are normal, with no evidence of obstruction or free air in the abdomen.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cholecystectomy-clips\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary pathology identified.",
+    "Lung fields are clear without evidence of focal consolidation, pleural effusion, or pneumothorax.",
+    "Heart size is within normal limits.",
+    "Bilateral hilar and mediastinal contours are unremarkable.",
+    "Osseous structures of the thoracic cage are intact.",
+    "Multiple surgical clips are noted in the right upper quadrant, likely representing prior cholecystectomy.",
+    "Additional surgical clips are visualized in the right supraclavicular region, consistent with prior surgical intervention.",
+    "Gas patterns in the abdomen appear within normal limits; no evidence of free intraperitoneal air or bowel obstruction."
+  ],
+  "abnormalities": [
+    {
+      "name": "Surgical Clips",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Multiple radiopaque surgical clips are noted in the right upper quadrant of the abdomen, consistent with a prior cholecystectomy. Additional surgical clips are present in the right supraclavicular region, indicative of previous surgery in that area."
+    }
+  ],
+  "summary": "The X-ray of your chest and upper abdomen shows no signs of acute problems in your lungs or heart, such as pneumonia, fluid around the lungs, or a collapsed lung. Your heart size appears normal. There are surgical clips visible in your upper right abdomen, which is typically seen after gallbladder removal surgery. There are also surgical clips above your right collarbone, indicating a past surgery in that area. The abdominal gas patterns are normal, with no evidence of obstruction or free air in the abdomen.",
+  "references": [
+    "https://radiopaedia.org/articles/cholecystectomy-clips",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 431092,
+    "bytesOut": 428915,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:08:18.582Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

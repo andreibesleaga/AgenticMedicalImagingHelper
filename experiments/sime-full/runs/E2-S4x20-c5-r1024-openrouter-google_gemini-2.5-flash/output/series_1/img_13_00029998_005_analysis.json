@@ -1,0 +1,74 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_1/img_13_00029998_005.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Evidence of prior sternotomy with sternal wires noted.\",\n    \"Bilateral diffuse patchy airspace opacities, more prominent in the right lower lobe.\",\n    \"Bilateral blunting of the costophrenic angles, suggestive of pleural effusions.\",\n    \"Cardiomegaly is present.\",\n    \"Vascular congestion appears increased.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Sternal wires\",\n      \"description\": \"Multiple sternal wires are seen, consistent with prior sternotomy.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Airspace opacities\",\n      \"description\": \"Diffuse patchy airspace opacities are present bilaterally, more pronounced in the right lower lobe, which could represent pulmonary edema or infiltrates.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pleural effusions\",\n      \"description\": \"Bilateral blunting of the costophrenic angles suggests the presence of bilateral pleural effusions.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette is enlarged, indicating cardiomegaly.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Vascular congestion\",\n      \"description\": \"Increased pulmonary vascular congestion is observed.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The chest X-ray shows signs of a previous heart surgery, indicated by wires in the breastbone. There is fluid in both lungs, seen as cloudy areas, especially in the lower right lung. There is also fluid collecting around the lungs, making the lung bases look blurry. The heart appears enlarged, and there are signs of increased blood flow in the lung vessels. These findings collectively suggest issues like heart failure or lung inflammation.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.274065092\",\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/pleural-effusion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Evidence of prior sternotomy with sternal wires noted.",
+    "Bilateral diffuse patchy airspace opacities, more prominent in the right lower lobe.",
+    "Bilateral blunting of the costophrenic angles, suggestive of pleural effusions.",
+    "Cardiomegaly is present.",
+    "Vascular congestion appears increased."
+  ],
+  "abnormalities": [
+    {
+      "name": "Sternal wires",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Multiple sternal wires are seen, consistent with prior sternotomy."
+    },
+    {
+      "name": "Airspace opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse patchy airspace opacities are present bilaterally, more pronounced in the right lower lobe, which could represent pulmonary edema or infiltrates."
+    },
+    {
+      "name": "Pleural effusions",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Bilateral blunting of the costophrenic angles suggests the presence of bilateral pleural effusions."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "The cardiac silhouette is enlarged, indicating cardiomegaly."
+    },
+    {
+      "name": "Vascular congestion",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Increased pulmonary vascular congestion is observed."
+    }
+  ],
+  "summary": "The chest X-ray shows signs of a previous heart surgery, indicated by wires in the breastbone. There is fluid in both lungs, seen as cloudy areas, especially in the lower right lung. There is also fluid collecting around the lungs, making the lung bases look blurry. The heart appears enlarged, and there are signs of increased blood flow in the lung vessels. These findings collectively suggest issues like heart failure or lung inflammation.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.274065092",
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/pleural-effusion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 395339,
+    "bytesOut": 391922,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:45:45.916Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

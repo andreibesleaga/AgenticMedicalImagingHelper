@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_3/00000239_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear without focal consolidation, effusion, or pneumothorax\",\n    \"Cardiomediastinal silhouette is within normal limits for size and shape\",\n    \"Bony structures of the thorax and shoulders are intact\",\n    \"Significant gaseous distension of the stomach and colon is noted in the upper abdomen\",\n    \"Presence of multiple surgical clips in the upper abdomen/left upper quadrant\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Gastric and colonic distension\",\n      \"description\": \"Prominent air-filled loops of bowel and a distended stomach are visible beneath the diaphragm, suggesting a possible ileus or chronic bowel pathology.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows normal lungs and a normal heart. However, there is a significant amount of gas in the stomach and intestines, which can be caused by various things such as slow digestion (ileus) or dietary factors. There are also small metal clips from a previous surgery in the abdominal area. This is a common finding after surgery or in certain gastrointestinal conditions.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-radiograph-assessment\",\n    \"https://www.acr.org/Clinical-Resources/Content-Collections/Chest-Imaging\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear without focal consolidation, effusion, or pneumothorax",
+    "Cardiomediastinal silhouette is within normal limits for size and shape",
+    "Bony structures of the thorax and shoulders are intact",
+    "Significant gaseous distension of the stomach and colon is noted in the upper abdomen",
+    "Presence of multiple surgical clips in the upper abdomen/left upper quadrant"
+  ],
+  "abnormalities": [
+    {
+      "name": "Gastric and colonic distension",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Prominent air-filled loops of bowel and a distended stomach are visible beneath the diaphragm, suggesting a possible ileus or chronic bowel pathology."
+    }
+  ],
+  "summary": "The chest X-ray shows normal lungs and a normal heart. However, there is a significant amount of gas in the stomach and intestines, which can be caused by various things such as slow digestion (ileus) or dietary factors. There are also small metal clips from a previous surgery in the abdominal area. This is a common finding after surgery or in certain gastrointestinal conditions.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-assessment",
+    "https://www.acr.org/Clinical-Resources/Content-Collections/Chest-Imaging"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 413987,
+    "bytesOut": 315471,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T09:19:51.464Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

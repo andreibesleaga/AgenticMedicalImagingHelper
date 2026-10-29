@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_1/img_19_00022519_004.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral reticulonodular opacities are observed throughout both lung fields, more prominent in the lower zones.\",\n    \"Pulmonary vascular markings appear mildly prominent.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Hilar regions show some increased prominence, possibly related to vascular engorgement or lymphadenopathy.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"Osseous structures (ribs, clavicles, humeri, thoracic spine) appear unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Reticulonodular Opacities\",\n      \"description\": \"Widespread reticulonodular opacities are present in both lung fields, suggesting interstitial lung disease, infection (e.g., atypical pneumonia), or congestive heart failure. The pattern is diffuse but slightly more pronounced in the lower lobes.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Prominent Pulmonary Vasculature/Hila\",\n      \"description\": \"Mild prominence of pulmonary vascular markings and hilar regions is noted, which could be secondary to the underlying pulmonary condition or represent early signs of pulmonary hypertension or volume overload.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows changes in both lungs, appearing as a web-like pattern with small dots (known as reticulonodular opacities). These findings suggest there might be a problem with the lung tissue, possibly due to conditions like interstitial lung disease, certain types of lung infections, or even early signs of heart failure affecting the lungs. The blood vessels in your lungs and the central areas where they enter the lungs (hila) also look a bit more prominent than usual. Your heart size and the other visible bones appear normal. Further evaluation, potentially including a CT scan or blood tests, would be helpful to understand the cause of these changes.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2020190161\",\n    \"https://radiopaedia.org/articles/reticulonodular-pattern\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMra1604122\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral reticulonodular opacities are observed throughout both lung fields, more prominent in the lower zones.",
+    "Pulmonary vascular markings appear mildly prominent.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Hilar regions show some increased prominence, possibly related to vascular engorgement or lymphadenopathy.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "Osseous structures (ribs, clavicles, humeri, thoracic spine) appear unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Reticulonodular Opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Widespread reticulonodular opacities are present in both lung fields, suggesting interstitial lung disease, infection (e.g., atypical pneumonia), or congestive heart failure. The pattern is diffuse but slightly more pronounced in the lower lobes."
+    },
+    {
+      "name": "Prominent Pulmonary Vasculature/Hila",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "Mild prominence of pulmonary vascular markings and hilar regions is noted, which could be secondary to the underlying pulmonary condition or represent early signs of pulmonary hypertension or volume overload."
+    }
+  ],
+  "summary": "The X-ray of your chest shows changes in both lungs, appearing as a web-like pattern with small dots (known as reticulonodular opacities). These findings suggest there might be a problem with the lung tissue, possibly due to conditions like interstitial lung disease, certain types of lung infections, or even early signs of heart failure affecting the lungs. The blood vessels in your lungs and the central areas where they enter the lungs (hila) also look a bit more prominent than usual. Your heart size and the other visible bones appear normal. Further evaluation, potentially including a CT scan or blood tests, would be helpful to understand the cause of these changes.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2020190161",
+    "https://radiopaedia.org/articles/reticulonodular-pattern",
+    "https://www.nejm.org/doi/full/10.1056/NEJMra1604122"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22103,
+    "bytesOut": 22103,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:01:51.812Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,71 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_2/00000219_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Median sternotomy wires and surgical vascular clips are present, compatible with prior thoracic or cardiac surgery.\",\n    \"The cardiac silhouette is mildly to moderately enlarged, with a cardiothoracic ratio exceeding 0.50.\",\n    \"The thoracic aorta is elongated, tortuous, and mildly prominent.\",\n    \"Lungs demonstrate increased volume and flattening of the hemidiaphragms, compatible with pulmonary hyperinflation / emphysematous changes.\",\n    \"No focal pulmonary consolidation, confluent airspace opacity, or acute pulmonary edema is identified.\",\n    \"Costophrenic and cardiophrenic angles are clear without evidence of significant pleural effusion.\",\n    \"No evidence of pneumothorax.\",\n    \"Visualized osseous structures demonstrate mild degenerative changes of the thoracic spine.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlargement of the overall cardiac silhouette with left ventricular prominence.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pulmonary Hyperinflation\",\n      \"description\": \"Increased lung volumes with flattened diaphragms, suggestive of chronic obstructive pulmonary disease (COPD) or emphysema.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Post-Surgical Median Sternotomy\",\n      \"description\": \"Intact midline sternotomy wires and surgical clips from prior cardiothoracic surgery.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 99\n    },\n    {\n      \"name\": \"Aortic Tortuosity\",\n      \"description\": \"Elongation and uncoiling of the thoracic aorta, often associated with age and hypertension.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 88\n    }\n  ],\n  \"summary\": \"This chest radiograph shows evidence of previous heart or chest surgery, identified by surgical wires along the breastbone (sternum). The heart appears slightly larger than normal (cardiomegaly), and the thoracic aorta is lengthened/tortuous, which are common findings related to age, blood pressure, or underlying cardiac conditions. The lungs show signs of chronic expansion (hyperinflation), commonly seen in conditions like emphysema or chronic obstructive pulmonary disease (COPD). Importantly, there is no sign of active pneumonia, lung collapse, or significant fluid collection around the lungs.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/chronic-obstructive-pulmonary-disease\",\n    \"https://radiopaedia.org/articles/median-sternotomy\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Median sternotomy wires and surgical vascular clips are present, compatible with prior thoracic or cardiac surgery.",
+    "The cardiac silhouette is mildly to moderately enlarged, with a cardiothoracic ratio exceeding 0.50.",
+    "The thoracic aorta is elongated, tortuous, and mildly prominent.",
+    "Lungs demonstrate increased volume and flattening of the hemidiaphragms, compatible with pulmonary hyperinflation / emphysematous changes.",
+    "No focal pulmonary consolidation, confluent airspace opacity, or acute pulmonary edema is identified.",
+    "Costophrenic and cardiophrenic angles are clear without evidence of significant pleural effusion.",
+    "No evidence of pneumothorax.",
+    "Visualized osseous structures demonstrate mild degenerative changes of the thoracic spine."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Enlargement of the overall cardiac silhouette with left ventricular prominence."
+    },
+    {
+      "name": "Pulmonary Hyperinflation",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Increased lung volumes with flattened diaphragms, suggestive of chronic obstructive pulmonary disease (COPD) or emphysema."
+    },
+    {
+      "name": "Post-Surgical Median Sternotomy",
+      "severity": "Normal",
+      "confidence": 99,
+      "description": "Intact midline sternotomy wires and surgical clips from prior cardiothoracic surgery."
+    },
+    {
+      "name": "Aortic Tortuosity",
+      "severity": "Mild",
+      "confidence": 88,
+      "description": "Elongation and uncoiling of the thoracic aorta, often associated with age and hypertension."
+    }
+  ],
+  "summary": "This chest radiograph shows evidence of previous heart or chest surgery, identified by surgical wires along the breastbone (sternum). The heart appears slightly larger than normal (cardiomegaly), and the thoracic aorta is lengthened/tortuous, which are common findings related to age, blood pressure, or underlying cardiac conditions. The lungs show signs of chronic expansion (hyperinflation), commonly seen in conditions like emphysema or chronic obstructive pulmonary disease (COPD). Importantly, there is no sign of active pneumonia, lung collapse, or significant fluid collection around the lungs.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/chronic-obstructive-pulmonary-disease",
+    "https://radiopaedia.org/articles/median-sternotomy"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 385977,
+    "bytesOut": 381054,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:23:00.411Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

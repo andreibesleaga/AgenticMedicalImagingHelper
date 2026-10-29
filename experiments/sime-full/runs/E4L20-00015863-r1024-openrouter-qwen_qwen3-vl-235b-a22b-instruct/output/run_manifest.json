@@ -1,0 +1,189 @@
+{
+  "manifestVersion": "1.0",
+  "toolVersion": "1.1.0",
+  "startedAt": "2026-10-08T09:16:37.236Z",
+  "finishedAt": "2026-10-08T09:19:40.858Z",
+  "provider": "openrouter",
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "pricing": {
+    "inputUsdPerMillion": 2,
+    "outputUsdPerMillion": 12
+  },
+  "settings": {
+    "concurrency": 1,
+    "maxCostUsd": 1,
+    "retries": 3,
+    "imageQuality": "auto"
+  },
+  "inputDir": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00015863",
+  "outputDir": "/home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4L20-00015863-r1024-openrouter-qwen_qwen3-vl-235b-a22b-instruct/output",
+  "inputs": [
+    {
+      "path": "series_1/00015863_000.png",
+      "sha256": "de015c26cc854b202c1884259bb31e5d1effde00d6025464286e8173063e76d4",
+      "bytes": 310079
+    },
+    {
+      "path": "series_2/00015863_001.png",
+      "sha256": "745dc1bebe4287fe258a53d2653223017fb39ff435b4ca0f45178538d79c0283",
+      "bytes": 463140
+    },
+    {
+      "path": "series_3/00015863_002.png",
+      "sha256": "53d191a0a2a3d999a70c7cc71b0ac0339b3ebafc6d357ec1c454559a2b398954",
+      "bytes": 348361
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "patient_context.txt",
+      "sha256": "e7eea4ef15696306cf9c01b066df4edc47ff9747db74ed73aa80e1f43f7d8a70",
+      "bytes": 328
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:16:48.700Z",
+      "tokensIn": 1363,
+      "tokensOut": 504,
+      "estimatedUsd": 0.008774,
+      "providerUsd": 0.00087854,
+      "retries": 0
+    },
+    {
+      "index": 2,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:17:23.675Z",
+      "tokensIn": 1363,
+      "tokensOut": 463,
+      "estimatedUsd": 0.008282000000000001,
+      "providerUsd": 0.0008359,
+      "retries": 0
+    },
+    {
+      "index": 3,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:17:44.244Z",
+      "tokensIn": 1360,
+      "tokensOut": 353,
+      "estimatedUsd": 0.006955999999999997,
+      "providerUsd": 0.0009563,
+      "retries": 0
+    },
+    {
+      "index": 4,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:18:20.010Z",
+      "tokensIn": 820,
+      "tokensOut": 359,
+      "estimatedUsd": 0.005948000000000002,
+      "providerUsd": 0.00047992,
+      "retries": 0
+    },
+    {
+      "index": 5,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:18:28.407Z",
+      "tokensIn": 782,
+      "tokensOut": 405,
+      "estimatedUsd": 0.006423999999999999,
+      "providerUsd": 0.0006245199999999999,
+      "retries": 0
+    },
+    {
+      "index": 6,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:18:34.006Z",
+      "tokensIn": 672,
+      "tokensOut": 282,
+      "estimatedUsd": 0.004728000000000003,
+      "providerUsd": 0.0004680000000000001,
+      "retries": 0
+    },
+    {
+      "index": 7,
+      "stage": "evolution",
+      "timestamp": "2026-10-08T09:19:40.641Z",
+      "tokensIn": 1132,
+      "tokensOut": 813,
+      "estimatedUsd": 0.012019999999999996,
+      "providerUsd": 0.0009418400000000002,
+      "retries": 0
+    }
+  ],
+  "outputs": [
+    {
+      "path": "series_1/00015863_000_analysis.json",
+      "sha256": "0216abc1712f7bbf1f8167c45560b835d35c9331badb221c9080c9e6ab771f23",
+      "bytes": 5262
+    },
+    {
+      "path": "series_2/00015863_001_analysis.json",
+      "sha256": "875ca804de56056edb919511997382caf148e7f5db408169f11f0ec38eea0ea2",
+      "bytes": 4739
+    },
+    {
+      "path": "series_3/00015863_002_analysis.json",
+      "sha256": "123f94154db1e55fb28f585c373b3bae49806c7b15a6470048eac5b0d1004fc4",
+      "bytes": 3919
+    },
+    {
+      "path": "series_1/series_summary.md",
+      "sha256": "815a7e5a057d20f98f82c108af09d77476af6d9f4d50894607ba42e798fbd079",
+      "bytes": 2581
+    },
+    {
+      "path": "series_2/series_summary.md",
+      "sha256": "6286bb7b1a6619947474a3bdf721e068a3486498d07c9d931071560e4831dabe",
+      "bytes": 2779
+    },
+    {
+      "path": "series_3/series_summary.md",
+      "sha256": "32050f5dccb2d28c8d611c9cffdeb7d18a5511c6c0742c450208e0b6cd3f9436",
+      "bytes": 2204
+    },
+    {
+      "path": "evolution_analysis.json",
+      "sha256": "2dc93a4ac9a30effdf854e8bcdf025599e1fb7102626ab55e94055d81bf5fa2b",
+      "bytes": 3954
+    },
+    {
+      "path": "combined_diagnostic_report.md",
+      "sha256": "00598fbfa89b2eb1ba64f6b1130831a955cfd3b8625396aaa7735717f9741155",
+      "bytes": 4507
+    }
+  ],
+  "totals": {
+    "calls": 7,
+    "tokensIn": 7492,
+    "tokensOut": 3179,
+    "estimatedUsd": 0.053132,
+    "providerUsd": 0.00518502,
+    "images": 3,
+    "imagesSucceeded": 3,
+    "imagesFailed": 0,
+    "series": 3
+  },
+  "exitCode": 0,
+  "warnings": [
+    "input-integrity: 3 image(s) matched --expect-hashes.",
+    "input-guard [image-metadata] series_1/00015863_000.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_2/00015863_001.png: png:tIME — stripped before upload",
+    "input-guard [image-metadata] series_3/00015863_002.png: png:tIME — stripped before upload",
+    "measurement-probe: 6 absolute size claim(s) in generated text. PNG/JPEG inputs carry no pixel spacing, so these are model estimates, not measurements; verify against the image.",
+    "measurement-probe [absolute-size] image series_2/00015863_001.png: \"2 cm\" — \"ilateral pulmonary nodules, largest measuring approximately 2 cm in the right upper lobe\"",
+    "measurement-probe [absolute-size] image series_2/00015863_001.png: \"2 cm\" — \"n the right upper lobe. The largest nodule is approximately 2 cm and appears rounded with smooth margins. These findings suggest possible metastatic disease, gr...\"",
+    "measurement-probe [absolute-size] series series_2: \"2 cm\" — \"# Chest X-ray Series Analysis (Series_2) ## Summary This series consists of a single PA chest radiograph showing bilateral pulmonary nodules with one dominant\"",
+    "measurement-probe [absolute-size] series series_2: \"2 cm\" — \"# Chest X-ray Series Analysis (Series_2) ## Summary This series consists of a single PA chest radiograph showing bilateral pulmonary nodules with one dominant\"",
+    "measurement-probe [absolute-size] evolution: \"2 cm\" — \"# Temporal Radiological Analysis: Series 1 → Series 2 → Series 3 ## Overall Progression: Worsening ### Key Trends - **Interstitial Thickening** - Series 1:\"",
+    "measurement-probe [absolute-size] evolution: \"2 cm\" — \"pulmonary nodules: Newly identified in series_2 as bilateral nodules with a dominant 2 cm nodule in the right upper lobe; absent in series_1 and not mentioned i...\""
+  ],
+  "humanReview": {
+    "required": true,
+    "reviewedBy": null
+  },
+  "prevManifestHash": null,
+  "manifestHash": "afdd481f2a5a78316a6ba740c9d4a3a8cdfadd5264924388d7cfb357e7f8569a"
+}

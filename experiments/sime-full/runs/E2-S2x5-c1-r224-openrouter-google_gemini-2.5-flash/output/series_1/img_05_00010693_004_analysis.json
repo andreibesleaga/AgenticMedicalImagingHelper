@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S2x5/series_1/img_05_00010693_004.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear without evidence of focal consolidation, pneumothorax, or significant pleural effusion.\",\n    \"Pulmonary vascularity appears normal.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"Bony thorax appears unremarkable.\",\n    \"A gastric balloon is noted in the left upper quadrant, containing two radio-opaque markers, consistent with an intragastric weight loss device.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Intragastric Balloon\",\n      \"description\": \"Presence of an intragastric balloon with two radio-opaque markers in the left upper quadrant, consistent with a weight loss device.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows healthy lungs, with no signs of pneumonia, collapsed lung, or fluid around the lungs. The heart and major blood vessels appear normal in size and shape. The bones of the chest also look healthy. A gastric balloon, which is a device used for weight loss, is visible in the stomach area.\",\n  \"references\": [\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://radiopaedia.org/articles/intragastric-balloon\",\n    \"https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery/intragastric-balloon\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear without evidence of focal consolidation, pneumothorax, or significant pleural effusion.",
+    "Pulmonary vascularity appears normal.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "Bony thorax appears unremarkable.",
+    "A gastric balloon is noted in the left upper quadrant, containing two radio-opaque markers, consistent with an intragastric weight loss device."
+  ],
+  "abnormalities": [
+    {
+      "name": "Intragastric Balloon",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Presence of an intragastric balloon with two radio-opaque markers in the left upper quadrant, consistent with a weight loss device."
+    }
+  ],
+  "summary": "The chest X-ray shows healthy lungs, with no signs of pneumonia, collapsed lung, or fluid around the lungs. The heart and major blood vessels appear normal in size and shape. The bones of the chest also look healthy. A gastric balloon, which is a device used for weight loss, is visible in the stomach area.",
+  "references": [
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://radiopaedia.org/articles/intragastric-balloon",
+    "https://www.niddk.nih.gov/health-information/weight-management/bariatric-surgery/intragastric-balloon"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23983,
+    "bytesOut": 23983,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:50:56.786Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

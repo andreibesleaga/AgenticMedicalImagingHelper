@@ -1,0 +1,41 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_2/img_04_00011823_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The heart size is normal.\",\n    \"The lungs are clear.\",\n    \"The mediastinum is normal.\",\n    \"The bony thorax is unremarkable.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This is a chest X-ray image. The heart size appears normal, and the lungs appear clear without any obvious abnormalities. The mediastinum (the space between the lungs containing the heart and major blood vessels) looks normal. The ribs and other bony structures of the chest also appear unremarkable.\\n\\nThis is generally interpreted as a normal chest X-ray.\",\n  \"references\": [\n    \"https://www.radiologyassistant.com/topic/chest-x-ray/\",\n    \"https://www.radsource.org/chest-x-ray/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The heart size is normal.",
+    "The lungs are clear.",
+    "The mediastinum is normal.",
+    "The bony thorax is unremarkable."
+  ],
+  "abnormalities": [],
+  "summary": "This is a chest X-ray image. The heart size appears normal, and the lungs appear clear without any obvious abnormalities. The mediastinum (the space between the lungs containing the heart and major blood vessels) looks normal. The ribs and other bony structures of the chest also appear unremarkable.\n\nThis is generally interpreted as a normal chest X-ray.",
+  "references": [
+    "https://www.radiologyassistant.com/topic/chest-x-ray/",
+    "https://www.radsource.org/chest-x-ray/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 405605,
+    "bytesOut": 309021,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:01:22.150Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

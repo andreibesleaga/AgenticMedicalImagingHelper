@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000239/series_3/00000239_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest and Abdomen (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Left hemidiaphragm appears elevated with a lucency beneath it, consistent with free gas under the diaphragm.\",\n    \"Normal lung fields without obvious focal consolidation or pleural effusion.\",\n    \"Cardiomediastinal silhouette is within normal limits.\",\n    \"Bowel gas pattern in the abdomen appears somewhat prominent with multiple metallic densities, likely surgical clips or foreign bodies.\",\n    \"No gross skeletal abnormalities observed in the visualized osseous structures.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pneumoperitoneum\",\n      \"description\": \"Evidence of free gas under the left hemidiaphragm, suggesting pneumoperitoneum.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray shows free air under the diaphragm on the left side, which is a significant finding called pneumoperitoneum. This usually indicates a perforation (a hole) in an abdominal organ, like the stomach or intestine, allowing air to escape into the abdominal cavity. The lungs and heart appear normal. There are also several small metallic objects visible in the abdomen, which could be surgical clips from a previous operation or other foreign bodies. This finding requires immediate medical attention and further investigation.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pneumoperitoneum\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3214589/\",\n    \"https://emedicine.medscape.com/article/372782-overview\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest and Abdomen (AP)",
+  "quality": "Good",
+  "findings": [
+    "Left hemidiaphragm appears elevated with a lucency beneath it, consistent with free gas under the diaphragm.",
+    "Normal lung fields without obvious focal consolidation or pleural effusion.",
+    "Cardiomediastinal silhouette is within normal limits.",
+    "Bowel gas pattern in the abdomen appears somewhat prominent with multiple metallic densities, likely surgical clips or foreign bodies.",
+    "No gross skeletal abnormalities observed in the visualized osseous structures."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pneumoperitoneum",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Evidence of free gas under the left hemidiaphragm, suggesting pneumoperitoneum."
+    }
+  ],
+  "summary": "The X-ray shows free air under the diaphragm on the left side, which is a significant finding called pneumoperitoneum. This usually indicates a perforation (a hole) in an abdominal organ, like the stomach or intestine, allowing air to escape into the abdominal cavity. The lungs and heart appear normal. There are also several small metallic objects visible in the abdomen, which could be surgical clips from a previous operation or other foreign bodies. This finding requires immediate medical attention and further investigation.",
+  "references": [
+    "https://radiopaedia.org/articles/pneumoperitoneum",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3214589/",
+    "https://emedicine.medscape.com/article/372782-overview"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23540,
+    "bytesOut": 23540,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:24:53.129Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

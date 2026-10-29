@@ -1,0 +1,68 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00004946/series_2/00004946_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral reticulonodular opacities are noted throughout both lung fields, more prominent in the lower zones.\",\n    \"Bilateral pleural effusions are suggested by blunting of the costophrenic angles, particularly on the right.\",\n    \"Cardiomegaly appears to be present.\",\n    \"Vascular congestion is evident.\",\n    \"The bony thorax appears intact, with no acute fractures or dislocations.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Reticulonodular Opacities\",\n      \"description\": \"Diffuse reticulonodular infiltrates are observed bilaterally, suggesting interstitial lung disease or possibly an atypical infection/edema. These are more pronounced in the lower lobes.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Bilateral Pleural Effusions\",\n      \"description\": \"Blunting of the costophrenic angles bilaterally is consistent with the presence of pleural effusions, which appear larger on the right side.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette is enlarged, indicating cardiomegaly.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    },\n    {\n      \"name\": \"Vascular Congestion\",\n      \"description\": \"Evidence of pulmonary vascular congestion is present, often associated with cardiac decompensation.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"This chest X-ray shows changes in both lungs and around the heart. There are widespread fine network-like and small spot-like shadows throughout the lungs, which could indicate a lung condition affecting the tissue between the air sacs, or possibly an infection or fluid buildup. There's also fluid around both lungs, more noticeable on the right side. The heart appears enlarged, and there are signs of increased blood flow in the lung's blood vessels, which can happen when the heart isn't pumping as efficiently. These findings together suggest issues with both the lungs and the heart.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/reticulonodular-pattern\",\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/cardiomegaly\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral reticulonodular opacities are noted throughout both lung fields, more prominent in the lower zones.",
+    "Bilateral pleural effusions are suggested by blunting of the costophrenic angles, particularly on the right.",
+    "Cardiomegaly appears to be present.",
+    "Vascular congestion is evident.",
+    "The bony thorax appears intact, with no acute fractures or dislocations."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Reticulonodular Opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse reticulonodular infiltrates are observed bilaterally, suggesting interstitial lung disease or possibly an atypical infection/edema. These are more pronounced in the lower lobes."
+    },
+    {
+      "name": "Bilateral Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Blunting of the costophrenic angles bilaterally is consistent with the presence of pleural effusions, which appear larger on the right side."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "The cardiac silhouette is enlarged, indicating cardiomegaly."
+    },
+    {
+      "name": "Vascular Congestion",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Evidence of pulmonary vascular congestion is present, often associated with cardiac decompensation."
+    }
+  ],
+  "summary": "This chest X-ray shows changes in both lungs and around the heart. There are widespread fine network-like and small spot-like shadows throughout the lungs, which could indicate a lung condition affecting the tissue between the air sacs, or possibly an infection or fluid buildup. There's also fluid around both lungs, more noticeable on the right side. The heart appears enlarged, and there are signs of increased blood flow in the lung's blood vessels, which can happen when the heart isn't pumping as efficiently. These findings together suggest issues with both the lungs and the heart.",
+  "references": [
+    "https://radiopaedia.org/articles/reticulonodular-pattern",
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/cardiomegaly"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 387715,
+    "bytesOut": 382198,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:05:53.396Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

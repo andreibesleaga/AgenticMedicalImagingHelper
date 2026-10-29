@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00015863/series_1/00015863_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse, ill-defined opacities are noted throughout both lung fields, more pronounced in the right lung.\",\n    \"Bilateral perihilar infiltrates are present.\",\n    \"The cardiac silhouette appears unremarkable.\",\n    \"The diaphragmatic hemidiaphragms are intact.\",\n    \"A nasogastric tube is visualized, with its tip appearing to be in the stomach.\",\n    \"No definite pleural effusion or pneumothorax is evident.\",\n    \"Bony structures appear intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Lung Infiltrates\",\n      \"description\": \"Diffuse, patchy, and ill-defined opacities are observed throughout both lung fields, suggesting widespread parenchymal involvement. These are more prominent in the right lung and perihilar regions bilaterally, consistent with an inflammatory or infectious process.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows widespread cloudy areas in both lungs, which are more noticeable in the right lung and near the center of the chest. This pattern often suggests inflammation or infection in the lungs, such as pneumonia or another type of lung disease. A feeding tube is visible and appears to be correctly placed in the stomach. The heart size and shape look normal, and there are no signs of collapsed lung or significant fluid around the lungs.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2020200057\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK499870/\",\n    \"https://www.thoracic.org/patients/patient-resources/topic-specific-information/pneumonia.php\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse, ill-defined opacities are noted throughout both lung fields, more pronounced in the right lung.",
+    "Bilateral perihilar infiltrates are present.",
+    "The cardiac silhouette appears unremarkable.",
+    "The diaphragmatic hemidiaphragms are intact.",
+    "A nasogastric tube is visualized, with its tip appearing to be in the stomach.",
+    "No definite pleural effusion or pneumothorax is evident.",
+    "Bony structures appear intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Lung Infiltrates",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse, patchy, and ill-defined opacities are observed throughout both lung fields, suggesting widespread parenchymal involvement. These are more prominent in the right lung and perihilar regions bilaterally, consistent with an inflammatory or infectious process."
+    }
+  ],
+  "summary": "The chest X-ray shows widespread cloudy areas in both lungs, which are more noticeable in the right lung and near the center of the chest. This pattern often suggests inflammation or infection in the lungs, such as pneumonia or another type of lung disease. A feeding tube is visible and appears to be correctly placed in the stomach. The heart size and shape look normal, and there are no signs of collapsed lung or significant fluid around the lungs.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2020200057",
+    "https://www.ncbi.nlm.nih.gov/books/NBK499870/",
+    "https://www.thoracic.org/patients/patient-resources/topic-specific-information/pneumonia.php"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 20148,
+    "bytesOut": 20148,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:24:28.943Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_06_00002427_000.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Dextroscoliosis of the thoracic spine, convex to the right.\",\n    \"Bilateral lung fields appear clear with normal vascularity.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour, though it is shifted to the left due to the spinal curvature.\",\n    \"Hilar regions are unremarkable.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"Bony thorax shows no acute fractures or destructive lesions. The clavicles and humeral heads are visualized.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Dextroscoliosis\",\n      \"description\": \"Dextroscoliosis of the thoracic spine, indicating a lateral curvature of the spine that is convex to the right. This causes a shift of the mediastinal structures, including the heart, to the left.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a curvature of the spine in the upper back, specifically bending to the right (dextroscoliosis). This spinal curve is pushing the heart and central chest structures slightly to the left. The lungs themselves appear clear and healthy, and there are no signs of any acute problems with the heart's size or shape, or with the other bones in the chest. This type of spinal curvature is the main finding on this X-ray.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/scoliosis-1\",\n    \"https://www.scoliosis.org/\",\n    \"https://www.mayoclinic.org/diseases-conditions/scoliosis/symptoms-causes/syc-20350716\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Dextroscoliosis of the thoracic spine, convex to the right.",
+    "Bilateral lung fields appear clear with normal vascularity.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour, though it is shifted to the left due to the spinal curvature.",
+    "Hilar regions are unremarkable.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "Bony thorax shows no acute fractures or destructive lesions. The clavicles and humeral heads are visualized."
+  ],
+  "abnormalities": [
+    {
+      "name": "Dextroscoliosis",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Dextroscoliosis of the thoracic spine, indicating a lateral curvature of the spine that is convex to the right. This causes a shift of the mediastinal structures, including the heart, to the left."
+    }
+  ],
+  "summary": "The chest X-ray shows a curvature of the spine in the upper back, specifically bending to the right (dextroscoliosis). This spinal curve is pushing the heart and central chest structures slightly to the left. The lungs themselves appear clear and healthy, and there are no signs of any acute problems with the heart's size or shape, or with the other bones in the chest. This type of spinal curvature is the main finding on this X-ray.",
+  "references": [
+    "https://radiopaedia.org/articles/scoliosis-1",
+    "https://www.scoliosis.org/",
+    "https://www.mayoclinic.org/diseases-conditions/scoliosis/symptoms-causes/syc-20350716"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 421544,
+    "bytesOut": 416898,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:46:40.923Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

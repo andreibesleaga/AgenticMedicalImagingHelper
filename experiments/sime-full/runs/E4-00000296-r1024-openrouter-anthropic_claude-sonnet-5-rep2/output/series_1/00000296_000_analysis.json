@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000296/series_1/00000296_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Good\",\"findings\":[\"Central venous catheter (port-a-cath type with coiled/looped tubing) overlying the left upper chest with tip terminating in the region of the mid-to-lower SVC/cavoatrial junction\",\"Lungs appear grossly clear bilaterally with no focal consolidation\",\"No pneumothorax or large pleural effusion identified\",\"Cardiomediastinal silhouette appears within normal limits\",\"Bony thorax including clavicles, ribs, and visualized spine appear intact without acute fracture\",\"Soft tissues of chest wall and shoulders are unremarkable\"],\"abnormalities\":[{\"name\":\"Central venous access device\",\"description\":\"A coiled/looped catheter is seen in the left upper chest, consistent with a subcutaneous port or implanted catheter, with the tubing coursing through the left subclavian/axillary region into the central venous system\",\"severity\":\"Mild\",\"confidence\":75}],\"summary\":\"This chest X-ray shows a small medical device called a central venous catheter (often used for long-term IV medication, chemotherapy, or nutrition) placed in the upper left side of the chest, with its tube running into one of the large veins near the heart. The lungs look clear, meaning there is no sign of pneumonia, fluid buildup, or significant collapse of the lung. The heart size and the bones of the chest also appear normal. Overall, this image mainly serves to confirm proper placement of the catheter rather than showing a disease process.\",\"references\":[\"https://radiopaedia.org/articles/central-venous-catheter\",\"https://www.ncbi.nlm.nih.gov/books/NBK556113/\",\"https://pubs.rsna.org/doi/10.1148/rg.2016150209\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Good",
+  "findings": [
+    "Central venous catheter (port-a-cath type with coiled/looped tubing) overlying the left upper chest with tip terminating in the region of the mid-to-lower SVC/cavoatrial junction",
+    "Lungs appear grossly clear bilaterally with no focal consolidation",
+    "No pneumothorax or large pleural effusion identified",
+    "Cardiomediastinal silhouette appears within normal limits",
+    "Bony thorax including clavicles, ribs, and visualized spine appear intact without acute fracture",
+    "Soft tissues of chest wall and shoulders are unremarkable"
+  ],
+  "abnormalities": [
+    {
+      "name": "Central venous access device",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "A coiled/looped catheter is seen in the left upper chest, consistent with a subcutaneous port or implanted catheter, with the tubing coursing through the left subclavian/axillary region into the central venous system"
+    }
+  ],
+  "summary": "This chest X-ray shows a small medical device called a central venous catheter (often used for long-term IV medication, chemotherapy, or nutrition) placed in the upper left side of the chest, with its tube running into one of the large veins near the heart. The lungs look clear, meaning there is no sign of pneumonia, fluid buildup, or significant collapse of the lung. The heart size and the bones of the chest also appear normal. Overall, this image mainly serves to confirm proper placement of the catheter rather than showing a disease process.",
+  "references": [
+    "https://radiopaedia.org/articles/central-venous-catheter",
+    "https://www.ncbi.nlm.nih.gov/books/NBK556113/",
+    "https://pubs.rsna.org/doi/10.1148/rg.2016150209"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 411000,
+    "bytesOut": 408812,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T09:48:09.959Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

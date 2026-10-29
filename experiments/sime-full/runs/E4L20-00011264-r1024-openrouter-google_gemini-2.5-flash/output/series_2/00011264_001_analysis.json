@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00011264/series_2/00011264_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pleural effusion, or pneumothorax identified.\",\n    \"Cardiomediastinal contours are within normal limits.\",\n    \"Bilateral hemidiaphragms are intact.\",\n    \"Small amount of subdiaphragmatic free air noted on the right side.\",\n    \"Surgical clips are present in the left supraclavicular region, possibly related to a prior procedure or marker placement.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Subdiaphragmatic free air\",\n      \"description\": \"A small crescent-shaped lucency consistent with free air is visible beneath the right hemidiaphragm.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Surgical clips\",\n      \"description\": \"Multiple small, dense, metallic opacities are seen in the left supraclavicular region, characteristic of surgical clips or markers.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows generally normal lung appearance and heart size. However, a small amount of air is visible under the right side of the diaphragm. This could be a sign of a small perforation in the digestive tract, such as the stomach or intestines. There are also some metallic clips in the left collarbone area, which are likely from a previous surgery or procedure and are not typically a cause for concern.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pneumoperitoneum\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK482436/\",\n    \"https://www.ajronline.org/doi/full/10.2214/AJR.11.7588\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pleural effusion, or pneumothorax identified.",
+    "Cardiomediastinal contours are within normal limits.",
+    "Bilateral hemidiaphragms are intact.",
+    "Small amount of subdiaphragmatic free air noted on the right side.",
+    "Surgical clips are present in the left supraclavicular region, possibly related to a prior procedure or marker placement."
+  ],
+  "abnormalities": [
+    {
+      "name": "Subdiaphragmatic free air",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "A small crescent-shaped lucency consistent with free air is visible beneath the right hemidiaphragm."
+    },
+    {
+      "name": "Surgical clips",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Multiple small, dense, metallic opacities are seen in the left supraclavicular region, characteristic of surgical clips or markers."
+    }
+  ],
+  "summary": "The chest X-ray shows generally normal lung appearance and heart size. However, a small amount of air is visible under the right side of the diaphragm. This could be a sign of a small perforation in the digestive tract, such as the stomach or intestines. There are also some metallic clips in the left collarbone area, which are likely from a previous surgery or procedure and are not typically a cause for concern.",
+  "references": [
+    "https://radiopaedia.org/articles/pneumoperitoneum",
+    "https://www.ncbi.nlm.nih.gov/books/NBK482436/",
+    "https://www.ajronline.org/doi/full/10.2214/AJR.11.7588"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 439302,
+    "bytesOut": 438820,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:07:32.153Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

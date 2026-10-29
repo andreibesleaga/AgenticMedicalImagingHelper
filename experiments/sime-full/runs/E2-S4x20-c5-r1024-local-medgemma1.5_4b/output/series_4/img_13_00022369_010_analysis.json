@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_13_00022369_010.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral pleural effusions, obscuring lung fields\",\n    \"Mediastinal structures are grossly unremarkable\",\n    \"Heart size is borderline enlarged\",\n    \"Right chest port-a-cath is present\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pleural effusions\",\n      \"description\": \"Significant bilateral pleural effusions are present, obscuring the costophrenic angles and lower lung fields.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 0\n    }\n  ],\n  \"summary\": \"The chest X-ray shows large amounts of fluid in both lungs (pleural effusions). This makes it hard to see the lower parts of the lungs and the ribs. The heart might be slightly larger than normal. There is a port-a-cath in the right chest.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.cdc.gov/pneumonia/index.html\",\n    \"https://www.uptodate.com/contents/pleural-effusion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral pleural effusions, obscuring lung fields",
+    "Mediastinal structures are grossly unremarkable",
+    "Heart size is borderline enlarged",
+    "Right chest port-a-cath is present"
+  ],
+  "abnormalities": [
+    {
+      "name": "Pleural effusions",
+      "severity": "Moderate",
+      "confidence": 0,
+      "description": "Significant bilateral pleural effusions are present, obscuring the costophrenic angles and lower lung fields."
+    }
+  ],
+  "summary": "The chest X-ray shows large amounts of fluid in both lungs (pleural effusions). This makes it hard to see the lower parts of the lungs and the ribs. The heart might be slightly larger than normal. There is a port-a-cath in the right chest.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.cdc.gov/pneumonia/index.html",
+    "https://www.uptodate.com/contents/pleural-effusion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 445092,
+    "bytesOut": 338407,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:32:03.304Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

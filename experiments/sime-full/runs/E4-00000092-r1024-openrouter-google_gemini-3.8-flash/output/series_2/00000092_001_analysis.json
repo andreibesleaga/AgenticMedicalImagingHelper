@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_2/00000092_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear bilaterally with no evidence of focal consolidation, pneumothorax, or pleural effusion.\",\n    \"Cardiomediastinal contours are normal; cardiac size is within normal limits.\",\n    \"Severe degenerative changes noted in the left glenohumeral joint, marked by superior translation of the humeral head against the acromion, profound joint space loss, and subchondral sclerosis.\",\n    \"Right shoulder demonstrates preserved joint spacing without significant arthritic changes.\",\n    \"A small, well-defined radiopaque density is projected over the mid-thoracic spine, likely reflecting an ingested radiopaque pill/capsule, surgical clip, or external artifact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Glenohumeral Arthropathy\",\n      \"description\": \"Marked joint space narrowing, superior migration of the left humeral head, and sclerosis characteristic of advanced rotator cuff tear arthropathy or severe osteoarthritis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 92\n    }\n  ],\n  \"summary\": \"The chest X-ray shows healthy lungs and a normal-sized heart with no signs of infection, fluid buildup, or acute cardiopulmonary disease. The main finding is advanced wear-and-tear arthritis (arthropathy) affecting the left shoulder, where the cartilage has worn down and the upper arm bone sits higher than normal, commonly seen with long-standing rotator cuff problems. An incidental small radiopaque spot over the spine is likely an ingested pill or artifact and is generally not a cause for concern.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cuff-tear-arthropathy\",\n    \"https://pubs.rsna.org/doi/10.1148/radiographics.26.4.rg.264055110\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear bilaterally with no evidence of focal consolidation, pneumothorax, or pleural effusion.",
+    "Cardiomediastinal contours are normal; cardiac size is within normal limits.",
+    "Severe degenerative changes noted in the left glenohumeral joint, marked by superior translation of the humeral head against the acromion, profound joint space loss, and subchondral sclerosis.",
+    "Right shoulder demonstrates preserved joint spacing without significant arthritic changes.",
+    "A small, well-defined radiopaque density is projected over the mid-thoracic spine, likely reflecting an ingested radiopaque pill/capsule, surgical clip, or external artifact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Glenohumeral Arthropathy",
+      "severity": "Moderate",
+      "confidence": 92,
+      "description": "Marked joint space narrowing, superior migration of the left humeral head, and sclerosis characteristic of advanced rotator cuff tear arthropathy or severe osteoarthritis."
+    }
+  ],
+  "summary": "The chest X-ray shows healthy lungs and a normal-sized heart with no signs of infection, fluid buildup, or acute cardiopulmonary disease. The main finding is advanced wear-and-tear arthritis (arthropathy) affecting the left shoulder, where the cartilage has worn down and the upper arm bone sits higher than normal, commonly seen with long-standing rotator cuff problems. An incidental small radiopaque spot over the spine is likely an ingested pill or artifact and is generally not a cause for concern.",
+  "references": [
+    "https://radiopaedia.org/articles/cuff-tear-arthropathy",
+    "https://pubs.rsna.org/doi/10.1148/radiographics.26.4.rg.264055110"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 421309,
+    "bytesOut": 418288,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:19:40.296Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,60 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_1/00000219_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP view)\",\"quality\":\"Fair\",\"findings\":[\"Cardiac silhouette markedly enlarged with cardiothoracic ratio appearing significantly increased (>50%), suggestive of cardiomegaly\",\"Prominent globular/flask-shaped cardiac contour\",\"Mediastinal contours appear widened\",\"Lung fields are grossly clear bilaterally without obvious focal consolidation\",\"No overt pleural effusion identified, though costophrenic angles are partially obscured by patient positioning/soft tissue\",\"Bony thorax including ribs, clavicles, and visualized spine appear grossly intact without acute fracture\",\"Soft tissue overlying the lower chest/upper abdomen is prominent, possibly due to patient body habitus\",\"Surgical or ECG lead artifacts noted overlying the mediastinum (wire-like markings)\",\"Right-sided marker ('R') visible in upper right corner confirming laterality\"],\"abnormalities\":[{\"name\":\"Cardiomegaly\",\"description\":\"The cardiac silhouette is enlarged, occupying a large proportion of the thoracic width, with a globular/flask shape often associated with pericardial effusion or dilated cardiomyopathy. Further echocardiographic correlation is recommended.\",\"severity\":\"Moderate\",\"confidence\":72},{\"name\":\"Possible mediastinal widening\",\"description\":\"The mediastinal silhouette appears wider than typical, which may be related to the cardiac enlargement itself or vascular prominence; clinical correlation and possibly CT chest recommended if concern for other mediastinal pathology.\",\"severity\":\"Mild\",\"confidence\":45}],\"summary\":\"This chest X-ray shows that the heart appears larger than normal for the size of the chest, a condition called cardiomegaly. This can be caused by several things, including heart muscle weakness, fluid around the heart, or long-standing high blood pressure. The lungs themselves look clear, without signs of pneumonia or fluid buildup. There are some wire-like markings on the image, which may be from prior monitoring leads. Overall, the main finding here is the enlarged heart shadow, which would typically prompt your doctor to order an echocardiogram (heart ultrasound) to get a clearer picture of the heart's structure and function.\",\"references\":[\"https://radiopaedia.org/articles/cardiomegaly\",\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\"https://pubs.rsna.org/doi/10.1148/rg.2019180155\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP view)",
+  "quality": "Fair",
+  "findings": [
+    "Cardiac silhouette markedly enlarged with cardiothoracic ratio appearing significantly increased (>50%), suggestive of cardiomegaly",
+    "Prominent globular/flask-shaped cardiac contour",
+    "Mediastinal contours appear widened",
+    "Lung fields are grossly clear bilaterally without obvious focal consolidation",
+    "No overt pleural effusion identified, though costophrenic angles are partially obscured by patient positioning/soft tissue",
+    "Bony thorax including ribs, clavicles, and visualized spine appear grossly intact without acute fracture",
+    "Soft tissue overlying the lower chest/upper abdomen is prominent, possibly due to patient body habitus",
+    "Surgical or ECG lead artifacts noted overlying the mediastinum (wire-like markings)",
+    "Right-sided marker ('R') visible in upper right corner confirming laterality"
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 72,
+      "description": "The cardiac silhouette is enlarged, occupying a large proportion of the thoracic width, with a globular/flask shape often associated with pericardial effusion or dilated cardiomyopathy. Further echocardiographic correlation is recommended."
+    },
+    {
+      "name": "Possible mediastinal widening",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "The mediastinal silhouette appears wider than typical, which may be related to the cardiac enlargement itself or vascular prominence; clinical correlation and possibly CT chest recommended if concern for other mediastinal pathology."
+    }
+  ],
+  "summary": "This chest X-ray shows that the heart appears larger than normal for the size of the chest, a condition called cardiomegaly. This can be caused by several things, including heart muscle weakness, fluid around the heart, or long-standing high blood pressure. The lungs themselves look clear, without signs of pneumonia or fluid buildup. There are some wire-like markings on the image, which may be from prior monitoring leads. Overall, the main finding here is the enlarged heart shadow, which would typically prompt your doctor to order an echocardiogram (heart ultrasound) to get a clearer picture of the heart's structure and function.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/doi/10.1148/rg.2019180155"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 383333,
+    "bytesOut": 378599,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:24:35.000Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

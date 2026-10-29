@@ -1,0 +1,45 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00016054/series_2/00016054_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear bilaterally.\",\n    \"The heart size is normal.\",\n    \"The mediastinum is unremarkable.\",\n    \"The bony structures of the rib cage are intact.\",\n    \"There is no pleural effusion or pneumothorax.\",\n    \"The visualized upper abdomen is unremarkable.\",\n    \"The patient is rotated slightly to the right.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray shows a normal heart size and clear lungs. There are no obvious signs of lung disease or fluid accumulation, such as pneumonia or pleural effusion. The ribs and other bony structures appear normal. The patient's positioning seems slightly rotated.\",\n  \"references\": [\n    \"https://www.google.com/search?q=radiology+chest+x-ray+interpretation+normal\",\n    \"https://radiopaedia.org/articles/chest-x-ray-interpretation\",\n    \"https://www.stanford.edu/dept/radiology/education/xray/chest.html\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear bilaterally.",
+    "The heart size is normal.",
+    "The mediastinum is unremarkable.",
+    "The bony structures of the rib cage are intact.",
+    "There is no pleural effusion or pneumothorax.",
+    "The visualized upper abdomen is unremarkable.",
+    "The patient is rotated slightly to the right."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray shows a normal heart size and clear lungs. There are no obvious signs of lung disease or fluid accumulation, such as pneumonia or pleural effusion. The ribs and other bony structures appear normal. The patient's positioning seems slightly rotated.",
+  "references": [
+    "https://www.google.com/search?q=radiology+chest+x-ray+interpretation+normal",
+    "https://radiopaedia.org/articles/chest-x-ray-interpretation",
+    "https://www.stanford.edu/dept/radiology/education/xray/chest.html"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22285,
+    "bytesOut": 22285,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T11:04:19.848Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

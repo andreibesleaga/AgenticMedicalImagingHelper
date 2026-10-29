@@ -1,0 +1,30 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_2/img_20_00004738_004.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Pleural effusion in the left hemithorax with associated atelectasis.\",\n    \"Mediastinal shift to the right.\",\n    \"Subcutaneous emphysema in the left chest wall.\",\n    \"Indwelling catheter in the left upper chest.\",\n    \"There are linear radiopaque densities within the left upper lung field.\",\n    \"The right lung is clear.\",\n    \"The heart size is within normal limits.\",\n    \"The descending aorta is prominent.\",\n  \"abnormalities\"\n  ],\n  \"summary\": \"The image shows fluid and collapsed lung in the left area, pushing the heart slightly to the right. There's also air under the skin on the left side of the chest and a catheter in the left upper chest. Thin lines in the left lung suggest possible scarring or inflammation.\",\n  \"references\":{\n    \"2-3 URLs to recent literature or standard protocols for these findings; use Google Search when available\":{\n      \"1\": \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7060931/\",\n      \"2\": \"https://radiologyassistant.com/glossary/pleural-effusion\",\n      \"3\": \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9247109/\"\n    }\n  }\n}",
+  "findings": [],
+  "validation": {
+    "ok": false,
+    "issues": [
+      "references: Invalid input: expected array, received object"
+    ]
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 398119,
+    "bytesOut": 310195,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:13:04.828Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

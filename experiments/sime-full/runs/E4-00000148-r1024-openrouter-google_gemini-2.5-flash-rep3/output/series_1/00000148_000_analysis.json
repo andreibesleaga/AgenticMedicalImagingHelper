@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_1/00000148_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pleural effusion, or pneumothorax identified.\",\n    \"Cardiomediastinal silhouette is within normal limits.\",\n    \"Aortic arch and hilar regions are unremarkable.\",\n    \"Both hemidiaphragms are intact and exhibit normal contour.\",\n    \"Costophrenic angles are clear bilaterally.\",\n    \"No acute bony abnormalities seen in the visualized osseous structures.\",\n    \"Mild peribronchial thickening and interstitial markings noted in both lungs, suggestive of chronic changes or mild inflammatory process.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Peribronchial thickening and interstitial markings\",\n      \"description\": \"Mild peribronchial thickening and increased interstitial markings are visible in both lung fields, which may indicate chronic inflammation or mild interstitial lung changes. No specific acute infiltrate or effusion is associated.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows no immediate signs of serious acute lung problems like pneumonia (fluid in the lungs), collapsed lung (pneumothorax), or fluid around the lungs (pleural effusion). The heart and major blood vessels appear normal in size and shape. However, there are some mild changes in the lung tissue and around the airways, which might suggest a history of irritation or a mild ongoing lung process, but these are not severe. The bones visible in the image also appear normal. Overall, no urgent issues are identified on this X-ray.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2020200057\",\n    \"https://radiopaedia.org/articles/peribronchial-cuffing\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pleural effusion, or pneumothorax identified.",
+    "Cardiomediastinal silhouette is within normal limits.",
+    "Aortic arch and hilar regions are unremarkable.",
+    "Both hemidiaphragms are intact and exhibit normal contour.",
+    "Costophrenic angles are clear bilaterally.",
+    "No acute bony abnormalities seen in the visualized osseous structures.",
+    "Mild peribronchial thickening and interstitial markings noted in both lungs, suggestive of chronic changes or mild inflammatory process."
+  ],
+  "abnormalities": [
+    {
+      "name": "Peribronchial thickening and interstitial markings",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Mild peribronchial thickening and increased interstitial markings are visible in both lung fields, which may indicate chronic inflammation or mild interstitial lung changes. No specific acute infiltrate or effusion is associated."
+    }
+  ],
+  "summary": "The chest X-ray shows no immediate signs of serious acute lung problems like pneumonia (fluid in the lungs), collapsed lung (pneumothorax), or fluid around the lungs (pleural effusion). The heart and major blood vessels appear normal in size and shape. However, there are some mild changes in the lung tissue and around the airways, which might suggest a history of irritation or a mild ongoing lung process, but these are not severe. The bones visible in the image also appear normal. Overall, no urgent issues are identified on this X-ray.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2020200057",
+    "https://radiopaedia.org/articles/peribronchial-cuffing",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 373586,
+    "bytesOut": 367631,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:52:38.343Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

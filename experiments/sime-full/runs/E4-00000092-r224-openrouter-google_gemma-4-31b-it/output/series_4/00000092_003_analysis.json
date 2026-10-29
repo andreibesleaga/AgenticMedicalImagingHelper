@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000092/series_4/00000092_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Bilateral pleural effusions present, larger on the right side.\",\n    \"Right lower lobe opacity consistent with consolidation or compressive atelectasis.\",\n    \"Blunting of the costophrenic angles bilaterally.\",\n    \"Presence of a large gastric air bubble below the left diaphragm.\",\n    \"Cardiomediastinal silhouette appears mildly enlarged, though projection limits precise measurement.\",\n    \"Trachea is midline.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Pleural Effusion\",\n      \"description\": \"Fluid accumulation in the pleural space resulting in blunting of the costophrenic angles and meniscus signs, more pronounced on the right.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Right Lower Lobe Opacity\",\n      \"description\": \"Increased density in the right lower lung field, likely representing a combination of pneumonia or collapse due to the surrounding fluid.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The X-ray shows fluid buildup around both lungs (pleural effusion), which is more significant on the right side. There is also an area of cloudiness in the lower right lung, which could be pneumonia or a collapsed part of the lung caused by the fluid. This pattern can be seen in conditions like heart failure, severe infection, or other systemic inflammatory issues. You should discuss these results with your doctor for a clinical diagnosis.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.acr.org/Clinical-Resources/Chest-X-Ray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Fair",
+  "findings": [
+    "Bilateral pleural effusions present, larger on the right side.",
+    "Right lower lobe opacity consistent with consolidation or compressive atelectasis.",
+    "Blunting of the costophrenic angles bilaterally.",
+    "Presence of a large gastric air bubble below the left diaphragm.",
+    "Cardiomediastinal silhouette appears mildly enlarged, though projection limits precise measurement.",
+    "Trachea is midline."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Fluid accumulation in the pleural space resulting in blunting of the costophrenic angles and meniscus signs, more pronounced on the right."
+    },
+    {
+      "name": "Right Lower Lobe Opacity",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Increased density in the right lower lung field, likely representing a combination of pneumonia or collapse due to the surrounding fluid."
+    }
+  ],
+  "summary": "The X-ray shows fluid buildup around both lungs (pleural effusion), which is more significant on the right side. There is also an area of cloudiness in the lower right lung, which could be pneumonia or a collapsed part of the lung caused by the fluid. This pattern can be seen in conditions like heart failure, severe infection, or other systemic inflammatory issues. You should discuss these results with your doctor for a clinical diagnosis.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.acr.org/Clinical-Resources/Chest-X-Ray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22273,
+    "bytesOut": 22273,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:06:40.130Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

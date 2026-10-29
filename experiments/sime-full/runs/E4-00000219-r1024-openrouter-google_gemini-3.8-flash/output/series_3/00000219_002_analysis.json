@@ -1,0 +1,64 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_3/00000219_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Median sternotomy wires are present and intact, consistent with prior cardiothoracic surgery.\",\n    \"Small radiopaque markers/surgical clips projected over the mediastinum/cardiac silhouette, likely from prior coronary artery bypass grafting or cardiac valve surgery.\",\n    \"Elongated and tortuous thoracic aorta with calcification of the aortic knob consistent with atherosclerosis.\",\n    \"Cardiac silhouette is mildly enlarged.\",\n    \"Clear lung parenchyma bilaterally without evidence of focal consolidation, mass, or edema.\",\n    \"Costophrenic angles are sharp with no evidence of significant pleural effusion or pneumothorax.\",\n    \"Osseous structures show mild degenerative changes in the thoracic spine and bilateral shoulder joints.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Prior Median Sternotomy\",\n      \"description\": \"Intact midline sternal closure wires and surgical clips reflecting prior cardiac surgery.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Aortic Atherosclerosis and Ectasia\",\n      \"description\": \"Tortuous descending thoracic aorta with prominent calcification visible along the aortic arch.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Mild enlargement of the cardiac silhouette.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"This chest X-ray shows expected changes from a previous open-heart surgery, including intact metal wires closing the breastbone (sternum) and surgical markers. The heart appears mildly enlarged. The main artery carrying blood from the heart (the aorta) is slightly widened and shows common age-related calcium deposits (atherosclerosis). The lungs are clear of pneumonia, fluid, or masses.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/sternotomy\",\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/aortic-calcification\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Median sternotomy wires are present and intact, consistent with prior cardiothoracic surgery.",
+    "Small radiopaque markers/surgical clips projected over the mediastinum/cardiac silhouette, likely from prior coronary artery bypass grafting or cardiac valve surgery.",
+    "Elongated and tortuous thoracic aorta with calcification of the aortic knob consistent with atherosclerosis.",
+    "Cardiac silhouette is mildly enlarged.",
+    "Clear lung parenchyma bilaterally without evidence of focal consolidation, mass, or edema.",
+    "Costophrenic angles are sharp with no evidence of significant pleural effusion or pneumothorax.",
+    "Osseous structures show mild degenerative changes in the thoracic spine and bilateral shoulder joints."
+  ],
+  "abnormalities": [
+    {
+      "name": "Prior Median Sternotomy",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "Intact midline sternal closure wires and surgical clips reflecting prior cardiac surgery."
+    },
+    {
+      "name": "Aortic Atherosclerosis and Ectasia",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Tortuous descending thoracic aorta with prominent calcification visible along the aortic arch."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Mild enlargement of the cardiac silhouette."
+    }
+  ],
+  "summary": "This chest X-ray shows expected changes from a previous open-heart surgery, including intact metal wires closing the breastbone (sternum) and surgical markers. The heart appears mildly enlarged. The main artery carrying blood from the heart (the aorta) is slightly widened and shows common age-related calcium deposits (atherosclerosis). The lungs are clear of pneumonia, fluid, or masses.",
+  "references": [
+    "https://radiopaedia.org/articles/sternotomy",
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/aortic-calcification"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 380748,
+    "bytesOut": 376448,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:23:19.270Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

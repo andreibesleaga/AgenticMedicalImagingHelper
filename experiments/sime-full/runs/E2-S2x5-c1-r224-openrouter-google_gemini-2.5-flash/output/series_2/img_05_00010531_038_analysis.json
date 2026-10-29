@@ -1,0 +1,44 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S2x5/series_2/img_05_00010531_038.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No obvious focal airspace consolidation, pleural effusion, or pneumothorax.\",\n    \"Bilateral breasts are visible, obscuring a small portion of the lower lung fields.\",\n    \"Cardiac silhouette is normal in size and contour.\",\n    \"Mediastinum appears unremarkable.\",\n    \"Bony thorax is intact without acute fracture or destructive lesion.\",\n    \"A small, tubular radiodensity is noted over the left upper chest, likely a medical device (e.g., lead from a monitor or dressing).\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray appears largely normal. There are no signs of pneumonia, fluid around the lungs (pleural effusion), or a collapsed lung (pneumothorax). The heart size and other structures in the center of the chest look normal. The bones of the rib cage are also intact. A small tube-like object is visible on the left upper chest, which is likely a medical device and not related to the lungs themselves. The breasts are visible and slightly obscure the very bottom of the lungs.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.233025178\",\n    \"https://radiopaedia.org/articles/chest-x-ray-basic-interpretation-overview\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMra050305\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No obvious focal airspace consolidation, pleural effusion, or pneumothorax.",
+    "Bilateral breasts are visible, obscuring a small portion of the lower lung fields.",
+    "Cardiac silhouette is normal in size and contour.",
+    "Mediastinum appears unremarkable.",
+    "Bony thorax is intact without acute fracture or destructive lesion.",
+    "A small, tubular radiodensity is noted over the left upper chest, likely a medical device (e.g., lead from a monitor or dressing)."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray appears largely normal. There are no signs of pneumonia, fluid around the lungs (pleural effusion), or a collapsed lung (pneumothorax). The heart size and other structures in the center of the chest look normal. The bones of the rib cage are also intact. A small tube-like object is visible on the left upper chest, which is likely a medical device and not related to the lungs themselves. The breasts are visible and slightly obscure the very bottom of the lungs.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.233025178",
+    "https://radiopaedia.org/articles/chest-x-ray-basic-interpretation-overview",
+    "https://www.nejm.org/doi/full/10.1056/NEJMra050305"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23552,
+    "bytesOut": 23552,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:51:24.353Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

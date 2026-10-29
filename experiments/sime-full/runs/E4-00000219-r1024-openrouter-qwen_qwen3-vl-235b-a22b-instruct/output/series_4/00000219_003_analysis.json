@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_4/00000219_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Cardiac silhouette appears enlarged, suggesting possible cardiomegaly.\",\n    \"Increased opacity in the right lower lung field with ill-defined margins.\",\n    \"Mild bilateral perihilar vascular prominence noted.\",\n    \"No obvious rib fractures or skeletal abnormalities.\",\n    \"Diaphragms are intact; costophrenic angles are partially obscured on the right.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiac silhouette occupies more than half the thoracic width, consistent with cardiomegaly. This may reflect underlying cardiac pathology such as hypertrophy or dilation.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Right Lower Lobe Consolidation\",\n      \"description\": \"Area of increased density in the right lower lung field without air bronchograms suggests consolidation, possibly due to pneumonia or atelectasis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"This chest X-ray shows an enlarged heart and a cloudy area in the right lower lung. The enlarged heart could indicate strain or disease affecting the heart muscle. The cloudy area might be due to infection (like pneumonia) or collapse of part of the lung. These findings need further evaluation by your doctor, possibly with additional tests like an echocardiogram or CT scan. Don’t panic — many conditions can cause these changes, and treatment depends on the exact cause.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://www.mayoclinic.org/tests-procedures/chest-x-ray/about/pac-20393461\",\n    \"https://emedicine.medscape.com/article/415825-overview\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Cardiac silhouette appears enlarged, suggesting possible cardiomegaly.",
+    "Increased opacity in the right lower lung field with ill-defined margins.",
+    "Mild bilateral perihilar vascular prominence noted.",
+    "No obvious rib fractures or skeletal abnormalities.",
+    "Diaphragms are intact; costophrenic angles are partially obscured on the right."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "The cardiac silhouette occupies more than half the thoracic width, consistent with cardiomegaly. This may reflect underlying cardiac pathology such as hypertrophy or dilation."
+    },
+    {
+      "name": "Right Lower Lobe Consolidation",
+      "severity": "Moderate",
+      "confidence": 75,
+      "description": "Area of increased density in the right lower lung field without air bronchograms suggests consolidation, possibly due to pneumonia or atelectasis."
+    }
+  ],
+  "summary": "This chest X-ray shows an enlarged heart and a cloudy area in the right lower lung. The enlarged heart could indicate strain or disease affecting the heart muscle. The cloudy area might be due to infection (like pneumonia) or collapse of part of the lung. These findings need further evaluation by your doctor, possibly with additional tests like an echocardiogram or CT scan. Don’t panic — many conditions can cause these changes, and treatment depends on the exact cause.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://www.mayoclinic.org/tests-procedures/chest-x-ray/about/pac-20393461",
+    "https://emedicine.medscape.com/article/415825-overview"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 392020,
+    "bytesOut": 357940,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-09-29T10:22:33.949Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

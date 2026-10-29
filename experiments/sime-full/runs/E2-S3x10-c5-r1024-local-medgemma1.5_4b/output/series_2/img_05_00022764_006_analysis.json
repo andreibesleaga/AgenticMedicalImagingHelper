@@ -1,0 +1,65 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_2/img_05_00022764_006.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"Radiography\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right lung is clear.\",\n    \"Left lung shows atelectasis.\",\n    \"Left pleural effusion.\",\n    \"Left chest tube in situ.\",\n    \"Right subclavian line in situ.\",\n    \"Mild cardiomegaly.\",\n    \"Normal mediastinum.\",\n    \"Soft tissue structures are unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left pleural effusion\",\n      \"description\": \"Left pleural effusion. There is fluid seen in the left pleural space.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 70\n    },\n    {\n      \"name\": \"Left chest tube\",\n      \"description\": \"Left chest tube.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Left lung atelectasis\",\n      \"description\": \"Left lung atelectasis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 70\n    }\n  ],\n  \"summary\": \"Chest X-ray shows a left chest tube in place. There is fluid in the left pleural space (pleural effusion) and collapse of the left lung base (atelectasis). The right lung appears clear. The heart size is mildly enlarged.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/pneumonia\",\n    \"https://radiopaedia.org/articles/atelectasis\"\n  ]\n}",
+  "modality": "Radiography",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Right lung is clear.",
+    "Left lung shows atelectasis.",
+    "Left pleural effusion.",
+    "Left chest tube in situ.",
+    "Right subclavian line in situ.",
+    "Mild cardiomegaly.",
+    "Normal mediastinum.",
+    "Soft tissue structures are unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left pleural effusion",
+      "severity": "Moderate",
+      "confidence": 70,
+      "description": "Left pleural effusion. There is fluid seen in the left pleural space."
+    },
+    {
+      "name": "Left chest tube",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Left chest tube."
+    },
+    {
+      "name": "Left lung atelectasis",
+      "severity": "Moderate",
+      "confidence": 70,
+      "description": "Left lung atelectasis."
+    }
+  ],
+  "summary": "Chest X-ray shows a left chest tube in place. There is fluid in the left pleural space (pleural effusion) and collapse of the left lung base (atelectasis). The right lung appears clear. The heart size is mildly enlarged.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/pneumonia",
+    "https://radiopaedia.org/articles/atelectasis"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 444722,
+    "bytesOut": 337789,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:01:53.112Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

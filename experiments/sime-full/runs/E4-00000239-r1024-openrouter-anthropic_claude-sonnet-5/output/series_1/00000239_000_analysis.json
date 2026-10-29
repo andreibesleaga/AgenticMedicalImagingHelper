@@ -1,0 +1,66 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_1/00000239_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP, likely supine/portable)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"AP chest radiograph with some rotation and low lung volumes\",\n    \"Lungs are grossly clear bilaterally without focal consolidation, effusion, or pneumothorax\",\n    \"Cardiac silhouette appears mildly enlarged, though partly obscured by patient positioning\",\n    \"Mediastinal and hilar structures appear unremarkable\",\n    \"Prominent gaseous distension of bowel loops visible in the upper abdomen, particularly on the left side, suggestive of gastric or colonic distension\",\n    \"Small metallic/wire-like densities noted in the left upper abdominal region, possibly surgical clips or external markers\",\n    \"Skeletal structures (clavicles, ribs, spine) appear grossly intact without acute fracture\",\n    \"Soft tissues of the neck and shoulders are unremarkable\",\n    \"'L' and 'DG' markers visible in the upper right corner of the image, indicating laterality and technician/facility identification\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Gastric/bowel distension\",\n      \"description\": \"Marked gaseous distension noted in the left upper abdomen, likely representing a distended stomach or proximal bowel loop, visible at the inferior aspect of the film below the diaphragm.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 55\n    },\n    {\n      \"name\": \"Possible cardiomegaly\",\n      \"description\": \"The cardiac silhouette appears somewhat enlarged relative to thoracic width, though this may be exaggerated by AP technique, rotation, and low lung volumes.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 40\n    },\n    {\n      \"name\": \"Suboptimal positioning/rotation\",\n      \"description\": \"Patient rotation and low inspiratory effort limit full assessment of mediastinal contours and lung bases.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 60\n    }\n  ],\n  \"summary\": \"This chest X-ray shows the lungs to be generally clear, without signs of pneumonia, fluid buildup, or collapsed lung. The heart shadow looks slightly large, but this can be affected by how the picture was taken (the patient may have been slightly turned or not taken a full breath in). There is a notable amount of air/gas seen in the upper abdomen, which is likely just a distended stomach or bowel - a common and usually benign finding, especially if the patient recently ate, drank, or is on certain medications. A few small metallic markers are seen in the abdomen, which could be from prior surgery or external monitoring equipment. Overall, this image does not show any urgent lung or heart problems, but the technical quality is only fair due to positioning, so a follow-up image or clinical correlation may be helpful for a more complete evaluation.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-radiograph-an-approach\",\n    \"https://www.rcemlearning.co.uk/reference/interpreting-chest-x-rays/\",\n    \"https://pubs.rsna.org/doi/10.1148/rg.2020190104\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP, likely supine/portable)",
+  "quality": "Fair",
+  "findings": [
+    "AP chest radiograph with some rotation and low lung volumes",
+    "Lungs are grossly clear bilaterally without focal consolidation, effusion, or pneumothorax",
+    "Cardiac silhouette appears mildly enlarged, though partly obscured by patient positioning",
+    "Mediastinal and hilar structures appear unremarkable",
+    "Prominent gaseous distension of bowel loops visible in the upper abdomen, particularly on the left side, suggestive of gastric or colonic distension",
+    "Small metallic/wire-like densities noted in the left upper abdominal region, possibly surgical clips or external markers",
+    "Skeletal structures (clavicles, ribs, spine) appear grossly intact without acute fracture",
+    "Soft tissues of the neck and shoulders are unremarkable",
+    "'L' and 'DG' markers visible in the upper right corner of the image, indicating laterality and technician/facility identification"
+  ],
+  "abnormalities": [
+    {
+      "name": "Gastric/bowel distension",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Marked gaseous distension noted in the left upper abdomen, likely representing a distended stomach or proximal bowel loop, visible at the inferior aspect of the film below the diaphragm."
+    },
+    {
+      "name": "Possible cardiomegaly",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "The cardiac silhouette appears somewhat enlarged relative to thoracic width, though this may be exaggerated by AP technique, rotation, and low lung volumes."
+    },
+    {
+      "name": "Suboptimal positioning/rotation",
+      "severity": "Mild",
+      "confidence": 60,
+      "description": "Patient rotation and low inspiratory effort limit full assessment of mediastinal contours and lung bases."
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs to be generally clear, without signs of pneumonia, fluid buildup, or collapsed lung. The heart shadow looks slightly large, but this can be affected by how the picture was taken (the patient may have been slightly turned or not taken a full breath in). There is a notable amount of air/gas seen in the upper abdomen, which is likely just a distended stomach or bowel - a common and usually benign finding, especially if the patient recently ate, drank, or is on certain medications. A few small metallic markers are seen in the abdomen, which could be from prior surgery or external monitoring equipment. Overall, this image does not show any urgent lung or heart problems, but the technical quality is only fair due to positioning, so a follow-up image or clinical correlation may be helpful for a more complete evaluation.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-an-approach",
+    "https://www.rcemlearning.co.uk/reference/interpreting-chest-x-rays/",
+    "https://pubs.rsna.org/doi/10.1148/rg.2020190104"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 384310,
+    "bytesOut": 378425,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:27:11.243Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000296/series_3/00000296_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear lung fields with no overt consolidation or mass.\",\n    \"Normal cardiac silhouette and mediastinal contours.\",\n    \"Visible nasogastric tube coursing down the esophagus into the stomach, terminating in the gastric fundus.\",\n    \"No evidence of pneumothorax or pleural effusion.\",\n    \"Diaphragms are well-defined; costophrenic angles are sharp.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray appears normal. A feeding tube is seen correctly placed in the stomach, which is expected if the patient requires nutritional support. There are no signs of pneumonia, fluid around the lungs, or heart enlargement. The lungs look clear and the bones appear intact. This is reassuring and suggests no acute lung disease at this time.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://radiopaedia.org/articles/chest-x-ray-interpretation\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK537129/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Clear lung fields with no overt consolidation or mass.",
+    "Normal cardiac silhouette and mediastinal contours.",
+    "Visible nasogastric tube coursing down the esophagus into the stomach, terminating in the gastric fundus.",
+    "No evidence of pneumothorax or pleural effusion.",
+    "Diaphragms are well-defined; costophrenic angles are sharp."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray appears normal. A feeding tube is seen correctly placed in the stomach, which is expected if the patient requires nutritional support. There are no signs of pneumonia, fluid around the lungs, or heart enlargement. The lungs look clear and the bones appear intact. This is reassuring and suggests no acute lung disease at this time.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://radiopaedia.org/articles/chest-x-ray-interpretation",
+    "https://www.ncbi.nlm.nih.gov/books/NBK537129/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 417130,
+    "bytesOut": 380102,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:33:06.094Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

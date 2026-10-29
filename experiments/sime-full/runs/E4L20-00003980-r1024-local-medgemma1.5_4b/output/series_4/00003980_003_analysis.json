@@ -1,0 +1,30 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00003980/series_4/00003980_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"Radiography\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lung fields are clear.\",\n    \"Heart size is within normal limits.\",\n    \"Mediastinal structures are unremarkable.\",\n    \"There are no pleural effusions.\",\n    \"Bony structures are intact.\",\n    \"There is evidence of right shoulder surgery.\",\n    \"Diaphragms are well-defined.\",\n    \"Cardiothoracic ratio is normal.\",\n  \"abnormalities\\\": [], <start_of_image>  \" ]\n}",
+  "findings": [],
+  "validation": {
+    "ok": false,
+    "issues": [
+      "summary: Invalid input: expected string, received undefined"
+    ]
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 385244,
+    "bytesOut": 302838,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T09:11:18.315Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

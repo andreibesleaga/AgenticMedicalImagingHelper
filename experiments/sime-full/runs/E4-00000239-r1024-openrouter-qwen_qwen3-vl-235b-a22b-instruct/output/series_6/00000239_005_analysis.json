@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_6/00000239_005.png",
+  "seriesId": "series_6",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear lung fields with no focal consolidation or mass.\",\n    \"Cardiac silhouette within normal limits for size and contour.\",\n    \"Diaphragms well-defined; right hemidiaphragm slightly higher than left, as expected.\",\n    \"No pleural effusion or pneumothorax observed.\",\n    \"Bony thorax intact without fracture or lytic lesion.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray appears normal. The lungs are clear, the heart size is appropriate, and there are no signs of fluid, infection, or structural damage. This is typically reassuring and suggests no acute lung or heart problem at the time of imaging.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://radiopaedia.org/articles/chest-x-ray-normal-variants\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK538219/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Clear lung fields with no focal consolidation or mass.",
+    "Cardiac silhouette within normal limits for size and contour.",
+    "Diaphragms well-defined; right hemidiaphragm slightly higher than left, as expected.",
+    "No pleural effusion or pneumothorax observed.",
+    "Bony thorax intact without fracture or lytic lesion."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray appears normal. The lungs are clear, the heart size is appropriate, and there are no signs of fluid, infection, or structural damage. This is typically reassuring and suggests no acute lung or heart problem at the time of imaging.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://radiopaedia.org/articles/chest-x-ray-normal-variants",
+    "https://www.ncbi.nlm.nih.gov/books/NBK538219/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 378298,
+    "bytesOut": 345100,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-09-29T10:24:04.097Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_3/00000219_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear without focal consolidation, pleural effusion, or pneumothorax\",\n    \"Heart size is within normal limits\",\n    \"Presence of multiple surgical clips and prosthetic material in the mediastinum\",\n    \"Presence of a prosthetic valve or ring structure in the mid-mediastinum\",\n    \"Bony structures are intact\",\n    \"Diaphragms are sharp and costophrenic angles are clear\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Post-surgical changes\",\n      \"description\": \"Presence of surgical clips and a prosthetic ring/valve structure in the mediastinum, consistent with prior cardiovascular surgery.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows healthy lungs and a normal heart size. There are signs of a previous heart surgery, specifically some metal clips and a prosthetic device in the chest area, which is an expected finding for someone who has had such a procedure. No new or acute problems were detected.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-radiograph\",\n    \"https://www.acr.org/Clinical-Guidelines\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear without focal consolidation, pleural effusion, or pneumothorax",
+    "Heart size is within normal limits",
+    "Presence of multiple surgical clips and prosthetic material in the mediastinum",
+    "Presence of a prosthetic valve or ring structure in the mid-mediastinum",
+    "Bony structures are intact",
+    "Diaphragms are sharp and costophrenic angles are clear"
+  ],
+  "abnormalities": [
+    {
+      "name": "Post-surgical changes",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "Presence of surgical clips and a prosthetic ring/valve structure in the mediastinum, consistent with prior cardiovascular surgery."
+    }
+  ],
+  "summary": "The chest X-ray shows healthy lungs and a normal heart size. There are signs of a previous heart surgery, specifically some metal clips and a prosthetic device in the chest area, which is an expected finding for someone who has had such a procedure. No new or acute problems were detected.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.acr.org/Clinical-Guidelines"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 380748,
+    "bytesOut": 295973,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T09:17:43.972Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

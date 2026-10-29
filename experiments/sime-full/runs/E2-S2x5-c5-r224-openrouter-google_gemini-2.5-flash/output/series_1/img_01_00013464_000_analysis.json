@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S2x5/series_1/img_01_00013464_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Bilateral hilar and mediastinal contours are unremarkable.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Diaphragms are intact and costophrenic angles are sharp.\",\n    \"Bony thorax appears intact without acute fracture or destructive lesion.\",\n    \"Soft tissues are unremarkable.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This X-ray of the chest shows no signs of acute disease in the lungs, heart, or bones of the chest. The lungs are clear, and there is no evidence of fluid around the lungs (pleural effusion), collapsed lung (pneumothorax), or pneumonia. The heart appears to be of normal size and shape. All visible bones and soft tissues are normal. Overall, the study is unremarkable.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1146/annurev-med-052213-115340\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "Bilateral hilar and mediastinal contours are unremarkable.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Diaphragms are intact and costophrenic angles are sharp.",
+    "Bony thorax appears intact without acute fracture or destructive lesion.",
+    "Soft tissues are unremarkable."
+  ],
+  "abnormalities": [],
+  "summary": "This X-ray of the chest shows no signs of acute disease in the lungs, heart, or bones of the chest. The lungs are clear, and there is no evidence of fluid around the lungs (pleural effusion), collapsed lung (pneumothorax), or pneumonia. The heart appears to be of normal size and shape. All visible bones and soft tissues are normal. Overall, the study is unremarkable.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1146/annurev-med-052213-115340",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 20486,
+    "bytesOut": 20486,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:51:43.059Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

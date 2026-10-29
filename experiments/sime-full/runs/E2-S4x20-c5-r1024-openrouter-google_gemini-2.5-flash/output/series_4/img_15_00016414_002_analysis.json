@@ -1,0 +1,68 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_15_00016414_002.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Cardiomegaly is present, with enlargement of the cardiac silhouette.\",\n    \"Bilateral interstitial opacities are noted, suggesting pulmonary edema.\",\n    \"Bilateral pleural effusions are evident, more prominent on the right side, with blunting of the costophrenic angles.\",\n    \"A pacemaker or implantable cardioverter-defibrillator (ICD) lead is seen projecting over the right ventricle.\",\n    \"A linear metallic density consistent with a left-sided pacemaker generator is observed.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlargement of the cardiac silhouette, suggestive of an enlarged heart.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pulmonary Edema\",\n      \"description\": \"Bilateral interstitial opacities, consistent with fluid accumulation in the lung tissue.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Fluid accumulation in the pleural space, blunting the costophrenic angles bilaterally, more pronounced on the right.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pacemaker Lead/Device\",\n      \"description\": \"Presence of a pacemaker or ICD lead projecting over the right ventricle and a generator on the left chest wall.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 99\n    }\n  ],\n  \"summary\": \"This X-ray shows an enlarged heart (cardiomegaly), which means the heart muscle is bigger than normal. There is also fluid in the lungs (pulmonary edema) and around the lungs (pleural effusions), which can make it hard to breathe. These findings suggest heart failure. Additionally, there is a medical device, likely a pacemaker or defibrillator, present in the chest with a wire extending into the heart, which is a common treatment for certain heart conditions. These findings warrant further medical evaluation and management.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000672\",\n    \"https://my.clevelandclinic.org/health/diseases/17069-cardiomegaly\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Cardiomegaly is present, with enlargement of the cardiac silhouette.",
+    "Bilateral interstitial opacities are noted, suggesting pulmonary edema.",
+    "Bilateral pleural effusions are evident, more prominent on the right side, with blunting of the costophrenic angles.",
+    "A pacemaker or implantable cardioverter-defibrillator (ICD) lead is seen projecting over the right ventricle.",
+    "A linear metallic density consistent with a left-sided pacemaker generator is observed."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Enlargement of the cardiac silhouette, suggestive of an enlarged heart."
+    },
+    {
+      "name": "Pulmonary Edema",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Bilateral interstitial opacities, consistent with fluid accumulation in the lung tissue."
+    },
+    {
+      "name": "Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Fluid accumulation in the pleural space, blunting the costophrenic angles bilaterally, more pronounced on the right."
+    },
+    {
+      "name": "Pacemaker Lead/Device",
+      "severity": "Normal",
+      "confidence": 99,
+      "description": "Presence of a pacemaker or ICD lead projecting over the right ventricle and a generator on the left chest wall."
+    }
+  ],
+  "summary": "This X-ray shows an enlarged heart (cardiomegaly), which means the heart muscle is bigger than normal. There is also fluid in the lungs (pulmonary edema) and around the lungs (pleural effusions), which can make it hard to breathe. These findings suggest heart failure. Additionally, there is a medical device, likely a pacemaker or defibrillator, present in the chest with a wire extending into the heart, which is a common treatment for certain heart conditions. These findings warrant further medical evaluation and management.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000672",
+    "https://my.clevelandclinic.org/health/diseases/17069-cardiomegaly"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 456292,
+    "bytesOut": 455996,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:46:51.017Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_4/img_11_00024149_000.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, effusion, or pneumothorax is identified.\",\n    \"Cardiomediastinal contours are within normal limits.\",\n    \"Bilateral hilar regions are unremarkable.\",\n    \"Osseous structures show no acute abnormalities.\",\n    \"A metallic foreign body, consistent with a surgical clip, is noted overlying the left shoulder region, projecting near the acromial end of the clavicle.\",\n    \"No definite abnormalities of the thoracic cage are seen.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical Clip\",\n      \"description\": \"A metallic foreign body, consistent with a surgical clip, is observed superior to the left shoulder, likely related to a prior surgical intervention.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This chest X-ray appears largely normal. There are no signs of common lung problems like pneumonia (inflammation of the lungs), fluid buildup around the lungs, or a collapsed lung. The heart and major blood vessels in the chest look normal in size and shape. The bones visible in the chest also appear healthy. There is a small metal clip seen near the left shoulder, which is likely from a previous surgery and is not typically a cause for concern in this context.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.292085187\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://radiopaedia.org/articles/chest-x-ray-interpretive-approach\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, effusion, or pneumothorax is identified.",
+    "Cardiomediastinal contours are within normal limits.",
+    "Bilateral hilar regions are unremarkable.",
+    "Osseous structures show no acute abnormalities.",
+    "A metallic foreign body, consistent with a surgical clip, is noted overlying the left shoulder region, projecting near the acromial end of the clavicle.",
+    "No definite abnormalities of the thoracic cage are seen."
+  ],
+  "abnormalities": [
+    {
+      "name": "Surgical Clip",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A metallic foreign body, consistent with a surgical clip, is observed superior to the left shoulder, likely related to a prior surgical intervention."
+    }
+  ],
+  "summary": "This chest X-ray appears largely normal. There are no signs of common lung problems like pneumonia (inflammation of the lungs), fluid buildup around the lungs, or a collapsed lung. The heart and major blood vessels in the chest look normal in size and shape. The bones visible in the chest also appear healthy. There is a small metal clip seen near the left shoulder, which is likely from a previous surgery and is not typically a cause for concern in this context.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.292085187",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://radiopaedia.org/articles/chest-x-ray-interpretive-approach"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24990,
+    "bytesOut": 24990,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:02:27.779Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

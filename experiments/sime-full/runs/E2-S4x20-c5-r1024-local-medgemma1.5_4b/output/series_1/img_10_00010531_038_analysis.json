@@ -1,0 +1,39 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_1/img_10_00010531_038.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear without consolidation or large effusion.\",\n    \"The cardiac silhouette is normal in size.\",\n    \"The mediastinum is unremarkable.\",\n    \"The osseous structures are intact.\",\n    \"A left-sided picc line is identified with tip in the superior vena cava.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"Chest X-ray shows clear lungs and heart. The left picc line is present.\",\n  \"references\": []\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear without consolidation or large effusion.",
+    "The cardiac silhouette is normal in size.",
+    "The mediastinum is unremarkable.",
+    "The osseous structures are intact.",
+    "A left-sided picc line is identified with tip in the superior vena cava."
+  ],
+  "abnormalities": [],
+  "summary": "Chest X-ray shows clear lungs and heart. The left picc line is present.",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 412585,
+    "bytesOut": 314181,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:18:22.048Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

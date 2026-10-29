@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_1/img_01_00013464_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is within normal limits.\",\n    \"Bony thorax appears intact without acute fracture or destructive lesion.\",\n    \"Mild degenerative changes noted in the shoulders.\",\n    \"Surgical clips are seen in the lower lung fields, bilaterally.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical clips\",\n      \"description\": \"Multiple small surgical clips are observed in the bilateral lower lung fields, consistent with prior surgical intervention, likely related to breast surgery.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"Your chest X-ray shows that your lungs are clear, and your heart and major blood vessels appear normal. The bones of your chest are intact. There are some small surgical clips visible in the lower part of your chest on both sides, which are typically seen after breast surgery and are not a cause for concern. Overall, the X-ray does not show any new or significant problems in your chest.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.292085186\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://radiopaedia.org/articles/surgical-clips-on-mammography\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal silhouette is within normal limits.",
+    "Bony thorax appears intact without acute fracture or destructive lesion.",
+    "Mild degenerative changes noted in the shoulders.",
+    "Surgical clips are seen in the lower lung fields, bilaterally."
+  ],
+  "abnormalities": [
+    {
+      "name": "Surgical clips",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Multiple small surgical clips are observed in the bilateral lower lung fields, consistent with prior surgical intervention, likely related to breast surgery."
+    }
+  ],
+  "summary": "Your chest X-ray shows that your lungs are clear, and your heart and major blood vessels appear normal. The bones of your chest are intact. There are some small surgical clips visible in the lower part of your chest on both sides, which are typically seen after breast surgery and are not a cause for concern. Overall, the X-ray does not show any new or significant problems in your chest.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.292085186",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://radiopaedia.org/articles/surgical-clips-on-mammography"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 385399,
+    "bytesOut": 382879,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:45:35.484Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

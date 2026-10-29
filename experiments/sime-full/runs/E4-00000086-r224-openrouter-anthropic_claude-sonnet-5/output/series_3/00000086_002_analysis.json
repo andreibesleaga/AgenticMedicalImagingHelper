@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000086/series_3/00000086_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP/PA)\",\"quality\":\"Fair\",\"findings\":[\"Bilateral lung fields visualized with increased opacity in the lower lung zones bilaterally\",\"Cardiac silhouette appears within normal limits given technique\",\"Mediastinal structures are midline\",\"Visible clips/markers noted in the right upper chest region, possibly surgical clips or leads\",\"Bony thorax including ribs and clavicles appear intact without obvious fracture\",\"Some rotation and technical limitation of the image affecting full assessment of symmetry\"],\"abnormalities\":[{\"name\":\"Bilateral lower lobe opacities\",\"description\":\"Increased haziness/opacity in the bilateral lower lung fields, which could represent atelectasis, pleural effusion, or early infiltrates; further clinical correlation and possibly lateral view or CT needed for characterization\",\"severity\":\"Moderate\",\"confidence\":55},{\"name\":\"Right upper chest hardware/clip\",\"description\":\"Small radiopaque marker or clip seen in the right upper chest area, could represent a surgical clip, pacemaker lead remnant, or skin marker; clinical history needed for exact identification\",\"severity\":\"Mild\",\"confidence\":40}],\"summary\":\"This is a chest X-ray showing the lungs, heart, and surrounding bones. There appears to be some cloudiness in the lower parts of both lungs, which could be due to a few different causes such as fluid, partial lung collapse, or early signs of infection - this would need to be correlated with the patient's symptoms and possibly further imaging. There's also a small metallic marker in the upper right chest area, which is often just a skin marker or leftover clip from a prior procedure and is usually not concerning on its own. The heart size and bones appear normal. As always, a radiologist should review this image directly alongside the patient's clinical history for an accurate diagnosis.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph-assessment-1\",\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7071925/\",\"https://www.radiologyinfo.org/en/info/chestrad\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP/PA)",
+  "quality": "Fair",
+  "findings": [
+    "Bilateral lung fields visualized with increased opacity in the lower lung zones bilaterally",
+    "Cardiac silhouette appears within normal limits given technique",
+    "Mediastinal structures are midline",
+    "Visible clips/markers noted in the right upper chest region, possibly surgical clips or leads",
+    "Bony thorax including ribs and clavicles appear intact without obvious fracture",
+    "Some rotation and technical limitation of the image affecting full assessment of symmetry"
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral lower lobe opacities",
+      "severity": "Moderate",
+      "confidence": 55,
+      "description": "Increased haziness/opacity in the bilateral lower lung fields, which could represent atelectasis, pleural effusion, or early infiltrates; further clinical correlation and possibly lateral view or CT needed for characterization"
+    },
+    {
+      "name": "Right upper chest hardware/clip",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Small radiopaque marker or clip seen in the right upper chest area, could represent a surgical clip, pacemaker lead remnant, or skin marker; clinical history needed for exact identification"
+    }
+  ],
+  "summary": "This is a chest X-ray showing the lungs, heart, and surrounding bones. There appears to be some cloudiness in the lower parts of both lungs, which could be due to a few different causes such as fluid, partial lung collapse, or early signs of infection - this would need to be correlated with the patient's symptoms and possibly further imaging. There's also a small metallic marker in the upper right chest area, which is often just a skin marker or leftover clip from a prior procedure and is usually not concerning on its own. The heart size and bones appear normal. As always, a radiologist should review this image directly alongside the patient's clinical history for an accurate diagnosis.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-assessment-1",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7071925/",
+    "https://www.radiologyinfo.org/en/info/chestrad"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23353,
+    "bytesOut": 23353,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-29T10:36:02.995Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

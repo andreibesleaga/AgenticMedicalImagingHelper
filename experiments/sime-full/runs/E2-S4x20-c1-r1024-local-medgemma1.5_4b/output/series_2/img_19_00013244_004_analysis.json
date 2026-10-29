@@ -1,0 +1,30 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_2/img_19_00013244_004.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    [\"Central venous catheter tip terminates in the low superior vena cava.\",\n    \"Lung fields are clear.\",\n    \"The heart size is normal.\",\n    \"Mediastinal contours are normal.\",\n    \"No pleural effusion is identified.\",\n    \"Bony structures are intact.\"]],\n  \"abnormalities\": [],\n  \"summary\": \"Chest X-ray shows a central venous catheter tip in the superior vena cava, clear lungs, normal heart size, and no other significant findings.\",\n  \"references\": [\n    \"https://www.radiologyassistant.com/main/view/chest-x-ray-central-line-complications/4415\",\n    \"https://radiopaedia.org/articles/central-line-complications\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5049944/\"\n  ]\n}",
+  "findings": [],
+  "validation": {
+    "ok": false,
+    "issues": [
+      "findings.0: Invalid input: expected string, received array"
+    ]
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 443995,
+    "bytesOut": 337444,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:12:58.349Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

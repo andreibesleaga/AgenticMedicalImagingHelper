@@ -1,0 +1,71 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_4/00000219_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP upright)\",\"quality\":\"Fair\",\"findings\":[\"Cardiomegaly with cardiothoracic ratio appearing increased\",\"Prominent left heart border/aortic knob contour\",\"Rounded soft tissue opacity overlying the left lower cardiac border, possibly representing a hiatal hernia, pericardial fat pad, or cardiac contour abnormality\",\"Increased bronchovascular markings bilaterally, more prominent in the perihilar regions\",\"No definite focal consolidation or large pleural effusion identified\",\"Surgical clips/sutures visible in the mediastinum overlying the spine, suggesting prior cardiac or mediastinal surgery\",\"Degenerative changes noted at the shoulders bilaterally\",\"Patient rotation and suboptimal inspiration limit full assessment\"],\"abnormalities\":[{\"name\":\"Cardiomegaly\",\"description\":\"The cardiac silhouette appears enlarged with widened contour, particularly along the left heart border, suggesting possible left ventricular or global cardiac enlargement.\",\"severity\":\"Moderate\",\"confidence\":65},{\"name\":\"Rounded lucent/opaque density at left cardiophrenic angle\",\"description\":\"A well-defined round opacity is seen overlying the left lower heart border near the diaphragm, which could represent a hiatal hernia (if lucent with air-fluid level), pericardial fat pad, or diaphragmatic abnormality; further correlation with lateral view or CT recommended.\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Increased interstitial/bronchovascular markings\",\"description\":\"Mild prominence of perihilar and lower lung vascular markings which may reflect mild pulmonary vascular congestion, though this could also be due to technique/rotation.\",\"severity\":\"Mild\",\"confidence\":40},{\"name\":\"Post-surgical mediastinal changes\",\"description\":\"Fine wire-like opacities and clips are seen in the mediastinum along the spine, consistent with prior sternotomy/cardiac surgery (e.g., CABG or valve repair) with sternal wires or surgical clips.\",\"severity\":\"Mild\",\"confidence\":55}],\"summary\":\"This chest X-ray shows that the heart appears larger than normal (cardiomegaly), which can be related to various heart conditions and should be correlated with the patient's clinical history and echocardiogram. There is a round shadow near the lower left side of the heart that could be a hiatal hernia (a part of the stomach pushing up through the diaphragm) or simply fatty tissue around the heart - this would need a side-view X-ray or CT scan to clarify. The lung markings look slightly more prominent than usual, which sometimes indicates mild fluid buildup or venous congestion, but this can also just be due to the way the picture was taken. There are also signs of prior heart or chest surgery, indicated by surgical wires or clips in the middle of the chest. Overall, this image suggests the need for further clinical correlation and possibly additional imaging to clarify the findings, especially regarding heart size and the rounded density near the heart.\",\"references\":[\"https://radiopaedia.org/articles/cardiomegaly\",\"https://radiopaedia.org/articles/hiatus-hernia-2\",\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Fair",
+  "findings": [
+    "Cardiomegaly with cardiothoracic ratio appearing increased",
+    "Prominent left heart border/aortic knob contour",
+    "Rounded soft tissue opacity overlying the left lower cardiac border, possibly representing a hiatal hernia, pericardial fat pad, or cardiac contour abnormality",
+    "Increased bronchovascular markings bilaterally, more prominent in the perihilar regions",
+    "No definite focal consolidation or large pleural effusion identified",
+    "Surgical clips/sutures visible in the mediastinum overlying the spine, suggesting prior cardiac or mediastinal surgery",
+    "Degenerative changes noted at the shoulders bilaterally",
+    "Patient rotation and suboptimal inspiration limit full assessment"
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 65,
+      "description": "The cardiac silhouette appears enlarged with widened contour, particularly along the left heart border, suggesting possible left ventricular or global cardiac enlargement."
+    },
+    {
+      "name": "Rounded lucent/opaque density at left cardiophrenic angle",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "A well-defined round opacity is seen overlying the left lower heart border near the diaphragm, which could represent a hiatal hernia (if lucent with air-fluid level), pericardial fat pad, or diaphragmatic abnormality; further correlation with lateral view or CT recommended."
+    },
+    {
+      "name": "Increased interstitial/bronchovascular markings",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Mild prominence of perihilar and lower lung vascular markings which may reflect mild pulmonary vascular congestion, though this could also be due to technique/rotation."
+    },
+    {
+      "name": "Post-surgical mediastinal changes",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "Fine wire-like opacities and clips are seen in the mediastinum along the spine, consistent with prior sternotomy/cardiac surgery (e.g., CABG or valve repair) with sternal wires or surgical clips."
+    }
+  ],
+  "summary": "This chest X-ray shows that the heart appears larger than normal (cardiomegaly), which can be related to various heart conditions and should be correlated with the patient's clinical history and echocardiogram. There is a round shadow near the lower left side of the heart that could be a hiatal hernia (a part of the stomach pushing up through the diaphragm) or simply fatty tissue around the heart - this would need a side-view X-ray or CT scan to clarify. The lung markings look slightly more prominent than usual, which sometimes indicates mild fluid buildup or venous congestion, but this can also just be due to the way the picture was taken. There are also signs of prior heart or chest surgery, indicated by surgical wires or clips in the middle of the chest. Overall, this image suggests the need for further clinical correlation and possibly additional imaging to clarify the findings, especially regarding heart size and the rounded density near the heart.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/hiatus-hernia-2",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 392020,
+    "bytesOut": 388042,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:25:17.918Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

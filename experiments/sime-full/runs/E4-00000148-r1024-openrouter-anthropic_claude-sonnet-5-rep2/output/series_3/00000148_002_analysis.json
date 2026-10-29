@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_3/00000148_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP upright)\",\"quality\":\"Good\",\"findings\":[\"Round, disc-shaped radiopaque device with central lucency and peripheral markers (fenestrations) projecting over the right mid-to-lower lung field, likely overlying the right atrium region - consistent with a vascular closure device or septal/vascular occluder with a catheter tail extending superiorly toward the right subclavian/innominate vein region\",\"Cardiac silhouette size appears within upper normal limits, mild cardiomegaly cannot be excluded without lateral view\",\"Lungs are clear bilaterally without focal consolidation, pleural effusion, or pneumothorax\",\"Mediastinal contours are unremarkable; trachea midline\",\"Osseous structures of the chest wall, shoulders, and visualized spine appear intact without acute fracture\",\"Left-sided 'L' marker present confirming laterality\",\"Soft tissue overlying lower chest/upper abdomen shows some mottled lucency, possibly overlying bowel gas or skin fold artifact - nonspecific\"],\"abnormalities\":[{\"name\":\"Intracardiac/Intravascular occluder device\",\"description\":\"A circular radiopaque disc with a central lucent region and peripheral radiopaque markers is seen in the right mid-chest, with a thin linear catheter-like tail extending cranially toward the great vessels. This appearance is characteristic of a septal occluder device (e.g., ASD/PFO closure device) or a retained vascular closure device, positioned near the expected location of the interatrial septum/right heart.\",\"severity\":\"Mild\",\"confidence\":72}],\"summary\":\"This chest X-ray shows the lungs and heart to be largely normal in appearance, with no signs of pneumonia, fluid buildup, or collapsed lung. However, there is a small round device visible in the middle of the chest, near the heart, with a thin wire leading up toward the neck/shoulder area. This appearance is typical of a cardiac septal closure device, which is commonly used to close a small hole between the heart's chambers (such as an atrial septal defect or patent foramen ovale). This is usually an expected finding if the patient has had this type of heart procedure in the past, and does not represent a new problem unless there are symptoms suggesting device migration or complication. A cardiology consultation and clinical correlation are recommended to confirm the type and status of the device.\",\"references\":[\"https://radiopaedia.org/articles/atrial-septal-defect-closure-device\",\"https://pubs.rsna.org/doi/10.1148/rg.2018170182\",\"https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.106.618389\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Good",
+  "findings": [
+    "Round, disc-shaped radiopaque device with central lucency and peripheral markers (fenestrations) projecting over the right mid-to-lower lung field, likely overlying the right atrium region - consistent with a vascular closure device or septal/vascular occluder with a catheter tail extending superiorly toward the right subclavian/innominate vein region",
+    "Cardiac silhouette size appears within upper normal limits, mild cardiomegaly cannot be excluded without lateral view",
+    "Lungs are clear bilaterally without focal consolidation, pleural effusion, or pneumothorax",
+    "Mediastinal contours are unremarkable; trachea midline",
+    "Osseous structures of the chest wall, shoulders, and visualized spine appear intact without acute fracture",
+    "Left-sided 'L' marker present confirming laterality",
+    "Soft tissue overlying lower chest/upper abdomen shows some mottled lucency, possibly overlying bowel gas or skin fold artifact - nonspecific"
+  ],
+  "abnormalities": [
+    {
+      "name": "Intracardiac/Intravascular occluder device",
+      "severity": "Mild",
+      "confidence": 72,
+      "description": "A circular radiopaque disc with a central lucent region and peripheral radiopaque markers is seen in the right mid-chest, with a thin linear catheter-like tail extending cranially toward the great vessels. This appearance is characteristic of a septal occluder device (e.g., ASD/PFO closure device) or a retained vascular closure device, positioned near the expected location of the interatrial septum/right heart."
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs and heart to be largely normal in appearance, with no signs of pneumonia, fluid buildup, or collapsed lung. However, there is a small round device visible in the middle of the chest, near the heart, with a thin wire leading up toward the neck/shoulder area. This appearance is typical of a cardiac septal closure device, which is commonly used to close a small hole between the heart's chambers (such as an atrial septal defect or patent foramen ovale). This is usually an expected finding if the patient has had this type of heart procedure in the past, and does not represent a new problem unless there are symptoms suggesting device migration or complication. A cardiology consultation and clinical correlation are recommended to confirm the type and status of the device.",
+  "references": [
+    "https://radiopaedia.org/articles/atrial-septal-defect-closure-device",
+    "https://pubs.rsna.org/doi/10.1148/rg.2018170182",
+    "https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.106.618389"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 453156,
+    "bytesOut": 452383,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T09:40:59.594Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

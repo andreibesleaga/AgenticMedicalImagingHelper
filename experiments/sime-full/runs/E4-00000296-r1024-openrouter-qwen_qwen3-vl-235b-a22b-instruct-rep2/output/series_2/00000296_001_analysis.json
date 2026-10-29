@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000296/series_2/00000296_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear lung fields with no evidence of consolidation, mass, or effusion.\",\n    \"Normal cardiac silhouette and mediastinal contours.\",\n    \"Intact bony thorax including ribs, clavicles, and spine without fracture or lytic lesion.\",\n    \"A thin radiopaque tube is visible coursing from the right upper chest downward, terminating near the right hemidiaphragm — consistent with a chest tube or pigtail catheter.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Chest Tube in Place\",\n      \"description\": \"A radiopaque catheter is present within the right hemithorax, likely placed for drainage. Tip terminates near the right costophrenic angle. No obvious signs of pneumothorax or pleural effusion currently present.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This chest X-ray shows normal lung and heart anatomy. There is a small tube (likely a chest drain) placed on the right side, which may have been inserted to treat a past issue like air or fluid around the lung. The lungs now appear clear. This is often done after surgery or trauma and does not necessarily indicate an active problem.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-tube-placement\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK537014/\",\n    \"https://www.radiologyassistant.nl/en/p48d6c4b8a7e2f/chest-x-ray-normal-anatomy\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Clear lung fields with no evidence of consolidation, mass, or effusion.",
+    "Normal cardiac silhouette and mediastinal contours.",
+    "Intact bony thorax including ribs, clavicles, and spine without fracture or lytic lesion.",
+    "A thin radiopaque tube is visible coursing from the right upper chest downward, terminating near the right hemidiaphragm — consistent with a chest tube or pigtail catheter."
+  ],
+  "abnormalities": [
+    {
+      "name": "Chest Tube in Place",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "A radiopaque catheter is present within the right hemithorax, likely placed for drainage. Tip terminates near the right costophrenic angle. No obvious signs of pneumothorax or pleural effusion currently present."
+    }
+  ],
+  "summary": "This chest X-ray shows normal lung and heart anatomy. There is a small tube (likely a chest drain) placed on the right side, which may have been inserted to treat a past issue like air or fluid around the lung. The lungs now appear clear. This is often done after surgery or trauma and does not necessarily indicate an active problem.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-tube-placement",
+    "https://www.ncbi.nlm.nih.gov/books/NBK537014/",
+    "https://www.radiologyassistant.nl/en/p48d6c4b8a7e2f/chest-x-ray-normal-anatomy"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 415316,
+    "bytesOut": 378774,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:32:57.560Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

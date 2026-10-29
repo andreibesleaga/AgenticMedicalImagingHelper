@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_1/00000148_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are hyperinflated with flattened hemidiaphragms.\",\n    \"Bilateral increased interstitial markings are noted.\",\n    \"The costophrenic angles are clear.\",\n    \"The heart size appears normal.\",\n    \"No focal consolidation, pneumothorax, or large pleural effusion is identified.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Hyperinflation\",\n      \"description\": \"The lungs are hyperinflated, indicated by flattened hemidiaphragms.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Increased interstitial markings\",\n      \"description\": \"There is an increase in interstitial markings bilaterally, which could suggest chronic lung changes.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows that your lungs are over-inflated, which means they are holding more air than usual. This can be a sign of conditions like emphysema or asthma. There are also some increased markings in the lung tissue that can suggest long-term changes. However, your heart size appears normal, and there are no signs of pneumonia, collapsed lung, or significant fluid around the lungs.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/hyperinflation?lang=us\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900696/\",\n    \"https://www.uptodate.com/contents/overview-of-interstitial-lung-disease-in-adults\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are hyperinflated with flattened hemidiaphragms.",
+    "Bilateral increased interstitial markings are noted.",
+    "The costophrenic angles are clear.",
+    "The heart size appears normal.",
+    "No focal consolidation, pneumothorax, or large pleural effusion is identified."
+  ],
+  "abnormalities": [
+    {
+      "name": "Hyperinflation",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The lungs are hyperinflated, indicated by flattened hemidiaphragms."
+    },
+    {
+      "name": "Increased interstitial markings",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "There is an increase in interstitial markings bilaterally, which could suggest chronic lung changes."
+    }
+  ],
+  "summary": "The X-ray of your chest shows that your lungs are over-inflated, which means they are holding more air than usual. This can be a sign of conditions like emphysema or asthma. There are also some increased markings in the lung tissue that can suggest long-term changes. However, your heart size appears normal, and there are no signs of pneumonia, collapsed lung, or significant fluid around the lungs.",
+  "references": [
+    "https://radiopaedia.org/articles/hyperinflation?lang=us",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900696/",
+    "https://www.uptodate.com/contents/overview-of-interstitial-lung-disease-in-adults"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 373586,
+    "bytesOut": 367631,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:06:36.723Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

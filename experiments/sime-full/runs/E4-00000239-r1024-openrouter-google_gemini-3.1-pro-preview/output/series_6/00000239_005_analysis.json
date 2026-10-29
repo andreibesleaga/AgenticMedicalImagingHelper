@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_6/00000239_005.png",
+  "seriesId": "series_6",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (Frontal)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear without focal consolidation, large pleural effusion, or pneumothorax.\",\n    \"The cardiomediastinal silhouette is unremarkable.\",\n    \"Marked distension of the stomach with a very large gastric air bubble and a prominent horizontal air-fluid level in the left upper quadrant.\",\n    \"Multiple surgical clips are present in the left axilla/lateral chest wall.\",\n    \"Surgical clips are also noted in the upper abdomen.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Marked Gastric Distension\",\n      \"description\": \"Significantly enlarged stomach with a large air-fluid level, suggestive of gastric outlet obstruction, gastroparesis, ileus, or recent massive oral intake.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Surgical Clips\",\n      \"description\": \"Metallic clips in the left axilla and upper abdomen indicating prior surgical interventions.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 99\n    }\n  ],\n  \"summary\": \"The lungs and heart appear normal with no signs of pneumonia, collapsed lung, or fluid around the lungs. There is a very large amount of air and fluid in the stomach. This can happen for several reasons, including the stomach emptying slower than usual or a possible blockage, which may require further evaluation by a doctor. Small metal clips from previous surgeries are visible in the left armpit area and upper abdomen, which are normal expected findings after such procedures.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/gastric-dilatation\",\n    \"https://radiopaedia.org/articles/gastric-outlet-obstruction\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (Frontal)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear without focal consolidation, large pleural effusion, or pneumothorax.",
+    "The cardiomediastinal silhouette is unremarkable.",
+    "Marked distension of the stomach with a very large gastric air bubble and a prominent horizontal air-fluid level in the left upper quadrant.",
+    "Multiple surgical clips are present in the left axilla/lateral chest wall.",
+    "Surgical clips are also noted in the upper abdomen."
+  ],
+  "abnormalities": [
+    {
+      "name": "Marked Gastric Distension",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Significantly enlarged stomach with a large air-fluid level, suggestive of gastric outlet obstruction, gastroparesis, ileus, or recent massive oral intake."
+    },
+    {
+      "name": "Surgical Clips",
+      "severity": "Normal",
+      "confidence": 99,
+      "description": "Metallic clips in the left axilla and upper abdomen indicating prior surgical interventions."
+    }
+  ],
+  "summary": "The lungs and heart appear normal with no signs of pneumonia, collapsed lung, or fluid around the lungs. There is a very large amount of air and fluid in the stomach. This can happen for several reasons, including the stomach emptying slower than usual or a possible blockage, which may require further evaluation by a doctor. Small metal clips from previous surgeries are visible in the left armpit area and upper abdomen, which are normal expected findings after such procedures.",
+  "references": [
+    "https://radiopaedia.org/articles/gastric-dilatation",
+    "https://radiopaedia.org/articles/gastric-outlet-obstruction"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 378298,
+    "bytesOut": 374356,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:26:08.142Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

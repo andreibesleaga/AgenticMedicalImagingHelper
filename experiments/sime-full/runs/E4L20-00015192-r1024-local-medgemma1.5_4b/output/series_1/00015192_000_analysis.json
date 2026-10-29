@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00015192/series_1/00015192_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear bilaterally.\",\n    \"Heart size is normal.\",\n    \"Mediastinal contours are normal.\",\n    \"Bones are unremarkable.\",\n    \"There is no pleural effusion or pneumothorax.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"Chest X-ray shows clear lungs, normal heart size, and no fractures or fluid buildup. This appears to be a normal study.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-x-ray\",\n    \"https://www.radiologyinfo.org/en/exams/chest-x-ray\",\n    \"https://www.hopkinsmedicine.org/health/conditions-and-diseases/chest-x-ray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear bilaterally.",
+    "Heart size is normal.",
+    "Mediastinal contours are normal.",
+    "Bones are unremarkable.",
+    "There is no pleural effusion or pneumothorax."
+  ],
+  "abnormalities": [],
+  "summary": "Chest X-ray shows clear lungs, normal heart size, and no fractures or fluid buildup. This appears to be a normal study.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-x-ray",
+    "https://www.radiologyinfo.org/en/exams/chest-x-ray",
+    "https://www.hopkinsmedicine.org/health/conditions-and-diseases/chest-x-ray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 444844,
+    "bytesOut": 338771,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T09:33:22.758Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

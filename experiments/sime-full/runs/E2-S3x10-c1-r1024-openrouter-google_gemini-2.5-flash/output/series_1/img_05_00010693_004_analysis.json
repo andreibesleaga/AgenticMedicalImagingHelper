@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_1/img_05_00010693_004.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary pathology identified.\",\n    \"Lungs are clear to auscultation and percussion bilaterally, with no evidence of focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Hilar and mediastinal contours are unremarkable.\",\n    \"Visualized osseous structures demonstrate no acute fractures or destructive lesions.\",\n    \"A metallic foreign body, consistent with a gastric band, is noted in the upper abdomen.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Gastric Band\",\n      \"description\": \"A metallic gastric band is identified in the upper abdomen, consistent with prior bariatric surgery. The band appears to be in an expected position.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows no immediate concerns in the lungs or heart. The lungs appear clear, and the heart size and shape are normal. There are no signs of pneumonia, fluid around the lungs, or a collapsed lung. The bones in the chest look normal. A gastric band, likely from previous weight-loss surgery, is visible in the upper belly and appears to be in its correct place.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxray\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.294085077\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900609/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary pathology identified.",
+    "Lungs are clear to auscultation and percussion bilaterally, with no evidence of focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Hilar and mediastinal contours are unremarkable.",
+    "Visualized osseous structures demonstrate no acute fractures or destructive lesions.",
+    "A metallic foreign body, consistent with a gastric band, is noted in the upper abdomen."
+  ],
+  "abnormalities": [
+    {
+      "name": "Gastric Band",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A metallic gastric band is identified in the upper abdomen, consistent with prior bariatric surgery. The band appears to be in an expected position."
+    }
+  ],
+  "summary": "The chest X-ray shows no immediate concerns in the lungs or heart. The lungs appear clear, and the heart size and shape are normal. There are no signs of pneumonia, fluid around the lungs, or a collapsed lung. The bones in the chest look normal. A gastric band, likely from previous weight-loss surgery, is visible in the upper belly and appears to be in its correct place.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxray",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.294085077",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900609/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 424246,
+    "bytesOut": 422012,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:34:26.677Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

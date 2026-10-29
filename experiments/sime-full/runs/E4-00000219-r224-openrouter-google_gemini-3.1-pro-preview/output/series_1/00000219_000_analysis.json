@@ -1,0 +1,41 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000219/series_1/00000219_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"The cardiomediastinal silhouette is within normal limits.\",\n    \"The hilar structures are unremarkable.\",\n    \"The bony thorax is intact.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray appears normal. There are no signs of infection, fluid in the lungs, or other abnormalities. The heart and major blood vessels look healthy.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-radiograph-assessment-1\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4226162/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "The cardiomediastinal silhouette is within normal limits.",
+    "The hilar structures are unremarkable.",
+    "The bony thorax is intact."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray appears normal. There are no signs of infection, fluid in the lungs, or other abnormalities. The heart and major blood vessels look healthy.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-assessment-1",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4226162/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22900,
+    "bytesOut": 22900,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:36:07.293Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

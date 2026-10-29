@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00027141/series_2/00027141_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are clear.\",\n    \"The heart size is normal.\",\n    \"The mediastinum is unremarkable.\",\n    \"The rib cage is intact.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray appears normal. The lungs look clear, the heart size is within normal limits, and there are no obvious abnormalities in the chest structures. This is a general overview and requires review by a medical professional for a diagnosis.\",\n  \"references\": [\n    \"https://www.google.com/search?q=chest+x-ray+normal\",\n    \"https://www.google.com/search?q=cardiac+silhouette+size\",\n    \"https://www.google.com/search?q=mediastinum+anatomy\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are clear.",
+    "The heart size is normal.",
+    "The mediastinum is unremarkable.",
+    "The rib cage is intact."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray appears normal. The lungs look clear, the heart size is within normal limits, and there are no obvious abnormalities in the chest structures. This is a general overview and requires review by a medical professional for a diagnosis.",
+  "references": [
+    "https://www.google.com/search?q=chest+x-ray+normal",
+    "https://www.google.com/search?q=cardiac+silhouette+size",
+    "https://www.google.com/search?q=mediastinum+anatomy"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24159,
+    "bytesOut": 24159,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T11:30:54.716Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

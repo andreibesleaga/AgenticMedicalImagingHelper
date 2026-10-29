@@ -1,0 +1,41 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000296/series_1/00000296_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A left-sided peripherally inserted central catheter (PICC) is seen, with its tip projecting over the lower superior vena cava or upper right atrium.\",\n    \"The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"The cardiomediastinal silhouette is unremarkable.\",\n    \"The bony thorax appears intact without acute fracture or dislocation.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This is a normal chest X-ray. A PICC line is present, and its tip is located in an appropriate position. The lungs are clear, and there are no signs of infection or other abnormalities. The heart and other structures in the chest appear normal.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/peripherally-inserted-central-catheter\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4284893/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest",
+  "quality": "Good",
+  "findings": [
+    "A left-sided peripherally inserted central catheter (PICC) is seen, with its tip projecting over the lower superior vena cava or upper right atrium.",
+    "The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "The cardiomediastinal silhouette is unremarkable.",
+    "The bony thorax appears intact without acute fracture or dislocation."
+  ],
+  "abnormalities": [],
+  "summary": "This is a normal chest X-ray. A PICC line is present, and its tip is located in an appropriate position. The lungs are clear, and there are no signs of infection or other abnormalities. The heart and other structures in the chest appear normal.",
+  "references": [
+    "https://radiopaedia.org/articles/peripherally-inserted-central-catheter",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4284893/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22549,
+    "bytesOut": 22549,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:39:18.917Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

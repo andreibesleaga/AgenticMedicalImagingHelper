@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_4/img_04_00024258_000.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is normal in size and contour.\",\n    \"Hilar regions are unremarkable.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"Osseous structures (ribs, clavicles, scapulae) appear intact without acute fracture or destructive lesion.\",\n    \"A small, dense, metallic foreign body is noted projected over the left supraclavicular region, likely cutaneous or within superficial soft tissues, not within the thorax.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Metallic Foreign Body\",\n      \"description\": \"A small, dense, metallic foreign body is projected over the left supraclavicular region. Its location suggests it is superficial, likely cutaneous or within the soft tissues of the shoulder, and not intrathoracic. This is an incidental finding.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows healthy lungs without any signs of pneumonia, fluid around the lungs, or a collapsed lung. The heart appears to be of normal size and shape. The bones of the chest wall, including the ribs and collarbones, look normal. There is a small metal object visible over the left collarbone area, which is likely on the skin or just under it, and not inside the chest. This is an incidental finding and does not appear to be of clinical concern regarding the chest itself.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.292085149\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal silhouette is normal in size and contour.",
+    "Hilar regions are unremarkable.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "Osseous structures (ribs, clavicles, scapulae) appear intact without acute fracture or destructive lesion.",
+    "A small, dense, metallic foreign body is noted projected over the left supraclavicular region, likely cutaneous or within superficial soft tissues, not within the thorax."
+  ],
+  "abnormalities": [
+    {
+      "name": "Metallic Foreign Body",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "A small, dense, metallic foreign body is projected over the left supraclavicular region. Its location suggests it is superficial, likely cutaneous or within the soft tissues of the shoulder, and not intrathoracic. This is an incidental finding."
+    }
+  ],
+  "summary": "The chest X-ray shows healthy lungs without any signs of pneumonia, fluid around the lungs, or a collapsed lung. The heart appears to be of normal size and shape. The bones of the chest wall, including the ribs and collarbones, look normal. There is a small metal object visible over the left collarbone area, which is likely on the skin or just under it, and not inside the chest. This is an incidental finding and does not appear to be of clinical concern regarding the chest itself.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.292085149",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 25716,
+    "bytesOut": 25716,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:02:22.845Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

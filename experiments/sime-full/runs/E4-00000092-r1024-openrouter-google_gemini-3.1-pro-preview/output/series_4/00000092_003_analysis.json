@@ -1,0 +1,65 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_4/00000092_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Frontal chest radiograph obtained in the AP projection.\",\n    \"There are bilateral pleural effusions, left greater than right, with blunting of the costophrenic angles.\",\n    \"Opacity in the left lower lobe may represent atelectasis or consolidation.\",\n    \"The heart size is difficult to evaluate due to the patient's position and the effusions, but appears normal.\",\n    \"The mediastinal contours are unremarkable.\",\n    \"The pulmonary vasculature appears normal.\",\n    \"There is a small amount of free air under the right hemidiaphragm, consistent with pneumoperitoneum.\",\n    \"The bones and soft tissues are unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Pleural Effusions\",\n      \"description\": \"Blunting of both costophrenic angles, left greater than right, indicative of fluid accumulation in the pleural space.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Left Lower Lobe Opacity\",\n      \"description\": \"Increased radiodensity in the left lower lung field, possibly representing atelectasis or consolidation.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Pneumoperitoneum\",\n      \"description\": \"Presence of a small crescent of radiolucency under the right hemidiaphragm, indicating free air in the peritoneal cavity.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows fluid around both lungs (pleural effusions), more pronounced on the left side. There is also an area of increased density in the lower part of the left lung, which could be due to lung collapse (atelectasis) or infection/inflammation (consolidation). Additionally, there is a small amount of free air visible under the right side of the diaphragm (pneumoperitoneum), which is an abnormal finding and typically requires immediate medical attention to determine the source, such as a perforated hollow organ in the abdomen.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/pneumoperitoneum\",\n    \"https://radiopaedia.org/articles/atelectasis\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Frontal chest radiograph obtained in the AP projection.",
+    "There are bilateral pleural effusions, left greater than right, with blunting of the costophrenic angles.",
+    "Opacity in the left lower lobe may represent atelectasis or consolidation.",
+    "The heart size is difficult to evaluate due to the patient's position and the effusions, but appears normal.",
+    "The mediastinal contours are unremarkable.",
+    "The pulmonary vasculature appears normal.",
+    "There is a small amount of free air under the right hemidiaphragm, consistent with pneumoperitoneum.",
+    "The bones and soft tissues are unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Blunting of both costophrenic angles, left greater than right, indicative of fluid accumulation in the pleural space."
+    },
+    {
+      "name": "Left Lower Lobe Opacity",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Increased radiodensity in the left lower lung field, possibly representing atelectasis or consolidation."
+    },
+    {
+      "name": "Pneumoperitoneum",
+      "severity": "Severe",
+      "confidence": 90,
+      "description": "Presence of a small crescent of radiolucency under the right hemidiaphragm, indicating free air in the peritoneal cavity."
+    }
+  ],
+  "summary": "The chest X-ray shows fluid around both lungs (pleural effusions), more pronounced on the left side. There is also an area of increased density in the lower part of the left lung, which could be due to lung collapse (atelectasis) or infection/inflammation (consolidation). Additionally, there is a small amount of free air visible under the right side of the diaphragm (pneumoperitoneum), which is an abnormal finding and typically requires immediate medical attention to determine the source, such as a perforated hollow organ in the abdomen.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/pneumoperitoneum",
+    "https://radiopaedia.org/articles/atelectasis"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 378291,
+    "bytesOut": 375348,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:19:53.558Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

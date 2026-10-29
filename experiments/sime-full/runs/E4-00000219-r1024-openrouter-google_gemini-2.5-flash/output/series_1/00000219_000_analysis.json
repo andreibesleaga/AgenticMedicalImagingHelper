@@ -1,0 +1,68 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_1/00000219_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Metallic sternal sutures are noted.\",\n    \"A left axillary implanted device is present, consistent with a cardiac rhythm management device (e.g., pacemaker or ICD).\",\n    \"Cardiomediastinal silhouette is enlarged.\",\n    \"Bilateral pulmonary vascular markings appear prominent.\",\n    \"No definite focal consolidation, pneumothorax, or large pleural effusion is identified.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlargement of the cardiomediastinal silhouette, suggesting cardiomegaly.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Prominent Pulmonary Vasculature\",\n      \"description\": \"Bilateral prominence of the pulmonary vascular markings, which could be related to cardiac changes or underlying pulmonary hypertension/venous congestion.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    },\n    {\n      \"name\": \"Implanted Cardiac Device\",\n      \"description\": \"A cardiac rhythm management device (e.g., pacemaker or ICD) is present in the left axillary region.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Sternal Sutures\",\n      \"description\": \"Metallic sternal sutures are noted, indicating prior sternotomy (e.g., for cardiac surgery).\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows an enlarged heart. There are also metallic wires visible in the breastbone, which are commonly seen after heart surgery, and a small electronic device implanted under the skin in the left armpit, likely a pacemaker or defibrillator to help regulate heart rhythm. The blood vessels in the lungs appear more prominent than usual, which can sometimes be related to heart conditions. There are no signs of immediate problems like collapsed lung or significant fluid around the lungs.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.233025178\",\n    \"https://radiopaedia.org/articles/cardiomegaly-1\",\n    \"https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.119.043681\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Metallic sternal sutures are noted.",
+    "A left axillary implanted device is present, consistent with a cardiac rhythm management device (e.g., pacemaker or ICD).",
+    "Cardiomediastinal silhouette is enlarged.",
+    "Bilateral pulmonary vascular markings appear prominent.",
+    "No definite focal consolidation, pneumothorax, or large pleural effusion is identified."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Enlargement of the cardiomediastinal silhouette, suggesting cardiomegaly."
+    },
+    {
+      "name": "Prominent Pulmonary Vasculature",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Bilateral prominence of the pulmonary vascular markings, which could be related to cardiac changes or underlying pulmonary hypertension/venous congestion."
+    },
+    {
+      "name": "Implanted Cardiac Device",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A cardiac rhythm management device (e.g., pacemaker or ICD) is present in the left axillary region."
+    },
+    {
+      "name": "Sternal Sutures",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Metallic sternal sutures are noted, indicating prior sternotomy (e.g., for cardiac surgery)."
+    }
+  ],
+  "summary": "This X-ray of the chest shows an enlarged heart. There are also metallic wires visible in the breastbone, which are commonly seen after heart surgery, and a small electronic device implanted under the skin in the left armpit, likely a pacemaker or defibrillator to help regulate heart rhythm. The blood vessels in the lungs appear more prominent than usual, which can sometimes be related to heart conditions. There are no signs of immediate problems like collapsed lung or significant fluid around the lungs.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.233025178",
+    "https://radiopaedia.org/articles/cardiomegaly-1",
+    "https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.119.043681"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 383333,
+    "bytesOut": 378599,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:19:00.196Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

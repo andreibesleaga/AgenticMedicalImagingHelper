@@ -1,0 +1,70 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_1/00000219_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Sternotomy wires are visible.\",\n    \"Prosthetic mitral valve is present.\",\n    \"Bilateral apical pleural thickening is noted.\",\n    \"Mild to moderate cardiomegaly.\",\n    \"Unfolded thoracic aorta.\",\n    \"No focal consolidation, pleural effusion, or pneumothorax.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Sternotomy wires\",\n      \"description\": \"Evidence of previous median sternotomy.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Prosthetic mitral valve\",\n      \"description\": \"Radio-opaque ring characteristic of a prosthetic heart valve in the mitral position.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlarged cardiac silhouette, consistent with the patient's history of cardiac disease.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Apical pleural thickening\",\n      \"description\": \"Bilateral scarring at the lung apices, likely representing old, healed inflammatory disease (e.g., prior tuberculosis).\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows changes from previous heart surgery, including sternotomy wires and a prosthetic mitral valve. The heart appears moderately enlarged. There is also some scarring at the top of both lungs, which is a common finding that often represents old, healed infection. There are no signs of active pneumonia, fluid around the lungs, or a collapsed lung.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/sternotomy-wires?lang=us\",\n    \"https://radiopaedia.org/articles/prosthetic-heart-valves-2?lang=us\",\n    \"https://radiopaedia.org/articles/cardiomegaly?lang=us\",\n    \"https://radiopaedia.org/articles/apical-pleural-thickening-1?lang=us\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest",
+  "quality": "Good",
+  "findings": [
+    "Sternotomy wires are visible.",
+    "Prosthetic mitral valve is present.",
+    "Bilateral apical pleural thickening is noted.",
+    "Mild to moderate cardiomegaly.",
+    "Unfolded thoracic aorta.",
+    "No focal consolidation, pleural effusion, or pneumothorax."
+  ],
+  "abnormalities": [
+    {
+      "name": "Sternotomy wires",
+      "severity": "Mild",
+      "confidence": 100,
+      "description": "Evidence of previous median sternotomy."
+    },
+    {
+      "name": "Prosthetic mitral valve",
+      "severity": "Mild",
+      "confidence": 100,
+      "description": "Radio-opaque ring characteristic of a prosthetic heart valve in the mitral position."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Enlarged cardiac silhouette, consistent with the patient's history of cardiac disease."
+    },
+    {
+      "name": "Apical pleural thickening",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Bilateral scarring at the lung apices, likely representing old, healed inflammatory disease (e.g., prior tuberculosis)."
+    }
+  ],
+  "summary": "The chest X-ray shows changes from previous heart surgery, including sternotomy wires and a prosthetic mitral valve. The heart appears moderately enlarged. There is also some scarring at the top of both lungs, which is a common finding that often represents old, healed infection. There are no signs of active pneumonia, fluid around the lungs, or a collapsed lung.",
+  "references": [
+    "https://radiopaedia.org/articles/sternotomy-wires?lang=us",
+    "https://radiopaedia.org/articles/prosthetic-heart-valves-2?lang=us",
+    "https://radiopaedia.org/articles/cardiomegaly?lang=us",
+    "https://radiopaedia.org/articles/apical-pleural-thickening-1?lang=us"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 383333,
+    "bytesOut": 378599,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:23:22.658Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

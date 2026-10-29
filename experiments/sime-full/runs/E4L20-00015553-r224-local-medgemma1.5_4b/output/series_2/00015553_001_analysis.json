@@ -1,0 +1,47 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00015553/series_2/00015553_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The heart size is within normal limits.\",\n    \"The lungs are clear.\",\n    \"The mediastinum appears unremarkable.\",\n    \"The visualized bones are intact.\",\n    \"The ribs are visualized.\",\n    \"Pleural spaces are clear.\",\n    \"No obvious pneumothorax or hemothorax.\",\n    \"The diaphragm is well-defined.\",\n    \"Posterior costophrenic angles are sharp.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This is a chest X-ray image. The heart, lungs, and bones appear normal based on the image. There are no visible signs of infection or other significant abnormalities. There is no pneumothorax or pleural effusion.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-x-ray\",\n    \"https://www.radiologyinfo.org/en/imaging-techniques/chest-x-ray\",\n    \"https://pubmed.ncbi.nlm.nih.gov/26181470/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The heart size is within normal limits.",
+    "The lungs are clear.",
+    "The mediastinum appears unremarkable.",
+    "The visualized bones are intact.",
+    "The ribs are visualized.",
+    "Pleural spaces are clear.",
+    "No obvious pneumothorax or hemothorax.",
+    "The diaphragm is well-defined.",
+    "Posterior costophrenic angles are sharp."
+  ],
+  "abnormalities": [],
+  "summary": "This is a chest X-ray image. The heart, lungs, and bones appear normal based on the image. There are no visible signs of infection or other significant abnormalities. There is no pneumothorax or pleural effusion.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-x-ray",
+    "https://www.radiologyinfo.org/en/imaging-techniques/chest-x-ray",
+    "https://pubmed.ncbi.nlm.nih.gov/26181470/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 15796,
+    "bytesOut": 15796,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T10:50:02.399Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

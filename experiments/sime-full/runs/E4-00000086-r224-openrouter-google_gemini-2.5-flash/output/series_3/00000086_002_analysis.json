@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000086/series_3/00000086_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"There is a dual-chamber pacemaker present in the left upper chest.\",\n    \"The lung fields show areas of increased opacity in the right lower and mid-lung zones, consistent with atelectasis or consolidation.\",\n    \"Specifically, there are prominent interstitial markings and what appears to be a bronchogram in the right lower lung field.\",\n    \"The cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Bilateral costophrenic angles are clear, although the right hemidiaphragm is partially obscured by the parenchymal changes.\",\n    \"No definite pleural effusion or pneumothorax is seen.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right lower lung opacity\",\n      \"description\": \"Increased interstitial markings and areas of consolidation/atelectasis in the right lower and mid-lung zones. A probable air bronchogram is visible.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This X-ray shows that you have a pacemaker in your upper left chest. There are some cloudy areas in the lower and middle part of your right lung. These areas suggest that some parts of your lung might be collapsed or inflamed (like in pneumonia). Your heart and the central area between your lungs look normal. The spaces around your lungs are clear, meaning there's no obvious fluid buildup or air leak outside the lung, though the right side is a bit harder to see due to the changes in your lung.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2013125139\",\n    \"https://radiopaedia.org/articles/atelectasis?lang=us\",\n    \"https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.113.007622\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "There is a dual-chamber pacemaker present in the left upper chest.",
+    "The lung fields show areas of increased opacity in the right lower and mid-lung zones, consistent with atelectasis or consolidation.",
+    "Specifically, there are prominent interstitial markings and what appears to be a bronchogram in the right lower lung field.",
+    "The cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Bilateral costophrenic angles are clear, although the right hemidiaphragm is partially obscured by the parenchymal changes.",
+    "No definite pleural effusion or pneumothorax is seen."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right lower lung opacity",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Increased interstitial markings and areas of consolidation/atelectasis in the right lower and mid-lung zones. A probable air bronchogram is visible."
+    }
+  ],
+  "summary": "This X-ray shows that you have a pacemaker in your upper left chest. There are some cloudy areas in the lower and middle part of your right lung. These areas suggest that some parts of your lung might be collapsed or inflamed (like in pneumonia). Your heart and the central area between your lungs look normal. The spaces around your lungs are clear, meaning there's no obvious fluid buildup or air leak outside the lung, though the right side is a bit harder to see due to the changes in your lung.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2013125139",
+    "https://radiopaedia.org/articles/atelectasis?lang=us",
+    "https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.113.007622"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23353,
+    "bytesOut": 23353,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:22:30.115Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

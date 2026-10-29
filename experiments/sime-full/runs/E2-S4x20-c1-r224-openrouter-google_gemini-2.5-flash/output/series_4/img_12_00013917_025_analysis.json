@@ -1,0 +1,68 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_4/img_12_00013917_025.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"There is a large left-sided pleural effusion, obscuring the left hemidiaphragm and costophrenic angle, and causing a mediastinal shift to the right.\",\n    \"The trachea appears deviated to the right.\",\n    \"The right lung fields are clear.\",\n    \"The cardiomediastinal silhouette is enlarged and shifted to the right.\",\n    \"There are surgical clips visible in the right axillary region, possibly indicating prior surgery.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Pleural Effusion\",\n      \"description\": \"A significant accumulation of fluid is noted in the left pleural space, leading to opacification of the left lung base, obscuration of the left hemidiaphragm and costophrenic angle. This large effusion is also causing a mass effect with a significant mediastinal shift to the right.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"Due to the large left pleural effusion, the mediastinal structures, including the heart and trachea, are displaced towards the right side of the chest.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"The cardiomediastinal silhouette appears enlarged, although its true size is difficult to assess accurately due to the mediastinal shift and AP projection. This might be relative to the shift.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 70\n    },\n    {\n      \"name\": \"Surgical clips\",\n      \"description\": \"Multiple small, metallic surgical clips are present in the soft tissues of the right axillary region.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 99\n    }\n  ],\n  \"summary\": \"This X-ray shows a significant amount of fluid in the left lung area, called a pleural effusion. This fluid is pushing the heart and windpipe (trachea) over to the right side of the chest. The right lung appears clear. There are also some surgical clips visible near the right armpit, likely from a previous operation. A large pleural effusion can cause shortness of breath and chest discomfort. Further evaluation is needed to determine the cause of the fluid accumulation and to decide on the best course of treatment.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion-1\",\n    \"https://www.nejm.org/doi/full/10.1056/NEJMcp1307323\",\n    \"https://www.thoracic.org/patients/patient-resources/breathing-in-america/resources/pleural-effusion.pdf\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "There is a large left-sided pleural effusion, obscuring the left hemidiaphragm and costophrenic angle, and causing a mediastinal shift to the right.",
+    "The trachea appears deviated to the right.",
+    "The right lung fields are clear.",
+    "The cardiomediastinal silhouette is enlarged and shifted to the right.",
+    "There are surgical clips visible in the right axillary region, possibly indicating prior surgery."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Pleural Effusion",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "A significant accumulation of fluid is noted in the left pleural space, leading to opacification of the left lung base, obscuration of the left hemidiaphragm and costophrenic angle. This large effusion is also causing a mass effect with a significant mediastinal shift to the right."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Due to the large left pleural effusion, the mediastinal structures, including the heart and trachea, are displaced towards the right side of the chest."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 70,
+      "description": "The cardiomediastinal silhouette appears enlarged, although its true size is difficult to assess accurately due to the mediastinal shift and AP projection. This might be relative to the shift."
+    },
+    {
+      "name": "Surgical clips",
+      "severity": "Normal",
+      "confidence": 99,
+      "description": "Multiple small, metallic surgical clips are present in the soft tissues of the right axillary region."
+    }
+  ],
+  "summary": "This X-ray shows a significant amount of fluid in the left lung area, called a pleural effusion. This fluid is pushing the heart and windpipe (trachea) over to the right side of the chest. The right lung appears clear. There are also some surgical clips visible near the right armpit, likely from a previous operation. A large pleural effusion can cause shortness of breath and chest discomfort. Further evaluation is needed to determine the cause of the fluid accumulation and to decide on the best course of treatment.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion-1",
+    "https://www.nejm.org/doi/full/10.1056/NEJMcp1307323",
+    "https://www.thoracic.org/patients/patient-resources/breathing-in-america/resources/pleural-effusion.pdf"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23081,
+    "bytesOut": 23081,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:00:26.050Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

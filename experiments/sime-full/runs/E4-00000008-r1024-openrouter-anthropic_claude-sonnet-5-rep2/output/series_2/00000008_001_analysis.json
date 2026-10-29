@@ -1,0 +1,66 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000008/series_2/00000008_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (AP, supine/portable)\",\"quality\":\"Fair\",\"findings\":[\"Lungs are well-expanded bilaterally without focal consolidation, pleural effusion, or pneumothorax identified.\",\"Cardiomediastinal silhouette appears mildly enlarged, though this may be accentuated by AP portable technique and patient positioning.\",\"Patient rotation is present, limiting full assessment of mediastinal structures.\",\"Breast soft tissue shadows overlie the lower lung fields bilaterally, consistent with patient anatomy.\",\"A small faint opacity is noted near the left hilum, possibly vascular or calcific in nature.\",\"External monitoring leads/wires and EKG lead placement artifacts are seen over the lower chest/abdomen.\",\"Bony thorax: clavicles, ribs, and visualized spine appear grossly intact without acute fracture.\",\"Soft tissues of the neck and shoulders are unremarkable.\",\"'L' marker denotes left side orientation.\"],\"abnormalities\":[{\"name\":\"Possible mild cardiomegaly\",\"description\":\"Cardiac silhouette appears slightly widened relative to thoracic width; however, this is a single AP portable view which can exaggerate cardiac size due to magnification effects. Correlation with PA/lateral views or echocardiogram recommended if clinically indicated.\",\"severity\":\"Mild\",\"confidence\":45},{\"name\":\"Rotational positioning artifact\",\"description\":\"Patient appears rotated, which can distort the appearance of the mediastinum and heart border, limiting diagnostic accuracy for cardiac and mediastinal assessment.\",\"severity\":\"Mild\",\"confidence\":60},{\"name\":\"Left hilar faint opacity\",\"description\":\"A small subtle density is noted near the left hilar region; could represent a vascular structure, calcified lymph node, or overlying artifact. Further evaluation with CT may be warranted if clinically relevant.\",\"severity\":\"Mild\",\"confidence\":30}],\"summary\":\"This chest X-ray was taken with the patient lying down using a portable machine, which can sometimes make the heart and chest structures look slightly different than standard upright X-rays. The lungs appear clear with no signs of infection, fluid buildup, or collapsed lung. The heart shadow looks slightly large, but this could simply be due to the way the picture was taken (AP portable view and patient positioning) rather than a true enlargement. There is a small faint spot near the left side of the chest that is likely nothing concerning, but could be further evaluated if your doctor feels it's necessary. Overall, there are no urgent or alarming findings, but any subtle changes should be correlated with your clinical symptoms and possibly repeat imaging for confirmation.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph\",\"https://www.radiologyinfo.org/en/info/chestrad\",\"https://pubs.rsna.org/doi/10.1148/rg.2019180132\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP, supine/portable)",
+  "quality": "Fair",
+  "findings": [
+    "Lungs are well-expanded bilaterally without focal consolidation, pleural effusion, or pneumothorax identified.",
+    "Cardiomediastinal silhouette appears mildly enlarged, though this may be accentuated by AP portable technique and patient positioning.",
+    "Patient rotation is present, limiting full assessment of mediastinal structures.",
+    "Breast soft tissue shadows overlie the lower lung fields bilaterally, consistent with patient anatomy.",
+    "A small faint opacity is noted near the left hilum, possibly vascular or calcific in nature.",
+    "External monitoring leads/wires and EKG lead placement artifacts are seen over the lower chest/abdomen.",
+    "Bony thorax: clavicles, ribs, and visualized spine appear grossly intact without acute fracture.",
+    "Soft tissues of the neck and shoulders are unremarkable.",
+    "'L' marker denotes left side orientation."
+  ],
+  "abnormalities": [
+    {
+      "name": "Possible mild cardiomegaly",
+      "severity": "Mild",
+      "confidence": 45,
+      "description": "Cardiac silhouette appears slightly widened relative to thoracic width; however, this is a single AP portable view which can exaggerate cardiac size due to magnification effects. Correlation with PA/lateral views or echocardiogram recommended if clinically indicated."
+    },
+    {
+      "name": "Rotational positioning artifact",
+      "severity": "Mild",
+      "confidence": 60,
+      "description": "Patient appears rotated, which can distort the appearance of the mediastinum and heart border, limiting diagnostic accuracy for cardiac and mediastinal assessment."
+    },
+    {
+      "name": "Left hilar faint opacity",
+      "severity": "Mild",
+      "confidence": 30,
+      "description": "A small subtle density is noted near the left hilar region; could represent a vascular structure, calcified lymph node, or overlying artifact. Further evaluation with CT may be warranted if clinically relevant."
+    }
+  ],
+  "summary": "This chest X-ray was taken with the patient lying down using a portable machine, which can sometimes make the heart and chest structures look slightly different than standard upright X-rays. The lungs appear clear with no signs of infection, fluid buildup, or collapsed lung. The heart shadow looks slightly large, but this could simply be due to the way the picture was taken (AP portable view and patient positioning) rather than a true enlargement. There is a small faint spot near the left side of the chest that is likely nothing concerning, but could be further evaluated if your doctor feels it's necessary. Overall, there are no urgent or alarming findings, but any subtle changes should be correlated with your clinical symptoms and possibly repeat imaging for confirmation.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph",
+    "https://www.radiologyinfo.org/en/info/chestrad",
+    "https://pubs.rsna.org/doi/10.1148/rg.2019180132"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 390119,
+    "bytesOut": 384796,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-10-08T09:34:05.831Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

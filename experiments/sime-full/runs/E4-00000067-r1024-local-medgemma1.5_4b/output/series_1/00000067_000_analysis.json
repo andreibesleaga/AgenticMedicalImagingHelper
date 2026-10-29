@@ -1,0 +1,45 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000067/series_1/00000067_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"Radiography\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral lungs are clear. The heart size is normal. Mediastinal structures are unremarkable. No pleural effusion or pneumothorax.\",\n    \"There is prominence of the right hilum.\",\n    \"Thoracic spine curvature is present.\",\n    \"Imaged bones appear intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Prominence of the right hilum\",\n      \"description\": \"The right hilum appears slightly more prominent than the left hilum, which may represent enlarged lymph nodes or vascular structures.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 0\n    }\n  ],\n  \"summary\": \"A chest X-ray shows clear lungs with no noticeable issues. The heart and major blood vessels appear normal. The right hilum looks slightly more prominent than the left, which could be due to enlarged lymph nodes or blood vessels. There's a slight curve in the upper spine. The bones look okay.\",\n  \"references\": []\n}",
+  "modality": "Radiography",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral lungs are clear. The heart size is normal. Mediastinal structures are unremarkable. No pleural effusion or pneumothorax.",
+    "There is prominence of the right hilum.",
+    "Thoracic spine curvature is present.",
+    "Imaged bones appear intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Prominence of the right hilum",
+      "severity": "Normal",
+      "confidence": 0,
+      "description": "The right hilum appears slightly more prominent than the left hilum, which may represent enlarged lymph nodes or vascular structures."
+    }
+  ],
+  "summary": "A chest X-ray shows clear lungs with no noticeable issues. The heart and major blood vessels appear normal. The right hilum looks slightly more prominent than the left, which could be due to enlarged lymph nodes or blood vessels. There's a slight curve in the upper spine. The bones look okay.",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 436781,
+    "bytesOut": 332072,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T09:42:13.500Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

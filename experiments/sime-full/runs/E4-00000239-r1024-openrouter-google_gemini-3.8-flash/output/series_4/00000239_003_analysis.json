@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000239/series_4/00000239_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear bilaterally without evidence of focal consolidation, effusion, or pneumothorax.\",\n    \"Cardiothoracic ratio is within normal limits; cardiac silhouette and mediastinal contours are unremarkable.\",\n    \"Bilateral costophrenic and cardiophrenic angles are sharp and clear.\",\n    \"Multiple surgical metallic clips are visualized in the left axillary/lateral chest wall region, consistent with prior surgical intervention (e.g., axillary lymph node dissection or breast surgery).\",\n    \"Surgical clips are noted in the right upper quadrant/epigastric region, consistent with prior cholecystectomy.\",\n    \"Visualized osseous structures demonstrate no acute fractures or destructive lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Post-surgical changes (Left axilla)\",\n      \"description\": \"Cluster of surgical ligation clips projecting over the left lateral chest wall and axilla, indicative of prior surgical intervention without acute complication.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Post-surgical changes (Upper abdomen)\",\n      \"description\": \"Multiple radiopaque surgical clips in the right upper abdomen consistent with previous cholecystectomy.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 98\n    }\n  ],\n  \"summary\": \"The chest X-ray shows no signs of acute infection, pneumonia, fluid buildup, or heart enlargement. Surgical clips from past procedures are visible in the left underarm area and in the upper abdomen (likely from past gallbladder removal). No acute medical concerns are identified on this examination.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/normal-chest-radiograph\",\n    \"https://radiopaedia.org/articles/cholecystectomy-clips\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear bilaterally without evidence of focal consolidation, effusion, or pneumothorax.",
+    "Cardiothoracic ratio is within normal limits; cardiac silhouette and mediastinal contours are unremarkable.",
+    "Bilateral costophrenic and cardiophrenic angles are sharp and clear.",
+    "Multiple surgical metallic clips are visualized in the left axillary/lateral chest wall region, consistent with prior surgical intervention (e.g., axillary lymph node dissection or breast surgery).",
+    "Surgical clips are noted in the right upper quadrant/epigastric region, consistent with prior cholecystectomy.",
+    "Visualized osseous structures demonstrate no acute fractures or destructive lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Post-surgical changes (Left axilla)",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "Cluster of surgical ligation clips projecting over the left lateral chest wall and axilla, indicative of prior surgical intervention without acute complication."
+    },
+    {
+      "name": "Post-surgical changes (Upper abdomen)",
+      "severity": "Normal",
+      "confidence": 98,
+      "description": "Multiple radiopaque surgical clips in the right upper abdomen consistent with previous cholecystectomy."
+    }
+  ],
+  "summary": "The chest X-ray shows no signs of acute infection, pneumonia, fluid buildup, or heart enlargement. Surgical clips from past procedures are visible in the left underarm area and in the upper abdomen (likely from past gallbladder removal). No acute medical concerns are identified on this examination.",
+  "references": [
+    "https://radiopaedia.org/articles/normal-chest-radiograph",
+    "https://radiopaedia.org/articles/cholecystectomy-clips"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 431092,
+    "bytesOut": 428915,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:25:19.955Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_3/img_14_00017443_004.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right-sided port-a-cath in situ with its catheter tip projecting over the superior vena cava.\",\n    \"Bilateral lung fields appear clear without focal consolidation or pneumothorax.\",\n    \"Cardiac silhouette is within normal limits for size and contour.\",\n    \"Diaphragmatic contours are smooth.\",\n    \"No pleural effusion noted.\",\n    \"Osseous structures appear intact without acute fracture or destructive lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Port-a-cath\",\n      \"description\": \"A port-a-cath device is identified in the right upper chest with its catheter appropriately positioned, likely within the superior vena cava, for venous access.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows a normal appearance of the lungs and heart. A medical device called a port-a-cath is visible on the right side of the chest, which is a common way to give medications or fluids directly into the bloodstream. Its position appears correct. There are no signs of pneumonia, collapsed lung, fluid around the lungs, or any obvious bone problems. Everything else looks as expected.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/port\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.274065090\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right-sided port-a-cath in situ with its catheter tip projecting over the superior vena cava.",
+    "Bilateral lung fields appear clear without focal consolidation or pneumothorax.",
+    "Cardiac silhouette is within normal limits for size and contour.",
+    "Diaphragmatic contours are smooth.",
+    "No pleural effusion noted.",
+    "Osseous structures appear intact without acute fracture or destructive lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Port-a-cath",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A port-a-cath device is identified in the right upper chest with its catheter appropriately positioned, likely within the superior vena cava, for venous access."
+    }
+  ],
+  "summary": "This X-ray of the chest shows a normal appearance of the lungs and heart. A medical device called a port-a-cath is visible on the right side of the chest, which is a common way to give medications or fluids directly into the bloodstream. Its position appears correct. There are no signs of pneumonia, collapsed lung, fluid around the lungs, or any obvious bone problems. Everything else looks as expected.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/port",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.274065090"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 438345,
+    "bytesOut": 436954,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:42:16.104Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

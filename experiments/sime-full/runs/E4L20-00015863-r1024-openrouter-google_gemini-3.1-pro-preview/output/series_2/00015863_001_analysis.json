@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00015863/series_2/00015863_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Multiple well-circumscribed, round to oval opacities of varying sizes scattered throughout both lung fields (cannonball metastases).\",\n    \"A central venous catheter (e.g., PICC line) is seen entering from the right arm, with its tip terminating in the region of the lower superior vena cava or right atrium.\",\n    \"The heart size is within normal limits.\",\n    \"The mediastinal contours are unremarkable.\",\n    \"The hemidiaphragms are smooth and the costophrenic angles appear clear, though slightly obscured by the lung opacities.\",\n    \"The bony thorax appears intact without obvious destructive lesions, although evaluation is limited.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Multiple Pulmonary Nodules/Masses\",\n      \"description\": \"Numerous bilateral, varying-sized, well-defined pulmonary nodules and masses, characteristic of metastatic disease ('cannonball' appearance).\",\n      \"severity\": \"Severe\",\n      \"confidence\": 98\n    },\n    {\n      \"name\": \"Central Venous Catheter\",\n      \"description\": \"A central line is present, entering from the right, with tip in the expected position of the SVC/RA junction.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows multiple rounded spots of various sizes throughout both lungs. This pattern is commonly referred to as 'cannonball metastases' and is highly suggestive of cancer that has spread to the lungs from another part of the body. A central venous line (a type of IV catheter) is also seen in place on the right side. These findings require immediate medical attention and further evaluation, typically with a CT scan, to determine the primary source and plan appropriate treatment.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cannonball-metastases-1\",\n    \"https://pubs.rsna.org/doi/10.1148/rg.2015140306\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Multiple well-circumscribed, round to oval opacities of varying sizes scattered throughout both lung fields (cannonball metastases).",
+    "A central venous catheter (e.g., PICC line) is seen entering from the right arm, with its tip terminating in the region of the lower superior vena cava or right atrium.",
+    "The heart size is within normal limits.",
+    "The mediastinal contours are unremarkable.",
+    "The hemidiaphragms are smooth and the costophrenic angles appear clear, though slightly obscured by the lung opacities.",
+    "The bony thorax appears intact without obvious destructive lesions, although evaluation is limited."
+  ],
+  "abnormalities": [
+    {
+      "name": "Multiple Pulmonary Nodules/Masses",
+      "severity": "Severe",
+      "confidence": 98,
+      "description": "Numerous bilateral, varying-sized, well-defined pulmonary nodules and masses, characteristic of metastatic disease ('cannonball' appearance)."
+    },
+    {
+      "name": "Central Venous Catheter",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "A central line is present, entering from the right, with tip in the expected position of the SVC/RA junction."
+    }
+  ],
+  "summary": "The chest X-ray shows multiple rounded spots of various sizes throughout both lungs. This pattern is commonly referred to as 'cannonball metastases' and is highly suggestive of cancer that has spread to the lungs from another part of the body. A central venous line (a type of IV catheter) is also seen in place on the right side. These findings require immediate medical attention and further evaluation, typically with a CT scan, to determine the primary source and plan appropriate treatment.",
+  "references": [
+    "https://radiopaedia.org/articles/cannonball-metastases-1",
+    "https://pubs.rsna.org/doi/10.1148/rg.2015140306"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 463140,
+    "bytesOut": 462006,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:46:53.480Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

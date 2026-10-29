@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_18_00007461_000.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pneumothorax, or large pleural effusion.\",\n    \"Bilateral hilar and mediastinal contours are within normal limits.\",\n    \"Cardiac silhouette size is within normal limits.\",\n    \"Pulmonary vascularity appears normal.\",\n    \"Bilateral costophrenic angles are clear.\",\n    \"No acute osseous abnormalities of the visualized thoracic cage.\",\n    \"A small, well-defined nodular opacity is noted in the right mid-lung zone.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Mid-Lung Nodule\",\n      \"description\": \"A small, well-defined nodular opacity is visualized in the right mid-lung zone. Its precise nature cannot be determined from a single PA chest radiograph.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 70\n    }\n  ],\n  \"summary\": \"The chest X-ray shows generally healthy-looking lungs and heart. There is a small, round spot in the middle of the right lung. This spot is called a nodule, and it's a common finding that usually isn't serious, but it should be looked at more closely to understand what it is. Further evaluation, such as a CT scan, may be recommended to determine its cause.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/chestxr\",\n    \"https://www.mayoclinic.org/diseases-conditions/lung-nodules/symptoms-causes/syc-20374661\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pneumothorax, or large pleural effusion.",
+    "Bilateral hilar and mediastinal contours are within normal limits.",
+    "Cardiac silhouette size is within normal limits.",
+    "Pulmonary vascularity appears normal.",
+    "Bilateral costophrenic angles are clear.",
+    "No acute osseous abnormalities of the visualized thoracic cage.",
+    "A small, well-defined nodular opacity is noted in the right mid-lung zone."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Mid-Lung Nodule",
+      "severity": "Mild",
+      "confidence": 70,
+      "description": "A small, well-defined nodular opacity is visualized in the right mid-lung zone. Its precise nature cannot be determined from a single PA chest radiograph."
+    }
+  ],
+  "summary": "The chest X-ray shows generally healthy-looking lungs and heart. There is a small, round spot in the middle of the right lung. This spot is called a nodule, and it's a common finding that usually isn't serious, but it should be looked at more closely to understand what it is. Further evaluation, such as a CT scan, may be recommended to determine its cause.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/chestxr",
+    "https://www.mayoclinic.org/diseases-conditions/lung-nodules/symptoms-causes/syc-20374661"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 381673,
+    "bytesOut": 377381,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:44:21.584Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

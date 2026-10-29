@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000296/series_2/00000296_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A radiopaque catheter with a pigtail loop at its superior aspect projects over the left hemithorax, extending from the lower chest/epigastric region into the left upper lung field, consistent with an indwelling pleural or drainage catheter.\",\n    \"Lungs are fully expanded without evidence of residual pneumothorax or focal consolidations.\",\n    \"Costophrenic angles are sharp and clear bilaterally, with no significant pleural effusion.\",\n    \"Cardiothoracic ratio is within normal limits; cardiac silhouette and mediastinal contours are unremarkable.\",\n    \"Trachea is midline and bony thorax shows no acute fractures or destructive lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left pleural pigtail drainage catheter\",\n      \"description\": \"Presence of a pigtail drainage catheter projecting over the left hemithorax with its tip/coil located in the left upper lung zone, with fully expanded lungs and no residual pneumothorax or significant effusion.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 92\n    }\n  ],\n  \"summary\": \"The chest X-ray demonstrates a pigtail drainage tube in the left side of the chest, typically placed to drain fluid or air from the pleural space. The lungs are fully expanded, and there is no visible collection of fluid or collapsed lung (pneumothorax). The heart size and other structures appear normal.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pigtail-catheter\",\n    \"https://radiopaedia.org/articles/chest-drain\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "A radiopaque catheter with a pigtail loop at its superior aspect projects over the left hemithorax, extending from the lower chest/epigastric region into the left upper lung field, consistent with an indwelling pleural or drainage catheter.",
+    "Lungs are fully expanded without evidence of residual pneumothorax or focal consolidations.",
+    "Costophrenic angles are sharp and clear bilaterally, with no significant pleural effusion.",
+    "Cardiothoracic ratio is within normal limits; cardiac silhouette and mediastinal contours are unremarkable.",
+    "Trachea is midline and bony thorax shows no acute fractures or destructive lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left pleural pigtail drainage catheter",
+      "severity": "Mild",
+      "confidence": 92,
+      "description": "Presence of a pigtail drainage catheter projecting over the left hemithorax with its tip/coil located in the left upper lung zone, with fully expanded lungs and no residual pneumothorax or significant effusion."
+    }
+  ],
+  "summary": "The chest X-ray demonstrates a pigtail drainage tube in the left side of the chest, typically placed to drain fluid or air from the pleural space. The lungs are fully expanded, and there is no visible collection of fluid or collapsed lung (pneumothorax). The heart size and other structures appear normal.",
+  "references": [
+    "https://radiopaedia.org/articles/pigtail-catheter",
+    "https://radiopaedia.org/articles/chest-drain"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22750,
+    "bytesOut": 22750,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:40:42.425Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

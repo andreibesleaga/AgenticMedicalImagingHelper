@@ -1,0 +1,30 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_1/00000092_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest, PA\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"There is a consolidation in the right lower lung field\",\n    \"There is mild pulmonary edema\",\n    \"There is cardiomegaly\",\n    \"There is a moderate right pleural effusion\",\n    \"There is a small left pleural effusion\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"right lower lung consolidation\",\n      \"description\": \"There is a consolidation in the right lower lung field\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"pulmonary edema\",\n      \"description\": \"There is mild pulmonary edema\",\n      \"severity\": \"Mild\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"cardiomegaly\",\n      \"description\": \"There is cardiomegaly\",\n      \"severity\": \"Mild\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"right pleural effusion\",\n      \"description\": \"There is a moderate right pleural effusion\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 100\n    },\n    {\n      \"name\": \"left pleural effusion\",\n      \"description\": \"There is a small left pleural effusion\",\n      \"severity\": \"Small\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"The chest X-ray shows signs of consolidation in the right lower lung, mild pulmonary edema, cardiomegaly (enlarged heart), and significant fluid buildup in the right and small amount of fluid in the left side of the chest (pleural effusion).\",\n  \"references\": [\n    \"https://www.radiologyassistant.com/topic/pulmonary-edema-radiology\",\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://www.radiologyinfo.org/en/topics/pleural-effusion\"\n  ]\n}",
+  "findings": [],
+  "validation": {
+    "ok": false,
+    "issues": [
+      "abnormalities.4.severity: Invalid option: expected one of \"Normal\"|\"Mild\"|\"Moderate\"|\"Severe\""
+    ]
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 389503,
+    "bytesOut": 304364,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T09:49:08.820Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

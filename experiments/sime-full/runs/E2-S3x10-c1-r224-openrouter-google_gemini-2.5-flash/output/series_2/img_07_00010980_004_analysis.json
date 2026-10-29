@@ -1,0 +1,63 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S3x10/series_2/img_07_00010980_004.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Mild cardiomegaly with a cardiothoracic ratio estimated to be greater than 0.5.\",\n    \"Bilateral pleural effusions, predominantly seen at the costophrenic angles, more prominent on the right.\",\n    \"Mild peribronchial cuffing and interstitial prominence, suggestive of pulmonary edema.\",\n    \"Normal bony structures of the thorax, without acute fractures or significant lytic/blastic lesions.\",\n    \"No focal consolidation or pneumothorax identified.\",\n    \"Vascular clips are noted over the left shoulder region, likely unrelated to the current clinical presentation.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Mild enlargement of the cardiac silhouette, with an estimated cardiothoracic ratio greater than 0.5, suggesting cardiac chamber enlargement.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Pleural Effusions\",\n      \"description\": \"Bilateral blunting of the costophrenic angles, indicating the presence of pleural fluid, more pronounced on the right side.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Pulmonary Edema\",\n      \"description\": \"Evidence of mild interstitial pulmonary edema characterized by peribronchial cuffing and prominence of interstitial markings.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The chest X-ray shows that the heart appears a bit enlarged, which is called cardiomegaly. There is fluid around both lungs, known as pleural effusions, which is more noticeable on the right side. Additionally, there are signs of mild fluid buildup within the lungs themselves, consistent with early pulmonary edema. These findings often suggest issues with heart function or fluid balance. There are no signs of collapsed lung or pneumonia. A few surgical clips are visible near the left shoulder, which are an incidental finding.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3303102/\",\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://www.atsjournals.org/doi/full/10.1164/rccm.200903-0389CI\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Mild cardiomegaly with a cardiothoracic ratio estimated to be greater than 0.5.",
+    "Bilateral pleural effusions, predominantly seen at the costophrenic angles, more prominent on the right.",
+    "Mild peribronchial cuffing and interstitial prominence, suggestive of pulmonary edema.",
+    "Normal bony structures of the thorax, without acute fractures or significant lytic/blastic lesions.",
+    "No focal consolidation or pneumothorax identified.",
+    "Vascular clips are noted over the left shoulder region, likely unrelated to the current clinical presentation."
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Mild enlargement of the cardiac silhouette, with an estimated cardiothoracic ratio greater than 0.5, suggesting cardiac chamber enlargement."
+    },
+    {
+      "name": "Pleural Effusions",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Bilateral blunting of the costophrenic angles, indicating the presence of pleural fluid, more pronounced on the right side."
+    },
+    {
+      "name": "Pulmonary Edema",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Evidence of mild interstitial pulmonary edema characterized by peribronchial cuffing and prominence of interstitial markings."
+    }
+  ],
+  "summary": "The chest X-ray shows that the heart appears a bit enlarged, which is called cardiomegaly. There is fluid around both lungs, known as pleural effusions, which is more noticeable on the right side. Additionally, there are signs of mild fluid buildup within the lungs themselves, consistent with early pulmonary edema. These findings often suggest issues with heart function or fluid balance. There are no signs of collapsed lung or pneumonia. A few surgical clips are visible near the left shoulder, which are an incidental finding.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3303102/",
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://www.atsjournals.org/doi/full/10.1164/rccm.200903-0389CI"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 25177,
+    "bytesOut": 25177,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:53:19.126Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

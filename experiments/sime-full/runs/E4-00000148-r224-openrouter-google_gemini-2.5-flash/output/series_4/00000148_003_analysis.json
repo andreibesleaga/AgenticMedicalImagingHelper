@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000148/series_4/00000148_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"There is a metallic foreign body, consistent with an endobronchial valve, noted in the right upper lobe bronchus.\",\n    \"Bilateral lung fields appear clear without evidence of focal consolidation, mass, or significant pleural effusion.\",\n    \"The heart size and mediastinal contours are within normal limits.\",\n    \"Diaphragms are intact and costophrenic angles are clear.\",\n    \"No acute bony abnormalities are identified.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Endobronchial valve\",\n      \"description\": \"A metallic foreign body, consistent with an endobronchial valve, is identified within the right upper lobe bronchus. This device is typically used for lung volume reduction in severe emphysema.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a small, metallic device, called an endobronchial valve, located in the airway of the right upper part of the lung. This device is often used to help people with severe emphysema breathe better by reducing the volume of the lung. Apart from this device, the rest of the lungs, heart, and surrounding structures appear normal. There are no signs of pneumonia, fluid around the lungs, or any other significant problems.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7902996/\",\n    \"https://www.atsjournals.org/doi/full/10.1164/rccm.201712-2575ST\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "There is a metallic foreign body, consistent with an endobronchial valve, noted in the right upper lobe bronchus.",
+    "Bilateral lung fields appear clear without evidence of focal consolidation, mass, or significant pleural effusion.",
+    "The heart size and mediastinal contours are within normal limits.",
+    "Diaphragms are intact and costophrenic angles are clear.",
+    "No acute bony abnormalities are identified."
+  ],
+  "abnormalities": [
+    {
+      "name": "Endobronchial valve",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "A metallic foreign body, consistent with an endobronchial valve, is identified within the right upper lobe bronchus. This device is typically used for lung volume reduction in severe emphysema."
+    }
+  ],
+  "summary": "The chest X-ray shows a small, metallic device, called an endobronchial valve, located in the airway of the right upper part of the lung. This device is often used to help people with severe emphysema breathe better by reducing the volume of the lung. Apart from this device, the rest of the lungs, heart, and surrounding structures appear normal. There are no signs of pneumonia, fluid around the lungs, or any other significant problems.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7902996/",
+    "https://www.atsjournals.org/doi/full/10.1164/rccm.201712-2575ST"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24147,
+    "bytesOut": 24147,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:23:51.895Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

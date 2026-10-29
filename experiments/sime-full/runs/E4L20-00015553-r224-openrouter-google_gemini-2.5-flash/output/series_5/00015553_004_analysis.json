@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00015553/series_5/00015553_004.png",
+  "seriesId": "series_5",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Dextrocardia: The heart is located in the right hemithorax.\",\n    \"Gastric bubble: The stomach gas bubble is noted in the right upper quadrant, suggesting situs inversus totalis.\",\n    \"Lung fields: Appear clear bilaterally with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Hilar regions: Appear unremarkable.\",\n    \"Diaphragms: Well-defined bilaterally.\",\n    \"Bony thorax: No acute fractures or destructive lesions seen.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Dextrocardia\",\n      \"description\": \"The cardiac silhouette is located predominantly in the right hemithorax, with the apex pointing to the right, consistent with dextrocardia.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Situs Inversus\",\n      \"description\": \"The gastric air bubble is observed in the right upper quadrant, which, in conjunction with dextrocardia, strongly suggests situs inversus totalis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"This X-ray shows that your child's heart is located on the right side of their chest instead of the usual left side. This condition is called dextrocardia. Additionally, the stomach's gas bubble is also on the right side, which, along with the heart's position, indicates a complete reversal of the internal organs, known as situs inversus totalis. The lungs appear clear and healthy, and there are no signs of any other immediate problems like fluid in the lungs or collapsed lung. While situs inversus means your child's organs are mirrored, it often doesn't cause health problems on its own. However, it's important for doctors to be aware of this anatomical variation.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8392275/\",\n    \"https://www.radiologyinfo.org/en/info/xray-chest\",\n    \"https://my.clevelandclinic.org/health/diseases/21008-situs-inversus\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Dextrocardia: The heart is located in the right hemithorax.",
+    "Gastric bubble: The stomach gas bubble is noted in the right upper quadrant, suggesting situs inversus totalis.",
+    "Lung fields: Appear clear bilaterally with no focal consolidation, pleural effusion, or pneumothorax.",
+    "Hilar regions: Appear unremarkable.",
+    "Diaphragms: Well-defined bilaterally.",
+    "Bony thorax: No acute fractures or destructive lesions seen."
+  ],
+  "abnormalities": [
+    {
+      "name": "Dextrocardia",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "The cardiac silhouette is located predominantly in the right hemithorax, with the apex pointing to the right, consistent with dextrocardia."
+    },
+    {
+      "name": "Situs Inversus",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "The gastric air bubble is observed in the right upper quadrant, which, in conjunction with dextrocardia, strongly suggests situs inversus totalis."
+    }
+  ],
+  "summary": "This X-ray shows that your child's heart is located on the right side of their chest instead of the usual left side. This condition is called dextrocardia. Additionally, the stomach's gas bubble is also on the right side, which, along with the heart's position, indicates a complete reversal of the internal organs, known as situs inversus totalis. The lungs appear clear and healthy, and there are no signs of any other immediate problems like fluid in the lungs or collapsed lung. While situs inversus means your child's organs are mirrored, it often doesn't cause health problems on its own. However, it's important for doctors to be aware of this anatomical variation.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8392275/",
+    "https://www.radiologyinfo.org/en/info/xray-chest",
+    "https://my.clevelandclinic.org/health/diseases/21008-situs-inversus"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23402,
+    "bytesOut": 23402,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:23:53.928Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

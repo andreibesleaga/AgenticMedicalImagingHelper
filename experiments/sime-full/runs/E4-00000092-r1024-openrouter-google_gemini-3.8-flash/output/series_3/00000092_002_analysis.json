@@ -1,0 +1,65 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_3/00000092_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA/AP erect)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Heart size is mildly enlarged with a cardiothoracic ratio greater than 0.50, suggesting cardiomegaly.\",\n    \"Thoracic aorta is tortuous and mildly dilated, consistent with atherosclerotic changes.\",\n    \"Bilateral lung fields demonstrate mild chronic interstitial markings and bibasilar linear opacities, consistent with dependent atelectasis or scarring, more pronounced at the left base.\",\n    \"Costophrenic angles show mild blunting on the left, which may represent minor pleural thickening or a small pleural effusion.\",\n    \"Normal gastric bubble with an air-fluid level beneath the left hemidiaphragm; no evidence of free air beneath the diaphragms.\",\n    \"Severe degenerative changes involving the left glenohumeral joint with superior migration, flattening, and sclerosis of the humeral head, characteristic of rotator cuff tear arthropathy or advanced osteoarthritis.\",\n    \"Extensive degenerative spondylosis throughout the visible thoracic spine.\",\n    \"External radiopaque density (necklace) projected over the lower cervical spine and small surgical clips in the lower midline abdomen.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Left Shoulder Arthropathy\",\n      \"description\": \"Marked remodeling, flattening, and superior migration of the left humeral head relative to the glenoid, indicative of advanced rotator cuff tear arthropathy or severe osteoarthritis.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Mild enlargement of the cardiac silhouette with an increased cardiothoracic ratio.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Bibasilar Atelectasis\",\n      \"description\": \"Linear and plate-like opacities at the lung bases, greater on the left, likely representing subsegmental atelectasis or chronic post-inflammatory changes.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The chest X-ray shows a mildly enlarged heart and some minor collapse or scarring at the base of the lungs (atelectasis), which is commonly seen with shallow breathing or previous inflammation. Additionally, there are severe wear-and-tear changes in the left shoulder joint (cuff tear arthropathy), which can cause shoulder pain and stiffness. No signs of acute pneumonia, large fluid collection, or collapsed lung are present.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://radiopaedia.org/articles/cuff-tear-arthropathy\",\n    \"https://radiopaedia.org/articles/atelectasis\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP erect)",
+  "quality": "Good",
+  "findings": [
+    "Heart size is mildly enlarged with a cardiothoracic ratio greater than 0.50, suggesting cardiomegaly.",
+    "Thoracic aorta is tortuous and mildly dilated, consistent with atherosclerotic changes.",
+    "Bilateral lung fields demonstrate mild chronic interstitial markings and bibasilar linear opacities, consistent with dependent atelectasis or scarring, more pronounced at the left base.",
+    "Costophrenic angles show mild blunting on the left, which may represent minor pleural thickening or a small pleural effusion.",
+    "Normal gastric bubble with an air-fluid level beneath the left hemidiaphragm; no evidence of free air beneath the diaphragms.",
+    "Severe degenerative changes involving the left glenohumeral joint with superior migration, flattening, and sclerosis of the humeral head, characteristic of rotator cuff tear arthropathy or advanced osteoarthritis.",
+    "Extensive degenerative spondylosis throughout the visible thoracic spine.",
+    "External radiopaque density (necklace) projected over the lower cervical spine and small surgical clips in the lower midline abdomen."
+  ],
+  "abnormalities": [
+    {
+      "name": "Left Shoulder Arthropathy",
+      "severity": "Severe",
+      "confidence": 90,
+      "description": "Marked remodeling, flattening, and superior migration of the left humeral head relative to the glenoid, indicative of advanced rotator cuff tear arthropathy or severe osteoarthritis."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Mild enlargement of the cardiac silhouette with an increased cardiothoracic ratio."
+    },
+    {
+      "name": "Bibasilar Atelectasis",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Linear and plate-like opacities at the lung bases, greater on the left, likely representing subsegmental atelectasis or chronic post-inflammatory changes."
+    }
+  ],
+  "summary": "The chest X-ray shows a mildly enlarged heart and some minor collapse or scarring at the base of the lungs (atelectasis), which is commonly seen with shallow breathing or previous inflammation. Additionally, there are severe wear-and-tear changes in the left shoulder joint (cuff tear arthropathy), which can cause shoulder pain and stiffness. No signs of acute pneumonia, large fluid collection, or collapsed lung are present.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://radiopaedia.org/articles/cuff-tear-arthropathy",
+    "https://radiopaedia.org/articles/atelectasis"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 400591,
+    "bytesOut": 397542,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:19:53.720Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

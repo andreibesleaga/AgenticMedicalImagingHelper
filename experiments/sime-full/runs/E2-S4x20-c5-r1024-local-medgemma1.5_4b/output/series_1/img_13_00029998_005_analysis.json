@@ -1,0 +1,41 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_1/img_13_00029998_005.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\"modality\": \"X-ray\", \"anatomyRegion\": \"Chest (AP)\", \"quality\": \"Good\", \"findings\": [\"Right-sided chest tube\", \"Right pleural effusion\", \"Right sided consolidation\", \"Cardiac silhouette is within normal limits\", \"Mediastinum is normal\"], \"abnormalities\": [], \"summary\": \"The chest X-ray shows a right-sided chest tube, a small to moderate right-sided pleural effusion (fluid in the space around the lung), and some consolidation (increased density) in the right lung. The heart size appears normal, and the position of the mediastinum (the area between the lungs containing the heart and major vessels) is unremarkable. There is no obvious abnormality on the left side.\", \"references\": [\"https://radiology.rsna.org/content/2019/1/75344871\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Right-sided chest tube",
+    "Right pleural effusion",
+    "Right sided consolidation",
+    "Cardiac silhouette is within normal limits",
+    "Mediastinum is normal"
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows a right-sided chest tube, a small to moderate right-sided pleural effusion (fluid in the space around the lung), and some consolidation (increased density) in the right lung. The heart size appears normal, and the position of the mediastinum (the area between the lungs containing the heart and major vessels) is unremarkable. There is no obvious abnormality on the left side.",
+  "references": [
+    "https://radiology.rsna.org/content/2019/1/75344871"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 395339,
+    "bytesOut": 301711,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:18:33.555Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

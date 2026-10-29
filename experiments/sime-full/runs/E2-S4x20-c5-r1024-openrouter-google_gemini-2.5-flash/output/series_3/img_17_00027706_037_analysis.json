@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_3/img_17_00027706_037.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Centrally inserted catheter with its tip projecting over the right superior vena cava/right atrium junction.\",\n    \"Multiple surgical clips are noted in the right upper lung field, consistent with prior pulmonary resection or intervention.\",\n    \"No acute focal consolidation or pleural effusion is seen.\",\n    \"The cardiomediastinal silhouette is within normal limits.\",\n    \"Surgical clips are also seen in the left shoulder region, likely unrelated to the primary chest findings.\",\n    \"Bowel gas patterns appear unremarkable within the imaged abdomen.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical Clips\",\n      \"description\": \"Multiple metallic surgical clips are present in the right upper lobe of the lung, suggesting prior surgical intervention in this area. Additional clips are seen in the left shoulder region.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Central Venous Catheter\",\n      \"description\": \"A centrally inserted catheter is visible, with its distal tip appropriately positioned at the cavoatrial junction (junction of the superior vena cava and right atrium).\",\n      \"severity\": \"Normal\",\n      \"confidence\": 98\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows that your heart and lungs appear to be of normal size and shape, with no signs of fluid around the lungs or areas of pneumonia. There is a tube, called a central venous catheter, correctly placed with its tip in a large vein near your heart. We also see several small metal clips in the upper part of your right lung, which are typically left behind after surgery. Similar clips are also visible in your left shoulder area, likely from a previous procedure there. The visible abdominal area shows normal gas patterns.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.294085025\",\n    \"https://radiopaedia.org/articles/central-venous-catheter-2\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Centrally inserted catheter with its tip projecting over the right superior vena cava/right atrium junction.",
+    "Multiple surgical clips are noted in the right upper lung field, consistent with prior pulmonary resection or intervention.",
+    "No acute focal consolidation or pleural effusion is seen.",
+    "The cardiomediastinal silhouette is within normal limits.",
+    "Surgical clips are also seen in the left shoulder region, likely unrelated to the primary chest findings.",
+    "Bowel gas patterns appear unremarkable within the imaged abdomen."
+  ],
+  "abnormalities": [
+    {
+      "name": "Surgical Clips",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "Multiple metallic surgical clips are present in the right upper lobe of the lung, suggesting prior surgical intervention in this area. Additional clips are seen in the left shoulder region."
+    },
+    {
+      "name": "Central Venous Catheter",
+      "severity": "Normal",
+      "confidence": 98,
+      "description": "A centrally inserted catheter is visible, with its distal tip appropriately positioned at the cavoatrial junction (junction of the superior vena cava and right atrium)."
+    }
+  ],
+  "summary": "This X-ray of the chest shows that your heart and lungs appear to be of normal size and shape, with no signs of fluid around the lungs or areas of pneumonia. There is a tube, called a central venous catheter, correctly placed with its tip in a large vein near your heart. We also see several small metal clips in the upper part of your right lung, which are typically left behind after surgery. Similar clips are also visible in your left shoulder area, likely from a previous procedure there. The visible abdominal area shows normal gas patterns.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.294085025",
+    "https://radiopaedia.org/articles/central-venous-catheter-2"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 387195,
+    "bytesOut": 384579,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:46:30.871Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

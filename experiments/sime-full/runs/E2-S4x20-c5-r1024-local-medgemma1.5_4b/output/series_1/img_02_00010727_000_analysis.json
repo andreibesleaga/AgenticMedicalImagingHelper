@@ -1,0 +1,39 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_1/img_02_00010727_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The heart size is normal.\",\n    \"The lungs are clear.\",\n    \"There is no pleural effusion.\",\n    \"The mediastinum is unremarkable.\",\n    \"There is linear atelectasis in the right lower lobe.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This is a chest X-ray. The heart and lungs appear normal. There is some atelectasis (lung collapse) visible in the lower right lung. There are no signs of fluid or other major problems.\",\n  \"references\": []\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The heart size is normal.",
+    "The lungs are clear.",
+    "There is no pleural effusion.",
+    "The mediastinum is unremarkable.",
+    "There is linear atelectasis in the right lower lobe."
+  ],
+  "abnormalities": [],
+  "summary": "This is a chest X-ray. The heart and lungs appear normal. There is some atelectasis (lung collapse) visible in the lower right lung. There are no signs of fluid or other major problems.",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 438682,
+    "bytesOut": 334304,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:17:56.815Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

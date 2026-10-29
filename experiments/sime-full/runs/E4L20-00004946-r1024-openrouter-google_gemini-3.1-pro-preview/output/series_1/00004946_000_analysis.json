@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00004946/series_1/00004946_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are hyperinflated with flattened hemidiaphragms, consistent with COPD.\",\n    \"There are reticular opacities predominantly in the lower lung zones bilaterally.\",\n    \"The heart size is normal.\",\n    \"The mediastinal contours are unremarkable.\",\n    \"There are no pleural effusions or pneumothorax.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"COPD\",\n      \"description\": \"Hyperinflation of the lungs with flattened hemidiaphragms.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Interstitial lung disease\",\n      \"description\": \"Reticular opacities predominantly in the lower lung zones bilaterally.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The chest X-ray shows signs of chronic obstructive pulmonary disease (COPD), which is a common lung condition that causes breathing difficulties. There are also some abnormal markings in the lower parts of both lungs, which could be related to a condition called interstitial lung disease. These findings should be discussed with a doctor, who may recommend further tests to determine the exact cause and best course of treatment.\",\n  \"references\": [\n    \"https://www.radiopaedia.org/articles/chronic-obstructive-pulmonary-disease\",\n    \"https://www.radiopaedia.org/articles/interstitial-lung-disease-1\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are hyperinflated with flattened hemidiaphragms, consistent with COPD.",
+    "There are reticular opacities predominantly in the lower lung zones bilaterally.",
+    "The heart size is normal.",
+    "The mediastinal contours are unremarkable.",
+    "There are no pleural effusions or pneumothorax."
+  ],
+  "abnormalities": [
+    {
+      "name": "COPD",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Hyperinflation of the lungs with flattened hemidiaphragms."
+    },
+    {
+      "name": "Interstitial lung disease",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Reticular opacities predominantly in the lower lung zones bilaterally."
+    }
+  ],
+  "summary": "The chest X-ray shows signs of chronic obstructive pulmonary disease (COPD), which is a common lung condition that causes breathing difficulties. There are also some abnormal markings in the lower parts of both lungs, which could be related to a condition called interstitial lung disease. These findings should be discussed with a doctor, who may recommend further tests to determine the exact cause and best course of treatment.",
+  "references": [
+    "https://www.radiopaedia.org/articles/chronic-obstructive-pulmonary-disease",
+    "https://www.radiopaedia.org/articles/interstitial-lung-disease-1"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 391525,
+    "bytesOut": 384111,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:37:10.925Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

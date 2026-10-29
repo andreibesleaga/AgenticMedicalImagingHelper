@@ -1,0 +1,40 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_1/img_10_00010531_038.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Heart size is normal.\",\n    \"Lungs are clear.\",\n    \"Mediastinum is normal.\",\n    \"Pleura is normal.\",\n    \"Bones are unremarkable.\",\n    \"There is a left-sided picc line present with tip in the superior vena cava.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"Chest X-ray shows a normal heart and lungs. There is a central line (picc line) in place on the left side, ending in the large vein near the heart.\",\n  \"references\": []\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Heart size is normal.",
+    "Lungs are clear.",
+    "Mediastinum is normal.",
+    "Pleura is normal.",
+    "Bones are unremarkable.",
+    "There is a left-sided picc line present with tip in the superior vena cava."
+  ],
+  "abnormalities": [],
+  "summary": "Chest X-ray shows a normal heart and lungs. There is a central line (picc line) in place on the left side, ending in the large vein near the heart.",
+  "references": [],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 412585,
+    "bytesOut": 314181,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T11:53:13.782Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

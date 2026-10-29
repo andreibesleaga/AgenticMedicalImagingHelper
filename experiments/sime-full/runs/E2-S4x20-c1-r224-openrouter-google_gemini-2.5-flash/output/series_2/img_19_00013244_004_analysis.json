@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_2/img_19_00013244_004.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pleural effusion, or pneumothorax is evident.\",\n    \"Cardiomediastinal silhouette is within normal limits.\",\n    \"Hilar contours are unremarkable.\",\n    \"Bony thorax appears intact.\",\n    \"A right-sided central venous catheter is noted, with its tip projecting over the superior vena cava.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Central Venous Catheter\",\n      \"description\": \"A right-sided central venous catheter is visible, with its distal tip appropriately positioned within the superior vena cava, indicating proper placement. No immediate complications such as pneumothorax or hemothorax are observed in relation to the catheter.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows healthy-looking lungs without any signs of pneumonia, fluid around the lungs, or a collapsed lung. The heart and major blood vessels in the chest appear to be of normal size and shape. A tube called a central venous catheter is seen on the right side of the chest, which is correctly positioned in a large vein near the heart. There are no immediate concerns related to the catheter or other findings in the chest.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125022\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900609/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pleural effusion, or pneumothorax is evident.",
+    "Cardiomediastinal silhouette is within normal limits.",
+    "Hilar contours are unremarkable.",
+    "Bony thorax appears intact.",
+    "A right-sided central venous catheter is noted, with its tip projecting over the superior vena cava."
+  ],
+  "abnormalities": [
+    {
+      "name": "Central Venous Catheter",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A right-sided central venous catheter is visible, with its distal tip appropriately positioned within the superior vena cava, indicating proper placement. No immediate complications such as pneumothorax or hemothorax are observed in relation to the catheter."
+    }
+  ],
+  "summary": "The chest X-ray shows healthy-looking lungs without any signs of pneumonia, fluid around the lungs, or a collapsed lung. The heart and major blood vessels in the chest appear to be of normal size and shape. A tube called a central venous catheter is seen on the right side of the chest, which is correctly positioned in a large vein near the heart. There are no immediate concerns related to the catheter or other findings in the chest.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125022",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900609/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24288,
+    "bytesOut": 24288,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:57:57.034Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

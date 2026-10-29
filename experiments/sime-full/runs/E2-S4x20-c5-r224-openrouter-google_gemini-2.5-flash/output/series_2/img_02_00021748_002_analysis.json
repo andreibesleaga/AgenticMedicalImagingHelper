@@ -1,0 +1,53 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_2/img_02_00021748_002.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs appear clear with no obvious consolidation, effusions, or pneumothorax.\",\n    \"Bilateral hilar regions are within normal limits.\",\n    \"Cardiomediastinal silhouette is not enlarged.\",\n    \"Diaphragms are intact and clear bilaterally.\",\n    \"Costophrenic angles are sharp.\",\n    \"Osseous structures (ribs, clavicles, thoracic spine) appear unremarkable.\",\n    \"Multiple small, dense opacities noted in the bilateral lung fields, consistent with calcified granulomas.\",\n    \"Slight prominence of vascular markings in both lower lung zones.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Calcified granulomas\",\n      \"description\": \"Multiple small, well-defined, dense opacities scattered throughout both lung fields, consistent with calcified granulomas.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray of your chest shows that your lungs, heart, and surrounding bones appear generally healthy. There are several small, bright spots in both lungs. These spots are likely old, healed infections or inflammations, known as calcified granulomas. They are very common and usually don't cause any problems. Your diaphragm and the spaces around your lungs are also clear. Overall, the findings are mostly normal, with the calcified granulomas being a common incidental finding.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/granuloma-lung\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3312102/\",\n    \"https://emedicine.medscape.com/article/358826-overview\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Lungs appear clear with no obvious consolidation, effusions, or pneumothorax.",
+    "Bilateral hilar regions are within normal limits.",
+    "Cardiomediastinal silhouette is not enlarged.",
+    "Diaphragms are intact and clear bilaterally.",
+    "Costophrenic angles are sharp.",
+    "Osseous structures (ribs, clavicles, thoracic spine) appear unremarkable.",
+    "Multiple small, dense opacities noted in the bilateral lung fields, consistent with calcified granulomas.",
+    "Slight prominence of vascular markings in both lower lung zones."
+  ],
+  "abnormalities": [
+    {
+      "name": "Calcified granulomas",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "Multiple small, well-defined, dense opacities scattered throughout both lung fields, consistent with calcified granulomas."
+    }
+  ],
+  "summary": "This X-ray of your chest shows that your lungs, heart, and surrounding bones appear generally healthy. There are several small, bright spots in both lungs. These spots are likely old, healed infections or inflammations, known as calcified granulomas. They are very common and usually don't cause any problems. Your diaphragm and the spaces around your lungs are also clear. Overall, the findings are mostly normal, with the calcified granulomas being a common incidental finding.",
+  "references": [
+    "https://radiopaedia.org/articles/granuloma-lung",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3312102/",
+    "https://emedicine.medscape.com/article/358826-overview"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 25071,
+    "bytesOut": 25071,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:01:54.385Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

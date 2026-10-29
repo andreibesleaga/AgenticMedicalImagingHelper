@@ -1,0 +1,55 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_4/00000092_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Increased opacity in the lower zones of both lungs, more pronounced on the right\",\n    \"Blunting of the costophrenic angles bilaterally\",\n    \"Right basilar consolidation with air bronchograms\",\n    \"Presence of an air-fluid level in the left upper quadrant of the abdomen, likely representing a dilated stomach or bowel loop\",\n    \"Bilateral shoulder joints appear degenerative\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Blunting of the costophrenic angles bilaterally suggests the accumulation of fluid in the pleural space.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Lower Lobe Consolidation\",\n      \"description\": \"Increased opacity and air bronchograms in the right lower lung zone are consistent with pneumonia or pulmonary edema.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The X-ray shows signs of fluid accumulation around the lungs (pleural effusions) and an area of 'consolidation' (where lung air is replaced by fluid, pus, or blood) in the lower right lung, which is common in pneumonia. There is also a noticeable air-fluid level in the abdomen, which may be related to the stomach or bowel and requires clinical correlation.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/lobar-pneumonia\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Fair",
+  "findings": [
+    "Increased opacity in the lower zones of both lungs, more pronounced on the right",
+    "Blunting of the costophrenic angles bilaterally",
+    "Right basilar consolidation with air bronchograms",
+    "Presence of an air-fluid level in the left upper quadrant of the abdomen, likely representing a dilated stomach or bowel loop",
+    "Bilateral shoulder joints appear degenerative"
+  ],
+  "abnormalities": [
+    {
+      "name": "Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Blunting of the costophrenic angles bilaterally suggests the accumulation of fluid in the pleural space."
+    },
+    {
+      "name": "Lower Lobe Consolidation",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Increased opacity and air bronchograms in the right lower lung zone are consistent with pneumonia or pulmonary edema."
+    }
+  ],
+  "summary": "The X-ray shows signs of fluid accumulation around the lungs (pleural effusions) and an area of 'consolidation' (where lung air is replaced by fluid, pus, or blood) in the lower right lung, which is common in pneumonia. There is also a noticeable air-fluid level in the abdomen, which may be related to the stomach or bowel and requires clinical correlation.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/lobar-pneumonia"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 378291,
+    "bytesOut": 288219,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T09:13:49.349Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

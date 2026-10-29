@@ -1,0 +1,43 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_3/img_05_00001177_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Hilar regions are unremarkable.\",\n    \"Diaphragms are intact and clear costophrenic angles are noted.\",\n    \"Osseous structures (ribs, clavicles, visualized thoracic spine) appear intact without acute fracture or destructive lesion.\",\n    \"No obvious foreign bodies are seen.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray appears normal. The lungs are clear, with no signs of pneumonia, fluid around the lungs (pleural effusion), or collapsed lung (pneumothorax). The heart and major blood vessels (cardiomediastinal silhouette) are of normal size and shape. The bones visible in the image, such as the ribs and collarbones, also look normal.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125032\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Hilar regions are unremarkable.",
+    "Diaphragms are intact and clear costophrenic angles are noted.",
+    "Osseous structures (ribs, clavicles, visualized thoracic spine) appear intact without acute fracture or destructive lesion.",
+    "No obvious foreign bodies are seen."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray appears normal. The lungs are clear, with no signs of pneumonia, fluid around the lungs (pleural effusion), or collapsed lung (pneumothorax). The heart and major blood vessels (cardiomediastinal silhouette) are of normal size and shape. The bones visible in the image, such as the ribs and collarbones, also look normal.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125032",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24321,
+    "bytesOut": 24321,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:58:22.584Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000239/series_3/00000239_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear bilaterally without evidence of focal consolidation, mass, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Costophrenic angles and hemidiaphragms are sharp and well-defined.\",\n    \"Multiple small radiopaque surgical clips are noted in the right upper quadrant/epigastric region, consistent with prior surgical intervention (e.g., cholecystectomy).\",\n    \"Bony thorax and visualized soft tissues, including bilateral breast shadows, are intact without acute abnormality.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Surgical clips in upper abdomen\",\n      \"description\": \"Metallic surgical clips projected over the upper abdomen, typical for prior laparoscopic cholecystectomy or similar abdominal surgery, with no evidence of acute complication.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray is clear with no signs of pneumonia, fluid around the lungs, or heart enlargement. Small metal surgical clips are visible in the upper abdomen, which are typical remnants from a past surgery (such as gallbladder removal) and are completely harmless. Overall, there are no acute lung or heart issues found.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/normal-chest-radiograph\",\n    \"https://radiopaedia.org/articles/cholecystectomy-clips\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear bilaterally without evidence of focal consolidation, mass, or pneumothorax.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Costophrenic angles and hemidiaphragms are sharp and well-defined.",
+    "Multiple small radiopaque surgical clips are noted in the right upper quadrant/epigastric region, consistent with prior surgical intervention (e.g., cholecystectomy).",
+    "Bony thorax and visualized soft tissues, including bilateral breast shadows, are intact without acute abnormality."
+  ],
+  "abnormalities": [
+    {
+      "name": "Surgical clips in upper abdomen",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "Metallic surgical clips projected over the upper abdomen, typical for prior laparoscopic cholecystectomy or similar abdominal surgery, with no evidence of acute complication."
+    }
+  ],
+  "summary": "The chest X-ray is clear with no signs of pneumonia, fluid around the lungs, or heart enlargement. Small metal surgical clips are visible in the upper abdomen, which are typical remnants from a past surgery (such as gallbladder removal) and are completely harmless. Overall, there are no acute lung or heart issues found.",
+  "references": [
+    "https://radiopaedia.org/articles/normal-chest-radiograph",
+    "https://radiopaedia.org/articles/cholecystectomy-clips"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23540,
+    "bytesOut": 23540,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:38:24.208Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

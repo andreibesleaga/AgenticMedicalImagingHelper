@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000219/series_2/00000219_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Lungs are clear bilaterally with no focal consolidation, pneumothorax, or large pleural effusion.\",\n    \"Cardiothoracic ratio is within normal limits.\",\n    \"Thoracic aorta appears tortuous and mildly unfolded with a prominent aortic knob, likely age-related or related to hypertensive changes.\",\n    \"Trachea is midline.\",\n    \"Costophrenic and cardiophrenic sulci are sharp and well-defined.\",\n    \"Visualized osseous structures demonstrate mild thoracic spondylosis with intact ribs and clavicles.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Aortic tortuosity\",\n      \"description\": \"Mild elongation and unfolding of the thoracic aorta, consistent with benign age-related or vascular remodeling changes.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows clear lungs with no signs of pneumonia, fluid buildup, or abnormal masses. The heart is normal in size. The main artery leaving the heart (the aorta) shows mild curvature and widening (unfolding), which is very common and typically associated with aging or long-standing high blood pressure. Overall, there are no acute heart or lung issues identified.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/aortic-unfolding\",\n    \"https://radiopaedia.org/articles/chest-radiograph-assessment-summary\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Lungs are clear bilaterally with no focal consolidation, pneumothorax, or large pleural effusion.",
+    "Cardiothoracic ratio is within normal limits.",
+    "Thoracic aorta appears tortuous and mildly unfolded with a prominent aortic knob, likely age-related or related to hypertensive changes.",
+    "Trachea is midline.",
+    "Costophrenic and cardiophrenic sulci are sharp and well-defined.",
+    "Visualized osseous structures demonstrate mild thoracic spondylosis with intact ribs and clavicles."
+  ],
+  "abnormalities": [
+    {
+      "name": "Aortic tortuosity",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Mild elongation and unfolding of the thoracic aorta, consistent with benign age-related or vascular remodeling changes."
+    }
+  ],
+  "summary": "The chest X-ray shows clear lungs with no signs of pneumonia, fluid buildup, or abnormal masses. The heart is normal in size. The main artery leaving the heart (the aorta) shows mild curvature and widening (unfolding), which is very common and typically associated with aging or long-standing high blood pressure. Overall, there are no acute heart or lung issues identified.",
+  "references": [
+    "https://radiopaedia.org/articles/aortic-unfolding",
+    "https://radiopaedia.org/articles/chest-radiograph-assessment-summary"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23237,
+    "bytesOut": 23237,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:36:27.534Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

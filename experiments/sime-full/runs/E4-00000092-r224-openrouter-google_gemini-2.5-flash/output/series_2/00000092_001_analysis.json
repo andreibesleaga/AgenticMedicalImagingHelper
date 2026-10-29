@@ -1,0 +1,52 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000092/series_2/00000092_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary abnormalities identified.\",\n    \"Bilateral lung fields are clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiac silhouette is normal in size and contour.\",\n    \"Mediastinum appears unremarkable.\",\n    \"Bones of the thoracic cage are intact.\",\n    \"Bilateral costo-phrenic angles are clear.\",\n    \"Presence of gas under both hemidiaphragms, consistent with pneumoperitoneum.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pneumoperitoneum\",\n      \"description\": \"Presence of free gas under both hemidiaphragms. This finding is highly suggestive of pneumoperitoneum.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows gas under both sides of the diaphragm, which is called pneumoperitoneum. This usually means there is free air in the abdominal cavity, often due to a hole in an abdominal organ, like the stomach or intestine. While the lungs, heart, and bones of the chest look normal, the presence of this gas needs urgent medical attention to determine the cause and appropriate treatment.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pneumoperitoneum\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7011985/\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria/ACR-Appropriateness-Criteria-Detailed-Information/ACR-AC-Acute-Abdominal-Pain\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary abnormalities identified.",
+    "Bilateral lung fields are clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiac silhouette is normal in size and contour.",
+    "Mediastinum appears unremarkable.",
+    "Bones of the thoracic cage are intact.",
+    "Bilateral costo-phrenic angles are clear.",
+    "Presence of gas under both hemidiaphragms, consistent with pneumoperitoneum."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pneumoperitoneum",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "Presence of free gas under both hemidiaphragms. This finding is highly suggestive of pneumoperitoneum."
+    }
+  ],
+  "summary": "The chest X-ray shows gas under both sides of the diaphragm, which is called pneumoperitoneum. This usually means there is free air in the abdominal cavity, often due to a hole in an abdominal organ, like the stomach or intestine. While the lungs, heart, and bones of the chest look normal, the presence of this gas needs urgent medical attention to determine the cause and appropriate treatment.",
+  "references": [
+    "https://radiopaedia.org/articles/pneumoperitoneum",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7011985/",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria/ACR-Appropriateness-Criteria-Detailed-Information/ACR-AC-Acute-Abdominal-Pain"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23905,
+    "bytesOut": 23905,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:23:00.218Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

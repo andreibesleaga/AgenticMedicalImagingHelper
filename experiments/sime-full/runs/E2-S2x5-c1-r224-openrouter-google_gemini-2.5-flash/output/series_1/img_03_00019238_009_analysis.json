@@ -1,0 +1,61 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S2x5/series_1/img_03_00019238_009.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Mild to moderate dextrocardia with the cardiac apex pointing to the right.\",\n    \"Left lung field demonstrates opacification consistent with significant atelectasis or consolidation.\",\n    \"Multiple subcutaneous emphysema noted bilaterally in the chest wall, more prominent on the left.\",\n    \"Presence of multiple tubes/lines, including an endotracheal tube, nasogastric tube, and possibly central venous catheters, though their exact tips are not clearly visualized or are obscured by other findings.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Dextrocardia\",\n      \"description\": \"The heart is situated in the right hemithorax, with the cardiac apex pointing to the right. This is a congenital condition.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Left Lung Opacification\",\n      \"description\": \"Significant opacification of the left lung field, suggesting atelectasis (collapsed lung) or consolidation (filling of air spaces with fluid/cells). This could be related to the patient's current condition or underlying pathology.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Subcutaneous Emphysema\",\n      \"description\": \"Air is present in the subcutaneous tissues of the chest wall bilaterally, more pronounced on the left. This indicates air leakage from the respiratory system into the soft tissues.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The X-ray shows the heart is on the right side of the chest (dextrocardia), which is a condition present from birth. The left lung appears significantly whiter than normal, which usually means it's either collapsed (atelectasis) or filled with fluid or infection (consolidation). There's also air trapped under the skin of the chest, especially on the left side (subcutaneous emphysema), indicating air has leaked from the lungs into the surrounding tissues. There are also several medical tubes and lines visible, suggesting the patient is receiving medical care.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/dextrocardia-1\",\n    \"https://radiopaedia.org/articles/pulmonary-atelectasis\",\n    \"https://radiopaedia.org/articles/subcutaneous-emphysema-1\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Mild to moderate dextrocardia with the cardiac apex pointing to the right.",
+    "Left lung field demonstrates opacification consistent with significant atelectasis or consolidation.",
+    "Multiple subcutaneous emphysema noted bilaterally in the chest wall, more prominent on the left.",
+    "Presence of multiple tubes/lines, including an endotracheal tube, nasogastric tube, and possibly central venous catheters, though their exact tips are not clearly visualized or are obscured by other findings."
+  ],
+  "abnormalities": [
+    {
+      "name": "Dextrocardia",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "The heart is situated in the right hemithorax, with the cardiac apex pointing to the right. This is a congenital condition."
+    },
+    {
+      "name": "Left Lung Opacification",
+      "severity": "Severe",
+      "confidence": 90,
+      "description": "Significant opacification of the left lung field, suggesting atelectasis (collapsed lung) or consolidation (filling of air spaces with fluid/cells). This could be related to the patient's current condition or underlying pathology."
+    },
+    {
+      "name": "Subcutaneous Emphysema",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Air is present in the subcutaneous tissues of the chest wall bilaterally, more pronounced on the left. This indicates air leakage from the respiratory system into the soft tissues."
+    }
+  ],
+  "summary": "The X-ray shows the heart is on the right side of the chest (dextrocardia), which is a condition present from birth. The left lung appears significantly whiter than normal, which usually means it's either collapsed (atelectasis) or filled with fluid or infection (consolidation). There's also air trapped under the skin of the chest, especially on the left side (subcutaneous emphysema), indicating air has leaked from the lungs into the surrounding tissues. There are also several medical tubes and lines visible, suggesting the patient is receiving medical care.",
+  "references": [
+    "https://radiopaedia.org/articles/dextrocardia-1",
+    "https://radiopaedia.org/articles/pulmonary-atelectasis",
+    "https://radiopaedia.org/articles/subcutaneous-emphysema-1"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23882,
+    "bytesOut": 23882,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:50:50.576Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

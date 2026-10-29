@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000067/series_3/00000067_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"The lungs are well expanded and clear bilaterally without focal consolidation, pneumothorax, or overt interstitial pulmonary edema.\",\n    \"Costophrenic and cardiophrenic angles are sharp and visualized without evidence of pleural effusion.\",\n    \"The cardiac silhouette is within normal limits for size, though partially obscured inferiorly by elevated hemidiaphragms secondary to body habitus.\",\n    \"The thoracic aorta is elongated and tortuous (aortic ectasia/unfolding), which is commonly associated with aging or systemic hypertension.\",\n    \"The trachea is midline and the main bronchi are patent.\",\n    \"Mild degenerative changes and osteophyte formation are noted along the visualized thoracic spine.\",\n    \"Prominent overlying soft tissues of the chest wall and upper abdomen consistent with body habitus.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Aortic Ectasia\",\n      \"description\": \"Mild tortuosity and elongation of the thoracic aorta without focal aneurysm.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 88\n    },\n    {\n      \"name\": \"Thoracic Spondylosis\",\n      \"description\": \"Mild degenerative osteophyte formation and disc space narrowing along the mid-to-lower thoracic spine.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The chest X-ray shows no acute lung infections (such as pneumonia), fluid collections, or collapsed lung tissue. The heart size is within normal limits. The main aorta (the major artery carrying blood from the heart) is slightly curved and lengthened, a common finding often related to normal aging or blood pressure. Mild age-related wear and tear (arthritis) is also present along the mid-back spine. Overall, these are benign, chronic findings with no evidence of an acute cardiopulmonary process.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/aortic-unfolding\",\n    \"https://radiopaedia.org/articles/thoracic-spondylosis\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "The lungs are well expanded and clear bilaterally without focal consolidation, pneumothorax, or overt interstitial pulmonary edema.",
+    "Costophrenic and cardiophrenic angles are sharp and visualized without evidence of pleural effusion.",
+    "The cardiac silhouette is within normal limits for size, though partially obscured inferiorly by elevated hemidiaphragms secondary to body habitus.",
+    "The thoracic aorta is elongated and tortuous (aortic ectasia/unfolding), which is commonly associated with aging or systemic hypertension.",
+    "The trachea is midline and the main bronchi are patent.",
+    "Mild degenerative changes and osteophyte formation are noted along the visualized thoracic spine.",
+    "Prominent overlying soft tissues of the chest wall and upper abdomen consistent with body habitus."
+  ],
+  "abnormalities": [
+    {
+      "name": "Aortic Ectasia",
+      "severity": "Mild",
+      "confidence": 88,
+      "description": "Mild tortuosity and elongation of the thoracic aorta without focal aneurysm."
+    },
+    {
+      "name": "Thoracic Spondylosis",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Mild degenerative osteophyte formation and disc space narrowing along the mid-to-lower thoracic spine."
+    }
+  ],
+  "summary": "The chest X-ray shows no acute lung infections (such as pneumonia), fluid collections, or collapsed lung tissue. The heart size is within normal limits. The main aorta (the major artery carrying blood from the heart) is slightly curved and lengthened, a common finding often related to normal aging or blood pressure. Mild age-related wear and tear (arthritis) is also present along the mid-back spine. Overall, these are benign, chronic findings with no evidence of an acute cardiopulmonary process.",
+  "references": [
+    "https://radiopaedia.org/articles/aortic-unfolding",
+    "https://radiopaedia.org/articles/thoracic-spondylosis"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 423458,
+    "bytesOut": 422125,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-09-29T10:17:34.566Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

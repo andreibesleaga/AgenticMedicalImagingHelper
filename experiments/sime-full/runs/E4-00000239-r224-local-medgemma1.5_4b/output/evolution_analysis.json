@@ -1,0 +1,25 @@
+{
+  "seriesCount": 6,
+  "seriesIds": [
+    "series_1",
+    "series_2",
+    "series_3",
+    "series_4",
+    "series_5",
+    "series_6"
+  ],
+  "progression": "Inconclusive",
+  "trends": [],
+  "forecastedEvolution": "",
+  "treatmentRecommendations": [],
+  "combinedReport": "{\n  \"progression\": \"Improving | Stable | Worsening | Inconclusive (overall trend across the sessions)\",\n  \"trends\": [\n    {\n      \"finding\": \"lungs\",\n      \"trend\": \"Improving\",\n      \"details\": \"from clear/normal in series_1 to clear in series_2, and clear with normal vascular markings in series_3. No worsening observed.\"\n    },\n    {\n      \"finding\": \"heart size\",\n      \"trend\": \"Stable\",\n      \"details\": \"normal size in series_1, normal size in series_2, normal size in series_3. Note: series_5 mentions mild cardiomegaly, but the primary description focus is on the free air, not the heart itself in the specific wording. The 'detail' focuses on the primary report finding.\"\n    },\n    {\n      \"finding\": \"pleural effusion\",\n      \"trend\": \"Stable\",\n      \"details\": \"none in series_1, none in series_2, none in series_3. No increase observed.\"\n    },\n    {\n      \"finding\": \"free air under diaphragm\",\n      \"trend\": \"Worsening\",\n      \"details\": \"none in series_1, none in series_2, none seen in series_3. This finding is clearly present in series_4 (free air under both hemidiaphragms) and most notably present in series_5 (free air under both hemidiaphragms).\"\n    },\n    {\n      \"finding\": \"dextrocardia\",\n      \"trend\": \"Stable\",\n      \"details\": \"not mentioned in series_1 or series_2. Mentioned in series_5.\"\n    }\n  ],\n  \"forecastedEvolution\": \"The presence of free air under the diaphragm suggests a perforation, likely a small bowel perforation given the location. Without surgical intervention, the perforation would likely worsen. Clinical stability or deterioration would depend on the source and rate of leakage.\",\n  \"treatmentRecommendations\": [\n    \"Surgical evaluation and intervention are highly recommended given the strong evidence of perforation.\",\n    \"Medical management focusing on resuscitation and supportive care may be necessary while awaiting surgery.\",\n    \"Further imaging (e.g., CT scan) may be helpful to confirm the perforation, delineate its extent, and identify the source.\"\n  ],\n  \"combinedReport\": \"## Chest X-ray Series Analysis\\n\\n**Findings:**\\n*   **Lungs:** Clear with normal vascular markings.\\n*   **Heart:** Normal size, though technically described as mild cardiomegaly (on the right side).\\n*   **Pleura:** No pleural effusion.\\n*   **Abdomen:** Free air under both hemidiaphragms (suggestive of perforation), small bowel loops seen in the left upper quadrant.\\n*   **Mediastinum:** Unremarkable.\\n*   **Cardio:** Dextrocardia (heart on the right side).\\n\\n**Interpretation:**\\n\\nThe most striking finding is the presence of free air under both hemidiaphragms, strongly suggesting a perforation, likely of a small bowel loop given its location in the left upper quadrant. This finding, combined with the patient's dextrocardia, points towards a diagnosis of **Small bowel perforation**, potentially originating from a perforated peptic ulcer or diverticulitis.\\n\\n**Disclaimer:** This analysis is AI-generated for educational and informational purposes only. \"\n}",
+  "validation": {
+    "ok": false,
+    "issues": [
+      "progression: Invalid option: expected one of \"Improving\"|\"Stable\"|\"Worsening\"|\"Inconclusive\"",
+      "progression: keyword fallback (\"Inconclusive\")"
+    ]
+  },
+  "processedAt": "2026-09-29T11:02:22.678Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

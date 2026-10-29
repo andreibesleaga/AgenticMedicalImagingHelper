@@ -1,0 +1,214 @@
+{
+  "manifestVersion": "1.0",
+  "toolVersion": "1.1.0",
+  "startedAt": "2026-10-08T09:21:33.396Z",
+  "finishedAt": "2026-10-08T09:22:32.205Z",
+  "provider": "openrouter",
+  "model": "google/gemini-2.5-flash",
+  "pricing": {
+    "inputUsdPerMillion": 0.3,
+    "outputUsdPerMillion": 2.5
+  },
+  "settings": {
+    "concurrency": 1,
+    "maxCostUsd": 1,
+    "retries": 3,
+    "imageQuality": "auto"
+  },
+  "inputDir": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00013880",
+  "outputDir": "/home/andrei/work/AI/AgenticMedicalImagingHelper/experiments/sime-full/runs/E4L20-00013880-r224-openrouter-google_gemini-2.5-flash/output",
+  "inputs": [
+    {
+      "path": "series_1/00013880_000.png",
+      "sha256": "9e5b8a88515f995618af59f23367a5f39e7d458a02dca4a24f4efe1de889e2d3",
+      "bytes": 25414
+    },
+    {
+      "path": "series_2/00013880_001.png",
+      "sha256": "608eb703463e8719e9a55a08e8069c45c81f530e75cb450527de08172a74cddd",
+      "bytes": 24855
+    },
+    {
+      "path": "series_3/00013880_002.png",
+      "sha256": "d442869e1f7fbf7d5005169f349ea293e681b545a56e467137eee7cd65638fcc",
+      "bytes": 24900
+    },
+    {
+      "path": "series_4/00013880_003.png",
+      "sha256": "f8883421234bed78f4782ba4fef5dc9974d11d7d6dd82d74b916df09bc7841b1",
+      "bytes": 24700
+    }
+  ],
+  "contextFiles": [
+    {
+      "path": "patient_context.txt",
+      "sha256": "7935fc94d66b003b646a97dc74313f959483d4cc242f85fb08304ff5057c1e48",
+      "bytes": 357
+    }
+  ],
+  "calls": [
+    {
+      "index": 1,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:21:43.407Z",
+      "tokensIn": 661,
+      "tokensOut": 266,
+      "estimatedUsd": 0.0008633,
+      "providerUsd": 0.0008633,
+      "retries": 0
+    },
+    {
+      "index": 2,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:21:54.547Z",
+      "tokensIn": 661,
+      "tokensOut": 398,
+      "estimatedUsd": 0.0011933,
+      "providerUsd": 0.0011933,
+      "retries": 0
+    },
+    {
+      "index": 3,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:22:01.433Z",
+      "tokensIn": 661,
+      "tokensOut": 521,
+      "estimatedUsd": 0.0015008000000000005,
+      "providerUsd": 0.0015008,
+      "retries": 0
+    },
+    {
+      "index": 4,
+      "stage": "image",
+      "timestamp": "2026-10-08T09:22:08.631Z",
+      "tokensIn": 661,
+      "tokensOut": 595,
+      "estimatedUsd": 0.0016857999999999995,
+      "providerUsd": 0.0016857999999999999,
+      "retries": 0
+    },
+    {
+      "index": 5,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:22:11.143Z",
+      "tokensIn": 595,
+      "tokensOut": 253,
+      "estimatedUsd": 0.0008110000000000001,
+      "providerUsd": 0.0008110000000000001,
+      "retries": 0
+    },
+    {
+      "index": 6,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:22:11.601Z",
+      "tokensIn": 727,
+      "tokensOut": 328,
+      "estimatedUsd": 0.0010380999999999993,
+      "providerUsd": 0.0010381000000000001,
+      "retries": 0
+    },
+    {
+      "index": 7,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:22:19.475Z",
+      "tokensIn": 851,
+      "tokensOut": 457,
+      "estimatedUsd": 0.0013978000000000011,
+      "providerUsd": 0.0013978000000000003,
+      "retries": 0
+    },
+    {
+      "index": 8,
+      "stage": "series",
+      "timestamp": "2026-10-08T09:22:22.625Z",
+      "tokensIn": 924,
+      "tokensOut": 335,
+      "estimatedUsd": 0.0011146999999999997,
+      "providerUsd": 0.0011146999999999997,
+      "retries": 0
+    },
+    {
+      "index": 9,
+      "stage": "evolution",
+      "timestamp": "2026-10-08T09:22:31.681Z",
+      "tokensIn": 1218,
+      "tokensOut": 1311,
+      "estimatedUsd": 0.0036428999999999993,
+      "providerUsd": 0.003642900000000001,
+      "retries": 0
+    }
+  ],
+  "outputs": [
+    {
+      "path": "series_1/00013880_000_analysis.json",
+      "sha256": "c6efd6430867db863d9d4163e0c97f339cb038ab48a40a0648c1e60048f7a5cf",
+      "bytes": 2864
+    },
+    {
+      "path": "series_2/00013880_001_analysis.json",
+      "sha256": "dab4d374d003f0f2f362fed3513bb7910d75f6655e7922aaa6d2140abc907afc",
+      "bytes": 4083
+    },
+    {
+      "path": "series_3/00013880_002_analysis.json",
+      "sha256": "6a92976bddb65a824e2e314a371d4a4893372e94392703e3ed5a2d51c60123bb",
+      "bytes": 4985
+    },
+    {
+      "path": "series_4/00013880_003_analysis.json",
+      "sha256": "098fc84391d85c2fcbb3ff14c7a444e4ffa26eeba0b75786606bb75cdaa7def6",
+      "bytes": 5791
+    },
+    {
+      "path": "series_1/series_summary.md",
+      "sha256": "099f50af537fd696e0f9d8f8bd08e82bb4972a063acf6f8ad6b779192601d2a3",
+      "bytes": 1884
+    },
+    {
+      "path": "series_2/series_summary.md",
+      "sha256": "314bac0d4e40c3b108251e14ca9810cb0daf5e7bfb678beacfb910305ac42a43",
+      "bytes": 2304
+    },
+    {
+      "path": "series_3/series_summary.md",
+      "sha256": "e2cc9d56a9fbf2bb4bed72306ada697fbd5a0b9ae0759a5e325be6f0071758cc",
+      "bytes": 2730
+    },
+    {
+      "path": "series_4/series_summary.md",
+      "sha256": "626834e0102dc138e8f4fe00e0dbb1a02f3f89b44e8445dbed5920dd0301cc3e",
+      "bytes": 2318
+    },
+    {
+      "path": "evolution_analysis.json",
+      "sha256": "2200f70136b6dd7c97b1415bd319467f40a3fe751489bcd8ed3bf459b5b98ce5",
+      "bytes": 6340
+    },
+    {
+      "path": "combined_diagnostic_report.md",
+      "sha256": "31242b06f194dc505029d739bf1b0cae3bba2b0ad7837e535dd753cef1d5e719",
+      "bytes": 6928
+    }
+  ],
+  "totals": {
+    "calls": 9,
+    "tokensIn": 6959,
+    "tokensOut": 4464,
+    "estimatedUsd": 0.0132477,
+    "providerUsd": 0.013247700000000001,
+    "images": 4,
+    "imagesSucceeded": 4,
+    "imagesFailed": 0,
+    "series": 4
+  },
+  "exitCode": 0,
+  "warnings": [
+    "input-integrity: 4 image(s) matched --expect-hashes."
+  ],
+  "humanReview": {
+    "required": true,
+    "reviewedBy": null
+  },
+  "prevManifestHash": null,
+  "manifestHash": "16f1bfafeb74631733fa1828c7caa4e1b9c3efe055479e505b88c61001ec838a"
+}

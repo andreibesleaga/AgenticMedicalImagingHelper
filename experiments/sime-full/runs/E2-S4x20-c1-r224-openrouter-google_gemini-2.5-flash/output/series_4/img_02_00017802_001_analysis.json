@@ -1,0 +1,44 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_4/img_02_00017802_001.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary pathology identified.\",\n    \"Bilateral lung fields are clear.\",\n    \"Cardiomediastinal silhouette is within normal limits.\",\n    \"Hilar contours are unremarkable.\",\n    \"Diaphragms are intact and costophrenic angles are sharp.\",\n    \"Visualized osseous structures appear intact.\",\n    \"A right-sided port-a-cath is noted with its tip projecting into the superior vena cava.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray shows no immediate concerns in the lungs or heart. The lungs appear clear, and the heart size is normal. The breathing muscles (diaphragms) and the angles where they meet the ribs are also normal. All visible bones are intact. A port-a-cath, which is a device for giving medications or drawing blood, is seen on the right side of the chest, correctly positioned.\",\n  \"references\": [\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://radiopaedia.org/articles/chest-x-ray-interpretive-strategy-1\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary pathology identified.",
+    "Bilateral lung fields are clear.",
+    "Cardiomediastinal silhouette is within normal limits.",
+    "Hilar contours are unremarkable.",
+    "Diaphragms are intact and costophrenic angles are sharp.",
+    "Visualized osseous structures appear intact.",
+    "A right-sided port-a-cath is noted with its tip projecting into the superior vena cava."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows no immediate concerns in the lungs or heart. The lungs appear clear, and the heart size is normal. The breathing muscles (diaphragms) and the angles where they meet the ribs are also normal. All visible bones are intact. A port-a-cath, which is a device for giving medications or drawing blood, is seen on the right side of the chest, correctly positioned.",
+  "references": [
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://radiopaedia.org/articles/chest-x-ray-interpretive-strategy-1"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23268,
+    "bytesOut": 23268,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:59:37.032Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

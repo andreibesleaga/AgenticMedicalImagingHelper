@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S3x10/series_3/img_07_00015068_007.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary pathology identified.\",\n    \"Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal contours are within normal limits.\",\n    \"Skeletal structures appear intact.\",\n    \"A left subclavian port-a-cath device is noted in its expected position, with its catheter tip projecting over the superior vena cava.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"The chest X-ray shows no signs of active lung disease, heart problems, or issues with the bones in the chest. There is a port-a-cath device, which is a small medical device used for long-term intravenous access, in the left upper chest area, and it appears to be in the correct position.\",\n  \"references\": [\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://pubs.rsna.org/journal/radiographics\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary pathology identified.",
+    "Lungs are clear with no focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal contours are within normal limits.",
+    "Skeletal structures appear intact.",
+    "A left subclavian port-a-cath device is noted in its expected position, with its catheter tip projecting over the superior vena cava."
+  ],
+  "abnormalities": [],
+  "summary": "The chest X-ray shows no signs of active lung disease, heart problems, or issues with the bones in the chest. There is a port-a-cath device, which is a small medical device used for long-term intravenous access, in the left upper chest area, and it appears to be in the correct position.",
+  "references": [
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiographics"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24876,
+    "bytesOut": 24876,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:54:59.777Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

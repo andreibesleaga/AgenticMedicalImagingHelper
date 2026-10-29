@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4L20/00022134/series_1/00022134_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pneumothorax, or large pleural effusion is noted.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Hilar regions appear unremarkable.\",\n    \"Pulmonary vascularity appears normal.\",\n    \"No obvious skeletal abnormalities are identified within the visualized thorax.\",\n    \"A small, well-defined, radiopaque foreign body is noted in the lower abdomen/pelvis region, projected over the sacrum/coccyx area. Its clinical significance is uncertain from this single projection.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Abdominal/Pelvic Foreign Body\",\n      \"description\": \"A small, well-defined, radiopaque foreign body is projected in the lower abdomen/pelvis region, overlying the sacrum/coccyx. Its exact nature and location (e.g., within the bowel, soft tissue, or externally on clothing/skin) cannot be definitively determined from this single chest X-ray.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 75\n    }\n  ],\n  \"summary\": \"This chest X-ray shows no significant problems in the lungs or heart. The heart and major blood vessels appear normal in size and shape. The lungs are clear without signs of pneumonia, collapsed lung, or fluid around the lungs. There are no obvious bone abnormalities in the chest area. However, a small, dense object is seen in the lower belly/pelvis region. It's unclear what this object is or if it's inside the body or just on clothing, and its importance can't be fully determined from this single image.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.294085731\",\n    \"https://www.radiologyinfo.org/en/info/chestrad\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pneumothorax, or large pleural effusion is noted.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Hilar regions appear unremarkable.",
+    "Pulmonary vascularity appears normal.",
+    "No obvious skeletal abnormalities are identified within the visualized thorax.",
+    "A small, well-defined, radiopaque foreign body is noted in the lower abdomen/pelvis region, projected over the sacrum/coccyx area. Its clinical significance is uncertain from this single projection."
+  ],
+  "abnormalities": [
+    {
+      "name": "Abdominal/Pelvic Foreign Body",
+      "severity": "Mild",
+      "confidence": 75,
+      "description": "A small, well-defined, radiopaque foreign body is projected in the lower abdomen/pelvis region, overlying the sacrum/coccyx. Its exact nature and location (e.g., within the bowel, soft tissue, or externally on clothing/skin) cannot be definitively determined from this single chest X-ray."
+    }
+  ],
+  "summary": "This chest X-ray shows no significant problems in the lungs or heart. The heart and major blood vessels appear normal in size and shape. The lungs are clear without signs of pneumonia, collapsed lung, or fluid around the lungs. There are no obvious bone abnormalities in the chest area. However, a small, dense object is seen in the lower belly/pelvis region. It's unclear what this object is or if it's inside the body or just on clothing, and its importance can't be fully determined from this single image.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.294085731",
+    "https://www.radiologyinfo.org/en/info/chestrad"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 12939,
+    "bytesOut": 12939,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:28:07.930Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

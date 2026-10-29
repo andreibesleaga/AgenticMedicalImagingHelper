@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_06_00002427_000.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Dextroscoliosis of the thoracic spine, convex to the right.\",\n    \"Bilateral lung fields appear clear with normal vascularity.\",\n    \"Cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"Diaphragms are intact and clear costophrenic angles bilaterally.\",\n    \"Bones of the thoracic cage and shoulders are unremarkable except for the spinal curvature.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Thoracic Dextroscoliosis\",\n      \"description\": \"The thoracic spine shows a significant curvature to the right (dextroscoliosis). This appears to be a structural scoliosis given the degree of curvature.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows that the upper part of your spine (thoracic spine) has a curve to the right, which is called scoliosis. This curvature seems to be more than mild. However, your lungs look clear and healthy, and your heart appears to be of normal size and shape. The diaphragm (the muscle separating your chest and abdomen) and the spaces around your lungs are also normal. The other bones in your chest area look fine. Scoliosis is a common condition where the spine curves sideways; the degree of curve can vary and may require further evaluation.\",\n  \"references\": [\n    \"https://www.mayoclinic.org/diseases-conditions/scoliosis/symptoms-causes/syc-20350716\",\n    \"https://radiopaedia.org/articles/scoliosis-1\",\n    \"https://www.spine-health.com/conditions/scoliosis/what-scoliosis\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Dextroscoliosis of the thoracic spine, convex to the right.",
+    "Bilateral lung fields appear clear with normal vascularity.",
+    "Cardiomediastinal silhouette is within normal limits for size and contour.",
+    "Diaphragms are intact and clear costophrenic angles bilaterally.",
+    "Bones of the thoracic cage and shoulders are unremarkable except for the spinal curvature."
+  ],
+  "abnormalities": [
+    {
+      "name": "Thoracic Dextroscoliosis",
+      "severity": "Moderate",
+      "confidence": 95,
+      "description": "The thoracic spine shows a significant curvature to the right (dextroscoliosis). This appears to be a structural scoliosis given the degree of curvature."
+    }
+  ],
+  "summary": "The X-ray of your chest shows that the upper part of your spine (thoracic spine) has a curve to the right, which is called scoliosis. This curvature seems to be more than mild. However, your lungs look clear and healthy, and your heart appears to be of normal size and shape. The diaphragm (the muscle separating your chest and abdomen) and the spaces around your lungs are also normal. The other bones in your chest area look fine. Scoliosis is a common condition where the spine curves sideways; the degree of curve can vary and may require further evaluation.",
+  "references": [
+    "https://www.mayoclinic.org/diseases-conditions/scoliosis/symptoms-causes/syc-20350716",
+    "https://radiopaedia.org/articles/scoliosis-1",
+    "https://www.spine-health.com/conditions/scoliosis/what-scoliosis"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 421544,
+    "bytesOut": 416898,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:43:17.081Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

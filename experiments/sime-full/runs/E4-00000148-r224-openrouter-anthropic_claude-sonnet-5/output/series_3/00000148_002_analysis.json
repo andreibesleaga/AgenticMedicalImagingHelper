@@ -1,0 +1,53 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000148/series_3/00000148_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\":\"X-ray\",\"anatomyRegion\":\"Chest (PA/AP)\",\"quality\":\"Good\",\"findings\":[\"Frontal chest radiograph demonstrating bilateral lung fields\",\"Rounded metallic/radiopaque density projected over the right mid-to-lower lung field, likely overlying or within the chest wall/breast area, measuring approximately 1-1.5 cm, with well-defined smooth borders\",\"Cardiac silhouette appears within normal limits in size and contour\",\"Mediastinal contours grossly unremarkable\",\"Visible soft tissue shadows in bilateral lower chest, likely representing breast tissue\",\"'L' marker visible on the right side of the image (patient's left), indicating standard radiographic laterality marker\",\"No obvious pneumothorax or large pleural effusion identified\",\"Bony thorax including ribs and clavicles appear intact without acute fracture\"],\"abnormalities\":[{\"name\":\"Radiopaque round density - right lung field\",\"description\":\"A well-circumscribed, round, dense radiopaque object is seen projected over the right mid-lung zone. This could represent an external marker/button, a surgical clip, a foreign body, or an artifact on the patient's skin or clothing rather than a true intrathoracic lesion. Correlation with patient history and possibly lateral view or repeat imaging without external objects is recommended to exclude a true pulmonary nodule.\",\"severity\":\"Mild\",\"confidence\":55}],\"summary\":\"This chest X-ray shows the lungs, heart, and surrounding structures from the front. The heart size and lung fields appear generally normal. There is a small, round, very white (dense) spot noted on the right side of the chest, which could be something on the skin or clothing (like a button or medical device marker) rather than something inside the lung itself. To be certain, your doctor may want to repeat the X-ray after removing any external objects or take additional views. Overall, no major abnormalities such as pneumonia, collapsed lung, or large masses were identified, but this image should be reviewed by a radiologist for a complete and accurate assessment.\",\"references\":[\"https://radiopaedia.org/articles/chest-radiograph-an-approach-to-image-interpretation\",\"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\"https://pubs.rsna.org/journal/radiographics\"]}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP)",
+  "quality": "Good",
+  "findings": [
+    "Frontal chest radiograph demonstrating bilateral lung fields",
+    "Rounded metallic/radiopaque density projected over the right mid-to-lower lung field, likely overlying or within the chest wall/breast area, measuring approximately 1-1.5 cm, with well-defined smooth borders",
+    "Cardiac silhouette appears within normal limits in size and contour",
+    "Mediastinal contours grossly unremarkable",
+    "Visible soft tissue shadows in bilateral lower chest, likely representing breast tissue",
+    "'L' marker visible on the right side of the image (patient's left), indicating standard radiographic laterality marker",
+    "No obvious pneumothorax or large pleural effusion identified",
+    "Bony thorax including ribs and clavicles appear intact without acute fracture"
+  ],
+  "abnormalities": [
+    {
+      "name": "Radiopaque round density - right lung field",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "A well-circumscribed, round, dense radiopaque object is seen projected over the right mid-lung zone. This could represent an external marker/button, a surgical clip, a foreign body, or an artifact on the patient's skin or clothing rather than a true intrathoracic lesion. Correlation with patient history and possibly lateral view or repeat imaging without external objects is recommended to exclude a true pulmonary nodule."
+    }
+  ],
+  "summary": "This chest X-ray shows the lungs, heart, and surrounding structures from the front. The heart size and lung fields appear generally normal. There is a small, round, very white (dense) spot noted on the right side of the chest, which could be something on the skin or clothing (like a button or medical device marker) rather than something inside the lung itself. To be certain, your doctor may want to repeat the X-ray after removing any external objects or take additional views. Overall, no major abnormalities such as pneumonia, collapsed lung, or large masses were identified, but this image should be reviewed by a radiologist for a complete and accurate assessment.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-radiograph-an-approach-to-image-interpretation",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiographics"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24239,
+    "bytesOut": 24239,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-29T10:39:19.724Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

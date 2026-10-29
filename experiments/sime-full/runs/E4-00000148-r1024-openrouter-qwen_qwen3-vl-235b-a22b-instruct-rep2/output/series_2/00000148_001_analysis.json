@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_2/00000148_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right-sided pleural effusion with blunting of the right costophrenic angle and homogeneous opacity in the lower right hemithorax.\",\n    \"Left lung appears clear with no evidence of consolidation or mass.\",\n    \"Cardiac silhouette is within normal limits for size and contour.\",\n    \"Diaphragm is well-defined; gastric bubble visible under left hemidiaphragm.\",\n    \"A radiopaque foreign body, likely a button battery, is seen in the mid-esophagus region.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pleural Effusion\",\n      \"description\": \"Homogeneous opacity in the right lower thorax with meniscus sign and blunted costophrenic angle, consistent with moderate free-flowing pleural fluid. No mediastinal shift noted.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Esophageal Foreign Body\",\n      \"description\": \"Round, radiopaque object with central lucency located along the esophageal course at the level of the aortic arch, highly suggestive of a swallowed button battery. This is a medical emergency due to risk of mucosal erosion and perforation.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows fluid around the right lung (pleural effusion) and a button battery stuck in the esophagus. The battery is dangerous and needs urgent removal to prevent damage to the esophagus or nearby structures. The fluid may be related to infection, heart issues, or other causes and requires further evaluation. Please consult your doctor immediately.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6043271/\",\n    \"https://www.uptodate.com/contents/foreign-body-in-the-esophagus\",\n    \"https://radiopaedia.org/articles/pleural-effusion\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Right-sided pleural effusion with blunting of the right costophrenic angle and homogeneous opacity in the lower right hemithorax.",
+    "Left lung appears clear with no evidence of consolidation or mass.",
+    "Cardiac silhouette is within normal limits for size and contour.",
+    "Diaphragm is well-defined; gastric bubble visible under left hemidiaphragm.",
+    "A radiopaque foreign body, likely a button battery, is seen in the mid-esophagus region."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Homogeneous opacity in the right lower thorax with meniscus sign and blunted costophrenic angle, consistent with moderate free-flowing pleural fluid. No mediastinal shift noted."
+    },
+    {
+      "name": "Esophageal Foreign Body",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Round, radiopaque object with central lucency located along the esophageal course at the level of the aortic arch, highly suggestive of a swallowed button battery. This is a medical emergency due to risk of mucosal erosion and perforation."
+    }
+  ],
+  "summary": "The chest X-ray shows fluid around the right lung (pleural effusion) and a button battery stuck in the esophagus. The battery is dangerous and needs urgent removal to prevent damage to the esophagus or nearby structures. The fluid may be related to infection, heart issues, or other causes and requires further evaluation. Please consult your doctor immediately.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6043271/",
+    "https://www.uptodate.com/contents/foreign-body-in-the-esophagus",
+    "https://radiopaedia.org/articles/pleural-effusion"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 440372,
+    "bytesOut": 398705,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:28:14.821Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S3x10/series_2/img_01_00028504_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diaphragmatic elevation of the right hemidiaphragm with associated blunting of the right costophrenic angle, suggestive of a small pleural effusion or atelectasis.\",\n    \"The left lung field and hemidiaphragm appear unremarkable.\",\n    \"Cardiomediastinal silhouette is within normal limits.\",\n    \"Bony thorax appears intact without acute fracture or destructive lesion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Hemidiaphragm Elevation\",\n      \"description\": \"Elevation of the right hemidiaphragm is noted, potentially indicating subpulmonic effusion, atelectasis, or phrenic nerve dysfunction. The right costophrenic angle is blunted.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The X-ray of the chest shows that the right side of the main breathing muscle (diaphragm) is a bit higher than usual, and there's a slight blurring of the corner where the diaphragm meets the ribs on the right side. This could mean there's a small amount of fluid in the lung lining (pleural effusion) or a small area of collapsed lung tissue (atelectasis). The left lung, heart, and major blood vessels appear normal. The bones of the rib cage also look normal. It is important to discuss these findings with your doctor for further evaluation, as additional tests might be needed to understand the cause of the elevated diaphragm.\",\n  \"references\": [\n    \"https://radiologykey.com/diaphragmatic-abnormalities/\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8759508/\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.274065099\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diaphragmatic elevation of the right hemidiaphragm with associated blunting of the right costophrenic angle, suggestive of a small pleural effusion or atelectasis.",
+    "The left lung field and hemidiaphragm appear unremarkable.",
+    "Cardiomediastinal silhouette is within normal limits.",
+    "Bony thorax appears intact without acute fracture or destructive lesion."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Hemidiaphragm Elevation",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "Elevation of the right hemidiaphragm is noted, potentially indicating subpulmonic effusion, atelectasis, or phrenic nerve dysfunction. The right costophrenic angle is blunted."
+    }
+  ],
+  "summary": "The X-ray of the chest shows that the right side of the main breathing muscle (diaphragm) is a bit higher than usual, and there's a slight blurring of the corner where the diaphragm meets the ribs on the right side. This could mean there's a small amount of fluid in the lung lining (pleural effusion) or a small area of collapsed lung tissue (atelectasis). The left lung, heart, and major blood vessels appear normal. The bones of the rib cage also look normal. It is important to discuss these findings with your doctor for further evaluation, as additional tests might be needed to understand the cause of the elevated diaphragm.",
+  "references": [
+    "https://radiologykey.com/diaphragmatic-abnormalities/",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8759508/",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.274065099"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21421,
+    "bytesOut": 21421,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:54:44.001Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

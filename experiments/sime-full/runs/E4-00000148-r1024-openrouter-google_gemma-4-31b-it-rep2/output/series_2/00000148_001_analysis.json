@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_2/00000148_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Presence of an implanted venous access device (port-a-cath) in the right upper chest with the catheter tip terminating in the superior vena cava.\",\n    \"Blunting of the right costophrenic angle with a meniscus sign, consistent with right-sided pleural effusion.\",\n    \"Clear left lung field and sharp left costophrenic angle.\",\n    \"Normal cardiac silhouette size and shape.\",\n    \"No evidence of pneumothorax or consolidation in the lung parenchyma.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right pleural effusion\",\n      \"description\": \"Accumulation of fluid in the right pleural space evidenced by blunting of the costophrenic angle and an upward-curving meniscus of fluid density.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The X-ray shows a medical device called a port-a-cath (used for long-term medication or blood draws) in the right chest, which is positioned correctly. There is a small amount of fluid around the bottom of the right lung, known as a pleural effusion. The heart and the rest of the lungs appear normal.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/port-a-cath\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Presence of an implanted venous access device (port-a-cath) in the right upper chest with the catheter tip terminating in the superior vena cava.",
+    "Blunting of the right costophrenic angle with a meniscus sign, consistent with right-sided pleural effusion.",
+    "Clear left lung field and sharp left costophrenic angle.",
+    "Normal cardiac silhouette size and shape.",
+    "No evidence of pneumothorax or consolidation in the lung parenchyma."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right pleural effusion",
+      "severity": "Mild",
+      "confidence": 95,
+      "description": "Accumulation of fluid in the right pleural space evidenced by blunting of the costophrenic angle and an upward-curving meniscus of fluid density."
+    }
+  ],
+  "summary": "The X-ray shows a medical device called a port-a-cath (used for long-term medication or blood draws) in the right chest, which is positioned correctly. There is a small amount of fluid around the bottom of the right lung, known as a pleural effusion. The heart and the rest of the lungs appear normal.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/port-a-cath"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 440372,
+    "bytesOut": 335679,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T09:15:17.702Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

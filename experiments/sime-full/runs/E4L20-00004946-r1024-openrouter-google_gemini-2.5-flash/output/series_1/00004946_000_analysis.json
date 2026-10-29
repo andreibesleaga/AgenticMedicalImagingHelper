@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00004946/series_1/00004946_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral reticulonodular opacities are observed throughout both lung fields, more prominent in the lower zones.\",\n    \"Bilateral hilar regions appear prominent.\",\n    \"Cardiomediastinal silhouette is unremarkable in size and contour.\",\n    \"No obvious pleural effusions or pneumothorax identified.\",\n    \"Bones of the thoracic cage are intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Reticulonodular opacities\",\n      \"description\": \"Diffuse bilateral reticulonodular opacities are present throughout both lung fields, suggesting interstitial lung disease. These opacities are somewhat more pronounced in the lower lung zones.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Prominent hila\",\n      \"description\": \"Bilateral hilar regions appear prominent, which could be related to lymphadenopathy or prominent pulmonary vasculature, potentially associated with the diffuse parenchymal changes.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The chest X-ray shows changes in both lungs that look like a pattern of tiny lines and spots. This pattern, called reticulonodular opacities, suggests a type of lung condition affecting the tissue surrounding the air sacs, often referred to as interstitial lung disease. The areas where the main lung arteries and airways enter the lungs (hila) also appear more prominent than usual. More tests would likely be needed to understand the exact cause of these changes. These findings are not consistent with common acute infections like pneumonia, but rather suggest a more chronic lung process.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8974558/\",\n    \"https://radiopaedia.org/articles/interstitial-lung-disease-3\",\n    \"https://www.thoracic.org/patients/patient-resources/disease-info/interstitial-lung-disease.php\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral reticulonodular opacities are observed throughout both lung fields, more prominent in the lower zones.",
+    "Bilateral hilar regions appear prominent.",
+    "Cardiomediastinal silhouette is unremarkable in size and contour.",
+    "No obvious pleural effusions or pneumothorax identified.",
+    "Bones of the thoracic cage are intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Reticulonodular opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse bilateral reticulonodular opacities are present throughout both lung fields, suggesting interstitial lung disease. These opacities are somewhat more pronounced in the lower lung zones."
+    },
+    {
+      "name": "Prominent hila",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Bilateral hilar regions appear prominent, which could be related to lymphadenopathy or prominent pulmonary vasculature, potentially associated with the diffuse parenchymal changes."
+    }
+  ],
+  "summary": "The chest X-ray shows changes in both lungs that look like a pattern of tiny lines and spots. This pattern, called reticulonodular opacities, suggests a type of lung condition affecting the tissue surrounding the air sacs, often referred to as interstitial lung disease. The areas where the main lung arteries and airways enter the lungs (hila) also appear more prominent than usual. More tests would likely be needed to understand the exact cause of these changes. These findings are not consistent with common acute infections like pneumonia, but rather suggest a more chronic lung process.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8974558/",
+    "https://radiopaedia.org/articles/interstitial-lung-disease-3",
+    "https://www.thoracic.org/patients/patient-resources/disease-info/interstitial-lung-disease.php"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 391525,
+    "bytesOut": 384111,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:05:48.754Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

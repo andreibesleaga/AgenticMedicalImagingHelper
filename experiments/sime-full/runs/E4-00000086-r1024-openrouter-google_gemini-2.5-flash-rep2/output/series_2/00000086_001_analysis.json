@@ -1,0 +1,53 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000086/series_2/00000086_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary pathology identified.\",\n    \"Bilateral lung fields are clear, with normal vascularity.\",\n    \"Hilar and mediastinal contours are unremarkable.\",\n    \"Cardiac silhouette is normal in size and contour.\",\n    \"Diaphragms are intact and costophrenic angles are sharp.\",\n    \"No pleural effusion or pneumothorax is evident.\",\n    \"Osseous structures of the thoracic cage are unremarkable.\",\n    \"A coiled metallic structure (likely an embolization coil) is noted in the right lower lung field, overlying the right hemidiaphragm region.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Embolization coil\",\n      \"description\": \"A coiled metallic structure is identified in the right lower lung field, likely representing an embolization coil. Its presence does not appear to be causing any acute pulmonary compromise or opacification.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"The chest X-ray shows no signs of active lung or heart problems. The lungs appear clear, and the heart size is normal. There is a metallic coil in the lower part of the right lung, which is likely from a previous medical procedure (like an embolization to block a blood vessel). This coil does not seem to be causing any current issues.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125070\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://radiopaedia.org/articles/pulmonary-embolization\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary pathology identified.",
+    "Bilateral lung fields are clear, with normal vascularity.",
+    "Hilar and mediastinal contours are unremarkable.",
+    "Cardiac silhouette is normal in size and contour.",
+    "Diaphragms are intact and costophrenic angles are sharp.",
+    "No pleural effusion or pneumothorax is evident.",
+    "Osseous structures of the thoracic cage are unremarkable.",
+    "A coiled metallic structure (likely an embolization coil) is noted in the right lower lung field, overlying the right hemidiaphragm region."
+  ],
+  "abnormalities": [
+    {
+      "name": "Embolization coil",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A coiled metallic structure is identified in the right lower lung field, likely representing an embolization coil. Its presence does not appear to be causing any acute pulmonary compromise or opacification."
+    }
+  ],
+  "summary": "The chest X-ray shows no signs of active lung or heart problems. The lungs appear clear, and the heart size is normal. There is a metallic coil in the lower part of the right lung, which is likely from a previous medical procedure (like an embolization to block a blood vessel). This coil does not seem to be causing any current issues.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125070",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://radiopaedia.org/articles/pulmonary-embolization"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 639281,
+    "bytesOut": 489372,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "alpha channel stripped",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:05:05.941Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

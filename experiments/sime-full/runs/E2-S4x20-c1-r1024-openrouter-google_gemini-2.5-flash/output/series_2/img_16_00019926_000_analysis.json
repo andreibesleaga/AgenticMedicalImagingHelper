@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_2/img_16_00019926_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No acute cardiopulmonary pathology identified.\",\n    \"Bilateral lung fields are clear with no focal consolidation, pleural effusion, or pneumothorax.\",\n    \"Cardiomediastinal silhouette is within normal limits.\",\n    \"Bony thorax and visualized soft tissues are unremarkable.\",\n    \"A well-defined, calcified lesion is noted in the neck, likely representing a calcified lymph node or thyroid nodule.\",\n    \"Small calcifications are noted in both axillary regions, likely benign vascular calcifications.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Neck Calcification\",\n      \"description\": \"A well-defined, rounded, calcified lesion is present in the lower cervical/upper thoracic region, projected over the trachea, measuring approximately 2.5 cm in greatest dimension. This is likely a calcified lymph node or a calcified thyroid nodule. Clinical correlation and further imaging (e.g., ultrasound) may be warranted if clinically indicated.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Axillary Calcifications\",\n      \"description\": \"Small, scattered calcifications are visible in both axillary regions, superimposed on soft tissues. These are commonly benign, such as vascular calcifications or benign soft tissue calcifications, and are generally of no clinical significance.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray appears largely normal with no signs of acute lung disease, heart enlargement, or fluid around the lungs. There is a calcified spot in the lower neck area, which could be a calcified lymph node or a calcified thyroid nodule. This is usually not a serious finding but might warrant further investigation by your doctor if there are any related symptoms. Additionally, there are some small calcium deposits in both armpit areas, which are typically harmless. Overall, the findings are mostly benign.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/calcified-lymph-node-2\",\n    \"https://radiopaedia.org/articles/thyroid-nodule-1\",\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.2017160100\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No acute cardiopulmonary pathology identified.",
+    "Bilateral lung fields are clear with no focal consolidation, pleural effusion, or pneumothorax.",
+    "Cardiomediastinal silhouette is within normal limits.",
+    "Bony thorax and visualized soft tissues are unremarkable.",
+    "A well-defined, calcified lesion is noted in the neck, likely representing a calcified lymph node or thyroid nodule.",
+    "Small calcifications are noted in both axillary regions, likely benign vascular calcifications."
+  ],
+  "abnormalities": [
+    {
+      "name": "Neck Calcification",
+      "severity": "Mild",
+      "confidence": 85,
+      "description": "A well-defined, rounded, calcified lesion is present in the lower cervical/upper thoracic region, projected over the trachea, measuring approximately 2.5 cm in greatest dimension. This is likely a calcified lymph node or a calcified thyroid nodule. Clinical correlation and further imaging (e.g., ultrasound) may be warranted if clinically indicated."
+    },
+    {
+      "name": "Axillary Calcifications",
+      "severity": "Mild",
+      "confidence": 90,
+      "description": "Small, scattered calcifications are visible in both axillary regions, superimposed on soft tissues. These are commonly benign, such as vascular calcifications or benign soft tissue calcifications, and are generally of no clinical significance."
+    }
+  ],
+  "summary": "The chest X-ray appears largely normal with no signs of acute lung disease, heart enlargement, or fluid around the lungs. There is a calcified spot in the lower neck area, which could be a calcified lymph node or a calcified thyroid nodule. This is usually not a serious finding but might warrant further investigation by your doctor if there are any related symptoms. Additionally, there are some small calcium deposits in both armpit areas, which are typically harmless. Overall, the findings are mostly benign.",
+  "references": [
+    "https://radiopaedia.org/articles/calcified-lymph-node-2",
+    "https://radiopaedia.org/articles/thyroid-nodule-1",
+    "https://pubs.rsna.org/doi/full/10.1148/rg.2017160100"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 399669,
+    "bytesOut": 396984,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:40:46.892Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

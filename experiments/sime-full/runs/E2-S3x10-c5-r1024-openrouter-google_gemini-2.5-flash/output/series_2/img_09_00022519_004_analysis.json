@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S3x10/series_2/img_09_00022519_004.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral reticulonodular interstitial opacities are noted throughout both lung fields, more prominent in the lower lobes.\",\n    \"Bilateral hilar prominence is observed.\",\n    \"The cardiac silhouette appears within normal limits for size and contour.\",\n    \"Costophrenic angles are clear bilaterally.\",\n    \"No definite pleural effusion or pneumothorax is identified.\",\n    \"Bony structures appear intact, without acute fracture or destructive lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Interstitial Lung Disease\",\n      \"description\": \"Diffuse bilateral reticulonodular interstitial opacities are present throughout both lung fields, with a basal predominance, suggesting interstitial lung disease. This pattern can be seen in various conditions including sarcoidosis, occupational lung diseases, connective tissue diseases, or idiopathic pulmonary fibrosis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Bilateral Hilar Prominence\",\n      \"description\": \"Both hila appear prominent, which can be associated with lymphadenopathy, vascular engorgement, or fibrosis, often seen in the context of interstitial lung disease.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 80\n    }\n  ],\n  \"summary\": \"The chest X-ray shows changes in both lungs characterized by a widespread network-like pattern and small dots (reticulonodular opacities), particularly noticeable in the lower parts of the lungs. This suggests an interstitial lung disease, which is a group of conditions that cause scarring or inflammation of the lung tissue. The areas where the main airways and blood vessels enter the lungs (hila) also appear enlarged, which can be related to the lung changes. The heart size and shape are normal, and there is no sign of fluid around the lungs (pleural effusion) or collapsed lung (pneumothorax). These findings warrant further investigation to determine the specific cause of the interstitial lung changes.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.274065201\",\n    \"https://radiopaedia.org/articles/interstitial-lung-disease\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral reticulonodular interstitial opacities are noted throughout both lung fields, more prominent in the lower lobes.",
+    "Bilateral hilar prominence is observed.",
+    "The cardiac silhouette appears within normal limits for size and contour.",
+    "Costophrenic angles are clear bilaterally.",
+    "No definite pleural effusion or pneumothorax is identified.",
+    "Bony structures appear intact, without acute fracture or destructive lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Interstitial Lung Disease",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse bilateral reticulonodular interstitial opacities are present throughout both lung fields, with a basal predominance, suggesting interstitial lung disease. This pattern can be seen in various conditions including sarcoidosis, occupational lung diseases, connective tissue diseases, or idiopathic pulmonary fibrosis."
+    },
+    {
+      "name": "Bilateral Hilar Prominence",
+      "severity": "Mild",
+      "confidence": 80,
+      "description": "Both hila appear prominent, which can be associated with lymphadenopathy, vascular engorgement, or fibrosis, often seen in the context of interstitial lung disease."
+    }
+  ],
+  "summary": "The chest X-ray shows changes in both lungs characterized by a widespread network-like pattern and small dots (reticulonodular opacities), particularly noticeable in the lower parts of the lungs. This suggests an interstitial lung disease, which is a group of conditions that cause scarring or inflammation of the lung tissue. The areas where the main airways and blood vessels enter the lungs (hila) also appear enlarged, which can be related to the lung changes. The heart size and shape are normal, and there is no sign of fluid around the lungs (pleural effusion) or collapsed lung (pneumothorax). These findings warrant further investigation to determine the specific cause of the interstitial lung changes.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.274065201",
+    "https://radiopaedia.org/articles/interstitial-lung-disease"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 406550,
+    "bytesOut": 403759,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:37:26.579Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

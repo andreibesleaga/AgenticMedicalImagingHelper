@@ -1,0 +1,63 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000219/series_3/00000219_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA/AP upright)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"Cardiac silhouette appears enlarged with cardiothoracic ratio increased, prominent left ventricular contour\",\n    \"Mediastinal contour shows prominent aortic knob region with possible tortuosity/dilation\",\n    \"Lungs are grossly clear bilaterally without focal consolidation, effusion, or pneumothorax\",\n    \"Increased density projecting over the lower left cardiac/diaphragmatic region, possibly representing epicardial fat pad, hiatal hernia, or overlying soft tissue structure\",\n    \"Bony thorax and soft tissues appear grossly unremarkable; no acute osseous abnormality identified\",\n    \"Degenerative changes may be present in the thoracic spine, difficult to fully assess on this projection\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlarged cardiac silhouette with widened transverse cardiac diameter relative to thoracic width, suggestive of cardiomegaly; could reflect left ventricular enlargement or pericardial process. Correlation with echocardiography recommended.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 65\n    },\n    {\n      \"name\": \"Aortic prominence/tortuosity\",\n      \"description\": \"The aortic arch/knob appears prominent and possibly tortuous, which may reflect atherosclerotic changes or ectasia, commonly seen with hypertension or advancing age.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 55\n    },\n    {\n      \"name\": \"Retrocardiac/left base density\",\n      \"description\": \"Rounded density noted near the left cardiophrenic angle/diaphragm; differential includes hiatal hernia, epicardial fat pad, or pericardial cyst. Further correlation with lateral view or CT would help characterize.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 40\n    }\n  ],\n  \"summary\": \"This chest X-ray shows the heart appears larger than typical for the size of the chest, a finding called cardiomegaly, which can be related to high blood pressure, heart valve issues, or other cardiac conditions. The main blood vessel from the heart (aorta) looks slightly widened, which is common with aging or high blood pressure. There is also a rounded shadow near the lower left part of the heart that could be a normal fat pad, a sliding hiatal hernia (stomach tissue pushing up through the diaphragm), or another benign structure — this would need further imaging like a CT scan to clarify. The lungs themselves look clear without signs of infection, fluid, or collapse. Overall, these findings suggest the heart size and major vessel should be evaluated further by a doctor, possibly with an echocardiogram, but there is no evidence of acute lung disease on this image.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/cardiomegaly\",\n    \"https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria\",\n    \"https://pubs.rsna.org/journal/radiology\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA/AP upright)",
+  "quality": "Fair",
+  "findings": [
+    "Cardiac silhouette appears enlarged with cardiothoracic ratio increased, prominent left ventricular contour",
+    "Mediastinal contour shows prominent aortic knob region with possible tortuosity/dilation",
+    "Lungs are grossly clear bilaterally without focal consolidation, effusion, or pneumothorax",
+    "Increased density projecting over the lower left cardiac/diaphragmatic region, possibly representing epicardial fat pad, hiatal hernia, or overlying soft tissue structure",
+    "Bony thorax and soft tissues appear grossly unremarkable; no acute osseous abnormality identified",
+    "Degenerative changes may be present in the thoracic spine, difficult to fully assess on this projection"
+  ],
+  "abnormalities": [
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 65,
+      "description": "Enlarged cardiac silhouette with widened transverse cardiac diameter relative to thoracic width, suggestive of cardiomegaly; could reflect left ventricular enlargement or pericardial process. Correlation with echocardiography recommended."
+    },
+    {
+      "name": "Aortic prominence/tortuosity",
+      "severity": "Mild",
+      "confidence": 55,
+      "description": "The aortic arch/knob appears prominent and possibly tortuous, which may reflect atherosclerotic changes or ectasia, commonly seen with hypertension or advancing age."
+    },
+    {
+      "name": "Retrocardiac/left base density",
+      "severity": "Mild",
+      "confidence": 40,
+      "description": "Rounded density noted near the left cardiophrenic angle/diaphragm; differential includes hiatal hernia, epicardial fat pad, or pericardial cyst. Further correlation with lateral view or CT would help characterize."
+    }
+  ],
+  "summary": "This chest X-ray shows the heart appears larger than typical for the size of the chest, a finding called cardiomegaly, which can be related to high blood pressure, heart valve issues, or other cardiac conditions. The main blood vessel from the heart (aorta) looks slightly widened, which is common with aging or high blood pressure. There is also a rounded shadow near the lower left part of the heart that could be a normal fat pad, a sliding hiatal hernia (stomach tissue pushing up through the diaphragm), or another benign structure — this would need further imaging like a CT scan to clarify. The lungs themselves look clear without signs of infection, fluid, or collapse. Overall, these findings suggest the heart size and major vessel should be evaluated further by a doctor, possibly with an echocardiogram, but there is no evidence of acute lung disease on this image.",
+  "references": [
+    "https://radiopaedia.org/articles/cardiomegaly",
+    "https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria",
+    "https://pubs.rsna.org/journal/radiology"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 380748,
+    "bytesOut": 376448,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1369
+  },
+  "processedAt": "2026-09-29T10:25:02.775Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

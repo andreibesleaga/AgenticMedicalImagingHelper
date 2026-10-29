@@ -1,0 +1,57 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_1/img_15_00022764_006.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (Supine AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Large lucent area with an air-fluid level occupying the left hemithorax, consistent with a large hiatal hernia or diaphragmatic rupture.\",\n    \"Significant mediastinal shift to the right.\",\n    \"Left hemidiaphragm appears elevated or disrupted.\",\n    \"Right lung appears compressed but otherwise clear.\",\n    \"Surgical clips are noted in the left upper quadrant, likely related to the stomach or previous abdominal surgery.\",\n    \"A nasogastric tube is present, with its tip likely within the herniated stomach in the left hemithorax.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Giant Hiatal Hernia/Diaphragmatic Hernia\",\n      \"description\": \"A very large portion of abdominal contents (likely stomach) is present in the left thoracic cavity, demonstrating an air-fluid level. This displaces the heart and mediastinum significantly to the right.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Mediastinal Shift\",\n      \"description\": \"The heart and mediastinal structures are pushed significantly to the right due to the mass effect from the herniated abdominal contents in the left chest.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The X-ray shows a very large abnormal pocket in the left side of the chest that contains air and fluid. This is consistent with a condition where an abdominal organ, most likely the stomach, has moved up into the chest cavity through a hole in the diaphragm (the muscle separating the chest and abdomen). This is often called a giant hiatal hernia or a diaphragmatic hernia. This displaced organ is pushing the heart and the structures in the middle of the chest significantly to the right side. There are also surgical clips visible, and a feeding tube is seen going into the area of the displaced organ. This is a serious finding that requires medical attention.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/hiatus-hernia\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK459146/\",\n    \"https://emedicine.medscape.com/article/362947-overview\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (Supine AP)",
+  "quality": "Good",
+  "findings": [
+    "Large lucent area with an air-fluid level occupying the left hemithorax, consistent with a large hiatal hernia or diaphragmatic rupture.",
+    "Significant mediastinal shift to the right.",
+    "Left hemidiaphragm appears elevated or disrupted.",
+    "Right lung appears compressed but otherwise clear.",
+    "Surgical clips are noted in the left upper quadrant, likely related to the stomach or previous abdominal surgery.",
+    "A nasogastric tube is present, with its tip likely within the herniated stomach in the left hemithorax."
+  ],
+  "abnormalities": [
+    {
+      "name": "Giant Hiatal Hernia/Diaphragmatic Hernia",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "A very large portion of abdominal contents (likely stomach) is present in the left thoracic cavity, demonstrating an air-fluid level. This displaces the heart and mediastinum significantly to the right."
+    },
+    {
+      "name": "Mediastinal Shift",
+      "severity": "Severe",
+      "confidence": 90,
+      "description": "The heart and mediastinal structures are pushed significantly to the right due to the mass effect from the herniated abdominal contents in the left chest."
+    }
+  ],
+  "summary": "The X-ray shows a very large abnormal pocket in the left side of the chest that contains air and fluid. This is consistent with a condition where an abdominal organ, most likely the stomach, has moved up into the chest cavity through a hole in the diaphragm (the muscle separating the chest and abdomen). This is often called a giant hiatal hernia or a diaphragmatic hernia. This displaced organ is pushing the heart and the structures in the middle of the chest significantly to the right side. There are also surgical clips visible, and a feeding tube is seen going into the area of the displaced organ. This is a serious finding that requires medical attention.",
+  "references": [
+    "https://radiopaedia.org/articles/hiatus-hernia",
+    "https://www.ncbi.nlm.nih.gov/books/NBK459146/",
+    "https://emedicine.medscape.com/article/362947-overview"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 23803,
+    "bytesOut": 23803,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:01:50.960Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

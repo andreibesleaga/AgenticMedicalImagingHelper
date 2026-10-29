@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4L20/00003980/series_2/00003980_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A Port-A-Cath is visible with the reservoir located in the right upper chest wall and the catheter tip terminating in the region of the superior vena cava/right atrium junction.\",\n    \"The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"The cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"The hilar structures appear unremarkable.\",\n    \"The bony thorax is intact without acute fracture or destructive lesion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Port-A-Cath Placement\",\n      \"description\": \"Right-sided Port-A-Cath with catheter tip in the lower superior vena cava.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 100\n    }\n  ],\n  \"summary\": \"This chest X-ray shows a surgically implanted medical device called a Port-A-Cath on the right side of the chest. It appears to be properly positioned. The lungs are clear, and there are no signs of infection, fluid, or other acute abnormalities. The heart and other structures within the chest appear normal.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/10.1148/rg.2020190117\",\n    \"https://radiopaedia.org/articles/port-a-cath\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A Port-A-Cath is visible with the reservoir located in the right upper chest wall and the catheter tip terminating in the region of the superior vena cava/right atrium junction.",
+    "The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "The cardiomediastinal silhouette is within normal limits for size and contour.",
+    "The hilar structures appear unremarkable.",
+    "The bony thorax is intact without acute fracture or destructive lesion."
+  ],
+  "abnormalities": [
+    {
+      "name": "Port-A-Cath Placement",
+      "severity": "Normal",
+      "confidence": 100,
+      "description": "Right-sided Port-A-Cath with catheter tip in the lower superior vena cava."
+    }
+  ],
+  "summary": "This chest X-ray shows a surgically implanted medical device called a Port-A-Cath on the right side of the chest. It appears to be properly positioned. The lungs are clear, and there are no signs of infection, fluid, or other acute abnormalities. The heart and other structures within the chest appear normal.",
+  "references": [
+    "https://pubs.rsna.org/doi/10.1148/rg.2020190117",
+    "https://radiopaedia.org/articles/port-a-cath"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 402595,
+    "bytesOut": 398703,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:35:05.178Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

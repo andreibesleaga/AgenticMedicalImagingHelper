@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000296/series_1/00000296_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP, supine or semi-erect)\",\n  \"quality\": \"Fair\",\n  \"findings\": [\n    \"AP chest radiograph demonstrating symmetric lung fields bilaterally\",\n    \"Cardiomediastinal silhouette appears within normal limits, though partially obscured by overlying line\",\n    \"A linear radiopaque tubular structure (catheter) is seen entering from the right side of the neck/shoulder, coursing through the right subclavian/brachiocephalic region and terminating with its tip projecting over the region of the right atrium/cavoatrial junction\",\n    \"No obvious focal consolidation, pleural effusion, or pneumothorax identified\",\n    \"Bony thorax including clavicles and ribs appear grossly intact\",\n    \"Soft tissue shadows overlying the shoulders bilaterally, consistent with patient positioning\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Central venous catheter (right-sided)\",\n      \"description\": \"Linear catheter traced from the right neck/subclavian region down to a tip position near the right atrium/cavoatrial junction, likely a central line, PICC, or similar device placed for venous access\",\n      \"severity\": \"Mild\",\n      \"confidence\": 65\n    }\n  ],\n  \"summary\": \"This chest X-ray shows a thin tube (catheter) that has been placed into a large vein, likely for giving medications or fluids directly into the bloodstream. The tube's tip appears to sit near the top of the heart, close to where the large veins enter it. The lungs and heart otherwise look reasonably normal in this view, without obvious signs of fluid, collapsed lung, or infection. The exact position of the catheter tip should be confirmed by the treating physician to ensure it is correctly placed for safe use.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/central-venous-catheter-placement\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK556053/\",\n    \"https://pubs.rsna.org/doi/10.1148/rg.2020190163\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP, supine or semi-erect)",
+  "quality": "Fair",
+  "findings": [
+    "AP chest radiograph demonstrating symmetric lung fields bilaterally",
+    "Cardiomediastinal silhouette appears within normal limits, though partially obscured by overlying line",
+    "A linear radiopaque tubular structure (catheter) is seen entering from the right side of the neck/shoulder, coursing through the right subclavian/brachiocephalic region and terminating with its tip projecting over the region of the right atrium/cavoatrial junction",
+    "No obvious focal consolidation, pleural effusion, or pneumothorax identified",
+    "Bony thorax including clavicles and ribs appear grossly intact",
+    "Soft tissue shadows overlying the shoulders bilaterally, consistent with patient positioning"
+  ],
+  "abnormalities": [
+    {
+      "name": "Central venous catheter (right-sided)",
+      "severity": "Mild",
+      "confidence": 65,
+      "description": "Linear catheter traced from the right neck/subclavian region down to a tip position near the right atrium/cavoatrial junction, likely a central line, PICC, or similar device placed for venous access"
+    }
+  ],
+  "summary": "This chest X-ray shows a thin tube (catheter) that has been placed into a large vein, likely for giving medications or fluids directly into the bloodstream. The tube's tip appears to sit near the top of the heart, close to where the large veins enter it. The lungs and heart otherwise look reasonably normal in this view, without obvious signs of fluid, collapsed lung, or infection. The exact position of the catheter tip should be confirmed by the treating physician to ensure it is correctly placed for safe use.",
+  "references": [
+    "https://radiopaedia.org/articles/central-venous-catheter-placement",
+    "https://www.ncbi.nlm.nih.gov/books/NBK556053/",
+    "https://pubs.rsna.org/doi/10.1148/rg.2020190163"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22549,
+    "bytesOut": 22549,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1568,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1568px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 64
+  },
+  "processedAt": "2026-09-29T10:46:15.616Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

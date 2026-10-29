@@ -1,0 +1,75 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S3x10/series_2/img_03_00029998_005.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral pleural effusions, larger on the right.\",\n    \"Bilateral infiltrates/opacities, particularly in the lower lung zones, suggesting consolidation or atelectasis.\",\n    \"Cardiomegaly is present.\",\n    \"Possible vascular congestion.\",\n    \"Multiple surgical clips are seen in the mediastinum, likely from prior cardiac surgery.\",\n    \"Indwelling lines/tubes are present, including a nasogastric tube and likely central venous catheters.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right Pleural Effusion\",\n      \"description\": \"Large right-sided pleural effusion with blunting of the right costophrenic angle and obscuring of the right hemidiaphragm.\",\n      \"severity\": \"Severe\",\n      \"confidence\": 95\n    },\n    {\n      \"name\": \"Left Pleural Effusion\",\n      \"description\": \"Moderate left-sided pleural effusion with blunting of the left costophrenic angle.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    },\n    {\n      \"name\": \"Bilateral Pulmonary Infiltrates/Opacities\",\n      \"description\": \"Bilateral hazy opacities, predominantly in the lower lung fields, consistent with atelectasis, consolidation, or pulmonary edema.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Cardiomegaly\",\n      \"description\": \"Enlarged cardiac silhouette.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 80\n    },\n    {\n      \"name\": \"Surgical Clips\",\n      \"description\": \"Multiple metallic surgical clips noted in the mediastinum, consistent with post-surgical changes, likely sternotomy.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 99\n    }\n  ],\n  \"summary\": \"The chest X-ray shows significant fluid accumulation around both lungs, which is more pronounced on the right side. There are also cloudy areas in both lungs, especially at the bottom, which could indicate collapsed lung tissue or an infection. The heart appears enlarged. Several surgical clips are visible in the chest, suggesting previous heart surgery. There are also medical tubes in place for treatment. These findings collectively suggest a patient with significant cardiorespiratory issues, likely heart failure, fluid overload, or pneumonia.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://radiopaedia.org/articles/cardiomegaly-1\",\n    \"https://radiopaedia.org/articles/pulmonary-oedema\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral pleural effusions, larger on the right.",
+    "Bilateral infiltrates/opacities, particularly in the lower lung zones, suggesting consolidation or atelectasis.",
+    "Cardiomegaly is present.",
+    "Possible vascular congestion.",
+    "Multiple surgical clips are seen in the mediastinum, likely from prior cardiac surgery.",
+    "Indwelling lines/tubes are present, including a nasogastric tube and likely central venous catheters."
+  ],
+  "abnormalities": [
+    {
+      "name": "Right Pleural Effusion",
+      "severity": "Severe",
+      "confidence": 95,
+      "description": "Large right-sided pleural effusion with blunting of the right costophrenic angle and obscuring of the right hemidiaphragm."
+    },
+    {
+      "name": "Left Pleural Effusion",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Moderate left-sided pleural effusion with blunting of the left costophrenic angle."
+    },
+    {
+      "name": "Bilateral Pulmonary Infiltrates/Opacities",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "Bilateral hazy opacities, predominantly in the lower lung fields, consistent with atelectasis, consolidation, or pulmonary edema."
+    },
+    {
+      "name": "Cardiomegaly",
+      "severity": "Moderate",
+      "confidence": 80,
+      "description": "Enlarged cardiac silhouette."
+    },
+    {
+      "name": "Surgical Clips",
+      "severity": "Mild",
+      "confidence": 99,
+      "description": "Multiple metallic surgical clips noted in the mediastinum, consistent with post-surgical changes, likely sternotomy."
+    }
+  ],
+  "summary": "The chest X-ray shows significant fluid accumulation around both lungs, which is more pronounced on the right side. There are also cloudy areas in both lungs, especially at the bottom, which could indicate collapsed lung tissue or an infection. The heart appears enlarged. Several surgical clips are visible in the chest, suggesting previous heart surgery. There are also medical tubes in place for treatment. These findings collectively suggest a patient with significant cardiorespiratory issues, likely heart failure, fluid overload, or pneumonia.",
+  "references": [
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://radiopaedia.org/articles/cardiomegaly-1",
+    "https://radiopaedia.org/articles/pulmonary-oedema"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 21214,
+    "bytesOut": 21214,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:53:04.068Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

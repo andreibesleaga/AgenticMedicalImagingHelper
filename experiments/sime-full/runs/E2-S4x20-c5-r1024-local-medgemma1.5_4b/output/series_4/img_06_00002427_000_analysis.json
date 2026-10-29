@@ -1,0 +1,47 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_06_00002427_000.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Clear visualization of the lungs, cardiovascular structures, and bony thorax.\",\n    \"The heart size appears within normal limits.\",\n    \"The mediastinal contours are unremarkable.\",\n    \"The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.\",\n    \"There is significant rightward curvature of the thoracic spine (scoliosis).\",\n    \"The ribs are visualized.\",\n    \"The clavicles and shoulders are visualized.\",\n    \"The abdomen is partially visualized.\",\n    \"The image appears to be taken in a PA (posteroanterior) view.\",\n    \"The patient's arms are abducted.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This is a chest X-ray image. It shows the lungs, heart, and bones of the chest. There is a noticeable curve in the spine, suggesting scoliosis. The lungs appear clear, and no signs of infection or fluid are visible. The heart size looks normal.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/chest-x-ray\",\n    \"https://www.lung.ca/wp-content/uploads/2019/09/ChestXray-Basics.pdf\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Clear visualization of the lungs, cardiovascular structures, and bony thorax.",
+    "The heart size appears within normal limits.",
+    "The mediastinal contours are unremarkable.",
+    "The lungs are clear without focal consolidation, pleural effusion, or pneumothorax.",
+    "There is significant rightward curvature of the thoracic spine (scoliosis).",
+    "The ribs are visualized.",
+    "The clavicles and shoulders are visualized.",
+    "The abdomen is partially visualized.",
+    "The image appears to be taken in a PA (posteroanterior) view.",
+    "The patient's arms are abducted."
+  ],
+  "abnormalities": [],
+  "summary": "This is a chest X-ray image. It shows the lungs, heart, and bones of the chest. There is a noticeable curve in the spine, suggesting scoliosis. The lungs appear clear, and no signs of infection or fluid are visible. The heart size looks normal.",
+  "references": [
+    "https://radiopaedia.org/articles/chest-x-ray",
+    "https://www.lung.ca/wp-content/uploads/2019/09/ChestXray-Basics.pdf"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 421544,
+    "bytesOut": 320450,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:31:24.429Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

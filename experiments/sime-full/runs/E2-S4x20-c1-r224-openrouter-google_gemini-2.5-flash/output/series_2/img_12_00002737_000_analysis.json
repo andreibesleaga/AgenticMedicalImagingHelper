@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_2/img_12_00002737_000.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal consolidation, pneumothorax, or large pleural effusion.\",\n    \"Bilateral interstitial opacities, more prominent in the lower lobes, consistent with interstitial lung disease.\",\n    \"Cardiomediastinal contours are within normal limits for size and shape.\",\n    \"No acute bony abnormalities are noted in the visualized skeletal structures.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Interstitial Lung Disease\",\n      \"description\": \"Diffuse bilateral interstitial opacities, most prominent in the lower lung zones, suggesting an underlying interstitial lung process. This pattern can be seen in various conditions such as pulmonary fibrosis, sarcoidosis, or chronic hypersensitivity pneumonitis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The X-ray of your chest shows some changes in both lungs, especially in the lower parts, which look a bit hazy or streaky. This pattern suggests a condition called 'interstitial lung disease,' where the tissue surrounding the air sacs in your lungs becomes thickened or scarred. It's not clear from this image alone what exactly is causing this, as many different conditions can lead to this appearance, including lung scarring, inflammation, or certain types of infections. Your heart and the main blood vessels appear normal in size and shape, and there are no signs of a collapsed lung or significant fluid around the lungs. Further tests would likely be needed to understand the specific cause of these lung changes.\",\n  \"references\": [\n    \"https://www.radiologyinfo.org/en/info/interstitial-lung-disease\",\n    \"https://www.atsjournals.org/doi/full/10.1513/AnnalsATS.201606-444FR\",\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6486711/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal consolidation, pneumothorax, or large pleural effusion.",
+    "Bilateral interstitial opacities, more prominent in the lower lobes, consistent with interstitial lung disease.",
+    "Cardiomediastinal contours are within normal limits for size and shape.",
+    "No acute bony abnormalities are noted in the visualized skeletal structures."
+  ],
+  "abnormalities": [
+    {
+      "name": "Interstitial Lung Disease",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse bilateral interstitial opacities, most prominent in the lower lung zones, suggesting an underlying interstitial lung process. This pattern can be seen in various conditions such as pulmonary fibrosis, sarcoidosis, or chronic hypersensitivity pneumonitis."
+    }
+  ],
+  "summary": "The X-ray of your chest shows some changes in both lungs, especially in the lower parts, which look a bit hazy or streaky. This pattern suggests a condition called 'interstitial lung disease,' where the tissue surrounding the air sacs in your lungs becomes thickened or scarred. It's not clear from this image alone what exactly is causing this, as many different conditions can lead to this appearance, including lung scarring, inflammation, or certain types of infections. Your heart and the main blood vessels appear normal in size and shape, and there are no signs of a collapsed lung or significant fluid around the lungs. Further tests would likely be needed to understand the specific cause of these lung changes.",
+  "references": [
+    "https://www.radiologyinfo.org/en/info/interstitial-lung-disease",
+    "https://www.atsjournals.org/doi/full/10.1513/AnnalsATS.201606-444FR",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6486711/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24529,
+    "bytesOut": 24529,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T09:57:35.115Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

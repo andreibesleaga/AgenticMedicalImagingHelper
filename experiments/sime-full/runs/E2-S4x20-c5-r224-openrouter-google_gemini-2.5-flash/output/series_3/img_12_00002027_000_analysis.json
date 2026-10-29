@@ -1,0 +1,42 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E2/S4x20/series_3/img_12_00002027_000.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"No focal opacities, consolidations, or effusions are identified within the lung fields.\",\n    \"The cardiomediastinal silhouette is within normal limits for size and contour.\",\n    \"The diaphragmatic hemidiaphragms are intact and clear.\",\n    \"The bony thorax, including ribs and clavicles, appears unremarkable.\"\n  ],\n  \"abnormalities\": [],\n  \"summary\": \"This chest X-ray shows clear lungs without any signs of pneumonia, fluid buildup, or other obvious abnormalities. The heart and the structures in the central chest appear to be of normal size and shape. The bones visible in the chest also look normal.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4035655/\",\n    \"https://radiopaedia.org/articles/normal-chest-x-ray?lang=gb\",\n    \"https://www.bmj.com/content/368/bmj.m203\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "No focal opacities, consolidations, or effusions are identified within the lung fields.",
+    "The cardiomediastinal silhouette is within normal limits for size and contour.",
+    "The diaphragmatic hemidiaphragms are intact and clear.",
+    "The bony thorax, including ribs and clavicles, appears unremarkable."
+  ],
+  "abnormalities": [],
+  "summary": "This chest X-ray shows clear lungs without any signs of pneumonia, fluid buildup, or other obvious abnormalities. The heart and the structures in the central chest appear to be of normal size and shape. The bones visible in the chest also look normal.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4035655/",
+    "https://radiopaedia.org/articles/normal-chest-x-ray?lang=gb",
+    "https://www.bmj.com/content/368/bmj.m203"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 24251,
+    "bytesOut": 24251,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 1536px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-10-08T10:02:16.285Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

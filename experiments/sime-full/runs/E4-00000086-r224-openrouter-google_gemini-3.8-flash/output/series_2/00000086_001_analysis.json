@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000086/series_2/00000086_001.png",
+  "seriesId": "series_2",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Prominent tubular and cystic radiolucencies with thickened bronchial walls ('tram-track' and ring shadows) seen in the right middle and lower lung zones, consistent with bronchiectasis.\",\n    \"The left lung field appears clear without focal consolidation, pneumothorax, or significant vascular congestion.\",\n    \"The cardiothoracic ratio is normal, and mediastinal contours are unremarkable.\",\n    \"Both costophrenic and cardiophrenic angles are sharp and preserved.\",\n    \"Visualized osseous structures and soft tissues of the thoracic cage are intact.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bronchiectasis\",\n      \"description\": \"Thick-walled dilated bronchi with cystic and ring-like lucencies in the right lower and mid-lung zones, indicative of localized bronchiectasis.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray demonstrates dilated, thickened airways (bronchiectasis) mainly located in the lower portion of the right lung. Bronchiectasis is a condition where the airways become abnormally widened and prone to mucus buildup and recurrent infections. The rest of the lungs and the heart appear normal. A high-resolution CT (HRCT) scan of the chest is often recommended to better characterize the extent of these airway changes.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/bronchiectasis\",\n    \"https://www.ncbi.nlm.nih.gov/books/NBK430810/\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Prominent tubular and cystic radiolucencies with thickened bronchial walls ('tram-track' and ring shadows) seen in the right middle and lower lung zones, consistent with bronchiectasis.",
+    "The left lung field appears clear without focal consolidation, pneumothorax, or significant vascular congestion.",
+    "The cardiothoracic ratio is normal, and mediastinal contours are unremarkable.",
+    "Both costophrenic and cardiophrenic angles are sharp and preserved.",
+    "Visualized osseous structures and soft tissues of the thoracic cage are intact."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bronchiectasis",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Thick-walled dilated bronchi with cystic and ring-like lucencies in the right lower and mid-lung zones, indicative of localized bronchiectasis."
+    }
+  ],
+  "summary": "The chest X-ray demonstrates dilated, thickened airways (bronchiectasis) mainly located in the lower portion of the right lung. Bronchiectasis is a condition where the airways become abnormally widened and prone to mucus buildup and recurrent infections. The rest of the lungs and the heart appear normal. A high-resolution CT (HRCT) scan of the chest is often recommended to better characterize the extent of these airway changes.",
+  "references": [
+    "https://radiopaedia.org/articles/bronchiectasis",
+    "https://www.ncbi.nlm.nih.gov/books/NBK430810/"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 39203,
+    "bytesOut": 33722,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "alpha channel stripped",
+    "estimatedImageTokens": 258
+  },
+  "processedAt": "2026-09-29T10:31:04.117Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

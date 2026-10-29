@@ -1,0 +1,36 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r224/E4/00000296/series_3/00000296_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\"modality\":-1, \"anatomyRegion\":-1, \"quality\":-1, \"findings\":-1, \"abnormalities\":-1, \"summary\":-1, \"references\":-1}",
+  "findings": [],
+  "validation": {
+    "ok": false,
+    "issues": [
+      "modality: -1 is not a valid value here (model sentinel) — Invalid input: expected string, received number",
+      "anatomyRegion: -1 is not a valid value here (model sentinel) — Invalid input: expected string, received number",
+      "quality: -1 is not a valid value here (model sentinel) — Invalid option: expected one of \"Poor\"|\"Fair\"|\"Good\"|\"Excellent\"",
+      "findings: -1 is not a valid value here (model sentinel) — Invalid input: expected array, received number",
+      "abnormalities: -1 is not a valid value here (model sentinel) — Invalid input: expected array, received number",
+      "summary: -1 is not a valid value here (model sentinel) — Invalid input: expected string, received number",
+      "references: -1 is not a valid value here (model sentinel) — Invalid input: expected array, received number"
+    ]
+  },
+  "preprocessing": {
+    "nativeWidth": 224,
+    "nativeHeight": 224,
+    "sentWidth": 224,
+    "sentHeight": 224,
+    "bytesIn": 22944,
+    "bytesOut": 22944,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "passthrough",
+    "reason": "long edge 224px ≤ target 896px, 8-bit png without alpha — original bytes sent unmodified",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-09-29T10:20:05.971Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

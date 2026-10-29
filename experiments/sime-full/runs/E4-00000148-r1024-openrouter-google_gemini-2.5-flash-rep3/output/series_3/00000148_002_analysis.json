@@ -1,0 +1,51 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_3/00000148_002.png",
+  "seriesId": "series_3",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"A radiopaque device, likely an implanted cardiac device lead, is noted in the right upper lung field, projecting over the second anterior intercostal space.\",\n    \"The device appears to be an Amplatzer Septal Occluder, positioned within the cardiac silhouette (though precise cardiac anatomy is limited on AP view).\",\n    \"Both lung fields are clear with no evidence of focal consolidation, pneumothorax, or significant pleural effusion.\",\n    \"The costophrenic angles are clear.\",\n    \"The cardiac silhouette is within normal limits for size and contour.\",\n    \"Mediastinal contours are unremarkable.\",\n    \"Bony thorax appears intact without acute fracture or destructive lesions.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Implanted Cardiac Device\",\n      \"description\": \"A radiopaque device, consistent with an Amplatzer Septal Occluder, is visible overlying the right upper lung field. Its position suggests deployment within the heart for a septal defect closure. Its exact position relative to the cardiac structures cannot be fully assessed on this single AP view, but it appears stable.\",\n      \"severity\": \"Normal\",\n      \"confidence\": 95\n    }\n  ],\n  \"summary\": \"This X-ray of the chest shows a normal appearance of the lungs, heart, and bones. There is an implanted medical device visible in the right side of the chest, which looks like a type of plug used to close a hole inside the heart (like a septal defect). This device is expected to be there and is not considered an abnormality in this context, assuming the patient has a history of having such a device placed. There are no signs of pneumonia, collapsed lung, or fluid around the lungs.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.332125134\",\n    \"https://radiopaedia.org/articles/chest-x-ray-interpretive-strategy-1?lang=us\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "A radiopaque device, likely an implanted cardiac device lead, is noted in the right upper lung field, projecting over the second anterior intercostal space.",
+    "The device appears to be an Amplatzer Septal Occluder, positioned within the cardiac silhouette (though precise cardiac anatomy is limited on AP view).",
+    "Both lung fields are clear with no evidence of focal consolidation, pneumothorax, or significant pleural effusion.",
+    "The costophrenic angles are clear.",
+    "The cardiac silhouette is within normal limits for size and contour.",
+    "Mediastinal contours are unremarkable.",
+    "Bony thorax appears intact without acute fracture or destructive lesions."
+  ],
+  "abnormalities": [
+    {
+      "name": "Implanted Cardiac Device",
+      "severity": "Normal",
+      "confidence": 95,
+      "description": "A radiopaque device, consistent with an Amplatzer Septal Occluder, is visible overlying the right upper lung field. Its position suggests deployment within the heart for a septal defect closure. Its exact position relative to the cardiac structures cannot be fully assessed on this single AP view, but it appears stable."
+    }
+  ],
+  "summary": "This X-ray of the chest shows a normal appearance of the lungs, heart, and bones. There is an implanted medical device visible in the right side of the chest, which looks like a type of plug used to close a hole inside the heart (like a septal defect). This device is expected to be there and is not considered an abnormality in this context, assuming the patient has a history of having such a device placed. There are no signs of pneumonia, collapsed lung, or fluid around the lungs.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.332125134",
+    "https://radiopaedia.org/articles/chest-x-ray-interpretive-strategy-1?lang=us"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 453156,
+    "bytesOut": 452383,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:52:48.201Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

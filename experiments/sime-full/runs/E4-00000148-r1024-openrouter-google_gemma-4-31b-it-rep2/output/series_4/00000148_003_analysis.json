@@ -1,0 +1,50 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000148/series_4/00000148_003.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Presence of an implanted venous access port (port-a-cath) in the right upper chest with the catheter tip projecting over the superior vena cava\",\n    \"Increased opacity/density in the right upper lung zone\",\n    \"Lungs otherwise clear with no evidence of pneumothorax or pleural effusion\",\n    \"Heart size is within normal limits\",\n    \"Bony structures are intact\",\n    \"Diaphragms are well-defined\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Right upper lobe opacity\",\n      \"description\": \"An area of increased density is visible in the right upper lung zone, which may represent consolidation, a mass, or focal atelectasis\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    }\n  ],\n  \"summary\": \"The X-ray shows a medical device (a port-a-cath) in the right upper chest, used for long-term medication or blood draws. There is also a cloudy area (opacity) in the upper part of the right lung. This could be caused by several things, such as an infection (pneumonia), a collapsed section of the lung, or a growth. Further clinical correlation or a CT scan may be needed to determine the exact cause.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/port-a-cath\",\n    \"https://www.acr.org/Clinical-Guidelines/Chest-X-Ray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Presence of an implanted venous access port (port-a-cath) in the right upper chest with the catheter tip projecting over the superior vena cava",
+    "Increased opacity/density in the right upper lung zone",
+    "Lungs otherwise clear with no evidence of pneumothorax or pleural effusion",
+    "Heart size is within normal limits",
+    "Bony structures are intact",
+    "Diaphragms are well-defined"
+  ],
+  "abnormalities": [
+    {
+      "name": "Right upper lobe opacity",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": "An area of increased density is visible in the right upper lung zone, which may represent consolidation, a mass, or focal atelectasis"
+    }
+  ],
+  "summary": "The X-ray shows a medical device (a port-a-cath) in the right upper chest, used for long-term medication or blood draws. There is also a cloudy area (opacity) in the upper part of the right lung. This could be caused by several things, such as an infection (pneumonia), a collapsed section of the lung, or a growth. Further clinical correlation or a CT scan may be needed to determine the exact cause.",
+  "references": [
+    "https://radiopaedia.org/articles/port-a-cath",
+    "https://www.acr.org/Clinical-Guidelines/Chest-X-Ray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 457930,
+    "bytesOut": 347701,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T09:15:47.110Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

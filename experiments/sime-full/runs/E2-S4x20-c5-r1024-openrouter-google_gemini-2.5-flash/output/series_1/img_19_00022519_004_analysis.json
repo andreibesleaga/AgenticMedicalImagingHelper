@@ -1,0 +1,49 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_1/img_19_00022519_004.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (AP)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Diffuse bilateral reticulonodular interstitial opacities are present throughout both lung fields, more prominent in the lower lobes.\",\n    \"The cardiomediastinal silhouette appears normal in size and contour.\",\n    \"The diaphragmatic hemidiaphragms are intact and clear costophrenic angles are noted.\",\n    \"No focal consolidation, pneumothorax, or large pleural effusion is identified.\",\n    \"Bony structures appear unremarkable.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Bilateral Interstitial Opacities\",\n      \"description\": \"Diffuse reticulonodular interstitial opacities are seen bilaterally, involving all lung zones but more pronounced in the lower lobes. This pattern suggests interstitial lung disease.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 90\n    }\n  ],\n  \"summary\": \"The chest X-ray shows widespread changes in both lungs, appearing as a net-like or speckled pattern. This pattern, called 'reticulonodular interstitial opacities,' suggests that there might be inflammation or scarring in the tissues of the lungs. The heart and major blood vessels appear normal in size, and there are no signs of collapsed lung, significant fluid around the lungs, or large areas of infection. These findings are consistent with an interstitial lung disease, which means a condition affecting the lung tissue itself rather than the airways.\",\n  \"references\": [\n    \"https://pubs.rsna.org/doi/full/10.1148/rg.274065099\",\n    \"https://www.thoracic.org/patients/patient-resources/resources/what-is-ild.pdf\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (AP)",
+  "quality": "Good",
+  "findings": [
+    "Diffuse bilateral reticulonodular interstitial opacities are present throughout both lung fields, more prominent in the lower lobes.",
+    "The cardiomediastinal silhouette appears normal in size and contour.",
+    "The diaphragmatic hemidiaphragms are intact and clear costophrenic angles are noted.",
+    "No focal consolidation, pneumothorax, or large pleural effusion is identified.",
+    "Bony structures appear unremarkable."
+  ],
+  "abnormalities": [
+    {
+      "name": "Bilateral Interstitial Opacities",
+      "severity": "Moderate",
+      "confidence": 90,
+      "description": "Diffuse reticulonodular interstitial opacities are seen bilaterally, involving all lung zones but more pronounced in the lower lobes. This pattern suggests interstitial lung disease."
+    }
+  ],
+  "summary": "The chest X-ray shows widespread changes in both lungs, appearing as a net-like or speckled pattern. This pattern, called 'reticulonodular interstitial opacities,' suggests that there might be inflammation or scarring in the tissues of the lungs. The heart and major blood vessels appear normal in size, and there are no signs of collapsed lung, significant fluid around the lungs, or large areas of infection. These findings are consistent with an interstitial lung disease, which means a condition affecting the lung tissue itself rather than the airways.",
+  "references": [
+    "https://pubs.rsna.org/doi/full/10.1148/rg.274065099",
+    "https://www.thoracic.org/patients/patient-resources/resources/what-is-ild.pdf"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 1024,
+    "sentHeight": 1024,
+    "bytesIn": 406550,
+    "bytesOut": 403759,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 1536,
+    "action": "reencoded",
+    "reason": "embedded metadata stripped (png:tIME)",
+    "estimatedImageTokens": 1032
+  },
+  "processedAt": "2026-10-08T09:45:52.955Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

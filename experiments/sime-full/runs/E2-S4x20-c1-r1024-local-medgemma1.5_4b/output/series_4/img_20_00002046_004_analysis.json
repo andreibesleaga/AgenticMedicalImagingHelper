@@ -1,0 +1,30 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E2/S4x20/series_4/img_20_00002046_004.png",
+  "seriesId": "series_4",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Right lung opacities extending to the apices\",\n    \"Left lung is clear\",\n    \"Heart size is normal\",\n    \"Mediastinal contours are normal\",\n    \"No pleural effusion\",\n    \"Right-sided central venous catheter\",\n    \"Prominent pulmonary artery\",\n  \"1.5 cm left thyroid nodule\",\n  \"Normal osseous structures\",\n  \"10 cm anterior-posterior chest width\",\n  \"11 cm transverse chest dimension\",\n  \"2.5 cm AP and 2.0 cm transverse soft tissue density of the right cervical region\",\n  \"4.0 cm AP and 6.0 cm transverse soft tissue density of the left cervical region\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pulmonary edema\",\n      \"description\": \"Right lung opacities extending to the apices, concerning for pulmonary edema\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 75\n    },\n    {\n      \"name\": \"Mediastinal mass\",\n      \"description\": \"Soft tissue density of the right cervical region, possibly a mediastinal mass\",\n      \"severity\": \"Mild\",\n      \"confidence\": 60\n    },\n    {\n      \"name\": \"Thyroid nodule\",\n      \"description\": \"Left thyroid nodule\",\n      \"severity\": \"Slightly abnormal\",\n      \"confidence\": 50\n    },\n    {\n      \"name\": \"Superior mediastinal mass\",\n      \"description\": \"Soft tissue density of the left cervical region, possibly a superior mediastinal mass\",\n      \"severity\": \"Mild\",\n      \"confidence\": 60\n    },\n    {\n      \"name\": \"Cervical mass\",\n      \"description\": \"Soft tissue density of the right cervical region and left cervical region, possibly cervical masses\",\n      \"severity\": \"Mild\",\n      \"confidence\": 60\n    }\n  ],\n  \"summary\": \"This chest X-ray shows significant opacities in the right lung, especially in the upper parts. The left lung appears clear. There's a central catheter on the right. There are also some soft tissue densities in the neck on both sides, which could be masses. These findings could indicate fluid in the lungs (pulmonary edema), possibly due to heart failure or other conditions causing fluid overload. The neck densities might be lymph nodes or other structures. The left thyroid nodule is also noted. A definitive diagnosis requires further evaluation.\",\n  \"references\": [\n    \"https://radiopaedia.org/articles/pulmonary-edema\",\n    \"https://radiopaedia.org/articles/superior-mediastinal-mass\",\n    \"https://radiopaedia.org/articles/thyroid-nodule\"\n  ]\n}",
+  "findings": [],
+  "validation": {
+    "ok": false,
+    "issues": [
+      "abnormalities.2.severity: Invalid option: expected one of \"Normal\"|\"Mild\"|\"Moderate\"|\"Severe\""
+    ]
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 896,
+    "sentHeight": 896,
+    "bytesIn": 386234,
+    "bytesOut": 300357,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 896,
+    "action": "resized",
+    "reason": "long edge 1024px > target 896px",
+    "estimatedImageTokens": 256
+  },
+  "processedAt": "2026-10-08T12:16:26.847Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}

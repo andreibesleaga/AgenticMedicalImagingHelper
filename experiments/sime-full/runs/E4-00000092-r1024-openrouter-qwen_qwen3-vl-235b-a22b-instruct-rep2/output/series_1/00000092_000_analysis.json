@@ -1,0 +1,56 @@
+{
+  "imagePath": "/home/andrei/work/AI/nih-cxr14-full/input/r1024/E4/00000092/series_1/00000092_000.png",
+  "seriesId": "series_1",
+  "status": "success",
+  "rawResponse": "{\n  \"modality\": \"X-ray\",\n  \"anatomyRegion\": \"Chest (PA)\",\n  \"quality\": \"Good\",\n  \"findings\": [\n    \"Bilateral lung fields show increased interstitial markings and areas of consolidation, particularly in the lower lobes.\",\n    \"Cardiac silhouette appears within normal limits for size.\",\n    \"Diaphragm is well-defined; no free air under the diaphragm observed.\",\n    \"No obvious rib fractures or skeletal abnormalities.\",\n    \"Mild blunting of the left costophrenic angle suggestive of small pleural effusion.\"\n  ],\n  \"abnormalities\": [\n    {\n      \"name\": \"Pulmonary Consolidation\",\n      \"description\": \" patchy opacities predominantly in the lower lung zones, consistent with alveolar filling process such as pneumonia or pulmonary edema. No cavitation or mass effect noted.\",\n      \"severity\": \"Moderate\",\n      \"confidence\": 85\n    },\n    {\n      \"name\": \"Small Left Pleural Effusion\",\n      \"description\": \"Blunting of the left costophrenic angle without significant meniscus sign; suggests minimal fluid accumulation in the pleural space.\",\n      \"severity\": \"Mild\",\n      \"confidence\": 70\n    }\n  ],\n  \"summary\": \"The chest X-ray shows signs of lung infection or inflammation, mainly in the lower parts of the lungs, which may be due to pneumonia. There’s also a small amount of fluid around the left lung. These findings suggest the patient may have an active respiratory condition requiring further clinical correlation and possibly treatment. 'Consolidation' means parts of the lung are filled with fluid or cells instead of air, making them appear white on X-ray. 'Pleural effusion' refers to fluid buildup between the lung and chest wall.\",\n  \"references\": [\n    \"https://www.ncbi.nlm.nih.gov/books/NBK537129/\",\n    \"https://radiopaedia.org/articles/pleural-effusion\",\n    \"https://www.radiologyinfo.org/en/info/chestxray\"\n  ]\n}",
+  "modality": "X-ray",
+  "anatomyRegion": "Chest (PA)",
+  "quality": "Good",
+  "findings": [
+    "Bilateral lung fields show increased interstitial markings and areas of consolidation, particularly in the lower lobes.",
+    "Cardiac silhouette appears within normal limits for size.",
+    "Diaphragm is well-defined; no free air under the diaphragm observed.",
+    "No obvious rib fractures or skeletal abnormalities.",
+    "Mild blunting of the left costophrenic angle suggestive of small pleural effusion."
+  ],
+  "abnormalities": [
+    {
+      "name": "Pulmonary Consolidation",
+      "severity": "Moderate",
+      "confidence": 85,
+      "description": " patchy opacities predominantly in the lower lung zones, consistent with alveolar filling process such as pneumonia or pulmonary edema. No cavitation or mass effect noted."
+    },
+    {
+      "name": "Small Left Pleural Effusion",
+      "severity": "Mild",
+      "confidence": 70,
+      "description": "Blunting of the left costophrenic angle without significant meniscus sign; suggests minimal fluid accumulation in the pleural space."
+    }
+  ],
+  "summary": "The chest X-ray shows signs of lung infection or inflammation, mainly in the lower parts of the lungs, which may be due to pneumonia. There’s also a small amount of fluid around the left lung. These findings suggest the patient may have an active respiratory condition requiring further clinical correlation and possibly treatment. 'Consolidation' means parts of the lung are filled with fluid or cells instead of air, making them appear white on X-ray. 'Pleural effusion' refers to fluid buildup between the lung and chest wall.",
+  "references": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK537129/",
+    "https://radiopaedia.org/articles/pleural-effusion",
+    "https://www.radiologyinfo.org/en/info/chestxray"
+  ],
+  "validation": {
+    "ok": true
+  },
+  "preprocessing": {
+    "nativeWidth": 1024,
+    "nativeHeight": 1024,
+    "sentWidth": 980,
+    "sentHeight": 980,
+    "bytesIn": 389503,
+    "bytesOut": 355882,
+    "format": "png",
+    "mimeType": "image/png",
+    "policy": "auto",
+    "targetDim": 980,
+    "action": "resized",
+    "reason": "long edge 1024px > target 980px",
+    "estimatedImageTokens": 1225
+  },
+  "processedAt": "2026-10-08T09:26:59.579Z",
+  "disclaimer": "⚠️ DISCLAIMER: This analysis is AI-generated for educational and informational purposes only. It is NOT a substitute for professional medical diagnosis or treatment. All findings must be reviewed by a qualified healthcare professional before any clinical decision is made."
+}
