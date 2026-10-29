@@ -16,7 +16,9 @@ renamed.
   field name (`local_llm_api_key`).
 - Runtime: Node 20 reached end of life on 2026-04-30. `engines` is now
   `>=22.0.0`, CI runs on Node 22 and 24, and the Docker image is built on
-  `node:22-alpine`.
+  `node:22-alpine`. This is the one entry here that is not backward-compatible:
+  Node 20 is no longer supported (npm warns on install there, and refuses only
+  when `engine-strict` is set).
 - Evidence: the sime-full per-run outputs and sealed manifests
   (`experiments/sime-full/runs/*/output/`) are committed, as `RESULTS.md`
   already said; Prettier ignores the generated sime-full files.
