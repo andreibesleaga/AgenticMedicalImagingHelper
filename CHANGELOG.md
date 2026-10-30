@@ -12,7 +12,7 @@ All changes in this section are **backward-compatible** (`additive` or
 renamed.
 
 - Docs: `CODE_OF_CONDUCT.md` names where to report conduct issues: a GitHub private report or the contact page of the maintainer's website.
-- Docs: `docs/screenshot.png` redacted — every MRI thumbnail and all text (file names, clinical notes, report text, terminal paths, user and host name) is blurred beyond recognition; only the window layout remains.
+- Docs: `docs/screenshot.png` redacted only where it could identify someone: the patient-context line, the clinical notes and the user and host name in the terminal prompts carry made-up text, and the text burned into the MRI thumbnails is blurred. The scans, reports and CLI output stay visible.
 - Docs: documentation audit of 2026-10-29 — provider-neutral data-handling text, exit-code lists completed, current architecture diagrams, AGENTS.md, CI and release notes in CONTRIBUTING, scope notes on the pre-implementation PRD and business case.
 - Fixed: `package.json`, `CITATION.cff` and the security-baseline exclude flag
   say 1.1.1. The v1.1.1 release was cut with them at 1.1.0, so its `--version`,
