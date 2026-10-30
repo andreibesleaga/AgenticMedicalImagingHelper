@@ -29,7 +29,7 @@ output rather than diagnoses (see [`COMPLIANCE.md`](COMPLIANCE.md) §0).
 
 ## The paper
 
-Andrei N. Beșleagă, "Agentic Multimodal Architectures for Medical Imaging: Orchestration,
+Andrei N. Besleaga, "Agentic Multimodal Architectures for Medical Imaging: Orchestration,
 Deterministic Fairness Probing, and Governance", accepted for presentation at the IEEE
 International Conference on Smart Innovations for Medicine and Engineering (SIME 2026),
 Sousse, Tunisia, 2–4 November 2026; to appear in IEEE Xplore.
