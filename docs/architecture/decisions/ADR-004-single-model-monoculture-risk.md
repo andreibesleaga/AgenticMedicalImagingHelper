@@ -141,9 +141,9 @@ vendor-side, single-family exposure this ADR named as the risk of Option A.
 this is the "First step on fire" action for T1/T7 in substance, even though
 the literal trigger condition that fired was neither. Gemini
 (`gemini-2.5-flash`) remains the default; this ADR is not superseded, only
-its evidentiary basis is updated. _(Superseded 2026-09-29: the direct-Google default is now `gemini-3.8-flash`; see the README.)_ See [ADR-006](ADR-006-openrouter-second-provider.md)
+its evidentiary basis is updated. See [ADR-006](ADR-006-openrouter-second-provider.md)
 for the mechanism and honest limits (no Google Search grounding on the
-OpenRouter path, model-dependent fairness-probe outcomes).
+OpenRouter path, model-dependent fairness-probe outcomes). _(Superseded 2026-09-29: the direct-Google default is now `gemini-3.8-flash`; see the README.)_
 
 ---
 
