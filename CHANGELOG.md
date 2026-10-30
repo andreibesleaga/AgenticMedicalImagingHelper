@@ -11,6 +11,7 @@ All changes in this section are **backward-compatible** (`additive` or
 `internal-only`): no public CLI flag, exit code, or output field was removed or
 renamed.
 
+- Docs: `docs/screenshot.png` redacted — every MRI thumbnail and all text (file names, clinical notes, report text, terminal paths, user and host name) is blurred beyond recognition; only the window layout remains.
 - Docs: documentation audit of 2026-10-29 — provider-neutral data-handling text, exit-code lists completed, current architecture diagrams, AGENTS.md, CI and release notes in CONTRIBUTING, scope notes on the pre-implementation PRD and business case.
 - Fixed: `package.json`, `CITATION.cff` and the security-baseline exclude flag
   say 1.1.1. The v1.1.1 release was cut with them at 1.1.0, so its `--version`,
