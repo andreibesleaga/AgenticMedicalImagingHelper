@@ -12,6 +12,9 @@ All changes in this section are **backward-compatible** (`additive` or
 renamed.
 
 - Docs: documentation audit of 2026-10-29 — provider-neutral data-handling text, exit-code lists completed, current architecture diagrams, AGENTS.md, CI and release notes in CONTRIBUTING, scope notes on the pre-implementation PRD and business case.
+- Fixed: `package.json`, `CITATION.cff` and the security-baseline exclude flag
+  say 1.1.1. The v1.1.1 release was cut with them at 1.1.0, so its `--version`,
+  report footers and run manifests say 1.1.0.
 - Security: the logger now also redacts `LOCAL_LLM_API_KEY`, by value and by
   field name (`local_llm_api_key`).
 - Runtime: Node 20 reached end of life on 2026-04-30. `engines` is now
