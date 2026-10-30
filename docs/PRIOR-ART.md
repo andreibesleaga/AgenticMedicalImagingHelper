@@ -27,7 +27,7 @@ opinion and does not assert that no earlier work exists.
 | 2026 | First version of the program presented as chapter companion code in the Wiley book *Agentic AI Architectures* by Andrei Besleaga (forthcoming) | book and its companion material |
 | 2026-09-09 | Preprint of the SIME 2026 paper | DOI [10.5281/zenodo.20762929](https://doi.org/10.5281/zenodo.20762929) |
 | 2026-09-10 | Release described in the paper | tag `v1.1.0` |
-| 2026-09 | IEEE SIME 2026, paper #154 (accepted; presented 2–4 November 2026) | conference proceedings |
+| 2026-09 | IEEE SIME 2026, paper #154 (accepted; to be presented 2–4 November 2026) | conference proceedings |
 | 2026-09-29 | Full-evaluation programme, local-inference design, guardrails described below | `docs/ROADMAP.md` §10–11, `docs/architecture/LOCAL-INFERENCE.md`, `docs/architecture/TARGET-ARCHITECTURE.md`, this file, and the commits that add them |
 
 Every later change is dated by its commit and tag in the public history.

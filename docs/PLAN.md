@@ -31,6 +31,7 @@ C4Context
 > as-is rather than regenerated — read `System_Ext(gemini, ...)` as "the
 > configured default provider" and note that a second `System_Ext` for
 > OpenRouter is not yet drawn.
+> _(Superseded 2026-09-29: the direct-Google default is now `gemini-3.8-flash`; see the README.)_
 
 ---
 

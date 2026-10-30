@@ -17,7 +17,7 @@ That assumption needs to be made explicit, defensible today, and revisable on si
 > implementation default is now `gemini-2.5-flash`. Read every
 > `gemini-2.5-pro` mention below as "the configured Gemini model" at the time
 > this ADR was written. See the "Trigger fired" note near the end of this
-> document for what actually happened next.
+> document for what actually happened next. _(Superseded 2026-09-29: the direct-Google default is now `gemini-3.8-flash`; see the README.)_
 
 ---
 
@@ -143,7 +143,7 @@ the literal trigger condition that fired was neither. Gemini
 (`gemini-2.5-flash`) remains the default; this ADR is not superseded, only
 its evidentiary basis is updated. See [ADR-006](ADR-006-openrouter-second-provider.md)
 for the mechanism and honest limits (no Google Search grounding on the
-OpenRouter path, model-dependent fairness-probe outcomes).
+OpenRouter path, model-dependent fairness-probe outcomes). _(Superseded 2026-09-29: the direct-Google default is now `gemini-3.8-flash`; see the README.)_
 
 ---
 
