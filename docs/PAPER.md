@@ -34,7 +34,7 @@ Deterministic Fairness Probing, and Governance", accepted for presentation at th
 International Conference on Smart Innovations for Medicine and Engineering (SIME 2026),
 Sousse, Tunisia, 2–4 November 2026; to appear in IEEE Xplore.
 
-- Preprint DOI: [10.5281/zenodo.20762929](https://doi.org/10.5281/zenodo.20762929)
+- Preprint DOI: [10.5281/zenodo.20762929](https://doi.org/10.5281/zenodo.20762929) (access restricted until publication)
 - IEEE Xplore DOI: to be added after publication
 
 **Software version.** The paper describes **v1.1.0** of this repository. Machine-readable
