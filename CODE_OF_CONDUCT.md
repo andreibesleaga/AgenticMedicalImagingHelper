@@ -24,8 +24,8 @@ expected standards and unacceptable behaviors that apply here.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the project maintainer privately through GitHub, with a [private report](https://github.com/andreibesleaga/AgenticMedicalImagingHelper/security/advisories/new)
-(the channel SECURITY.md uses), or through the contact page of the maintainer's website,
-<https://andreibesleaga.com/contact/>. Do not report it in a public issue.
+(the channel SECURITY.md uses), or through the author's GitHub profile <https://github.com/andreibesleaga>
+or website <https://andreibesleaga.com>. Do not report it in a public issue.
 All complaints will be reviewed and investigated promptly and fairly. Maintainers are obligated
 to respect the privacy and security of the reporter of any incident.
 
