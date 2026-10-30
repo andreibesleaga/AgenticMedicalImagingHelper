@@ -237,7 +237,7 @@ Exit Codes:
 > implementation default is now `gemini-2.5-flash` (see §2.2's own
 > `GEMINI_MODEL` default above, and [ADR-006](architecture/decisions/ADR-006-openrouter-second-provider.md)
 > for the optional OpenRouter second-provider adapter). Read the Accuracy row
-> above as historical rationale, not the current default.
+> above as historical rationale, not the current default. _(Superseded 2026-09-29: the direct-Google default is now `gemini-3.8-flash`; see the README.)_
 
 ---
 
