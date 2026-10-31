@@ -7,9 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-10-31
+
 All changes in this section are **backward-compatible** (`additive` or
-`internal-only`): no public CLI flag, exit code, or output field was removed or
-renamed.
+`internal-only`) except the Node 22 floor noted below: no public CLI flag, exit
+code, or output field was removed or renamed. The minor version marks the end
+of Node 20 support.
 
 - Docs: `CODE_OF_CONDUCT.md` names where to report conduct issues: a GitHub private report, the author's GitHub profile or the author's website.
 - Docs: `docs/screenshot.png` redacted only where it could identify someone: the patient-context line, the clinical notes and the user and host name in the terminal prompts carry made-up text, and the text burned into the MRI thumbnails is blurred. The scans, reports and CLI output stay visible.
@@ -301,6 +304,7 @@ renamed. Recorded in
   fan-out/fan-in StateGraph. Per-image JSON, per-series Markdown, and a combined
   evolution report — each carrying a mandatory medical disclaimer.
 
-[Unreleased]: https://github.com/andreibesleaga/AgenticMedicalImagingHelper/compare/v1.1.1...HEAD
+[Unreleased]: https://github.com/andreibesleaga/AgenticMedicalImagingHelper/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/andreibesleaga/AgenticMedicalImagingHelper/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/andreibesleaga/AgenticMedicalImagingHelper/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/andreibesleaga/AgenticMedicalImagingHelper/releases/tag/v1.1.0
