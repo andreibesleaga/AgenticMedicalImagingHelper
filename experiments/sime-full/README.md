@@ -34,7 +34,7 @@ the cohort is eight patients. See the scope statement in [`RESULTS.md`](RESULTS.
 ## Data
 
 - Source: NIH Clinical Center, ChestX-ray14, original archives from
-  <https://nihcc.app.box.com/v/ChestXray-NIHCC>. No restrictions on use; cite
+  <https://www.kaggle.com/datasets/nih-chest-xrays/data>. No restrictions on use; cite
   Wang et al., CVPR 2017, and acknowledge the NIH Clinical Center.
 - Selection: exactly the paper's files, from `../sime2026/nih-selection.json` (E4: 8
   patients, 31 studies) and `../sime2026/E4L20-patients.json` (E4L-20: 20 patients,
