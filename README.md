@@ -34,7 +34,7 @@ Andrei N. Besleaga, **"Agentic Multimodal Architectures for Medical Imaging: Orc
 
 ### Book
 
-This project is featured as a reference implementation in the forthcoming Wiley book **"Agentic AI Architectures"** by Andrei Besleaga.
+This project is featured as a reference implementation in the book *Agentic AI Architectures: Multi-Agent System Patterns with TypeScript* by Andrei N. Besleaga (Wiley; publication planned for 2026): https://agenticaiarchitectures.com
 
 ### BibTeX
 

@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Docs: the README and the project page name the book in full: *Agentic AI Architectures: Multi-Agent System Patterns with TypeScript* by Andrei N. Besleaga (Wiley; publication planned for 2026), with its website.
+
 ## [1.2.0] - 2026-10-31
 
 All changes in this section are **backward-compatible** (`additive` or
